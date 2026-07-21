@@ -1,0 +1,303 @@
+{
+ "syn_fc_001": [
+  "text01",
+  "text03"
+ ],
+ "syn_fc_002": [
+  "text01",
+  "text02"
+ ],
+ "syn_fc_003": [
+  "text01",
+  "text14"
+ ],
+ "syn_fc_004": [
+  "text03",
+  "text14"
+ ],
+ "syn_fc_005": [
+  "text01",
+  "text02"
+ ],
+ "syn_fc_006": [
+  "text06",
+  "text09"
+ ],
+ "syn_fc_007": [
+  "text04",
+  "text11"
+ ],
+ "syn_fc_008": [
+  "text08",
+  "text10"
+ ],
+ "syn_fc_009": [
+  "text01",
+  "text02"
+ ],
+ "syn_fc_010": [
+  "text03",
+  "text14"
+ ],
+ "syn_fc_011": [
+  "text02",
+  "text03"
+ ],
+ "syn_fc_012": [
+  "text02",
+  "text03"
+ ],
+ "syn_fc_013": [
+  "text13",
+  "text14"
+ ],
+ "syn_fc_014": [
+  "text09",
+  "text01"
+ ],
+ "syn_fc_015": [
+  "text05",
+  "text04"
+ ],
+ "syn_fin_001": [
+  "annual_byd_2025_report",
+  "annual_byd_2024_report"
+ ],
+ "syn_fin_002": [
+  "annual_byd_2025_report",
+  "annual_byd_2024_report"
+ ],
+ "syn_fin_003": [
+  "annual_catl_2024_report",
+  "annual_catl_2025_report"
+ ],
+ "syn_fin_004": [
+  "annual_catl_2024_report",
+  "annual_catl_2025_report"
+ ],
+ "syn_fin_005": [
+  "annual_midea_2025_report",
+  "annual_midea_2024_report"
+ ],
+ "syn_fin_006": [
+  "annual_cscec_2025_report",
+  "annual_cscec_2024_report"
+ ],
+ "syn_fin_007": [
+  "annual_cscec_2025_report"
+ ],
+ "syn_fin_008": [
+  "annual_byd_2025_report",
+  "annual_byd_2024_report"
+ ],
+ "syn_fin_009": [
+  "annual_byd_2025_report",
+  "annual_catl_2025_report",
+  "annual_midea_2025_report",
+  "annual_cscec_2025_report",
+  "annual_chinamobile_2025_report"
+ ],
+ "syn_fin_010": [
+  "annual_cscec_2025_report",
+  "annual_catl_2025_report",
+  "annual_cmb_2025_report",
+  "annual_midea_2025_report"
+ ],
+ "syn_fin_011": [
+  "annual_byd_2025_report",
+  "annual_cscec_2025_report",
+  "annual_chinamobile_2025_report",
+  "annual_cmb_2025_report",
+  "annual_catl_2025_report"
+ ],
+ "syn_fin_012": [
+  "annual_byd_2025_report",
+  "annual_catl_2025_report"
+ ],
+ "syn_fin_013": [
+  "annual_midea_2025_report",
+  "annual_cmb_2025_report",
+  "annual_byd_2025_report",
+  "annual_catl_2025_report"
+ ],
+ "syn_fin_014": [
+  "annual_cscec_2025_report",
+  "annual_chinamobile_2025_report",
+  "annual_byd_2025_report",
+  "annual_cmb_2025_report"
+ ],
+ "syn_fin_015": [
+  "annual_chinamobile_2025_report",
+  "annual_byd_2025_report",
+  "annual_cmb_2025_report",
+  "annual_cscec_2025_report"
+ ],
+ "syn_ins_001": [
+  "2"
+ ],
+ "syn_ins_002": [
+  "3"
+ ],
+ "syn_ins_003": [
+  "16"
+ ],
+ "syn_ins_004": [
+  "7"
+ ],
+ "syn_ins_005": [
+  "13",
+  "14"
+ ],
+ "syn_ins_006": [
+  "1",
+  "2",
+  "4",
+  "16"
+ ],
+ "syn_ins_007": [
+  "3"
+ ],
+ "syn_ins_008": [
+  "15"
+ ],
+ "syn_ins_009": [
+  "3",
+  "5",
+  "6"
+ ],
+ "syn_ins_010": [
+  "5",
+  "6"
+ ],
+ "syn_ins_011": [
+  "1"
+ ],
+ "syn_ins_012": [
+  "9",
+  "10"
+ ],
+ "syn_ins_013": [
+  "11",
+  "12"
+ ],
+ "syn_ins_014": [
+  "16"
+ ],
+ "syn_ins_015": [
+  "3"
+ ],
+ "syn_reg_001": [
+  "strict_v3_017_中华人民共和国反洗钱法",
+  "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"
+ ],
+ "syn_reg_002": [
+  "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）",
+  "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）",
+  "strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）",
+  "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）"
+ ],
+ "syn_reg_003": [
+  "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）"
+ ],
+ "syn_reg_004": [
+  "strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）"
+ ],
+ "syn_reg_005": [
+  "strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）"
+ ],
+ "syn_reg_006": [
+  "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）"
+ ],
+ "syn_reg_007": [
+  "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"
+ ],
+ "syn_reg_008": [
+  "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"
+ ],
+ "syn_reg_009": [
+  "strict_v3_017_中华人民共和国反洗钱法",
+  "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）"
+ ],
+ "syn_reg_010": [
+  "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）"
+ ],
+ "syn_reg_011": [
+  "csrc_0009_att1",
+  "csrc_0037_att1",
+  "csrc_0038_att1"
+ ],
+ "syn_reg_012": [
+  "csrc_0027_att1"
+ ],
+ "syn_reg_013": [
+  "csrc_0027_att1"
+ ],
+ "syn_reg_014": [
+  "csrc_0023_att1",
+  "csrc_0009_att1"
+ ],
+ "syn_reg_015": [
+  "strict_v3_017_中华人民共和国反洗钱法",
+  "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）"
+ ],
+ "syn_res_001": [
+  "pack2_text11",
+  "pack2_text12"
+ ],
+ "syn_res_002": [
+  "pack2_text12",
+  "pack2_text18"
+ ],
+ "syn_res_003": [
+  "pack2_text09",
+  "pack2_text11"
+ ],
+ "syn_res_004": [
+  "pack2_text10",
+  "pack2_text01"
+ ],
+ "syn_res_005": [
+  "pack2_text05",
+  "pack2_text03"
+ ],
+ "syn_res_006": [
+  "pack2_text01",
+  "pack2_text15"
+ ],
+ "syn_res_007": [
+  "pack2_text18",
+  "pack2_text09"
+ ],
+ "syn_res_008": [
+  "pack2_text12",
+  "pack2_text19"
+ ],
+ "syn_res_009": [
+  "pack2_text04",
+  "pack2_text07"
+ ],
+ "syn_res_010": [
+  "pack2_text13",
+  "pack2_text16"
+ ],
+ "syn_res_011": [
+  "pack2_text11",
+  "pack2_text09"
+ ],
+ "syn_res_012": [
+  "pack2_text03",
+  "pack2_text13"
+ ],
+ "syn_res_013": [
+  "pack2_text10",
+  "pack2_text14"
+ ],
+ "syn_res_014": [
+  "pack2_text09",
+  "pack2_text18"
+ ],
+ "syn_res_015": [
+  "pack2_text17",
+  "pack2_text19"
+ ]
+}

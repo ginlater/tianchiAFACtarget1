@@ -1,0 +1,5717 @@
+{
+ "1": {
+  "n_pages": 21,
+  "title": "平安智盈金生专属商业养老保险产品提供养老、身故及失能失智护理保障为了帮助您更好地了解产品，我们先介绍几个保险条款中常用的术语与您有重大",
+  "domain": "insurance",
+  "doc_id": "1",
+  "src": "public_dataset_upload/raw/insurance/1.pdf",
+  "n_chars": 22729
+ },
+ "10": {
+  "n_pages": 14,
+  "title": "投保了特种车第三者责任保险条款",
+  "domain": "insurance",
+  "doc_id": "10",
+  "src": "public_dataset_upload/raw/insurance/10.pdf",
+  "n_chars": 14999
+ },
+ "11": {
+  "n_pages": 7,
+  "title": "中国平安财产保险股份有限公司平安产险家庭财产保险（家庭版）（2025 版）条款",
+  "domain": "insurance",
+  "doc_id": "11",
+  "src": "public_dataset_upload/raw/insurance/11.pdf",
+  "n_chars": 6295
+ },
+ "12": {
+  "n_pages": 11,
+  "title": "众安在线财产保险股份有限公司家庭财产综合保险条款（互联网2023 版）(众安在线)(备-普通家财险)【2024】(主) 032 号",
+  "domain": "insurance",
+  "doc_id": "12",
+  "src": "public_dataset_upload/raw/insurance/12.pdf",
+  "n_chars": 10786
+ },
+ "13": {
+  "n_pages": 8,
+  "title": "众安在线财产保险股份有限公司食品安全责任保险条款（互联网2026 版）",
+  "domain": "insurance",
+  "doc_id": "13",
+  "src": "public_dataset_upload/raw/insurance/13.pdf",
+  "n_chars": 7282
+ },
+ "14": {
+  "n_pages": 7,
+  "title": "中国平安财产保险股份有限公司平安产险食品安全责任保险（2021 版）条款",
+  "domain": "insurance",
+  "doc_id": "14",
+  "src": "public_dataset_upload/raw/insurance/14.pdf",
+  "n_chars": 7007
+ },
+ "15": {
+  "n_pages": 8,
+  "title": "国寿鑫享添盈养老年金保险（互联网专属）条款",
+  "domain": "insurance",
+  "doc_id": "15",
+  "src": "public_dataset_upload/raw/insurance/15.pdf",
+  "n_chars": 9419
+ },
+ "16": {
+  "n_pages": 13,
+  "title": "在首次养老保险条款",
+  "domain": "insurance",
+  "doc_id": "16",
+  "src": "public_dataset_upload/raw/insurance/16.pdf",
+  "n_chars": 19754
+ },
+ "2": {
+  "n_pages": 12,
+  "title": "国寿增益宝终身寿险（万能型）（2025 版）条款",
+  "domain": "insurance",
+  "doc_id": "2",
+  "src": "public_dataset_upload/raw/insurance/2.pdf",
+  "n_chars": 13358
+ },
+ "3": {
+  "n_pages": 17,
+  "title": "特定药品费用医疗保险条款",
+  "domain": "insurance",
+  "doc_id": "3",
+  "src": "public_dataset_upload/raw/insurance/3.pdf",
+  "n_chars": 16228
+ },
+ "4": {
+  "n_pages": 33,
+  "title": "平安安佑福重大疾病保险产品提供重大疾病及身故保障为了帮助您更好地了解产品，我们先介绍几个保险条款中常用的术语与您有重大利害关系的条款事",
+  "domain": "insurance",
+  "doc_id": "4",
+  "src": "public_dataset_upload/raw/insurance/4.pdf",
+  "n_chars": 37469
+ },
+ "5": {
+  "n_pages": 45,
+  "title": "特定疾病医疗保险条款",
+  "domain": "insurance",
+  "doc_id": "5",
+  "src": "public_dataset_upload/raw/insurance/5.pdf",
+  "n_chars": 51058
+ },
+ "6": {
+  "n_pages": 42,
+  "title": "太平洋健康保险股份有限公司太保团体百万医疗保险（2022 版）条款",
+  "domain": "insurance",
+  "doc_id": "6",
+  "src": "public_dataset_upload/raw/insurance/6.pdf",
+  "n_chars": 49939
+ },
+ "7": {
+  "n_pages": 8,
+  "title": "中国平安财产保险股份有限公司平安产险预防接种意外伤害保险（E 款）（互联网版）条款",
+  "domain": "insurance",
+  "doc_id": "7",
+  "src": "public_dataset_upload/raw/insurance/7.pdf",
+  "n_chars": 7279
+ },
+ "8": {
+  "n_pages": 39,
+  "title": "众安在线财产保险股份有限公司营运交通工具团体意外伤害保险条款（互联网版2025A 款）",
+  "domain": "insurance",
+  "doc_id": "8",
+  "src": "public_dataset_upload/raw/insurance/8.pdf",
+  "n_chars": 38542
+ },
+ "9": {
+  "n_pages": 14,
+  "title": "投保了特种车第三者责任保险条款",
+  "domain": "insurance",
+  "doc_id": "9",
+  "src": "public_dataset_upload/raw/insurance/9.pdf",
+  "n_chars": 15024
+ },
+ "text01": {
+  "n_pages": 311,
+  "title": "广东省广晟控股集团有限公司募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text01",
+  "src": "public_dataset_upload/raw/financial_contracts/text01.pdf",
+  "n_chars": 237483
+ },
+ "text02": {
+  "n_pages": 253,
+  "title": "深圳市融资租赁（集团）有限公司2026 年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text02",
+  "src": "public_dataset_upload/raw/financial_contracts/text02.pdf",
+  "n_chars": 210980
+ },
+ "text03": {
+  "n_pages": 260,
+  "title": "发行人将及时、公平地履行信息披露义务。发行人及其董事、高级管理人员或履行同等职责的人员保证募集说明书信息披露的真实、准确、完整，不存在虚假记",
+  "domain": "financial_contracts",
+  "doc_id": "text03",
+  "src": "public_dataset_upload/raw/financial_contracts/text03.pdf",
+  "n_chars": 214114
+ },
+ "text04": {
+  "n_pages": 495,
+  "title": "安克创新科技股份有限公司向不特定对象发行可转换公司债券募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text04",
+  "src": "public_dataset_upload/raw/financial_contracts/text04.pdf",
+  "n_chars": 560301
+ },
+ "text05": {
+  "n_pages": 386,
+  "title": "江苏本川智能电路科技股份有限公司向不特定对象发行可转换公司债券募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text05",
+  "src": "public_dataset_upload/raw/financial_contracts/text05.pdf",
+  "n_chars": 363015
+ },
+ "text06": {
+  "n_pages": 283,
+  "title": "鼎捷数智股份有限公司向不特定对象发行可转换公司债券募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text06",
+  "src": "public_dataset_upload/raw/financial_contracts/text06.pdf",
+  "n_chars": 287830
+ },
+ "text07": {
+  "n_pages": 262,
+  "title": "海南海峡航运股份有限公司出资组建合资公司重大资产重组报告书",
+  "domain": "financial_contracts",
+  "doc_id": "text07",
+  "src": "public_dataset_upload/raw/financial_contracts/text07.pdf",
+  "n_chars": 196039
+ },
+ "text08": {
+  "n_pages": 468,
+  "title": "苏州华亚智能科技股份有限公司发行股份及支付现金购买资产并募集配套资金暨关联交易报告书（草案）（注册稿）",
+  "domain": "financial_contracts",
+  "doc_id": "text08",
+  "src": "public_dataset_upload/raw/financial_contracts/text08.pdf",
+  "n_chars": 414623
+ },
+ "text09": {
+  "n_pages": 281,
+  "title": "厦门金达威集团股份有限公司向不特定对象发行可转换公司债券募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text09",
+  "src": "public_dataset_upload/raw/financial_contracts/text09.pdf",
+  "n_chars": 286818
+ },
+ "text10": {
+  "n_pages": 516,
+  "title": "山东科源制药股份有限公司发行股份购买资产并募集配套资金暨关联交易报告书",
+  "domain": "financial_contracts",
+  "doc_id": "text10",
+  "src": "public_dataset_upload/raw/financial_contracts/text10.pdf",
+  "n_chars": 428522
+ },
+ "text11": {
+  "n_pages": 273,
+  "title": "普联软件股份有限公司募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text11",
+  "src": "public_dataset_upload/raw/financial_contracts/text11.pdf",
+  "n_chars": 271703
+ },
+ "text12": {
+  "n_pages": 126,
+  "title": "陕西省国际信托股份有限公司重大资产重组报告书",
+  "domain": "financial_contracts",
+  "doc_id": "text12",
+  "src": "public_dataset_upload/raw/financial_contracts/text12.pdf",
+  "n_chars": 113030
+ },
+ "text13": {
+  "n_pages": 166,
+  "title": "声明及提示凡欲认购本次债券的投资者，请认真阅读本次债券募集说明书及其有关的信",
+  "domain": "financial_contracts",
+  "doc_id": "text13",
+  "src": "public_dataset_upload/raw/financial_contracts/text13.pdf",
+  "n_chars": 90051
+ },
+ "text14": {
+  "n_pages": 243,
+  "title": "西部证券股份有限公司2026 年面向专业投资者公开发行公司债券（第二期）募集说明书",
+  "domain": "financial_contracts",
+  "doc_id": "text14",
+  "src": "public_dataset_upload/raw/financial_contracts/text14.pdf",
+  "n_chars": 207959
+ },
+ "annual_byd_2024_report": {
+  "n_pages": 290,
+  "title": "比亚迪股份有限公司2024年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_byd_2024_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_byd_2024_report.PDF",
+  "n_chars": 288524
+ },
+ "annual_byd_2025_report": {
+  "n_pages": 268,
+  "title": "比亚迪股份有限公司2025年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_byd_2025_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_byd_2025_report.PDF",
+  "n_chars": 260088
+ },
+ "annual_catl_2024_report": {
+  "n_pages": 229,
+  "title": "宁德时代新能源科技股份有限公司2024年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_catl_2024_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_catl_2024_report.PDF",
+  "n_chars": 242478
+ },
+ "annual_catl_2025_report": {
+  "n_pages": 232,
+  "title": "宁德时代新能源科技股份有限公司2025年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_catl_2025_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_catl_2025_report.PDF",
+  "n_chars": 220318
+ },
+ "annual_chinamobile_2025_report": {
+  "n_pages": 214,
+  "title": "中国移动有限公司2025年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_chinamobile_2025_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_chinamobile_2025_report.PDF",
+  "n_chars": 162002
+ },
+ "annual_cmb_2025_report": {
+  "n_pages": 350,
+  "title": "招商銀行股份有限公司2025年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_cmb_2025_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_cmb_2025_report.PDF",
+  "n_chars": 385344
+ },
+ "annual_cscec_2024_report": {
+  "n_pages": 392,
+  "title": "中国建筑精神核心价值观2024年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_cscec_2024_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_cscec_2024_report.pdf",
+  "n_chars": 357711
+ },
+ "annual_cscec_2025_report": {
+  "n_pages": 370,
+  "title": "A N N U A L  R E P O R T2025年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_cscec_2025_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_cscec_2025_report.pdf",
+  "n_chars": 334539
+ },
+ "annual_midea_2024_report": {
+  "n_pages": 295,
+  "title": "2024年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_midea_2024_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_midea_2024_report.PDF",
+  "n_chars": 280712
+ },
+ "annual_midea_2025_report": {
+  "n_pages": 276,
+  "title": "美的集团股份有限公司2025年年度报告",
+  "domain": "financial_reports",
+  "doc_id": "annual_midea_2025_report",
+  "src": "public_dataset_upload/raw/financial_reports/annual_midea_2025_report.PDF",
+  "n_chars": 259696
+ },
+ "pack2_text01": {
+  "n_pages": 26,
+  "title": "以海外银保为鉴，观我国寿险发展新格局",
+  "domain": "research",
+  "doc_id": "pack2_text01",
+  "src": "public_dataset_upload/raw/research/pack2_text01.pdf",
+  "n_chars": 31306
+ },
+ "pack2_text02": {
+  "n_pages": 37,
+  "title": "金融网络安全运营数智化建设研究与实践",
+  "domain": "research",
+  "doc_id": "pack2_text02",
+  "src": "public_dataset_upload/raw/research/pack2_text02.pdf",
+  "n_chars": 18612
+ },
+ "pack2_text03": {
+  "n_pages": 36,
+  "title": "产业前瞻系列2：服务消费领航，黄金赛道竞发",
+  "domain": "research",
+  "doc_id": "pack2_text03",
+  "src": "public_dataset_upload/raw/research/pack2_text03.pdf",
+  "n_chars": 51762
+ },
+ "pack2_text04": {
+  "n_pages": 106,
+  "title": "动储产销两旺，量利双升，继续强推",
+  "domain": "research",
+  "doc_id": "pack2_text04",
+  "src": "public_dataset_upload/raw/research/pack2_text04.pdf",
+  "n_chars": 87640
+ },
+ "pack2_text05": {
+  "n_pages": 34,
+  "title": "品牌转型，玉汝于成",
+  "domain": "research",
+  "doc_id": "pack2_text05",
+  "src": "public_dataset_upload/raw/research/pack2_text05.pdf",
+  "n_chars": 42194
+ },
+ "pack2_text06": {
+  "n_pages": 41,
+  "title": "大化工周报：美伊谈判推进，油价下降带动化工品价格整体回落",
+  "domain": "research",
+  "doc_id": "pack2_text06",
+  "src": "public_dataset_upload/raw/research/pack2_text06.pdf",
+  "n_chars": 10025
+ },
+ "pack2_text07": {
+  "n_pages": 59,
+  "title": "【中泰汽车·北京车展前瞻】自主&新势力高阶智驾与自研芯片并进合资中国方案主导智电转型",
+  "domain": "research",
+  "doc_id": "pack2_text07",
+  "src": "public_dataset_upload/raw/research/pack2_text07.pdf",
+  "n_chars": 32205
+ },
+ "pack2_text08": {
+  "n_pages": 37,
+  "title": "杠杆资金&股票型ETF分化加剧——流动性&交易拥挤度&投资者温度计周报",
+  "domain": "research",
+  "doc_id": "pack2_text08",
+  "src": "public_dataset_upload/raw/research/pack2_text08.pdf",
+  "n_chars": 18120
+ },
+ "pack2_text09": {
+  "n_pages": 37,
+  "title": "AI ASIC 领军者，迎接ASIC 定制新纪元",
+  "domain": "research",
+  "doc_id": "pack2_text09",
+  "src": "public_dataset_upload/raw/research/pack2_text09.pdf",
+  "n_chars": 47940
+ },
+ "pack2_text10": {
+  "n_pages": 33,
+  "title": "ROE 提升有道（一）——扩表：券商加杠杆路径探析",
+  "domain": "research",
+  "doc_id": "pack2_text10",
+  "src": "public_dataset_upload/raw/research/pack2_text10.pdf",
+  "n_chars": 41689
+ },
+ "pack2_text11": {
+  "n_pages": 35,
+  "title": "光模块行业延续高景气度，光纤产品",
+  "domain": "research",
+  "doc_id": "pack2_text11",
+  "src": "public_dataset_upload/raw/research/pack2_text11.pdf",
+  "n_chars": 46636
+ },
+ "pack2_text12": {
+  "n_pages": 25,
+  "title": "光模块设备：站在巨人的肩膀上，寻找中长期通胀方向",
+  "domain": "research",
+  "doc_id": "pack2_text12",
+  "src": "public_dataset_upload/raw/research/pack2_text12.pdf",
+  "n_chars": 30016
+ },
+ "pack2_text13": {
+  "n_pages": 20,
+  "title": "宠物医院报告：从激进扩张走到稳健发展",
+  "domain": "research",
+  "doc_id": "pack2_text13",
+  "src": "public_dataset_upload/raw/research/pack2_text13.pdf",
+  "n_chars": 23352
+ },
+ "pack2_text14": {
+  "n_pages": 55,
+  "title": "“资产荒”的新叙事",
+  "domain": "research",
+  "doc_id": "pack2_text14",
+  "src": "public_dataset_upload/raw/research/pack2_text14.pdf",
+  "n_chars": 33070
+ },
+ "pack2_text15": {
+  "n_pages": 43,
+  "title": "改革红利兑现，增量价值开启新一轮资负",
+  "domain": "research",
+  "doc_id": "pack2_text15",
+  "src": "public_dataset_upload/raw/research/pack2_text15.pdf",
+  "n_chars": 66357
+ },
+ "pack2_text16": {
+  "n_pages": 21,
+  "title": "证券研究报告",
+  "domain": "research",
+  "doc_id": "pack2_text16",
+  "src": "public_dataset_upload/raw/research/pack2_text16.pdf",
+  "n_chars": 26591
+ },
+ "pack2_text17": {
+  "n_pages": 20,
+  "title": "非银金融行业深度报告银行IT：金融科技的“压舱石”与“主战场”",
+  "domain": "research",
+  "doc_id": "pack2_text17",
+  "src": "public_dataset_upload/raw/research/pack2_text17.pdf",
+  "n_chars": 21399
+ },
+ "pack2_text18": {
+  "n_pages": 32,
+  "title": "大族激光（002008.SZ）",
+  "domain": "research",
+  "doc_id": "pack2_text18",
+  "src": "public_dataset_upload/raw/research/pack2_text18.pdf",
+  "n_chars": 37854
+ },
+ "pack2_text19": {
+  "n_pages": 23,
+  "title": "RFID 传统主业守正创新，TOC 消费物联网开新局",
+  "domain": "research",
+  "doc_id": "pack2_text19",
+  "src": "public_dataset_upload/raw/research/pack2_text19.pdf",
+  "n_chars": 30902
+ },
+ "pack2_text20": {
+  "n_pages": 55,
+  "title": "“资产荒”的新叙事",
+  "domain": "research",
+  "doc_id": "pack2_text20",
+  "src": "public_dataset_upload/raw/research/pack2_text20.pdf",
+  "n_chars": 33070
+ },
+ "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）": {
+  "n_pages": null,
+  "title": "中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）",
+  "domain": "regulatory",
+  "doc_id": "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）",
+  "src": "public_dataset_upload/raw/regulatory/txt/strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）.txt",
+  "n_chars": 10134
+ },
+ "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）": {
+  "n_pages": null,
+  "title": "中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）",
+  "domain": "regulatory",
+  "doc_id": "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）",
+  "src": "public_dataset_upload/raw/regulatory/txt/strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）.txt",
+  "n_chars": 13469
+ },
+ "strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）": {
+  "n_pages": null,
+  "title": "中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）",
+  "domain": "regulatory",
+  "doc_id": "strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）",
+  "src": "public_dataset_upload/raw/regulatory/txt/strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）.txt",
+  "n_chars": 10711
+ },
+ "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）": {
+  "n_pages": null,
+  "title": "中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）",
+  "domain": "regulatory",
+  "doc_id": "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）",
+  "src": "public_dataset_upload/raw/regulatory/txt/strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）.txt",
+  "n_chars": 10818
+ },
+ "strict_v3_017_中华人民共和国反洗钱法": {
+  "n_pages": null,
+  "title": "中华人民共和国反洗钱法",
+  "domain": "regulatory",
+  "doc_id": "strict_v3_017_中华人民共和国反洗钱法",
+  "src": "public_dataset_upload/raw/regulatory/txt/strict_v3_017_中华人民共和国反洗钱法.txt",
+  "n_chars": 11189
+ },
+ "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）": {
+  "n_pages": null,
+  "title": "中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）",
+  "domain": "regulatory",
+  "doc_id": "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）",
+  "src": "public_dataset_upload/raw/regulatory/txt/strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）.txt",
+  "n_chars": 18114
+ },
+ "csrc_0001": {
+  "n_pages": null,
+  "title": "标题：【第233号令】《私募投资基金信息披露监督管理办法》",
+  "pub_date": "2026-02-27 16:45:31",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0001",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0001.html",
+  "n_chars": 760,
+  "summary": "中国证券监督管理委员会令 第233号 《私募投资基金信息披露监督管理办法》已经2025年12月30日中国,2026-02-27"
+ },
+ "csrc_0002": {
+  "n_pages": null,
+  "title": "标题：【第232号令】《关于修改〈证券期货行政执法当事人承诺制度实施规定〉的决定》",
+  "pub_date": "2026-01-04 10:30:10",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0002",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0002.html",
+  "n_chars": 822,
+  "summary": "中国证券监督管理委员会令 第232号 《关于修改〈证券期货行政执法当事人承诺制度实施规定〉的决定》已,2025-12-31"
+ },
+ "csrc_0003": {
+  "n_pages": null,
+  "title": "标题：【第231号令】《证券期货市场监督管理措施实施办法》",
+  "pub_date": "2025-12-31 19:11:02",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0003",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0003.html",
+  "n_chars": 738,
+  "summary": "中国证券监督管理委员会令 第231号 《证券期货市场监督管理措施实施办法》已经2025年12月30日中国证券监,2025-12-31"
+ },
+ "csrc_0004": {
+  "n_pages": null,
+  "title": "标题：中国人民银行 中国证监会令 〔2025〕第7号 《金融基础设施监督管理办法》",
+  "pub_date": "2025-08-01 20:09:41",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0004",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0004.html",
+  "n_chars": 761,
+  "summary": "中国人民银行 中国证监会令 〔2025〕第7号 《金融基础设施监督管理办法》已经2025年5月23日中国人,2025-08-01"
+ },
+ "csrc_0005": {
+  "n_pages": null,
+  "title": "标题：【第230号令】《关于修改的决定》",
+  "pub_date": "2025-05-16 21:11:59",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0005",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0005.html",
+  "n_chars": 769,
+  "summary": "中国证券监督管理委员会令 第号 《关于修改＜上市公司重大资产重组管理办法＞的决定》已经2025年5月1,2025-05-16"
+ },
+ "csrc_0006": {
+  "n_pages": null,
+  "title": "标题：【第229号令】《中国证监会派出机构监管职责规定》",
+  "pub_date": "2025-04-18 20:58:45",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0006",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0006.html",
+  "n_chars": 706,
+  "summary": "中国证券监督管理委员会令 第229号 《中国证监会派出机构监管职责规定》已经2025年4月18日中国证券监督管,2025-04-18"
+ },
+ "csrc_0007": {
+  "n_pages": null,
+  "title": "标题：【第228号令】《关于修改的决定》",
+  "pub_date": "2025-03-28 20:49:02",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0007",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0007.html",
+  "n_chars": 741,
+  "summary": "中国证券监督管理委员会令 第228号 《关于修改＜证券发行与承销管理办法＞的决定》已经2025年3月27日,2025-03-28"
+ },
+ "csrc_0008": {
+  "n_pages": null,
+  "title": "标题：【第227号令】《关于修改部分证券期货规章的决定》",
+  "pub_date": "2025-03-28 20:26:10",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0008",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0008.html",
+  "n_chars": 750,
+  "summary": "中国证券监督管理委员会令 第号 《关于修改部分证券期货规章的决定》已经2025年2月19日中国证券监督管理委,2025-03-27"
+ },
+ "csrc_0009": {
+  "n_pages": null,
+  "title": "标题：【第226号令】《上市公司信息披露管理办法》",
+  "pub_date": "2025-03-28 17:46:39",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0009",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0009.html",
+  "n_chars": 700,
+  "summary": "中国证券监督管理委员会令 第226号 《上市公司信息披露管理办法》已经2025年2月28日中国证券监督管理,2025-03-27"
+ },
+ "csrc_0010": {
+  "n_pages": null,
+  "title": "【第225号令】《中国证监会行政处罚裁量基本规则》",
+  "pub_date": "2025-01-17 19:18:44",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0010",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0010.html",
+  "n_chars": 759,
+  "summary": "中国证券监督管理委员会令 第225号 《中国证监会行政处罚裁量基本规则》已经2024年12月31日中国证券监督管,2025-01-17"
+ },
+ "csrc_0011": {
+  "n_pages": null,
+  "title": "标题：【第224号令】《上市公司股东减持股份管理暂行办法》",
+  "pub_date": "2025-09-06 16:47:27",
+  "column": "证监会令",
+  "domain": "regulatory",
+  "doc_id": "csrc_0011",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0011.html",
+  "n_chars": 734,
+  "summary": "中国证券监督管理委员会令第224号《上市公司股东减持股份管理暂行办法》已经2024年5月23日中国证券监督管理,2024-05-24"
+ },
+ "csrc_0012": {
+  "n_pages": null,
+  "title": "标题：【第6号公告】《关于修改的决定》",
+  "pub_date": "2026-04-17 22:09:21",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0012",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0012.html",
+  "n_chars": 873,
+  "summary": "中国证券监督管理委员会公告 〔2026〕6号 现公布《关于修改〈《上市公司证券发行注册管理办法,2026-04-17"
+ },
+ "csrc_0013": {
+  "n_pages": null,
+  "title": "标题：【第5号公告】《公开募集证券投资基金信息披露内容与格式准则第2号—定期报告的内容与格式》",
+  "pub_date": "2026-04-17 22:14:14",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0013",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0013.html",
+  "n_chars": 848,
+  "summary": "中国证券监督管理委员会公告 〔2026〕号 现公布《公开募集证券投资基金信息披露内容与格式,2026-03-13"
+ },
+ "csrc_0014": {
+  "n_pages": null,
+  "title": "标题：【第4号公告】《关于短线交易监管的若干规定》",
+  "pub_date": "2026-03-06 21:45:07",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0014",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0014.html",
+  "n_chars": 674,
+  "summary": "中国证券监督管理委员会公告 〔2026〕4号 现公布《关于短线交易监管的若干规定》，自2026年4月7日起施,2026-03-06"
+ },
+ "csrc_0015": {
+  "n_pages": null,
+  "title": "标题：【第1号公告】《关于境内资产境外发行资产支持证券代币的监管指引》",
+  "pub_date": "2026-02-06 21:09:16",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0015",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0015.html",
+  "n_chars": 667,
+  "summary": "中国证券监督管理委员会公告 〔2026〕1号 现公布《关于境内资产境外发行资产支持证券代币的监管指引》，自,2026-02-06"
+ },
+ "csrc_0016": {
+  "n_pages": null,
+  "title": "标题：【第3号公告】《公开募集证券投资基金业绩比较基准指引》",
+  "pub_date": "2026-01-23 18:08:55",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0016",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0016.html",
+  "n_chars": 718,
+  "summary": "中国证券监督管理委员会公告 〔2026〕3号 现公布《公开募集证券投资基金业绩比较基准指引》，自2026年3月,2026-01-23"
+ },
+ "csrc_0017": {
+  "n_pages": null,
+  "title": "标题：【第2号公告】《证券期货业信息系统密码技术应用指引》《证券期货业信息系统分类与代码》",
+  "pub_date": "2026-01-09 20:11:42",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0017",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0017.html",
+  "n_chars": 771,
+  "summary": "中国证券监督管理委员会公告 〔2026〕2号 现公布金融行业推荐性标准《证券期货业信息系统密码技术应用指引,2026-01-09"
+ },
+ "csrc_0018": {
+  "n_pages": null,
+  "title": "标题：【第22号公告】《公开募集证券投资基金销售费用管理规定》",
+  "pub_date": "2025-12-31 19:51:38",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0018",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0018.html",
+  "n_chars": 720,
+  "summary": "中国证券监督管理委员会公告 〔2025〕22号 现公布《公开募集证券投资基金销售费用管理规定》，自2026年1月,2025-12-31"
+ },
+ "csrc_0019": {
+  "n_pages": null,
+  "title": "标题：【第21号公告】《中国证监会关于推出商业不动产投资信托基金试点的公告》",
+  "pub_date": "2025-12-31 16:57:45",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0019",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0019.html",
+  "n_chars": 775,
+  "summary": "中国证券监督管理委员会公告 〔2025〕21号 现公布《中国证监会关于推出商业不动产投资信托基金试点的公告,2025-12-31"
+ },
+ "csrc_0020": {
+  "n_pages": null,
+  "title": "标题：【第23号公告】《证券期货违法行为“吹哨人”奖励工作规定》",
+  "pub_date": "2026-01-09 20:12:46",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0020",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0020.html",
+  "n_chars": 714,
+  "summary": "中国证券监督管理委员会 财政部公告 〔2025〕23号 现公布《证券期货违法行为“吹哨人”奖励工作规,2025-12-30"
+ },
+ "csrc_0021": {
+  "n_pages": null,
+  "title": "标题：【第20号公告】《证券结算风险基金管理办法》",
+  "pub_date": "2025-11-07 19:52:31",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0021",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0021.html",
+  "n_chars": 680,
+  "summary": "中国证券监督管理委员会 财政部公告 〔2025〕20号 现公布《证券结算风险基金管理办法》，自2025年12,2025-11-07"
+ },
+ "csrc_0022": {
+  "n_pages": null,
+  "title": "【第19号公告】《关于加强资本市场中小投资者保护的若干意见》",
+  "pub_date": "2025-10-27 20:50:00",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0022",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0022.html",
+  "n_chars": 697,
+  "summary": "中国证券监督管理委员会公告 〔2025〕19号 现公布《关于加强资本市场中小投资者保护的若干意见》，自公布,2025-10-27"
+ },
+ "csrc_0023": {
+  "n_pages": null,
+  "title": "标题：【第18号公告】《上市公司治理准则》",
+  "pub_date": "2025-10-17 19:27:03",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0023",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0023.html",
+  "n_chars": 650,
+  "summary": "中国证券监督管理委员会公告 〔2025〕18号 现公布《上市公司治理准则》，自2026年1月1日起施行。 中国证,2025-10-17"
+ },
+ "csrc_0024": {
+  "n_pages": null,
+  "title": "【第17号公告】",
+  "pub_date": "2025-10-10 19:29:25",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0024",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0024.html",
+  "n_chars": 842,
+  "summary": "中国证券监督管理委员会公告 〔2025〕17号 现公布金融行业推荐性标准《证券期货业业务域数据元规范 ,2025-10-10"
+ },
+ "csrc_0025": {
+  "n_pages": null,
+  "title": "标题：【第16号公告】《期货公司分类评价规定》",
+  "pub_date": "2025-09-12 17:13:50",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0025",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0025.html",
+  "n_chars": 654,
+  "summary": "中国证券监督管理委员会公告 〔2025〕16号 现公布《期货公司分类评价规定》，自2025年9月12日起施行。 ,2025-09-12"
+ },
+ "csrc_0026": {
+  "n_pages": null,
+  "title": "标题：【第15号公告】《期货公司互联网营销管理暂行规定》",
+  "pub_date": "2025-08-22 21:27:44",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0026",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0026.html",
+  "n_chars": 695,
+  "summary": "中国证券监督管理委员会公告 〔2025〕15号 现公布《期货公司互联网营销管理暂行规定》，自2025年10月9日,2025-08-22"
+ },
+ "csrc_0027": {
+  "n_pages": null,
+  "title": "标题：【第14号公告】《关于修改〈证券公司分类监管规定〉的决定》",
+  "pub_date": "2025-08-22 21:21:44",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0027",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0027.html",
+  "n_chars": 726,
+  "summary": "中国证券监督管理委员会公告 〔2025〕14号 现公布《关于修改〈证券公司分类监管规定〉的决定》，自2025年,2025-08-22"
+ },
+ "csrc_0028": {
+  "n_pages": null,
+  "title": "【第13号公告】《关于合格境外机构投资者和人民币合格境外机构投资者参与股票期权交易的公告》",
+  "pub_date": "2025-06-18 15:58:47",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0028",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0028.html",
+  "n_chars": 926,
+  "summary": "中国证券监督管理委员会公告 〔2025〕13号 根据《合格境外机构投资者和人民币合格境,2025-06-18"
+ },
+ "csrc_0029": {
+  "n_pages": null,
+  "title": "标题：【第12号公告】《期货市场程序化交易管理规定（试行）》",
+  "pub_date": "2025-06-13 19:08:53",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0029",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0029.html",
+  "n_chars": 711,
+  "summary": "中国证券监督管理委员会公告 〔2025〕号 现公布《期货市场程序化交易管理规定（试行,2025-06-13"
+ },
+ "csrc_0030": {
+  "n_pages": null,
+  "title": "标题：【第11号公告】《上市公司监管指引第9号——上市公司筹划和实施重大资产重组的监管要求》",
+  "pub_date": "2025-05-16 21:14:46",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0030",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0030.html",
+  "n_chars": 779,
+  "summary": "中国证券监督管理委员会公告 〔2025〕号 现公布《上市公司监管指引第9号——上市公司筹划和实,2025-05-16"
+ },
+ "csrc_0031": {
+  "n_pages": null,
+  "title": "标题：【第10号公告】《上市公司募集资金监管规则》",
+  "pub_date": "2025-05-15 18:00:00",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0031",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0031.html",
+  "n_chars": 663,
+  "summary": "中国证券监督管理委员会公告 〔2025〕10号 现公布《上市公司募集资金监管规则》，自2025年6月15日,2025-05-15"
+ },
+ "csrc_0032": {
+  "n_pages": null,
+  "title": "标题：【第9号公告】《证券期货业统计指标标准指引（2025年修订）》",
+  "pub_date": "2025-04-30 20:24:59",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0032",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0032.html",
+  "n_chars": 670,
+  "summary": "中国证券监督管理委员会公告 〔2025〕9号 现公布《证券期货业统计指标标准指引（2025年修订）》，自2,2025-04-30"
+ },
+ "csrc_0033": {
+  "n_pages": null,
+  "title": "标题：【第8号公告】《上市公司信息披露暂缓与豁免管理规定》",
+  "pub_date": "2025-04-25 20:10:35",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0033",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0033.html",
+  "n_chars": 710,
+  "summary": "中国证券监督管理委员会公告 〔2025〕8号 现公布《上市公司信息披露暂缓与豁免管理规定》，自2025年7月1日,2025-04-25"
+ },
+ "csrc_0034": {
+  "n_pages": null,
+  "title": "【第7号公告】《上市公司股东会规则》",
+  "pub_date": "2025-03-28 20:27:08",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0034",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0034.html",
+  "n_chars": 666,
+  "summary": "中国证券监督管理委员会公告 〔2025〕7号 现公布《上市公司股东会规则》，自公布之日起施行。 中,2025-03-28"
+ },
+ "csrc_0035": {
+  "n_pages": null,
+  "title": "标题：【第6号公告】《上市公司章程指引》",
+  "pub_date": "2025-03-28 20:26:44",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0035",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0035.html",
+  "n_chars": 655,
+  "summary": "中国证券监督管理委员会公告 〔2025〕6号 现公布《上市公司章程指引》，自公布之日起施行。 中国,2025-03-28"
+ },
+ "csrc_0036": {
+  "n_pages": null,
+  "title": "标题：【第5号公告】《关于修改、废止部分证券期货规范性文件的决定》",
+  "pub_date": "2025-03-28 20:26:31",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0036",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0036.html",
+  "n_chars": 789,
+  "summary": "中国证券监督管理委员会公告 〔2025〕5号 现公布《关于修改、废止部分证券期货规范性文件的决定》,2025-03-28"
+ },
+ "csrc_0037": {
+  "n_pages": null,
+  "title": "标题：【第4号公告】《公开发行证券的公司信息披露内容与格式准则第3号——半年度报告的内容与格式》",
+  "pub_date": "2025-03-28 17:59:43",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0037",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0037.html",
+  "n_chars": 800,
+  "summary": "中国证券监督管理委员会公告 〔2025〕4号 现公布《公开发行证券的公司信息披露内容与格式准则第3号—,2025-03-28"
+ },
+ "csrc_0038": {
+  "n_pages": null,
+  "title": "标题：【第3号公告】《公开发行证券的公司信息披露内容与格式准则第2号——年度报告的内容与格式》",
+  "pub_date": "2025-03-28 18:10:29",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0038",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0038.html",
+  "n_chars": 794,
+  "summary": "中国证券监督管理委员会公告 〔2025〕3号 现公布《公开发行证券的公司信息披露内容与格式准则第2号—,2025-03-28"
+ },
+ "csrc_0039": {
+  "n_pages": null,
+  "title": "标题：【第2号公告】《上市公司监管指引第11号——上市公司破产重整相关事项》",
+  "pub_date": "2025-03-14 20:04:19",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0039",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0039.html",
+  "n_chars": 763,
+  "summary": "中国证券监督管理委员会公告 〔2025〕2号 现公布《上市公司监管指引第11号——上市公司破产重整相关事项》,2025-03-14"
+ },
+ "csrc_0040": {
+  "n_pages": null,
+  "title": "标题：【第1号公告】《证券期货法律适用意见第19号——第十三条、第十四条的适用意见》",
+  "pub_date": "2025-01-10 20:41:29",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0040",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0040.html",
+  "n_chars": 817,
+  "summary": "中国证券监督管理委员会公告 〔2025〕1号 现公布《证券期货法律适用意见第19号——＜上市公司收购管理办法,2025-01-10"
+ },
+ "csrc_0041": {
+  "n_pages": null,
+  "title": "【第18号公告】",
+  "pub_date": "2024-12-27 23:08:55",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0041",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0041.html",
+  "n_chars": 902,
+  "summary": "中国证券监督管理委员会公告 〔2024〕18号 现公布金融行业推荐性标准《期货经纪合同要素》（JR/T&ens,2024-12-27"
+ },
+ "csrc_0042": {
+  "n_pages": null,
+  "title": "标题：【第17号公告】《香港互认基金管理规定》",
+  "pub_date": "2024-12-20 19:28:38",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0042",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0042.html",
+  "n_chars": 675,
+  "summary": "中国证券监督管理委员会公告 〔2024〕17号 现公布《香港互认基金管理规定》，自2025年1月1日起施行。 ,2024-12-20"
+ },
+ "csrc_0043": {
+  "n_pages": null,
+  "title": "【第16号公告】",
+  "pub_date": "2024-11-22 19:45:44",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0043",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0043.html",
+  "n_chars": 1099,
+  "summary": "中国证券监督管理委员会公告 〔2024〕16号 现公布金融行业推荐性标准《上市公司行业统计分类与代码》（,2024-11-22"
+ },
+ "csrc_0044": {
+  "n_pages": null,
+  "title": "【第15号公告】",
+  "pub_date": "2024-11-15 16:22:26",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0044",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0044.html",
+  "n_chars": 1027,
+  "summary": "中国证券监督管理委员会公告〔2024〕15号鉴于和合期货有限公司（以下简称和合期货）公司治理混乱，管理失控,2024-11-15"
+ },
+ "csrc_0045": {
+  "n_pages": null,
+  "title": "标题：【第14号公告】《上市公司监管指引第10号——市值管理》",
+  "pub_date": "2024-11-15 17:50:57",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0045",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0045.html",
+  "n_chars": 722,
+  "summary": "中国证券监督管理委员会公告 〔2024〕14号 现公布《上市公司监管指引第10号——市值管理》，自公布之,2024-11-15"
+ },
+ "csrc_0046": {
+  "n_pages": null,
+  "title": "标题：【第13号公告】《证券公司风险控制指标计算标准规定》",
+  "pub_date": "2024-09-20 18:23:03",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0046",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0046.html",
+  "n_chars": 708,
+  "summary": "中国证券监督管理委员会公告 〔2024〕13号 现公布《证券公司风险控制指标计算标准规定》，自2025年1月1,2024-09-20"
+ },
+ "csrc_0047": {
+  "n_pages": null,
+  "title": "标题：【第12号公告】《证券发行人信息披露文件编码规则》",
+  "pub_date": "2024-09-13 16:20:09",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0047",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0047.html",
+  "n_chars": 698,
+  "summary": "中国证券监督管理委员会公告 〔2024〕12号 现公布金融行业推荐性标准《证券发行人信息披露文件编码规则,2024-09-13"
+ },
+ "csrc_0048": {
+  "n_pages": null,
+  "title": "标题：【第11号公告】《证监会系统离职人员入股拟上市企业监管规定（试行）》",
+  "pub_date": "2024-09-13 11:33:06",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0048",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0048.html",
+  "n_chars": 757,
+  "summary": "中国证券监督管理委员会公告 〔2024〕11号 现公布《证监会系统离职人员入股拟上市企业监管规定（试行）》,2024-09-06"
+ },
+ "csrc_0049": {
+  "n_pages": null,
+  "title": "标题：【第10号公告】《公开发行证券的公司信息披露编报规则第4号——保险公司信息披露特别规定（2024年修订）》",
+  "pub_date": "2024-09-13 11:33:47",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0049",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0049.html",
+  "n_chars": 839,
+  "summary": "中国证券监督管理委员会公告 〔2024〕10号 现公布《公开发行证券的公司信息披露编报规则第4号——保险公司,2024-06-21"
+ },
+ "csrc_0050": {
+  "n_pages": null,
+  "title": "标题：【第9号公告】《上市公司董事、监事和高级管理人员所持本公司股份及其变动管理规则》",
+  "pub_date": "2024-05-24 20:01:51",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0050",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0050.html",
+  "n_chars": 763,
+  "summary": "中国证券监督管理委员会公告 〔2024〕号 现公布《上市公司董事、监事和高级管理人员所持本公司股份及其变,2024-05-24"
+ },
+ "csrc_0051": {
+  "n_pages": null,
+  "title": "标题：【第8号公告】《证券市场程序化交易管理规定（试行）》",
+  "pub_date": "2024-09-13 11:33:57",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0051",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0051.html",
+  "n_chars": 712,
+  "summary": "中国证券监督管理委员会公告 〔2024〕8号 现公布《证券市场程序化交易管理规定（试行）》，自202,2024-05-15"
+ },
+ "csrc_0052": {
+  "n_pages": null,
+  "title": "标题：【第7号公告】《关于修订〈关于加强上市证券公司监管的规定〉的决定》",
+  "pub_date": "2024-05-15 11:55:23",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0052",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0052.html",
+  "n_chars": 741,
+  "summary": "中国证券监督管理委员会公告 〔2024〕号 现公布《关于修订〈关于加强上市证券公司监管的规定〉,2024-05-10"
+ },
+ "csrc_0053": {
+  "n_pages": null,
+  "title": "标题：【第6号公告】《关于修改〈科创属性评价指引（试行）〉的决定》",
+  "pub_date": "2024-04-30 18:55:30",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0053",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0053.html",
+  "n_chars": 727,
+  "summary": "中国证券监督管理委员会公告 〔2024〕6号 现公布《关于修改〈科创属性评价指引（试行）〉的决定,2024-04-30"
+ },
+ "csrc_0054": {
+  "n_pages": null,
+  "title": "标题：【第5号公告】《关于修改〈中国证监会随机抽查事项清单〉的决定》",
+  "pub_date": "2024-04-30 18:51:08",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0054",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0054.html",
+  "n_chars": 708,
+  "summary": "中国证券监督管理委员会公告 〔2024〕号 现公布《关于修改〈中国证监会随机抽查事项清单〉的决定》，,2024-04-30"
+ },
+ "csrc_0055": {
+  "n_pages": null,
+  "title": "标题：【第4号公告】《投资研究时序数据参考模型》等3项金融行业标准",
+  "pub_date": "2024-05-24 18:25:53",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0055",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0055.html",
+  "n_chars": 874,
+  "summary": "中国证券监督管理委员会公告 〔2024〕4号 现公布金融行业推荐性标准《投资研究时序数据参考模型》（J,2024-04-23"
+ },
+ "csrc_0056": {
+  "n_pages": null,
+  "title": "标题：【第3号公告】《公开募集证券投资基金证券交易费用管理规定》",
+  "pub_date": "2024-04-22 17:32:39",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0056",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0056.html",
+  "n_chars": 743,
+  "summary": "中国证券监督管理委员会公告 〔2024〕3号 现公布《公开募集证券投资基金证券交易费用管理规定》，自2,2024-04-19"
+ },
+ "csrc_0057": {
+  "n_pages": null,
+  "title": "标题：【第2号公告】《首次公开发行股票并上市辅导监管规定》",
+  "pub_date": "2024-03-15 17:43:19",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0057",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0057.html",
+  "n_chars": 703,
+  "summary": "中国证券监督管理委员会公告 〔2024〕2号 现公布《首次公开发行股票并上市辅导监管规定》,自公布之日,2024-03-15"
+ },
+ "csrc_0058": {
+  "n_pages": null,
+  "title": "标题：【第1号公告】《首发企业现场检查规定》",
+  "pub_date": "2024-03-15 17:41:29",
+  "column": "证监会公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0058",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0058.html",
+  "n_chars": 651,
+  "summary": "中国证券监督管理委员会公告 〔2024〕1号 现公布《首发企业现场检查规定》,自公布之日起施行。 ,2024-03-15"
+ },
+ "csrc_0059": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——债券类第1号：公开发行公司债券注册工作规程",
+  "pub_date": "2025-12-31 17:50:40",
+  "column": "监管规则适用指引",
+  "domain": "regulatory",
+  "doc_id": "csrc_0059",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0059.html",
+  "n_chars": 577,
+  "summary": ",2025-12-31"
+ },
+ "csrc_0060": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——评估类第2号",
+  "pub_date": "2025-12-05 17:05:25",
+  "column": "监管规则适用指引",
+  "domain": "regulatory",
+  "doc_id": "csrc_0060",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0060.html",
+  "n_chars": 621,
+  "summary": ",2025-12-05"
+ },
+ "csrc_0061": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——会计类第5号",
+  "pub_date": "2025-07-18 19:06:55",
+  "column": "审计与评估机构",
+  "domain": "regulatory",
+  "doc_id": "csrc_0061",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0061.html",
+  "n_chars": 663,
+  "summary": ",2025-07-18"
+ },
+ "csrc_0062": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——机构类第4号",
+  "pub_date": "2024-12-20 19:43:49",
+  "column": "证券经营机构相关规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0062",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0062.html",
+  "n_chars": 1256,
+  "summary": "为准确理解与适用《证券基金经营机构董事、监事、高级管理人员及从业人员监督管理办法》(以下简称《高管办法,2024-12-20"
+ },
+ "csrc_0063": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——法律类第4号",
+  "pub_date": "2024-06-28 16:59:33",
+  "column": "监管规则适用指引",
+  "domain": "regulatory",
+  "doc_id": "csrc_0063",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0063.html",
+  "n_chars": 1700,
+  "summary": ",2024-06-28"
+ },
+ "csrc_0064": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——发行类第10号",
+  "pub_date": "2024-05-15 17:02:29",
+  "column": "发行相关规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0064",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0064.html",
+  "n_chars": 2558,
+  "summary": "监管规则适用指引——发行类第10号,2024-05-15"
+ },
+ "csrc_0065": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——境外发行上市类第7号：关于境内企业由境外场外市场转至境外证券交易所实现境外发行上市的监管要求",
+  "pub_date": "2024-05-07 16:56:40",
+  "column": "国际合作相关规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0065",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0065.html",
+  "n_chars": 686,
+  "summary": ",2024-05-07"
+ },
+ "csrc_0066": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——北京证券交易所类第1号：全国股转系统挂牌公司申请在北京证券交易所发行上市辅导监管指引",
+  "pub_date": "2024-04-30 18:49:38",
+  "column": "相关规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0066",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0066.html",
+  "n_chars": 3004,
+  "summary": "第一条 为强化全国中小企业股份转让系统（以下简称全国股转系统）与北京证券交易所（以下简称北交所）,2024-04-30"
+ },
+ "csrc_0067": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——机构类第3号",
+  "pub_date": "2024-04-12 16:55:20",
+  "column": "证券经营机构相关规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0067",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0067.html",
+  "n_chars": 1000,
+  "summary": "根据《证券公司股权管理规定》（证监会令第183号）、《公开募集证券投资基金管理人监督管理办法》（证监会令,2024-04-12"
+ },
+ "csrc_0068": {
+  "n_pages": null,
+  "title": "标题：监管规则适用指引——会计类第4号",
+  "pub_date": "2024-02-27 18:29:58",
+  "column": "审计与评估机构",
+  "domain": "regulatory",
+  "doc_id": "csrc_0068",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0068.html",
+  "n_chars": 645,
+  "summary": ",2024-02-08"
+ },
+ "csrc_0069": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-04-17 17:50:44",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0069",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0069.html",
+  "n_chars": 6204,
+  "summary": "〔2026〕10号当事人:大唐高鸿网络股份有限公司(以下简称高鸿股份),住所:贵州省贵安新区。付景林,男,时任高鸿,2026-04-07"
+ },
+ "csrc_0070": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-04-17 17:40:42",
+  "column": "行政处罚决定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0070",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0070.html",
+  "n_chars": 1377,
+  "summary": "〔2026〕7号 当事人:胡博,2026-03-19"
+ },
+ "csrc_0071": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-04-10 17:10:28",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0071",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0071.html",
+  "n_chars": 4632,
+  "summary": "〔2026〕5号当事人:中兴财光华会计师事务所(特殊普通合伙)(以下简称中兴财光华),住所:北京市西城区。陈利诚,2026-02-27"
+ },
+ "csrc_0072": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-04-10 17:07:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0072",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0072.html",
+  "n_chars": 4189,
+  "summary": "〔2026〕6号当事人:中审众环会计师事务所(特殊普通合伙)(以下简称中审众环),住所:湖北省武汉市。当事人:黄秀,2026-02-27"
+ },
+ "csrc_0073": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-03-20 18:30:40",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0073",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0073.html",
+  "n_chars": 1948,
+  "summary": "〔2026〕4号当事人:王利霞,女。依据《中华人民共和国证券法》(以下简称《证券法》)有关规定,我会对王利霞内,2026-02-24"
+ },
+ "csrc_0074": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-03-13 18:16:19",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0074",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0074.html",
+  "n_chars": 1561,
+  "summary": "〔2026〕3号当事人:王政,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对王政操纵,2026-01-30"
+ },
+ "csrc_0075": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-03-13 18:11:27",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0075",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0075.html",
+  "n_chars": 1585,
+  "summary": "〔2026〕2号当事人:彭少东,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对彭少东,2026-01-30"
+ },
+ "csrc_0076": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-01-23 17:03:33",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0076",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0076.html",
+  "n_chars": 3733,
+  "summary": "〔2026〕1号当事人:余韩,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对余韩操纵,2026-01-09"
+ },
+ "csrc_0077": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-01-09 18:16:38",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0077",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0077.html",
+  "n_chars": 2802,
+  "summary": "〔2025〕154号当事人:江苏世纪同仁律师事务所(以下简称世纪同仁),住所:江苏省南京市。阚赢,男,涉案项目法律,2025-12-25"
+ },
+ "csrc_0078": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-01-09 18:06:16",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0078",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0078.html",
+  "n_chars": 4172,
+  "summary": "〔2025〕153号当事人:公证天业会计师事务所(特殊普通合伙)(以下简称公证天业),住所:江苏省无锡市。刘勇,男,,2025-12-24"
+ },
+ "csrc_0079": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-01-09 18:22:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0079",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0079.html",
+  "n_chars": 1829,
+  "summary": "〔2025〕150号当事人:赵伟,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对赵伟内,2025-12-10"
+ },
+ "csrc_0080": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-26 18:25:22",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0080",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0080.html",
+  "n_chars": 2120,
+  "summary": "〔2025〕151号当事人:蒋伟,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对蒋伟内,2025-12-10"
+ },
+ "csrc_0081": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-19 18:54:02",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0081",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0081.html",
+  "n_chars": 3438,
+  "summary": "〔2025〕149号 当事人:青岛大摩证券投资有限公司。住所:山东省青岛市。 李成武,男,时任青岛大摩证券投,2025-11-28"
+ },
+ "csrc_0082": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-19 18:37:56",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0082",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0082.html",
+  "n_chars": 5876,
+  "summary": "〔2025〕148号 当事人:江苏诺泰澳赛诺生物制药股份有限公司(以下简称诺泰生物或者公司),住所:浙江省杭,2025-11-28"
+ },
+ "csrc_0083": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-12 17:34:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0083",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0083.html",
+  "n_chars": 3404,
+  "summary": "〔2025〕147号 当事人:赵叶青,男。 王震,男。 刘峰,男。 依据2005年修订的《中华人民共和国证券法》,2025-11-27"
+ },
+ "csrc_0084": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-05 18:18:22",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0084",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0084.html",
+  "n_chars": 3709,
+  "summary": "〔2025〕146号 当事人:三七互娱网络科技集团股份有限公司(以下简称三七互娱),住所:广东省广州市。 李,2025-11-26"
+ },
+ "csrc_0085": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-11-28 18:13:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0085",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0085.html",
+  "n_chars": 7088,
+  "summary": "〔2025〕145号当事人:江苏吴中医药发展股份有限公司(以下简称*ST苏吴),住所:江苏省苏州市。钱群山,男,*ST苏,2025-11-25"
+ },
+ "csrc_0086": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-12 17:34:20",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0086",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0086.html",
+  "n_chars": 3331,
+  "summary": "〔2025〕144号 当事人:湖北九有投资股份有限公司(以下简称*ST九有),住所:广东省深圳市。 李明,男,201,2025-11-24"
+ },
+ "csrc_0087": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-05 18:19:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0087",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0087.html",
+  "n_chars": 2942,
+  "summary": "〔2025〕134号 当事人:上海市通力律师事务所(以下简称通力所),住所:上海市。 李仲英,女。 郭珣,女。,2025-11-19"
+ },
+ "csrc_0088": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-05 18:22:05",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0088",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0088.html",
+  "n_chars": 1763,
+  "summary": "〔2025〕133号 当事人:陈芹燕,女。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我,2025-11-12"
+ },
+ "csrc_0089": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-05 18:24:32",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0089",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0089.html",
+  "n_chars": 1709,
+  "summary": "〔2025〕132号 当事人:黄克,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-11-12"
+ },
+ "csrc_0090": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-11-14 18:37:59",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0090",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0090.html",
+  "n_chars": 2875,
+  "summary": "〔2025〕131号当事人:北京中方信富投资管理咨询有限公司(以下简称中方信富),住所:北京市朝阳区。张松,女,时,2025-11-05"
+ },
+ "csrc_0091": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-11-14 18:33:55",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0091",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0091.html",
+  "n_chars": 4471,
+  "summary": "〔2025〕130号当事人:利安达会计师事务所(特殊普通合伙)(以下简称利安达),住所:北京市朝阳区。孙光辉,男,涉,2025-10-27"
+ },
+ "csrc_0092": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-11-14 18:32:00",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0092",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0092.html",
+  "n_chars": 4138,
+  "summary": "〔2025〕129号当事人:利安达会计师事务所(特殊普通合伙)(以下简称利安达),住所:北京市朝阳区。张志辉,男。周,2025-10-27"
+ },
+ "csrc_0093": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-11-07 18:32:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0093",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0093.html",
+  "n_chars": 1606,
+  "summary": "〔2025〕128号张健,男。依据《中华人民共和国证券法》(以下简称《证券法》)有关规定,我会对张健内幕交易案进,2025-10-24"
+ },
+ "csrc_0094": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-11-14 18:30:00",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0094",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0094.html",
+  "n_chars": 2209,
+  "summary": "〔2025〕127号当事人:于懿,男。贺靖,男。依据2005年修订的《中华人民共和国证券法》(以下简称2005年《证券法,2025-10-17"
+ },
+ "csrc_0095": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-11-14 18:26:29",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0095",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0095.html",
+  "n_chars": 4464,
+  "summary": "〔2025〕126号当事人:南京越博动力系统股份有限公司(以下简称越博动力)。李占江,男,时为越博动力实际控制人,2025-10-17"
+ },
+ "csrc_0096": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-10-31 18:38:40",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0096",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0096.html",
+  "n_chars": 1645,
+  "summary": "〔2025〕125号当事人:潘卫东,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对潘卫,2025-10-16"
+ },
+ "csrc_0097": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-10-31 18:35:55",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0097",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0097.html",
+  "n_chars": 1926,
+  "summary": "〔2025〕124号当事人:张赫明,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对张赫,2025-10-16"
+ },
+ "csrc_0098": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-10-31 18:32:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0098",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0098.html",
+  "n_chars": 1757,
+  "summary": "〔2025〕123号当事人:杜英,女。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对杜英内,2025-10-16"
+ },
+ "csrc_0099": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-10-31 18:29:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0099",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0099.html",
+  "n_chars": 1835,
+  "summary": "〔2025〕122号当事人:甄红,女。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对甄红内,2025-10-16"
+ },
+ "csrc_0100": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-10-17 18:38:12",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0100",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0100.html",
+  "n_chars": 6557,
+  "summary": "〔2025〕121号 当事人:北京郎鉴企业管理咨询中心(普通合伙)(原亚太(集团)会计师事务所(特殊普通合伙),,2025-10-10"
+ },
+ "csrc_0101": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-10-17 18:31:44",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0101",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0101.html",
+  "n_chars": 3644,
+  "summary": "〔2025〕120号 当事人:中兴华会计师事务所(特殊普通合伙)(以下简称中兴华所),住所:北京市丰台区。 于,2025-09-28"
+ },
+ "csrc_0102": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-10-31 18:28:06",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0102",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0102.html",
+  "n_chars": 4726,
+  "summary": "〔2025〕119号当事人:青岛中资中程集团股份有限公司(以下简称青岛中程),住所:山东省青岛市。JIAXIAOYU(曾用,2025-09-28"
+ },
+ "csrc_0103": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-26 18:51:21",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0103",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0103.html",
+  "n_chars": 1352,
+  "summary": "〔2025〕118号 当事人:金亚平,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对,2025-09-09"
+ },
+ "csrc_0104": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-26 18:51:16",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0104",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0104.html",
+  "n_chars": 1344,
+  "summary": "〔2025〕117号 当事人:邓纬安,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对,2025-09-09"
+ },
+ "csrc_0105": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-26 18:51:08",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0105",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0105.html",
+  "n_chars": 1453,
+  "summary": "〔2025〕116号 当事人:赵友强,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对,2025-09-09"
+ },
+ "csrc_0106": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-26 18:50:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0106",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0106.html",
+  "n_chars": 1770,
+  "summary": "〔2025〕115号 当事人:展翔,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对,2025-09-09"
+ },
+ "csrc_0107": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-12 18:26:37",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0107",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0107.html",
+  "n_chars": 2601,
+  "summary": "〔2025〕114号当事人:中兴财光华会计师事务所(特殊普通合伙)(以下简称中兴财所),住所:北京市西城区。陈发勇,2025-09-05"
+ },
+ "csrc_0108": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-12 18:26:07",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0108",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0108.html",
+  "n_chars": 4643,
+  "summary": "〔2025〕113号当事人:永拓会计师事务所(特殊普通合伙)(以下简称永拓所),住所:北京市朝阳区。王伟雄,男,延安,2025-09-02"
+ },
+ "csrc_0109": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-19 18:45:04",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0109",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0109.html",
+  "n_chars": 1208,
+  "summary": "〔2025〕112号 当事人:张宁,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-08-28"
+ },
+ "csrc_0110": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-19 18:44:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0110",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0110.html",
+  "n_chars": 1620,
+  "summary": "〔2025〕111号 当事人:魏星,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我,2025-08-28"
+ },
+ "csrc_0111": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-19 18:44:47",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0111",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0111.html",
+  "n_chars": 1596,
+  "summary": "〔2025〕110号 当事人:王晖,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-08-28"
+ },
+ "csrc_0112": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-19 18:44:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0112",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0112.html",
+  "n_chars": 1792,
+  "summary": "〔2025〕109号 当事人:彭相华,男。 揭敏,女。 依据《中华人民共和国证券法》(以下简称《证券法》)的,2025-08-28"
+ },
+ "csrc_0113": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-19 18:44:02",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0113",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0113.html",
+  "n_chars": 1645,
+  "summary": "〔2025〕108号 当事人:韩家银,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我,2025-08-28"
+ },
+ "csrc_0114": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-05 18:29:11",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0114",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0114.html",
+  "n_chars": 2751,
+  "summary": "〔2025〕107号 当事人:北京国融兴华资产评估有限责任公司(以下简称国融兴华),住所:北京市东城区。 王汝,2025-08-22"
+ },
+ "csrc_0115": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-08 18:53:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0115",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0115.html",
+  "n_chars": 2954,
+  "summary": "〔2025〕106号当事人:北京市竞天公诚律师事务所(以下简称竞天公诚),住所:北京市朝阳区。郑婷婷,女,时任竞天,2025-07-28"
+ },
+ "csrc_0116": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-08 18:53:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0116",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0116.html",
+  "n_chars": 2295,
+  "summary": "〔2025〕105号 当事人:东海证券股份有限公司(以下简称东海证券),金洲慈航集团股份有限公司重大资产重组,2025-07-21"
+ },
+ "csrc_0117": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 19:03:50",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0117",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0117.html",
+  "n_chars": 1649,
+  "summary": "〔2025〕104号 当事人:钱建俊,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我,2025-07-21"
+ },
+ "csrc_0118": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:59:08",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0118",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0118.html",
+  "n_chars": 1297,
+  "summary": "〔2025〕103号 当事人:杨凌权,男。 陈美君,女。 依据《中华人民共和国证券法》(以下简称《证券法》),2025-07-21"
+ },
+ "csrc_0119": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:58:10",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0119",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0119.html",
+  "n_chars": 1667,
+  "summary": "〔2025〕102号 当事人:林淑钰,女。 当事人:林淑嫔,女。 依据《中华人民共和国证券法》(以下简称《证,2025-07-21"
+ },
+ "csrc_0120": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:56:29",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0120",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0120.html",
+  "n_chars": 1515,
+  "summary": "〔2025〕101号 当事人:林陈锋,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我,2025-07-21"
+ },
+ "csrc_0121": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:55:35",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0121",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0121.html",
+  "n_chars": 1533,
+  "summary": "〔2025〕100号 当事人:季雯,女。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-07-21"
+ },
+ "csrc_0122": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:54:18",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0122",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0122.html",
+  "n_chars": 1579,
+  "summary": "〔2025〕99号 当事人:陈伟,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对,2025-07-21"
+ },
+ "csrc_0123": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:53:20",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0123",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0123.html",
+  "n_chars": 1534,
+  "summary": "〔2025〕98号 当事人:陈玉斌,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-07-21"
+ },
+ "csrc_0124": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:51:44",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0124",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0124.html",
+  "n_chars": 1592,
+  "summary": "〔2025〕97号 当事人:林陈锡,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-07-21"
+ },
+ "csrc_0125": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:50:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0125",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0125.html",
+  "n_chars": 1505,
+  "summary": "〔2025〕96号 当事人:黄幼英,女。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-07-21"
+ },
+ "csrc_0126": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-01 18:46:19",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0126",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0126.html",
+  "n_chars": 3229,
+  "summary": "〔2025〕95号 当事人:沃克森(北京)国际资产评估有限公司(以下简称沃克森),住所:北京市海淀区。 李辉,,2025-07-18"
+ },
+ "csrc_0127": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-08-08 19:03:49",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0127",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0127.html",
+  "n_chars": 2316,
+  "summary": "〔2025〕93号 当事人:康伟。 当事人:汤奇青。 依据《中华人民共和国证券法》(以下简称《证券法》)的,2025-07-17"
+ },
+ "csrc_0128": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-05 18:28:21",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0128",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0128.html",
+  "n_chars": 1896,
+  "summary": "〔2025〕92号 当事人:唐小宏,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会,2025-07-15"
+ },
+ "csrc_0129": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-25 18:41:04",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0129",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0129.html",
+  "n_chars": 4437,
+  "summary": "〔2025〕91号当事人:立信会计师事务所(特殊普通合伙)(以下简称立信所),住所:上海市黄浦区。王斌,男。唐成,男,2025-07-11"
+ },
+ "csrc_0130": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-18 18:34:35",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0130",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0130.html",
+  "n_chars": 5942,
+  "summary": "〔2025〕90号当事人:信永中和会计师事务所(特殊普通合伙)(以下简称简称信永中和),住所:北京市东城区。杨宏,,2025-07-11"
+ },
+ "csrc_0131": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-25 18:38:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0131",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0131.html",
+  "n_chars": 6448,
+  "summary": "〔2025〕89号当事人:福建省爱迪尔珠宝实业股份有限公司(以下简称爱迪尔),住所:福建省龙岩市。苏日明,男,时任,2025-07-04"
+ },
+ "csrc_0132": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-12-05 18:28:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0132",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0132.html",
+  "n_chars": 3145,
+  "summary": "〔2025〕88号当事人:北方亚事资产评估有限责任公司(曾用名“北京北方亚事资产评估事务所(特殊普通合伙)”,以,2025-07-03"
+ },
+ "csrc_0133": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-18 18:34:45",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0133",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0133.html",
+  "n_chars": 2941,
+  "summary": "〔2025〕87号当事人:中水致远资产评估有限公司(以下简称中水致远),住所:北京市海淀区。简小忠,男,闻喜县炬鑫,2025-06-27"
+ },
+ "csrc_0134": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-11 18:47:21",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0134",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0134.html",
+  "n_chars": 1662,
+  "summary": "〔2025〕86号当事人:曹健,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对曹健内幕,2025-06-23"
+ },
+ "csrc_0135": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-04 18:41:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0135",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0135.html",
+  "n_chars": 1350,
+  "summary": "〔2025〕85号当事人:吴鹏,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对吴鹏从业,2025-06-18"
+ },
+ "csrc_0136": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-27 20:01:53",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0136",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0136.html",
+  "n_chars": 3357,
+  "summary": "〔2025〕83号当事人:大信会计师事务所(特殊普通合伙)(以下简称大信所),广汇物流股份有限公司(以下简称广汇物,2025-06-14"
+ },
+ "csrc_0137": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-27 19:35:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0137",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0137.html",
+  "n_chars": 4277,
+  "summary": "〔2025〕82号当事人:北京海润天睿律师事务所(以下简称海润所),住所:北京市朝阳区。张圣怀,男,海润所涉案项目,2025-06-09"
+ },
+ "csrc_0138": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-27 19:58:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0138",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0138.html",
+  "n_chars": 5131,
+  "summary": "〔2025〕81号当事人:大信会计师事务所(特殊普通合伙)(以下简称大信所),住所:北京市海淀区。郭安静,女,江西星,2025-06-05"
+ },
+ "csrc_0139": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-09-05 18:29:04",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0139",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0139.html",
+  "n_chars": 1848,
+  "summary": "〔2025〕79号 当事人:彭海军,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我,2025-05-29"
+ },
+ "csrc_0140": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-27 19:41:32",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0140",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0140.html",
+  "n_chars": 4043,
+  "summary": "〔2025〕78号当事人:中喜会计师事务所(特殊普通合伙,以下简称中喜所),为华讯方舟股份有限公司(以下简称华讯,2025-05-26"
+ },
+ "csrc_0141": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-27 19:38:44",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0141",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0141.html",
+  "n_chars": 3778,
+  "summary": "〔2025〕77号当事人:中审众环会计师事务所(特殊普通合伙)(以下简称中审众环所),住所:湖北省武汉市。彭翔,男,2025-05-23"
+ },
+ "csrc_0142": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 19:24:33",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0142",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0142.html",
+  "n_chars": 1778,
+  "summary": "〔2025〕76号当事人:黄鹏飞,男。刘乙萱,女。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,,2025-05-22"
+ },
+ "csrc_0143": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 19:05:48",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0143",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0143.html",
+  "n_chars": 1616,
+  "summary": "〔2025〕75号当事人:焦建安,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对焦建安,2025-05-22"
+ },
+ "csrc_0144": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 19:21:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0144",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0144.html",
+  "n_chars": 1654,
+  "summary": "〔2025〕74号当事人:张郁,女。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对张郁内幕,2025-05-22"
+ },
+ "csrc_0145": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 19:01:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0145",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0145.html",
+  "n_chars": 1647,
+  "summary": "〔2025〕73号当事人:陈金全,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对陈金全,2025-05-22"
+ },
+ "csrc_0146": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 18:54:01",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0146",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0146.html",
+  "n_chars": 1487,
+  "summary": "〔2025〕72号当事人:沈洁,女。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对沈洁内幕,2025-05-20"
+ },
+ "csrc_0147": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 18:53:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0147",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0147.html",
+  "n_chars": 1415,
+  "summary": "〔2025〕71号当事人:费越,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对费越内幕,2025-05-20"
+ },
+ "csrc_0148": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 18:53:34",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0148",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0148.html",
+  "n_chars": 1411,
+  "summary": "〔2025〕70号当事人:陈忱,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对陈忱内幕,2025-05-20"
+ },
+ "csrc_0149": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 18:53:24",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0149",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0149.html",
+  "n_chars": 1574,
+  "summary": "〔2025〕69号当事人:杨旭辉,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对杨旭辉,2025-05-20"
+ },
+ "csrc_0150": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 18:53:34",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0150",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0150.html",
+  "n_chars": 1720,
+  "summary": "〔2025〕68号当事人:顾英,女。应永勇,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我,2025-05-20"
+ },
+ "csrc_0151": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 18:53:24",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0151",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0151.html",
+  "n_chars": 1491,
+  "summary": "〔2025〕67号当事人:王子东,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对王子东,2025-05-20"
+ },
+ "csrc_0152": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-20 18:52:53",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0152",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0152.html",
+  "n_chars": 1916,
+  "summary": "〔2025〕66号当事人:邵力行,男。嵇志慧,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,,2025-05-20"
+ },
+ "csrc_0153": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-13 19:19:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0153",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0153.html",
+  "n_chars": 1651,
+  "summary": "〔2025〕65号当事人:屠文斌,男。依据2005年修订的《中华人民共和国证券法》(以下简称2005年《证券法》)的有,2025-05-19"
+ },
+ "csrc_0154": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-13 19:22:10",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0154",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0154.html",
+  "n_chars": 2286,
+  "summary": "〔2025〕64号当事人:承立新,男,时任江阴市恒润重工股份有限公司(以下简称恒润股份)、上海润六尺科技有限公司,2025-05-16"
+ },
+ "csrc_0155": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-23 18:57:21",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0155",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0155.html",
+  "n_chars": 2731,
+  "summary": "〔2025〕62号当事人:田汉,男。京汉控股集团有限公司(以下简称京汉控股),住所:北京市。建水泰融企业管理有限,2025-05-15"
+ },
+ "csrc_0156": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-04 18:39:55",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0156",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0156.html",
+  "n_chars": 1841,
+  "summary": "〔2025〕63号当事人:郑永添,男。朱阳,男。林进叠,男。林政清,男。陈泽鑫,男。罗健灿,男。杭启飞,男。依据《,2025-05-14"
+ },
+ "csrc_0157": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-30 18:39:09",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0157",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0157.html",
+  "n_chars": 3422,
+  "summary": "〔2025〕61号当事人:北京中银律师事务所(以下简称中银所),住所:北京市朝阳区。吴小娟,女,中银所律师。季灵芝,2025-05-08"
+ },
+ "csrc_0158": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-06 19:09:45",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0158",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0158.html",
+  "n_chars": 1522,
+  "summary": "〔2025〕59号当事人:金穗春,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对金穗春,2025-04-30"
+ },
+ "csrc_0159": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-23 18:58:31",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0159",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0159.html",
+  "n_chars": 1274,
+  "summary": "〔2025〕60号当事人:夏德全,男。依据2005年修订、2014年修正的《中华人民共和国证券法》(以下简称2005年《证,2025-04-30"
+ },
+ "csrc_0160": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-30 18:43:47",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0160",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0160.html",
+  "n_chars": 6270,
+  "summary": "〔2025〕58号当事人:首航高科能源技术股份有限公司(以下简称首航高科),住所:北京市丰台区。黄文佳,男,时任首,2025-04-29"
+ },
+ "csrc_0161": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:39:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0161",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0161.html",
+  "n_chars": 3707,
+  "summary": "〔2025〕57号当事人:东方集团股份有限公司(以下简称东方集团)。张宏伟,男,时为东方集团实际控制人。孙明涛,,2025-04-29"
+ },
+ "csrc_0162": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:43:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0162",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0162.html",
+  "n_chars": 1508,
+  "summary": "〔2025〕56号当事人:黎志勇,男,。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对黎志,2025-04-15"
+ },
+ "csrc_0163": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-23 19:00:17",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0163",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0163.html",
+  "n_chars": 2158,
+  "summary": "〔2025〕55号当事人:谷晓嘉,女,延安必康制药股份有限公司(以下简称延安必康)时任董事长、总裁。依据《中华人,2025-04-14"
+ },
+ "csrc_0164": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:35:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0164",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0164.html",
+  "n_chars": 1610,
+  "summary": "〔2025〕54号当事人:王建国,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对王建国,2025-04-14"
+ },
+ "csrc_0165": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:33:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0165",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0165.html",
+  "n_chars": 1594,
+  "summary": "〔2025〕53号当事人:李语忻,女。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对李语忻,2025-04-14"
+ },
+ "csrc_0166": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:32:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0166",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0166.html",
+  "n_chars": 1593,
+  "summary": "〔2025〕52号当事人:李磊,男。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对李磊内幕,2025-04-14"
+ },
+ "csrc_0167": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:38:16",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0167",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0167.html",
+  "n_chars": 1599,
+  "summary": "〔2025〕51号当事人:梁智勇。依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对梁智勇内,2025-04-14"
+ },
+ "csrc_0168": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:30:17",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0168",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0168.html",
+  "n_chars": 1421,
+  "summary": "〔2025〕48号当事人:厦门顺鑫联投资管理有限公司(以下简称顺鑫联)。黄冰煌,男。依据2005年修订、2014年修正,2025-04-14"
+ },
+ "csrc_0169": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-04 18:48:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0169",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0169.html",
+  "n_chars": 1321,
+  "summary": "〔2025〕50号当事人:任熙,男。依据2005年修订、2014年修正的《中华人民共和国证券法》(以下简称2005年《证券,2025-04-11"
+ },
+ "csrc_0170": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-07-04 18:39:37",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0170",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0170.html",
+  "n_chars": 1677,
+  "summary": "〔2025〕49号当事人:任熙,男。陈建华,男。依据2005年修订、2014年修正的《中华人民共和国证券法》(以下简称,2025-04-11"
+ },
+ "csrc_0171": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-30 18:46:13",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0171",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0171.html",
+  "n_chars": 1908,
+  "summary": "〔2025〕47号当事人:海南易凡私募基金管理有限公司(原浙江易凡资产管理有限公司,以下简称易凡公司),住所:海,2025-03-31"
+ },
+ "csrc_0172": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:28:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0172",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0172.html",
+  "n_chars": 1326,
+  "summary": "〔2025〕46号当事人:何昆儒,男。依据2005年修订、2014年修正的《中华人民共和国证券法》(以下简称2005年《证,2025-03-31"
+ },
+ "csrc_0173": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-28 18:40:20",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0173",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0173.html",
+  "n_chars": 3551,
+  "summary": "〔2025〕45号 当事人:海南普利制药股份有限公司(以下简称普利制药或者公司)。 范敏华,女,时任普利制药,2025-03-21"
+ },
+ "csrc_0174": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-15 18:47:37",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0174",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0174.html",
+  "n_chars": 4826,
+  "summary": "〔2025〕44号当事人:张坤宇,男,时任天津卓朗信息科技股份有限公司(以下简称卓朗科技)董事、副总经理、副董事,2025-03-20"
+ },
+ "csrc_0175": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-04-18 18:41:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0175",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0175.html",
+  "n_chars": 1811,
+  "summary": "〔2025〕43号 当事人:赵平,男。 依据《中华人民共和国证券法》(以下简称《证券法》)的有关规定,我会对赵,2025-03-14"
+ },
+ "csrc_0176": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-04-18 18:40:16",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0176",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0176.html",
+  "n_chars": 1748,
+  "summary": "〔2025〕42号 当事人:崔常晟,男,时任兴民智通(集团)股份有限公司(以下简称兴民智通)董事、副总裁。 依据,2025-03-14"
+ },
+ "csrc_0177": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-04-18 18:42:27",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0177",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0177.html",
+  "n_chars": 1787,
+  "summary": "〔2025〕41号 当事人:赵丰,男,时任兴民智通(集团)股份有限公司(以下简称兴民智通)董事长、法定代表人。,2025-03-14"
+ },
+ "csrc_0178": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-21 18:22:16",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0178",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0178.html",
+  "n_chars": 1628,
+  "summary": "〔2025〕40号当事人:江苏天瑞仪器股份有限公司(以下简称天瑞仪器)。刘召贵,时任天瑞仪器董事长,。吴照兵,时,2025-03-10"
+ },
+ "csrc_0179": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-06 19:09:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0179",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0179.html",
+  "n_chars": 4924,
+  "summary": "〔2025〕39号当事人:苏亚金诚会计师事务所(特殊普通合伙)(以下简称苏亚金诚),江苏舜天股份有限公司(以下简称,2025-03-05"
+ },
+ "csrc_0180": {
+  "n_pages": null,
+  "title": "行政处罚罚没款缴纳方式变更公告",
+  "pub_date": "2025-02-28 20:05:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0180",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0180.html",
+  "n_chars": 947,
+  "summary": "因我会财政汇缴专户不再使用(即原中信银行汇缴专户,账号:7111010189800000162),后续行政处罚罚没款收缴需通,2025-02-28"
+ },
+ "csrc_0181": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-28 18:40:19",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0181",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0181.html",
+  "n_chars": 3107,
+  "summary": "〔2025〕38号 当事人:延安必康制药股份有限公司(以下简称延安必康)。 李宗松,男,延安必康实际控制人。,2025-02-27"
+ },
+ "csrc_0182": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-06-27 19:53:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0182",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0182.html",
+  "n_chars": 5650,
+  "summary": "〔2025〕37号当事人:大信会计师事务所(特殊普通合伙)(以下简称大信所),住所:北京市海淀区。王树奇,男,丰汇租,2025-02-24"
+ },
+ "csrc_0183": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-16 18:36:32",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0183",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0183.html",
+  "n_chars": 5474,
+  "summary": "〔2025〕35号当事人:大华会计师事务所(特殊普通合伙)(以下简称大华所),国美通讯设备股份有限公司(以下简称国,2025-02-24"
+ },
+ "csrc_0184": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-14 18:34:26",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0184",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0184.html",
+  "n_chars": 5306,
+  "summary": "〔2025〕36号当事人:广东超华科技股份有限公司(以下简称超华科技或公司),住所:广东省梅州市。梁健锋,男,超华,2025-02-24"
+ },
+ "csrc_0185": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-25 17:44:34",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0185",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0185.html",
+  "n_chars": 1873,
+  "summary": "〔2025〕29号 当事人:高光荣,男,成都新易盛通信技术股份有限公司(以下简称新易盛或上市公司)董事长,住,2025-02-21"
+ },
+ "csrc_0186": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-14 18:33:49",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0186",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0186.html",
+  "n_chars": 1459,
+  "summary": "〔2025〕34号当事人:谢勇,男,住址:广东省深圳市。依据《中华人民共和国证券法》(以下简称《证券法》)的有关,2025-02-20"
+ },
+ "csrc_0187": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-16 18:34:36",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0187",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0187.html",
+  "n_chars": 5967,
+  "summary": "〔2025〕33号当事人:北京兴华会计师事务所(特殊普通合伙,以下简称兴华所),辅仁药业集团制药股份有限公司(以,2025-02-18"
+ },
+ "csrc_0188": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-14 18:33:33",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0188",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0188.html",
+  "n_chars": 1201,
+  "summary": "〔2025〕32号当事人:梁志明,男,住址:贵州省贵阳市。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-17"
+ },
+ "csrc_0189": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-14 18:32:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0189",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0189.html",
+  "n_chars": 1191,
+  "summary": "〔2025〕31号当事人:代薇,女,住址:贵州省贵阳市。依据《中华人民共和国证券法》(以下简称《证券法》)的有关,2025-02-17"
+ },
+ "csrc_0190": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-21 18:04:00",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0190",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0190.html",
+  "n_chars": 2863,
+  "summary": "〔2025〕30号 当事人:郎洪平,男,住所:贵州省贵阳市。 北京朗信投资有限公司(以下简称北京朗信),地址:,2025-02-17"
+ },
+ "csrc_0191": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-03-14 18:31:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0191",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0191.html",
+  "n_chars": 1352,
+  "summary": "〔2025〕28号 当事人:杨波,男,住址:江西省上饶市。 依据2005年修订、2014年修正的《中华人民共和国证,2025-02-14"
+ },
+ "csrc_0192": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-16 18:33:04",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0192",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0192.html",
+  "n_chars": 5719,
+  "summary": "〔2025〕27号当事人:中审华会计师事务所(特殊普通合伙)(以下简称中审华),宁夏远高实业集团有限公司(以下简称,2025-02-10"
+ },
+ "csrc_0193": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-08 18:15:13",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0193",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0193.html",
+  "n_chars": 10772,
+  "summary": "〔2025〕26号 当事人:和合期货有限公司(以下简称和合期货),住所:山西省太原市。 和合资产管理(上海)有,2025-02-06"
+ },
+ "csrc_0194": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:39:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0194",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0194.html",
+  "n_chars": 1657,
+  "summary": "〔2025〕23号当事人:胥国栋,男,住址:上海市普陀区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0195": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:38:22",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0195",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0195.html",
+  "n_chars": 1586,
+  "summary": "〔2025〕22号当事人:项曦彪,男,住址:上海市青浦区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0196": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:37:00",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0196",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0196.html",
+  "n_chars": 1565,
+  "summary": "〔2025〕21号当事人:陈恺,男,住址:上海市浦东新区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0197": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:34:32",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0197",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0197.html",
+  "n_chars": 1504,
+  "summary": "〔2025〕11号当事人:渤海证券股份有限公司(以下简称渤海证券),住所:天津经济技术开发区。张锐,男,时任渤海证,2025-02-05"
+ },
+ "csrc_0198": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:31:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0198",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0198.html",
+  "n_chars": 1594,
+  "summary": "〔2025〕20号当事人:丁振斌,男,住址:上海市徐汇区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0199": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:29:02",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0199",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0199.html",
+  "n_chars": 1638,
+  "summary": "〔2025〕19号当事人:陆彦,男,住址:上海市浦东新区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0200": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:22:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0200",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0200.html",
+  "n_chars": 1679,
+  "summary": "〔2025〕18号当事人:宋围财,男,住址:上海市长宁区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0201": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:21:04",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0201",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0201.html",
+  "n_chars": 1574,
+  "summary": "〔2025〕17号当事人:余建,男,住址:上海市杨浦区。依据《中华人民共和国证券法》(以下简称《证券法》)的有关,2025-02-05"
+ },
+ "csrc_0202": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:19:22",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0202",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0202.html",
+  "n_chars": 1663,
+  "summary": "〔2025〕16号当事人:张旭钦,男,住址:上海市长宁区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0203": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:17:38",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0203",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0203.html",
+  "n_chars": 1985,
+  "summary": "〔2025〕15号当事人:管旭东,男,住址:上海市闵行区。依据《中华人民共和国证券法》(以下简称《证券法》)的有,2025-02-05"
+ },
+ "csrc_0204": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:14:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0204",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0204.html",
+  "n_chars": 8752,
+  "summary": "〔2025〕10号 当事人:天衡会计师事务所(特殊普通合伙)(以下简称天衡所),江苏中利集团股份有限公司(以下,2025-02-05"
+ },
+ "csrc_0205": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:09:44",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0205",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0205.html",
+  "n_chars": 1550,
+  "summary": "〔2025〕14号 当事人:卫炜,男,住址:上海市徐汇区。 依据《中华人民共和国证券法》(以下简称《证券法》,2025-02-05"
+ },
+ "csrc_0206": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:08:50",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0206",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0206.html",
+  "n_chars": 1528,
+  "summary": "〔2025〕13号 当事人:徐正栋,男,住址:上海市黄浦区。 依据《中华人民共和国证券法》(以下简称《证券法,2025-02-05"
+ },
+ "csrc_0207": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:07:32",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0207",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0207.html",
+  "n_chars": 1607,
+  "summary": "〔2025〕12号 当事人:张国希,男,1966年12月出生,住址:上海市长宁区。 依据《中华人民共和国证券法》(,2025-02-05"
+ },
+ "csrc_0208": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:29:35",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0208",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0208.html",
+  "n_chars": 3431,
+  "summary": "〔2025〕9号当事人:渤海融幸(上海)商贸有限公司(以下简称渤海融幸),住所:中国(上海)自由贸易试验区。肖佳华,2025-01-26"
+ },
+ "csrc_0209": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:13:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0209",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0209.html",
+  "n_chars": 6252,
+  "summary": "〔2025〕8号 当事人:天衡会计师事务所(特殊普通合伙)(以下简称天衡所),住所:江苏省南京市。 陆德忠,男,2025-01-20"
+ },
+ "csrc_0210": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-21 18:12:29",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0210",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0210.html",
+  "n_chars": 1749,
+  "summary": "〔2025〕7号当事人:黄泽民,男,住址:广东省普宁市。依据《中华人民共和国证券法》(以下简称《证券法》)的有关,2025-01-17"
+ },
+ "csrc_0211": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-01-09 18:29:54",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0211",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0211.html",
+  "n_chars": 2964,
+  "summary": "〔2025〕6号当事人:上海双创投资管理有限公司(以下简称双创资管),住所:上海市宝山区。戴思元,男,时任双创资,2025-01-16"
+ },
+ "csrc_0212": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-02-08 18:15:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0212",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0212.html",
+  "n_chars": 3870,
+  "summary": "〔2025〕3号 当事人:辅仁药业集团制药股份有限公司(以下简称辅仁药业或公司),住所:河南省郑州市。 朱文臣,2025-01-08"
+ },
+ "csrc_0213": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-17 19:07:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0213",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0213.html",
+  "n_chars": 5350,
+  "summary": "〔2025〕2号 当事人:众华会计师事务所(特殊普通合伙)(以下简称众华所),地址:上海市嘉定工业区。 凌松,2025-01-06"
+ },
+ "csrc_0214": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-10 18:37:26",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0214",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0214.html",
+  "n_chars": 4595,
+  "summary": "〔2025〕1号 当事人:东吴证券股份有限公司(以下简称东吴证券),国美通讯股份有限公司(以下简称国美通讯,2025-01-03"
+ },
+ "csrc_0215": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-24 18:31:41",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0215",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0215.html",
+  "n_chars": 2570,
+  "summary": "〔2024〕164号 当事人:苏同,男,系华扬联众数字技术股份有限公司(以下简称华扬联众或公司)实际控制人,住址,2024-12-31"
+ },
+ "csrc_0216": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-24 18:33:16",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0216",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0216.html",
+  "n_chars": 1995,
+  "summary": "〔2024〕163号 当事人:高海华,男,住址:广东省惠州市。 依据《中华人民共和国证券法》(以下简称《证券,2024-12-31"
+ },
+ "csrc_0217": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-17 19:08:56",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0217",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0217.html",
+  "n_chars": 2119,
+  "summary": "〔2024〕159号 当事人:陶坤,男,住址:江苏省无锡市。 依据《中华人民共和国证券法》(以下简称《证券法,2024-12-27"
+ },
+ "csrc_0218": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-05-16 18:38:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0218",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0218.html",
+  "n_chars": 4410,
+  "summary": "〔2024〕161号当事人:立信会计师事务所(特殊普通合伙)(以下简称立信所),常熟市国瑞科技股份有限公司(原常熟,2024-12-27"
+ },
+ "csrc_0219": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-17 19:10:06",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0219",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0219.html",
+  "n_chars": 2032,
+  "summary": "〔2024〕157号 当事人:王齐萍,女,住址:江苏省无锡市。 依据《中华人民共和国证券法》(以下简称《证券,2024-12-27"
+ },
+ "csrc_0220": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-17 19:10:40",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0220",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0220.html",
+  "n_chars": 1543,
+  "summary": "〔2024〕158号 当事人:吕斌,男,住址:江苏省无锡市。 依据《中华人民共和国证券法》(以下简称《证券法》)的,2024-12-27"
+ },
+ "csrc_0221": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-17 19:11:56",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0221",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0221.html",
+  "n_chars": 2126,
+  "summary": "〔2024〕160号 当事人:贺雪琴,男,住址:广东省深圳市。 罗晓玲,女,住址:广东省深圳市。 依据《中华人,2024-12-27"
+ },
+ "csrc_0222": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-24 18:34:00",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0222",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0222.html",
+  "n_chars": 1612,
+  "summary": "〔2024〕156号 当事人:丁键,男,住址:江苏省江阴市。 依据《中华人民共和国证券法》(以下简称《证券法,2024-12-23"
+ },
+ "csrc_0223": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-24 18:34:50",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0223",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0223.html",
+  "n_chars": 1604,
+  "summary": "〔2024〕155号 当事人:赵静,女,住址:江苏省江阴市。 依据《中华人民共和国证券法》(以下简称《证券法,2024-12-23"
+ },
+ "csrc_0224": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-24 18:39:20",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0224",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0224.html",
+  "n_chars": 1595,
+  "summary": "〔2024〕154号 当事人:葛亚玺,男,住址:上海市浦东新区。 依据《中华人民共和国证券法》(以下简称《证,2024-12-23"
+ },
+ "csrc_0225": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-24 18:35:44",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0225",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0225.html",
+  "n_chars": 1671,
+  "summary": "〔2024〕153号 当事人:纪云涛,男,住址:上海市浦东新区。 依据《中华人民共和国证券法》(以下简称《证,2024-12-23"
+ },
+ "csrc_0226": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-27 18:43:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0226",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0226.html",
+  "n_chars": 3667,
+  "summary": "〔2024〕152号当事人:中国国际金融股份有限公司(以下简称中金公司),上海思尔芯技术股份有限公司(以下简称思,2024-12-20"
+ },
+ "csrc_0227": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-27 18:41:20",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0227",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0227.html",
+  "n_chars": 2438,
+  "summary": "〔2024〕151号 当事人:天津卓朗信息科技股份有限公司(以下简称卓朗科技),住所:天津市红桥区。 依据2005年,2024-12-20"
+ },
+ "csrc_0228": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-17 19:13:23",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0228",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0228.html",
+  "n_chars": 1758,
+  "summary": "〔2024〕146号 当事人:程一凯,男,住址:广东省广州市。 林黎黎,女,住址:福建省福州市。 依据《中华人,2024-12-17"
+ },
+ "csrc_0229": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-17 19:14:33",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0229",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0229.html",
+  "n_chars": 6955,
+  "summary": "〔2024〕148号 当事人:广东正中珠江会计师事务所(特殊普通合伙)(以下简称正中珠江),住所:广东省广州市,2024-12-17"
+ },
+ "csrc_0230": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-03 18:20:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0230",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0230.html",
+  "n_chars": 8444,
+  "summary": "〔2024〕147号当事人:易事特集团股份有限公司,住所:广东省东莞市。何思模,男,1965年2月出生,2020年8月前为易,2024-12-17"
+ },
+ "csrc_0231": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-03 18:23:18",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0231",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0231.html",
+  "n_chars": 2882,
+  "summary": "〔2024〕150号 当事人:福建浔兴拉链科技股份有限公司(以下简称浔兴股份),住所:福建省晋江市。 天津汇,2024-12-17"
+ },
+ "csrc_0232": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-03 18:24:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0232",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0232.html",
+  "n_chars": 2951,
+  "summary": "〔2024〕149号 当事人:黄宁杰,男,1971年11月出生,地址:河北省唐山市路北区。 王博,男,1977年1月出生,,2024-12-17"
+ },
+ "csrc_0233": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-01-09 18:45:34",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0233",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0233.html",
+  "n_chars": 5129,
+  "summary": "〔2024〕145号当事人:上海双创投资管理有限公司(以下简称双创资管),住所:上海市宝山区。张赛美,女,时任双创,2024-12-12"
+ },
+ "csrc_0234": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-03-13 18:26:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0234",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0234.html",
+  "n_chars": 3326,
+  "summary": "〔2024〕144号当事人:谢文轩,男。吴墨尧,男。洪碧娇,女。刘贵士,男。依据2005年修订的《中华人民共和国证券,2024-12-12"
+ },
+ "csrc_0235": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-10 18:53:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0235",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0235.html",
+  "n_chars": 3022,
+  "summary": "〔2024〕143号 当事人:许淼,男,住址:北京市昌平区。 依据《中华人民共和国证券法》(以下简称《证券法》)的,2024-12-11"
+ },
+ "csrc_0236": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-10 18:43:27",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0236",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0236.html",
+  "n_chars": 4063,
+  "summary": "〔2024〕142号 当事人:承立新,男,时为江阴市恒润重工股份有限公司(以下简称恒润股份或上市公司)第二大,2024-12-09"
+ },
+ "csrc_0237": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-10 18:41:33",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0237",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0237.html",
+  "n_chars": 2579,
+  "summary": "〔2024〕141号 当事人:汤秀清,男,1973年12月出生,时为广州市昊志机电股份有限公司(以下称昊志机电)实际,2024-12-09"
+ },
+ "csrc_0238": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-03-13 18:21:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0238",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0238.html",
+  "n_chars": 2937,
+  "summary": "〔2024〕140号当事人:谢文轩,男。林宇翔,男。吴墨尧,男。王俊沛,男。刘贵士,男。沈江涛,男。梁鸿剑,男。周峻,2024-12-06"
+ },
+ "csrc_0239": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-03 18:10:47",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0239",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0239.html",
+  "n_chars": 12717,
+  "summary": "〔2024〕138号 当事人:中准会计师事务所(特殊普通合伙)(以下简称中准所),吉林紫鑫药业股份有限公司(以,2024-12-03"
+ },
+ "csrc_0240": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-04-03 17:40:36",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0240",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0240.html",
+  "n_chars": 2593,
+  "summary": "〔2024〕139号当事人:储小晗,男,2017年5月至2018年8月期间为西藏发展股份有限公司(以下简称西藏发展)实际控,2024-12-03"
+ },
+ "csrc_0241": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-27 18:32:26",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0241",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0241.html",
+  "n_chars": 1942,
+  "summary": "〔2024〕136号当事人:王泉生,男,住址:福建省福州市。依据2005年修订的《中华人民共和国证券法》(以下简称20,2024-11-27"
+ },
+ "csrc_0242": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-10 18:57:17",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0242",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0242.html",
+  "n_chars": 3127,
+  "summary": "〔2024〕137号丁东湖,男,住址:浙江省杭州市。叶余,女,住址:浙江省杭州市。依据《中华人民共和国证券法》(以,2024-11-27"
+ },
+ "csrc_0243": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-20 18:30:34",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0243",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0243.html",
+  "n_chars": 8172,
+  "summary": "〔2024〕134号 当事人:王洋,住址:广东省深圳市龙华区。 邓龙辉,住址:广东省深圳市南山区。 高艳明,住,2024-11-25"
+ },
+ "csrc_0244": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-13 18:33:35",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0244",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0244.html",
+  "n_chars": 13913,
+  "summary": "〔2024〕132号 当事人:西藏发展股份有限公司(以下简称西藏发展),住所:西藏自治区拉萨市。 王坚,男,1962,2024-11-21"
+ },
+ "csrc_0245": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-06 19:19:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0245",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0245.html",
+  "n_chars": 2606,
+  "summary": "〔2024〕129号 当事人:夏成斌,男,1970年1月出生,住址:北京市朝阳区。 依据《中华人民共和国证券法》(,2024-11-13"
+ },
+ "csrc_0246": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-13 18:25:54",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0246",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0246.html",
+  "n_chars": 3692,
+  "summary": "〔2024〕131号 当事人:许文峰,男,1985年12月出生,住址:上海市浦东新区。 金鎏,男,1985年11月出生,住址:,2024-11-13"
+ },
+ "csrc_0247": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-13 18:02:24",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0247",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0247.html",
+  "n_chars": 1535,
+  "summary": "〔2024〕130号 当事人:马钰焰,女,1994年2月出生,住址:上海市杨浦区。 依据《中华人民共和国证券投资基金,2024-11-13"
+ },
+ "csrc_0248": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-27 18:21:05",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0248",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0248.html",
+  "n_chars": 2764,
+  "summary": "〔2024〕128号当事人:张晓樱,女,地址:福建省厦门市。陈柳毅,男,地址:福建省厦门市。陈柳增,男,地址:福建省厦,2024-11-11"
+ },
+ "csrc_0249": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-20 18:48:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0249",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0249.html",
+  "n_chars": 4905,
+  "summary": "〔2024〕127号 当事人:陈柳毅,地址:福建省厦门市思明区。 袁达,地址:北京市西城区。 吴硕,地址:内蒙古,2024-11-11"
+ },
+ "csrc_0250": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-06 18:42:08",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0250",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0250.html",
+  "n_chars": 2411,
+  "summary": "〔2024〕126号 当事人:朱泽宇,男,1992年1月出生,住址:福建省泉州市。 依据《中华人民共和国证券法》(,2024-11-11"
+ },
+ "csrc_0251": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-29 18:07:09",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0251",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0251.html",
+  "n_chars": 1266,
+  "summary": "〔2024〕125号当事人:尚文彦,男,1976年7月出生,住址:北京市西城区。依据《中华人民共和国证券法》(以下简称,2024-11-04"
+ },
+ "csrc_0252": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2025-01-03 18:26:12",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0252",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0252.html",
+  "n_chars": 14707,
+  "summary": "〔2024〕122号 当事人:吉林紫鑫药业股份有限公司(以下简称紫鑫药业),住所:吉林省通化市柳河县经济开发,2024-11-04"
+ },
+ "csrc_0253": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-29 18:05:54",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0253",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0253.html",
+  "n_chars": 1621,
+  "summary": "〔2024〕124号当事人:毕玉国,男,1968年8月出生,住址:山东省济南市。钟建春,男,1966年9月出生,住址:湖南省长,2024-11-04"
+ },
+ "csrc_0254": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-06 18:43:17",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0254",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0254.html",
+  "n_chars": 4569,
+  "summary": "〔2024〕121号 当事人:任昌兆,男,1960年6月出生,住址:湖北省武汉市武昌区。 戴晓东,男,1971年1月出生,2024-11-04"
+ },
+ "csrc_0255": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-01 19:25:53",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0255",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0255.html",
+  "n_chars": 2911,
+  "summary": "〔2024〕96号当事人:锦州港股份有限公司(以下简称锦州港或公司),住所:辽宁省锦州市经济技术开发区。徐健,男,2024-11-01"
+ },
+ "csrc_0256": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-22 19:19:29",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0256",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0256.html",
+  "n_chars": 3021,
+  "summary": "〔2024〕120号当事人:刘洪涛,男,1985年3月出生,住址:上海市闵行区。娄阁,男,1990年10月出生,住址:重庆市江北,2024-10-29"
+ },
+ "csrc_0257": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-22 20:20:28",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0257",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0257.html",
+  "n_chars": 5350,
+  "summary": "〔2024〕119号当事人:朱映君,女,1970年9月出生,住址:广东省深圳市南山区。依据《中华人民共和国证券法》(以,2024-10-29"
+ },
+ "csrc_0258": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-22 19:38:04",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0258",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0258.html",
+  "n_chars": 4672,
+  "summary": "〔2024〕118号当事人:陈丹,男,1966年10月出生,住址:广东省湛江市霞山区。刘毅,女,1974年7月出生,住址:广东省,2024-10-25"
+ },
+ "csrc_0259": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-22 19:15:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0259",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0259.html",
+  "n_chars": 4704,
+  "summary": "〔2024〕117号当事人:刘惠忠,男,1986年8月出生,住址:江西省吉安市。依据《中华人民共和国证券法》(以下简称,2024-10-23"
+ },
+ "csrc_0260": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-29 18:03:48",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0260",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0260.html",
+  "n_chars": 3868,
+  "summary": "〔2024〕116号当事人:陈柳毅,男,1981年2月出生,地址:福建省厦门市。陈柳增,男,1986年6月出生,地址:福建省厦,2024-10-23"
+ },
+ "csrc_0261": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-12-06 19:39:09",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0261",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0261.html",
+  "n_chars": 3498,
+  "summary": "〔2024〕115号 ,2024-10-22"
+ },
+ "csrc_0262": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-08 18:10:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0262",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0262.html",
+  "n_chars": 15357,
+  "summary": "〔2024〕112号当事人:浙江世纪华通集团股份有限公司(以下简称世纪华通),住所:浙江省绍兴市上虞区。王佶,男,,2024-10-22"
+ },
+ "csrc_0263": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2026-01-09 18:37:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0263",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0263.html",
+  "n_chars": 6263,
+  "summary": "〔2024〕111号当事人:赛特斯信息科技股份有限公司,住所:江苏省南京市。逯利军,男,住址:上海市杨浦区。李拯,,2024-10-18"
+ },
+ "csrc_0264": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-08 18:08:11",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0264",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0264.html",
+  "n_chars": 5848,
+  "summary": "〔2024〕109号当事人:黄琼,女,1979年12月出生,地址:广东省深圳市龙华区。唐亚波,男,1987年8月出生,地址:广东,2024-10-14"
+ },
+ "csrc_0265": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-08 18:06:32",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0265",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0265.html",
+  "n_chars": 8327,
+  "summary": "〔2024〕110号当事人:公证天业会计师事务所(特殊普通合伙)(以下简称公证天业),住所:江苏省无锡市。王震,男,,2024-10-14"
+ },
+ "csrc_0266": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-10-25 18:06:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0266",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0266.html",
+  "n_chars": 2029,
+  "summary": "〔2024〕107号当事人:刘磊,男,1981年11月出生,住址:上海市徐汇区。依据《中华人民共和国证券法》(以下简称《,2024-10-08"
+ },
+ "csrc_0267": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-10-25 18:05:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0267",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0267.html",
+  "n_chars": 2700,
+  "summary": "〔2024〕106号当事人:朱涛,男,1981年4月出生,住址:上海市虹口区。依据《中华人民共和国证券法》(以下简称《,2024-10-08"
+ },
+ "csrc_0268": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-10-25 18:03:54",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0268",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0268.html",
+  "n_chars": 2078,
+  "summary": "〔2024〕105号当事人:陈建华,男,1979年10月出生,住址:上海市徐汇区。依据《中华人民共和国证券法》(以下简称,2024-10-08"
+ },
+ "csrc_0269": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-10-18 18:06:00",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0269",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0269.html",
+  "n_chars": 7582,
+  "summary": "〔2024〕108号当事人:国美通讯设备股份有限公司(以下简称国美通讯或公司),住所:山东省济南市历下区。宋林林,2024-10-08"
+ },
+ "csrc_0270": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-10-25 16:51:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0270",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0270.html",
+  "n_chars": 4098,
+  "summary": "〔2024〕104号当事人:广汇物流股份有限公司(以下简称广汇物流),住所:新疆维吾尔自治区乌鲁木齐市天山区。杨,2024-09-30"
+ },
+ "csrc_0271": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（苏亚金诚）",
+  "pub_date": "2024-09-25 20:01:38",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0271",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0271.html",
+  "n_chars": 14615,
+  "summary": "〔2024〕103号 当事人:苏亚金诚会计师事务所(特殊普通合伙,以下简称苏亚金诚所),住所:江苏省南京市泰山,2024-09-23"
+ },
+ "csrc_0272": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（陈伟、仇建明）",
+  "pub_date": "2024-09-25 19:02:48",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0272",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0272.html",
+  "n_chars": 2770,
+  "summary": "〔2024〕101号 当事人:陈伟,男,1984年1月出生,时任北京天洪集团有限公司董事长,住址:江苏省扬州市。 ,2024-09-23"
+ },
+ "csrc_0273": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（银信资产评估有限公司）",
+  "pub_date": "2024-09-27 18:06:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0273",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0273.html",
+  "n_chars": 5531,
+  "summary": "〔2024〕102号 当事人:银信资产评估有限公司(以下简称银信评估),住所:上海市嘉定区。,2024-09-23"
+ },
+ "csrc_0274": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（宜华集团及其责任人员）",
+  "pub_date": "2024-10-18 18:02:40",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0274",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0274.html",
+  "n_chars": 6506,
+  "summary": "〔2024〕100号当事人:宜华企业(集团)有限公司(以下简称宜华集团),住所:广东省汕头市澄海区。刘绍喜,男,1963,2024-09-18"
+ },
+ "csrc_0275": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（方士雄等）",
+  "pub_date": "2024-09-25 20:17:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0275",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0275.html",
+  "n_chars": 1918,
+  "summary": "〔2024〕99号 当事人:王孝安,男,1966年8月出生,浙江东海潮实业集团有限公司法定代表人、实际控制人,住,2024-09-13"
+ },
+ "csrc_0276": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（普华永道、汤振峰、朱立为、蔡秀娟）",
+  "pub_date": "2024-09-14 10:22:35",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0276",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0276.html",
+  "n_chars": 7678,
+  "summary": "当事人:普华永道中天会计师事务所(特殊普通合伙)(以下简称普华永道),住所:上海市浦东新区东育路588号前滩中,2024-09-11"
+ },
+ "csrc_0277": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（朱重北等）",
+  "pub_date": "2024-09-25 20:11:58",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0277",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0277.html",
+  "n_chars": 7621,
+  "summary": "〔2024〕97号 当事人:朱重北,男,1956年12月出生,时任南京华脉科技股份有限公司(以下简称华脉科技)副董,2024-09-05"
+ },
+ "csrc_0278": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（涂尔帆）",
+  "pub_date": "2024-09-25 20:19:28",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0278",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0278.html",
+  "n_chars": 3187,
+  "summary": "〔2024〕95号 当事人:涂尔帆,男,1982年9月出生,时任深圳前海海雅金融控股有限公司(系私募基金管理人,以,2024-09-03"
+ },
+ "csrc_0279": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（大信所）",
+  "pub_date": "2024-09-13 20:00:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0279",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0279.html",
+  "n_chars": 7676,
+  "summary": "〔2024〕94号 当事人:大信会计师事务所(特殊普通合伙,以下简称大信所),金正大生态工程集团股份有限公司,2024-09-02"
+ },
+ "csrc_0280": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（阳光集团）",
+  "pub_date": "2024-10-18 17:59:05",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0280",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0280.html",
+  "n_chars": 4332,
+  "summary": "当事人:江苏阳光集团有限公司(以下简称阳光集团),住所:江苏省江阴市新桥镇陶新路18号。 ,2024-08-30"
+ },
+ "csrc_0281": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（惠程科技）",
+  "pub_date": "2024-09-13 20:01:06",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0281",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0281.html",
+  "n_chars": 6694,
+  "summary": "当事人:重庆惠程信息科技股份有限公司(原深圳市惠程信息科技股份有限公司,以下简称惠程科,2024-08-30"
+ },
+ "csrc_0282": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（夏海钧）",
+  "pub_date": "2024-09-25 20:13:13",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0282",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0282.html",
+  "n_chars": 2601,
+  "summary": "〔2024〕90号 当事人:夏海钧,男,香港特别行政区居民,加拿大籍,时任中国恒大集团董事局副主席、总裁。 依,2024-08-28"
+ },
+ "csrc_0283": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（易伟）",
+  "pub_date": "2024-09-13 19:44:21",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0283",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0283.html",
+  "n_chars": 3527,
+  "summary": "〔2024〕89号 当事人:易伟,男,1971年11月出生,住址:广东省深圳市福田区。 依据2005年修订、2014年修正,2024-08-27"
+ },
+ "csrc_0284": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（赵远军）",
+  "pub_date": "2024-09-13 19:43:37",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0284",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0284.html",
+  "n_chars": 3109,
+  "summary": "〔2024〕88号 当事人:赵远军,男,1971年9月出生,住址:上海市浦东新区。 依据2019年修订的《中华人民共,2024-08-23"
+ },
+ "csrc_0285": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（张文铎）",
+  "pub_date": "2024-09-13 19:43:20",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0285",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0285.html",
+  "n_chars": 2639,
+  "summary": "〔2024〕87号 当事人:张文铎,男,1975年2月出生,住址:广东省深圳市福田区。 依据《中华人民共和国证券,2024-08-23"
+ },
+ "csrc_0286": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（王先玉）",
+  "pub_date": "2024-09-13 19:42:05",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0286",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0286.html",
+  "n_chars": 2792,
+  "summary": "〔2024〕86号 当事人:王先玉,男,1964年1月出生,住址:广东省深圳市龙华区。 依据《中华人民共和国证券,2024-08-23"
+ },
+ "csrc_0287": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（刘惠忠）",
+  "pub_date": "2024-09-13 19:41:42",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0287",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0287.html",
+  "n_chars": 2710,
+  "summary": "〔2024〕85号 当事人:刘惠忠,男,1986年8月出生,住址:江西省吉安市。 依据《中华人民共和国证券法》(以,2024-08-19"
+ },
+ "csrc_0288": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（中兴财光华、张磊、王轶）",
+  "pub_date": "2024-09-13 19:41:07",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0288",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0288.html",
+  "n_chars": 7579,
+  "summary": "〔2024〕84号 当事人:中兴财光华会计师事务所(特殊普通合伙)(以下简称中兴财光华),住所:北京市西城区。,2024-08-16"
+ },
+ "csrc_0289": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（曹禕琛）",
+  "pub_date": "2024-09-13 19:39:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0289",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0289.html",
+  "n_chars": 1548,
+  "summary": "〔2024〕83号 当事人:曹禕琛,男,1976年12月出生,时任开源证券股份有限公司从业人员。住址:上海市普陀区,2024-08-16"
+ },
+ "csrc_0290": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（陈韶隽、黄智俊）",
+  "pub_date": "2024-09-25 20:13:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0290",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0290.html",
+  "n_chars": 4539,
+  "summary": "〔2024〕82号 当事人:陈韶隽,男,1973年4月出生,住址:广州市越秀区。 黄智俊,男,1982年11月出生,住址:,2024-08-09"
+ },
+ "csrc_0291": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（李兴龙）",
+  "pub_date": "2024-09-13 19:39:06",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0291",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0291.html",
+  "n_chars": 2940,
+  "summary": "〔2024〕81号 当事人:李兴龙,男,1982年8月出生,住址:广东省深圳市罗湖区。 依据《中华人民共和国证券法,2024-08-09"
+ },
+ "csrc_0292": {
+  "n_pages": null,
+  "title": "标题：中国证券监督管理委员会行政处罚决定书",
+  "pub_date": "2024-11-01 18:08:21",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0292",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0292.html",
+  "n_chars": 9765,
+  "summary": "〔2024〕80号当事人:北京市康达律师事务所(以下简称康达所),住所:北京市朝阳区。栗皓,男,1966年8月出生,康达,2024-08-06"
+ },
+ "csrc_0293": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（天职国际）",
+  "pub_date": "2024-08-16 18:30:55",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0293",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0293.html",
+  "n_chars": 3179,
+  "summary": "〔2024〕78号当事人:天职国际会计师事务所(特殊普通合伙)(以下简称天职国际),住所:北京市海淀区车公庄西路1,2024-08-05"
+ },
+ "csrc_0294": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（闻天下、张学政、傅丽娜）",
+  "pub_date": "2024-08-16 18:12:17",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0294",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0294.html",
+  "n_chars": 2641,
+  "summary": "〔2024〕79号当事人:闻天下科技集团有限公司(以下简称闻天下),住所:西藏自治区拉萨市金珠西路158号世通阳光,2024-08-05"
+ },
+ "csrc_0295": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（ST鹏博士及其责任人员）",
+  "pub_date": "2024-08-16 18:10:05",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0295",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0295.html",
+  "n_chars": 13200,
+  "summary": "〔2024〕77号当事人:鹏博士电信传媒集团股份有限公司(以下简称ST鹏博士或公司),住所:北京市朝阳区朝外大街乙,2024-08-05"
+ },
+ "csrc_0296": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（瑞华所、李岩、陈丽）",
+  "pub_date": "2024-08-16 18:07:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0296",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0296.html",
+  "n_chars": 3318,
+  "summary": "〔2024〕75号当事人:瑞华会计师事务所(特殊普通合伙)(以下简称瑞华所),系苏州扬子江新型材料股份有限公司(以,2024-07-22"
+ },
+ "csrc_0297": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（陈建华）",
+  "pub_date": "2024-09-25 19:02:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0297",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0297.html",
+  "n_chars": 2357,
+  "summary": "〔2024〕74号 当事人:陈建华,男,1984年9月出生,住址:福建省连江县。 依据2005年《中华人民共和国证券,2024-07-17"
+ },
+ "csrc_0298": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（孙宏君）",
+  "pub_date": "2024-08-16 18:04:52",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0298",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0298.html",
+  "n_chars": 3761,
+  "summary": "〔2024〕73号当事人:孙宏君,男,1972年11月出生,住址:江苏省苏州市平江区。依据《中华人民共和国证券法》(以,2024-07-17"
+ },
+ "csrc_0299": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（高飞、龙杰、尤立峰）",
+  "pub_date": "2024-08-16 17:57:32",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0299",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0299.html",
+  "n_chars": 7111,
+  "summary": "〔2024〕72号当事人:高飞,男,1979年7月出生,住址:上海市黄浦区。龙杰,男,1985年2月出生,住址:上海市奉贤区。,2024-07-16"
+ },
+ "csrc_0300": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（华道生物及其责任人员）",
+  "pub_date": "2024-08-16 17:55:37",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0300",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0300.html",
+  "n_chars": 5232,
+  "summary": "〔2024〕71号当事人:苏州华道生物药业股份有限公司(以下简称华道生物),住所:江苏省苏州市常熟市江苏高科技氟,2024-07-08"
+ },
+ "csrc_0301": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（朱清亮）",
+  "pub_date": "2024-08-16 17:49:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0301",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0301.html",
+  "n_chars": 5754,
+  "summary": "〔2024〕70号当事人:朱清亮,男,1968年11月出生,住址:广东省深圳市盐田区。依据《中华人民共和国证券法》(以,2024-07-08"
+ },
+ "csrc_0302": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（于盛）",
+  "pub_date": "2024-08-16 17:49:35",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0302",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0302.html",
+  "n_chars": 7217,
+  "summary": "〔2024〕68号 当事人:于盛,男,1976年11月出生,住址:上海市静安区。 依据《中华人民共和国证券法》(以,2024-07-08"
+ },
+ "csrc_0303": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（张锰、王琳、周艳霞、陈雷、李婷婷）",
+  "pub_date": "2024-08-16 17:49:48",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0303",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0303.html",
+  "n_chars": 2906,
+  "summary": "〔2024〕69号 当事人:张锰,男,1979年11月出生,沈阳市广播电视台节目主持人,住址:辽宁省沈阳市浑南区。,2024-07-08"
+ },
+ "csrc_0304": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（郑仲鑫）",
+  "pub_date": "2024-08-16 17:49:57",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0304",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0304.html",
+  "n_chars": 4372,
+  "summary": "〔2024〕67号 当事人:郑仲鑫,男,1992年10月出生,广东大壮控股有限公司法定代表人,住址:广东省深圳市南,2024-07-02"
+ },
+ "csrc_0305": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（中利集团及其责任人员）",
+  "pub_date": "2024-08-16 17:00:52",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0305",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0305.html",
+  "n_chars": 10442,
+  "summary": "〔2024〕64号 当事人:江苏中利集团股份有限公司(以下简称中利集团),住所:江苏省常熟市东南经济开发区。 王,2024-07-01"
+ },
+ "csrc_0306": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（刘圣）",
+  "pub_date": "2024-08-16 17:50:07",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0306",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0306.html",
+  "n_chars": 3610,
+  "summary": "〔2024〕66号 当事人:刘圣,男,1979年8月出生,住址:上海市浦东新区。 依据《中华人民共和国证券法》(以,2024-07-01"
+ },
+ "csrc_0307": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（江桦、祝芹芳、盛利荣）",
+  "pub_date": "2024-08-16 17:50:23",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0307",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0307.html",
+  "n_chars": 7803,
+  "summary": "〔2024〕65号 当事人:江桦,男,1979年10月出生,住址:江苏省苏州市吴江区。 祝芹芳,女,1973年9月出生,住,2024-07-01"
+ },
+ "csrc_0308": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（恒信玺利及其责任人员）",
+  "pub_date": "2024-08-16 17:50:37",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0308",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0308.html",
+  "n_chars": 6157,
+  "summary": "〔2024〕63号 当事人:恒信玺利实业股份有限公司(以下简称恒信玺利),住所:西藏曲水县人民路雅江工业园2,2024-06-25"
+ },
+ "csrc_0309": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（王仙鹏）",
+  "pub_date": "2024-08-16 17:25:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0309",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0309.html",
+  "n_chars": 4211,
+  "summary": "〔2024〕62号当事人:王仙鹏,男,1980年7月出生,时任杭州久胜私募基金管理有限公司执行总裁,住址:浙江省杭州市,2024-06-25"
+ },
+ "csrc_0310": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（全卫军）",
+  "pub_date": "2024-08-16 17:22:40",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0310",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0310.html",
+  "n_chars": 3714,
+  "summary": "〔2024〕61号当事人:全卫军,男,1976年9月出生,时任荣盛能源有限公司副总经理,住址:浙江省杭州市萧山区。依据,2024-06-25"
+ },
+ "csrc_0311": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（吴妙琴）",
+  "pub_date": "2024-08-16 17:21:08",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0311",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0311.html",
+  "n_chars": 3042,
+  "summary": "〔2024〕60号当事人:吴妙琴,女,1977年7月出生,时任浙江荣盛控股集团有限公司(以下简称荣盛控股)总裁办副主任,2024-06-25"
+ },
+ "csrc_0312": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（周文丽）",
+  "pub_date": "2024-08-16 17:18:44",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0312",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0312.html",
+  "n_chars": 3100,
+  "summary": "〔2024〕59号当事人:周文丽,女,1977年9月出生,时任浙江荣盛控股集团有限公司(以下简称荣盛控股)财务管理中心,2024-06-25"
+ },
+ "csrc_0313": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（朱要文、赵杨、王立华）",
+  "pub_date": "2024-08-16 17:15:53",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0313",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0313.html",
+  "n_chars": 8566,
+  "summary": "〔2024〕58号当事人:朱要文,男,1964年10月出生,时任金洲慈航集团股份有限公司(以下简称*ST金洲)董事长,代董,2024-06-12"
+ },
+ "csrc_0314": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（陈丹、王伟）",
+  "pub_date": "2026-01-22 16:54:28",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0314",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0314.html",
+  "n_chars": 4606,
+  "summary": "〔2024〕57号当事人:陈丹,男,1966年10月出生,住址:广东省湛江市霞山区。王伟,男,1980年5月出生,住址:广东省,2024-06-11"
+ },
+ "csrc_0315": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（中天运、唐宗明、刘影）",
+  "pub_date": "2024-08-16 17:12:37",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0315",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0315.html",
+  "n_chars": 5226,
+  "summary": "〔2024〕56号当事人:中天运会计师事务所(特殊普通合伙)(以下简称中天运),网信证券有限责任公司(以下简称网信,2024-06-07"
+ },
+ "csrc_0316": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（冯越峰、宋晓平）",
+  "pub_date": "2024-08-16 17:09:45",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0316",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0316.html",
+  "n_chars": 9256,
+  "summary": "〔2024〕55号当事人:冯越峰,男,1984年11月出生,住址:上海市。宋晓平,男,1979年4月出生,住址:浙江省杭州市西,2024-06-03"
+ },
+ "csrc_0317": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（宋晓平）",
+  "pub_date": "2024-08-16 17:07:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0317",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0317.html",
+  "n_chars": 2765,
+  "summary": "〔2024〕54号当事人:宋晓平,男,1979年4月出生,住址:浙江省杭州市西湖区。依据2005年修订的《中华人民共和国,2024-06-03"
+ },
+ "csrc_0318": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（冯越峰）",
+  "pub_date": "2024-08-16 17:05:09",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0318",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0318.html",
+  "n_chars": 6664,
+  "summary": "〔2024〕53号当事人:冯越峰,男,1984年11月出生,住址:上海市。依据2005年修订的《中华人民共和国证券法》(以,2024-06-03"
+ },
+ "csrc_0319": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（章建平、方德基）",
+  "pub_date": "2024-08-16 18:43:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0319",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0319.html",
+  "n_chars": 1424,
+  "summary": "〔2024〕51号当事人:章建平,男,1966年4月出生,自由职业,住址:浙江省杭州市拱墅区。方德基,男,1944年11月出生,2024-05-28"
+ },
+ "csrc_0320": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（中汇会计师事务所、王甫荣、章归鸿）",
+  "pub_date": "2024-07-05 19:32:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0320",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0320.html",
+  "n_chars": 5567,
+  "summary": "〔2024〕50号 当事人:中汇会计师事务所(特殊普通合伙)(以下简称中汇所),深圳大通实业股份有限公司(以下简,2024-05-28"
+ },
+ "csrc_0321": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（恒大地产及其责任人员）",
+  "pub_date": "2024-05-31 16:30:25",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0321",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0321.html",
+  "n_chars": 10117,
+  "summary": "〔2024〕49号当事人:恒大地产集团有限公司(以下简称恒大地产),住所:广东省广州市天河区。许家印,男,1958年1,2024-05-21"
+ },
+ "csrc_0322": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（叶激艇）",
+  "pub_date": "2024-07-05 21:11:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0322",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0322.html",
+  "n_chars": 4823,
+  "summary": "〔2024〕48号 当事人:叶激艇,男,1971年5月出生,住址:福建省厦门市思明区。 依据《中华人民共和国证券,2024-05-15"
+ },
+ "csrc_0323": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（郑永添、朱阳、林进叠、林政清、陈泽鑫、蒲秀鹏、罗健灿、杭启飞）",
+  "pub_date": "2024-07-05 21:11:18",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0323",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0323.html",
+  "n_chars": 5550,
+  "summary": "〔2024〕47号 当事人:郑永添,男,1992年5月出生,住址:广东省广州市天河区。 朱阳,男,1987年8月出生,住,2024-05-13"
+ },
+ "csrc_0324": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（姜新、陈征、谢刚）",
+  "pub_date": "2024-07-05 21:10:56",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0324",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0324.html",
+  "n_chars": 6229,
+  "summary": "〔2024〕46号 当事人:姜新,男,1968年1月出生,住址:四川省仁寿县。 陈征,男,1978年3月出生,住址:福建省,2024-05-09"
+ },
+ "csrc_0325": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（张智）",
+  "pub_date": "2024-05-15 17:24:00",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0325",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0325.html",
+  "n_chars": 5028,
+  "summary": "〔2024〕44号当事人:张智,男,1985年9月出生,住址:广东省深圳市南山区。依据2005年修订的《中华人民共和国证,2024-04-30"
+ },
+ "csrc_0326": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（唐玉霞、唐素霞）",
+  "pub_date": "2024-05-15 17:22:06",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0326",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0326.html",
+  "n_chars": 4122,
+  "summary": "〔2024〕43号当事人:唐玉霞,女,1968年9月出生,住址:安徽省铜陵市铜官山区。唐素霞,女,1966年10月出生,住址:,2024-04-30"
+ },
+ "csrc_0327": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（王泽龙、洪浩炜、中信中证、中信证券、海通证券、韩雨辰）",
+  "pub_date": "2024-05-15 17:06:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0327",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0327.html",
+  "n_chars": 5130,
+  "summary": "〔2024〕45号 当事人:王泽龙,男,1996年7月出生,中核华原钛白股份有限公司(以下简称中核钛白或上市公司)实际,2024-04-30"
+ },
+ "csrc_0328": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（江苏舜天及其责任人员）",
+  "pub_date": "2024-07-05 19:32:02",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0328",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0328.html",
+  "n_chars": 9582,
+  "summary": "〔2024〕41号 当事人:江苏舜天股份有限公司(以下简称江苏舜天),住所:江苏省南京市雨花台区。 高松,男,1,2024-04-25"
+ },
+ "csrc_0329": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（国瑞科技及其责任人员）",
+  "pub_date": "2024-07-05 19:32:10",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0329",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0329.html",
+  "n_chars": 6775,
+  "summary": "〔2024〕42号 当事人:常熟市国瑞科技股份有限公司(原常熟瑞特电气股份有限公司,以下简称国瑞科技),住所,2024-04-25"
+ },
+ "csrc_0330": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（张明）",
+  "pub_date": "2024-05-15 19:52:45",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0330",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0330.html",
+  "n_chars": 17746,
+  "summary": "〔2024〕40号当事人:张明,男,1986年2月出生,住址:江苏省南京市雨花台区小行路金蕊家园20幢502室。依据《中华,2024-04-17"
+ },
+ "csrc_0331": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（胡晓麒）",
+  "pub_date": "2024-05-15 17:34:19",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0331",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0331.html",
+  "n_chars": 4851,
+  "summary": "吃当事人:胡晓麒,男,1976年5月出生,时任上海朴道瑞富投资管理中心(有限合伙)(以下简称朴道瑞富)执行事务合伙,2024-04-09"
+ },
+ "csrc_0332": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（胡晓）",
+  "pub_date": "2024-05-15 17:14:04",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0332",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0332.html",
+  "n_chars": 2379,
+  "summary": "〔2024〕38号 当事人:胡晓,男,1971年7月出生,住址:广东省深圳市福田区。 依据《中华人民共和国证券法,2024-04-02"
+ },
+ "csrc_0333": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（王法铜）",
+  "pub_date": "2024-05-15 17:11:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0333",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0333.html",
+  "n_chars": 1374,
+  "summary": "〔2024〕37号当事人:王法铜,男,1967年12月出生,住址:上海市。依据《中华人民共和国证券法》(以下简称《证券,2024-04-02"
+ },
+ "csrc_0334": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（宏图高科及其责任人员）",
+  "pub_date": "2024-08-16 18:31:08",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0334",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0334.html",
+  "n_chars": 10712,
+  "summary": "〔2024〕36号 当事人:江苏宏图高科技股份有限公司(以下简称宏图高科或上市公司),住所:江苏省南京市雨花台,2024-04-02"
+ },
+ "csrc_0335": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（张志勇）",
+  "pub_date": "2024-04-19 18:02:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0335",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0335.html",
+  "n_chars": 3991,
+  "summary": "〔2024〕35号当事人:张志勇,男,1963年11月出生,时任北京数知科技股份有限公司(以下简称数知科技)董事长、法,2024-03-27"
+ },
+ "csrc_0336": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（奥联电子及相关责任人员）",
+  "pub_date": "2024-04-19 17:58:07",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0336",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0336.html",
+  "n_chars": 5110,
+  "summary": "〔2024〕34号当事人:南京奥联汽车电子电器股份有限公司(以下简称奥联电子),住所:江苏省南京市江宁区谷里街道,2024-03-22"
+ },
+ "csrc_0337": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（刘斌、陈玉忠）",
+  "pub_date": "2024-04-19 17:42:23",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0337",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0337.html",
+  "n_chars": 2502,
+  "summary": "〔2024〕33号当事人:刘斌,男,1969年10月出生,住址:上海市黄浦区。陈玉忠,男,1964年3月出生,住址:江苏省张家,2024-03-21"
+ },
+ "csrc_0338": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（刘斌、任大成、韩臻）",
+  "pub_date": "2024-04-19 17:26:18",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0338",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0338.html",
+  "n_chars": 5025,
+  "summary": "〔2024〕32号当事人:刘斌,男,1969年10月出生,住址:上海市黄浦区。任大成,男,1979年1月出生,时任苏州天沃科技,2024-03-21"
+ },
+ "csrc_0339": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（钱仁勇、吴运娣、季斌、周芳蓉、惠峰、龙俊、石成华、江仁利）",
+  "pub_date": "2024-04-19 18:13:47",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0339",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0339.html",
+  "n_chars": 12729,
+  "summary": "〔2024〕31号当事人:钱仁勇,男,1970年4月出生,时任美尚生态景观股份有限公司(以下简称美尚生态或公司)财务经,2024-03-13"
+ },
+ "csrc_0340": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（孙兵）",
+  "pub_date": "2024-04-12 17:51:39",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0340",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0340.html",
+  "n_chars": 4433,
+  "summary": "〔2024〕29号当事人:孙兵,男,1974年9月出生,住址:天津市和平区。燕春生,男,1976年3月出生,住址:北京市通州区,2024-03-11"
+ },
+ "csrc_0341": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（张伟东）",
+  "pub_date": "2024-04-12 17:45:21",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0341",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0341.html",
+  "n_chars": 2883,
+  "summary": "〔2024〕27号当事人:张伟东,男,1969年4月出生,住址:辽宁省大连市中山区。依据《中华人民共和国证券法》(以下,2024-03-11"
+ },
+ "csrc_0342": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（刘玉环）",
+  "pub_date": "2024-04-12 17:40:45",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0342",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0342.html",
+  "n_chars": 2288,
+  "summary": "〔2024〕28号当事人:刘玉环,男,1976年1月出生,住址:辽宁省大连市甘井子区。依据《中华人民共和国证券法》(以,2024-03-11"
+ },
+ "csrc_0343": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（胡国灿）",
+  "pub_date": "2024-04-12 17:37:30",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0343",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0343.html",
+  "n_chars": 6691,
+  "summary": "〔2024〕30号当事人:胡国灿,男,1971年1月出生,住址:浙江省宁波市海曙区。依据2019年修订的《中华人民共和国,2024-03-11"
+ },
+ "csrc_0344": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（航天动力及相关责任人员）",
+  "pub_date": "2024-03-29 16:05:03",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0344",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0344.html",
+  "n_chars": 12499,
+  "summary": "〔2024〕26号 当事人:陕西航天动力高科技股份有限公司(以下简称航天动力),法定代表人、董事长为朱奇,住所,2024-03-07"
+ },
+ "csrc_0345": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（立信所、王翼初、张锦坤、何军）",
+  "pub_date": "2024-05-21 16:27:14",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0345",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0345.html",
+  "n_chars": 14126,
+  "summary": "〔2024〕25号当事人:立信会计师事务所(以下简称立信所),住所:上海市黄浦区南京东路61号四楼。王翼初,男,195,2024-03-05"
+ },
+ "csrc_0346": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（王斌）",
+  "pub_date": "2024-04-03 17:54:11",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0346",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0346.html",
+  "n_chars": 3724,
+  "summary": "〔2024〕23号当事人:王斌,男,1990年1月出生,住址:浙江省温州市瓯海区。依据《中华人民共和国证券法》(以下简,2024-03-01"
+ },
+ "csrc_0347": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（陈积雷）",
+  "pub_date": "2024-04-03 17:45:26",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0347",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0347.html",
+  "n_chars": 1657,
+  "summary": "〔2024〕24号当事人:陈积雷,男,1982年1月出生,住址:浙江省乐清市。依据《中华人民共和国证券法》(以下简称《,2024-03-01"
+ },
+ "csrc_0348": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（肖国强）",
+  "pub_date": "2024-03-29 16:04:38",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0348",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0348.html",
+  "n_chars": 5935,
+  "summary": "〔2024〕22号 当事人:肖国强,男,1970年9月出生,时任花王生态工程股份有限公司(以下简称花王股份)董事长,2024-03-01"
+ },
+ "csrc_0349": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（李剑峰）",
+  "pub_date": "2024-04-03 17:56:26",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0349",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0349.html",
+  "n_chars": 2058,
+  "summary": "〔2024〕21号当事人:李剑峰,男,1976年5月出生,住址:江苏省张家港市。依据《中华人民共和国证券法》(以下简称,2024-02-28"
+ },
+ "csrc_0350": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（秦英娟、张维成）",
+  "pub_date": "2024-04-18 08:56:11",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0350",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0350.html",
+  "n_chars": 6857,
+  "summary": "〔2024〕20号当事人:秦英娟,女,1975年11月出生,住址:江苏省无锡市。张维成,男,1962年7月出生,住址:江苏省无,2024-02-28"
+ },
+ "csrc_0351": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（ST实达、景百孚、周乐）",
+  "pub_date": "2024-03-29 16:04:18",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0351",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0351.html",
+  "n_chars": 3350,
+  "summary": "〔2024〕19号 当事人:福建实达集团股份有限公司(以下简称ST实达或公司),住所:福建省福州市闽侯县荆溪镇,2024-02-27"
+ },
+ "csrc_0352": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（潘后成）",
+  "pub_date": "2024-03-15 15:14:23",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0352",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0352.html",
+  "n_chars": 5701,
+  "summary": "〔2024〕17号 当事人:潘后成,男,1969年12月出生,地址:广东省深圳市福田区。 依据《中华人民共和国证券法,2024-02-08"
+ },
+ "csrc_0353": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（莘丹丹）",
+  "pub_date": "2024-03-15 15:13:58",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0353",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0353.html",
+  "n_chars": 1430,
+  "summary": "〔2024〕16号 当事人:莘丹丹,住所:浙江省杭州市萧山区。 依据《中华人民共和国证券法》(以下简称《证券,2024-02-08"
+ },
+ "csrc_0354": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（华讯方舟及相关责任人员）",
+  "pub_date": "2024-03-15 15:13:33",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0354",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0354.html",
+  "n_chars": 13468,
+  "summary": "〔2024〕15号 当事人:华讯方舟股份有限公司(以下简称华讯方舟),住所:广东省深圳市南山区科技园南区粤兴,2024-02-07"
+ },
+ "csrc_0355": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（新海宜及相关责任人员）",
+  "pub_date": "2024-03-15 15:23:28",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0355",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0355.html",
+  "n_chars": 13277,
+  "summary": "〔2024〕14号 当事人:新海宜科技集团股份有限公司(以下简称新海宜),住所:江苏省苏州市工业园区泾茂路1,2024-02-05"
+ },
+ "csrc_0356": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（中天运、陈晓龙、秦刘永）",
+  "pub_date": "2024-03-15 15:12:23",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0356",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0356.html",
+  "n_chars": 6541,
+  "summary": "〔2024〕13号 当事人:中天运会计师事务所(特殊普通合伙,以下简称中天运),美尚生态景观股份有限公司(以,2024-02-01"
+ },
+ "csrc_0357": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（金洲慈航、丰汇租赁及其责任人员）",
+  "pub_date": "2024-05-31 16:47:50",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0357",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0357.html",
+  "n_chars": 16753,
+  "summary": "〔2024〕12号当事人:金洲慈航集团股份有限公司(曾用名:金叶珠宝股份有限公司,以下简称金洲慈航),住所:黑龙江,2024-01-24"
+ },
+ "csrc_0358": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（熊继文）",
+  "pub_date": "2024-03-15 15:10:58",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0358",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0358.html",
+  "n_chars": 4438,
+  "summary": "〔2024〕11号 当事人:熊继文,女,1967年6月出生,住址:广东省深圳市福田区。 依据2019年修订的《中华人,2024-01-23"
+ },
+ "csrc_0359": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（王迎燕、季云）",
+  "pub_date": "2024-02-22 17:26:01",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0359",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0359.html",
+  "n_chars": 3104,
+  "summary": "〔2024〕9号当事人:王迎燕,女,1967年12月出生,时任美尚生态景观股份有限公司董事长,住址:江苏省无锡市崇安区,2024-01-18"
+ },
+ "csrc_0360": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（段琦、张泽）",
+  "pub_date": "2024-03-29 16:03:43",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0360",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0360.html",
+  "n_chars": 6443,
+  "summary": "〔2024〕8号 当事人:段琦,女,1967年11月出生,住址:山东省淄博市周村区。 张泽,男,1966年10月出生,住址,2024-01-18"
+ },
+ "csrc_0361": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（康隆达、张间芳、陈卫丽）",
+  "pub_date": "2024-03-15 15:10:48",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0361",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0361.html",
+  "n_chars": 4135,
+  "summary": "〔2024〕7号 当事人:浙江康隆达特种防护科技股份有限公司(简称康隆达或上市公司),住所:浙江省绍兴市上,2024-01-17"
+ },
+ "csrc_0362": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（缪玲红、邵林平）",
+  "pub_date": "2024-02-22 17:16:05",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0362",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0362.html",
+  "n_chars": 7581,
+  "summary": "〔2024〕5号 当事人:缪玲红,女,1969年8月出生,住址:浙江省杭州市西湖区。 邵林平,男,1970年12月出生,香,2024-01-16"
+ },
+ "csrc_0363": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（陈建平）",
+  "pub_date": "2024-02-22 17:15:51",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0363",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0363.html",
+  "n_chars": 8727,
+  "summary": "〔2024〕4号 当事人:陈建平,男,1972年12月出生,住址:浙江省杭州市萧山区。 依据2005年《中华人民共和国,2024-01-16"
+ },
+ "csrc_0364": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（陆长水、张维仰）",
+  "pub_date": "2024-02-22 17:15:40",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0364",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0364.html",
+  "n_chars": 8681,
+  "summary": "〔2024〕3号 当事人:陆长水,男,1969年3月出生,住址:浙江省杭州市萧山区。 张维仰,男,1965年7月出生,广东,2024-01-16"
+ },
+ "csrc_0365": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（张顺平）",
+  "pub_date": "2024-02-22 17:15:26",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0365",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0365.html",
+  "n_chars": 20954,
+  "summary": "〔2024〕6号 当事人:张顺平,男,1977年9月出生,住址:山东省潍坊市高新技术开发区。 依据2005年修订、201,2024-01-16"
+ },
+ "csrc_0366": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（谭存灵、陈斌、单凯）",
+  "pub_date": "2024-02-22 17:15:15",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0366",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0366.html",
+  "n_chars": 5044,
+  "summary": "〔2024〕2号 当事人:谭存灵,男,1962年7月出生,住址:北京市海淀区。 陈斌,男,1969年10月出生,住址:上海市,2024-01-08"
+ },
+ "csrc_0367": {
+  "n_pages": null,
+  "title": "标题：中国证监会行政处罚决定书（瑞华所及相关责任人员）",
+  "pub_date": "2024-02-09 10:45:59",
+  "column": "行政处罚",
+  "domain": "regulatory",
+  "doc_id": "csrc_0367",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0367.html",
+  "n_chars": 15226,
+  "summary": "〔2024〕1号 当事人:瑞华会计师事务所(特殊普通合伙)(以下简称瑞华所),住所:北京市海淀区西四环中路16,2024-01-08"
+ },
+ "csrc_0368": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（高松）",
+  "pub_date": "2024-07-05 19:33:42",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0368",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0368.html",
+  "n_chars": 4924,
+  "summary": "〔2024〕10号 当事人:高松,男,1971年2月出生,时任江苏舜天股份有限公司(以下简称江苏舜天)董事、总经理,2024-04-25"
+ },
+ "csrc_0369": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（袁亚非、杨怀珍、檀加敏、宋荣荣）",
+  "pub_date": "2024-08-16 18:34:23",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0369",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0369.html",
+  "n_chars": 7976,
+  "summary": "〔2024〕9号当事人:袁亚非,男,1964年12月出生,时任三胞集团有限公司(以下简称三胞集团)董事长、江苏宏图高科,2024-04-02"
+ },
+ "csrc_0370": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（张志勇）",
+  "pub_date": "2024-04-19 17:40:13",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0370",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0370.html",
+  "n_chars": 3991,
+  "summary": "〔2024〕8号当事人:张志勇,男,1963年11月出生,时任北京数知科技股份有限公司(以下简称数知科技)董事长、法定,2024-03-27"
+ },
+ "csrc_0371": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（刘斌、任大成、韩臻）",
+  "pub_date": "2024-04-19 17:35:28",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0371",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0371.html",
+  "n_chars": 4774,
+  "summary": "〔2024〕7号当事人:刘斌,男,1969年10月出生,住址:上海市黄浦区。任大成,男,1979年1月出生,时任苏州天沃科技,2024-03-21"
+ },
+ "csrc_0372": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（钱仁勇、龙俊、石成华）",
+  "pub_date": "2024-04-19 17:49:07",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0372",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0372.html",
+  "n_chars": 8043,
+  "summary": "〔2024〕6号当事人:钱仁勇,男,1970年4月出生,时任美尚生态景观股份有限公司(以下简称美尚生态或公司)财务经,2024-03-13"
+ },
+ "csrc_0373": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（郭新峰）",
+  "pub_date": "2024-03-29 16:05:53",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0373",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0373.html",
+  "n_chars": 2407,
+  "summary": "〔2024〕5号 当事人:郭新峰,男,1966年10月出生,时任航天动力总经理,住址:陕西省西安市雁塔区。 依据《中,2024-03-07"
+ },
+ "csrc_0374": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（王翼初、张锦坤、何军）",
+  "pub_date": "2024-05-21 16:30:00",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0374",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0374.html",
+  "n_chars": 14319,
+  "summary": "〔2024〕4号当事人:王翼初,男,1959年5月出生,山东龙力生物科技股份有限公司(以下简称龙力生物)2015年年报审,2024-03-04"
+ },
+ "csrc_0375": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（吴光胜）",
+  "pub_date": "2024-03-15 15:15:08",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0375",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0375.html",
+  "n_chars": 5538,
+  "summary": "〔2024〕3号 当事人:吴光胜,男,1979年1月出生,华讯方舟股份有限公司(以下简称华讯方舟)法定代表人、董,2024-02-07"
+ },
+ "csrc_0376": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（张亦斌）",
+  "pub_date": "2024-03-15 15:20:03",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0376",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0376.html",
+  "n_chars": 10950,
+  "summary": "〔2024〕2号 当事人:张亦斌,男,1964年12月出生,时任新海宜科技集团股份有限公司(以下简称新海宜)董事长,2024-02-05"
+ },
+ "csrc_0377": {
+  "n_pages": null,
+  "title": "标题：中国证监会市场禁入决定书（朱要文、汪洋、崔亿栋、杨彪）",
+  "pub_date": "2024-05-31 16:50:38",
+  "column": "市场禁入",
+  "domain": "regulatory",
+  "doc_id": "csrc_0377",
+  "src": "public_dataset_upload/raw/regulatory/html/csrc_0377.html",
+  "n_chars": 12066,
+  "summary": "〔2024〕1号当事人:朱要文,男,1964年10月出生,金洲慈航实际控制人,时任董事长,住址:广东省深圳市福田区。汪,2024-01-24"
+ },
+ "csrc_0001_att1": {
+  "n_pages": 16,
+  "title": "私募投资基金信息披露监督管理办法",
+  "domain": "regulatory",
+  "doc_id": "csrc_0001_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0001_att1.pdf",
+  "n_chars": 7570
+ },
+ "csrc_0001_att2": {
+  "n_pages": 4,
+  "title": "《私募投资基金信息披露监督管理办法》立法说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0001_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0001_att2.pdf",
+  "n_chars": 2262
+ },
+ "csrc_0002_att1": {
+  "n_pages": 13,
+  "title": "一、将第一条修改为：“为了规范开展证券期货领域行政执法当事人承诺工作，充分发挥行政执法当事人承诺制度在保护投资者合法权益，提高执法效率，维护",
+  "domain": "regulatory",
+  "doc_id": "csrc_0002_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0002_att1.pdf",
+  "n_chars": 6118
+ },
+ "csrc_0002_att2": {
+  "n_pages": 3,
+  "title": "为贯彻落实中央金融工作会议精神和新“国九条”关于完善行政执法当事人承诺制度的要求，中国证监会对《证券期货行政执法当事人承诺制度实施规定》（证",
+  "domain": "regulatory",
+  "doc_id": "csrc_0002_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0002_att2.pdf",
+  "n_chars": 1373
+ },
+ "csrc_0003_att1": {
+  "n_pages": 7,
+  "title": "（2025 年12 月30 日中国证券监督管理委员会第6 次委务会议审议通过）证券期货市场秩序，防范证券期货市场风险，保护公民、法人和",
+  "domain": "regulatory",
+  "doc_id": "csrc_0003_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0003_att1.pdf",
+  "n_chars": 3472
+ },
+ "csrc_0003_att2": {
+  "n_pages": 6,
+  "title": "为贯彻党的二十大和二十届二中、三中、四中全会及中央金融工作会议、中央全面依法治国工作会议精神，落实法治政府建设相关要求，进一步规范证券期货市",
+  "domain": "regulatory",
+  "doc_id": "csrc_0003_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0003_att2.pdf",
+  "n_chars": 3230
+ },
+ "csrc_0004_att1": {
+  "n_pages": 14,
+  "title": "金融基础设施监督管理办法",
+  "domain": "regulatory",
+  "doc_id": "csrc_0004_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0004_att1.pdf",
+  "n_chars": 7032
+ },
+ "csrc_0005_att1": {
+  "n_pages": 39,
+  "title": "一、删去第五条、第二十六条、第五十五条中的“监事”。二、将第十条中的“投资机构”修改为“私募投资基金”。三、将第十三条第二款第一项修改为：“",
+  "domain": "regulatory",
+  "doc_id": "csrc_0005_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0005_att1.pdf",
+  "n_chars": 21799
+ },
+ "csrc_0005_att2": {
+  "n_pages": 4,
+  "title": "关于《关于修改<上市公司重大资产重组管理办法>的决定》的立法说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0005_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0005_att2.pdf",
+  "n_chars": 2544
+ },
+ "csrc_0006_att1": {
+  "n_pages": 18,
+  "title": "中国证监会派出机构监管职责规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0006_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0006_att1.pdf",
+  "n_chars": 8649
+ },
+ "csrc_0006_att2": {
+  "n_pages": 3,
+  "title": "关于《中国证监会派出机构监管职责规定》的修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0006_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0006_att2.pdf",
+  "n_chars": 1429
+ },
+ "csrc_0007_att1": {
+  "n_pages": 24,
+  "title": "一、将第十二条第二款修改为：“发行人和主承销商应当安排不低于本次网下发行证券数量的一定比例的证券优先向公募基金、社保基金、养老金、年金基金、",
+  "domain": "regulatory",
+  "doc_id": "csrc_0007_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0007_att1.pdf",
+  "n_chars": 13078
+ },
+ "csrc_0007_att2": {
+  "n_pages": 3,
+  "title": "为贯彻落实《关于深化科创板改革服务科技创新和新质生产力发展的八条措施》《关于推动中长期资金入市工作的实施方案》，进一步完善发行承销制度，中国",
+  "domain": "regulatory",
+  "doc_id": "csrc_0007_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0007_att2.pdf",
+  "n_chars": 1447
+ },
+ "csrc_0008_att1": {
+  "n_pages": 394,
+  "title": "关于修改部分证券期货规章的决定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0008_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0008_att1.pdf",
+  "n_chars": 202141
+ },
+ "csrc_0008_att2": {
+  "n_pages": 3,
+  "title": "《关于修改部分证券期货规章的决定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0008_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0008_att2.pdf",
+  "n_chars": 1063
+ },
+ "csrc_0009_att1": {
+  "n_pages": 21,
+  "title": "上市公司信息披露管理办法",
+  "domain": "regulatory",
+  "doc_id": "csrc_0009_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0009_att1.pdf",
+  "n_chars": 11516
+ },
+ "csrc_0009_att2": {
+  "n_pages": 4,
+  "title": "《上市公司信息披露管理办法》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0009_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0009_att2.pdf",
+  "n_chars": 2285
+ },
+ "csrc_0010_att1": {
+  "n_pages": 8,
+  "title": "中国证监会行政处罚裁量基本规则",
+  "domain": "regulatory",
+  "doc_id": "csrc_0010_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0010_att1.pdf",
+  "n_chars": 3546
+ },
+ "csrc_0010_att2": {
+  "n_pages": 5,
+  "title": "《中国证监会行政处罚裁量基本规则》立法说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0010_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0010_att2.pdf",
+  "n_chars": 2787
+ },
+ "csrc_0011_att1": {
+  "n_pages": 9,
+  "title": "上市公司股东减持股份管理暂行办法",
+  "domain": "regulatory",
+  "doc_id": "csrc_0011_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0011_att1.pdf",
+  "n_chars": 4444
+ },
+ "csrc_0011_att2": {
+  "n_pages": 6,
+  "title": "《上市公司股东减持股份管理暂行办法》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0011_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0011_att2.pdf",
+  "n_chars": 2879
+ },
+ "csrc_0012_att1": {
+  "n_pages": 16,
+  "title": "关于修改《〈上市公司证券发行注册管理办法〉十条、第五十七条、第六十条有关规定的适用意见——证券期货法律适用意见第18 号》的",
+  "domain": "regulatory",
+  "doc_id": "csrc_0012_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0012_att1.pdf",
+  "n_chars": 8310
+ },
+ "csrc_0012_att2": {
+  "n_pages": 3,
+  "title": "《关于修改〈《上市公司证券发行注册管理办法》第九条、第十条、第十一条、第十三条、第四十条、第五十七条、第六十条有关规定的适用意见——证券期",
+  "domain": "regulatory",
+  "doc_id": "csrc_0012_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0012_att2.pdf",
+  "n_chars": 1302
+ },
+ "csrc_0013_att1": {
+  "n_pages": 10,
+  "title": "公开募集证券投资基金信息披露内容与格式准则第2 号—定期报告的内容与格式",
+  "domain": "regulatory",
+  "doc_id": "csrc_0013_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0013_att1.pdf",
+  "n_chars": 4793
+ },
+ "csrc_0013_att2": {
+  "n_pages": 2,
+  "title": "《公开募集证券投资基金信息披露内容与格式准则第2 号—定期报告的内容与格式》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0013_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0013_att2.pdf",
+  "n_chars": 569
+ },
+ "csrc_0014_att1": {
+  "n_pages": 5,
+  "title": "关于短线交易监管的若干规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0014_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0014_att1.pdf",
+  "n_chars": 2081
+ },
+ "csrc_0014_att2": {
+  "n_pages": 4,
+  "title": "《关于短线交易监管的若干规定》起草说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0014_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0014_att2.pdf",
+  "n_chars": 1894
+ },
+ "csrc_0015_att1": {
+  "n_pages": 3,
+  "title": "关于境内资产境外发行资产支持证券代币的监管指引",
+  "domain": "regulatory",
+  "doc_id": "csrc_0015_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0015_att1.pdf",
+  "n_chars": 1173
+ },
+ "csrc_0016_att1": {
+  "n_pages": 10,
+  "title": "公开募集证券投资基金业绩比较基准指引",
+  "domain": "regulatory",
+  "doc_id": "csrc_0016_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0016_att1.pdf",
+  "n_chars": 4617
+ },
+ "csrc_0016_att2": {
+  "n_pages": 4,
+  "title": "《公开募集证券投资基金业绩比较基准指引》起草说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0016_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0016_att2.pdf",
+  "n_chars": 2174
+ },
+ "csrc_0017_att1": {
+  "n_pages": 21,
+  "title": "证券期货业信息系统密码技术应用指引",
+  "domain": "regulatory",
+  "doc_id": "csrc_0017_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0017_att1.pdf",
+  "n_chars": 16370
+ },
+ "csrc_0017_att2": {
+  "n_pages": 44,
+  "title": "证券期货业信息系统分类与代码",
+  "domain": "regulatory",
+  "doc_id": "csrc_0017_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0017_att2.pdf",
+  "n_chars": 39376
+ },
+ "csrc_0018_att1": {
+  "n_pages": 10,
+  "title": "公开募集证券投资基金销售费用",
+  "domain": "regulatory",
+  "doc_id": "csrc_0018_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0018_att1.pdf",
+  "n_chars": 4413
+ },
+ "csrc_0018_att2": {
+  "n_pages": 1,
+  "title": "《公开募集证券投资基金销售费用管理规定》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0018_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0018_att2.pdf",
+  "n_chars": 419
+ },
+ "csrc_0019_att1": {
+  "n_pages": 2,
+  "title": "中国证监会关于推出商业不动产投资信托基金试点的公告",
+  "domain": "regulatory",
+  "doc_id": "csrc_0019_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0019_att1.pdf",
+  "n_chars": 994
+ },
+ "csrc_0019_att2": {
+  "n_pages": 2,
+  "title": "《中国证监会关于推出商业不动产投资信托基金试点的公告》起草说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0019_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0019_att2.pdf",
+  "n_chars": 1048
+ },
+ "csrc_0020_att1": {
+  "n_pages": 8,
+  "title": "证券期货违法行为“吹哨人”奖励工作规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0020_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0020_att1.pdf",
+  "n_chars": 3650
+ },
+ "csrc_0020_att2": {
+  "n_pages": 4,
+  "title": "《证券期货违法行为“吹哨人”奖励工作规定》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0020_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0020_att2.pdf",
+  "n_chars": 2136
+ },
+ "csrc_0021_att1": {
+  "n_pages": 5,
+  "title": "证券结算风险基金管理办法",
+  "domain": "regulatory",
+  "doc_id": "csrc_0021_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0021_att1.pdf",
+  "n_chars": 2124
+ },
+ "csrc_0021_att2": {
+  "n_pages": 3,
+  "title": "《证券结算风险基金管理办法》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0021_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0021_att2.pdf",
+  "n_chars": 1285
+ },
+ "csrc_0022_att1": {
+  "n_pages": 8,
+  "title": "关于加强资本市场中小投资者保护的若干意见",
+  "domain": "regulatory",
+  "doc_id": "csrc_0022_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0022_att1.pdf",
+  "n_chars": 4198
+ },
+ "csrc_0023_att1": {
+  "n_pages": 25,
+  "title": "上市公司治理准则",
+  "domain": "regulatory",
+  "doc_id": "csrc_0023_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0023_att1.pdf",
+  "n_chars": 11980
+ },
+ "csrc_0023_att2": {
+  "n_pages": 5,
+  "title": "《上市公司治理准则》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0023_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0023_att2.pdf",
+  "n_chars": 2126
+ },
+ "csrc_0024_att1": {
+  "n_pages": 151,
+  "title": "证券期货业业务域数据元规范第4 部分：证券交易所",
+  "domain": "regulatory",
+  "doc_id": "csrc_0024_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0024_att1.pdf",
+  "n_chars": 103031
+ },
+ "csrc_0024_att2": {
+  "n_pages": 55,
+  "title": "证券期货业业务域数据元规范第5 部分：企业资产证券化业务",
+  "domain": "regulatory",
+  "doc_id": "csrc_0024_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0024_att2.pdf",
+  "n_chars": 51519
+ },
+ "csrc_0024_att3": {
+  "n_pages": 20,
+  "title": "期货公司监管数据采集规范第2 部分：资产管理业务",
+  "domain": "regulatory",
+  "doc_id": "csrc_0024_att3",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0024_att3.pdf",
+  "n_chars": 18199
+ },
+ "csrc_0025_att1": {
+  "n_pages": 21,
+  "title": "期货公司分类评价规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0025_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0025_att1.pdf",
+  "n_chars": 11301
+ },
+ "csrc_0025_att2": {
+  "n_pages": 3,
+  "title": "《期货公司分类评价规定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0025_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0025_att2.pdf",
+  "n_chars": 1531
+ },
+ "csrc_0026_att1": {
+  "n_pages": 6,
+  "title": "期货公司互联网营销管理暂行规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0026_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0026_att1.pdf",
+  "n_chars": 2322
+ },
+ "csrc_0026_att2": {
+  "n_pages": 3,
+  "title": "《期货公司互联网营销管理暂行规定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0026_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0026_att2.pdf",
+  "n_chars": 1477
+ },
+ "csrc_0027_att1": {
+  "n_pages": 32,
+  "title": "关于修改《证券公司分类监管规定》的决定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0027_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0027_att1.pdf",
+  "n_chars": 19903
+ },
+ "csrc_0027_att2": {
+  "n_pages": 4,
+  "title": "关于修改《证券公司分类监管规定》的说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0027_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0027_att2.pdf",
+  "n_chars": 2009
+ },
+ "csrc_0029_att1": {
+  "n_pages": 9,
+  "title": "期货市场程序化交易管理规定（试行）",
+  "domain": "regulatory",
+  "doc_id": "csrc_0029_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0029_att1.pdf",
+  "n_chars": 4371
+ },
+ "csrc_0029_att2": {
+  "n_pages": 5,
+  "title": "《期货市场程序化交易管理规定（试行）》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0029_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0029_att2.pdf",
+  "n_chars": 2563
+ },
+ "csrc_0030_att1": {
+  "n_pages": 4,
+  "title": "上市公司监管指引第9号——上市公司筹划和实施重大资产重组的监管要求",
+  "domain": "regulatory",
+  "doc_id": "csrc_0030_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0030_att1.pdf",
+  "n_chars": 1878
+ },
+ "csrc_0030_att2": {
+  "n_pages": 2,
+  "title": "关于《上市公司监管指引第9 号——上市公司筹划和实施重大资产重组的监管要求》的说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0030_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0030_att2.pdf",
+  "n_chars": 624
+ },
+ "csrc_0031_att1": {
+  "n_pages": 9,
+  "title": "上市公司募集资金监管规则",
+  "domain": "regulatory",
+  "doc_id": "csrc_0031_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0031_att1.pdf",
+  "n_chars": 4578
+ },
+ "csrc_0031_att2": {
+  "n_pages": 4,
+  "title": "《上市公司募集资金监管规则》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0031_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0031_att2.pdf",
+  "n_chars": 2312
+ },
+ "csrc_0032_att1": {
+  "n_pages": 279,
+  "title": "证券期货业统计指标",
+  "domain": "regulatory",
+  "doc_id": "csrc_0032_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0032_att1.pdf",
+  "n_chars": 112916
+ },
+ "csrc_0033_att1": {
+  "n_pages": 5,
+  "title": "上市公司信息披露暂缓与豁免管理规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0033_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0033_att1.pdf",
+  "n_chars": 2158
+ },
+ "csrc_0033_att2": {
+  "n_pages": 3,
+  "title": "《上市公司信息披露暂缓与豁免管理规定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0033_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0033_att2.pdf",
+  "n_chars": 1614
+ },
+ "csrc_0034_att1": {
+  "n_pages": 16,
+  "title": "上市公司股东会规则",
+  "domain": "regulatory",
+  "doc_id": "csrc_0034_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0034_att1.pdf",
+  "n_chars": 7900
+ },
+ "csrc_0034_att2": {
+  "n_pages": 2,
+  "title": "《上市公司股东会规则》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0034_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0034_att2.pdf",
+  "n_chars": 891
+ },
+ "csrc_0035_att1": {
+  "n_pages": 72,
+  "title": "上市公司章程指引",
+  "domain": "regulatory",
+  "doc_id": "csrc_0035_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0035_att1.pdf",
+  "n_chars": 34212
+ },
+ "csrc_0035_att2": {
+  "n_pages": 3,
+  "title": "《上市公司章程指引》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0035_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0035_att2.pdf",
+  "n_chars": 1272
+ },
+ "csrc_0036_att1": {
+  "n_pages": 1,
+  "title": "关于修改、废止部分证券期货规范性文件的决定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0036_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0036_att1.pdf",
+  "n_chars": 187
+ },
+ "csrc_0036_att2": {
+  "n_pages": 871,
+  "title": "中国证监会决定修改的规范性文件",
+  "domain": "regulatory",
+  "doc_id": "csrc_0036_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0036_att2.pdf",
+  "n_chars": 424706
+ },
+ "csrc_0036_att3": {
+  "n_pages": 1,
+  "title": "中国证监会决定废止的规范性文件",
+  "domain": "regulatory",
+  "doc_id": "csrc_0036_att3",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0036_att3.pdf",
+  "n_chars": 153
+ },
+ "csrc_0036_att4": {
+  "n_pages": 4,
+  "title": "《关于修改、废止部分证券期货规范性文件的决定》立",
+  "domain": "regulatory",
+  "doc_id": "csrc_0036_att4",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0036_att4.pdf",
+  "n_chars": 1936
+ },
+ "csrc_0037_att1": {
+  "n_pages": 32,
+  "title": "公开发行证券的公司信息披露内容与格式准则第3 号——半年度报告的内容与格式",
+  "domain": "regulatory",
+  "doc_id": "csrc_0037_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0037_att1.pdf",
+  "n_chars": 16149
+ },
+ "csrc_0037_att2": {
+  "n_pages": 3,
+  "title": "《公开发行证券的公司信息披露内容与格式准则第3 号——半年度报告的内容与格式》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0037_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0037_att2.pdf",
+  "n_chars": 1516
+ },
+ "csrc_0038_att1": {
+  "n_pages": 59,
+  "title": "公开发行证券的公司信息披露内容与格式准则第2 号——年度报告的内容与格式",
+  "domain": "regulatory",
+  "doc_id": "csrc_0038_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0038_att1.pdf",
+  "n_chars": 28349
+ },
+ "csrc_0038_att2": {
+  "n_pages": 5,
+  "title": "csrc_0038_att2",
+  "domain": "regulatory",
+  "doc_id": "csrc_0038_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0038_att2.pdf",
+  "n_chars": 33
+ },
+ "csrc_0039_att1": {
+  "n_pages": 6,
+  "title": "上市公司监管指引第11 号——上市公司破产重整相关事项",
+  "domain": "regulatory",
+  "doc_id": "csrc_0039_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0039_att1.pdf",
+  "n_chars": 2773
+ },
+ "csrc_0039_att2": {
+  "n_pages": 5,
+  "title": "为进一步加强上市公司破产重整监管，有效化解上市公司风险，推动提升上市公司质量，促进证券市场资源的优化配置，结合监管实践情况，中国证监会研究制",
+  "domain": "regulatory",
+  "doc_id": "csrc_0039_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0039_att2.pdf",
+  "n_chars": 2242
+ },
+ "csrc_0040_att1": {
+  "n_pages": 2,
+  "title": "证券期货法律适用意见第19 号——《上市公司收购管理办法》第十三条、",
+  "domain": "regulatory",
+  "doc_id": "csrc_0040_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0040_att1.pdf",
+  "n_chars": 1136
+ },
+ "csrc_0040_att2": {
+  "n_pages": 3,
+  "title": "关于《证券期货法律适用意见第19 号——<上市公司收购管理办法>第十三条、第十四条的适用意见》的立法说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0040_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0040_att2.pdf",
+  "n_chars": 1675
+ },
+ "csrc_0041_att1": {
+  "n_pages": 14,
+  "title": "期货经纪合同要素",
+  "domain": "regulatory",
+  "doc_id": "csrc_0041_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0041_att1.pdf",
+  "n_chars": 10783
+ },
+ "csrc_0041_att2": {
+  "n_pages": 10,
+  "title": "证券期货业信息系统备份能力规范",
+  "domain": "regulatory",
+  "doc_id": "csrc_0041_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0041_att2.pdf",
+  "n_chars": 6460
+ },
+ "csrc_0041_att3": {
+  "n_pages": 21,
+  "title": "证券期货业数据模型第5 部分：期货公司逻辑模型",
+  "domain": "regulatory",
+  "doc_id": "csrc_0041_att3",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0041_att3.pdf",
+  "n_chars": 11497
+ },
+ "csrc_0041_att4": {
+  "n_pages": 42,
+  "title": "区域性股权市场分布式数字身份技术规范",
+  "domain": "regulatory",
+  "doc_id": "csrc_0041_att4",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0041_att4.pdf",
+  "n_chars": 28288
+ },
+ "csrc_0041_att5": {
+  "n_pages": 15,
+  "title": "区域性股权市场企业、产品和投资者",
+  "domain": "regulatory",
+  "doc_id": "csrc_0041_att5",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0041_att5.pdf",
+  "n_chars": 7466
+ },
+ "csrc_0042_att1": {
+  "n_pages": 10,
+  "title": "香港互认基金管理规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0042_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0042_att1.pdf",
+  "n_chars": 3928
+ },
+ "csrc_0042_att2": {
+  "n_pages": 2,
+  "title": "《香港互认基金管理暂行规定》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0042_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0042_att2.pdf",
+  "n_chars": 793
+ },
+ "csrc_0043_att1": {
+  "n_pages": 48,
+  "title": "上市公司行业统计分类与代码",
+  "domain": "regulatory",
+  "doc_id": "csrc_0043_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0043_att1.pdf",
+  "n_chars": 37647
+ },
+ "csrc_0043_att2": {
+  "n_pages": 20,
+  "title": "区域性股权市场跨链技术规范",
+  "domain": "regulatory",
+  "doc_id": "csrc_0043_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0043_att2.pdf",
+  "n_chars": 11073
+ },
+ "csrc_0043_att3": {
+  "n_pages": 139,
+  "title": "区域性股权市场跨链数据规范",
+  "domain": "regulatory",
+  "doc_id": "csrc_0043_att3",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0043_att3.pdf",
+  "n_chars": 114005
+ },
+ "csrc_0043_att4": {
+  "n_pages": 13,
+  "title": "区域性股权市场跨链认证安全规范",
+  "domain": "regulatory",
+  "doc_id": "csrc_0043_att4",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0043_att4.pdf",
+  "n_chars": 9136
+ },
+ "csrc_0043_att5": {
+  "n_pages": 32,
+  "title": "区域性股权市场区块链通用基础设施通讯",
+  "domain": "regulatory",
+  "doc_id": "csrc_0043_att5",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0043_att5.pdf",
+  "n_chars": 21588
+ },
+ "csrc_0045_att1": {
+  "n_pages": 7,
+  "title": "上市公司监管指引第10 号——市值管理",
+  "domain": "regulatory",
+  "doc_id": "csrc_0045_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0045_att1.pdf",
+  "n_chars": 3091
+ },
+ "csrc_0045_att2": {
+  "n_pages": 3,
+  "title": "为贯彻落实《国务院关于加强监管防范风险推动资本市场高质量发展的若干意见》（国发〔2024〕10 号），进一步引导上市公司提高对自身投资价值的",
+  "domain": "regulatory",
+  "doc_id": "csrc_0045_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0045_att2.pdf",
+  "n_chars": 1657
+ },
+ "csrc_0046_att1": {
+  "n_pages": 22,
+  "title": "证券公司风险控制指标计算标准规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0046_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0046_att1.pdf",
+  "n_chars": 19809
+ },
+ "csrc_0046_att2": {
+  "n_pages": 4,
+  "title": "关于修订《证券公司风险控制指标计算标准规定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0046_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0046_att2.pdf",
+  "n_chars": 1983
+ },
+ "csrc_0047_att1": {
+  "n_pages": 11,
+  "title": "证券发行人信息披露文件编码规则",
+  "domain": "regulatory",
+  "doc_id": "csrc_0047_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0047_att1.pdf",
+  "n_chars": 5960
+ },
+ "csrc_0048_att1": {
+  "n_pages": 4,
+  "title": "证监会系统离职人员入股拟上市企业监管规定（试行）",
+  "domain": "regulatory",
+  "doc_id": "csrc_0048_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0048_att1.pdf",
+  "n_chars": 2042
+ },
+ "csrc_0048_att2": {
+  "n_pages": 2,
+  "title": "关于《证监会系统离职人员入股拟上市企业监管规定（试行）》的起草说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0048_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0048_att2.pdf",
+  "n_chars": 683
+ },
+ "csrc_0049_att1": {
+  "n_pages": 6,
+  "title": "公开发行证券的公司信息披露编报规则第4 号——保险公司信息披露特别规定（2024 年修订）",
+  "domain": "regulatory",
+  "doc_id": "csrc_0049_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0049_att1.pdf",
+  "n_chars": 2781
+ },
+ "csrc_0049_att2": {
+  "n_pages": 3,
+  "title": "《公开发行证券的公司信息披露编报规则第4 号——保险公司信息披露特别规定（2024 年修订）》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0049_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0049_att2.pdf",
+  "n_chars": 1676
+ },
+ "csrc_0050_att1": {
+  "n_pages": 7,
+  "title": "上市公司董事、监事和高级管理人员所持本公司股份及其变动管理规则",
+  "domain": "regulatory",
+  "doc_id": "csrc_0050_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0050_att1.pdf",
+  "n_chars": 3134
+ },
+ "csrc_0050_att2": {
+  "n_pages": 3,
+  "title": "《上市公司董事、监事和高级管理人员所持本公司股份及其变动管理规则》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0050_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0050_att2.pdf",
+  "n_chars": 1513
+ },
+ "csrc_0051_att1": {
+  "n_pages": 10,
+  "title": "证券市场程序化交易管理规定（试行）",
+  "domain": "regulatory",
+  "doc_id": "csrc_0051_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0051_att1.pdf",
+  "n_chars": 4457
+ },
+ "csrc_0051_att2": {
+  "n_pages": 5,
+  "title": "《证券市场程序化交易管理规定（试行）》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0051_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0051_att2.pdf",
+  "n_chars": 2386
+ },
+ "csrc_0052_att1": {
+  "n_pages": 14,
+  "title": "一、正文第一段修改为“上市证券公司具有证券公司与上市公司的双重属性，作为证券公司，要适用证券公司监管相关法规；作为上市公司，要适用上市、发行",
+  "domain": "regulatory",
+  "doc_id": "csrc_0052_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0052_att1.pdf",
+  "n_chars": 7357
+ },
+ "csrc_0052_att2": {
+  "n_pages": 4,
+  "title": "关于修订《关于加强上市证券公司监管的规定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0052_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0052_att2.pdf",
+  "n_chars": 2323
+ },
+ "csrc_0053_att1": {
+  "n_pages": 3,
+  "title": "关于修改《科创属性评价指引（试行）》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0053_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0053_att1.pdf",
+  "n_chars": 1634
+ },
+ "csrc_0053_att2": {
+  "n_pages": 2,
+  "title": "关于《关于修改〈科创属性评价指引（试行）〉的决定》的说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0053_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0053_att2.pdf",
+  "n_chars": 914
+ },
+ "csrc_0054_att1": {
+  "n_pages": 8,
+  "title": "关于修改《中国证监会随机抽查事项清单》的",
+  "domain": "regulatory",
+  "doc_id": "csrc_0054_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0054_att1.pdf",
+  "n_chars": 5301
+ },
+ "csrc_0054_att2": {
+  "n_pages": 2,
+  "title": "关于修改《中国证监会随机抽查事项清单》的",
+  "domain": "regulatory",
+  "doc_id": "csrc_0054_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0054_att2.pdf",
+  "n_chars": 1037
+ },
+ "csrc_0055_att1": {
+  "n_pages": 35,
+  "title": "中华人民共和国金融行业标准",
+  "domain": "regulatory",
+  "doc_id": "csrc_0055_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0055_att1.pdf",
+  "n_chars": 26430
+ },
+ "csrc_0055_att2": {
+  "n_pages": 122,
+  "title": "证券期货业基础数据元规范第1 部分：基础数据元",
+  "domain": "regulatory",
+  "doc_id": "csrc_0055_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0055_att2.pdf",
+  "n_chars": 111216
+ },
+ "csrc_0055_att3": {
+  "n_pages": 131,
+  "title": "证券期货业基础数据元规范第2 部分：基础代码",
+  "domain": "regulatory",
+  "doc_id": "csrc_0055_att3",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0055_att3.pdf",
+  "n_chars": 75476
+ },
+ "csrc_0056_att1": {
+  "n_pages": 6,
+  "title": "公开募集证券投资基金证券交易费用",
+  "domain": "regulatory",
+  "doc_id": "csrc_0056_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0056_att1.pdf",
+  "n_chars": 2867
+ },
+ "csrc_0056_att2": {
+  "n_pages": 3,
+  "title": "《公开募集证券投资基金证券交易费用管理规定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0056_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0056_att2.pdf",
+  "n_chars": 1291
+ },
+ "csrc_0057_att1": {
+  "n_pages": 11,
+  "title": "首次公开发行股票并上市辅导监管规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0057_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0057_att1.pdf",
+  "n_chars": 5613
+ },
+ "csrc_0057_att2": {
+  "n_pages": 2,
+  "title": "《首次公开发行股票并上市辅导监管规定》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0057_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0057_att2.pdf",
+  "n_chars": 822
+ },
+ "csrc_0058_att1": {
+  "n_pages": 10,
+  "title": "首发企业现场检查规定",
+  "domain": "regulatory",
+  "doc_id": "csrc_0058_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0058_att1.pdf",
+  "n_chars": 4728
+ },
+ "csrc_0058_att2": {
+  "n_pages": 2,
+  "title": "《首发企业现场检查规定》修订说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0058_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0058_att2.pdf",
+  "n_chars": 1119
+ },
+ "csrc_0059_att1": {
+  "n_pages": 5,
+  "title": "监管规则适用指引——债券类第1 号：公开发行公司债券注册工作规程",
+  "domain": "regulatory",
+  "doc_id": "csrc_0059_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0059_att1.pdf",
+  "n_chars": 2543
+ },
+ "csrc_0060_att1": {
+  "n_pages": 9,
+  "title": "监管规则适用指引——评估类第2 号",
+  "domain": "regulatory",
+  "doc_id": "csrc_0060_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0060_att1.pdf",
+  "n_chars": 4609
+ },
+ "csrc_0060_att2": {
+  "n_pages": 2,
+  "title": "关于《监管规则适用指引——评估类第2 号》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0060_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0060_att2.pdf",
+  "n_chars": 694
+ },
+ "csrc_0061_att1": {
+  "n_pages": 9,
+  "title": "监管规则适用指引——会计类第5 号",
+  "domain": "regulatory",
+  "doc_id": "csrc_0061_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0061_att1.pdf",
+  "n_chars": 4759
+ },
+ "csrc_0061_att2": {
+  "n_pages": 2,
+  "title": "关于《监管规则适用指引——会计类第5 号》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0061_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0061_att2.pdf",
+  "n_chars": 688
+ },
+ "csrc_0062_att1": {
+  "n_pages": 2,
+  "title": "关于《监管规则适用指引——机构类第4 号》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0062_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0062_att1.pdf",
+  "n_chars": 811
+ },
+ "csrc_0063_att1": {
+  "n_pages": 1,
+  "title": "关于《监管规则适用指引——法律类第4 号》的说明",
+  "domain": "regulatory",
+  "doc_id": "csrc_0063_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0063_att1.pdf",
+  "n_chars": 359
+ },
+ "csrc_0064_att1": {
+  "n_pages": 1,
+  "title": "《监管规则适用指引—发行类第10 号》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0064_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0064_att1.pdf",
+  "n_chars": 483
+ },
+ "csrc_0065_att1": {
+  "n_pages": 1,
+  "title": "监管规则适用指引——境外发行上市类第7号：关于境内企业由境外场外市场转至境外证券交易所实现境外发行上市的监管要求",
+  "domain": "regulatory",
+  "doc_id": "csrc_0065_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0065_att1.pdf",
+  "n_chars": 524
+ },
+ "csrc_0066_att1": {
+  "n_pages": 4,
+  "title": "关于《监管规则适用指引——北京证券交易所类第1 号：全国股转系统挂牌公司申请在北京证券交易所发行上市辅导监管指引》的",
+  "domain": "regulatory",
+  "doc_id": "csrc_0066_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0066_att1.pdf",
+  "n_chars": 1755
+ },
+ "csrc_0067_att1": {
+  "n_pages": 1,
+  "title": "关于《监管规则适用指引—机构类第3 号》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0067_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0067_att1.pdf",
+  "n_chars": 447
+ },
+ "csrc_0068_att1": {
+  "n_pages": 8,
+  "title": "监管规则适用指引——会计类第4 号",
+  "domain": "regulatory",
+  "doc_id": "csrc_0068_att1",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0068_att1.pdf",
+  "n_chars": 4461
+ },
+ "csrc_0068_att2": {
+  "n_pages": 2,
+  "title": "关于《监管规则适用指引——会计类第4 号》",
+  "domain": "regulatory",
+  "doc_id": "csrc_0068_att2",
+  "src": "public_dataset_upload/raw/regulatory/attachments/csrc_0068_att2.pdf",
+  "n_chars": 747
+ }
+}

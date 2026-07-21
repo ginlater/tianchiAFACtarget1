@@ -1,0 +1,75 @@
+{"qid": "syn_fc_005", "picked": ["text01", "text02"]}
+{"qid": "syn_fc_004", "picked": ["text03", "text14"]}
+{"qid": "syn_fc_002", "picked": ["text01", "text02"]}
+{"qid": "syn_fc_003", "picked": ["text01", "text14"]}
+{"qid": "syn_fc_001", "picked": ["text01", "text03"]}
+{"qid": "syn_fc_006", "picked": ["text06", "text09"]}
+{"qid": "syn_fc_007", "picked": ["text04", "text11"]}
+{"qid": "syn_fc_008", "picked": ["text08", "text10"]}
+{"qid": "syn_fc_009", "picked": ["text01", "text02"]}
+{"qid": "syn_fc_010", "picked": ["text03", "text14"]}
+{"qid": "syn_fc_011", "picked": ["text02", "text03"]}
+{"qid": "syn_fc_012", "picked": ["text02", "text03"]}
+{"qid": "syn_fc_013", "picked": ["text14", "text01"]}
+{"qid": "syn_fc_014", "picked": ["text01", "text09"]}
+{"qid": "syn_fc_015", "picked": ["text04", "text05"]}
+{"qid": "syn_fin_001", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"]}
+{"qid": "syn_fin_002", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"]}
+{"qid": "syn_fin_003", "picked": ["annual_catl_2024_report", "annual_catl_2025_report"]}
+{"qid": "syn_fin_004", "picked": ["annual_catl_2024_report", "annual_catl_2025_report"]}
+{"qid": "syn_fin_005", "picked": ["annual_midea_2024_report", "annual_midea_2025_report"]}
+{"qid": "syn_fin_006", "picked": ["annual_cscec_2024_report", "annual_cscec_2025_report"]}
+{"qid": "syn_fin_007", "picked": ["annual_cscec_2025_report", "annual_byd_2024_report"]}
+{"qid": "syn_fin_008", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"]}
+{"qid": "syn_fin_009", "picked": ["annual_byd_2025_report", "annual_catl_2025_report", "annual_midea_2025_report", "annual_cscec_2025_report"]}
+{"qid": "syn_fin_010", "picked": ["annual_cscec_2025_report", "annual_catl_2025_report", "annual_cmb_2025_report", "annual_midea_2025_report"]}
+{"qid": "syn_fin_011", "picked": ["annual_byd_2025_report", "annual_cscec_2025_report", "annual_chinamobile_2025_report", "annual_cmb_2025_report"]}
+{"qid": "syn_fin_012", "picked": ["annual_catl_2025_report", "annual_byd_2025_report"]}
+{"qid": "syn_fin_013", "picked": ["annual_midea_2025_report", "annual_cmb_2025_report", "annual_byd_2025_report", "annual_catl_2025_report"]}
+{"qid": "syn_fin_014", "picked": ["annual_cscec_2025_report", "annual_chinamobile_2025_report", "annual_byd_2025_report", "annual_cmb_2025_report"]}
+{"qid": "syn_fin_015", "picked": ["annual_chinamobile_2025_report", "annual_byd_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report"]}
+{"qid": "syn_ins_001", "picked": ["2", "1"]}
+{"qid": "syn_ins_002", "picked": ["3", "1"]}
+{"qid": "syn_ins_003", "picked": ["16", "1"]}
+{"qid": "syn_ins_004", "picked": ["7", "1"]}
+{"qid": "syn_ins_005", "picked": ["13", "14"]}
+{"qid": "syn_ins_006", "picked": ["1", "4", "2", "16"]}
+{"qid": "syn_ins_007", "picked": ["3", "1"]}
+{"qid": "syn_ins_008", "picked": ["15", "1"]}
+{"qid": "syn_ins_009", "picked": ["3", "5", "6"]}
+{"qid": "syn_ins_010", "picked": ["5", "6"]}
+{"qid": "syn_ins_011", "picked": ["1", "10"]}
+{"qid": "syn_ins_012", "picked": ["9", "10"]}
+{"qid": "syn_ins_013", "picked": ["11", "12"]}
+{"qid": "syn_ins_014", "picked": ["16", "1"]}
+{"qid": "syn_ins_015", "picked": ["3", "1"]}
+{"qid": "syn_reg_001", "picked": ["strict_v3_017_中华人民共和国反洗钱法", "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"]}
+{"qid": "syn_reg_002", "picked": ["strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）", "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）", "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）"]}
+{"qid": "syn_reg_003", "picked": ["strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）", "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）"]}
+{"qid": "syn_reg_004", "picked": ["strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）", "csrc_0004_att1"]}
+{"qid": "syn_reg_005", "picked": ["strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）", "csrc_0004_att1"]}
+{"qid": "syn_reg_007", "picked": ["strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）", "csrc_0046_att1"]}
+{"qid": "syn_reg_006", "picked": ["strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）", "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"]}
+{"qid": "syn_reg_008", "picked": ["strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）", "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）"]}
+{"qid": "syn_reg_009", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_017_中华人民共和国反洗钱法"]}
+{"qid": "syn_reg_010", "picked": ["strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）", "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）"]}
+{"qid": "syn_reg_011", "picked": ["csrc_0009_att1", "csrc_0038_att1", "csrc_0037_att1"]}
+{"qid": "syn_reg_012", "picked": ["csrc_0027_att1", "csrc_0025_att1"]}
+{"qid": "syn_reg_013", "picked": ["csrc_0027_att1", "csrc_0025_att1"]}
+{"qid": "syn_reg_014", "picked": ["csrc_0023_att1", "csrc_0009_att1"]}
+{"qid": "syn_reg_015", "picked": ["strict_v3_017_中华人民共和国反洗钱法", "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）"]}
+{"qid": "syn_res_001", "picked": ["pack2_text11", "pack2_text12"]}
+{"qid": "syn_res_002", "picked": ["pack2_text12", "pack2_text18"]}
+{"qid": "syn_res_003", "picked": ["pack2_text09", "pack2_text11"]}
+{"qid": "syn_res_004", "picked": ["pack2_text01", "pack2_text10"]}
+{"qid": "syn_res_005", "picked": ["pack2_text03", "pack2_text05"]}
+{"qid": "syn_res_006", "picked": ["pack2_text01", "pack2_text15"]}
+{"qid": "syn_res_007", "picked": ["pack2_text09", "pack2_text18"]}
+{"qid": "syn_res_008", "picked": ["pack2_text12", "pack2_text19"]}
+{"qid": "syn_res_009", "picked": ["pack2_text04", "pack2_text07"]}
+{"qid": "syn_res_010", "picked": ["pack2_text13", "pack2_text16"]}
+{"qid": "syn_res_011", "picked": ["pack2_text09", "pack2_text11"]}
+{"qid": "syn_res_012", "picked": ["pack2_text03", "pack2_text13"]}
+{"qid": "syn_res_013", "picked": ["pack2_text10", "pack2_text14"]}
+{"qid": "syn_res_014", "picked": ["pack2_text09", "pack2_text18"]}
+{"qid": "syn_res_015", "picked": ["pack2_text17", "pack2_text19"]}

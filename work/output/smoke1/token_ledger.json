@@ -1,0 +1,110 @@
+{
+ "per_qid": {
+  "_digest": [
+   39383,
+   3949
+  ],
+  "reg_a_001": [
+   7040,
+   5633
+  ],
+  "fin_a_001": [
+   11954,
+   5366
+  ],
+  "ins_a_001": [
+   6236,
+   4797
+  ]
+ },
+ "calls": [
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:1",
+   "prompt_tokens": 6653,
+   "completion_tokens": 599,
+   "ts": 1784375747.128881
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_byd_2024_report",
+   "prompt_tokens": 8470,
+   "completion_tokens": 774,
+   "ts": 1784375750.1492631
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:2",
+   "prompt_tokens": 6245,
+   "completion_tokens": 699,
+   "ts": 1784375761.18561
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_byd_2025_report",
+   "prompt_tokens": 7981,
+   "completion_tokens": 672,
+   "ts": 1784375763.776961
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:15",
+   "prompt_tokens": 4517,
+   "completion_tokens": 644,
+   "ts": 1784375773.954323
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:16",
+   "prompt_tokens": 5517,
+   "completion_tokens": 561,
+   "ts": 1784375785.289438
+  },
+  {
+   "qid": "reg_a_001",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 3249,
+   "completion_tokens": 3181,
+   "ts": 1784375794.241599
+  },
+  {
+   "qid": "fin_a_001",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 5785,
+   "completion_tokens": 3023,
+   "ts": 1784375820.494412
+  },
+  {
+   "qid": "reg_a_001",
+   "model": "qwen3.6-plus",
+   "tag": "r2",
+   "prompt_tokens": 3791,
+   "completion_tokens": 2452,
+   "ts": 1784375841.805553
+  },
+  {
+   "qid": "ins_a_001",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 6236,
+   "completion_tokens": 4797,
+   "ts": 1784375874.696042
+  },
+  {
+   "qid": "fin_a_001",
+   "model": "qwen3.6-plus",
+   "tag": "r2",
+   "prompt_tokens": 6169,
+   "completion_tokens": 2343,
+   "ts": 1784375877.174447
+  }
+ ]
+}

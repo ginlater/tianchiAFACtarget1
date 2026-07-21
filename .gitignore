@@ -1,0 +1,14 @@
+# 密钥（绝不入库，即使私有仓库）
+work/.env
+.env
+
+# 环境与缓存
+work/.venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 原始数据集太大(340MB+)，队友从天池下载；解析产物 processed_data 已入库
+public_dataset_upload/raw/
+upload_b.zip

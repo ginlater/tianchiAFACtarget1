@@ -1,0 +1,5 @@
+qid	answer	prompt_tokens	completion_tokens	total_tokens
+summary		64613	19745	84358
+ins_a_001	D	6236	4797	11033
+fin_a_001	AB	11954	5366	17320
+reg_a_001	CD	7040	5633	12673

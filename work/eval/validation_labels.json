@@ -1,0 +1,531 @@
+{
+ "fc_a_001": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_002": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_003": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_004": {
+  "answer": "AC",
+  "confidence": "master_wrong",
+  "known_wrong": [
+   "ACD",
+   "AC",
+   "A",
+   "AD",
+   "ABC"
+  ]
+ },
+ "fc_a_005": {
+  "answer": "ABD",
+  "confidence": "locked",
+  "known_wrong": [
+   "ABCD",
+   "AB"
+  ]
+ },
+ "fc_a_006": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_007": {
+  "answer": "BD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_008": {
+  "answer": "B",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_009": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_010": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_011": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_012": {
+  "answer": "ACD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_013": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_014": {
+  "answer": "ABC",
+  "confidence": "locked",
+  "known_wrong": [
+   "AB",
+   "B",
+   "BC"
+  ]
+ },
+ "fc_a_015": {
+  "answer": "D",
+  "confidence": "master_wrong",
+  "known_wrong": []
+ },
+ "fc_a_016": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_017": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_018": {
+  "answer": "A",
+  "confidence": "locked",
+  "known_wrong": [
+   "B"
+  ]
+ },
+ "fc_a_019": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fc_a_020": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_001": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_002": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_003": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_004": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_005": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_006": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_007": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_008": {
+  "answer": "B",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_009": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_010": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_011": {
+  "answer": "ACD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_012": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_013": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_014": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_015": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_016": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_017": {
+  "answer": "AC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_018": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_019": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "fin_a_020": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_001": {
+  "answer": "B",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_002": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_003": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_004": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_005": {
+  "answer": "ABCD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_006": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_007": {
+  "answer": "BC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_008": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_009": {
+  "answer": "C",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_010": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_011": {
+  "answer": "BC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_012": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_013": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_014": {
+  "answer": "AB",
+  "confidence": "locked",
+  "known_wrong": [
+   "ABD",
+   "A"
+  ]
+ },
+ "ins_a_015": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_016": {
+  "answer": "CD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_017": {
+  "answer": "ABCD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_018": {
+  "answer": "BCD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_019": {
+  "answer": "ABCD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "ins_a_020": {
+  "answer": "D",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_001": {
+  "answer": "ACD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_002": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_003": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_004": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_005": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_006": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_007": {
+  "answer": "ACD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_008": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_009": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_010": {
+  "answer": "B",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_011": {
+  "answer": "ACD",
+  "confidence": "locked",
+  "known_wrong": [
+   "AC",
+   "ABCD"
+  ]
+ },
+ "reg_a_012": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_013": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_014": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_015": {
+  "answer": "C",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_016": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_017": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_018": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_019": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "reg_a_020": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_001": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_002": {
+  "answer": "ABC",
+  "confidence": "locked",
+  "known_wrong": [
+   "ABCD"
+  ]
+ },
+ "res_a_003": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_004": {
+  "answer": "ABC",
+  "confidence": "locked",
+  "known_wrong": [
+   "AB"
+  ]
+ },
+ "res_a_005": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_006": {
+  "answer": "A",
+  "confidence": "locked",
+  "known_wrong": [
+   "B"
+  ]
+ },
+ "res_a_007": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_008": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_009": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_010": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_011": {
+  "answer": "ABC",
+  "confidence": "locked",
+  "known_wrong": [
+   "BC"
+  ]
+ },
+ "res_a_012": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_013": {
+  "answer": "B",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_014": {
+  "answer": "ABC",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_015": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_016": {
+  "answer": "ACD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_017": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_018": {
+  "answer": "A",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_019": {
+  "answer": "AB",
+  "confidence": "master",
+  "known_wrong": []
+ },
+ "res_a_020": {
+  "answer": "ABD",
+  "confidence": "master",
+  "known_wrong": []
+ }
+}

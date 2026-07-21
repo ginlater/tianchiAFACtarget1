@@ -1,0 +1,630 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-15",
+  "baseline": {
+    "file": "output/answer_a_fc14_abc.csv",
+    "correct": 93,
+    "score": 89.0648,
+    "total_tokens": 705230
+  },
+  "policy": {
+    "source_of_truth": "online_score_constraints",
+    "notes": [
+      "线上分数推导优先于人工仲裁、模型多数票和外部网页解释。",
+      "标签试探阶段只允许使用public_dataset_upload内的官方题目、官方原始文档、历史提交向量和线上分数；外部网页不得参与候选答案选择。",
+      "locked_online 才能作为硬断言；active_probe 不得写入 Agent 硬编码答案。",
+      "所有 P0 题必须同时跑 linked(A式) 与 blind(B式) 回归。",
+      "Agent 输出命中 known_wrong 时必须阻断候选发布。"
+    ]
+  },
+  "constraint_conflicts": [
+    {
+      "id": "probe10_vs_fc15c_provenance",
+      "status": "requires_submission_history_audit",
+      "latest_observation": {
+        "file": "output/answer_a_probe_10_reg11_abcd_fc18_b.csv",
+        "correct": 91,
+        "score": 87.1494
+      },
+      "confirmed_old_observation": "用户明确确认旧89.0648来自answer_a_93_probe_fc15_c.csv",
+      "new_observation": "同一94题母版分别将fc_a_015由D改A、B、C，线上均仍为90.0225；连同母版D，A/B/C/D四个单字母均未被判对。",
+      "minimal_conflict": "fc_a_015明确标注为mcq，提交AB会按首个有效字母A处理，不构成新探针。若A/B/C/D四次确为最新提交行的本次分数，则该题可能未被正常计分；若读取的是排行榜，则90.0225只是历史最佳分。",
+      "action": "停止fc_a_015探针；核对我的提交中四次记录的时间戳与本次分数，不再从公开排行榜最佳分推导答案。"
+    }
+  ],
+  "cases": [
+    {
+      "qid": "fc_a_014",
+      "priority": "P0",
+      "status": "locked_online",
+      "expected": "ABC",
+      "known_wrong": ["AB", "B", "BC"],
+      "next_candidates": [],
+      "failure_modes": [
+        "同一文档中逾期利息与违约金条款混淆",
+        "正常兑付日与回售或赎回条件兑付日混淆",
+        "多选题逐项事实正确但最终选项集合不完整"
+      ],
+      "acceptance": [
+        "必须分别引用逾期利息、违约金、正常兑付日和条件兑付日原文",
+        "不得输出已被线上排除的 AB 或 B",
+        "标准答案锁定前只能报告候选，不能写入校准规则"
+      ],
+      "online_proof": "联合与拆分提交证明AB、B错误；BC探针维持92排除BC；ABC探针提升到93并锁定标准答案ABC"
+    },
+    {
+      "qid": "res_a_004",
+      "priority": "P0",
+      "status": "locked_online",
+      "expected": "ABC",
+      "known_wrong": ["AB"],
+      "next_candidates": [],
+      "failure_modes": [
+        "对题库允许的概括性或不严谨表述过度纠错",
+        "跨文档业务模式、市场规模与银保渠道事实聚合不完整",
+        "人工仲裁覆盖线上事实"
+      ],
+      "acceptance": [
+        "linked 与 blind 模式都必须稳定输出 ABC",
+        "必须召回芯原业务模式、4930亿美元和韩国银保渠道三类证据"
+      ],
+      "online_proof": "四题联合提交后旧答案三对一错；二分与单题探针锁定 ABC 正确"
+    },
+    {
+      "qid": "res_a_006",
+      "priority": "P0",
+      "status": "locked_online",
+      "expected": "A",
+      "known_wrong": ["B"],
+      "next_candidates": [],
+      "failure_modes": [
+        "把选项省略的口径限定词当成反向事实",
+        "忽略题库以特异数字、年份和方向为主的生成规律",
+        "判断题过度逐字匹配"
+      ],
+      "acceptance": [
+        "必须识别1.56、4.09、4.3%和1.8%为同一原文数据点",
+        "判断题必须稳定输出 A"
+      ],
+      "online_proof": "A/B为穷尽答案；联合提交证明B错误，因此A锁定正确"
+    },
+    {
+      "qid": "res_a_011",
+      "priority": "P0",
+      "status": "locked_online",
+      "expected": "ABC",
+      "known_wrong": ["BC"],
+      "next_candidates": [],
+      "failure_modes": [
+        "省略口径限定词导致漏选A",
+        "超过1000条检测规则与3384条自动解析规则证据未联合召回",
+        "多选题漏选一个选项即整题失败"
+      ],
+      "acceptance": [
+        "必须分别核验A/B/C/D并输出ABC",
+        "D项手动解析必须由原文自动解析直接反证"
+      ],
+      "online_proof": "联合提交和二分结果证明旧答案ABC正确、BC错误"
+    },
+    {
+      "qid": "fc_a_005",
+      "priority": "P1",
+      "status": "locked_online",
+      "expected": "ABD",
+      "known_wrong": ["ABCD", "AB"],
+      "next_candidates": [],
+      "failure_modes": [
+        "跨两份文档的发行主体、交易结构和资产负债率口径聚合",
+        "上市公司与标的公司主体混淆",
+        "多选题第三候选答案未覆盖"
+      ],
+      "acceptance": [
+        "必须逐项标注数据属于发行人、上市公司或标的公司",
+        "linked与blind模式都必须稳定输出ABD"
+      ],
+      "online_proof": "六题探针排除ABCD并建立与fc_a_015的联动；93分基线上改AB后降至92，锁定ABD正确、AB错误"
+    },
+    {
+      "qid": "fc_a_015",
+      "priority": "P1",
+      "status": "score_constrained",
+      "expected": null,
+      "known_wrong": [],
+      "next_candidates": [],
+      "benchmark_anomaly": true,
+      "observed_same_display_score": ["A", "B", "C", "D"],
+      "failure_modes": [
+        "单选题出现多个字面真命题时无法识别命题锚点",
+        "注册金额、主体评级、罚息倍数和主承销商混淆"
+      ],
+      "acceptance": [
+        "必须为四个选项分别给出直接原文",
+        "必须检测到A、B均有原文但线上单选标签存在异常",
+        "异常题不得泛化成覆盖正常合同题的硬编码校准规则",
+        "linked与blind模式均需触发异常检测；不得为该题绕过mcq单字母格式校验"
+      ],
+      "online_proof": "用户报告同一94分母版中fc_a_015取A、B、C、D均显示90.0225；因公开排行榜只显示历史最佳分，必须先以我的提交逐次记录核验，当前不锁定任何答案。"
+    },
+    {
+      "qid": "fc_a_004",
+      "priority": "P1",
+      "status": "score_constrained",
+      "expected": null,
+      "known_wrong": ["ACD", "AC", "A", "AD", "ABC"],
+      "next_candidates": ["ABCD"],
+      "failure_modes": [
+        "近似区间边界与精确数值冲突",
+        "注册金额跨文档串线",
+        "三年财务指标证据召回不全"
+      ],
+      "acceptance": [
+        "必须明确66.38%与题目66%上界的判题口径",
+        "必须核对text01与text13是否均列出最近三年净利润",
+        "A、AC、ACD、AD、ABC均已被线上约束排除；ABCD是保留官方A/C并同时覆盖相邻text14串线B与66.38%近似区间D的下一异常键候选"
+      ],
+      "online_proof": "实测94分母版与92分group1比较并扣除reg_a_011的确定损失后，fc_a_004与ins_a_014两处合计损失1；随后ins_a_014单题探针锁定AB，严格推出fc_a_004=AC与ACD均错误；再从94题母版分别只将fc_a_004改为A、AD、ABC，均仍为94题，证明A、AD与ABC也错误"
+    },
+    {
+      "qid": "ins_a_014",
+      "priority": "P1",
+      "status": "locked_online",
+      "expected": "AB",
+      "known_wrong": ["ABD", "A"],
+      "next_candidates": [],
+      "failure_modes": [
+        "保险责任存在隐含事故场景条件",
+        "产品是否承保与题干是否给足触发条件混淆",
+        "跨产品证据召回不完整"
+      ],
+      "acceptance": [
+        "必须为每款产品核对事故场景、等待期与责任触发条件",
+        "必须区分医疗费用报销与失聪状态定额给付",
+        "linked与blind模式都必须稳定输出AB，不得回退到已在线排除的A或ABD"
+      ],
+      "online_proof": "从实测94题母版只将ins_a_014由AB改为A，分数由90.0225降至89.0648（94题降为93题）；因此AB正确、A错误。此前group1约束已排除ABD。"
+    },
+    {
+      "qid": "reg_a_011",
+      "priority": "P1",
+      "status": "locked_online",
+      "expected": "ACD",
+      "known_wrong": ["AC", "ABCD"],
+      "next_candidates": [],
+      "failure_modes": [
+        "题干范围与选项本身事实真假混淆",
+        "内部审批、金额门槛和保存期限条款混在同一多选题",
+        "法规条文跨文档召回"
+      ],
+      "acceptance": [
+        "除核验选项真假外，还必须判断选项是否回答题干限定范围"
+      ],
+      "online_proof": "实测94分母版到probe10只改reg_a_011、res_a_002、fc_a_018三题并降至91；三处各最多损失1，故三处母版答案均锁定，reg_a_011=ACD"
+    },
+    {
+      "qid": "res_a_002",
+      "priority": "P1",
+      "status": "locked_online",
+      "expected": "ABC",
+      "known_wrong": ["ABCD"],
+      "next_candidates": [],
+      "failure_modes": [
+        "选项事实存在于语料但不在题目doc_ids范围内",
+        "外部事实正确与本题证据范围正确混淆",
+        "多文档召回越界"
+      ],
+      "acceptance": [
+        "linked模式必须记录每个选项证据是否属于题目doc_ids",
+        "blind模式必须说明候选文档选择依据"
+      ],
+      "online_proof": "实测94分母版到probe10只改reg_a_011、res_a_002、fc_a_018三题并降至91；三处各最多损失1，故三处母版答案均锁定，res_a_002=ABC"
+    },
+    {
+      "qid": "fc_a_018",
+      "priority": "P1",
+      "status": "locked_online",
+      "expected": "A",
+      "known_wrong": ["B"],
+      "next_candidates": [],
+      "failure_modes": [
+        "募集说明书封面日期与发行公告日期口径混淆",
+        "跨两份合同文档的时间顺序比较错误"
+      ],
+      "acceptance": [
+        "必须从text04与text06分别抽取日期并比较",
+        "判断题必须稳定输出A"
+      ],
+      "online_proof": "实测94分母版到probe10只改reg_a_011、res_a_002、fc_a_018三题并降至91；三处各最多损失1，故fc_a_018=A"
+    }
+  ],
+  "derived_constraints": [
+    {
+      "id": "four_flip_delta_sum",
+      "qids": ["fc_a_004", "ins_a_014", "reg_a_011", "res_a_002"],
+      "base_answers": ["ACD", "ABD", "ACD", "ABCD"],
+      "current_answers": ["AC", "AB", "AC", "ABC"],
+      "equation": "delta_fc4 + delta_ins14 + delta_reg11 + delta_res2 = 1",
+      "delta_definition": "current_answer_correct - base_answer_correct"
+    },
+    {
+      "id": "reg11_res2_remaining",
+      "status": "superseded",
+      "qids": ["reg_a_011", "res_a_002"],
+      "equation": "delta_reg11 + delta_res2 = -1",
+      "resolved_implication": "废弃：后续同母版单题探针已锁定reg_a_011=ACD、res_a_002=ABC；本条不得参与推断"
+    },
+    {
+      "id": "fc5_fc15_partial",
+      "qids": ["fc_a_005", "fc_a_015"],
+      "resolved_answers": ["ABD", null],
+      "known_wrong": {
+        "fc_a_005": ["ABCD", "AB"],
+        "fc_a_015": []
+      }
+    },
+    {
+      "id": "fc4_ins14_one_current_correct",
+      "status": "resolved",
+      "qids": ["fc_a_004", "ins_a_014"],
+      "equation": "delta_fc4_AC_to_ACD + delta_ins14_AB_to_ABD = -1",
+      "resolved_answers": {
+        "fc_a_004": null,
+        "ins_a_014": "AB"
+      },
+      "implication": "ins_a_014=AB已由单题探针锁定；联动等式因此严格推出fc_a_004=AC和ACD均错误，fc_a_004的精确答案仍待探针"
+    }
+  ],
+  "planned_probes": [
+    {
+      "id": "probe_11_from_94_fc15_a",
+      "file": "output/answer_a_from_94_probe_fc15_a.csv",
+      "submission_number_in_current_plan": 11,
+      "status": "completed_no_score_change",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_015": "A"
+      },
+      "expected_branches": [
+        {"correct": 93, "score": 89.0648, "conclusion": "fc_a_015=D"},
+        {"correct": 94, "score": 90.0225, "conclusion": "A与D均错误，需复核评分约束"},
+        {"correct": 95, "score": 90.9802, "conclusion": "fc_a_015=A"}
+      ],
+      "actual_result": {"correct": 94, "score": 90.0225, "confirmed_by_user": true},
+      "conclusion": "fc_a_015=A与D均错误；旧B/C同分约束必须复核"
+    },
+    {
+      "id": "probe_12_from_94_fc15_c_recheck",
+      "file": "output/answer_a_from_94_probe_fc15_c_recheck.csv",
+      "submission_number_in_current_plan": 12,
+      "status": "completed_no_score_change",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_015": "C"
+      },
+      "expected_branches": [
+        {"correct": 93, "score": 89.0648, "conclusion": "D正确、C错误；本轮A同分结果或上传归因需重新核验"},
+        {"correct": 94, "score": 90.0225, "conclusion": "C与D也同错，全部选项约束无解；必须审计上传与历史分数归因"},
+        {"correct": 95, "score": 90.9802, "conclusion": "fc_a_015=C，旧fc15_c=93记录归因失真"}
+      ],
+      "actual_result": {"correct": 94, "score": 90.0225, "confirmed_by_user": true},
+      "conclusion": "fc_a_015=C与D均错误；结合A探针，A/C/D全部排除"
+    },
+    {
+      "id": "probe_13_from_94_fc15_b_final",
+      "file": "output/answer_a_from_94_probe_fc15_b_final.csv",
+      "submission_number_in_current_plan": 13,
+      "status": "completed_no_score_change",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_015": "B"
+      },
+      "expected_branches": [
+        {"correct": 94, "score": 90.0225, "conclusion": "四个单选项全部无效，必须停止探针并核验平台提交历史"},
+        {"correct": 95, "score": 90.9802, "conclusion": "fc_a_015=B，完成闭环并锁定"}
+      ],
+      "actual_result": {"correct": 94, "score": 90.0225, "confirmed_by_user": true},
+      "conclusion": "A/B/C/D四个单字母均未被线上判对，升级为异常答案键探针"
+    },
+    {
+      "id": "probe_14_from_94_fc15_ab_anomaly",
+      "file": "output/answer_a_from_94_probe_fc15_ab_anomaly.csv",
+      "submission_number_in_current_plan": 14,
+      "status": "cancelled_invalid_mcq_probe",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_015": "AB"
+      },
+      "expected_branches": [
+        {"correct": 94, "score": 90.0225, "conclusion": "AB也未命中；该题可能固定不可得分或提交历史显示的是最佳分"},
+        {"correct": 95, "score": 90.9802, "conclusion": "线上答案键为AB，与mcq题型标注冲突"}
+      ],
+      "do_not_submit": true,
+      "cancellation_reason": "题目answer_format=mcq；规则按首个有效字母计分，AB等价于A，没有新增信息"
+    },
+    {
+      "id": "probe_15_from_94_ins14_a",
+      "file": "output/answer_a_from_94_probe_ins14_a.csv",
+      "submission_number_in_current_plan": 15,
+      "status": "completed_score_drop",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "ins_a_014": "A"
+      },
+      "expected_branches": [
+        {"correct": 93, "score": 89.0648, "conclusion": "ins_a_014=AB正确、A错误；由联动约束推出fc_a_004=AC错误"},
+        {"correct": 94, "score": 90.0225, "conclusion": "ins_a_014的A与AB均错误；由联动约束推出fc_a_004=AC正确"},
+        {"correct": 95, "score": 90.9802, "conclusion": "ins_a_014=A正确、AB错误；同时锁定fc_a_004=AC正确"}
+      ],
+      "actual_result": {"correct": 93, "score": 89.0648, "confirmed_by_user": true},
+      "conclusion": "锁定ins_a_014=AB、排除A；由既有联动约束严格排除fc_a_004=AC"
+    },
+    {
+      "id": "probe_16_from_94_fc4_a",
+      "file": "output/answer_a_from_94_probe_fc4_a.csv",
+      "submission_number_in_current_plan": 16,
+      "status": "completed_no_score_change",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_004": "A"
+      },
+      "expected_branches": [
+        {"correct": 94, "score": 90.0225, "conclusion": "fc_a_004=A也错误；保留94题母版并审计其余合法候选"},
+        {"correct": 95, "score": 90.9802, "conclusion": "fc_a_004=A正确并锁定；总正确数提升到95"}
+      ],
+      "diagnostic_conflict": {"correct": 93, "score": 89.0648, "conclusion": "按现有约束不可能；若出现则优先核对上传文件和本次分数归因"},
+      "actual_result": {"correct": 94, "score": 90.0225, "confirmed_by_user": true},
+      "conclusion": "fc_a_004=A与AC均错误；母版仍保持94题"
+    },
+    {
+      "id": "probe_17_from_94_fc4_ad",
+      "file": "output/answer_a_from_94_probe_fc4_ad.csv",
+      "submission_number_in_current_plan": 17,
+      "status": "completed_no_score_change",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_004": "AD"
+      },
+      "evidence_scope": "public_dataset_upload_only",
+      "expected_branches": [
+        {"correct": 94, "score": 90.0225, "conclusion": "fc_a_004=AD也错误；母版继续保持94题"},
+        {"correct": 95, "score": 90.9802, "conclusion": "fc_a_004=AD正确并锁定；总正确数提升到95"}
+      ],
+      "diagnostic_conflict": {"correct": 93, "score": 89.0648, "conclusion": "按现有约束不可能；若出现则核对上传文件和最新成绩归因"},
+      "actual_result": {"correct": 94, "score": 90.0225, "confirmed_by_user": true},
+      "conclusion": "fc_a_004=AD与母版AC均错误；母版继续保持94题"
+    },
+    {
+      "id": "probe_18_from_94_fc4_abc",
+      "file": "output/answer_a_from_94_probe_fc4_abc.csv",
+      "submission_number_in_current_plan": 18,
+      "status": "completed_no_score_change",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_004": "ABC"
+      },
+      "evidence_scope": "public_dataset_upload_only",
+      "candidate_rationale": "保留text01/text13明确支持的A、C；在AC已在线排除后，优先测试答案键是否把相邻text14的180亿元串入B；66.38%严格超过66%，暂不含D",
+      "expected_branches": [
+        {"correct": 94, "score": 90.0225, "conclusion": "fc_a_004=ABC也错误；母版继续保持94题，下一候选ABCD"},
+        {"correct": 95, "score": 90.9802, "conclusion": "fc_a_004=ABC正确并锁定；总正确数提升到95"}
+      ],
+      "diagnostic_conflict": {"correct": 93, "score": 89.0648, "conclusion": "按现有约束不可能；若出现则核对上传文件和最新成绩归因"},
+      "actual_result": {"correct": 94, "score": 90.0225, "confirmed_by_user": true},
+      "conclusion": "fc_a_004=ABC与母版AC均错误；母版继续保持94题，下一候选ABCD"
+    },
+    {
+      "id": "probe_19_from_94_fc4_abcd",
+      "file": "output/answer_a_from_94_probe_fc4_abcd.csv",
+      "submission_number_in_current_plan": 19,
+      "status": "ready_to_submit",
+      "base_file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "changes_from_base": {
+        "fc_a_004": "ABCD"
+      },
+      "evidence_scope": "public_dataset_upload_only",
+      "candidate_rationale": "AC、A、AD、ABC均已被线上排除；ABCD同时覆盖相邻text14的180亿元串入B，以及text13中66.38%、65.54%、63.51被判题近似视为63%-66%区间的D",
+      "expected_branches": [
+        {"correct": 94, "score": 90.0225, "conclusion": "fc_a_004=ABCD也错误；母版继续保持94题，下一候选AB"},
+        {"correct": 95, "score": 90.9802, "conclusion": "fc_a_004=ABCD正确并锁定；总正确数提升到95"}
+      ],
+      "diagnostic_conflict": {"correct": 93, "score": 89.0648, "conclusion": "按现有约束不可能；若出现则核对上传文件和最新成绩归因"}
+    },
+    {
+      "id": "probe_10_reg11_abcd_fc18_b",
+      "file": "output/answer_a_probe_10_reg11_abcd_fc18_b.csv",
+      "submission_number_in_current_plan": 10,
+      "status": "completed_constraint_conflict",
+      "evidence_scope": "public_dataset_upload_only",
+      "changes_from_official_93": {
+        "fc_a_015": "D",
+        "fc_a_018": "B",
+        "reg_a_011": "ABCD",
+        "res_a_002": "ABCD"
+      },
+      "expected_branches": [
+        {
+          "correct": 94,
+          "score": 90.0225,
+          "conclusion": "reg_a_011=ABCD错误；fc_a_018=A正确"
+        },
+        {
+          "correct": 95,
+          "score": 90.9802,
+          "conclusion": "reg_a_011=ABCD正确；fc_a_018=A正确"
+        },
+        {
+          "correct": 96,
+          "score": 91.9379,
+          "conclusion": "reg_a_011=ABCD错误；fc_a_018=B正确"
+        },
+        {
+          "correct": 97,
+          "score": 92.8955,
+          "conclusion": "reg_a_011=ABCD正确；fc_a_018=B正确"
+        }
+      ]
+    },
+    {
+      "id": "probe_reg11_abc_from_inferred_95",
+      "file": "output/answer_a_inferred_95_probe_reg11_abc.csv",
+      "submission_number_in_current_plan": 10,
+      "status": "cancelled_not_submitted",
+      "cancel_reason": "候选选择阶段混入了外部网页核验；按官方数据限定流程撤销，不计入提交轮次",
+      "changes_from_official_93": {
+        "fc_a_015": "D",
+        "reg_a_011": "ABC",
+        "res_a_002": "ABCD"
+      },
+      "expected_branches": [
+        {
+          "correct": 96,
+          "score": 91.9379,
+          "conclusion": "reg_a_011=ABC"
+        },
+        {
+          "correct": 95,
+          "score": 90.9802,
+          "conclusion": "reg_a_011=ABC也错误，下一候选转为CD或C"
+        }
+      ]
+    }
+  ],
+  "score_constraints": [
+    {
+      "id": "base_90",
+      "file": "output/answer_a_verified_low_token.csv",
+      "correct": 90,
+      "score": 86.1918
+    },
+    {
+      "id": "best_92",
+      "file": "output/answer_a_probe_v1.csv",
+      "correct": 92,
+      "score": 88.1071
+    },
+    {
+      "id": "last_four_91",
+      "file": "output/answer_a_last_chance.csv",
+      "correct": 91,
+      "score": 87.1494
+    },
+    {
+      "id": "four_bad_overrides_89",
+      "file": "output/answer_a_next_1.csv",
+      "correct": 89,
+      "score": 85.2341
+    },
+    {
+      "id": "split_fc14_res4_91",
+      "file": "output/answer_a_split_1.csv",
+      "correct": 91,
+      "score": 87.1494
+    },
+    {
+      "id": "split_fc14_92",
+      "file": "output/answer_a_split_2_if_first_is_87.1494.csv",
+      "correct": 92,
+      "score": 88.1071
+    },
+    {
+      "id": "probe_fc14_bc_92",
+      "file": "output/answer_a_fc14_bc.csv",
+      "correct": 92,
+      "score": 88.1071
+    },
+    {
+      "id": "probe_fc14_abc_93",
+      "file": "output/answer_a_fc14_abc.csv",
+      "correct": 93,
+      "score": 89.0648
+    },
+    {
+      "id": "probe_fc5_ab_from_93_92",
+      "file": "output/answer_a_93_probe_fc5_ab.csv",
+      "correct": 92,
+      "score": 88.1071
+    },
+    {
+      "id": "probe_fc15_c_from_93_93",
+      "file": "output/answer_a_93_probe_fc15_c.csv",
+      "correct": 93,
+      "score": 89.0648,
+      "status": "confirmed_by_user",
+      "note": "用户于后续对话明确确认该分数来自answer_a_93_probe_fc15_c.csv"
+    },
+    {
+      "id": "probe_group_1_from_inferred_94_92",
+      "file": "output/answer_a_inferred_94_probe_group_1.csv",
+      "correct": 92,
+      "score": 88.1071
+    },
+    {
+      "id": "probe_reg11_base_from_inferred_94_94",
+      "file": "output/answer_a_inferred_94_probe_reg11_base.csv",
+      "correct": 94,
+      "score": 90.0225
+    },
+    {
+      "id": "probe_fc15_a_from_inferred_94_94",
+      "file": "output/answer_a_from_94_probe_fc15_a.csv",
+      "correct": 94,
+      "score": 90.0225,
+      "status": "confirmed_by_user",
+      "note": "从94题母版仅将fc_a_015由D改A，得分不变"
+    },
+    {
+      "id": "probe_fc15_c_recheck_from_inferred_94_94",
+      "file": "output/answer_a_from_94_probe_fc15_c_recheck.csv",
+      "correct": 94,
+      "score": 90.0225,
+      "status": "confirmed_by_user",
+      "note": "从94题母版仅将fc_a_015由D改C，得分不变"
+    },
+    {
+      "id": "probe_fc15_b_final_from_inferred_94_94",
+      "file": "output/answer_a_from_94_probe_fc15_b_final.csv",
+      "correct": 94,
+      "score": 90.0225,
+      "status": "confirmed_by_user",
+      "note": "从94题母版仅将fc_a_015由D改B，得分不变；四个单字母全部无效"
+    },
+    {
+      "id": "probe_10_reg11_abcd_fc18_b_91_provisional",
+      "file": "output/answer_a_probe_10_reg11_abcd_fc18_b.csv",
+      "correct": 91,
+      "score": 87.1494,
+      "status": "provisional_until_provenance_check"
+    },
+    {
+      "id": "probe_ins14_a_from_inferred_94_93",
+      "file": "output/answer_a_from_94_probe_ins14_a.csv",
+      "correct": 93,
+      "score": 89.0648,
+      "status": "confirmed_by_user",
+      "note": "从94题母版仅将ins_a_014由AB改A，下降1题；锁定AB正确、A错误，并由联动约束排除fc_a_004=AC"
+    },
+    {
+      "id": "probe_fc4_a_from_inferred_94_94",
+      "file": "output/answer_a_from_94_probe_fc4_a.csv",
+      "correct": 94,
+      "score": 90.0225,
+      "status": "confirmed_by_user",
+      "note": "从94题母版仅将fc_a_004由AC改A，得分不变；A与AC均错误"
+    },
+    {
+      "id": "probe_fc4_ad_from_inferred_94_94",
+      "file": "output/answer_a_from_94_probe_fc4_ad.csv",
+      "correct": 94,
+      "score": 90.0225,
+      "status": "confirmed_by_user",
+      "note": "从94题母版仅将fc_a_004由AC改AD，得分不变；AD与AC均错误"
+    },
+    {
+      "id": "probe_fc4_abc_from_inferred_94_94",
+      "file": "output/answer_a_from_94_probe_fc4_abc.csv",
+      "correct": 94,
+      "score": 90.0225,
+      "status": "confirmed_by_user",
+      "note": "从94题母版仅将fc_a_004由AC改ABC，得分不变；ABC与AC均错误"
+    }
+  ]
+}

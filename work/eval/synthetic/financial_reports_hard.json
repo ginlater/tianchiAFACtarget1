@@ -1,0 +1,539 @@
+[
+ {
+  "qid": "syn_fin_001",
+  "domain": "financial_reports",
+  "question": "根据比亚迪2025年年度报告，公司2025年归属于上市公司股东的净利润相比2024年的变化情况是？",
+  "options": {
+   "A": "同比增长18.97%",
+   "B": "同比下降18.97%",
+   "C": "同比下降20.38%",
+   "D": "同比增长34.00%"
+  },
+  "answer_format": "mcq",
+  "answer": "B",
+  "doc_ids": [
+   "annual_byd_2025_report",
+   "annual_byd_2024_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "归属于上市公司股东的净利润（元）\n32,619,022,000.00\n40,254,346,000.00\n-18.97%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "29,445,703,000.00\n36,982,887,000.00\n-20.38%"
+   },
+   {
+    "doc_id": "annual_byd_2024_report",
+    "quote": "40,254,346,000.00\n30,040,811,000.00\n34.00%"
+   }
+  ],
+  "trap_type": "direction_flip"
+ },
+ {
+  "qid": "syn_fin_002",
+  "domain": "financial_reports",
+  "question": "关于比亚迪2025年与2024年主要财务数据的对比，下列说法正确的有哪些？",
+  "options": {
+   "A": "2025年营业收入8,039.65亿元，高于2024年的7,771.02亿元",
+   "B": "2025年经营活动产生的现金流量净额591.36亿元，同比下降55.69%",
+   "C": "2025年研发投入占营业收入比例为7.89%，低于2024年的6.97%",
+   "D": "2025年扣除非经常性损益的归母净利润294.46亿元，同比增长20.38%"
+  },
+  "answer_format": "multi",
+  "answer": "AB",
+  "doc_ids": [
+   "annual_byd_2025_report",
+   "annual_byd_2024_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "803,964,958,000.00 777,102,455,000.00\n3.46%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "59,135,544,000.00 133,453,873,000.00\n-55.69%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "研发投入占营业收入比例\n7.89%\n6.97%\n0.92%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "29,445,703,000.00\n36,982,887,000.00\n-20.38%"
+   }
+  ],
+  "trap_type": "direction_flip"
+ },
+ {
+  "qid": "syn_fin_003",
+  "domain": "financial_reports",
+  "question": "根据宁德时代2024年和2025年年度报告，公司营业收入的同比变化情况是？",
+  "options": {
+   "A": "2024年同比下降9.70%，2025年同比增长17.04%",
+   "B": "2024年同比增长9.70%，2025年同比增长17.04%",
+   "C": "2024年同比下降9.70%，2025年同比增长42.28%",
+   "D": "2024年和2025年营业收入均同比增长"
+  },
+  "answer_format": "mcq",
+  "answer": "A",
+  "doc_ids": [
+   "annual_catl_2024_report",
+   "annual_catl_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_catl_2024_report",
+    "quote": "362,012,554\n400,917,045\n-9.70%"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "423,701,834\n         362,012,554\n17.04%"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "72,201,282\n50,744,682\n42.28%"
+   }
+  ],
+  "trap_type": "direction_flip"
+ },
+ {
+  "qid": "syn_fin_004",
+  "domain": "financial_reports",
+  "question": "关于宁德时代的利润分配方案，下列说法正确的有哪些？",
+  "options": {
+   "A": "2024年度利润分配预案为每10股派发现金分红45.53元（含税）",
+   "B": "2025年度利润分配预案为每10股派发现金分红69.57元（含税）",
+   "C": "2025年中期分红方案为每10股派发现金分红10.07元（含税）",
+   "D": "2025年度利润分配预案为每10股派发现金分红50.28元（含税）"
+  },
+  "answer_format": "multi",
+  "answer": "ABC",
+  "doc_ids": [
+   "annual_catl_2024_report",
+   "annual_catl_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_catl_2024_report",
+    "quote": "每10 股派发现金分红45.53 元（含税）"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "每10 股派发现金分红69.57 元（含税）"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "每10股派发现金分红10.07元（含税）"
+   }
+  ],
+  "trap_type": "numeric_tweak"
+ },
+ {
+  "qid": "syn_fin_005",
+  "domain": "financial_reports",
+  "question": "关于美的集团2025年与2024年财务数据的对比，下列说法正确的有哪些？",
+  "options": {
+   "A": "2025年归属于上市公司股东的净利润439.45亿元，同比增长14.03%",
+   "B": "2025年经营活动产生的现金流量净额533.46亿元，同比增长11.84%",
+   "C": "2025年研发费用占营业收入比例3.90%，较2024年的3.99%有所下降",
+   "D": "2025年营业收入4,564.52亿元，同比增长12.11%"
+  },
+  "answer_format": "multi",
+  "answer": "ACD",
+  "doc_ids": [
+   "annual_midea_2025_report",
+   "annual_midea_2024_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "43,945,411\n38,537,237\n14.03%"
+   },
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "53,345,930\n60,511,572\n-11.84%"
+   },
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "研发费用占营业收入比例\n3.90%\n3.99%\n-0.09%"
+   },
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "456,451,731\n407,149,600\n12.11%"
+   }
+  ],
+  "trap_type": "direction_flip"
+ },
+ {
+  "qid": "syn_fin_006",
+  "domain": "financial_reports",
+  "question": "关于中国建筑2024年度与2025年度的现金分红，下列说法正确的有哪些？",
+  "options": {
+   "A": "2025年度拟每10股派送现金红利人民币2.718元（含税）",
+   "B": "2024年度每10股派送现金红利人民币2.715元（含税）",
+   "C": "2025年度每10股派息金额较2024年度有所下降",
+   "D": "2025年度拟每10股派送现金红利人民币27.18元（含税）"
+  },
+  "answer_format": "multi",
+  "answer": "AB",
+  "doc_ids": [
+   "annual_cscec_2025_report",
+   "annual_cscec_2024_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "每10股派送现金红利人民币2.718元（含税）"
+   },
+   {
+    "doc_id": "annual_cscec_2024_report",
+    "quote": "每10股派送现金红利人民币2.715元（含税）"
+   }
+  ],
+  "trap_type": "numeric_tweak"
+ },
+ {
+  "qid": "syn_fin_007",
+  "domain": "financial_reports",
+  "question": "判断：中国建筑2025年归属于上市公司股东的净利润约390.69亿元，同比下降15.4%；同年经营活动产生的现金流量净额约205.37亿元，同比增长29.8%。",
+  "options": {
+   "A": "正确",
+   "B": "错误"
+  },
+  "answer_format": "tf",
+  "answer": "A",
+  "doc_ids": [
+   "annual_cscec_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "39,069,002\n46,193,694\n46,187,099\n-15.4"
+   },
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "20,537,132\n15,825,793\n15,773,535\n29.8"
+   }
+  ],
+  "trap_type": "direction_flip"
+ },
+ {
+  "qid": "syn_fin_008",
+  "domain": "financial_reports",
+  "question": "关于比亚迪2024年和2025年的研发投入，下列说法正确的有哪些？",
+  "options": {
+   "A": "2025年研发投入634.41亿元，同比增长17.13%",
+   "B": "2025年研发投入占营业收入比例7.89%，较2024年提升0.92个百分点",
+   "C": "2024年研发投入541.61亿元，同比增长35.68%",
+   "D": "2024年研发投入占营业收入比例6.97%，较2023年下降0.34个百分点"
+  },
+  "answer_format": "multi",
+  "answer": "ABC",
+  "doc_ids": [
+   "annual_byd_2025_report",
+   "annual_byd_2024_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "63,441,379,000.00\n54,160,964,000.00\n17.13%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "研发投入占营业收入比例\n7.89%\n6.97%\n0.92%"
+   },
+   {
+    "doc_id": "annual_byd_2024_report",
+    "quote": "54,160,964,000.00\n39,917,743,000.00\n35.68%"
+   },
+   {
+    "doc_id": "annual_byd_2024_report",
+    "quote": "研发投入占营业收入比例\n6.97%\n6.63%\n0.34%"
+   }
+  ],
+  "trap_type": "direction_flip"
+ },
+ {
+  "qid": "syn_fin_009",
+  "domain": "financial_reports",
+  "question": "关于各公司2025年研发投入占营业收入的比例，下列说法正确的有哪些？",
+  "options": {
+   "A": "比亚迪研发投入占营业收入比例为7.89%，高于宁德时代的5.23%",
+   "B": "美的集团研发费用占营业收入比例为3.90%，高于中国建筑的2.1%",
+   "C": "宁德时代研发投入占营业收入比例为7.89%，高于比亚迪",
+   "D": "中国移动研发费用占营业收入比重为2.8%"
+  },
+  "answer_format": "multi",
+  "answer": "ABD",
+  "doc_ids": [
+   "annual_byd_2025_report",
+   "annual_catl_2025_report",
+   "annual_midea_2025_report",
+   "annual_cscec_2025_report",
+   "annual_chinamobile_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "研发投入占营业收入比例\n7.89%\n6.97%\n0.92%"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "研发投入占营业收入比例\n5.23%\n5.14%"
+   },
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "研发费用占营业收入比例\n3.90%\n3.99%\n-0.09%"
+   },
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "研发投入总额占营业收入比例（%）\n2.1"
+   },
+   {
+    "doc_id": "annual_chinamobile_2025_report",
+    "quote": "研发费用为293 亿元，比上年增长3.9%，占营业收入比重为2.8%"
+   }
+  ],
+  "trap_type": "entity_swap"
+ },
+ {
+  "qid": "syn_fin_010",
+  "domain": "financial_reports",
+  "question": "下列公司中，2025年经营活动产生的现金流量净额低于当年归属于母公司（上市公司/本行）股东净利润的是？",
+  "options": {
+   "A": "中国建筑",
+   "B": "宁德时代",
+   "C": "招商银行",
+   "D": "美的集团"
+  },
+  "answer_format": "mcq",
+  "answer": "A",
+  "doc_ids": [
+   "annual_cscec_2025_report",
+   "annual_catl_2025_report",
+   "annual_cmb_2025_report",
+   "annual_midea_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "39,069,002\n46,193,694\n46,187,099\n-15.4"
+   },
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "20,537,132\n15,825,793\n15,773,535\n29.8"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "133,219,982\n96,990,345\n37.35%"
+   },
+   {
+    "doc_id": "annual_cmb_2025_report",
+    "quote": "451,457\n447,023\n0.99"
+   },
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "53,345,930\n60,511,572\n-11.84%"
+   }
+  ],
+  "trap_type": "metric_confuse"
+ },
+ {
+  "qid": "syn_fin_011",
+  "domain": "financial_reports",
+  "question": "下列哪些公司2025年归属于母公司（上市公司/本行）股东的净利润同比下降？",
+  "options": {
+   "A": "比亚迪",
+   "B": "中国建筑",
+   "C": "中国移动",
+   "D": "招商银行"
+  },
+  "answer_format": "multi",
+  "answer": "ABC",
+  "doc_ids": [
+   "annual_byd_2025_report",
+   "annual_cscec_2025_report",
+   "annual_chinamobile_2025_report",
+   "annual_cmb_2025_report",
+   "annual_catl_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "归属于上市公司股东的净利润（元）\n32,619,022,000.00\n40,254,346,000.00\n-18.97%"
+   },
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "39,069,002\n46,193,694\n46,187,099\n-15.4"
+   },
+   {
+    "doc_id": "annual_chinamobile_2025_report",
+    "quote": "137,095\n138,373\n-0.9%"
+   },
+   {
+    "doc_id": "annual_cmb_2025_report",
+    "quote": "150,181\n148,391\n1.21"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "72,201,282\n50,744,682\n42.28%"
+   }
+  ],
+  "trap_type": "direction_flip"
+ },
+ {
+  "qid": "syn_fin_012",
+  "domain": "financial_reports",
+  "question": "判断：2025年，宁德时代营业收入约为8,039.65亿元，比亚迪营业收入约为4,237.02亿元。",
+  "options": {
+   "A": "正确",
+   "B": "错误"
+  },
+  "answer_format": "tf",
+  "answer": "B",
+  "doc_ids": [
+   "annual_byd_2025_report",
+   "annual_catl_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "803,964,958,000.00 777,102,455,000.00\n3.46%"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "423,701,834\n         362,012,554\n17.04%"
+   }
+  ],
+  "trap_type": "entity_swap"
+ },
+ {
+  "qid": "syn_fin_013",
+  "domain": "financial_reports",
+  "question": "关于各公司2025年度的现金分红方案，下列说法正确的有哪些？",
+  "options": {
+   "A": "美的集团2025年度利润分配方案为每10股派发现金43元（含税），其中中期每10股派发现金5元（含税）已实施",
+   "B": "招商银行2025年度全年每股现金分红2.016元（含税）",
+   "C": "比亚迪2025年度利润分配预案为每10股派发现金红利39.74元（含税）",
+   "D": "宁德时代2025年度利润分配预案为每10股派发现金分红69.57元（含税）"
+  },
+  "answer_format": "multi",
+  "answer": "ABD",
+  "doc_ids": [
+   "annual_midea_2025_report",
+   "annual_cmb_2025_report",
+   "annual_byd_2025_report",
+   "annual_catl_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "每10 股派发现金43 元（含税）"
+   },
+   {
+    "doc_id": "annual_midea_2025_report",
+    "quote": "每10 股派发现金5 元（含税）的2025 年中期"
+   },
+   {
+    "doc_id": "annual_cmb_2025_report",
+    "quote": "全年每股现金分红2.016元（含税）"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "每10 股派发现金红利3.58 元（含税）"
+   },
+   {
+    "doc_id": "annual_catl_2025_report",
+    "quote": "每10 股派发现金分红69.57 元（含税）"
+   }
+  ],
+  "trap_type": "numeric_tweak"
+ },
+ {
+  "qid": "syn_fin_014",
+  "domain": "financial_reports",
+  "question": "下列公司中，2025年营业收入最高的是？",
+  "options": {
+   "A": "中国建筑",
+   "B": "中国移动",
+   "C": "比亚迪",
+   "D": "招商银行"
+  },
+  "answer_format": "mcq",
+  "answer": "A",
+  "doc_ids": [
+   "annual_cscec_2025_report",
+   "annual_chinamobile_2025_report",
+   "annual_byd_2025_report",
+   "annual_cmb_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "2,082,141,811\n2,187,334,286\n2,187,147,839\n-4.8"
+   },
+   {
+    "doc_id": "annual_chinamobile_2025_report",
+    "quote": "1,050,187\n1,040,759\n0.9%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "803,964,958,000.00 777,102,455,000.00\n3.46%"
+   },
+   {
+    "doc_id": "annual_cmb_2025_report",
+    "quote": "337,532\n337,488\n0.01"
+   }
+  ],
+  "trap_type": "entity_swap"
+ },
+ {
+  "qid": "syn_fin_015",
+  "domain": "financial_reports",
+  "question": "关于2025年各公司净利润与扣除非经常性损益净利润的关系，下列说法正确的有哪些？",
+  "options": {
+   "A": "中国移动归母净利润同比下降0.9%，但扣非归母净利润同比增长4.3%",
+   "B": "比亚迪扣非归母净利润约294.46亿元，低于同年归母净利润约326.19亿元",
+   "C": "招商银行扣除非经常性损益后归属于本行股东的净利润为1,500.07亿元",
+   "D": "中国建筑扣非归母净利润同比下降15.4%"
+  },
+  "answer_format": "multi",
+  "answer": "ABC",
+  "doc_ids": [
+   "annual_chinamobile_2025_report",
+   "annual_byd_2025_report",
+   "annual_cmb_2025_report",
+   "annual_cscec_2025_report"
+  ],
+  "evidence": [
+   {
+    "doc_id": "annual_chinamobile_2025_report",
+    "quote": "137,095\n138,373\n-0.9%"
+   },
+   {
+    "doc_id": "annual_chinamobile_2025_report",
+    "quote": "127,961\n122,715\n4.3%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "归属于上市公司股东的净利润（元）\n32,619,022,000.00\n40,254,346,000.00\n-18.97%"
+   },
+   {
+    "doc_id": "annual_byd_2025_report",
+    "quote": "29,445,703,000.00\n36,982,887,000.00\n-20.38%"
+   },
+   {
+    "doc_id": "annual_cmb_2025_report",
+    "quote": "150,007\n148,011\n1.35"
+   },
+   {
+    "doc_id": "annual_cscec_2025_report",
+    "quote": "31,934,462\n41,579,271\n41,581,095\n-23.2"
+   }
+  ],
+  "trap_type": "metric_confuse"
+ }
+]
