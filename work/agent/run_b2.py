@@ -84,15 +84,38 @@ def main():
 
     t0 = time.time()
     if args.batch:
-        # 阶段1: 全部盲检（拿到 doc_ids 才能分组）
-        def docsel_one(q):
-            picked = doc_select.select_docs(q, model=args.model)
-            dlog.write(json.dumps({"qid": q["qid"], "picked": picked},
-                                  ensure_ascii=False) + "\n")
-            dlog.flush()
-            return dict(q, doc_ids=picked)
+        # 阶段1: 分域批量盲检（候选卡每域只发一次；reg 每10题一组）
+        from collections import defaultdict
+        pre = [q for q in qs if q.get("doc_ids")]
+        need = [q for q in qs if not q.get("doc_ids")]
+        by_dom = defaultdict(list)
+        for q in need:
+            by_dom[q["domain"]].append(q)
+        chunks = []
+        for dom, dqs in by_dom.items():
+            gs = 10 if dom == "regulatory" else 20
+            chunks += [dqs[i:i + gs] for i in range(0, len(dqs), gs)]
+
+        def docsel_chunk(chunk):
+            try:
+                got = doc_select.select_docs_batch(chunk, model=args.model)
+            except Exception as e:  # noqa: BLE001 — 整块失败退单题
+                print(f"docsel batch fail ({chunk[0]['domain']}): {e}",
+                      flush=True)
+                got = {q["qid"]: doc_select.select_docs(q, model=args.model)
+                       for q in chunk}
+            out = []
+            for q in chunk:
+                picked = got[q["qid"]]
+                dlog.write(json.dumps({"qid": q["qid"], "picked": picked},
+                                      ensure_ascii=False) + "\n")
+                dlog.flush()
+                out.append(dict(q, doc_ids=picked))
+            return out
+
         with ThreadPoolExecutor(max_workers=args.workers) as ex:
-            qs = list(ex.map(docsel_one, qs))
+            qs = pre + [q for lst in ex.map(docsel_chunk, chunks)
+                        for q in lst]
         print(f"docsel 完成; tokens {LEDGER.totals()[2]:,}", flush=True)
         # 阶段2: 选择题分组批答 + 计算题独立
         choice = [q for q in qs if q["answer_format"] != "calc"]

@@ -5,7 +5,7 @@
 import json, pathlib, re
 
 from . import retrieval
-from .qwen_client import chat, DEFAULT_MODEL
+from .qwen_client import chat, DEFAULT_MODEL, LEDGER
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
@@ -171,6 +171,12 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
             picked = list(dict.fromkeys(picked))[:max_docs]
         except (json.JSONDecodeError, TypeError):
             pass
+    return _finalize_picks(q, picked, cands, max_docs)
+
+
+def _finalize_picks(q, picked, cands, max_docs):
+    """选择后的零token兜底：材料类别补齐/csrc附件耦合/保险别名覆盖/
+    BM25 top1并入/比较题≥2份。单题与批量共用，保证兜底语义一致。"""
     if not picked:
         picked = cands[:2]
     # 材料类别补齐：题目要求"结合A与B两类材料"时，每类至少一份
@@ -214,3 +220,112 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
         if nxt:
             picked.append(nxt)
     return picked[:max_docs + 2]
+
+
+BATCH_OBJ_RE = re.compile(r"\{.*\}", re.S)
+BATCH_ENTRY_RE = re.compile(r'"([^"]+)"\s*:\s*\[([^\]]*)\]')
+
+
+def select_docs_batch(qs, model=DEFAULT_MODEL, k_coarse=12):
+    """同域 N 题共享候选卡，一次调用返回 {qid: [doc_ids]}。
+
+    候选卡只发一次；逐题兜底（_finalize_picks）与单题版完全一致。
+    某题条目缺失/解析失败 → 该题回退单题 select_docs（不劣于现状）。
+    token 均摊到批内各 qid（残差留在 _docsel_{domain}，总量诚实）。
+    """
+    if not qs:
+        return {}
+    if len(qs) == 1:
+        return {qs[0]["qid"]: select_docs(qs[0], model=model)}
+    domain = qs[0]["domain"]
+    per_cands = {q["qid"]: coarse_candidates(q, k=k_coarse) for q in qs}
+    if domain == "regulatory":
+        shared = list(dict.fromkeys(
+            d for q in qs for d in per_cands[q["qid"]]))
+        max_docs = 5
+        extra_hint = ("每题末尾的'词法候选'是初筛提示，一般应从中选择；"
+                      "相近规章（如治理准则/股东会规则/章程指引）拿不准哪部适用时，都选上。")
+    else:
+        shared = [d for d, m in retrieval.docs_meta().items()
+                  if m["domain"] == domain]
+        if domain == "research":
+            max_docs = 5
+            extra_hint = ("题目或选项涉及几个行业/公司，就为每个行业/公司选一份对应研报，"
+                          "不得合并省略。")
+        else:
+            max_docs = 4
+            extra_hint = ""
+    meta_all = retrieval.docs_meta()
+    head_n = 55 if __import__("os").environ.get("AFAC_SLIM4") == "1" else 130
+    cards = []
+    for d in shared:
+        summary = meta_all[d].get("summary")
+        head = (summary or _content_head(d))[:head_n]
+        cards.append(f"[{d}] {_doc_card(d)} | {head}")
+    qblocks = []
+    for q in qs:
+        opts = "".join(f"\n{k}. {v}" for k, v in q["options"].items())
+        hint = ""
+        if domain == "regulatory":
+            hint = "\n词法候选: " + ",".join(per_cands[q["qid"]])
+        qblocks.append(f"【{q['qid']}】{q['question']}{opts}{hint}")
+    ex = json.dumps({qs[0]["qid"]: shared[:2], qs[1]["qid"]: shared[1:3]},
+                    ensure_ascii=False)
+    prompt = (
+        "候选文档列表(方括号内为文档ID):\n" + "\n".join(cards) +
+        f"\n\n以下{len(qs)}道题都从上面同一批候选文档中选阅读材料，"
+        "请逐题独立判断该题必须阅读哪些文档，题与题互不影响"
+        f"（题目/选项涉及几个主体、产品或法规就选几份，通常2-4份，"
+        f"最多{max_docs}份；比较类题至少2份）。{extra_hint}\n\n" +
+        "\n\n".join(qblocks) +
+        "\n\n只输出一个JSON对象：键为题目ID(【】内)，值为该题文档ID数组，"
+        f"文档ID必须与方括号内完全一致，不得输出其他内容。示例: {ex}")
+    content, _r, usage = chat([{"role": "user", "content": prompt}],
+                              qid=f"_docsel_{domain}", model=model,
+                              thinking=False,
+                              max_tokens=80 * len(qs) + 200, tag="docsel")
+    p = usage.get("prompt_tokens", 0) // len(qs)
+    c = usage.get("completion_tokens", 0) // len(qs)
+    with LEDGER._lock:
+        for q in qs:
+            slot = LEDGER.per_qid.setdefault(q["qid"], [0, 0])
+            slot[0] += p
+            slot[1] += c
+        b = LEDGER.per_qid.get(f"_docsel_{domain}")
+        if b:
+            b[0] = max(0, b[0] - p * len(qs))
+            b[1] = max(0, b[1] - c * len(qs))
+    sel = {}
+    m = BATCH_OBJ_RE.search(content or "")
+    obj = None
+    if m:
+        try:
+            obj = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            obj = None
+    entries = (obj.items() if isinstance(obj, dict) else
+               [(k, re.findall(r'"([^"]+)"', inner))
+                for k, inner in BATCH_ENTRY_RE.findall(content or "")])
+    sset = set(shared)
+    for qid, arr in entries:
+        if not isinstance(arr, list):
+            continue
+        picked = []
+        for x in arr:
+            x = str(x)
+            if x in sset:
+                picked.append(x)
+            else:  # 端匹配仅在唯一时接受
+                ends = [d for d in shared if d.endswith(x)]
+                if len(ends) == 1:
+                    picked.append(ends[0])
+        sel[str(qid)] = list(dict.fromkeys(picked))[:max_docs]
+    out = {}
+    for q in qs:
+        picked = sel.get(q["qid"], [])
+        if not picked:
+            out[q["qid"]] = select_docs(q, model=model)
+            continue
+        out[q["qid"]] = _finalize_picks(q, picked, per_cands[q["qid"]],
+                                        max_docs)
+    return out
