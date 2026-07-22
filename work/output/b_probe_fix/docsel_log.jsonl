@@ -1,0 +1,13 @@
+{"qid": "fin_b_012", "picked": ["annual_midea_2025_report", "annual_byd_2024_report"], "kinds": ["letter"]}
+{"qid": "fc_b_013", "picked": ["text01", "text02"], "kinds": ["letter"]}
+{"qid": "fc_b_016", "picked": ["text01", "text02"], "kinds": ["letter"]}
+{"qid": "fin_b_011", "picked": ["annual_chinamobile_2025_report", "annual_cscec_2025_report", "annual_cmb_2025_report", "annual_midea_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_018", "picked": ["annual_midea_2025_report", "annual_byd_2024_report"], "kinds": ["number", "number"]}
+{"qid": "fin_b_019", "picked": ["annual_byd_2025_report", "annual_catl_2025_report", "annual_midea_2025_report"], "kinds": ["ranking", "number"]}
+{"qid": "ins_b_005", "picked": ["2", "4", "8", "6"], "kinds": ["letter"]}
+{"qid": "ins_b_006", "picked": ["2", "8", "10", "12"], "kinds": ["letter"]}
+{"qid": "ins_b_012", "picked": ["4", "11", "12"], "kinds": ["letter"]}
+{"qid": "reg_b_003", "picked": ["csrc_0030_att1", "csrc_0005_att1"], "kinds": ["number"]}
+{"qid": "res_b_008", "picked": ["pack2_text01", "pack2_text13"], "kinds": ["letter"]}
+{"qid": "res_b_012", "picked": ["pack2_text01", "pack2_text02"], "kinds": ["number"]}
+{"qid": "res_b_018", "picked": ["pack2_text05", "pack2_text13", "pack2_text16", "pack2_text18"], "kinds": ["letter"]}

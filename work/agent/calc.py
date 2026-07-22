@@ -7,6 +7,7 @@
 import json, os, re
 
 DEEP = os.environ.get("AFAC_DEEP") == "1"
+SLIM = os.environ.get("AFAC_SLIM") == "1"
 
 from . import retrieval
 from .answerer import build_digest, DIGEST_DOMAINS, gather_evidence, _doc_title
@@ -77,7 +78,7 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=()):
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
     # 计算题证据要宽：数字常散落在多张表
-    cap = (14000 if DEEP else 11000) + 2000 * max(0, len(q["doc_ids"]) - 2)
+    cap = (14000 if DEEP else (8500 if SLIM else 11000)) + 2000 * max(0, len(q["doc_ids"]) - 2)
     ev, kept, _prot = gather_evidence(q, k_opt=4, k_q=5, cap=cap,
                                       extra_queries=extra)
     blocks.append("原文片段证据:\n" + ev)
@@ -116,11 +117,13 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
         if parse_calc(c1b):
             c1, a1 = c1b, parse_calc(c1b)
 
-    # 独立第二样本（异构模型更有信息量）
-    c2, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
-                      model=verify_model or model, thinking=True,
-                      thinking_budget=(4000 if DEEP else 2800), max_tokens=4200, tag="calc2")
-    a2 = parse_calc(c2)
+    # 独立第二样本（异构模型更有信息量）；SLIM 跳过
+    a2, c2 = None, None
+    if not SLIM:
+        c2, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
+                          model=verify_model or model, thinking=True,
+                          thinking_budget=(4000 if DEEP else 2800), max_tokens=4200, tag="calc2")
+        a2 = parse_calc(c2)
 
     final, c3 = a1 or a2, None
     if a1 and a2 and _norm(a1) != _norm(a2):

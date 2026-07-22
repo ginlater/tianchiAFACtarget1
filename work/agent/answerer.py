@@ -168,6 +168,23 @@ def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
             if a in t:
                 queries.append(t.replace(a, b))
     queries += list(extra_queries)
+    # 关键词逐文档强制检索：短金融术语在每份文档单独取top-1并保护
+    # （修复类缺口：担保人/母公司列/地震免责/资产负债率/募集资金用途 等关键句被长查询稀释）
+    LEXICON = ["担保人", "担保", "母公司", "募集资金用途", "资产负债率", "流动比率",
+               "速动比率", "责任免除", "免赔额", "犹豫期", "诉讼时效", "转股价格",
+               "锁定期", "评级", "受托管理人", "兑付", "分红", "研发投入",
+               "每股收益", "现金流量净额", "施行", "工作日", "自然日"]
+    qtext = q["question"] + " " + " ".join(q["options"].values())
+    hard_kws = [kw for kw in LEXICON if kw in qtext][:6]
+    for m in re.finditer(r"[“\"《]([^”\"》]{2,12})[”\"》]", qtext):
+        if len(hard_kws) < 8:
+            hard_kws.append(m.group(1))
+    forced = []
+    for kw in hard_kws:
+        for d in doc_ids:
+            hits_kw = retrieval.doc_index(d).search(kw, k=1)
+            if hits_kw and kw in hits_kw[0][0]["text"]:
+                forced.append(hits_kw[0][0])
     # 跨查询同块取最高分（低分先占坑会挤掉后续强命中——已修复的召回bug）
     # 每条查询的top-1受保护，预算截断时优先保留（防单选项关键证据被全局高分挤掉）
     best, chunk_by_id, protected = {}, {}, set()
@@ -182,6 +199,11 @@ def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
             chunk_by_id[cid] = c
             if s > best.get(cid, 0):
                 best[cid] = s
+    for c in forced:
+        cid = c["id"]
+        chunk_by_id[cid] = c
+        protected.add(cid)
+        best[cid] = max(best.get(cid, 0), 1e9)  # 强制块置顶
     out = [(chunk_by_id[cid], s) for cid, s in best.items()]
     out.sort(key=lambda x: (x[0]["id"] not in protected, -x[1]))
     kept, total = [], 0
@@ -221,6 +243,8 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
             8500 if domain == "financial_reports" else 6000
         if os.environ.get("AFAC_DEEP") == "1":
             base_cap = int(base_cap * 1.6)
+        if SLIM:
+            base_cap = int(base_cap * 0.75)
         cap = base_cap + 2000 * max(0, len(q["doc_ids"]) - 2)
         ev, kept, prot = gather_evidence(q, k_opt=3, k_q=2, cap=cap,
                                          extra_queries=extra_queries)
@@ -306,6 +330,15 @@ JUDGE_STD = (
     "不适用'证据不足不判'原则。\n"
     "7.【例外不触发】条款主规则附带例外情形（'但…的除外/需扣除…'）时，题干给定场景"
     "未触发例外的，按主规则判断，例外分句不影响结论。\n"
+    "8.【槽位绑定】句子含多个数额对应多个用途/主体时（'其中X亿用于A，Y亿用于B'），"
+    "必须逐一配对，明确题目问的是哪个用途，严禁取最大或最先出现的数额。\n"
+    "9.【列头绑定】财务报表多列并排（合并本期/合并上期/母公司本期/母公司上期）时，"
+    "先数清列头再取数；题目问母公司口径必须取母公司列，严禁用合并列充当。\n"
+    "10.【字面高于常识】判断题表述与文档某句逐字或近逐字一致的，直接判'正确'，"
+    "即使与你的行业常识相悖（如政府性基金作担保人）——文档是唯一事实标准。\n"
+    "11.【数值容差】选项数值与证据数值仅差四舍五入（如32.27与32.3）视为一致。\n"
+    "12.【有无类逐文档】'哪些产品/文件明确规定X'必须对每个选项的文档分别检索X及其"
+    "同义词（含汉字数字写法），逐文档记录有/无后再作答。\n"
     "校准示例（务必对齐此口径，示例为通用同构案例）:\n"
     "- 原文'银行剔除表外理财杠杆率从2.1倍升至3.8倍'，选项'银行理财杠杆率从2.1倍"
     "升至3.8倍' → 判对。数值与趋势一致，省略指标前缀/限定词不算错。\n"
@@ -365,6 +398,7 @@ def expand_docs_if_needed(q, query, model=DEFAULT_MODEL):
 CALC_DOMAINS = ("insurance", "financial_reports")
 STABLE = os.environ.get("AFAC_STABLE") == "1"
 DEEP = os.environ.get("AFAC_DEEP") == "1"  # 深挖模式：低置信题复核用
+SLIM = os.environ.get("AFAC_SLIM") == "1"   # 瘦身模式：单样本+紧证据(终跑省token)
 STABLE_DOMAINS = ("regulatory",) if not STABLE else \
     ("regulatory", "financial_contracts", "research")
 VERIFY_MODEL = os.environ.get("AFAC_VERIFY_MODEL", "")
@@ -428,8 +462,8 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
             c1, ans1 = c1b, parse_answer(c1b, fmt)
 
     final, c2, ans2 = ans1, None, None
-    # tf 复核实测 0/20 翻转，跳过省 token；multi/mcq 保留盲复核
-    if fmt in ("multi", "mcq") or not ans1:
+    # tf 复核实测 0/20 翻转，跳过省 token；multi/mcq 保留盲复核；SLIM 全部单样本
+    if (not SLIM and fmt in ("multi", "mcq")) or not ans1:
         if LEAN_R2:
             # 精简复核证据：记忆卡 + r1引用页的块 + 每选项受保护块（独立性保留）
             cited = set(re.findall(r"P(\d+)", c1))
