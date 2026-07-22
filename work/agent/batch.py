@@ -53,7 +53,9 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
             f"- {d}: 《{_doc_title(d)}》" for d in q0["doc_ids"]))
         base_cap = 10000 if domain == "research" else 8500
         if __import__("os").environ.get("AFAC_SLIM4") == "1":
-            base_cap = 5600 if domain == "research" else 4800
+            # fc/fin大文档域无卡时证据帽必须给足（slim6教训：砍卡后漏选爆发）
+            base_cap = {"research": 6000, "financial_contracts": 7500,
+                        "financial_reports": 7500}.get(domain, 4800)
     # 预算按批内题数扩容40%/题（并集去重后实际占用低于线性）；瘦身档25%
     _slim4 = __import__("os").environ.get("AFAC_SLIM4") == "1"
     cap = int(base_cap * (1 + (0.25 if _slim4 else 0.4) * (len(qs) - 1)))
