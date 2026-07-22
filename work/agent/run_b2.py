@@ -66,7 +66,7 @@ def main():
     dlog = open(outdir / "docsel_log.jsonl", "a")
 
     def work(q):
-        kinds = schema.get(q["qid"], ["letter"])
+        kinds = b_schema.effective_kinds(q, schema.get(q["qid"], ["letter"]))
         if not q.get("doc_ids"):
             picked = doc_select.select_docs(q, model=args.model)
             q = dict(q, doc_ids=picked)
@@ -111,7 +111,7 @@ def main():
                     for qid, a in finals.items()}
 
         def run_calc(q):
-            kinds = schema.get(q["qid"], ["number"])
+            kinds = b_schema.effective_kinds(q, schema.get(q["qid"], ["number"]))
             raw = calc.answer_calc(q, kinds, model=args.model, log=log,
                                    verify_model=args.verify_model or None,
                                    blind_mode=True)

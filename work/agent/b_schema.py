@@ -46,6 +46,24 @@ def _slot_kind(ph):
     return "text"
 
 
+# 日期型计算题占位符常给成 999999.99（样例与 readme 日期规格冲突）。按题干问法定路径：
+# "哪一天/哪天/哪一日" → 升级为 date 槽，输出中文日期（readme 规格，线上验证 reg_b_003）
+# "何时/何日/什么时候" → 保持 number 槽，走 中文日期→YYYYMMDD.00 确定性转换（线上验证 reg_b_018）
+_DATE_KIND_ASK = re.compile(r"哪一天|哪天|哪一日")
+_DATE_NUM_ASK = re.compile(r"何时|何日|什么时候")
+
+
+def effective_kinds(q, kinds):
+    if q.get("answer_format") == "calc" and _DATE_KIND_ASK.search(q.get("question", "")):
+        return ["date" if k == "number" else k for k in kinds]
+    return kinds
+
+
+def is_date_question(q):
+    t = q.get("question", "")
+    return bool(_DATE_KIND_ASK.search(t) or _DATE_NUM_ASK.search(t))
+
+
 def load_schema(submit_csv):
     """qid -> [slot_kind, ...]（长度即需填写的答案个数）"""
     schema = {}
@@ -76,6 +94,9 @@ def fmt_slot(value, kind):
         return ">".join(parts)
     if kind == "date":
         m = re.search(r"(\d{4})\D{1,2}(\d{1,2})\D{1,2}(\d{1,2})", v)
+        if not m:  # 救裸 YYYYMMDD / YYYYMMDD.00（模型被数字槽逼出的自创编码）
+            m = re.fullmatch(
+                r"((?:19|20)\d{2})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])(?:\.0{1,2})?", v)
         if m:
             return f"{int(m.group(1))}年{int(m.group(2))}月{int(m.group(3))}日"
         return v

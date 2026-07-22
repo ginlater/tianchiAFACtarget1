@@ -166,9 +166,16 @@ def doc_index(doc_id) -> BM25:
 
 
 def search_docs(doc_ids, query, k_per_doc=3):
-    """在指定文档集合内检索，返回 [(chunk, score)]，按分数排序。"""
+    """在指定文档集合内检索，返回 [(chunk, score)]，按分数排序。
+
+    跨文档分数按各文档该查询的top1归一（各索引IDF独立不可比：目标公司名在
+    本档IDF≈0贡献为零，填充文档页眉样板反被逐块抬分——fin_b_011/017类伤）。"""
     hits = []
     for d in doc_ids:
-        hits.extend(doc_index(d).search(query, k=k_per_doc))
+        dh = doc_index(d).search(query, k=k_per_doc)
+        if not dh:
+            continue
+        top = dh[0][1] or 1.0
+        hits.extend((c, s / top) for c, s in dh)
     hits.sort(key=lambda x: -x[1])
     return hits

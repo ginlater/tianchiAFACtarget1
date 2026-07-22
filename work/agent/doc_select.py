@@ -15,7 +15,7 @@ INDEX_HEAD = 30000
 
 def _doc_card(doc_id):
     m = retrieval.docs_meta()[doc_id]
-    title = re.sub(r"^标题：", "", m["title"])
+    title = _display_title(doc_id)
     bits = [f"{doc_id}: 《{title}》"]
     if m.get("column"):
         bits.append(f"栏目:{m['column']}")
@@ -40,10 +40,21 @@ def domain_doc_index(domain):
 
 
 def coarse_candidates(q, k=18):
-    """regulatory(513篇)用BM25并集召回；其余领域文档少，直接全量进候选。"""
+    """regulatory(513篇)用BM25并集召回；其余领域文档少，直接全量进候选。
+    瘦身档：非regulatory也走BM25预筛top-12（纯词法，合规）。"""
     if q["domain"] != "regulatory":
-        return [d for d, m in retrieval.docs_meta().items()
-                if m["domain"] == q["domain"]]
+        all_ids = [d for d, m in retrieval.docs_meta().items()
+                   if m["domain"] == q["domain"]]
+        if __import__("os").environ.get("AFAC_SLIM4") == "1" and len(all_ids) > 12:
+            idx = domain_doc_index(q["domain"])
+            query = q["question"] + " " + " ".join(q["options"].values())
+            ids, seen = [], set()
+            for c, _s in idx.search(query, k=12):
+                if c["doc_id"] not in seen:
+                    seen.add(c["doc_id"])
+                    ids.append(c["doc_id"])
+            return ids or all_ids
+        return all_ids
     idx = domain_doc_index(q["domain"])
     query = q["question"] + " " + " ".join(q["options"].values())
     ids, seen = [], set()
@@ -63,10 +74,33 @@ def coarse_candidates(q, k=18):
 
 SEL_RE = re.compile(r"\[.*?\]", re.S)
 
-# 样板噪声：研报免责声明/分析师信息、页眉页码
+# 样板噪声：研报免责声明/分析师信息、页眉页码、募集说明书声明段
 BOILER = re.compile(
     r"请务必阅读|免责条款|证券研究报告|执业证书编号|SAC|分析师|联系人|"
-    r"^\d+$|^P\d+$|研究助理|@|电话|邮箱")
+    r"^\d+$|^P\d+$|研究助理|@|电话|邮箱|"
+    r"声明及提示|发行人声明|虚假记载|误导性陈述|重大遗漏|真实性、准确性")
+
+_BAD_TITLE = re.compile(r"声明|提示|指引|目录|凡欲认购|信息披露义务|发行人及其董事")
+
+
+def _display_title(doc_id):
+    """标题为样板句时（text13类伤：卡片0次出现'铁路'），
+    纯词法回退：取正文头部高频《…》短语或 XX债券/说明书 模式串。"""
+    m = retrieval.docs_meta()[doc_id]
+    t = re.sub(r"^标题：", "", m["title"])
+    if not _BAD_TITLE.search(t):
+        return t
+    raw = retrieval.doc_path(doc_id).read_text(encoding="utf-8")[:8000]
+    names = re.findall(r"《([^》]{4,30})》", raw) + \
+        re.findall(r"([一-龥A-Za-z0-9]{2,18}(?:债券|票据)(?:募集说明书)?)", raw)
+    _GENERIC = re.compile(r"^(本次|本期|该|上述|次级|中的)")
+    if names:
+        from collections import Counter
+        best = Counter(n for n in names if not _BAD_TITLE.search(n)
+                       and not _GENERIC.match(n) and len(n) >= 6).most_common(1)
+        if best:
+            return f"{best[0][0]}（{t[:10]}…）"
+    return t
 
 
 def _content_head(doc_id, n=90):
@@ -92,17 +126,22 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
     if len(cands) <= 2:
         return cands
     meta_all = retrieval.docs_meta()
+    head_n = 80 if __import__("os").environ.get("AFAC_SLIM4") == "1" else 130
     cards = []
     for d in cands:
         # csrc网页用 meta 摘要（含当事人/文号，标题雷同时唯一有区分度）；其余用正文开头
         summary = meta_all[d].get("summary")
-        head = (summary or _content_head(d))[:130]
+        head = (summary or _content_head(d))[:head_n]
         cards.append(f"[{d}] {_doc_card(d)} | {head}")
     opts = "\n".join(f"{k}. {v}" for k, v in q["options"].items())
     ex = json.dumps(cands[:2], ensure_ascii=False)
     if q["domain"] == "regulatory":
         max_docs = max(max_docs, 5)
         extra_hint = "相近规章（如治理准则/股东会规则/章程指引）拿不准哪部适用时，都选上。"
+    elif q["domain"] == "research":
+        max_docs = max(max_docs, 5)
+        extra_hint = ("题目或选项涉及几个行业/公司，就为每个行业/公司选一份对应研报，"
+                      "不得合并省略。")
     else:
         extra_hint = ""
     prompt = (
@@ -113,7 +152,8 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
         f"只输出文档ID的 JSON 数组，ID必须与方括号内完全一致，如 {ex}。")
     content, _r, _u = chat([{"role": "user", "content": prompt}],
                            qid=qid, model=model, thinking=False,
-                           max_tokens=250, tag="docsel")
+                           max_tokens=160 if head_n == 80 else 250,
+                           tag="docsel")
     m = SEL_RE.search(content)
     picked = []
     if m:
@@ -149,6 +189,25 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
                 att = f"{d}_att{att_i}"
                 if att in meta and att not in picked:
                     picked.append(att)
+    # 保险域：选项点名产品必须全覆盖（ins_b_012类伤：题问4产品只选3份文档）
+    if q["domain"] == "insurance":
+        try:
+            tit = json.loads((ROOT / "work" / "processed_data" /
+                              "insurance_titles.json").read_text())
+            for d, info in tit.items():
+                if d in picked or d not in set(cands):
+                    continue
+                if any(a in qtext for a in info.get("alias", [])):
+                    picked.append(d)
+        except FileNotFoundError:
+            pass
+    # 词法兜底：文档级BM25 top-1 未被选中则并入
+    # （fc_b_013/016类伤：正确文档text13候选卡全是样板句，Qwen选卡失手）
+    if q["domain"] != "regulatory" and len(cands) > 2:
+        idx = domain_doc_index(q["domain"])
+        top = idx.search(q["question"] + " " + " ".join(q["options"].values()), k=1)
+        if top and top[0][0]["doc_id"] not in picked:
+            picked.append(top[0][0]["doc_id"])
     # 比较/结合类题至少2份文档
     if len(picked) == 1:
         nxt = next((c for c in cands if c not in picked), None)

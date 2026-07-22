@@ -1,0 +1,46 @@
+{"qid": "fc_b_004", "picked": ["text02", "text03"]}
+{"qid": "fc_b_002", "picked": ["text08", "text10"]}
+{"qid": "fc_b_003", "picked": ["text03", "text14"]}
+{"qid": "fc_b_006", "picked": ["text04", "text11", "text05"]}
+{"qid": "fc_b_005", "picked": ["text08", "text10"]}
+{"qid": "fc_b_001", "picked": ["text01", "text03"]}
+{"qid": "fc_b_010", "picked": ["text10", "text08"]}
+{"qid": "fc_b_007", "picked": ["text05", "text04", "text11"]}
+{"qid": "fc_b_008", "picked": ["text04", "text11", "text05"]}
+{"qid": "fc_b_011", "picked": ["text14", "text02"]}
+{"qid": "fc_b_009", "picked": ["text05", "text11", "text04"]}
+{"qid": "fc_b_012", "picked": ["text09", "text06"]}
+{"qid": "fc_b_013", "picked": ["text13", "text12"]}
+{"qid": "fc_b_015", "picked": ["text10", "text08"]}
+{"qid": "fc_b_014", "picked": ["text14", "text11"]}
+{"qid": "fc_b_017", "picked": ["text12", "text07"]}
+{"qid": "fc_b_019", "picked": ["text12", "text02"]}
+{"qid": "fc_b_018", "picked": ["text06", "text04"]}
+{"qid": "fc_b_016", "picked": ["text13", "text14"]}
+{"qid": "fc_b_020", "picked": ["text12", "text10"]}
+{"qid": "fin_b_002", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_003", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_006", "picked": ["annual_cmb_2025_report", "annual_byd_2024_report"]}
+{"qid": "fin_b_001", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"]}
+{"qid": "fin_b_005", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report"]}
+{"qid": "fin_b_010", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report", "annual_cmb_2025_report"]}
+{"qid": "fin_b_009", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_008", "picked": ["annual_cscec_2024_report", "annual_cscec_2025_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_011", "picked": ["annual_chinamobile_2025_report", "annual_cscec_2025_report", "annual_cmb_2025_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_004", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report"]}
+{"qid": "fin_b_013", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "fin_b_007", "picked": ["annual_chinamobile_2025_report", "annual_byd_2024_report"]}
+{"qid": "fin_b_015", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_catl_2024_report"]}
+{"qid": "fin_b_014", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_cmb_2025_report"]}
+{"qid": "fin_b_012", "picked": ["annual_midea_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "fin_b_017", "picked": ["annual_chinamobile_2025_report", "annual_byd_2024_report"]}
+{"qid": "fin_b_016", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report"]}
+{"qid": "fin_b_018", "picked": ["annual_midea_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "ins_b_001", "picked": ["1", "2", "15", "16"]}
+{"qid": "fin_b_020", "picked": ["annual_cscec_2025_report", "annual_cscec_2024_report"]}
+{"qid": "ins_b_002", "picked": ["2", "1", "15"]}
+{"qid": "fin_b_019", "picked": ["annual_byd_2025_report", "annual_catl_2025_report", "annual_midea_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "ins_b_003", "picked": ["1", "2", "15", "16"]}
+{"qid": "ins_b_004", "picked": ["1", "2", "15", "16"]}
+{"qid": "ins_b_005", "picked": ["6", "8", "4", "2"]}
+{"qid": "ins_b_007", "picked": ["10", "9", "8", "7"]}

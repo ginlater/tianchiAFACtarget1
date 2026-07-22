@@ -10,18 +10,26 @@ import json, re
 
 from . import retrieval
 from .answerer import (CALC_DOMAINS, DIGEST_DOMAINS, JUDGE_STD, _doc_title,
-                       _q_text, _vote_letters, build_digest, gather_evidence,
-                       parse_answer, _think, VERIFY_MODEL)
+                       _q_text, _use_digest, _vote_letters, build_digest,
+                       gather_evidence, parse_answer, _think, VERIFY_MODEL)
 from .qwen_client import chat, LEDGER, DEFAULT_MODEL
 
 
 def group_questions(questions, max_batch=3):
-    """按(域, 文档集)分组。返回 [ [q,...], ... ]，单题组即单题。"""
+    """按(域, 文档集)分组。返回 [ [q,...], ... ]，单题组即单题。
+    瘦身档：域内松散合批（证据取文档并集），摊薄指令与证据开销。"""
+    import os
+    loose = os.environ.get("AFAC_SLIM4") == "1"
     groups = {}
     for q in questions:
-        key = (q["domain"], frozenset(q["doc_ids"]))
+        key = q["domain"] if loose else (q["domain"], frozenset(q["doc_ids"]))
         groups.setdefault(key, []).append(q)
     out = []
+    if loose:
+        max_batch = 4
+        # 文档集相近的排在一起，减少并集膨胀
+        for _key, qs in groups.items():
+            qs.sort(key=lambda q: sorted(q["doc_ids"]))
     for _key, qs in groups.items():
         for i in range(0, len(qs), max_batch):
             out.append(qs[i:i + max_batch])
@@ -31,8 +39,11 @@ def group_questions(questions, max_batch=3):
 def _batch_evidence(qs, model=DEFAULT_MODEL):
     q0 = qs[0]
     domain = q0["domain"]
+    # 松散合批下证据覆盖批内全部文档（并集，保持每题可答）
+    docs = list(dict.fromkeys(d for q in qs for d in q["doc_ids"]))
+    q0 = dict(q0, doc_ids=docs)
     blocks = []
-    if domain in DIGEST_DOMAINS:
+    if _use_digest(domain):
         for d in q0["doc_ids"]:
             blocks.append(build_digest(d, domain, model=model))
         base_cap = 9500 if domain == "financial_contracts" else \
@@ -41,9 +52,12 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q0["doc_ids"]))
         base_cap = 10000 if domain == "research" else 8500
-    # 预算按批内题数扩容40%/题（并集去重后实际占用低于线性）
-    cap = int(base_cap * (1 + 0.4 * (len(qs) - 1)))
-    cap += 2000 * max(0, len(q0["doc_ids"]) - 2)
+        if __import__("os").environ.get("AFAC_SLIM4") == "1":
+            base_cap = 5600 if domain == "research" else 4800
+    # 预算按批内题数扩容40%/题（并集去重后实际占用低于线性）；瘦身档25%
+    _slim4 = __import__("os").environ.get("AFAC_SLIM4") == "1"
+    cap = int(base_cap * (1 + (0.25 if _slim4 else 0.4) * (len(qs) - 1)))
+    cap += (1200 if _slim4 else 2000) * max(0, min(len(q0["doc_ids"]), 5) - 2)
     # 合成一个"联合题"喂给 gather_evidence：并集 options 驱动逐选项检索
     merged_opts = {}
     for i, q in enumerate(qs):
@@ -95,10 +109,17 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
     inst = BATCH_INST.format(n=len(qs))
     share = [q["qid"] for q in qs]
 
+    import os as _os
+    slim4 = _os.environ.get("AFAC_SLIM4") == "1"
+
     def _chat(prompt, tag, mdl, budget):
+        if slim4:
+            budget = min(budget, 1800)
         c, _r, usage = chat([{"role": "user", "content": prompt}],
                             qid="_batch", model=mdl, thinking=_think(qs[0]),
-                            thinking_budget=budget, max_tokens=1500 * len(qs) + 1500,
+                            thinking_budget=budget,
+                            max_tokens=(1200 * len(qs) + 1200) if slim4
+                            else 1500 * len(qs) + 1500,
                             tag=tag)
         # 均摊 token 到批内各题（_batch 槽位随后清零）
         p = usage.get("prompt_tokens", 0) // len(share)
