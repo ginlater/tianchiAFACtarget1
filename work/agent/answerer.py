@@ -113,7 +113,7 @@ def build_digest(doc_id, domain, qid="_digest", model=DEFAULT_MODEL):
                     seen.add(c["id"])
                     tag = f"P{c['page']}" if c["page"] else c["id"].split("#")[1]
                     piece = f"[{tag}] {c['text']}"
-                    if total + len(piece) > 14000:
+                    if total + len(piece) > 11500:
                         continue
                     total += len(piece)
                     parts.append(piece)
@@ -126,7 +126,7 @@ def build_digest(doc_id, domain, qid="_digest", model=DEFAULT_MODEL):
               "之类的否定性断言（你看到的可能只是片段）。\n\n" + raw)
         content, _r, _u = chat([{"role": "user", "content": prompt}],
                                qid=qid, model=model, thinking=False,
-                               max_tokens=2200, tag=f"digest:{doc_id}")
+                               max_tokens=1800, tag=f"digest:{doc_id}")
         card = f"《{_doc_title(doc_id)}》({doc_id}) 事实卡:\n{content}"
         with _digest_lock:
             _digest_cache[doc_id] = card
@@ -219,6 +219,8 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
         # 大文档域(合同/年报,单文档30万字符)证据基数更大；多文档题按文档数增配
         base_cap = 9500 if domain == "financial_contracts" else \
             8500 if domain == "financial_reports" else 6000
+        if os.environ.get("AFAC_DEEP") == "1":
+            base_cap = int(base_cap * 1.6)
         cap = base_cap + 2000 * max(0, len(q["doc_ids"]) - 2)
         ev, kept, prot = gather_evidence(q, k_opt=3, k_q=2, cap=cap,
                                          extra_queries=extra_queries)
@@ -228,6 +230,8 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
         blocks.append(digests)
         # research 选项数字散布多文档，覆盖优先给较大预算
         k_opt, cap = (4, 10000) if domain == "research" else (3, 8500)
+        if os.environ.get("AFAC_DEEP") == "1":
+            cap = int(cap * 1.6)
         ev, kept, prot = gather_evidence(q, k_opt=k_opt, k_q=4, cap=cap,
                                          extra_queries=extra_queries)
     blocks.append("原文片段证据:\n" + ev)
@@ -360,6 +364,7 @@ def expand_docs_if_needed(q, query, model=DEFAULT_MODEL):
 
 CALC_DOMAINS = ("insurance", "financial_reports")
 STABLE = os.environ.get("AFAC_STABLE") == "1"
+DEEP = os.environ.get("AFAC_DEEP") == "1"  # 深挖模式：低置信题复核用
 STABLE_DOMAINS = ("regulatory",) if not STABLE else \
     ("regulatory", "financial_contracts", "research")
 VERIFY_MODEL = os.environ.get("AFAC_VERIFY_MODEL", "")
@@ -389,7 +394,9 @@ LEAN_R2 = os.environ.get("AFAC_LEAN_R2") == "1"
 
 def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
     qid, fmt = q["qid"], q["answer_format"]
-    think_r1 = 2600 if q["domain"] in CALC_DOMAINS else 2200
+    think_r1 = 2200 if q["domain"] in CALC_DOMAINS else 1900
+    if DEEP:
+        think_r1 = 3400
     ev, kept, prot, digests = evidence_block(q, model=model)
     ev_ids = [c["id"] for c in kept]
     base = ev + "\n\n" + _q_text(q)
@@ -435,7 +442,7 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
         c2, _t, _ = chat(
             [{"role": "user", "content": r2_base + "\n\n" + R2_INST}],
             qid=qid, model=VERIFY_MODEL or model, thinking=_think(q),
-            thinking_budget=1800, max_tokens=3000, tag="r2")
+            thinking_budget=1500, max_tokens=2600, tag="r2")
         ans2 = parse_answer(c2, fmt)
         if ans2 and ans2 != ans1:
             # 定向仲裁：只带分歧选项的针对性证据，三样本逐选项多数决

@@ -69,7 +69,7 @@ BOILER = re.compile(
     r"^\d+$|^P\d+$|研究助理|@|电话|邮箱")
 
 
-def _content_head(doc_id, n=200):
+def _content_head(doc_id, n=130):
     """取正文中前若干条有信息量的行（跳过样板与页码）。"""
     raw = retrieval.doc_path(doc_id).read_text(encoding="utf-8")[:2500]
     out = []
@@ -96,7 +96,7 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
     for d in cands:
         # csrc网页用 meta 摘要（含当事人/文号，标题雷同时唯一有区分度）；其余用正文开头
         summary = meta_all[d].get("summary")
-        head = summary or _content_head(d)
+        head = (summary or _content_head(d))[:130]
         cards.append(f"[{d}] {_doc_card(d)} | {head}")
     opts = "\n".join(f"{k}. {v}" for k, v in q["options"].items())
     ex = json.dumps(cands[:2], ensure_ascii=False)

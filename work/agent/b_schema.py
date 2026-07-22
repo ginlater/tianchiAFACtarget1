@@ -80,6 +80,10 @@ def fmt_slot(value, kind):
             return f"{int(m.group(1))}年{int(m.group(2))}月{int(m.group(3))}日"
         return v
     if kind in ("percent", "number"):
+        # 日期形答案在数字槽：确定性转为 YYYYMMDD.00（防 '4月1日'→'4.01' 之类乱切）
+        dm = re.search(r"(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", v)
+        if dm and kind == "number":
+            return f"{int(dm.group(1)):04d}{int(dm.group(2)):02d}{int(dm.group(3)):02d}.00"
         m = _NUM.search(v.replace("%", ""))
         if not m:
             return v

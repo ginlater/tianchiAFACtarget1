@@ -9,7 +9,7 @@ import argparse, json, pathlib, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-from agent import answerer, b_schema, calc, doc_select  # noqa: E402
+from agent import answerer, b_schema, batch, calc, doc_select  # noqa: E402
 from agent.qwen_client import LEDGER, DEFAULT_MODEL  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -27,6 +27,8 @@ def main():
     ap.add_argument("--fresh-digests", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--qids", default="")
+    ap.add_argument("--batch", action="store_true",
+                    help="同(域,文档集)选择题批量共享证据作答")
     args = ap.parse_args()
 
     outdir = ROOT / "work" / "output" / args.tag
@@ -81,21 +83,83 @@ def main():
         return [b_schema.fmt_slot(ans, "letter")]
 
     t0 = time.time()
-    with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = {ex.submit(work, q): q for q in qs}
-        for n, fut in enumerate(as_completed(futs)):
-            q = futs[fut]
+    if args.batch:
+        # 阶段1: 全部盲检（拿到 doc_ids 才能分组）
+        def docsel_one(q):
+            picked = doc_select.select_docs(q, model=args.model)
+            dlog.write(json.dumps({"qid": q["qid"], "picked": picked},
+                                  ensure_ascii=False) + "\n")
+            dlog.flush()
+            return dict(q, doc_ids=picked)
+        with ThreadPoolExecutor(max_workers=args.workers) as ex:
+            qs = list(ex.map(docsel_one, qs))
+        print(f"docsel 完成; tokens {LEDGER.totals()[2]:,}", flush=True)
+        # 阶段2: 选择题分组批答 + 计算题独立
+        choice = [q for q in qs if q["answer_format"] != "calc"]
+        calcs = [q for q in qs if q["answer_format"] == "calc"]
+        groups = batch.group_questions(choice)
+        print(f"选择题 {len(choice)} → {len(groups)} 组; 计算题 {len(calcs)}",
+              flush=True)
+
+        def run_group(g):
+            if len(g) == 1:
+                ans, _ = answerer.answer_question(g[0], args.model, log,
+                                                  blind_mode=True)
+                return {g[0]["qid"]: [b_schema.fmt_slot(ans, "letter")]}
+            finals = batch.answer_batch(g, model=args.model, log=log)
+            return {qid: [b_schema.fmt_slot(a, "letter")]
+                    for qid, a in finals.items()}
+
+        def run_calc(q):
+            kinds = schema.get(q["qid"], ["number"])
+            raw = calc.answer_calc(q, kinds, model=args.model, log=log,
+                                   verify_model=args.verify_model or None,
+                                   blind_mode=True)
+            return {q["qid"]: b_schema.split_answer(raw, kinds)}
+
+        jobs = [(run_group, g) for g in groups] + [(run_calc, q) for q in calcs]
+        done_n = 0
+        with ThreadPoolExecutor(max_workers=args.workers) as ex:
+            futs = [ex.submit(fn, arg) for fn, arg in jobs]
+            for fut in as_completed(futs):
+                try:
+                    got = fut.result()
+                except Exception as e:  # noqa: BLE001
+                    print(f"FAIL batch/calc: {e}", flush=True)
+                    got = {}
+                results.update(got)
+                done_n += len(got)
+                _p, _c, t = LEDGER.totals()
+                print(f"[{done_n}/{len(qs)}] +{list(got)} ({t:,} tok)",
+                      flush=True)
+                json.dump(results, open(outdir / "answers.json", "w"),
+                          ensure_ascii=False, indent=1)
+        # 补漏：任何未出答案的题回退单题
+        missing = [q for q in qs if q["qid"] not in results]
+        for q in missing:
             try:
-                slots = fut.result()
-            except Exception as e:  # noqa: BLE001
-                print(f"FAIL {q['qid']}: {e}", flush=True)
+                slots = work(q)
+            except Exception:  # noqa: BLE001
                 slots = ["A"] if q["answer_format"] != "calc" else ["0.00"]
             results[q["qid"]] = slots
-            _p, _c, t = LEDGER.totals()
-            print(f"[{n+1}/{len(qs)}] {q['qid']} -> {slots} ({t:,} tok)",
-                  flush=True)
-            json.dump(results, open(outdir / "answers.json", "w"),
-                      ensure_ascii=False, indent=1)
+        if missing:
+            print(f"回退补漏 {len(missing)} 题", flush=True)
+    else:
+        with ThreadPoolExecutor(max_workers=args.workers) as ex:
+            futs = {ex.submit(work, q): q for q in qs}
+            for n, fut in enumerate(as_completed(futs)):
+                q = futs[fut]
+                try:
+                    slots = fut.result()
+                except Exception as e:  # noqa: BLE001
+                    print(f"FAIL {q['qid']}: {e}", flush=True)
+                    slots = ["A"] if q["answer_format"] != "calc" else ["0.00"]
+                results[q["qid"]] = slots
+                _p, _c, t = LEDGER.totals()
+                print(f"[{n+1}/{len(qs)}] {q['qid']} -> {slots} ({t:,} tok)",
+                      flush=True)
+                json.dump(results, open(outdir / "answers.json", "w"),
+                          ensure_ascii=False, indent=1)
     log.close()
     dlog.close()
     answerer.save_digests(outdir / "digests.json")

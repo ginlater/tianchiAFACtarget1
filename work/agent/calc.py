@@ -4,7 +4,9 @@
 策略：宽证据检索 → 先抽取数值再计算（两阶段，防止边读边算出错）→
       独立第二样本 → 不一致时定向仲裁。
 """
-import json, re
+import json, os, re
+
+DEEP = os.environ.get("AFAC_DEEP") == "1"
 
 from . import retrieval
 from .answerer import build_digest, DIGEST_DOMAINS, gather_evidence, _doc_title
@@ -13,7 +15,7 @@ from .qwen_client import chat, DEFAULT_MODEL
 SLOT_DESC = {
     "number": "纯数字，保留两位小数，不带单位和千分位逗号",
     "percent": "百分数，形如 12.34%，保留两位小数",
-    "ranking": "排序，用英文半角 > 连接，前后不加空格，如 甲公司>乙公司",
+    "ranking": "排序，用英文半角 > 连接，前后不加空格；公司名用题干中的简称原文",
     "date": "中文日期，形如 2026年1月1日",
     "text": "题目要求的完整文本，不加多余说明",
 }
@@ -52,9 +54,16 @@ ANS_RE = re.compile(r"答案[:：]\s*(.+)")
 SEARCH_RE = re.compile(r"补充检索[:：]\s*(.+)")
 
 
+_TEMPLATE_ECHO = re.compile(r"甲公司|乙公司|123\.45|12\.34%|<文本>|<答案>")
+
+
 def parse_calc(content):
     ms = list(ANS_RE.finditer(content or ""))
-    return ms[-1].group(1).strip() if ms else ""
+    for m in reversed(ms):
+        v = m.group(1).strip()
+        if v and not _TEMPLATE_ECHO.search(v):
+            return v
+    return ""
 
 
 def calc_evidence(q, model=DEFAULT_MODEL, extra=()):
@@ -68,7 +77,7 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=()):
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
     # 计算题证据要宽：数字常散落在多张表
-    cap = 11000 + 2000 * max(0, len(q["doc_ids"]) - 2)
+    cap = (14000 if DEEP else 11000) + 2000 * max(0, len(q["doc_ids"]) - 2)
     ev, kept, _prot = gather_evidence(q, k_opt=4, k_q=5, cap=cap,
                                       extra_queries=extra)
     blocks.append("原文片段证据:\n" + ev)
@@ -84,12 +93,12 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     base = ev + "\n\n题目:\n" + q["question"] + "\n\n" + inst
 
     c1, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
-                      model=model, thinking=True, thinking_budget=3600,
-                      max_tokens=5000, tag="calc1")
+                      model=model, thinking=True, thinking_budget=(4000 if DEEP else 2800),
+                      max_tokens=4200, tag="calc1")
     a1 = parse_calc(c1)
 
     ms = SEARCH_RE.search(c1)
-    if ms:  # 只要报了证据缺口就补检（即使已给出答案——缺数下的答案不可信）
+    if ms and not a1:  # 无有效答案且报缺口才补检(v2实测宽触发烧token无收益)
         supp = ms.group(1).strip()
         if blind_mode:  # 盲测下缺数可能因选错文档，允许域级扩检加选
             from .answerer import expand_docs_if_needed
@@ -102,15 +111,15 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
         ev2, ev_ids = calc_evidence(q, model=model, extra=[supp])
         base = ev2 + "\n\n题目:\n" + q["question"] + "\n\n" + inst
         c1b, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
-                           model=model, thinking=True, thinking_budget=3600,
-                           max_tokens=5000, tag="calc1b")
+                           model=model, thinking=True, thinking_budget=(4000 if DEEP else 2800),
+                           max_tokens=4200, tag="calc1b")
         if parse_calc(c1b):
             c1, a1 = c1b, parse_calc(c1b)
 
     # 独立第二样本（异构模型更有信息量）
     c2, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
                       model=verify_model or model, thinking=True,
-                      thinking_budget=3600, max_tokens=5000, tag="calc2")
+                      thinking_budget=(4000 if DEEP else 2800), max_tokens=4200, tag="calc2")
     a2 = parse_calc(c2)
 
     final, c3 = a1 or a2, None
@@ -120,7 +129,7 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
                "给出正确结果。最后一行仍按要求输出 答案: ")
         c3, _t, _u = chat([{"role": "user", "content": adj}], qid=qid,
                           model=verify_model or model, thinking=True,
-                          thinking_budget=4000, max_tokens=5000, tag="calc3")
+                          thinking_budget=(4400 if DEEP else 3200), max_tokens=4200, tag="calc3")
         a3 = parse_calc(c3)
         final = a3 or a1
     if log is not None:
