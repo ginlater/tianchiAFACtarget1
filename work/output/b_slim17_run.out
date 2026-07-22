@@ -36,3 +36,7 @@ docsel 完成; tokens 31,645
 [96/100] +['reg_b_014'] (407,273 tok)
 [97/100] +['res_b_005'] (410,950 tok)
 [98/100] +['res_b_007'] (414,424 tok)
+[99/100] +['res_b_012'] (418,067 tok)
+[100/100] +['ins_b_003'] (425,047 tok)
+done in 364s; tokens 425,047 (p=321,479 c=103,568)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_slim17/answer.csv

@@ -729,7 +729,12 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
 
     final, c2, ans2 = ans1, None, None
     # tf 复核实测 0/20 翻转，跳过省 token；multi/mcq 保留盲复核；SLIM 全部单样本
-    if (not SLIM and fmt in ("multi", "mcq")) or not ans1:
+    # AFAC_R2_DOMAINS=a,b 时仅列出域做r2（压缩阶梯第1刀：强域19-20/20复核是纯重复）
+    need_r2 = (not SLIM and fmt in ("multi", "mcq")) or not ans1
+    _r2_doms = os.environ.get("AFAC_R2_DOMAINS")
+    if _r2_doms is not None and q["domain"] not in _r2_doms.split(","):
+        need_r2 = not ans1
+    if need_r2:
         if LEAN_R2:
             # 精简复核证据：记忆卡 + r1引用页的块 + 每选项受保护块（独立性保留）
             cited = set(re.findall(r"P(\d+)", c1))
