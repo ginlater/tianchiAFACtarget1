@@ -116,10 +116,14 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
 
     c1 = _chat(base + "\n\n" + inst, "b1", model, 2600)
     a1 = _parse_batch(c1, qs)
-    c2 = _chat(base + "\n\n" + inst +
-               "\n（这是独立复核轮，请从头独立判断）", "b2",
-               VERIFY_MODEL or model, 2200)
-    a2 = _parse_batch(c2, qs)
+    import os as _os
+    if _os.environ.get("AFAC_SLIM") == "1":
+        a2 = {}
+    else:
+        c2 = _chat(base + "\n\n" + inst +
+                   "\n（这是独立复核轮，请从头独立判断）", "b2",
+                   VERIFY_MODEL or model, 2200)
+        a2 = _parse_batch(c2, qs)
 
     finals = {}
     for q in qs:

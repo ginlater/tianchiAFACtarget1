@@ -97,8 +97,8 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     base = ev + "\n\n题目:\n" + q["question"] + "\n\n" + inst
 
     c1, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
-                      model=model, thinking=True, thinking_budget=(4000 if DEEP else (2400 if SLIM else 2800)),
-                      max_tokens=4200, tag="calc1")
+                      model=model, thinking=True, thinking_budget=(4000 if DEEP else (2000 if SLIM else 2800)),
+                      max_tokens=3600, tag="calc1")
     a1 = parse_calc(c1)
 
     ms = SEARCH_RE.search(c1)
@@ -115,8 +115,8 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
         ev2, ev_ids = calc_evidence(q, model=model, extra=[supp])
         base = ev2 + "\n\n题目:\n" + q["question"] + "\n\n" + inst
         c1b, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
-                           model=model, thinking=True, thinking_budget=(4000 if DEEP else (2400 if SLIM else 2800)),
-                           max_tokens=4200, tag="calc1b")
+                           model=model, thinking=True, thinking_budget=(4000 if DEEP else (2000 if SLIM else 2800)),
+                           max_tokens=3600, tag="calc1b")
         if parse_calc(c1b):
             c1, a1 = c1b, parse_calc(c1b)
 
@@ -125,7 +125,7 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     if not SLIM:
         c2, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
                           model=verify_model or model, thinking=True,
-                          thinking_budget=(4000 if DEEP else (2400 if SLIM else 2800)), max_tokens=4200, tag="calc2")
+                          thinking_budget=(4000 if DEEP else (2000 if SLIM else 2800)), max_tokens=3600, tag="calc2")
         a2 = parse_calc(c2)
 
     final, c3 = a1 or a2, None
@@ -135,7 +135,7 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
                "给出正确结果。最后一行仍按要求输出 答案: ")
         c3, _t, _u = chat([{"role": "user", "content": adj}], qid=qid,
                           model=verify_model or model, thinking=True,
-                          thinking_budget=(4400 if DEEP else 3200), max_tokens=4200, tag="calc3")
+                          thinking_budget=(4400 if DEEP else 3200), max_tokens=3600, tag="calc3")
         a3 = parse_calc(c3)
         final = a3 or a1
     if log is not None:

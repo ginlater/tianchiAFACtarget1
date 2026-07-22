@@ -238,7 +238,7 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
         digests = "涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"])
         blocks.append(digests)
-        cap = 4200 + 1200 * max(0, len(q["doc_ids"]) - 2)
+        cap = 3600 + 1000 * max(0, len(q["doc_ids"]) - 2)
         ev, kept, prot = gather_evidence(q, k_opt=2, k_q=2, cap=cap,
                                          extra_queries=extra_queries)
         blocks.append("原文片段证据:\n" + ev)
@@ -440,6 +440,8 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
     think_r1 = 2200 if q["domain"] in CALC_DOMAINS else 1900
     if DEEP:
         think_r1 = 3400
+    if SLIM:
+        think_r1 = 1600
     ev, kept, prot, digests = evidence_block(q, model=model)
     ev_ids = [c["id"] for c in kept]
     base = ev + "\n\n" + _q_text(q)
