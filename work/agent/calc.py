@@ -71,14 +71,17 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=()):
     """计算题证据：记忆卡（含关键财务数字）+ 宽检索原文片段。"""
     blocks = []
     domain = q["domain"]
-    if domain in DIGEST_DOMAINS:
+    if os.environ.get("AFAC_NO_DIGEST") == "1":
+        blocks.append("涉及文档:\n" + "\n".join(
+            f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
+    elif domain in DIGEST_DOMAINS:
         for d in q["doc_ids"]:
             blocks.append(build_digest(d, domain, model=model))
     else:
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
     # 计算题证据要宽：数字常散落在多张表
-    cap = (14000 if DEEP else (8500 if SLIM else 11000)) + 2000 * max(0, len(q["doc_ids"]) - 2)
+    cap = 6000 if os.environ.get("AFAC_NO_DIGEST")=="1" else (14000 if DEEP else (7000 if SLIM else 11000)) + 2000 * max(0, len(q["doc_ids"]) - 2)
     ev, kept, _prot = gather_evidence(q, k_opt=4, k_q=5, cap=cap,
                                       extra_queries=extra)
     blocks.append("原文片段证据:\n" + ev)
@@ -94,7 +97,7 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     base = ev + "\n\n题目:\n" + q["question"] + "\n\n" + inst
 
     c1, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
-                      model=model, thinking=True, thinking_budget=(4000 if DEEP else 2800),
+                      model=model, thinking=True, thinking_budget=(4000 if DEEP else (2400 if SLIM else 2800)),
                       max_tokens=4200, tag="calc1")
     a1 = parse_calc(c1)
 
@@ -112,7 +115,7 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
         ev2, ev_ids = calc_evidence(q, model=model, extra=[supp])
         base = ev2 + "\n\n题目:\n" + q["question"] + "\n\n" + inst
         c1b, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
-                           model=model, thinking=True, thinking_budget=(4000 if DEEP else 2800),
+                           model=model, thinking=True, thinking_budget=(4000 if DEEP else (2400 if SLIM else 2800)),
                            max_tokens=4200, tag="calc1b")
         if parse_calc(c1b):
             c1, a1 = c1b, parse_calc(c1b)
@@ -122,7 +125,7 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     if not SLIM:
         c2, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
                           model=verify_model or model, thinking=True,
-                          thinking_budget=(4000 if DEEP else 2800), max_tokens=4200, tag="calc2")
+                          thinking_budget=(4000 if DEEP else (2400 if SLIM else 2800)), max_tokens=4200, tag="calc2")
         a2 = parse_calc(c2)
 
     final, c3 = a1 or a2, None

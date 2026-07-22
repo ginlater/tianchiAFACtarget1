@@ -113,7 +113,7 @@ def build_digest(doc_id, domain, qid="_digest", model=DEFAULT_MODEL):
                     seen.add(c["id"])
                     tag = f"P{c['page']}" if c["page"] else c["id"].split("#")[1]
                     piece = f"[{tag}] {c['text']}"
-                    if total + len(piece) > 11500:
+                    if total + len(piece) > (8000 if __import__("os").environ.get("AFAC_SLIM")=="1" else 11500):
                         continue
                     total += len(piece)
                     parts.append(piece)
@@ -126,7 +126,7 @@ def build_digest(doc_id, domain, qid="_digest", model=DEFAULT_MODEL):
               "之类的否定性断言（你看到的可能只是片段）。\n\n" + raw)
         content, _r, _u = chat([{"role": "user", "content": prompt}],
                                qid=qid, model=model, thinking=False,
-                               max_tokens=1800, tag=f"digest:{doc_id}")
+                               max_tokens=(1200 if os.environ.get("AFAC_SLIM")=="1" else 1800), tag=f"digest:{doc_id}")
         card = f"《{_doc_title(doc_id)}》({doc_id}) 事实卡:\n{content}"
         with _digest_lock:
             _digest_cache[doc_id] = card
@@ -234,6 +234,15 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     """返回 (证据文本, chunk列表, 受保护id集合, 记忆卡文本)。"""
     domain = q["domain"]
     blocks, digests = [], ""
+    if os.environ.get("AFAC_NO_DIGEST") == "1":
+        digests = "涉及文档:\n" + "\n".join(
+            f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"])
+        blocks.append(digests)
+        cap = 4200 + 1200 * max(0, len(q["doc_ids"]) - 2)
+        ev, kept, prot = gather_evidence(q, k_opt=2, k_q=2, cap=cap,
+                                         extra_queries=extra_queries)
+        blocks.append("原文片段证据:\n" + ev)
+        return "\n\n".join(blocks), kept, prot, digests
     if domain in DIGEST_DOMAINS:
         digests = "\n\n".join(build_digest(d, domain, model=model)
                               for d in q["doc_ids"])
@@ -244,7 +253,7 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
         if os.environ.get("AFAC_DEEP") == "1":
             base_cap = int(base_cap * 1.6)
         if SLIM:
-            base_cap = int(base_cap * 0.75)
+            base_cap = int(base_cap * 0.6)
         cap = base_cap + 2000 * max(0, len(q["doc_ids"]) - 2)
         ev, kept, prot = gather_evidence(q, k_opt=3, k_q=2, cap=cap,
                                          extra_queries=extra_queries)

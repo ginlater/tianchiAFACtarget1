@@ -39,7 +39,7 @@ def domain_doc_index(domain):
     return _DOC_BM25[domain]
 
 
-def coarse_candidates(q, k=25):
+def coarse_candidates(q, k=18):
     """regulatory(513篇)用BM25并集召回；其余领域文档少，直接全量进候选。"""
     if q["domain"] != "regulatory":
         return [d for d, m in retrieval.docs_meta().items()
@@ -69,7 +69,7 @@ BOILER = re.compile(
     r"^\d+$|^P\d+$|研究助理|@|电话|邮箱")
 
 
-def _content_head(doc_id, n=130):
+def _content_head(doc_id, n=90):
     """取正文中前若干条有信息量的行（跳过样板与页码）。"""
     raw = retrieval.doc_path(doc_id).read_text(encoding="utf-8")[:2500]
     out = []
