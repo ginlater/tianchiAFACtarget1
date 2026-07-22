@@ -26,7 +26,7 @@ def group_questions(questions, max_batch=3):
         groups.setdefault(key, []).append(q)
     out = []
     if loose:
-        max_batch = 6
+        max_batch = 8
         # 文档集相近的排在一起，减少并集膨胀
         for _key, qs in groups.items():
             qs.sort(key=lambda q: sorted(q["doc_ids"]))
