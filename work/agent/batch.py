@@ -62,15 +62,27 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
     cap += (1200 if _slim4 else 2000) * max(0, min(len(q0["doc_ids"]), 5) - 2)
     # 逐题配额检索后并集（伪题合并会让所有选项查询共用第1题前缀，
     # 后位题证据被挤出：批检索覆盖0.16 vs 单题0.41——slim10八题批稀释类伤）
-    per_cap = max(1800, cap // len(qs))
-    best = {}
+    per_cap = max(1500, cap // len(qs))
+    best, prot_all = {}, set()
     for q in qs:
         qq = dict(q, doc_ids=q0["doc_ids"])
-        _ev_i, kept_i, _prot_i = gather_evidence(qq, k_opt=2, k_q=3,
-                                                 cap=per_cap)
+        _ev_i, kept_i, prot_i = gather_evidence(qq, k_opt=2, k_q=3,
+                                                cap=per_cap)
         for c in kept_i:
             best[c["id"]] = c
-    kept = sorted(best.values(),
+        prot_all |= prot_i
+    # 并集层总预算闸门（保护块优先装填）：防逐题保护豁免叠加爆预算(slim12回归)
+    ordered = sorted(best.values(), key=lambda c: c["id"] not in prot_all)
+    picked_u, total = [], 0
+    for c in ordered:
+        L = len(c["text"]) + 20
+        if c["id"] not in prot_all and total + L > int(cap * 1.15):
+            continue
+        if total + L > int(cap * 1.6):  # 硬顶：保护块也不得无限叠加
+            continue
+        total += L
+        picked_u.append(c)
+    kept = sorted(picked_u,
                   key=lambda c: (c["doc_id"], c["page"] or 0,
                                  int(c["id"].split("#c")[1])))
     parts = []

@@ -2,7 +2,7 @@
 
 AFAC_STABLE=1 环境变量启用稳定模式：非计算域关闭思维链+低温采样（降方差降token）。
 """
-import json, os, pathlib, re, threading
+import json, math, os, pathlib, re, threading
 
 from . import retrieval
 from .qwen_client import chat, DEFAULT_MODEL
@@ -172,6 +172,157 @@ def load_digests(path):
 
 # ---------------- 证据组装 ----------------
 
+# ---------------- 选项实体反查（纯词法；AFAC_ENT_PROBE=0 关闭） ----------------
+ENT_PROBE = os.environ.get("AFAC_ENT_PROBE", "1") == "1"
+ENT_PROBE_DOMAINS = {"research", "financial_contracts", "financial_reports"}
+_ENT_CLAUSE = re.compile(r"[，。；：、！？,;:!?()（）【】\s]+")
+_ENT_FUNC = re.compile(
+    "以及|或者|并且|而且|但是|因此|所以|如果|虽然|尽管|能够|可以|可能|需要|应当|应该|必须|试图|属于|包括|存在|具备|具有|"
+    "实现|提升|提高|增加|减少|降低|保持|维持|建立|形成|完成|进行|推动|加速|导致|带来|面临|经历|支持|要求|认为|判断|表明|"
+    "显示|说明|指出|意味着|有助于|通过|经过|由于|因为|基于|按照|关于|其中|以下|上述|这些|那些|所有|各自|不同|相同|之间|"
+    "通常|直接|间接|完全|主要|不仅|依次|分别|如何|在于|无论|即使|以来|此外|同时|随着|对于|由此|从而|进而|使得|成为|"
+    "[的地得了着与和及或且并而但则即均都也仍更最很较再又还只仅是为被把将向从在对按其该等之以]")
+_ENT_GENERIC = {
+    "前者", "后者", "二者", "两者", "双方", "以下", "上述", "说法", "表述", "正确",
+    "错误", "准确", "符合", "实际", "情况", "结论", "依据", "选项", "题干",
+    "行业", "企业", "公司", "市场", "领域", "模式", "方面", "效果", "程度",
+    "难度", "挑战", "趋势", "逻辑", "战略", "布局", "比较", "一定", "部分",
+    "相关", "重要", "核心", "关键", "共同", "充分", "输出", "延伸"}
+_ENT_NUM = re.compile(
+    r"[0-9]+(?:\.[0-9]+)?(?:%|％|万亿|亿元|亿|万元|万|元|倍|吨|GWh|kWh|km|个百分点|[Bb][Pp])")
+_ENT_ABS = re.compile(r"所有|全部|一律|绝对|均能|立竿见影|不存在|无需|任何|唯一|皆")
+_ENT_BOILER = re.compile(r"免责|分析师|投资评级|评级标准|郑重声明|投资咨询|关联机构|财务顾问|所发行的证券")
+_CJK1 = re.compile(r"[一-鿿]")
+
+
+def _ent_fragments(text):
+    out = []
+    for clause in _ENT_CLAUSE.split(text):
+        for f in _ENT_FUNC.split(clause):
+            f = f.strip()
+            if len(f) >= 2 and _CJK1.search(f):
+                out.append(f)
+    return out
+
+
+def _ent_bigrams(text):
+    bgs = []
+    for run in re.findall(r"[一-鿿]{2,}", text):
+        bgs += [run[i:i + 2] for i in range(len(run) - 1)]
+    return bgs
+
+
+def _ent_home_doc(opt_text, doc_ids, doc_text, nchunks):
+    """tf-idf 加权 bigram 亲和：选项→最相关文档（块数取对数归一防长文档吸附）"""
+    bgs = set(_ent_bigrams(opt_text))
+    tf = {d: {b: doc_text[d].count(b) for b in bgs} for d in doc_ids}
+    nd = len(doc_ids)
+    dfd = {b: sum(1 for d in doc_ids if tf[d][b]) for b in bgs}
+    best, best_s = None, -1.0
+    for d in doc_ids:
+        s = sum(math.log1p(min(tf[d][b], 8)) * math.log(1 + nd / dfd[b])
+                for b in bgs if tf[d][b])
+        s /= math.log(8 + nchunks[d])
+        if s > best_s:
+            best, best_s = d, s
+    return best
+
+
+def extract_entity_probes(q, doc_ids):
+    """从各选项词法抽取高区分度实体短语。
+    返回投放序 [(letter, phrase, df, home_doc, is_fallback)]。"""
+    stem, opts = q["question"], q["options"]
+    doc_text, nchunks, all_chunks = {}, {}, []
+    for d in doc_ids:
+        cs = retrieval.doc_index(d).chunks
+        doc_text[d] = "\n".join(c["text"] for c in cs)
+        nchunks[d] = len(cs)
+        all_chunks.extend(cs)
+    per_opt, demoted = {}, []
+    for letter, opt in opts.items():
+        frags = _ent_fragments(opt) + [m.group(0) for m in _ENT_NUM.finditer(opt)]
+        frags = list(dict.fromkeys(frags))
+        home = _ent_home_doc(opt, doc_ids, doc_text, nchunks)
+        lits, seen_p = [], set()
+        for f in frags:
+            if f in _ENT_GENERIC:
+                continue
+            hit, L = None, len(f)
+            for n in range(min(L, 6), 1, -1):      # 支配规则：最长命中即停
+                if n == 2 and L > 2:
+                    break                           # 子串候选最短3字
+                for i in range(L - n + 1):
+                    p = f[i:i + n]
+                    if p in _ENT_GENERIC or p in stem or p in seen_p:
+                        continue
+                    if sum(p in o for o in opts.values()) >= 2:
+                        continue                    # 跨选项样板词
+                    docs = [d for d in doc_ids if p in doc_text[d]]
+                    if docs:
+                        hit = (p, docs)
+                        break
+                if hit:
+                    break
+            if hit:
+                p, docs = hit
+                seen_p.add(p)
+                df = sum(p in c["text"] for c in all_chunks)
+                if df <= 8:
+                    lits.append((p, df, docs))
+        # home偏好有界：非home候选 df+2（防异档df=1巧合命中，又保稀有实体胜出通道）
+        lits.sort(key=lambda x: (x[1] + (0 if home in x[2] else 2), -len(x[0])))
+        probes = [(p, df, False) for p, df, _ds in lits[:2]]
+        if not lits:                                # 回退：bigram 松弛
+            fb = sorted([f for f in frags if len(f) >= 4
+                         and f not in stem and f not in _ENT_GENERIC],
+                        key=len, reverse=True)
+            if fb:
+                probes = [(fb[0], 0, True)]
+        per_opt[letter] = probes, home
+        if _ENT_ABS.search(opt):
+            demoted.append(letter)                  # 绝对化干扰项排队尾
+    order = []
+    letters = [l for l in opts if l not in demoted] + demoted
+    for rank in range(2):
+        for letter in letters:
+            probes, home = per_opt[letter]
+            if rank < len(probes):
+                p, df, fb = probes[rank]
+                order.append((letter, p, df, home, fb))
+    return order
+
+
+def resolve_entity_probe(phrase, home, fallback, doc_ids):
+    """短语→强制块。home文档优先；样板行拒绝；回退用bigram松弛匹配。"""
+    pb = set(_ent_bigrams(phrase)) if fallback else None
+    for d in ([home] if home in doc_ids else []) + [x for x in doc_ids if x != home]:
+        for c, _s in retrieval.doc_index(d).search(phrase, k=3):
+            if fallback:
+                if len(pb & set(_ent_bigrams(c["text"]))) >= max(2, len(pb) // 2):
+                    return c
+                continue
+            if phrase not in c["text"]:
+                continue
+            line = next((ln for ln in c["text"].split("\n") if phrase in ln), "")
+            if _ENT_BOILER.search(line):
+                continue                            # 免责/声明样板行 → 下一块
+            return c
+    return None
+
+
+def _probe_window(c, phrase, width=240):
+    """新增块按短语位置截窗口（预算控制）；id/page 保留原块字段。"""
+    t = c["text"]
+    if len(t) <= width:
+        return c
+    pos = max(t.find(phrase), 0)
+    lo = max(0, pos - width // 3)
+    hi = min(len(t), lo + width)
+    w = dict(c)
+    w["text"] = ("…" if lo else "") + t[lo:hi] + ("…" if hi < len(t) else "")
+    return w
+
+
 def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
     doc_ids = q["doc_ids"]
     queries = [q["question"]] + [f"{q['question'][:40]} {t}" for t in q["options"].values()]
@@ -235,6 +386,24 @@ def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
         chunk_by_id[cid] = c
         protected.add(cid)
         best[cid] = max(best.get(cid, 0), 1e9)  # 强制块置顶
+    # —— 选项实体反查：选项专名句字面存在但被长查询稀释（res_b_002/008/018/020类伤）——
+    if ENT_PROBE and q.get("options") and q.get("domain") in ENT_PROBE_DOMAINS:
+        ent_new = 0
+        for _letter, ph, _df, home, fb in extract_entity_probes(q, doc_ids):
+            if ent_new >= 4:
+                break
+            c = resolve_entity_probe(ph, home, fb, doc_ids)
+            if c is None:
+                continue
+            cid = c["id"]
+            if cid in chunk_by_id:              # 已在候选池：仅保护，零字符成本
+                protected.add(cid)
+                best[cid] = max(best.get(cid, 0), 1e9)
+                continue
+            chunk_by_id[cid] = _probe_window(c, ph)   # 新块：240字窗口
+            protected.add(cid)
+            best[cid] = 1e9
+            ent_new += 1
     out = [(chunk_by_id[cid], s) for cid, s in best.items()]
     # 目录/图表索引块降权（占坑但无正文信息量）
     def _is_toc(c):
