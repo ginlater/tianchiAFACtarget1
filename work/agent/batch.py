@@ -141,7 +141,7 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
         c, _r, usage = chat([{"role": "user", "content": prompt}],
                             qid="_batch", model=mdl, thinking=_think(qs[0]),
                             thinking_budget=budget,
-                            max_tokens=(1200 * len(qs) + 1200) if slim4
+                            max_tokens=(1400 * len(qs) + 1400) if slim4
                             else 1500 * len(qs) + 1500,
                             tag=tag)
         # 均摊 token 到批内各题（_batch 槽位随后清零）
@@ -190,9 +190,10 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
         else:
             final = x1 or x2
             if not final:
-                # 解析失败禁止默认A（实测默认A 8/8全错）：批证据单题追答
+                # 解析失败禁止默认A（实测默认A 8/8全错）：精简证据单题追答
+                # （全量批证据追答实测78k/跑，截到5000字后成本降2/3信息量足够）
                 c4, _r, _u = chat(
-                    [{"role": "user", "content": ev + "\n\n" + _q_text(q) +
+                    [{"role": "user", "content": ev[:5000] + "\n\n" + _q_text(q) +
                       "\n\n" + JUDGE_STD + "\n只输出最后一行：答案: <字母>"}],
                     qid=qid, model=model, thinking=False,
                     max_tokens=400, tag="b4")
