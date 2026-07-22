@@ -45,11 +45,11 @@ def coarse_candidates(q, k=18):
     if q["domain"] != "regulatory":
         all_ids = [d for d, m in retrieval.docs_meta().items()
                    if m["domain"] == q["domain"]]
-        if __import__("os").environ.get("AFAC_SLIM4") == "1" and len(all_ids) > 12:
+        if __import__("os").environ.get("AFAC_SLIM4") == "1" and len(all_ids) > 9:
             idx = domain_doc_index(q["domain"])
             query = q["question"] + " " + " ".join(q["options"].values())
             ids, seen = [], set()
-            for c, _s in idx.search(query, k=12):
+            for c, _s in idx.search(query, k=9):
                 if c["doc_id"] not in seen:
                     seen.add(c["doc_id"])
                     ids.append(c["doc_id"])
@@ -126,7 +126,7 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
     if len(cands) <= 2:
         return cands
     meta_all = retrieval.docs_meta()
-    head_n = 80 if __import__("os").environ.get("AFAC_SLIM4") == "1" else 130
+    head_n = 55 if __import__("os").environ.get("AFAC_SLIM4") == "1" else 130
     cards = []
     for d in cands:
         # csrc网页用 meta 摘要（含当事人/文号，标题雷同时唯一有区分度）；其余用正文开头

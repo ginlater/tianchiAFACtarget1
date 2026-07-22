@@ -46,11 +46,10 @@ def _slot_kind(ph):
     return "text"
 
 
-# 日期型计算题占位符常给成 999999.99（样例与 readme 日期规格冲突）。按题干问法定路径：
-# "哪一天/哪天/哪一日" → 升级为 date 槽，输出中文日期（readme 规格，线上验证 reg_b_003）
-# "何时/何日/什么时候" → 保持 number 槽，走 中文日期→YYYYMMDD.00 确定性转换（线上验证 reg_b_018）
-_DATE_KIND_ASK = re.compile(r"哪一天|哪天|哪一日")
-_DATE_NUM_ASK = re.compile(r"何时|何日|什么时候")
+# 日期型计算题的占位符常给成 999999.99，与 readme 的日期规格冲突。
+# 按 readme 规格优先原则：题干问法指向日期的，答案一律输出中文日期格式
+# （readme：日期答案必须使用 YYYY年M月D日），槽位据此升级为 date。
+_DATE_KIND_ASK = re.compile(r"哪一天|哪天|哪一日|何时|何日|什么时候")
 
 
 def effective_kinds(q, kinds):
@@ -61,7 +60,7 @@ def effective_kinds(q, kinds):
 
 def is_date_question(q):
     t = q.get("question", "")
-    return bool(_DATE_KIND_ASK.search(t) or _DATE_NUM_ASK.search(t))
+    return bool(_DATE_KIND_ASK.search(t))
 
 
 def load_schema(submit_csv):

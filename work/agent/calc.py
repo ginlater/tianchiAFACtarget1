@@ -103,7 +103,7 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
     # 计算题证据要宽：数字常散落在多张表
-    cap = ((3400 if os.environ.get("AFAC_SLIM4") == "1" else 6000)
+    cap = ((2600 if os.environ.get("AFAC_SLIM4") == "1" else 6000)
            if os.environ.get("AFAC_NO_DIGEST") == "1"
            else (14000 if DEEP else (7000 if SLIM else 11000))
            + 2000 * max(0, len(q["doc_ids"]) - 2))
@@ -130,8 +130,8 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     slim4 = os.environ.get("AFAC_SLIM4") == "1"
     c1, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
                       model=model, thinking=True,
-                      thinking_budget=(4000 if DEEP else (1400 if slim4 else 2000 if SLIM else 2800)),
-                      max_tokens=(2800 if slim4 else 3600), tag="calc1")
+                      thinking_budget=(4000 if DEEP else (1100 if slim4 else 2000 if SLIM else 2800)),
+                      max_tokens=(2600 if slim4 else 3600), tag="calc1")
     a1 = parse_calc(c1)
 
     # 升级重试触发：①报缺数 ②答案缺失/截断/槽位不合法（fin_b_014/016/017/019类伤）
@@ -139,7 +139,9 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     ms = SEARCH_RE.search(c1)
     ok1 = valid_calc(a1, kinds)
     c1b = None
-    if ms or not ok1:
+    # 瘦身档升级重试只救空白/报缺数（槽位小瑕疵触发的重试在瘦预算下烧token无收益）
+    need_retry = (ms or not a1) if slim4 else (ms or not ok1)
+    if need_retry:
         supp = ms.group(1).strip() if ms else ""
         if supp and blind_mode:  # 盲测下缺数可能因选错文档，允许域级扩检加选
             from .answerer import expand_docs_if_needed
@@ -154,8 +156,8 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
         base = ev2 + "\n\n题目:\n" + q["question"] + "\n\n" + inst
         c1b, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
                            model=model, thinking=True,
-                           thinking_budget=(4000 if DEEP else 2800),
-                           max_tokens=3600, tag="calc1b")
+                           thinking_budget=(4000 if DEEP else (1600 if slim4 else 2800)),
+                           max_tokens=(2600 if slim4 else 3600), tag="calc1b")
         a1b = parse_calc(c1b)
         if valid_calc(a1b, kinds) or (a1b and not a1):
             c1, a1, ev_ids = c1b, a1b, ev_ids2

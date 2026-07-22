@@ -26,7 +26,7 @@ def group_questions(questions, max_batch=3):
         groups.setdefault(key, []).append(q)
     out = []
     if loose:
-        max_batch = 4
+        max_batch = 6
         # 文档集相近的排在一起，减少并集膨胀
         for _key, qs in groups.items():
             qs.sort(key=lambda q: sorted(q["doc_ids"]))
@@ -116,7 +116,7 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
 
     def _chat(prompt, tag, mdl, budget):
         if slim4:
-            budget = min(budget, 1800)
+            budget = min(budget, 1300)
         c, _r, usage = chat([{"role": "user", "content": prompt}],
                             qid="_batch", model=mdl, thinking=_think(qs[0]),
                             thinking_budget=budget,
