@@ -60,15 +60,24 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
     _slim4 = __import__("os").environ.get("AFAC_SLIM4") == "1"
     cap = int(base_cap * (1 + (0.25 if _slim4 else 0.4) * (len(qs) - 1)))
     cap += (1200 if _slim4 else 2000) * max(0, min(len(q0["doc_ids"]), 5) - 2)
-    # 合成一个"联合题"喂给 gather_evidence：并集 options 驱动逐选项检索
-    merged_opts = {}
-    for i, q in enumerate(qs):
-        for k, v in q["options"].items():
-            merged_opts[f"{i}{k}"] = v
-    pseudo = {"question": " ".join(q["question"][:60] for q in qs),
-              "options": merged_opts, "doc_ids": q0["doc_ids"]}
-    ev, kept, prot = gather_evidence(pseudo, k_opt=2, k_q=3, cap=cap)
-    blocks.append("原文片段证据:\n" + ev)
+    # 逐题配额检索后并集（伪题合并会让所有选项查询共用第1题前缀，
+    # 后位题证据被挤出：批检索覆盖0.16 vs 单题0.41——slim10八题批稀释类伤）
+    per_cap = max(1800, cap // len(qs))
+    best = {}
+    for q in qs:
+        qq = dict(q, doc_ids=q0["doc_ids"])
+        _ev_i, kept_i, _prot_i = gather_evidence(qq, k_opt=2, k_q=3,
+                                                 cap=per_cap)
+        for c in kept_i:
+            best[c["id"]] = c
+    kept = sorted(best.values(),
+                  key=lambda c: (c["doc_id"], c["page"] or 0,
+                                 int(c["id"].split("#c")[1])))
+    parts = []
+    for c in kept:
+        tag = f"{c['doc_id']} P{c['page']}" if c["page"] else c["id"]
+        parts.append(f"【{tag}】{c['text']}")
+    blocks.append("原文片段证据:\n" + "\n\n".join(parts))
     return "\n\n".join(blocks), [c["id"] for c in kept]
 
 
@@ -167,7 +176,16 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
             x3 = parse_answer(c3, fmt)
             finals[qid] = _vote_letters([x1, x2, x3], fmt) or x3 or x2
         else:
-            finals[qid] = x1 or x2 or "A"
+            final = x1 or x2
+            if not final:
+                # 解析失败禁止默认A（实测默认A 8/8全错）：批证据单题追答
+                c4, _r, _u = chat(
+                    [{"role": "user", "content": ev + "\n\n" + _q_text(q) +
+                      "\n\n" + JUDGE_STD + "\n只输出最后一行：答案: <字母>"}],
+                    qid=qid, model=model, thinking=False,
+                    max_tokens=400, tag="b4")
+                final = parse_answer(c4, fmt) or "A"
+            finals[qid] = final
         if log is not None:
             log.write(json.dumps({
                 "qid": qid, "final": finals[qid], "r1": x1, "r2": x2,

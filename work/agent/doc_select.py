@@ -326,6 +326,7 @@ def select_docs_batch(qs, model=DEFAULT_MODEL, k_coarse=12):
         if not picked:
             out[q["qid"]] = select_docs(q, model=model)
             continue
-        out[q["qid"]] = _finalize_picks(q, picked, per_cands[q["qid"]],
-                                        max_docs)
+        # 非reg域兜底候选用全域列表（top-9预筛会把别名/top1兜底需要的文档挡在外面）
+        cands = per_cands[q["qid"]] if domain == "regulatory" else shared
+        out[q["qid"]] = _finalize_picks(q, picked, cands, max_docs)
     return out
