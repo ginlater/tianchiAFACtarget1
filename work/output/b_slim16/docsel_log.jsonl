@@ -1,0 +1,100 @@
+{"qid": "fc_b_001", "picked": ["text01", "text02"]}
+{"qid": "fc_b_002", "picked": ["text08", "text01"]}
+{"qid": "fc_b_003", "picked": ["text03", "text14"]}
+{"qid": "fc_b_004", "picked": ["text02", "text01"]}
+{"qid": "fc_b_005", "picked": ["text08", "text01"]}
+{"qid": "fc_b_006", "picked": ["text04", "text05", "text11"]}
+{"qid": "fc_b_007", "picked": ["text04", "text05", "text11"]}
+{"qid": "fc_b_008", "picked": ["text04", "text05", "text11"]}
+{"qid": "fc_b_009", "picked": ["text04", "text05", "text11"]}
+{"qid": "fc_b_010", "picked": ["text10", "text01"]}
+{"qid": "fc_b_011", "picked": ["text14", "text01"]}
+{"qid": "fc_b_012", "picked": ["text09", "text06"]}
+{"qid": "fc_b_013", "picked": ["text13", "text01"]}
+{"qid": "fc_b_014", "picked": ["text14", "text01"]}
+{"qid": "fc_b_015", "picked": ["text10", "text01"]}
+{"qid": "fc_b_016", "picked": ["text13", "text01"]}
+{"qid": "fc_b_017", "picked": ["text12", "text01"]}
+{"qid": "fc_b_018", "picked": ["text06", "text01"]}
+{"qid": "fc_b_019", "picked": ["text12", "text01"]}
+{"qid": "fc_b_020", "picked": ["text12", "text01"]}
+{"qid": "reg_b_001", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）", "strict_v3_017_中华人民共和国反洗钱法"]}
+{"qid": "reg_b_003", "picked": ["csrc_0030_att1", "csrc_0005_att1"]}
+{"qid": "reg_b_004", "picked": ["strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）", "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"]}
+{"qid": "reg_b_005", "picked": ["csrc_0027_att1", "csrc_0025_att1", "csrc_0369", "csrc_0370"]}
+{"qid": "reg_b_007", "picked": ["csrc_0030_att1", "csrc_0005_att1"]}
+{"qid": "reg_b_008", "picked": ["csrc_0037_att1", "csrc_0038_att1", "csrc_0013_att1"]}
+{"qid": "reg_b_009", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_017_中华人民共和国反洗钱法"]}
+{"qid": "reg_b_013", "picked": ["csrc_0027_att1", "csrc_0025_att1"]}
+{"qid": "reg_b_014", "picked": ["csrc_0027_att1", "csrc_0025_att1"]}
+{"qid": "reg_b_015", "picked": ["strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）", "strict_v3_017_中华人民共和国反洗钱法"]}
+{"qid": "ins_b_001", "picked": ["1", "2", "15", "16"]}
+{"qid": "ins_b_002", "picked": ["1", "2", "15", "16"]}
+{"qid": "ins_b_003", "picked": ["1", "2", "15", "16"]}
+{"qid": "ins_b_004", "picked": ["1", "2", "15", "16"]}
+{"qid": "ins_b_005", "picked": ["2", "4", "8", "6"]}
+{"qid": "ins_b_006", "picked": ["2", "8", "10", "12", "9", "11"]}
+{"qid": "ins_b_007", "picked": ["8", "9", "10", "7"]}
+{"qid": "ins_b_008", "picked": ["9", "10", "13", "14"]}
+{"qid": "ins_b_009", "picked": ["3", "4", "5", "6"]}
+{"qid": "ins_b_010", "picked": ["2", "4", "3", "16"]}
+{"qid": "ins_b_011", "picked": ["1", "10"]}
+{"qid": "ins_b_012", "picked": ["4", "11", "12", "14", "13"]}
+{"qid": "ins_b_013", "picked": ["2", "11", "8", "14", "12", "13"]}
+{"qid": "ins_b_014", "picked": ["16", "1"]}
+{"qid": "ins_b_015", "picked": ["3", "5", "6", "16"]}
+{"qid": "ins_b_016", "picked": ["2", "4", "8", "16"]}
+{"qid": "ins_b_017", "picked": ["4", "5", "6", "9", "10"]}
+{"qid": "ins_b_018", "picked": ["1", "10"]}
+{"qid": "ins_b_019", "picked": ["1", "2", "15", "16"]}
+{"qid": "ins_b_020", "picked": ["8", "7", "3", "5"]}
+{"qid": "reg_b_016", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"]}
+{"qid": "reg_b_017", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_017_中华人民共和国反洗钱法"]}
+{"qid": "reg_b_018", "picked": ["strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）", "csrc_0025_att1"]}
+{"qid": "reg_b_020", "picked": ["csrc_0027_att1", "csrc_0025_att1"]}
+{"qid": "reg_b_021", "picked": ["strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）", "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）"]}
+{"qid": "reg_b_023", "picked": ["strict_v3_017_中华人民共和国反洗钱法", "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）"]}
+{"qid": "reg_b_024", "picked": ["csrc_0027_att1", "csrc_0025_att1", "csrc_0295"]}
+{"qid": "reg_b_025", "picked": ["strict_v3_017_中华人民共和国反洗钱法", "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）"]}
+{"qid": "reg_b_026", "picked": ["csrc_0009_att1", "csrc_0038_att1"]}
+{"qid": "reg_b_027", "picked": ["strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）", "csrc_0025_att1"]}
+{"qid": "res_b_001", "picked": ["pack2_text01", "pack2_text14", "pack2_text15", "pack2_text10"]}
+{"qid": "res_b_002", "picked": ["pack2_text16", "pack2_text05"]}
+{"qid": "res_b_003", "picked": ["pack2_text06", "pack2_text11", "pack2_text12"]}
+{"qid": "res_b_004", "picked": ["pack2_text08", "pack2_text01", "pack2_text14"]}
+{"qid": "res_b_005", "picked": ["pack2_text04", "pack2_text01"]}
+{"qid": "res_b_006", "picked": ["pack2_text15", "pack2_text14", "pack2_text10"]}
+{"qid": "res_b_007", "picked": ["pack2_text09", "pack2_text01"]}
+{"qid": "res_b_008", "picked": ["pack2_text03", "pack2_text13", "pack2_text01", "pack2_text15"]}
+{"qid": "res_b_009", "picked": ["pack2_text16", "pack2_text18", "pack2_text11", "pack2_text12"]}
+{"qid": "res_b_010", "picked": ["pack2_text07", "pack2_text09", "pack2_text18"]}
+{"qid": "res_b_011", "picked": ["pack2_text01", "pack2_text14", "pack2_text15"]}
+{"qid": "res_b_012", "picked": ["pack2_text05", "pack2_text01"]}
+{"qid": "res_b_013", "picked": ["pack2_text10", "pack2_text01", "pack2_text14"]}
+{"qid": "res_b_014", "picked": ["pack2_text03", "pack2_text13", "pack2_text15"]}
+{"qid": "res_b_015", "picked": ["pack2_text11", "pack2_text04"]}
+{"qid": "res_b_016", "picked": ["pack2_text01", "pack2_text15"]}
+{"qid": "res_b_017", "picked": ["pack2_text07", "pack2_text09", "pack2_text18", "pack2_text17"]}
+{"qid": "res_b_018", "picked": ["pack2_text16", "pack2_text13", "pack2_text05", "pack2_text18", "pack2_text19"]}
+{"qid": "res_b_019", "picked": ["pack2_text01", "pack2_text14", "pack2_text10"]}
+{"qid": "res_b_020", "picked": ["pack2_text04", "pack2_text07", "pack2_text03", "pack2_text17"]}
+{"qid": "fin_b_001", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"]}
+{"qid": "fin_b_002", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_003", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_004", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report"]}
+{"qid": "fin_b_005", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report"]}
+{"qid": "fin_b_006", "picked": ["annual_cmb_2025_report", "annual_byd_2024_report"]}
+{"qid": "fin_b_007", "picked": ["annual_chinamobile_2025_report", "annual_byd_2024_report"]}
+{"qid": "fin_b_008", "picked": ["annual_cscec_2024_report", "annual_cscec_2025_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_009", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_010", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report", "annual_cmb_2025_report"]}
+{"qid": "fin_b_011", "picked": ["annual_chinamobile_2025_report", "annual_cscec_2025_report", "annual_cmb_2025_report", "annual_midea_2025_report"]}
+{"qid": "fin_b_012", "picked": ["annual_midea_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "fin_b_013", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "fin_b_014", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_cmb_2025_report"]}
+{"qid": "fin_b_015", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_catl_2024_report"]}
+{"qid": "fin_b_016", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report"]}
+{"qid": "fin_b_017", "picked": ["annual_chinamobile_2025_report", "annual_byd_2024_report"]}
+{"qid": "fin_b_018", "picked": ["annual_midea_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "fin_b_019", "picked": ["annual_byd_2025_report", "annual_catl_2025_report", "annual_midea_2025_report", "annual_chinamobile_2025_report"]}
+{"qid": "fin_b_020", "picked": ["annual_cscec_2025_report", "annual_cscec_2024_report"]}
