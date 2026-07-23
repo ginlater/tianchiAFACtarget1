@@ -123,6 +123,10 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
 
 def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
                 blind_mode=False):
+    # 暗沟修复(GLOBAL_ESCAPE审计): verify_model只认CLI不读env,
+    # 26道计算题在env配置跑里从未吃到跨代异构二审
+    if verify_model is None:
+        verify_model = os.environ.get("AFAC_VERIFY_MODEL") or None
     qid = q["qid"]
     inst = CALC_INST.format(n=len(kinds), slots=_slots_text(kinds),
                             template=_template(kinds))
