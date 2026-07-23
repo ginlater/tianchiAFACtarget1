@@ -26,13 +26,16 @@ def group_questions(questions, max_batch=3):
         groups.setdefault(key, []).append(q)
     out = []
     if loose:
-        max_batch = 8
-        # 文档集相近的排在一起，减少并集膨胀
+        # 分域批量：大文档域小批保覆盖率(fc/ins差距源)，小文档域大批摊指令
         for _key, qs in groups.items():
             qs.sort(key=lambda q: sorted(q["doc_ids"]))
     for _key, qs in groups.items():
-        for i in range(0, len(qs), max_batch):
-            out.append(qs[i:i + max_batch])
+        mb = max_batch
+        if loose:
+            dom = _key
+            mb = {"financial_contracts": 3, "insurance": 3}.get(dom, 8)
+        for i in range(0, len(qs), mb):
+            out.append(qs[i:i + mb])
     return out
 
 
@@ -214,6 +217,10 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
                 "evidence_ids": ev_ids[:30]}, ensure_ascii=False) + "\n")
             log.flush()
     # 覆盖率制导定向单答：被并集挤饿的题用自己的完整证据重答（窄而准）
+    # 仅限大文档少题域(fc/fin)：ins题需4份条款,solo小帽反而饿死(slim19教训ins14→6)
+    if low_cov and qs[0]["domain"] not in ("financial_contracts",
+                                           "financial_reports"):
+        low_cov = []
     if low_cov:
         from .answerer import answer_question
         for q in qs:
