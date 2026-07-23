@@ -154,7 +154,8 @@ def write_submission(path, results, schema, order, ledger_per_qid,
     add_c, rem_c = divmod(shared_c, n)
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
-        w.writerow(["qid", "answer1", "answer2", "answer3", "answer4",
+        # 规则文档写answer1..4, 但平台判卷器实测要求 answer_1..answer_4 旧表头
+        w.writerow(["qid", "answer_1", "answer_2", "answer_3", "answer_4",
                     "prompt_tokens", "completion_tokens", "total_tokens",
                     "reasoning"])
         w.writerow(["summary", "", "", "", "", p, c, t, ""])
