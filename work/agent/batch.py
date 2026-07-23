@@ -33,7 +33,8 @@ def group_questions(questions, max_batch=3):
         mb = max_batch
         if loose:
             dom = _key
-            mb = {"financial_contracts": 3, "insurance": 3}.get(dom, 8)
+            # fc大文档单题深挖→小批; ins需多产品条款同场对比→大批(slim20教训ins 14→9)
+            mb = {"financial_contracts": 3}.get(dom, 8)
         for i in range(0, len(qs), mb):
             out.append(qs[i:i + mb])
     return out
