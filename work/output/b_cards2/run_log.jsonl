@@ -1,0 +1,80 @@
+{"qid": "fc_b_004", "final": "AC", "mega": ["fc_b_004", "fc_b_018", "fc_b_002", "fc_b_010", "fc_b_015"]}
+{"qid": "fc_b_018", "final": "AD", "mega": ["fc_b_004", "fc_b_018", "fc_b_002", "fc_b_010", "fc_b_015"]}
+{"qid": "fc_b_002", "final": "CD", "mega": ["fc_b_004", "fc_b_018", "fc_b_002", "fc_b_010", "fc_b_015"]}
+{"qid": "fc_b_010", "final": "", "mega": ["fc_b_004", "fc_b_018", "fc_b_002", "fc_b_010", "fc_b_015"]}
+{"qid": "fc_b_015", "final": "CD", "mega": ["fc_b_004", "fc_b_018", "fc_b_002", "fc_b_010", "fc_b_015"]}
+{"qid": "fc_b_017", "final": "BC", "mega": ["fc_b_017", "fc_b_019", "fc_b_013", "fc_b_016", "fc_b_011"]}
+{"qid": "fc_b_019", "final": "A", "mega": ["fc_b_017", "fc_b_019", "fc_b_013", "fc_b_016", "fc_b_011"]}
+{"qid": "fc_b_013", "final": "A", "mega": ["fc_b_017", "fc_b_019", "fc_b_013", "fc_b_016", "fc_b_011"]}
+{"qid": "fc_b_016", "final": "C", "mega": ["fc_b_017", "fc_b_019", "fc_b_013", "fc_b_016", "fc_b_011"]}
+{"qid": "fc_b_011", "final": "ABC", "mega": ["fc_b_017", "fc_b_019", "fc_b_013", "fc_b_016", "fc_b_011"]}
+{"qid": "fc_b_003", "final": "ABCD", "mega": ["fc_b_003", "fc_b_006", "fc_b_007", "fc_b_008", "fc_b_009"]}
+{"qid": "fc_b_006", "final": "B", "mega": ["fc_b_003", "fc_b_006", "fc_b_007", "fc_b_008", "fc_b_009"]}
+{"qid": "fc_b_007", "final": "C", "mega": ["fc_b_003", "fc_b_006", "fc_b_007", "fc_b_008", "fc_b_009"]}
+{"qid": "fc_b_008", "final": "ABC", "mega": ["fc_b_003", "fc_b_006", "fc_b_007", "fc_b_008", "fc_b_009"]}
+{"qid": "fc_b_009", "final": "BD", "mega": ["fc_b_003", "fc_b_006", "fc_b_007", "fc_b_008", "fc_b_009"]}
+{"qid": "fc_b_012", "final": "D", "mega": ["fc_b_012"]}
+{"qid": "fin_b_001", "final": "BD", "mega": ["fin_b_001", "fin_b_004", "fin_b_010", "fin_b_002", "fin_b_007"]}
+{"qid": "fin_b_004", "final": "AB", "mega": ["fin_b_001", "fin_b_004", "fin_b_010", "fin_b_002", "fin_b_007"]}
+{"qid": "fin_b_010", "final": "AD", "mega": ["fin_b_001", "fin_b_004", "fin_b_010", "fin_b_002", "fin_b_007"]}
+{"qid": "fin_b_002", "final": "BCD", "mega": ["fin_b_001", "fin_b_004", "fin_b_010", "fin_b_002", "fin_b_007"]}
+{"qid": "fin_b_007", "final": "AB", "mega": ["fin_b_001", "fin_b_004", "fin_b_010", "fin_b_002", "fin_b_007"]}
+{"qid": "fin_b_006", "final": "B", "mega": ["fin_b_006", "fin_b_003", "fin_b_009", "fin_b_005", "fin_b_011"]}
+{"qid": "fin_b_003", "final": "A", "mega": ["fin_b_006", "fin_b_003", "fin_b_009", "fin_b_005", "fin_b_011"]}
+{"qid": "fin_b_009", "final": "BCD", "mega": ["fin_b_006", "fin_b_003", "fin_b_009", "fin_b_005", "fin_b_011"]}
+{"qid": "fin_b_005", "final": "AC", "mega": ["fin_b_006", "fin_b_003", "fin_b_009", "fin_b_005", "fin_b_011"]}
+{"qid": "fin_b_011", "final": "ABC", "mega": ["fin_b_006", "fin_b_003", "fin_b_009", "fin_b_005", "fin_b_011"]}
+{"qid": "fin_b_012", "final": "D", "mega": ["fin_b_012", "fin_b_008"]}
+{"qid": "fin_b_008", "final": "AC", "mega": ["fin_b_012", "fin_b_008"]}
+{"qid": "ins_b_002", "final": "C", "mega": ["ins_b_002", "ins_b_004", "ins_b_014", "ins_b_006", "ins_b_008"]}
+{"qid": "ins_b_004", "final": "D", "mega": ["ins_b_002", "ins_b_004", "ins_b_014", "ins_b_006", "ins_b_008"]}
+{"qid": "ins_b_014", "final": "ACD", "mega": ["ins_b_002", "ins_b_004", "ins_b_014", "ins_b_006", "ins_b_008"]}
+{"qid": "ins_b_006", "final": "BC", "mega": ["ins_b_002", "ins_b_004", "ins_b_014", "ins_b_006", "ins_b_008"]}
+{"qid": "ins_b_008", "final": "ABD", "mega": ["ins_b_002", "ins_b_004", "ins_b_014", "ins_b_006", "ins_b_008"]}
+{"qid": "ins_b_017", "final": "AC", "mega": ["ins_b_017", "ins_b_007", "ins_b_013", "ins_b_012", "ins_b_010"]}
+{"qid": "ins_b_007", "final": "BC", "mega": ["ins_b_017", "ins_b_007", "ins_b_013", "ins_b_012", "ins_b_010"]}
+{"qid": "ins_b_013", "final": "BD", "mega": ["ins_b_017", "ins_b_007", "ins_b_013", "ins_b_012", "ins_b_010"]}
+{"qid": "ins_b_012", "final": "BD", "mega": ["ins_b_017", "ins_b_007", "ins_b_013", "ins_b_012", "ins_b_010"]}
+{"qid": "ins_b_010", "final": "B", "mega": ["ins_b_017", "ins_b_007", "ins_b_013", "ins_b_012", "ins_b_010"]}
+{"qid": "ins_b_016", "final": "AB", "mega": ["ins_b_016", "ins_b_015", "ins_b_005", "ins_b_009", "ins_b_020"]}
+{"qid": "ins_b_015", "final": "AC", "mega": ["ins_b_016", "ins_b_015", "ins_b_005", "ins_b_009", "ins_b_020"]}
+{"qid": "ins_b_005", "final": "B", "mega": ["ins_b_016", "ins_b_015", "ins_b_005", "ins_b_009", "ins_b_020"]}
+{"qid": "ins_b_009", "final": "D", "mega": ["ins_b_016", "ins_b_015", "ins_b_005", "ins_b_009", "ins_b_020"]}
+{"qid": "ins_b_020", "final": "AC", "mega": ["ins_b_016", "ins_b_015", "ins_b_005", "ins_b_009", "ins_b_020"]}
+{"qid": "reg_b_026", "final": "B", "mega": ["reg_b_026", "reg_b_008", "reg_b_013", "reg_b_020", "reg_b_024"]}
+{"qid": "reg_b_008", "final": "BC", "mega": ["reg_b_026", "reg_b_008", "reg_b_013", "reg_b_020", "reg_b_024"]}
+{"qid": "reg_b_013", "final": "B", "mega": ["reg_b_026", "reg_b_008", "reg_b_013", "reg_b_020", "reg_b_024"]}
+{"qid": "reg_b_020", "final": "B", "mega": ["reg_b_026", "reg_b_008", "reg_b_013", "reg_b_020", "reg_b_024"]}
+{"qid": "reg_b_024", "final": "B", "mega": ["reg_b_026", "reg_b_008", "reg_b_013", "reg_b_020", "reg_b_024"]}
+{"qid": "reg_b_005", "final": "BCD", "mega": ["reg_b_005", "reg_b_027", "reg_b_021", "reg_b_001", "reg_b_015"]}
+{"qid": "reg_b_027", "final": "BD", "mega": ["reg_b_005", "reg_b_027", "reg_b_021", "reg_b_001", "reg_b_015"]}
+{"qid": "reg_b_021", "final": "B", "mega": ["reg_b_005", "reg_b_027", "reg_b_021", "reg_b_001", "reg_b_015"]}
+{"qid": "reg_b_001", "final": "ACD", "mega": ["reg_b_005", "reg_b_027", "reg_b_021", "reg_b_001", "reg_b_015"]}
+{"qid": "reg_b_015", "final": "AC", "mega": ["reg_b_005", "reg_b_027", "reg_b_021", "reg_b_001", "reg_b_015"]}
+{"qid": "reg_b_009", "final": "BC", "mega": ["reg_b_009", "reg_b_017", "reg_b_023", "reg_b_025"]}
+{"qid": "reg_b_017", "final": "AC", "mega": ["reg_b_009", "reg_b_017", "reg_b_023", "reg_b_025"]}
+{"qid": "reg_b_023", "final": "AB", "mega": ["reg_b_009", "reg_b_017", "reg_b_023", "reg_b_025"]}
+{"qid": "reg_b_025", "final": "AC", "mega": ["reg_b_009", "reg_b_017", "reg_b_023", "reg_b_025"]}
+{"qid": "res_b_008", "final": "AC", "mega": ["res_b_008", "res_b_020", "res_b_013", "res_b_019", "res_b_011"]}
+{"qid": "res_b_020", "final": "BD", "mega": ["res_b_008", "res_b_020", "res_b_013", "res_b_019", "res_b_011"]}
+{"qid": "res_b_013", "final": "AB", "mega": ["res_b_008", "res_b_020", "res_b_013", "res_b_019", "res_b_011"]}
+{"qid": "res_b_019", "final": "B", "mega": ["res_b_008", "res_b_020", "res_b_013", "res_b_019", "res_b_011"]}
+{"qid": "res_b_011", "final": "BC", "mega": ["res_b_008", "res_b_020", "res_b_013", "res_b_019", "res_b_011"]}
+{"qid": "res_b_001", "final": "AB", "mega": ["res_b_001", "res_b_006", "res_b_016", "res_b_014", "res_b_015"]}
+{"qid": "res_b_006", "final": "AB", "mega": ["res_b_001", "res_b_006", "res_b_016", "res_b_014", "res_b_015"]}
+{"qid": "res_b_016", "final": "BD", "mega": ["res_b_001", "res_b_006", "res_b_016", "res_b_014", "res_b_015"]}
+{"qid": "res_b_014", "final": "CD", "mega": ["res_b_001", "res_b_006", "res_b_016", "res_b_014", "res_b_015"]}
+{"qid": "res_b_015", "final": "BC", "mega": ["res_b_001", "res_b_006", "res_b_016", "res_b_014", "res_b_015"]}
+{"qid": "res_b_018", "final": "ACD", "mega": ["res_b_018", "res_b_002", "res_b_003", "res_b_017", "res_b_010"]}
+{"qid": "res_b_002", "final": "AC", "mega": ["res_b_018", "res_b_002", "res_b_003", "res_b_017", "res_b_010"]}
+{"qid": "res_b_003", "final": "AB", "mega": ["res_b_018", "res_b_002", "res_b_003", "res_b_017", "res_b_010"]}
+{"qid": "res_b_017", "final": "AC", "mega": ["res_b_018", "res_b_002", "res_b_003", "res_b_017", "res_b_010"]}
+{"qid": "res_b_010", "final": "AC", "mega": ["res_b_018", "res_b_002", "res_b_003", "res_b_017", "res_b_010"]}
+{"qid": "res_b_004", "final": "BCD", "mega": ["res_b_004", "res_b_009"]}
+{"qid": "res_b_009", "final": "ABC", "mega": ["res_b_004", "res_b_009"]}
+{"qid": "fc_b_001", "final": "5.55%；5.36%；7.68%；7.35%"}
+{"qid": "fc_b_005", "final": "1468.47%；740.58%"}
+{"qid": "fc_b_014", "final": "14.41"}
+{"qid": "fc_b_020", "final": "2.30"}
+{"qid": "fin_b_013", "final": "-30.00；-9.23"}
+{"qid": "fin_b_014", "final": "1.12；9.82；8.69"}
