@@ -2,3 +2,6 @@
 [router] insfull 已发射 (pid 48107)
 [router] finfull 已发射 (pid 48108)
 [router] slimtrio 完成 rc=0 (243s)
+[router] insfull 完成 rc=0 (766s)
+[router] finfull 完成 rc=0 (1338s)
+[router] 合并完成: 100题 答题账1,720,459 → /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_router1

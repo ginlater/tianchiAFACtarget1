@@ -11,3 +11,13 @@
 [10/20] ins_b_010 -> ['AD'] (432,165 tok)
 [11/20] ins_b_012 -> ['BCD'] (485,769 tok)
 [12/20] ins_b_013 -> ['BD'] (503,232 tok)
+[13/20] ins_b_014 -> ['ACD'] (541,041 tok)
+[14/20] ins_b_011 -> ['16.00'] (550,779 tok)
+[15/20] ins_b_015 -> ['AC'] (564,348 tok)
+[16/20] ins_b_016 -> ['ABD'] (611,071 tok)
+[17/20] ins_b_017 -> ['ABCD'] (626,588 tok)
+[18/20] ins_b_018 -> ['60.00'] (635,792 tok)
+[19/20] ins_b_020 -> ['ACD'] (671,177 tok)
+[20/20] ins_b_019 -> ['211.50'] (680,590 tok)
+done in 765s; tokens 680,590 (p=567,701 c=112,889)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_router1_insfull/answer.csv
