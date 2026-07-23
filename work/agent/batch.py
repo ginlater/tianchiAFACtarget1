@@ -172,6 +172,23 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
 
     c1 = _chat(base + "\n\n" + inst, "b1", model, 2600)
     a1 = _parse_batch(c1, qs)
+    # 批内多数决（AFAC_B1_VOTES=N, 域白名单AFAC_B1_VOTE_DOMS）：
+    # 只对摇摆重灾域花钱，同证据独立采样逐选项投票
+    n_b1 = int(_os.environ.get("AFAC_B1_VOTES", "1"))
+    vote_doms = _os.environ.get("AFAC_B1_VOTE_DOMS",
+                                "financial_reports").split(",")
+    if n_b1 > 1 and qs[0]["domain"] in vote_doms:
+        pools = {q["qid"]: [a1.get(q["qid"])] for q in qs}
+        for _i in range(n_b1 - 1):
+            cx = _chat(base + "\n\n" + inst, "b1", model, 1600)
+            ax = _parse_batch(cx, qs)
+            for q in qs:
+                pools[q["qid"]].append(ax.get(q["qid"]))
+        for q in qs:
+            vals = [v for v in pools[q["qid"]] if v]
+            v = _vote_letters(vals, q["answer_format"])
+            if v:
+                a1[q["qid"]] = v
     import os as _os
     if _os.environ.get("AFAC_SLIM") == "1":
         a2 = {}
