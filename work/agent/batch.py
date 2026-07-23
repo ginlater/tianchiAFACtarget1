@@ -52,6 +52,9 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
             blocks.append(build_digest(d, domain, model=model))
         base_cap = 9500 if domain == "financial_contracts" else \
             8500 if domain == "financial_reports" else 6000
+        if __import__("os").environ.get("AFAC_SLIM4") == "1" \
+                and domain == "insurance":
+            base_cap = 8000  # 卡+证据两全(slim15挤帽教训)
     else:
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q0["doc_ids"]))
