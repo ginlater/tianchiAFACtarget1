@@ -63,11 +63,12 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
     # 逐题配额检索后并集（伪题合并会让所有选项查询共用第1题前缀，
     # 后位题证据被挤出：批检索覆盖0.16 vs 单题0.41——slim10八题批稀释类伤）
     per_cap = max(1500, cap // len(qs))
-    best, prot_all = {}, set()
+    best, prot_all, per_kept = {}, set(), {}
     for q in qs:
         qq = dict(q, doc_ids=q0["doc_ids"])
         _ev_i, kept_i, prot_i = gather_evidence(qq, k_opt=2, k_q=3,
                                                 cap=per_cap)
+        per_kept[q["qid"]] = [c["id"] for c in kept_i]
         for c in kept_i:
             best[c["id"]] = c
         prot_all |= prot_i
@@ -90,7 +91,14 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
         tag = f"{c['doc_id']} P{c['page']}" if c["page"] else c["id"]
         parts.append(f"【{tag}】{c['text']}")
     blocks.append("原文片段证据:\n" + "\n\n".join(parts))
-    return "\n\n".join(blocks), [c["id"] for c in kept]
+    # 覆盖率制导：某题自己的证据块被并集闸门挤掉过半 → 标记定向单答
+    # （法医量化: 批内覆盖<0.15正确率仅48%, ≥0.4达86%）
+    uids = {c["id"] for c in kept}
+    cov = {qid: (sum(1 for i in ids if i in uids) / len(ids)) if ids else 1.0
+           for qid, ids in per_kept.items()}
+    low_cov = [qid for qid, v in sorted(cov.items(), key=lambda x: x[1])
+               if v < 0.5][:3]
+    return "\n\n".join(blocks), [c["id"] for c in kept], low_cov
 
 
 _BLOCK_RE = re.compile(r"【第(\d+)题[^】]*】")
@@ -125,7 +133,7 @@ BATCH_INST = (
 
 def answer_batch(qs, model=DEFAULT_MODEL, log=None):
     """批量作答一组同文档选择题。返回 {qid: final_answer}。"""
-    ev, ev_ids = _batch_evidence(qs, model=model)
+    ev, ev_ids, low_cov = _batch_evidence(qs, model=model)
     qtexts = "\n\n".join(f"[第{i+1}题 {q['qid']}]\n{_q_text(q)}"
                          for i, q in enumerate(qs))
     base = ev + "\n\n" + qtexts
@@ -205,4 +213,22 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
                 "batch": share, "c1": (c1 or "")[:1500],
                 "evidence_ids": ev_ids[:30]}, ensure_ascii=False) + "\n")
             log.flush()
+    # 覆盖率制导定向单答：被并集挤饿的题用自己的完整证据重答（窄而准）
+    if low_cov:
+        from .answerer import answer_question
+        for q in qs:
+            if q["qid"] not in low_cov:
+                continue
+            try:
+                a_solo, _info = answer_question(q, model, log,
+                                                blind_mode=True)
+            except Exception:  # noqa: BLE001
+                a_solo = ""
+            if a_solo:
+                if log is not None:
+                    log.write(json.dumps(
+                        {"qid": q["qid"], "solo_retry": a_solo,
+                         "batch_ans": finals.get(q["qid"])},
+                        ensure_ascii=False) + "\n")
+                finals[q["qid"]] = a_solo
     return finals
