@@ -103,8 +103,8 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
     # 年报计算题取数强化：三口径(主要数据表/分红两笔/母公司报表)强制齐全
-    # （fin_b_005/012/016/019类伤：跨口径数值缺块）
-    if domain == "financial_reports":
+    # （fin_b_005/012/016/019类伤）仅全火力档：瘦帽下额外查询=稀释(slim18教训)
+    if domain == "financial_reports" and not SLIM:
         extra = tuple(extra) + ("主要会计数据 财务指标",
                                 "利润分配 中期分红 末期分红 每10股",
                                 "母公司 资产负债表 所有者权益 少数股东")

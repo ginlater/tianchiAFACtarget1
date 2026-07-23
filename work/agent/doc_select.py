@@ -215,8 +215,9 @@ def _finalize_picks(q, picked, cands, max_docs):
         if top and top[0][0]["doc_id"] not in picked:
             picked.append(top[0][0]["doc_id"])
     # 研报域逐选项文档兜底：选项点名行业的报告必须在场
-    # （res_b_008类伤：题干枚举4行业但寿险报告text15从未被选中）
-    if q["domain"] == "research":
+    # （res_b_008类伤）仅全火力档：瘦帽下多文档=证据摊薄(slim18教训res 18→14)
+    if q["domain"] == "research" and \
+            __import__("os").environ.get("AFAC_SLIM4") != "1":
         idx = domain_doc_index("research")
         extra_n = 0
         for v in q["options"].values():
