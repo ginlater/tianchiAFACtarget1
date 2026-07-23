@@ -9,3 +9,15 @@
 {"qid": "fc_b_009", "picked": ["text04", "text05", "text11"], "kinds": ["letter"]}
 {"qid": "fc_b_011", "picked": ["text14", "text01"], "kinds": ["letter"]}
 {"qid": "fc_b_010", "picked": ["text10", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_012", "picked": ["text09", "text06"], "kinds": ["letter"]}
+{"qid": "fc_b_013", "picked": ["text13", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_014", "picked": ["text14", "text01"], "kinds": ["number"]}
+{"qid": "fc_b_015", "picked": ["text10", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_016", "picked": ["text13", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_017", "picked": ["text12", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_018", "picked": ["text06", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_019", "picked": ["text14", "text12"], "kinds": ["letter"]}
+{"qid": "fc_b_020", "picked": ["text01", "text12"], "kinds": ["number"]}
+{"qid": "fin_b_001", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_002", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_midea_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_003", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"], "kinds": ["letter"]}
