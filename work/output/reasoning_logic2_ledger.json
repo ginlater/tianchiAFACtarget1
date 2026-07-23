@@ -1,0 +1,30 @@
+{
+ "per_qid": {
+  "fin_b_014": [
+   1790,
+   233
+  ],
+  "ins_b_012": [
+   1541,
+   204
+  ]
+ },
+ "calls": [
+  {
+   "qid": "fin_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "r_logic",
+   "prompt_tokens": 1790,
+   "completion_tokens": 233,
+   "ts": 1784790144.102138
+  },
+  {
+   "qid": "ins_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r_logic",
+   "prompt_tokens": 1541,
+   "completion_tokens": 204,
+   "ts": 1784790148.717493
+  }
+ ]
+}
