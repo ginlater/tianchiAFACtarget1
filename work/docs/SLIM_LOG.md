@@ -18,3 +18,6 @@ slim3b 70@781k → slim11 66@409k(盲检批量化-58k) → slim14 74@422k → **
 
 ## 零件贡献(供mix取用)
 fc18@98k(slim20) res19@76k(slim20) reg19@70k(mixA) fin13@?(slim26,3.7)
+
+## 代际矩阵定案(slim侧)
+slim28(3.7-max) 74@494k: 强于3.7-plus(69)仍逊3.6(77); fin13再证3.7家fin强项; 3.6保持slim主答

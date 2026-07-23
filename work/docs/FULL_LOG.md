@@ -18,3 +18,6 @@ b_final(旧代码) 84@2.8M → full2 89@2.6M(法医类修复+5) → full3 90@2.8
 
 ## 在途实验
 full14(3.7-plus主全卷) full15(3.7-max复核官) fin37(fin专项3.7纵队) slim28(3.7-max×slim)
+
+## 代际矩阵定案(full侧)
+full14(3.7-plus主) 92@3.14M < full11(3.6主) 95 → 3.6-plus保持主答王座; 3.7的fin17一致性强项
