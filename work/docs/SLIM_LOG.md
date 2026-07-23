@@ -27,3 +27,6 @@ finslim37(fin专项slim帧3.7): 12/20@200k ❌ — fin深井需full级取数,sli
 slim27(3.5-plus主)/slim29(3.6主+3.7max复核): 在途
 slim27(3.5-plus主): 51@859k ❌❌ 3.5当主答证伪 → slim代际终榜: 3.6(77)>3.7max(74)>3.7plus(69)>3.5plus(51)
 fclite(slim+异构b2, fc专项): 17@172k ❌不敌slim20老件18@98k — fc缺口slim异构路径证伪
+
+## 下一棒(排队): ins中间形态
+slim帧批量伤ins(多产品对比被批切碎), full帧19/20但671k → 待试: 单题模式+条款卡+slim级帽(~300k档)
