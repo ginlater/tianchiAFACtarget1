@@ -764,11 +764,22 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
                    "请仅针对这些分歧选项逐项核对证据并给出该选项是否入选的结论。\n"
                    + JUDGE_STD + "\n输出格式:\n仲裁: <分歧选项逐项>\n"
                    "答案: <完整最终答案字母>")
-            c3, _t, _ = chat([{"role": "user", "content": adj}],
-                             qid=qid, model=VERIFY_MODEL or model, thinking=True,
-                             thinking_budget=2600, max_tokens=3000, tag="r3")
-            ans3 = parse_answer(c3, fmt)
-            final = _vote_letters([ans1, ans2, ans3], fmt) or ans3 or ans2
+            # 争议题仲裁升级：AFAC_ARB_VOTES=N 时做N份独立仲裁逐选项多数决
+            # （三连89平台=摇摆集洗牌；争议触发天然锁定摇摆集，只对分歧题花钱）
+            n_arb = int(os.environ.get("AFAC_ARB_VOTES", "1"))
+            arb_answers = []
+            for _i in range(max(1, n_arb)):
+                c3, _t, _ = chat([{"role": "user", "content": adj}],
+                                 qid=qid, model=VERIFY_MODEL or model,
+                                 thinking=True,
+                                 thinking_budget=2600, max_tokens=3000,
+                                 tag="r3")
+                a3 = parse_answer(c3, fmt)
+                if a3:
+                    arb_answers.append(a3)
+            ans3 = arb_answers[-1] if arb_answers else ""
+            final = _vote_letters([ans1, ans2] + arb_answers, fmt) \
+                or ans3 or ans2
         elif ans2:
             final = ans2
     if not final:
