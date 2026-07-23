@@ -139,13 +139,14 @@ def split_answer(raw, kinds):
 
 
 def write_submission(path, results, schema, order, ledger_per_qid,
-                     totals):
-    """按 B 榜格式写 csv：逗号分隔，answer_1..answer_4，summary 行在表头后。
+                     totals, reasonings=None):
+    """按 B 榜新规写 csv（新规更新：answer1..answer4 + reasoning 列）。
 
     共享成本（记忆卡等非题目 qid）均摊到各题行，保证 逐题合计==summary（诚实且自洽）。
-    带 BOM 对齐官方模板。
+    带 BOM；reasoning 为逐题推理摘要（新规：空或<20字记0分）。
     """
     p, c, t = totals
+    reasonings = reasonings or {}
     shared_p = sum(v[0] for k, v in ledger_per_qid.items() if k not in order)
     shared_c = sum(v[1] for k, v in ledger_per_qid.items() if k not in order)
     n = max(len(order), 1)
@@ -153,13 +154,15 @@ def write_submission(path, results, schema, order, ledger_per_qid,
     add_c, rem_c = divmod(shared_c, n)
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
-        w.writerow(["qid", "answer_1", "answer_2", "answer_3", "answer_4",
-                    "prompt_tokens", "completion_tokens", "total_tokens"])
-        w.writerow(["summary", "", "", "", "", p, c, t])
+        w.writerow(["qid", "answer1", "answer2", "answer3", "answer4",
+                    "prompt_tokens", "completion_tokens", "total_tokens",
+                    "reasoning"])
+        w.writerow(["summary", "", "", "", "", p, c, t, ""])
         for i, qid in enumerate(order):
             slots = results.get(qid) or [""]
             slots = list(slots) + [""] * (4 - len(slots))
             qp, qc = ledger_per_qid.get(qid, [0, 0])
             qp += add_p + (1 if i < rem_p else 0)
             qc += add_c + (1 if i < rem_c else 0)
-            w.writerow([qid] + slots[:4] + [qp, qc, qp + qc])
+            rs = (reasonings.get(qid) or "").replace("\n", " ").strip()
+            w.writerow([qid] + slots[:4] + [qp, qc, qp + qc, rs])
