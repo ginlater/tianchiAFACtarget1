@@ -92,3 +92,9 @@ finfresh 17/20@1.01M / insfresh 19/20@671k / fccard 18@208k / fclite 17@172k
 - fin 17/20@784k (full12=18@721k, 双输); ins线insF同负 → AFAC_R2_COND弃用
 - 机理: calc题不走r2(有calc2自通道), 刀落空; 选择题r1双票成本>省下的r2
 - 域冠军表不变: reg20@57k res19@76k fc18@98k ins20@585k fin18@721k
+
+## finF判决(单元格速查表首战, 7-23)
+- fin 17/20@998k: **fin_b_012史上首愈**(AB✓,母公司OCF负值直取), fin_b_014✓
+- 三伤: fin_b_016纯格式伤(公司全称vs题干简称,数值76.92全对) / fin_b_005仍中D陷阱(末期69.57被当全年)
+  / fin_b_004方向混合陷阱(BYD流动↑速动↓, 存货行2gram零重叠被打分器漏掉)
+- 账998k>721k(疑digest缓存被insE系写脏, 待查); 三类级修复已入finG验证
