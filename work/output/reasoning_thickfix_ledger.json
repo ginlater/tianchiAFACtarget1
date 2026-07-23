@@ -1,0 +1,234 @@
+{
+ "per_qid": {
+  "reg_b_021": [
+   4372,
+   663
+  ],
+  "fc_b_016": [
+   3644,
+   753
+  ],
+  "fin_b_012": [
+   5286,
+   865
+  ],
+  "fc_b_009": [
+   4106,
+   1019
+  ],
+  "fin_b_020": [
+   3894,
+   968
+  ],
+  "reg_b_014": [
+   3302,
+   943
+  ],
+  "_j": [
+   3707,
+   238
+  ],
+  "res_b_003": [
+   4114,
+   773
+  ],
+  "res_b_009": [
+   3800,
+   723
+  ]
+ },
+ "calls": [
+  {
+   "qid": "reg_b_021",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2186,
+   "completion_tokens": 341,
+   "ts": 1784792426.808793
+  },
+  {
+   "qid": "fc_b_016",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1822,
+   "completion_tokens": 377,
+   "ts": 1784792427.02117
+  },
+  {
+   "qid": "fin_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2643,
+   "completion_tokens": 450,
+   "ts": 1784792428.2182772
+  },
+  {
+   "qid": "fc_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2053,
+   "completion_tokens": 459,
+   "ts": 1784792428.657283
+  },
+  {
+   "qid": "fin_b_020",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1947,
+   "completion_tokens": 499,
+   "ts": 1784792429.214785
+  },
+  {
+   "qid": "reg_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1651,
+   "completion_tokens": 481,
+   "ts": 1784792429.5506282
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 432,
+   "completion_tokens": 32,
+   "ts": 1784792429.641227
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 514,
+   "completion_tokens": 29,
+   "ts": 1784792430.209457
+  },
+  {
+   "qid": "reg_b_021",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2186,
+   "completion_tokens": 322,
+   "ts": 1784792434.334829
+  },
+  {
+   "qid": "fin_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2643,
+   "completion_tokens": 415,
+   "ts": 1784792436.7917812
+  },
+  {
+   "qid": "fc_b_016",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1822,
+   "completion_tokens": 376,
+   "ts": 1784792437.090867
+  },
+  {
+   "qid": "fin_b_020",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1947,
+   "completion_tokens": 469,
+   "ts": 1784792438.3700259
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 431,
+   "completion_tokens": 32,
+   "ts": 1784792438.8402948
+  },
+  {
+   "qid": "reg_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1651,
+   "completion_tokens": 462,
+   "ts": 1784792438.8407161
+  },
+  {
+   "qid": "fc_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2053,
+   "completion_tokens": 560,
+   "ts": 1784792441.080661
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 615,
+   "completion_tokens": 29,
+   "ts": 1784792442.328167
+  },
+  {
+   "qid": "res_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2057,
+   "completion_tokens": 371,
+   "ts": 1784792442.34562
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 426,
+   "completion_tokens": 29,
+   "ts": 1784792443.8805382
+  },
+  {
+   "qid": "res_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1900,
+   "completion_tokens": 403,
+   "ts": 1784792448.4239612
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 458,
+   "completion_tokens": 29,
+   "ts": 1784792449.93156
+  },
+  {
+   "qid": "res_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 2057,
+   "completion_tokens": 402,
+   "ts": 1784792452.4317482
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 457,
+   "completion_tokens": 29,
+   "ts": 1784792454.19924
+  },
+  {
+   "qid": "res_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r_thickfix",
+   "prompt_tokens": 1900,
+   "completion_tokens": 320,
+   "ts": 1784792456.632488
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "jt",
+   "prompt_tokens": 374,
+   "completion_tokens": 29,
+   "ts": 1784792458.234093
+  }
+ ]
+}
