@@ -1,0 +1,15 @@
+待作答 20 / 共 100 题；model=qwen3.6-plus verify=qwen3.6-plus
+docsel 完成; tokens 3,559
+选择题 16 → 6 组; 计算题 4
+[3/20] +['fc_b_004', 'fc_b_018', 'fc_b_002'] (42,051 tok)
+[6/20] +['fc_b_010', 'fc_b_015', 'fc_b_017'] (54,526 tok)
+[9/20] +['fc_b_011', 'fc_b_003', 'fc_b_006'] (103,874 tok)
+[10/20] +['fc_b_012'] (108,203 tok)
+[11/20] +['fc_b_001'] (124,391 tok)
+[14/20] +['fc_b_007', 'fc_b_008', 'fc_b_009'] (136,743 tok)
+[15/20] +['fc_b_014'] (144,103 tok)
+[18/20] +['fc_b_019', 'fc_b_013', 'fc_b_016'] (162,562 tok)
+[19/20] +['fc_b_005'] (168,360 tok)
+[20/20] +['fc_b_020'] (172,070 tok)
+done in 217s; tokens 172,070 (p=141,589 c=30,481)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_fclite/answer.csv
