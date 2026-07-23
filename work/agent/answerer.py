@@ -736,10 +736,10 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
     # AFAC_R1_VOTES=N 时r1独立采样N份逐选项投票（选择题）
     n_r1 = int(os.environ.get("AFAC_R1_VOTES", "1"))
     esc = os.environ.get("AFAC_R1_ESC") == "1"
+    r1_pool = [ans1] if ans1 else []
     if (n_r1 > 1 or esc) and fmt in ("multi", "mcq") and ans1:
         # 自适应升级投票：先2份，一致即定案(便宜)；分歧追加3份五票多数决
         # （钱只花在摇摆题上——把巨型集成的收益塞进满分预算区间）
-        r1_pool = [ans1]
         target = 2 if esc else n_r1
         while len(r1_pool) < target:
             c1x, _t, _ = chat(
@@ -790,6 +790,10 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
     # tf 复核实测 0/20 翻转，跳过省 token；multi/mcq 保留盲复核；SLIM 全部单样本
     # AFAC_R2_DOMAINS=a,b 时仅列出域做r2（压缩阶梯第1刀：强域19-20/20复核是纯重复）
     need_r2 = (not SLIM and fmt in ("multi", "mcq")) or not ans1
+    # r2条件化：r1双票全一致(且未被补检改写)→跳过异构二审（账单只花在摇摆题上）
+    if (os.environ.get("AFAC_R2_COND") == "1" and len(r1_pool) >= 2
+            and len(set(r1_pool)) == 1 and ans1 == r1_pool[0]):
+        need_r2 = False
     _r2_doms = os.environ.get("AFAC_R2_DOMAINS")
     if _r2_doms is not None and q["domain"] not in _r2_doms.split(","):
         need_r2 = not ans1
