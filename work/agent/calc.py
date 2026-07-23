@@ -102,6 +102,12 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
     else:
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
+    # 年报计算题取数强化：三口径(主要数据表/分红两笔/母公司报表)强制齐全
+    # （fin_b_005/012/016/019类伤：跨口径数值缺块）
+    if domain == "financial_reports":
+        extra = tuple(extra) + ("主要会计数据 财务指标",
+                                "利润分配 中期分红 末期分红 每10股",
+                                "母公司 资产负债表 所有者权益 少数股东")
     # 计算题证据要宽：数字常散落在多张表
     cap = ((2600 if os.environ.get("AFAC_SLIM4") == "1" else 6000)
            if os.environ.get("AFAC_NO_DIGEST") == "1"

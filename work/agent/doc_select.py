@@ -214,6 +214,18 @@ def _finalize_picks(q, picked, cands, max_docs):
         top = idx.search(q["question"] + " " + " ".join(q["options"].values()), k=1)
         if top and top[0][0]["doc_id"] not in picked:
             picked.append(top[0][0]["doc_id"])
+    # 研报域逐选项文档兜底：选项点名行业的报告必须在场
+    # （res_b_008类伤：题干枚举4行业但寿险报告text15从未被选中）
+    if q["domain"] == "research":
+        idx = domain_doc_index("research")
+        extra_n = 0
+        for v in q["options"].values():
+            if extra_n >= 2:
+                break
+            top = idx.search(v, k=1)
+            if top and top[0][0]["doc_id"] not in picked:
+                picked.append(top[0][0]["doc_id"])
+                extra_n += 1
     # 比较/结合类题至少2份文档
     if len(picked) == 1:
         nxt = next((c for c in cands if c not in picked), None)
