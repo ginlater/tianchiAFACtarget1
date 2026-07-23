@@ -482,10 +482,64 @@ def _render(kept):
     return "\n\n".join(parts)
 
 
+_FIN_FACTS2 = None
+
+
+def fin_facts_block(q):
+    """单元格级报表速查块（AFAC_FIN_FACTS=2, 离线词法抽取, 口径列身份已绑定）。
+
+    根因(fin_b_012尸检): 合并及公司四栏报表扁平解析丢列身份 → 合并/母公司不可分辨。
+    """
+    global _FIN_FACTS2
+    if (os.environ.get("AFAC_FIN_FACTS") != "2"
+            or q.get("domain") != "financial_reports"):
+        return ""
+    if _FIN_FACTS2 is None:
+        p = pathlib.Path(__file__).resolve().parents[1] \
+            / "processed_data" / "fin_facts2.json"
+        _FIN_FACTS2 = json.load(open(p)) if p.exists() else {}
+    qtext = q["question"] + " " + " ".join((q.get("options") or {}).values())
+    # 2-gram重叠打分（贪婪切词会把"营业收入"切进错位块导致全灭）
+    qgrams = {run[i:i+2] for run in re.findall(r"[一-鿿]+", qtext)
+              for i in range(len(run) - 1)}
+    rows = []
+    for d in q.get("doc_ids") or []:
+        for r in _FIN_FACTS2.get(d, []):
+            label = r.split(":")[0]
+            lgrams = {run[i:i+2] for run in re.findall(r"[一-鿿]+", label)
+                      for i in range(len(run) - 1)}
+            score = len(lgrams & qgrams)
+            if score >= 3:
+                rows.append((score, f"[{d}]{r}"))
+    rows.sort(key=lambda x: -x[0])
+    if not rows:
+        return ""
+    # 按表名轮询交错：防单一表(如现金流量表)霸榜挤掉利润表关键行(轮询构卡同款教训)
+    buckets, order = {}, []
+    for s, r in rows:
+        t = r.split("]")[1] if "]" in r else "?"
+        if t not in buckets:
+            order.append(t)
+        buckets.setdefault(t, []).append(r)
+    picked, i = [], 0
+    while len(picked) < 40 and any(buckets.values()):
+        t = order[i % len(order)]
+        if buckets[t]:
+            picked.append(buckets[t].pop(0))
+        i += 1
+        if i > 400:
+            break
+    return ("报表单元格速查表(列口径已绑定, 合并/公司=母公司单体; 括号=负数):\n"
+            + "\n".join(picked))
+
+
 def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     """返回 (证据文本, chunk列表, 受保护id集合, 记忆卡文本)。"""
     domain = q["domain"]
     blocks, digests = [], ""
+    ff = fin_facts_block(q)
+    if ff:
+        blocks.append(ff)
     if os.environ.get("AFAC_NO_DIGEST") == "1" and not _use_digest(domain):
         digests = "涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"])

@@ -105,6 +105,12 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
     # fin结构化事实表(E1尸检产物): 离线词法查表块, 取数从检索问题变查表问题
+    # v2(单元格级,列口径绑定)走answerer.fin_facts_block; v1(行级)保留原路径
+    if domain == "financial_reports" and os.environ.get("AFAC_FIN_FACTS") == "2":
+        from .answerer import fin_facts_block
+        ff = fin_facts_block(q)
+        if ff:
+            blocks.append(ff)
     if domain == "financial_reports" and os.environ.get("AFAC_FIN_FACTS") == "1":
         import pathlib as _pl
         _ff = _pl.Path(__file__).resolve().parents[1] / "processed_data" / "fin_facts.json"
