@@ -190,7 +190,9 @@ def answer_batch(qs, model=DEFAULT_MODEL, log=None):
             if v:
                 a1[q["qid"]] = v
     import os as _os
-    if _os.environ.get("AFAC_SLIM") == "1":
+    # AFAC_HETERO_B2=1: slim档也开异构二审（full11实测跨代3.5-plus=+5键的最强武器）
+    if _os.environ.get("AFAC_SLIM") == "1" and \
+            _os.environ.get("AFAC_HETERO_B2") != "1":
         a2 = {}
     else:
         c2 = _chat(base + "\n\n" + inst +
