@@ -13,10 +13,14 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT = ROOT / "work" / "output"
 out_name = sys.argv[1] if len(sys.argv) > 1 else "answer_b_best_20260724.csv"
 
-SOURCE = {"reg": "b_mixA", "res": "b_slim25", "fc": "b_slim24",
-          "fin": "b_full11", "ins": "b_full11"}
+SOURCE = {"reg": "b_cards2", "res": "b_slim20", "fc": "b_slim20",
+          "fin": "b_full12", "ins": "b_slim6"}
 
 qs_all = b_schema.load_questions(str(ROOT / "upload_b" / "question_b"))
+_picks = {json.loads(l)["qid"]: json.loads(l)["picked"]
+          for l in open(OUT / "b_slim21" / "docsel_log.jsonl")}
+for _q in qs_all:
+    _q["doc_ids"] = _picks.get(_q["qid"], _q.get("doc_ids") or [])
 schema = b_schema.load_schema(str(ROOT / "upload_b" / "submit.csv"))
 order = [q["qid"] for q in qs_all]
 qmap = {q["qid"]: q for q in qs_all}
@@ -50,6 +54,14 @@ def gen_one(qid):
     q = qmap[qid]
     ans_txt = "；".join(str(a) for a in answers.get(qid, []) if a)
     src = (runlog.get(qid) or "")[:2200]
+    if len(src) < 200:  # 解题记录缺失(批量mega日志等)→证据兜底
+        from agent import answerer
+        try:
+            _e, kept, _p = answerer.gather_evidence(q, k_opt=3, k_q=3, cap=5500)
+            src = "\n".join(f"【{c['doc_id']} P{c['page']}】{c['text'][:400]}"
+                             for c in kept[:8])
+        except Exception:  # noqa: BLE001
+            pass
     c1, _r, _u = chat([{"role": "user", "content":
                         f"题目:\n{q['question'][:280]}\n本题作答: {ans_txt}\n\n"
                         f"解题过程记录:\n{src}\n\n{INST}"}],
