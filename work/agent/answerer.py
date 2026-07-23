@@ -325,7 +325,25 @@ def _probe_window(c, phrase, width=240):
     return w
 
 
+_DIFF_MAP = None
+
+
+def _dyncap(qid, cap):
+    """题级动态帽(AFAC_DYNCAP=1): 难度熵(历史答案分布,零答案键接触)缩放证据预算。
+    难题×1.5 中等×1.0 简单×0.7 — 把预算从确定题挪给摇摆题。"""
+    global _DIFF_MAP
+    if os.environ.get("AFAC_DYNCAP") != "1":
+        return cap
+    if _DIFF_MAP is None:
+        p = ROOT / "work" / "output" / "difficulty_map.json"
+        _DIFF_MAP = json.load(open(p)) if p.exists() else {"entropy": {}}
+    h = _DIFF_MAP["entropy"].get(qid, 0.8)
+    mult = 1.5 if h >= 1.2 else (1.0 if h >= 0.5 else 0.7)
+    return int(cap * mult)
+
+
 def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
+    cap = _dyncap(q.get("qid", ""), cap)
     doc_ids = q["doc_ids"]
     queries = [q["question"]] + [f"{q['question'][:40]} {t}" for t in q["options"].values()]
     # 数字微调陷阱对策：含数字的选项补一条去数字查询（防选项数字与原文不同时匹配失败）
