@@ -1,0 +1,78 @@
+{
+ "per_qid": {
+  "ins_b_005": [
+   648,
+   274
+  ],
+  "ins_b_009": [
+   678,
+   259
+  ],
+  "reg_b_021": [
+   866,
+   234
+  ],
+  "fin_b_009": [
+   937,
+   249
+  ],
+  "fc_b_010": [
+   827,
+   248
+  ],
+  "ins_b_018": [
+   451,
+   245
+  ]
+ },
+ "calls": [
+  {
+   "qid": "ins_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "r_fill",
+   "prompt_tokens": 648,
+   "completion_tokens": 274,
+   "ts": 1784823532.486954
+  },
+  {
+   "qid": "ins_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r_fill",
+   "prompt_tokens": 678,
+   "completion_tokens": 259,
+   "ts": 1784823538.264246
+  },
+  {
+   "qid": "reg_b_021",
+   "model": "qwen3.6-plus",
+   "tag": "r_fill",
+   "prompt_tokens": 866,
+   "completion_tokens": 234,
+   "ts": 1784823544.26254
+  },
+  {
+   "qid": "fin_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r_fill",
+   "prompt_tokens": 937,
+   "completion_tokens": 249,
+   "ts": 1784823550.457707
+  },
+  {
+   "qid": "fc_b_010",
+   "model": "qwen3.6-plus",
+   "tag": "r_fill",
+   "prompt_tokens": 827,
+   "completion_tokens": 248,
+   "ts": 1784823556.1720881
+  },
+  {
+   "qid": "ins_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "r_fill",
+   "prompt_tokens": 451,
+   "completion_tokens": 245,
+   "ts": 1784823561.2618492
+  }
+ ]
+}

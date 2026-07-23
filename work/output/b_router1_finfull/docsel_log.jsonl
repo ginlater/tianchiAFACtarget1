@@ -1,3 +1,6 @@
 {"qid": "fin_b_001", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"], "kinds": ["letter"]}
 {"qid": "fin_b_002", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_midea_2025_report"], "kinds": ["letter"]}
 {"qid": "fin_b_003", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_004", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_005", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_006", "picked": ["annual_cmb_2025_report", "annual_byd_2024_report"], "kinds": ["letter"]}
