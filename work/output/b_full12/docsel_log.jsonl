@@ -95,3 +95,6 @@
 {"qid": "res_b_015", "picked": ["pack2_text11", "pack2_text04"], "kinds": ["letter"]}
 {"qid": "res_b_016", "picked": ["pack2_text01", "pack2_text15", "pack2_text10"], "kinds": ["letter"]}
 {"qid": "res_b_017", "picked": ["pack2_text07", "pack2_text09", "pack2_text18", "pack2_text17", "pack2_text12"], "kinds": ["letter"]}
+{"qid": "res_b_018", "picked": ["pack2_text16", "pack2_text13", "pack2_text05", "pack2_text18", "pack2_text19"], "kinds": ["letter"]}
+{"qid": "res_b_019", "picked": ["pack2_text01", "pack2_text10", "pack2_text14", "pack2_text15"], "kinds": ["letter"]}
+{"qid": "res_b_020", "picked": ["pack2_text03", "pack2_text04", "pack2_text17", "pack2_text19"], "kinds": ["letter"]}
