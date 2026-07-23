@@ -215,6 +215,8 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
                           thinking_budget=(4400 if DEEP else 3200), max_tokens=3600, tag="calc3")
         a3 = parse_calc(c3)
         final = a3 or a1
+    if final and "ranking" in kinds:
+        final = shorten_rank_names(final, kinds, q["question"])
     if log is not None:
         log.write(json.dumps({"qid": qid, "final": final, "a1": a1, "a2": a2,
                               "c1": c1, "c1b": c1b, "c2": c2, "c3": c3,
@@ -226,3 +228,30 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
 
 def _norm(s):
     return re.sub(r"[\s,，]", "", s or "")
+
+
+def shorten_rank_names(ans, kinds, qtext):
+    """ranking槽公司名规范化：全称→题干简称原文（fin_b_016类伤，确定性防护）。
+
+    简称几乎总是全称前缀（宁德时代新能源科技股份有限公司→宁德时代），
+    取出现在题干中的最长前缀替换。
+    """
+    parts = [p.strip() for p in re.split(r"[；;]", ans or "")]
+    if len(parts) < len(kinds):
+        return ans
+    changed = False
+    for idx, (p, k) in enumerate(zip(parts, kinds)):
+        if k != "ranking" or ">" not in p:
+            continue
+        segs = []
+        for s in (x.strip() for x in p.split(">")):
+            best = ""
+            for j in range(2, len(s)):
+                if s[:j] in qtext and j > len(best):
+                    best = s[:j]
+            segs.append(best if best and s not in qtext else s)
+        new = ">".join(segs)
+        if new != p:
+            parts[idx] = new
+            changed = True
+    return "；".join(parts) if changed else ans

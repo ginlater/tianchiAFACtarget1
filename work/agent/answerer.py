@@ -499,6 +499,17 @@ def fin_facts_block(q):
             / "processed_data" / "fin_facts2.json"
         _FIN_FACTS2 = json.load(open(p)) if p.exists() else {}
     qtext = q["question"] + " " + " ".join((q.get("options") or {}).values())
+    # 比率题必需行：比率分量行(存货等)与题面2-gram零重叠, 词法打分抓不到 → 强制注入
+    _RATIO_NEED = {"流动比率": ["流动资产合计", "流动负债合计"],
+                   "速动比率": ["流动资产合计", "流动负债合计", "存货"],
+                   "资产负债率": ["资产总计", "负债合计", "负债和股东权益总计",
+                                  "负债及股东权益总计"],
+                   "权益乘数": ["资产总计", "所有者权益合计", "股东权益合计"],
+                   "净资产收益率": ["所有者权益合计", "股东权益合计"]}
+    need_labels = set()
+    for kw, labels in _RATIO_NEED.items():
+        if kw in qtext:
+            need_labels.update(labels)
     # 2-gram重叠打分（贪婪切词会把"营业收入"切进错位块导致全灭）
     qgrams = {run[i:i+2] for run in re.findall(r"[一-鿿]+", qtext)
               for i in range(len(run) - 1)}
@@ -506,6 +517,9 @@ def fin_facts_block(q):
     for d in q.get("doc_ids") or []:
         for r in _FIN_FACTS2.get(d, []):
             label = r.split(":")[0]
+            if need_labels and any(lb in label for lb in need_labels):
+                rows.append((99, f"[{d}]{r}"))
+                continue
             lgrams = {run[i:i+2] for run in re.findall(r"[一-鿿]+", label)
                       for i in range(len(run) - 1)}
             score = len(lgrams & qgrams)
@@ -529,8 +543,12 @@ def fin_facts_block(q):
         i += 1
         if i > 400:
             break
+    note = ""
+    if any("分红" in r for r in picked):
+        note = ("注: \"年度利润分配方案/预案\"通常仅指末期单笔；全年每10股分红="
+                "中期已实施+末期方案两笔合计, 判断前必须核查有无中期分红记录。\n")
     return ("报表单元格速查表(列口径已绑定, 合并/公司=母公司单体; 括号=负数):\n"
-            + "\n".join(picked))
+            + note + "\n".join(picked))
 
 
 def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
