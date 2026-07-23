@@ -91,3 +91,13 @@
 [90/100] res_b_005 -> ['22.19'] (3,018,434 tok)
 [91/100] res_b_013 -> ['AB'] (3,029,841 tok)
 [92/100] res_b_015 -> ['BD'] (3,099,912 tok)
+[93/100] res_b_016 -> ['BD'] (3,139,230 tok)
+[94/100] res_b_017 -> ['AC'] (3,150,500 tok)
+[95/100] res_b_019 -> ['AB'] (3,217,101 tok)
+[96/100] res_b_002 -> ['A'] (3,228,758 tok)
+[97/100] res_b_012 -> ['67.10'] (3,239,355 tok)
+[98/100] res_b_020 -> ['BD'] (3,290,955 tok)
+[99/100] res_b_018 -> ['CD'] (3,318,456 tok)
+[100/100] res_b_014 -> ['CD'] (3,327,576 tok)
+done in 1577s; tokens 3,327,576 (p=2,806,480 c=521,096)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_full9/answer.csv
