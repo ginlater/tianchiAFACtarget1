@@ -104,6 +104,23 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
     else:
         blocks.append("涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"]))
+    # fin结构化事实表(E1尸检产物): 离线词法查表块, 取数从检索问题变查表问题
+    if domain == "financial_reports" and os.environ.get("AFAC_FIN_FACTS") == "1":
+        import pathlib as _pl
+        _ff = _pl.Path(__file__).resolve().parents[1] / "processed_data" / "fin_facts.json"
+        if _ff.exists():
+            facts = json.load(open(_ff))
+            qwords = set(re.findall(r"[一-鿿]{2,6}", q["question"]))
+            rows = []
+            for d in q["doc_ids"]:
+                for r in facts.get(d, []):
+                    score = sum(1 for w in qwords if w in r)
+                    if score:
+                        rows.append((score, d, r))
+            rows.sort(key=lambda x: -x[0])
+            if rows:
+                tbl = "\n".join(f"[{d}] {r}" for _s, d, r in rows[:28])
+                blocks.append("数值速查表(离线抽取):\n" + tbl)
     # 年报计算题取数强化：三口径(主要数据表/分红两笔/母公司报表)强制齐全
     # （fin_b_005/012/016/019类伤）仅全火力档：瘦帽下额外查询=稀释(slim18教训)
     if domain == "financial_reports" and not SLIM:
