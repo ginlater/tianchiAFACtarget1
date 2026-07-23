@@ -786,10 +786,13 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
             # 争议题仲裁升级：AFAC_ARB_VOTES=N 时做N份独立仲裁逐选项多数决
             # （三连89平台=摇摆集洗牌；争议触发天然锁定摇摆集，只对分歧题花钱）
             n_arb = int(os.environ.get("AFAC_ARB_VOTES", "1"))
+            # 多票仲裁时法官必须用主模型：弱异构模型只配当分歧探测器，
+            # 不配连投三票（full8教训：flash法官×3把plus正确初判投翻）
+            arb_model = model if n_arb > 1 else (VERIFY_MODEL or model)
             arb_answers = []
             for _i in range(max(1, n_arb)):
                 c3, _t, _ = chat([{"role": "user", "content": adj}],
-                                 qid=qid, model=VERIFY_MODEL or model,
+                                 qid=qid, model=arb_model,
                                  thinking=True,
                                  thinking_budget=2600, max_tokens=3000,
                                  tag="r3")
