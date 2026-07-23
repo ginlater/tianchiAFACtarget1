@@ -20,7 +20,7 @@ out_name = sys.argv[2]
 key = json.load(open(OUT / "b_v4" / "answers.json"))
 reasonings = json.load(open(OUT / "reasonings.json"))
 base_led = json.load(open(OUT / base_tag / "token_ledger.json"))
-rea_led = json.load(open(OUT / "reasoning_ledger.json"))
+rea_leds = [json.load(open(p)) for p in sorted(OUT.glob("reasoning_ledger*.json"))]
 
 qs_all = b_schema.load_questions(str(ROOT / "upload_b" / "question_b"))
 schema = b_schema.load_schema(str(ROOT / "upload_b" / "submit.csv"))
@@ -28,7 +28,7 @@ order = [q["qid"] for q in qs_all]
 
 # 合并逐题台账（生成reasoning的消耗按新规计入对应题）
 per_qid = {}
-for src in (base_led["per_qid"], rea_led["per_qid"]):
+for src in [base_led["per_qid"]] + [rl["per_qid"] for rl in rea_leds]:
     for k, v in src.items():
         slot = per_qid.setdefault(k, [0, 0])
         slot[0] += v[0]
