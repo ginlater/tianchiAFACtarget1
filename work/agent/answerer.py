@@ -378,11 +378,13 @@ def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
     # 跨查询同块取最高分（低分先占坑会挤掉后续强命中——已修复的召回bug）
     # 每条查询的top-1受保护，预算截断时优先保留（防单选项关键证据被全局高分挤掉）
     best, chunk_by_id, protected = {}, {}, set()
-    n_core = 1 + len(q["options"])  # 题干+原始选项查询才享受top-1保护
+    n_core = 1 + len(q["options"])  # 题干+原始选项查询享受top-1保护
+    n_extra = len(list(extra_queries))  # 定向补查的top-1同样保护
+    # （fin_b_016类伤：中期分红定向查询命中块因无保护被大盘挤出，r1/r2双双漏取）
     for i, query in enumerate(queries):
         k = k_q if i == 0 else k_opt
         hits = retrieval.search_docs(doc_ids, query, k_per_doc=k)
-        if hits and i < n_core:
+        if hits and (i < n_core or i >= len(queries) - n_extra):
             protected.add(hits[0][0]["id"])
         for c, s in hits:
             cid = c["id"]
