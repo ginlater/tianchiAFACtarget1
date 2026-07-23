@@ -714,9 +714,13 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
     # 逐题多数决：跨运行实测多数票94/100 vs 单跑89——摇摆噪声偷走~5题
     # AFAC_R1_VOTES=N 时r1独立采样N份逐选项投票（选择题）
     n_r1 = int(os.environ.get("AFAC_R1_VOTES", "1"))
-    if n_r1 > 1 and fmt in ("multi", "mcq") and ans1:
+    esc = os.environ.get("AFAC_R1_ESC") == "1"
+    if (n_r1 > 1 or esc) and fmt in ("multi", "mcq") and ans1:
+        # 自适应升级投票：先2份，一致即定案(便宜)；分歧追加3份五票多数决
+        # （钱只花在摇摆题上——把巨型集成的收益塞进满分预算区间）
         r1_pool = [ans1]
-        for _i in range(n_r1 - 1):
+        target = 2 if esc else n_r1
+        while len(r1_pool) < target:
             c1x, _t, _ = chat(
                 [{"role": "user", "content": base + "\n\n" + R1_INST}],
                 qid=qid, model=model, thinking=_think(q),
@@ -724,6 +728,19 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
             a1x = parse_answer(c1x, fmt)
             if a1x:
                 r1_pool.append(a1x)
+            else:
+                break
+        if esc and len(set(r1_pool)) > 1:
+            while len(r1_pool) < 5:
+                c1x, _t, _ = chat(
+                    [{"role": "user", "content": base + "\n\n" + R1_INST}],
+                    qid=qid, model=model, thinking=_think(q),
+                    thinking_budget=think_r1, max_tokens=4000, tag="r1e")
+                a1x = parse_answer(c1x, fmt)
+                if a1x:
+                    r1_pool.append(a1x)
+                else:
+                    break
         voted = _vote_letters(r1_pool, fmt)
         if voted:
             ans1 = voted
