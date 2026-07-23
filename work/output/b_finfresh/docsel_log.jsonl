@@ -9,3 +9,5 @@
 {"qid": "fin_b_009", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"], "kinds": ["letter"]}
 {"qid": "fin_b_010", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report", "annual_cmb_2025_report"], "kinds": ["letter"]}
 {"qid": "fin_b_011", "picked": ["annual_chinamobile_2025_report", "annual_cscec_2025_report", "annual_cmb_2025_report", "annual_midea_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_012", "picked": ["annual_midea_2025_report", "annual_chinamobile_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_013", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_chinamobile_2025_report"], "kinds": ["number", "number"]}
