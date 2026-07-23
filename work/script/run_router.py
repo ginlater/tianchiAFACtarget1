@@ -18,16 +18,18 @@ ROUTES = {
                 "AFAC_DIGEST_KEEP": "none", "AFAC_STABLE": "1"},
         "args": ["--batch", "--workers", "4"],
     },
-    "insfull": {    # ins → 全火力+新卡+异构(insfresh实证19/20@671k)
+    "insfull": {    # ins → insE冠军配方: 节选构卡+LEAN_R2(实证20/20@585k)
         "qids_file": "output/qids_ins.txt",
         "env": {"AFAC_STABLE": "1", "AFAC_VERIFY_MODEL": "qwen3.5-plus",
-                "AFAC_DIGEST_KEEP": "insurance", "AFAC_NO_DIGEST": "1"},
+                "AFAC_DIGEST_KEEP": "insurance", "AFAC_NO_DIGEST": "1",
+                "AFAC_LEAN_R2": "1", "AFAC_WHOLE_LIMIT": "15000"},
         "args": ["--workers", "3", "--fresh-digests"],
     },
-    "finfull": {    # fin → 全火力+三口径+异构(full12域件实证18/20@721k)
+    "finfull": {    # fin → full12配方+单元格速查表(012稳定治愈2/2)
         "qids_file": "output/qids_fin.txt",
         "env": {"AFAC_STABLE": "1", "AFAC_VERIFY_MODEL": "qwen3.5-plus",
-                "AFAC_ARB_VOTES": "3", "AFAC_R1_VOTES": "2"},
+                "AFAC_ARB_VOTES": "3", "AFAC_R1_VOTES": "2",
+                "AFAC_FIN_FACTS": "2"},
         "args": ["--workers", "3", "--fresh-digests"],
     },
 }
