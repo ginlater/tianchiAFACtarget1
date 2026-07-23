@@ -32,6 +32,7 @@ SCOUT = {   # 阶段1: 全卷便宜路由(mixC三域配方 + slim式fin/ins)
 }
 HEAVY_ENV = {"AFAC_STABLE": "1", "AFAC_VERIFY_MODEL": "qwen3.5-plus",
              "AFAC_ARB_VOTES": "3", "AFAC_R1_VOTES": "2",
+             "AFAC_LEAN_R2": "1",  # FULL手册翻案:单刀省127k且+2键(full12vs13对照)
              "AFAC_DIGEST_KEEP": "insurance,financial_reports",
              "AFAC_NO_DIGEST": "1"}
 
