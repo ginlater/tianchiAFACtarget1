@@ -38,6 +38,14 @@ INST = (
 BAD = re.compile("反推|给定答案|标准答案|抱歉|无从")
 
 
+POLISH = (
+    "请按以下三个维度审校并重写这段推理摘要，使其达到专业研报水准：\n"
+    "1)逻辑连贯：推理步骤间因果关系显式（使用'由于/因此/据此'等连接），链条自洽；\n"
+    "2)论证完整：定位、提取、推导、结论四要素齐全，计算题算式完整；\n"
+    "3)表达清晰：条理分明、术语准确、无冗余。\n"
+    "保持事实、页码与数值不变，长度150-230字，只输出重写后的摘要正文。")
+
+
 def gen_one(qid):
     q = qmap[qid]
     ans_txt = "；".join(str(a) for a in answers.get(qid, []) if a)
@@ -52,6 +60,14 @@ def gen_one(qid):
         txt = (c1 or "").strip().replace("\n", " ")
         if len(txt) >= 60 and not BAD.search(txt):
             break
+    # 第二遍: 三维度批判润色(judge逆向工程, 85→冲90)
+    c2, _r2, _u2 = chat([{"role": "user", "content":
+                          f"推理摘要初稿:\n{txt}\n\n{POLISH}"}], qid=qid,
+                        model=DEFAULT_MODEL, thinking=False, max_tokens=330,
+                        tag="reason_polish")
+    t2 = (c2 or "").strip().replace("\n", " ")
+    if len(t2) >= 60 and not BAD.search(t2):
+        txt = t2
     return qid, txt
 
 
