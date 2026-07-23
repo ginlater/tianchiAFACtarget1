@@ -706,6 +706,22 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
         qid=qid, model=model, thinking=_think(q), thinking_budget=think_r1,
         max_tokens=4000, tag="r1")
     ans1 = parse_answer(c1, fmt)
+    # 逐题多数决：跨运行实测多数票94/100 vs 单跑89——摇摆噪声偷走~5题
+    # AFAC_R1_VOTES=N 时r1独立采样N份逐选项投票（选择题）
+    n_r1 = int(os.environ.get("AFAC_R1_VOTES", "1"))
+    if n_r1 > 1 and fmt in ("multi", "mcq") and ans1:
+        r1_pool = [ans1]
+        for _i in range(n_r1 - 1):
+            c1x, _t, _ = chat(
+                [{"role": "user", "content": base + "\n\n" + R1_INST}],
+                qid=qid, model=model, thinking=_think(q),
+                thinking_budget=think_r1, max_tokens=4000, tag="r1")
+            a1x = parse_answer(c1x, fmt)
+            if a1x:
+                r1_pool.append(a1x)
+        voted = _vote_letters(r1_pool, fmt)
+        if voted:
+            ans1 = voted
 
     # 补充检索一轮
     ms = SEARCH_RE.search(c1)
