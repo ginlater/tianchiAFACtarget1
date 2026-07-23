@@ -1,0 +1,130 @@
+{
+ "per_qid": {
+  "_j": [
+   2287,
+   232
+  ],
+  "ins_b_012": [
+   4647,
+   608
+  ],
+  "fc_b_015": [
+   5184,
+   852
+  ]
+ },
+ "calls": [
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 256,
+   "completion_tokens": 29,
+   "ts": 1784790305.8022258
+  },
+  {
+   "qid": "ins_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r_nail",
+   "prompt_tokens": 1549,
+   "completion_tokens": 202,
+   "ts": 1784790310.2743208
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 253,
+   "completion_tokens": 29,
+   "ts": 1784790312.340456
+  },
+  {
+   "qid": "ins_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r_nail",
+   "prompt_tokens": 1549,
+   "completion_tokens": 210,
+   "ts": 1784790317.045923
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 262,
+   "completion_tokens": 29,
+   "ts": 1784790318.515386
+  },
+  {
+   "qid": "ins_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r_nail",
+   "prompt_tokens": 1549,
+   "completion_tokens": 196,
+   "ts": 1784790323.024595
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 248,
+   "completion_tokens": 29,
+   "ts": 1784790325.093581
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 260,
+   "completion_tokens": 29,
+   "ts": 1784790326.864304
+  },
+  {
+   "qid": "fc_b_015",
+   "model": "qwen3.6-plus",
+   "tag": "r_nail",
+   "prompt_tokens": 1728,
+   "completion_tokens": 277,
+   "ts": 1784790333.266976
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 329,
+   "completion_tokens": 29,
+   "ts": 1784790334.737442
+  },
+  {
+   "qid": "fc_b_015",
+   "model": "qwen3.6-plus",
+   "tag": "r_nail",
+   "prompt_tokens": 1728,
+   "completion_tokens": 307,
+   "ts": 1784790341.696658
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 359,
+   "completion_tokens": 29,
+   "ts": 1784790343.134903
+  },
+  {
+   "qid": "fc_b_015",
+   "model": "qwen3.6-plus",
+   "tag": "r_nail",
+   "prompt_tokens": 1728,
+   "completion_tokens": 268,
+   "ts": 1784790349.123034
+  },
+  {
+   "qid": "_j",
+   "model": "qwen3.6-plus",
+   "tag": "j5",
+   "prompt_tokens": 320,
+   "completion_tokens": 29,
+   "ts": 1784790350.820199
+  }
+ ]
+}
