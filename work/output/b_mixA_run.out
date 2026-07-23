@@ -8,3 +8,12 @@ docsel 完成; tokens 20,059
 [31/40] +['res_b_008', 'res_b_013', 'res_b_019', 'res_b_011', 'res_b_001', 'res_b_006', 'res_b_016', 'res_b_014'] (101,991 tok)
 [32/40] +['reg_b_004'] (105,306 tok)
 [33/40] +['reg_b_007'] (116,715 tok)
+[34/40] +['reg_b_014'] (119,779 tok)
+[35/40] +['reg_b_016'] (123,089 tok)
+[36/40] +['reg_b_018'] (126,338 tok)
+[37/40] +['res_b_007'] (129,870 tok)
+[38/40] +['res_b_009'] (137,358 tok)
+[39/40] +['res_b_012'] (141,102 tok)
+[40/40] +['res_b_005'] (147,072 tok)
+done in 200s; tokens 147,072 (p=112,966 c=34,106)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_mixA/answer.csv

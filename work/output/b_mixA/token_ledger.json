@@ -1,0 +1,322 @@
+{
+ "per_qid": {
+  "_docsel_regulatory": [
+   17,
+   8
+  ],
+  "reg_b_001": [
+   2149,
+   349
+  ],
+  "reg_b_003": [
+   2556,
+   1509
+  ],
+  "reg_b_004": [
+   2634,
+   1411
+  ],
+  "reg_b_005": [
+   2055,
+   311
+  ],
+  "reg_b_007": [
+   2565,
+   1404
+  ],
+  "reg_b_008": [
+   2055,
+   311
+  ],
+  "reg_b_009": [
+   2149,
+   349
+  ],
+  "reg_b_013": [
+   2055,
+   311
+  ],
+  "reg_b_014": [
+   2362,
+   1432
+  ],
+  "reg_b_015": [
+   2149,
+   349
+  ],
+  "reg_b_016": [
+   2681,
+   1433
+  ],
+  "reg_b_017": [
+   2216,
+   356
+  ],
+  "reg_b_018": [
+   2698,
+   1355
+  ],
+  "reg_b_020": [
+   2122,
+   318
+  ],
+  "reg_b_021": [
+   2122,
+   318
+  ],
+  "reg_b_023": [
+   2216,
+   356
+  ],
+  "reg_b_024": [
+   2122,
+   318
+  ],
+  "reg_b_025": [
+   2216,
+   356
+  ],
+  "reg_b_026": [
+   2122,
+   318
+  ],
+  "reg_b_027": [
+   2122,
+   318
+  ],
+  "_docsel_research": [
+   19,
+   15
+  ],
+  "res_b_001": [
+   3152,
+   579
+  ],
+  "res_b_002": [
+   3175,
+   421
+  ],
+  "res_b_003": [
+   3175,
+   421
+  ],
+  "res_b_004": [
+   3175,
+   421
+  ],
+  "res_b_005": [
+   2467,
+   3736
+  ],
+  "res_b_006": [
+   3152,
+   579
+  ],
+  "res_b_007": [
+   2246,
+   1519
+  ],
+  "res_b_008": [
+   3152,
+   579
+  ],
+  "res_b_009": [
+   10048,
+   5843
+  ],
+  "res_b_010": [
+   3175,
+   421
+  ],
+  "res_b_011": [
+   3152,
+   579
+  ],
+  "res_b_012": [
+   2184,
+   1793
+  ],
+  "res_b_013": [
+   3152,
+   579
+  ],
+  "res_b_014": [
+   3152,
+   579
+  ],
+  "res_b_015": [
+   3175,
+   421
+  ],
+  "res_b_016": [
+   3152,
+   579
+  ],
+  "res_b_017": [
+   3175,
+   421
+  ],
+  "res_b_018": [
+   3175,
+   421
+  ],
+  "res_b_019": [
+   3152,
+   579
+  ],
+  "res_b_020": [
+   3175,
+   421
+  ],
+  "_batch": [
+   3,
+   10
+  ]
+ },
+ "calls": [
+  {
+   "qid": "_docsel_regulatory",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 6818,
+   "completion_tokens": 492,
+   "ts": 1784784496.720619
+  },
+  {
+   "qid": "_docsel_regulatory",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 7489,
+   "completion_tokens": 566,
+   "ts": 1784784498.1373272
+  },
+  {
+   "qid": "_docsel_research",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 4059,
+   "completion_tokens": 635,
+   "ts": 1784784506.189287
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 8808,
+   "completion_tokens": 1801,
+   "ts": 1784784539.252905
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 10994,
+   "completion_tokens": 2098,
+   "ts": 1784784546.862205
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 23785,
+   "completion_tokens": 3127,
+   "ts": 1784784566.816193
+  },
+  {
+   "qid": "reg_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1875,
+   "completion_tokens": 1460,
+   "ts": 1784784575.185876
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 23600,
+   "completion_tokens": 4384,
+   "ts": 1784784586.3769128
+  },
+  {
+   "qid": "reg_b_004",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1953,
+   "completion_tokens": 1362,
+   "ts": 1784784592.370092
+  },
+  {
+   "qid": "res_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 4773,
+   "completion_tokens": 3397,
+   "ts": 1784784598.9278111
+  },
+  {
+   "qid": "reg_b_007",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1884,
+   "completion_tokens": 1355,
+   "ts": 1784784601.711659
+  },
+  {
+   "qid": "reg_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1681,
+   "completion_tokens": 1383,
+   "ts": 1784784612.8737779
+  },
+  {
+   "qid": "reg_b_016",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1933,
+   "completion_tokens": 1377,
+   "ts": 1784784619.2084439
+  },
+  {
+   "qid": "reg_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1950,
+   "completion_tokens": 1299,
+   "ts": 1784784628.3408482
+  },
+  {
+   "qid": "res_b_007",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2044,
+   "completion_tokens": 1488,
+   "ts": 1784784647.6974862
+  },
+  {
+   "qid": "res_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r1b",
+   "prompt_tokens": 5073,
+   "completion_tokens": 2415,
+   "ts": 1784784648.615426
+  },
+  {
+   "qid": "res_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1982,
+   "completion_tokens": 1762,
+   "ts": 1784784661.081604
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2265,
+   "completion_tokens": 3705,
+   "ts": 1784784681.31196
+  }
+ ]
+}

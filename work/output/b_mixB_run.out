@@ -1,0 +1,3 @@
+待作答 60 / 共 100 题；model=qwen3.6-plus verify=qwen3.6-plus
+[1/60] fc_b_002 -> ['ACD'] (64,491 tok)
+[2/60] fc_b_004 -> ['ABC'] (81,606 tok)
