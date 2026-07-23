@@ -1,0 +1,15 @@
+待作答 20 / 共 100 题；model=qwen3.7-plus verify=qwen3.7-plus
+docsel 完成; tokens 4,454
+选择题 12 → 2 组; 计算题 8
+[1/20] +['fin_b_013'] (35,978 tok)
+[2/20] +['fin_b_014'] (79,727 tok)
+[6/20] +['fin_b_005', 'fin_b_011', 'fin_b_012', 'fin_b_008'] (143,400 tok)
+[7/20] +['fin_b_016'] (149,331 tok)
+[8/20] +['fin_b_017'] (153,005 tok)
+[9/20] +['fin_b_015'] (161,275 tok)
+[17/20] +['fin_b_001', 'fin_b_004', 'fin_b_010', 'fin_b_002', 'fin_b_007', 'fin_b_006', 'fin_b_003', 'fin_b_009'] (172,358 tok)
+[18/20] +['fin_b_018'] (175,913 tok)
+[19/20] +['fin_b_020'] (194,286 tok)
+[20/20] +['fin_b_019'] (199,830 tok)
+done in 417s; tokens 199,830 (p=141,884 c=57,946)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_finslim37/answer.csv

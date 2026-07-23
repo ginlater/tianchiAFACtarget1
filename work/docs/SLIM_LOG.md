@@ -21,3 +21,7 @@ fc18@98k(slim20) res19@76k(slim20) reg19@70k(mixA) fin13@?(slim26,3.7)
 
 ## 代际矩阵定案(slim侧)
 slim28(3.7-max) 74@494k: 强于3.7-plus(69)仍逊3.6(77); fin13再证3.7家fin强项; 3.6保持slim主答
+
+## 专项与复核补格
+finslim37(fin专项slim帧3.7): 12/20@200k ❌ — fin深井需full级取数,slim帧任何模型都够不着
+slim27(3.5-plus主)/slim29(3.6主+3.7max复核): 在途
