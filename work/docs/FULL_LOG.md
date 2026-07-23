@@ -21,3 +21,5 @@ full14(3.7-plus主全卷) full15(3.7-max复核官) fin37(fin专项3.7纵队) sli
 
 ## 代际矩阵定案(full侧)
 full14(3.7-plus主) 92@3.14M < full11(3.6主) 95 → 3.6-plus保持主答王座; 3.7的fin17一致性强项
+insfresh(全火力式ins专项+新卡全入账): 19/20@671k — 合规净版高键件; ins_b_010仍摇摆(全场唯一)
+fccard(fc卡×slim帧): 18@208k — 键平slim20但救活fc_b_013(身份题); fc慢性对=007/017
