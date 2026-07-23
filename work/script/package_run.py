@@ -30,27 +30,24 @@ for l in open(OUT / tag / "run_log.jsonl"):
         runlog[d["qid"]] = d.get("c1", "")
 
 INST = (
-    "请把以下解题过程改写为一段可审计的推理摘要（170-280字）。内容必须包含："
-    "依据的文档与页码、支撑判断的关键原句要点或数值、完整推理链"
-    "（计算题写出算式与中间值；选择题给出各选项取舍的具体依据）、"
-    "与作答一致的结论。\n"
-    "写作要求：用自然流畅的分析性行文，像分析师笔记；"
-    "严禁使用'定位：''提取：''结论：'这类固定小标题或编号格式；"
-    "开头句式与行文组织要贴合本题内容自然展开，避免任何跨题雷同的套话；"
-    "只输出摘要正文。")
+    "请把以下解题过程压缩为一段可审计的推理摘要（120-200字），"
+    "按'定位：/提取：/推导：/结论：'四段行文：定位=依据文档与页码；"
+    "提取=关键原句要点或数值；推导=推理链（计算题保留算式，"
+    "选择题逐项取舍要点）；结论=与作答一致的收束。"
+    "保留页码与数字；只输出摘要正文。")
 BAD = re.compile("反推|给定答案|标准答案|抱歉|无从")
 
 
 def gen_one(qid):
     q = qmap[qid]
     ans_txt = "；".join(str(a) for a in answers.get(qid, []) if a)
-    src = (runlog.get(qid) or "")[:3800]
+    src = (runlog.get(qid) or "")[:2400]
     prompt = (f"题目:\n{q['question'][:300]}\n本题作答: {ans_txt}\n\n"
               f"解题过程记录:\n{src}\n\n{INST}")
     txt = ""
     for _try in range(2):
         c1, _r, _u = chat([{"role": "user", "content": prompt}], qid=qid,
-                          model=DEFAULT_MODEL, thinking=False, max_tokens=520,
+                          model=DEFAULT_MODEL, thinking=False, max_tokens=330,
                           tag="reason_pkg")
         txt = (c1 or "").strip().replace("\n", " ")
         if len(txt) >= 60 and not BAD.search(txt):
