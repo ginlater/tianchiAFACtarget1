@@ -109,7 +109,7 @@ DIGEST_INST = {
         "保留原文精确数字与公式，标注页码如(P12)。1200字以内。"),
 }
 
-WHOLE_DOC_LIMIT = 40000  # 字符；小文档直接全文构卡，防条款漏检
+WHOLE_DOC_LIMIT = int(os.environ.get("AFAC_WHOLE_LIMIT", "40000"))  # 字符；小文档全文构卡防漏检; env可调(构卡摊薄实验)
 
 
 def build_digest(doc_id, domain, qid="_digest", model=DEFAULT_MODEL):
