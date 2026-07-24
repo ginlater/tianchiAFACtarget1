@@ -3,3 +3,15 @@
 {"qid": "fc_b_001", "picked": ["text01", "text02"], "kinds": ["percent", "percent", "percent", "percent"]}
 {"qid": "fc_b_004", "picked": ["text02", "text01"], "kinds": ["letter"]}
 {"qid": "fc_b_005", "picked": ["text08", "text01"], "kinds": ["percent", "percent"]}
+{"qid": "fc_b_006", "picked": ["text04", "text11", "text05"], "kinds": ["letter"]}
+{"qid": "fc_b_007", "picked": ["text04", "text05", "text11"], "kinds": ["letter"]}
+{"qid": "fc_b_008", "picked": ["text04", "text11", "text05"], "kinds": ["letter"]}
+{"qid": "fc_b_009", "picked": ["text04", "text05", "text11"], "kinds": ["letter"]}
+{"qid": "fc_b_010", "picked": ["text10", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_011", "picked": ["text14", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_012", "picked": ["text09", "text06"], "kinds": ["letter"]}
+{"qid": "fc_b_013", "picked": ["text13", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_014", "picked": ["text14", "text01"], "kinds": ["number"]}
+{"qid": "fc_b_015", "picked": ["text10", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_016", "picked": ["text13", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_017", "picked": ["text12", "text01"], "kinds": ["letter"]}

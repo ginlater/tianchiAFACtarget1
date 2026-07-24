@@ -211,3 +211,7 @@ finfresh 17/20@1.01M / insfresh 19/20@671k / fccard 18@208k / fclite 17@172k
 - 无键多数决: 89/100; "并集覆盖99%→验证比生成容易"确认, 但5源账4.3M使est≈73(token经济学否决)
 - 金bug(用户发现): res_b_005规则要求%, 模板漏标 — 全弹药修复, acc上限或达100
 - **三王出征**: slimKing(90王+三矿+跨代calc) / fullKing(full12+三矿) / mixKing(批量+三矿+跨代calc)
+
+## dyn_mid判决: 无效实验(挽具bug)
+- 4/32@194k — 病因: mid题不在router8_heavy docsel日志 → 跑器空文档列表 → 零证据压缩
+- 教训入册: dyn跑器缺docsel自举(依赖外部picks); 有效结论仍以硬28选择题子集为准
