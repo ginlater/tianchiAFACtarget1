@@ -1,0 +1,7 @@
+待作答 4 / 共 100 题；model=qwen3.6-plus verify=qwen3.6-plus
+[1/4] fin_b_004 -> ['AB'] (109,139 tok)
+[2/4] fin_b_005 -> ['ACD'] (131,818 tok)
+[3/4] fin_b_016 -> ['宁德时代>美的集团>招商银行>中国建筑', '66.85'] (248,844 tok)
+[4/4] ins_b_010 -> ['AD'] (294,524 tok)
+done in 472s; tokens 294,524 (p=254,637 c=39,887)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_align1/answer.csv
