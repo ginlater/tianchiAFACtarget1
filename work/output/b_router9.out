@@ -4,3 +4,6 @@
 [router] finfull 已发射 (pid 74001)
 [router] regfc 完成 rc=0 (184s)
 [router] resolo 完成 rc=0 (184s)
+[router] insfull 完成 rc=0 (725s)
+[router] finfull 完成 rc=0 (1045s)
+[router] 合并完成: 100题 答题账1,820,517 → /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_router9
