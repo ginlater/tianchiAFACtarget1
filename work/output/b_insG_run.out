@@ -13,3 +13,11 @@
 [12/20] ins_b_012 -> ['BCD'] (355,554 tok)
 [13/20] ins_b_013 -> ['BD'] (393,248 tok)
 [14/20] ins_b_014 -> ['ACD'] (401,553 tok)
+[15/20] ins_b_016 -> ['ABD'] (441,081 tok)
+[16/20] ins_b_017 -> ['ABCD'] (452,159 tok)
+[17/20] ins_b_015 -> ['A'] (463,686 tok)
+[18/20] ins_b_018 -> ['60.00'] (471,519 tok)
+[19/20] ins_b_019 -> ['211.50'] (480,682 tok)
+[20/20] ins_b_020 -> ['ACD'] (499,066 tok)
+done in 752s; tokens 499,066 (p=388,686 c=110,380)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_insG/answer.csv

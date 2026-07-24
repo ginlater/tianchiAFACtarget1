@@ -2,7 +2,7 @@
  "fc_b_002": {
   "tag": "b_slim20",
   "cost": 4396,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "ACD"
   ]
@@ -10,7 +10,7 @@
  "fc_b_003": {
   "tag": "b_slim20",
   "cost": 6241,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "ABCD"
   ]
@@ -18,7 +18,7 @@
  "fc_b_009": {
   "tag": "b_slim20",
   "cost": 4237,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "ABD"
   ]
@@ -26,7 +26,7 @@
  "fc_b_004": {
   "tag": "b_slim20",
   "cost": 4396,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "ABC"
   ]
@@ -50,7 +50,7 @@
  "fc_b_011": {
   "tag": "b_slim20",
   "cost": 6241,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "ABC"
   ]
@@ -58,7 +58,7 @@
  "fc_b_012": {
   "tag": "b_slim20",
   "cost": 4506,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "BCD"
   ]
@@ -66,7 +66,7 @@
  "fc_b_010": {
   "tag": "b_slim20",
   "cost": 4798,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "BCD"
   ]
@@ -74,7 +74,7 @@
  "fc_b_015": {
   "tag": "b_slim20",
   "cost": 4798,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "CD"
   ]
@@ -82,7 +82,7 @@
  "fc_b_006": {
   "tag": "b_slim5",
   "cost": 5679,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "B"
   ]
@@ -90,7 +90,7 @@
  "fc_b_007": {
   "tag": "b_slim20",
   "cost": 4237,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "BC"
   ]
@@ -98,7 +98,7 @@
  "fc_b_008": {
   "tag": "b_slim20",
   "cost": 4237,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "ABC"
   ]
@@ -106,7 +106,7 @@
  "fc_b_017": {
   "tag": "b_cards2",
   "cost": 9025,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "BC"
   ]
@@ -114,7 +114,7 @@
  "fc_b_019": {
   "tag": "b_slim20",
   "cost": 4399,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "ABCD"
   ]
@@ -122,7 +122,7 @@
  "fc_b_018": {
   "tag": "b_slim20",
   "cost": 4396,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "ABD"
   ]
@@ -130,7 +130,7 @@
  "fin_b_001": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "ACD"
   ]
@@ -138,7 +138,7 @@
  "fin_b_002": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "BCD"
   ]
@@ -154,7 +154,7 @@
  "fin_b_003": {
   "tag": "b_slim5",
   "cost": 7296,
-  "n_correct": 9,
+  "n_correct": 10,
   "answer": [
    "ABCD"
   ]
@@ -162,7 +162,7 @@
  "fin_b_009": {
   "tag": "b_slim5",
   "cost": 7337,
-  "n_correct": 10,
+  "n_correct": 11,
   "answer": [
    "BCD"
   ]
@@ -178,7 +178,7 @@
  "fin_b_004": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "AB"
   ]
@@ -186,15 +186,15 @@
  "fin_b_010": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "AD"
   ]
  },
  "fin_b_007": {
-  "tag": "b_final",
-  "cost": 23584,
-  "n_correct": 9,
+  "tag": "b_scout",
+  "cost": 23558,
+  "n_correct": 10,
   "answer": [
    "ABD"
   ]
@@ -210,7 +210,7 @@
  "fin_b_008": {
   "tag": "b_slim5",
   "cost": 7323,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "AC"
   ]
@@ -218,7 +218,7 @@
  "ins_b_002": {
   "tag": "b_slim5",
   "cost": 6542,
-  "n_correct": 10,
+  "n_correct": 11,
   "answer": [
    "BC"
   ]
@@ -234,7 +234,7 @@
  "ins_b_004": {
   "tag": "b_full12",
   "cost": 24038,
-  "n_correct": 8,
+  "n_correct": 9,
   "answer": [
    "BCD"
   ]
@@ -264,9 +264,9 @@
   ]
  },
  "ins_b_010": {
-  "tag": "b_insE",
-  "cost": 23992,
-  "n_correct": 3,
+  "tag": "b_scout",
+  "cost": 23363,
+  "n_correct": 4,
   "answer": [
    "AB"
   ]
@@ -274,7 +274,7 @@
  "ins_b_008": {
   "tag": "b_slim20",
   "cost": 4635,
-  "n_correct": 8,
+  "n_correct": 9,
   "answer": [
    "ABCD"
   ]
@@ -282,7 +282,7 @@
  "ins_b_009": {
   "tag": "b_slim5",
   "cost": 6865,
-  "n_correct": 9,
+  "n_correct": 10,
   "answer": [
    "BCD"
   ]
@@ -290,7 +290,7 @@
  "ins_b_013": {
   "tag": "b_slim20",
   "cost": 4988,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "BD"
   ]
@@ -306,7 +306,7 @@
  "ins_b_014": {
   "tag": "b_slim20",
   "cost": 3372,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "ACD"
   ]
@@ -314,7 +314,7 @@
  "ins_b_015": {
   "tag": "b_slim20",
   "cost": 4220,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "AC"
   ]
@@ -322,7 +322,7 @@
  "reg_b_005": {
   "tag": "b_slim20",
   "cost": 2363,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "BCD"
   ]
@@ -330,7 +330,7 @@
  "reg_b_001": {
   "tag": "b_slim5",
   "cost": 3714,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "ACD"
   ]
@@ -338,7 +338,7 @@
  "ins_b_016": {
   "tag": "b_slim5",
   "cost": 5467,
-  "n_correct": 10,
+  "n_correct": 11,
   "answer": [
    "ABD"
   ]
@@ -346,7 +346,7 @@
  "reg_b_008": {
   "tag": "b_slim5",
   "cost": 3985,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "BC"
   ]
@@ -354,7 +354,7 @@
  "ins_b_017": {
   "tag": "b_slim5",
   "cost": 6778,
-  "n_correct": 10,
+  "n_correct": 11,
   "answer": [
    "ABCD"
   ]
@@ -362,7 +362,7 @@
  "ins_b_020": {
   "tag": "b_slim5",
   "cost": 6863,
-  "n_correct": 10,
+  "n_correct": 11,
   "answer": [
    "ACD"
   ]
@@ -370,7 +370,7 @@
  "reg_b_021": {
   "tag": "b_slim20",
   "cost": 2436,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "B"
   ]
@@ -378,7 +378,7 @@
  "reg_b_013": {
   "tag": "b_slim20",
   "cost": 2363,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "B"
   ]
@@ -386,7 +386,7 @@
  "reg_b_020": {
   "tag": "b_slim20",
   "cost": 2436,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "B"
   ]
@@ -394,7 +394,7 @@
  "reg_b_015": {
   "tag": "b_slim20",
   "cost": 2538,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AC"
   ]
@@ -402,7 +402,7 @@
  "reg_b_024": {
   "tag": "b_slim20",
   "cost": 2436,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "B"
   ]
@@ -410,7 +410,7 @@
  "reg_b_009": {
   "tag": "b_slim20",
   "cost": 2538,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "BC"
   ]
@@ -418,7 +418,7 @@
  "reg_b_017": {
   "tag": "b_slim20",
   "cost": 2611,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AC"
   ]
@@ -426,7 +426,7 @@
  "reg_b_023": {
   "tag": "b_slim20",
   "cost": 2611,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AB"
   ]
@@ -434,7 +434,7 @@
  "reg_b_027": {
   "tag": "b_slim20",
   "cost": 2436,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "BD"
   ]
@@ -442,7 +442,7 @@
  "reg_b_026": {
   "tag": "b_slim20",
   "cost": 2436,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "B"
   ]
@@ -450,7 +450,7 @@
  "res_b_002": {
   "tag": "b_slim20",
   "cost": 3658,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AC"
   ]
@@ -458,7 +458,7 @@
  "res_b_003": {
   "tag": "b_slim20",
   "cost": 3658,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AB"
   ]
@@ -466,7 +466,7 @@
  "reg_b_025": {
   "tag": "b_slim20",
   "cost": 2611,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AC"
   ]
@@ -474,7 +474,7 @@
  "res_b_004": {
   "tag": "b_slim20",
   "cost": 3650,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "BCD"
   ]
@@ -482,7 +482,7 @@
  "res_b_001": {
   "tag": "b_slim20",
   "cost": 3650,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "AB"
   ]
@@ -490,7 +490,7 @@
  "res_b_006": {
   "tag": "b_slim20",
   "cost": 3658,
-  "n_correct": 4,
+  "n_correct": 5,
   "answer": [
    "AB"
   ]
@@ -498,7 +498,7 @@
  "res_b_011": {
   "tag": "b_slim20",
   "cost": 3650,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "BC"
   ]
@@ -506,7 +506,7 @@
  "res_b_013": {
   "tag": "b_slim20",
   "cost": 3650,
-  "n_correct": 1,
+  "n_correct": 2,
   "answer": [
    "AB"
   ]
@@ -514,7 +514,7 @@
  "res_b_009": {
   "tag": "b_slim5",
   "cost": 4920,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "ABC"
   ]
@@ -530,7 +530,7 @@
  "res_b_010": {
   "tag": "b_slim20",
   "cost": 3658,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AC"
   ]
@@ -538,7 +538,7 @@
  "res_b_014": {
   "tag": "b_slim20",
   "cost": 3658,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "CD"
   ]
@@ -546,7 +546,7 @@
  "res_b_016": {
   "tag": "b_slim20",
   "cost": 3650,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "BD"
   ]
@@ -554,7 +554,7 @@
  "res_b_015": {
   "tag": "b_slim20",
   "cost": 3658,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "BD"
   ]
@@ -562,7 +562,7 @@
  "res_b_017": {
   "tag": "b_slim20",
   "cost": 3658,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AC"
   ]
@@ -570,7 +570,7 @@
  "res_b_019": {
   "tag": "b_slim20",
   "cost": 3650,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "AB"
   ]
@@ -578,7 +578,7 @@
  "res_b_020": {
   "tag": "b_slim20",
   "cost": 3650,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "BD"
   ]
@@ -594,7 +594,7 @@
  "fc_b_001": {
   "tag": "b_slim20",
   "cost": 3702,
-  "n_correct": 8,
+  "n_correct": 9,
   "answer": [
    "5.55%",
    "5.36%",
@@ -605,7 +605,7 @@
  "fc_b_005": {
   "tag": "b_slim5",
   "cost": 4983,
-  "n_correct": 8,
+  "n_correct": 9,
   "answer": [
    "1468.47%",
    "740.58%"
@@ -614,7 +614,7 @@
  "fc_b_014": {
   "tag": "b_slim20",
   "cost": 3981,
-  "n_correct": 8,
+  "n_correct": 9,
   "answer": [
    "14.41"
   ]
@@ -622,7 +622,7 @@
  "fc_b_020": {
   "tag": "b_slim20",
   "cost": 3810,
-  "n_correct": 8,
+  "n_correct": 9,
   "answer": [
    "2.30"
   ]
@@ -630,7 +630,7 @@
  "fin_b_013": {
   "tag": "b_slim5",
   "cost": 6277,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "40.05",
    "10.10"
@@ -639,7 +639,7 @@
  "fin_b_014": {
   "tag": "b_cards2",
   "cost": 10095,
-  "n_correct": 5,
+  "n_correct": 6,
   "answer": [
    "1.12",
    "9.82",
@@ -647,9 +647,9 @@
   ]
  },
  "fin_b_015": {
-  "tag": "b_final",
-  "cost": 27586,
-  "n_correct": 9,
+  "tag": "b_scout",
+  "cost": 27010,
+  "n_correct": 10,
   "answer": [
    "宁德时代>美的集团",
    "19.75"
@@ -658,7 +658,7 @@
  "fin_b_016": {
   "tag": "b_cards2",
   "cost": 10458,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "宁德时代>美的集团>招商银行>中国建筑",
    "76.92"
@@ -667,7 +667,7 @@
  "fin_b_017": {
   "tag": "b_slim20",
   "cost": 3697,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "1049321.98",
    "0.08"
@@ -676,7 +676,7 @@
  "fin_b_020": {
   "tag": "b_slim20",
   "cost": 5190,
-  "n_correct": 12,
+  "n_correct": 13,
   "answer": [
    "112.32",
    "112.31",
@@ -695,7 +695,7 @@
  "ins_b_001": {
   "tag": "b_slim20",
   "cost": 5252,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "333.20"
   ]
@@ -703,7 +703,7 @@
  "ins_b_003": {
   "tag": "b_insfresh",
   "cost": 22081,
-  "n_correct": 9,
+  "n_correct": 10,
   "answer": [
    "366.00"
   ]
@@ -720,7 +720,7 @@
  "ins_b_018": {
   "tag": "b_slim20",
   "cost": 3294,
-  "n_correct": 12,
+  "n_correct": 13,
   "answer": [
    "60.00"
   ]
@@ -728,7 +728,7 @@
  "ins_b_011": {
   "tag": "b_slim20",
   "cost": 3341,
-  "n_correct": 12,
+  "n_correct": 13,
   "answer": [
    "16.00"
   ]
@@ -736,7 +736,7 @@
  "ins_b_019": {
   "tag": "b_slim20",
   "cost": 5188,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "211.50"
   ]
@@ -744,7 +744,7 @@
  "reg_b_007": {
   "tag": "b_slim20",
   "cost": 3860,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "30.00"
   ]
@@ -752,7 +752,7 @@
  "reg_b_014": {
   "tag": "b_slim20",
   "cost": 3753,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "99.25"
   ]
@@ -776,7 +776,7 @@
  "reg_b_016": {
   "tag": "b_slim20",
   "cost": 4022,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "2.00"
   ]
@@ -784,7 +784,7 @@
  "res_b_007": {
   "tag": "b_slim20",
   "cost": 3702,
-  "n_correct": 7,
+  "n_correct": 8,
   "answer": [
    "61.98"
   ]
