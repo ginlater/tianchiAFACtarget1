@@ -138,6 +138,9 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
            if os.environ.get("AFAC_NO_DIGEST") == "1"
            else (14000 if DEEP else (7000 if SLIM else 11000))
            + 2000 * max(0, len(q["doc_ids"]) - 2))
+    if os.environ.get("AFAC_CALC_LEAN") == "1":
+        # 查表主导取数(500k总攻): facts2单元格表为主证据, 原文微量兜底
+        cap = 3800
     ev, kept, _prot = gather_evidence(q, k_opt=4, k_q=5, cap=int(cap * cap_mult),
                                       extra_queries=extra)
     blocks.append("原文片段证据:\n" + ev)
@@ -199,7 +202,9 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
 
     # 独立第二样本（异构模型更有信息量）；SLIM 跳过
     a2, c2 = None, None
-    if not SLIM:
+    if os.environ.get("AFAC_CALC_SINGLE") == "1" and valid_calc(a1, kinds):
+        pass  # 单样本模式(500k总攻): 槽位合法即定案, 省calc2整段
+    elif not SLIM:
         c2, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
                           model=verify_model or model, thinking=True,
                           thinking_budget=(4000 if DEEP else (2000 if SLIM else 2800)), max_tokens=3600, tag="calc2")

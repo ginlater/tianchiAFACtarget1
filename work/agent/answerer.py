@@ -572,6 +572,12 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
         digests = "\n\n".join(build_digest(d, domain, model=model)
                               for d in q["doc_ids"])
         blocks.append(digests)
+        if os.environ.get("AFAC_CARDS_ONLY") == "1":
+            # 卡片主导答题(500k总攻): 卡=主证据, 原文只留微量保护块兜底
+            ev, kept, prot = gather_evidence(q, k_opt=1, k_q=1, cap=1600,
+                                             extra_queries=extra_queries)
+            blocks.append("原文片段证据:\n" + ev)
+            return "\n\n".join(blocks), kept, prot, digests
         # 大文档域(合同/年报,单文档30万字符)证据基数更大；多文档题按文档数增配
         base_cap = 9500 if domain == "financial_contracts" else \
             8500 if domain == "financial_reports" else 6000
@@ -580,6 +586,7 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
         if SLIM:
             base_cap = int(base_cap * 0.6)
         cap = base_cap + 2000 * max(0, len(q["doc_ids"]) - 2)
+        cap = int(cap * float(os.environ.get("AFAC_EV_CAP_MULT", "1")))
         ev, kept, prot = gather_evidence(q, k_opt=3, k_q=2, cap=cap,
                                          extra_queries=extra_queries)
     else:
