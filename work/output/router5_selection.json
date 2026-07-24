@@ -1,0 +1,816 @@
+{
+ "fc_b_002": {
+  "tag": "b_slim20",
+  "cost": 4396,
+  "n_correct": 7,
+  "answer": [
+   "ACD"
+  ]
+ },
+ "fc_b_003": {
+  "tag": "b_slim20",
+  "cost": 6241,
+  "n_correct": 7,
+  "answer": [
+   "ABCD"
+  ]
+ },
+ "fc_b_009": {
+  "tag": "b_slim20",
+  "cost": 4237,
+  "n_correct": 7,
+  "answer": [
+   "ABD"
+  ]
+ },
+ "fc_b_004": {
+  "tag": "b_slim20",
+  "cost": 4396,
+  "n_correct": 6,
+  "answer": [
+   "ABC"
+  ]
+ },
+ "fc_b_013": {
+  "tag": "b_slim20",
+  "cost": 4399,
+  "n_correct": 6,
+  "answer": [
+   "A"
+  ]
+ },
+ "fc_b_016": {
+  "tag": "b_slim5",
+  "cost": 5810,
+  "n_correct": 5,
+  "answer": [
+   "C"
+  ]
+ },
+ "fc_b_011": {
+  "tag": "b_slim20",
+  "cost": 6241,
+  "n_correct": 7,
+  "answer": [
+   "ABC"
+  ]
+ },
+ "fc_b_012": {
+  "tag": "b_slim20",
+  "cost": 4506,
+  "n_correct": 7,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "fc_b_010": {
+  "tag": "b_slim20",
+  "cost": 4798,
+  "n_correct": 7,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "fc_b_015": {
+  "tag": "b_slim20",
+  "cost": 4798,
+  "n_correct": 7,
+  "answer": [
+   "CD"
+  ]
+ },
+ "fc_b_006": {
+  "tag": "b_slim5",
+  "cost": 5679,
+  "n_correct": 7,
+  "answer": [
+   "B"
+  ]
+ },
+ "fc_b_007": {
+  "tag": "b_slim20",
+  "cost": 4237,
+  "n_correct": 5,
+  "answer": [
+   "BC"
+  ]
+ },
+ "fc_b_008": {
+  "tag": "b_slim20",
+  "cost": 4237,
+  "n_correct": 7,
+  "answer": [
+   "ABC"
+  ]
+ },
+ "fc_b_017": {
+  "tag": "b_cards2",
+  "cost": 9025,
+  "n_correct": 6,
+  "answer": [
+   "BC"
+  ]
+ },
+ "fc_b_019": {
+  "tag": "b_slim20",
+  "cost": 4399,
+  "n_correct": 6,
+  "answer": [
+   "ABCD"
+  ]
+ },
+ "fc_b_018": {
+  "tag": "b_slim20",
+  "cost": 4396,
+  "n_correct": 7,
+  "answer": [
+   "ABD"
+  ]
+ },
+ "fin_b_001": {
+  "tag": "b_slim20",
+  "cost": 4442,
+  "n_correct": 11,
+  "answer": [
+   "ACD"
+  ]
+ },
+ "fin_b_002": {
+  "tag": "b_slim20",
+  "cost": 4442,
+  "n_correct": 11,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "fin_b_005": {
+  "tag": "b_full12",
+  "cost": 32272,
+  "n_correct": 1,
+  "answer": [
+   "AC"
+  ]
+ },
+ "fin_b_003": {
+  "tag": "b_slim5",
+  "cost": 7296,
+  "n_correct": 9,
+  "answer": [
+   "ABCD"
+  ]
+ },
+ "fin_b_009": {
+  "tag": "b_slim5",
+  "cost": 7337,
+  "n_correct": 10,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "fin_b_006": {
+  "tag": "b_full12",
+  "cost": 20189,
+  "n_correct": 9,
+  "answer": [
+   "BC"
+  ]
+ },
+ "fin_b_004": {
+  "tag": "b_slim20",
+  "cost": 4442,
+  "n_correct": 5,
+  "answer": [
+   "AB"
+  ]
+ },
+ "fin_b_010": {
+  "tag": "b_slim20",
+  "cost": 4442,
+  "n_correct": 11,
+  "answer": [
+   "AD"
+  ]
+ },
+ "fin_b_007": {
+  "tag": "b_final",
+  "cost": 23584,
+  "n_correct": 9,
+  "answer": [
+   "ABD"
+  ]
+ },
+ "fin_b_011": {
+  "tag": "b_slim20",
+  "cost": 5961,
+  "n_correct": 9,
+  "answer": [
+   "ABC"
+  ]
+ },
+ "fin_b_008": {
+  "tag": "b_slim5",
+  "cost": 7323,
+  "n_correct": 11,
+  "answer": [
+   "AC"
+  ]
+ },
+ "ins_b_002": {
+  "tag": "b_slim5",
+  "cost": 6542,
+  "n_correct": 10,
+  "answer": [
+   "BC"
+  ]
+ },
+ "ins_b_006": {
+  "tag": "b_slim5",
+  "cost": 6430,
+  "n_correct": 10,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "ins_b_004": {
+  "tag": "b_full12",
+  "cost": 24038,
+  "n_correct": 8,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "fin_b_012": {
+  "tag": "b_finF",
+  "cost": 48697,
+  "n_correct": 2,
+  "answer": [
+   "AB"
+  ]
+ },
+ "ins_b_005": {
+  "tag": "b_insE",
+  "cost": 24159,
+  "n_correct": 9,
+  "answer": [
+   "BD"
+  ]
+ },
+ "ins_b_007": {
+  "tag": "b_slim20",
+  "cost": 4988,
+  "n_correct": 10,
+  "answer": [
+   "BC"
+  ]
+ },
+ "ins_b_010": {
+  "tag": "b_insE",
+  "cost": 23992,
+  "n_correct": 3,
+  "answer": [
+   "AB"
+  ]
+ },
+ "ins_b_008": {
+  "tag": "b_slim20",
+  "cost": 4635,
+  "n_correct": 8,
+  "answer": [
+   "ABCD"
+  ]
+ },
+ "ins_b_009": {
+  "tag": "b_slim5",
+  "cost": 6865,
+  "n_correct": 9,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "ins_b_013": {
+  "tag": "b_slim20",
+  "cost": 4988,
+  "n_correct": 11,
+  "answer": [
+   "BD"
+  ]
+ },
+ "ins_b_012": {
+  "tag": "b_slim5",
+  "cost": 6241,
+  "n_correct": 9,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "ins_b_014": {
+  "tag": "b_slim20",
+  "cost": 3372,
+  "n_correct": 11,
+  "answer": [
+   "ACD"
+  ]
+ },
+ "ins_b_015": {
+  "tag": "b_slim20",
+  "cost": 4220,
+  "n_correct": 11,
+  "answer": [
+   "AC"
+  ]
+ },
+ "reg_b_005": {
+  "tag": "b_slim20",
+  "cost": 2363,
+  "n_correct": 5,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "reg_b_001": {
+  "tag": "b_slim5",
+  "cost": 3714,
+  "n_correct": 5,
+  "answer": [
+   "ACD"
+  ]
+ },
+ "ins_b_016": {
+  "tag": "b_slim5",
+  "cost": 5467,
+  "n_correct": 10,
+  "answer": [
+   "ABD"
+  ]
+ },
+ "reg_b_008": {
+  "tag": "b_slim5",
+  "cost": 3985,
+  "n_correct": 5,
+  "answer": [
+   "BC"
+  ]
+ },
+ "ins_b_017": {
+  "tag": "b_slim5",
+  "cost": 6778,
+  "n_correct": 10,
+  "answer": [
+   "ABCD"
+  ]
+ },
+ "ins_b_020": {
+  "tag": "b_slim5",
+  "cost": 6863,
+  "n_correct": 10,
+  "answer": [
+   "ACD"
+  ]
+ },
+ "reg_b_021": {
+  "tag": "b_slim20",
+  "cost": 2436,
+  "n_correct": 6,
+  "answer": [
+   "B"
+  ]
+ },
+ "reg_b_013": {
+  "tag": "b_slim20",
+  "cost": 2363,
+  "n_correct": 6,
+  "answer": [
+   "B"
+  ]
+ },
+ "reg_b_020": {
+  "tag": "b_slim20",
+  "cost": 2436,
+  "n_correct": 6,
+  "answer": [
+   "B"
+  ]
+ },
+ "reg_b_015": {
+  "tag": "b_slim20",
+  "cost": 2538,
+  "n_correct": 6,
+  "answer": [
+   "AC"
+  ]
+ },
+ "reg_b_024": {
+  "tag": "b_slim20",
+  "cost": 2436,
+  "n_correct": 6,
+  "answer": [
+   "B"
+  ]
+ },
+ "reg_b_009": {
+  "tag": "b_slim20",
+  "cost": 2538,
+  "n_correct": 7,
+  "answer": [
+   "BC"
+  ]
+ },
+ "reg_b_017": {
+  "tag": "b_slim20",
+  "cost": 2611,
+  "n_correct": 6,
+  "answer": [
+   "AC"
+  ]
+ },
+ "reg_b_023": {
+  "tag": "b_slim20",
+  "cost": 2611,
+  "n_correct": 6,
+  "answer": [
+   "AB"
+  ]
+ },
+ "reg_b_027": {
+  "tag": "b_slim20",
+  "cost": 2436,
+  "n_correct": 6,
+  "answer": [
+   "BD"
+  ]
+ },
+ "reg_b_026": {
+  "tag": "b_slim20",
+  "cost": 2436,
+  "n_correct": 7,
+  "answer": [
+   "B"
+  ]
+ },
+ "res_b_002": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 6,
+  "answer": [
+   "AC"
+  ]
+ },
+ "res_b_003": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 6,
+  "answer": [
+   "AB"
+  ]
+ },
+ "reg_b_025": {
+  "tag": "b_slim20",
+  "cost": 2611,
+  "n_correct": 6,
+  "answer": [
+   "AC"
+  ]
+ },
+ "res_b_004": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 7,
+  "answer": [
+   "BCD"
+  ]
+ },
+ "res_b_001": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 7,
+  "answer": [
+   "AB"
+  ]
+ },
+ "res_b_006": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 4,
+  "answer": [
+   "AB"
+  ]
+ },
+ "res_b_011": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 5,
+  "answer": [
+   "BC"
+  ]
+ },
+ "res_b_013": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 1,
+  "answer": [
+   "AB"
+  ]
+ },
+ "res_b_009": {
+  "tag": "b_slim5",
+  "cost": 4920,
+  "n_correct": 6,
+  "answer": [
+   "ABC"
+  ]
+ },
+ "res_b_008": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 4,
+  "answer": [
+   "AC"
+  ]
+ },
+ "res_b_010": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 6,
+  "answer": [
+   "AC"
+  ]
+ },
+ "res_b_014": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 5,
+  "answer": [
+   "CD"
+  ]
+ },
+ "res_b_016": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 6,
+  "answer": [
+   "BD"
+  ]
+ },
+ "res_b_015": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 5,
+  "answer": [
+   "BD"
+  ]
+ },
+ "res_b_017": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 6,
+  "answer": [
+   "AC"
+  ]
+ },
+ "res_b_019": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 6,
+  "answer": [
+   "AB"
+  ]
+ },
+ "res_b_020": {
+  "tag": "b_slim20",
+  "cost": 3650,
+  "n_correct": 6,
+  "answer": [
+   "BD"
+  ]
+ },
+ "res_b_018": {
+  "tag": "b_slim20",
+  "cost": 3658,
+  "n_correct": 4,
+  "answer": [
+   "CD"
+  ]
+ },
+ "fc_b_001": {
+  "tag": "b_slim20",
+  "cost": 3702,
+  "n_correct": 8,
+  "answer": [
+   "5.55%",
+   "5.36%",
+   "7.68%",
+   "7.35%"
+  ]
+ },
+ "fc_b_005": {
+  "tag": "b_slim5",
+  "cost": 4983,
+  "n_correct": 8,
+  "answer": [
+   "1468.47%",
+   "740.58%"
+  ]
+ },
+ "fc_b_014": {
+  "tag": "b_slim20",
+  "cost": 3981,
+  "n_correct": 8,
+  "answer": [
+   "14.41"
+  ]
+ },
+ "fc_b_020": {
+  "tag": "b_slim20",
+  "cost": 3810,
+  "n_correct": 8,
+  "answer": [
+   "2.30"
+  ]
+ },
+ "fin_b_013": {
+  "tag": "b_slim5",
+  "cost": 6277,
+  "n_correct": 11,
+  "answer": [
+   "40.05",
+   "10.10"
+  ]
+ },
+ "fin_b_014": {
+  "tag": "b_cards2",
+  "cost": 10095,
+  "n_correct": 5,
+  "answer": [
+   "1.12",
+   "9.82",
+   "8.69"
+  ]
+ },
+ "fin_b_015": {
+  "tag": "b_final",
+  "cost": 27586,
+  "n_correct": 9,
+  "answer": [
+   "宁德时代>美的集团",
+   "19.75"
+  ]
+ },
+ "fin_b_016": {
+  "tag": "b_cards2",
+  "cost": 10458,
+  "n_correct": 6,
+  "answer": [
+   "宁德时代>美的集团>招商银行>中国建筑",
+   "76.92"
+  ]
+ },
+ "fin_b_017": {
+  "tag": "b_slim20",
+  "cost": 3697,
+  "n_correct": 11,
+  "answer": [
+   "1049321.98",
+   "0.08"
+  ]
+ },
+ "fin_b_020": {
+  "tag": "b_slim20",
+  "cost": 5190,
+  "n_correct": 12,
+  "answer": [
+   "112.32",
+   "112.31",
+   "0.01"
+  ]
+ },
+ "fin_b_018": {
+  "tag": "b_slim20",
+  "cost": 3810,
+  "n_correct": 11,
+  "answer": [
+   "2.58",
+   "7.65"
+  ]
+ },
+ "ins_b_001": {
+  "tag": "b_slim20",
+  "cost": 5252,
+  "n_correct": 11,
+  "answer": [
+   "333.20"
+  ]
+ },
+ "ins_b_003": {
+  "tag": "b_insfresh",
+  "cost": 22081,
+  "n_correct": 9,
+  "answer": [
+   "366.00"
+  ]
+ },
+ "fin_b_019": {
+  "tag": "b_cards2",
+  "cost": 9050,
+  "n_correct": 8,
+  "answer": [
+   "比亚迪>宁德时代>美的集团",
+   "0.84"
+  ]
+ },
+ "ins_b_018": {
+  "tag": "b_slim20",
+  "cost": 3294,
+  "n_correct": 12,
+  "answer": [
+   "60.00"
+  ]
+ },
+ "ins_b_011": {
+  "tag": "b_slim20",
+  "cost": 3341,
+  "n_correct": 12,
+  "answer": [
+   "16.00"
+  ]
+ },
+ "ins_b_019": {
+  "tag": "b_slim20",
+  "cost": 5188,
+  "n_correct": 11,
+  "answer": [
+   "211.50"
+  ]
+ },
+ "reg_b_007": {
+  "tag": "b_slim20",
+  "cost": 3860,
+  "n_correct": 7,
+  "answer": [
+   "30.00"
+  ]
+ },
+ "reg_b_014": {
+  "tag": "b_slim20",
+  "cost": 3753,
+  "n_correct": 7,
+  "answer": [
+   "99.25"
+  ]
+ },
+ "reg_b_003": {
+  "tag": "b_slim20",
+  "cost": 3866,
+  "n_correct": 6,
+  "answer": [
+   "2026年3月30日"
+  ]
+ },
+ "reg_b_004": {
+  "tag": "b_slim20",
+  "cost": 4008,
+  "n_correct": 5,
+  "answer": [
+   "2026年6月30日"
+  ]
+ },
+ "reg_b_016": {
+  "tag": "b_slim20",
+  "cost": 4022,
+  "n_correct": 7,
+  "answer": [
+   "2.00"
+  ]
+ },
+ "res_b_007": {
+  "tag": "b_slim20",
+  "cost": 3702,
+  "n_correct": 7,
+  "answer": [
+   "61.98"
+  ]
+ },
+ "reg_b_018": {
+  "tag": "b_slim20",
+  "cost": 4097,
+  "n_correct": 5,
+  "answer": [
+   "2026年4月1日"
+  ]
+ },
+ "res_b_012": {
+  "tag": "b_slim20",
+  "cost": 3764,
+  "n_correct": 7,
+  "answer": [
+   "67.10"
+  ]
+ },
+ "res_b_005": {
+  "tag": "b_slim20",
+  "cost": 4104,
+  "n_correct": 0,
+  "answer": [
+   "22.19"
+  ]
+ }
+}
