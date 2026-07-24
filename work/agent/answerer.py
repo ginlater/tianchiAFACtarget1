@@ -558,7 +558,8 @@ def domain_facts_block(q):
     """ins/fc 离线条款速查块（AFAC_DOM_FACTS=1, 零token词法抽取, 替代/增强构卡）。"""
     global _DOM_FACTS
     if (os.environ.get("AFAC_DOM_FACTS") != "1"
-            or q.get("domain") not in ("insurance", "financial_contracts")):
+            or q.get("domain") not in ("insurance", "financial_contracts",
+                                       "research")):
         return ""
     if _DOM_FACTS is None:
         p = pathlib.Path(__file__).resolve().parents[1] \

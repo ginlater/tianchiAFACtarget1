@@ -47,10 +47,16 @@ def extract(domain, kw, min_num=False):
     return out
 
 
+RES_KW = re.compile(
+    r"同比|环比|增速|增长率|占比|渗透率|市占|预测|预计|目标价|评级|产能|出货|装机|"
+    r"销量|均价|毛利率|净利率|CAGR|市场规模|需求|供给|盈利预测|估值")
+
+
 def main():
     result = {}
     result.update(extract("insurance", INS_KW))
     result.update(extract("financial_contracts", FC_KW))
+    result.update(extract("research", RES_KW, min_num=True))
     json.dump(result, open(PD / "domain_facts.json", "w"), ensure_ascii=False,
               indent=0)
     tot = sum(len(v) for v in result.values())
