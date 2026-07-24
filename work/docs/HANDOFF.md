@@ -79,12 +79,18 @@ dyn_mid(挽具bug无效)、slimKing5深瘦(膝点)、r1多票对res(投票负ROI
 
 复盘军团 7 agent：TOKEN_SLIM/TOKEN_FULL/TOKEN_MIX 三矿工 + HEX_OBSERVER 观察员（第一波在跑）→ 三核验官+一总纂官（第二波待发）。产物将落在 `docs/TOKEN_*.md`、`docs/HEX_OBSERVER.md`。
 
-## 7. 接手后的决策树
+## 7. 接手后的决策树（7-24 深夜 Fable5 会话定版，见 SUBMIT_CARD_ROUTER6V3.md）
 
-1. **若用户尚未提交 router6-v2**：文件就绪，提醒零风险（榜取最佳）；提交后用返回分解码（acc=99→94.96=22.27 错；acc=100→95.46=兑现）
-2. **若 router6-v2 已落且成绩返回**：解码入册；若 <95.46 且窗口未关，res_b_005 无更多合规弹药，收官
-3. **前 15 代码审核准备**：submission.zip 对应终选弹重打（`package_submission.py <tag>`）；AUDIT_RESPONSE.md 是审计答辩底稿；slimKing4 是"纯净替补"叙事
-4. **任何新优化**：先读 docs/KNOWLEDGE_DOCTRINE.md（五原理）+ 负结果清单，勿重复已证伪路线
+1. **唯一动作：用户平台手动提交 router6-v3**；返分解码 95.46=兑现收官 / 94.96=接受收官
+   （res_b_005 专案已终审定案：calcW1 表格全景架构实验证明全口径被诚实模型排除、
+   22.18 全库无 final 产出、合规弹药只剩已装膛的 22.27%——docs/RES_B_005_CASEBOOK.md）
+2. **submission.zip 已重打为 v3 同步版**（旧 zip 曾装 v2 死值 22.19%，险情已排除勿用旧副本）；
+   answer.csv 独立体检全绿（102行/对账/槽位/L12三题%/峰顶499,058）
+3. **前 15 代码审核准备**：AUDIT_RESPONSE.md 答辩底稿；slimKing4 是"纯净替补"叙事；
+   calcW1 是"口径盲区已类级修复"的现成证据
+4. **任何新优化**：先读 docs/KNOWLEDGE_DOCTRINE.md（五原理）+ 负结果清单，勿重复已证伪路线；
+   TOKEN_{SLIM,FULL,MIX}.md 已有对应 VERIFY_*.md 核验（FULL 114条101✅、MIX 59条49✅，
+   各 1❌ 均为叙述层错数，台账层全可复现）
 
 ## 8. 文件地图
 
