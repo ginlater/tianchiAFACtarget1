@@ -15,3 +15,8 @@ fin_b_019: 票['A', 'A', 'A'] → A 键['比亚迪>宁德时代>美的集团', '
 ins_b_002: 票['BC', 'BC', 'BC'] → BC 键['BC'] ✓
 ins_b_003: 票[] → None 键['366.00'] ✗
 ins_b_004: 票['C', 'BCD', 'D'] → C 键['BCD'] ✗
+ins_b_005: 票['D', 'D'] → D 键['BD'] ✗
+ins_b_009: 票['BCD', 'BCD', 'BCD'] → BCD 键['BCD'] ✓
+ins_b_010: 票['AB', 'AB', 'AB'] → AB 键['AB'] ✓
+ins_b_012: 票['C', 'C', 'BC'] → C 键['BCD'] ✗
+ins_b_014: 票['ACD', 'ACD', 'ACD'] → ACD 键['ACD'] ✓

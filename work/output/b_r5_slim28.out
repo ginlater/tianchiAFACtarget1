@@ -92,3 +92,12 @@
 [91/100] res_b_011 -> ['BC'] (821,936 tok)
 [92/100] res_b_013 -> ['A'] (832,084 tok)
 [93/100] res_b_014 -> ['CD'] (841,107 tok)
+[94/100] res_b_015 -> ['B'] (849,092 tok)
+[95/100] res_b_016 -> ['BD'] (861,378 tok)
+[96/100] res_b_017 -> ['AC'] (869,365 tok)
+[97/100] res_b_012 -> ['67.05'] (875,793 tok)
+[98/100] res_b_020 -> ['BD'] (888,728 tok)
+[99/100] res_b_018 -> ['CD'] (896,253 tok)
+[100/100] res_b_019 -> ['AB'] (902,310 tok)
+done in 956s; tokens 902,310 (p=762,458 c=139,852)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_r5_slim28/answer.csv

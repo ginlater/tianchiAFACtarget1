@@ -208,7 +208,7 @@ def answer_calc(q, kinds, model=DEFAULT_MODEL, log=None, verify_model=None,
     a2, c2 = None, None
     if os.environ.get("AFAC_CALC_SINGLE") == "1" and valid_calc(a1, kinds):
         pass  # 单样本模式(500k总攻): 槽位合法即定案, 省calc2整段
-    elif not SLIM:
+    elif os.environ.get("AFAC_CALC_HETERO") == "1" or not SLIM:
         c2, _t, _u = chat([{"role": "user", "content": base}], qid=qid,
                           model=verify_model or model, thinking=True,
                           thinking_budget=(4000 if DEEP else (2000 if SLIM else 2800)), max_tokens=3600, tag="calc2")
