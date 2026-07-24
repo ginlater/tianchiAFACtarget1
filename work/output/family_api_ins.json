@@ -1,0 +1,1156 @@
+{
+ "family": "ins",
+ "run_models": {
+  "b_insfresh": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.5-plus"
+   ]
+  },
+  "b_insmid": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.5-plus"
+   ]
+  },
+  "b_insE": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.5-plus"
+   ]
+  },
+  "b_insF": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.5-plus"
+   ]
+  },
+  "b_insG": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.5-plus"
+   ]
+  },
+  "b_insH": {
+   "main": "qwen3.6-plus",
+   "aux": []
+  }
+ },
+ "api_rank": {
+  "ins_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11110,
+    "main_tokens": 11110,
+    "aux_tokens": 0,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11582,
+    "main_tokens": 11582,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 20502,
+    "main_tokens": 20502,
+    "aux_tokens": 0,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 20574,
+    "main_tokens": 20574,
+    "aux_tokens": 0,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 21091,
+    "main_tokens": 10996,
+    "aux_tokens": 10095,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 21371,
+    "main_tokens": 11333,
+    "aux_tokens": 10038,
+    "run": "b_insE"
+   }
+  ],
+  "ins_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11301,
+    "main_tokens": 11301,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 20115,
+    "main_tokens": 12634,
+    "aux_tokens": 7481,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 21047,
+    "main_tokens": 11340,
+    "aux_tokens": 9707,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 21428,
+    "main_tokens": 12775,
+    "aux_tokens": 8653,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23567,
+    "main_tokens": 12695,
+    "aux_tokens": 10872,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 23865,
+    "main_tokens": 23865,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 9780,
+    "main_tokens": 9780,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10095,
+    "main_tokens": 10095,
+    "aux_tokens": 0,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 22081,
+    "main_tokens": 22081,
+    "aux_tokens": 0,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 22461,
+    "main_tokens": 11687,
+    "aux_tokens": 10774,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 22656,
+    "main_tokens": 22656,
+    "aux_tokens": 0,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 22766,
+    "main_tokens": 12049,
+    "aux_tokens": 10717,
+    "run": "b_insE"
+   }
+  ],
+  "ins_b_004": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 21896,
+    "main_tokens": 12376,
+    "aux_tokens": 9520,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26046,
+    "main_tokens": 14481,
+    "aux_tokens": 11565,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26162,
+    "main_tokens": 14518,
+    "aux_tokens": 11644,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26436,
+    "main_tokens": 14376,
+    "aux_tokens": 12060,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 27731,
+    "main_tokens": 27731,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_005": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24159,
+    "main_tokens": 14038,
+    "aux_tokens": 10121,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26050,
+    "main_tokens": 14627,
+    "aux_tokens": 11423,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 27214,
+    "main_tokens": 27214,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 27324,
+    "main_tokens": 14716,
+    "aux_tokens": 12608,
+    "run": "b_insfresh"
+   }
+  ],
+  "ins_b_006": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 13453,
+    "main_tokens": 13453,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24328,
+    "main_tokens": 13266,
+    "aux_tokens": 11062,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30328,
+    "main_tokens": 17928,
+    "aux_tokens": 12400,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30381,
+    "main_tokens": 17782,
+    "aux_tokens": 12599,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 33064,
+    "main_tokens": 17570,
+    "aux_tokens": 15494,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 34289,
+    "main_tokens": 34289,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11920,
+    "main_tokens": 11920,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 22295,
+    "main_tokens": 11994,
+    "aux_tokens": 10301,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23927,
+    "main_tokens": 13925,
+    "aux_tokens": 10002,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24835,
+    "main_tokens": 14426,
+    "aux_tokens": 10409,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 25906,
+    "main_tokens": 14027,
+    "aux_tokens": 11879,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 26825,
+    "main_tokens": 26825,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_008": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 22627,
+    "main_tokens": 13830,
+    "aux_tokens": 8797,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23912,
+    "main_tokens": 13602,
+    "aux_tokens": 10310,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 25000,
+    "main_tokens": 13397,
+    "aux_tokens": 11603,
+    "run": "b_insfresh"
+   }
+  ],
+  "ins_b_009": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 25790,
+    "main_tokens": 14946,
+    "aux_tokens": 10844,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26644,
+    "main_tokens": 15133,
+    "aux_tokens": 11511,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 27411,
+    "main_tokens": 14748,
+    "aux_tokens": 12663,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 28202,
+    "main_tokens": 28202,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_010": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23992,
+    "main_tokens": 14370,
+    "aux_tokens": 9622,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 44781,
+    "main_tokens": 26983,
+    "aux_tokens": 17798,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 7583,
+    "main_tokens": 7583,
+    "aux_tokens": 0,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 7955,
+    "main_tokens": 7955,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 16735,
+    "main_tokens": 16735,
+    "aux_tokens": 0,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 16745,
+    "main_tokens": 9271,
+    "aux_tokens": 7474,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 16931,
+    "main_tokens": 8745,
+    "aux_tokens": 8186,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 17145,
+    "main_tokens": 17145,
+    "aux_tokens": 0,
+    "run": "b_insmid"
+   }
+  ],
+  "ins_b_012": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 13416,
+    "main_tokens": 13416,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24858,
+    "main_tokens": 13440,
+    "aux_tokens": 11418,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 27621,
+    "main_tokens": 15674,
+    "aux_tokens": 11947,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 28785,
+    "main_tokens": 15719,
+    "aux_tokens": 13066,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 29096,
+    "main_tokens": 29096,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 29153,
+    "main_tokens": 15444,
+    "aux_tokens": 13709,
+    "run": "b_insfresh"
+   }
+  ],
+  "ins_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11720,
+    "main_tokens": 11720,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 21170,
+    "main_tokens": 11542,
+    "aux_tokens": 9628,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 28285,
+    "main_tokens": 17493,
+    "aux_tokens": 10792,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 31710,
+    "main_tokens": 17867,
+    "aux_tokens": 13843,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 33448,
+    "main_tokens": 33448,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 33950,
+    "main_tokens": 17921,
+    "aux_tokens": 16029,
+    "run": "b_insfresh"
+   }
+  ],
+  "ins_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 8450,
+    "main_tokens": 8450,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 15233,
+    "main_tokens": 8529,
+    "aux_tokens": 6704,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 16549,
+    "main_tokens": 9788,
+    "aux_tokens": 6761,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 16632,
+    "main_tokens": 9905,
+    "aux_tokens": 6727,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 18174,
+    "main_tokens": 10081,
+    "aux_tokens": 8093,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 18291,
+    "main_tokens": 18291,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_015": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23518,
+    "main_tokens": 13661,
+    "aux_tokens": 9857,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23642,
+    "main_tokens": 13772,
+    "aux_tokens": 9870,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 25236,
+    "main_tokens": 13334,
+    "aux_tokens": 11902,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 25864,
+    "main_tokens": 25864,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_016": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11028,
+    "main_tokens": 11028,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 20264,
+    "main_tokens": 11235,
+    "aux_tokens": 9029,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23794,
+    "main_tokens": 13404,
+    "aux_tokens": 10390,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24239,
+    "main_tokens": 13745,
+    "aux_tokens": 10494,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 25089,
+    "main_tokens": 13563,
+    "aux_tokens": 11526,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 25233,
+    "main_tokens": 25233,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ],
+  "ins_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11684,
+    "main_tokens": 11684,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 21270,
+    "main_tokens": 11770,
+    "aux_tokens": 9500,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 28698,
+    "main_tokens": 15806,
+    "aux_tokens": 12892,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 29471,
+    "main_tokens": 15690,
+    "aux_tokens": 13781,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 29769,
+    "main_tokens": 29769,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30127,
+    "main_tokens": 16346,
+    "aux_tokens": 13781,
+    "run": "b_insmid"
+   }
+  ],
+  "ins_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 7303,
+    "main_tokens": 7303,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 7781,
+    "main_tokens": 7781,
+    "aux_tokens": 0,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 15805,
+    "main_tokens": 15805,
+    "aux_tokens": 0,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 16745,
+    "main_tokens": 8895,
+    "aux_tokens": 7850,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 17194,
+    "main_tokens": 9012,
+    "aux_tokens": 8182,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 17476,
+    "main_tokens": 17476,
+    "aux_tokens": 0,
+    "run": "b_insfresh"
+   }
+  ],
+  "ins_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10790,
+    "main_tokens": 10790,
+    "aux_tokens": 0,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 11172,
+    "main_tokens": 11172,
+    "aux_tokens": 0,
+    "run": "b_insH"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 19713,
+    "main_tokens": 11169,
+    "aux_tokens": 8544,
+    "run": "b_insF"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 20322,
+    "main_tokens": 20322,
+    "aux_tokens": 0,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 20546,
+    "main_tokens": 20546,
+    "aux_tokens": 0,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 20568,
+    "main_tokens": 10760,
+    "aux_tokens": 9808,
+    "run": "b_insE"
+   }
+  ],
+  "ins_b_020": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 20014,
+    "main_tokens": 10926,
+    "aux_tokens": 9088,
+    "run": "b_insG"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 25344,
+    "main_tokens": 15365,
+    "aux_tokens": 9979,
+    "run": "b_insE"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 25599,
+    "main_tokens": 15296,
+    "aux_tokens": 10303,
+    "run": "b_insmid"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 27280,
+    "main_tokens": 14696,
+    "aux_tokens": 12584,
+    "run": "b_insfresh"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 29104,
+    "main_tokens": 29104,
+    "aux_tokens": 0,
+    "run": "b_insF"
+   }
+  ]
+ },
+ "summary": {
+  "qwen3.6-plus": {
+   "n_correct_as_main": 20,
+   "cheapest_sum": 301534
+  }
+ },
+ "combo_summary": {
+  "qwen3.6-plus": {
+   "n_cheapest": 13,
+   "cost_sum": 139538
+  },
+  "qwen3.5-plus+qwen3.6-plus": {
+   "n_cheapest": 7,
+   "cost_sum": 161996
+  }
+ },
+ "run_stats": {
+  "b_insfresh": {
+   "n_correct": 19,
+   "acc": "19/20",
+   "avg_cost_per_correct": 24957,
+   "total_tokens": 671103,
+   "aux_tokens": 195288,
+   "aux_share": 0.291
+  },
+  "b_insmid": {
+   "n_correct": 19,
+   "acc": "19/20",
+   "avg_cost_per_correct": 23771,
+   "total_tokens": 639134,
+   "aux_tokens": 160585,
+   "aux_share": 0.2513
+  },
+  "b_insE": {
+   "n_correct": 20,
+   "acc": "20/20",
+   "avg_cost_per_correct": 23720,
+   "total_tokens": 585374,
+   "aux_tokens": 204443,
+   "aux_share": 0.3493
+  },
+  "b_insF": {
+   "n_correct": 19,
+   "acc": "19/20",
+   "avg_cost_per_correct": 26364,
+   "total_tokens": 545196,
+   "aux_tokens": 81515,
+   "aux_share": 0.1495
+  },
+  "b_insG": {
+   "n_correct": 15,
+   "acc": "15/20",
+   "avg_cost_per_correct": 17316,
+   "total_tokens": 499066,
+   "aux_tokens": 169827,
+   "aux_share": 0.3403
+  },
+  "b_insH": {
+   "n_correct": 13,
+   "acc": "13/20",
+   "avg_cost_per_correct": 10828,
+   "total_tokens": 218917,
+   "aux_tokens": 0,
+   "aux_share": 0.0
+  }
+ }
+}

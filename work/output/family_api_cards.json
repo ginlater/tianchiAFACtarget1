@@ -1,0 +1,782 @@
+{
+ "family": "cards",
+ "run_models": {
+  "b_cards2": {
+   "main": "qwen3.6-plus",
+   "aux": []
+  },
+  "b_fccard": {
+   "main": "qwen3.6-plus",
+   "aux": []
+  }
+ },
+ "api_rank": {
+  "fc_b_015": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fc_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_016": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_006": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fin_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_010": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_005": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_015": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_026": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_024": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_005": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_027": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_021": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_015": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_023": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_025": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_006": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_016": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_010": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fc_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_005": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fin_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_016": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fin_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "ins_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_016": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "reg_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "res_b_012": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5869,
+    "run": "b_cards2"
+   }
+  ],
+  "fc_b_010": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_012": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ],
+  "fc_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 10387,
+    "run": "b_fccard"
+   }
+  ]
+ },
+ "summary": {
+  "qwen3.6-plus": {
+   "n_correct_as_main": 76,
+   "cheapest_sum": 477670
+  }
+ }
+}

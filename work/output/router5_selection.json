@@ -130,7 +130,7 @@
  "fin_b_001": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 12,
+  "n_correct": 14,
   "answer": [
    "ACD"
   ]
@@ -138,7 +138,7 @@
  "fin_b_002": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 12,
+  "n_correct": 14,
   "answer": [
    "BCD"
   ]
@@ -154,7 +154,7 @@
  "fin_b_003": {
   "tag": "b_slim5",
   "cost": 7296,
-  "n_correct": 10,
+  "n_correct": 11,
   "answer": [
    "ABCD"
   ]
@@ -162,15 +162,15 @@
  "fin_b_009": {
   "tag": "b_slim5",
   "cost": 7337,
-  "n_correct": 11,
+  "n_correct": 12,
   "answer": [
    "BCD"
   ]
  },
  "fin_b_006": {
-  "tag": "b_full12",
-  "cost": 20189,
-  "n_correct": 9,
+  "tag": "b_finH",
+  "cost": 17966,
+  "n_correct": 10,
   "answer": [
    "BC"
   ]
@@ -178,7 +178,7 @@
  "fin_b_004": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 6,
+  "n_correct": 8,
   "answer": [
    "AB"
   ]
@@ -186,7 +186,7 @@
  "fin_b_010": {
   "tag": "b_slim20",
   "cost": 4442,
-  "n_correct": 12,
+  "n_correct": 13,
   "answer": [
    "AD"
   ]
@@ -194,15 +194,15 @@
  "fin_b_007": {
   "tag": "b_scout",
   "cost": 23558,
-  "n_correct": 10,
+  "n_correct": 11,
   "answer": [
    "ABD"
   ]
  },
  "fin_b_011": {
-  "tag": "b_slim20",
-  "cost": 5961,
-  "n_correct": 9,
+  "tag": "b_finsB",
+  "cost": 5864,
+  "n_correct": 11,
   "answer": [
    "ABC"
   ]
@@ -210,39 +210,39 @@
  "fin_b_008": {
   "tag": "b_slim5",
   "cost": 7323,
-  "n_correct": 12,
+  "n_correct": 14,
   "answer": [
    "AC"
   ]
  },
  "ins_b_002": {
-  "tag": "b_slim5",
-  "cost": 6542,
-  "n_correct": 11,
+  "tag": "b_finsB",
+  "cost": 3082,
+  "n_correct": 14,
   "answer": [
    "BC"
   ]
  },
  "ins_b_006": {
-  "tag": "b_slim5",
-  "cost": 6430,
-  "n_correct": 10,
+  "tag": "b_finsB",
+  "cost": 3082,
+  "n_correct": 13,
   "answer": [
    "BCD"
   ]
  },
  "ins_b_004": {
-  "tag": "b_full12",
-  "cost": 24038,
-  "n_correct": 9,
+  "tag": "b_insG",
+  "cost": 21896,
+  "n_correct": 10,
   "answer": [
    "BCD"
   ]
  },
  "fin_b_012": {
-  "tag": "b_finF",
-  "cost": 48697,
-  "n_correct": 2,
+  "tag": "b_finsB",
+  "cost": 18627,
+  "n_correct": 3,
   "answer": [
    "AB"
   ]
@@ -256,9 +256,9 @@
   ]
  },
  "ins_b_007": {
-  "tag": "b_slim20",
-  "cost": 4988,
-  "n_correct": 10,
+  "tag": "b_finsB",
+  "cost": 3082,
+  "n_correct": 13,
   "answer": [
    "BC"
   ]
@@ -272,9 +272,9 @@
   ]
  },
  "ins_b_008": {
-  "tag": "b_slim20",
-  "cost": 4635,
-  "n_correct": 9,
+  "tag": "b_finsB",
+  "cost": 3082,
+  "n_correct": 10,
   "answer": [
    "ABCD"
   ]
@@ -288,17 +288,17 @@
   ]
  },
  "ins_b_013": {
-  "tag": "b_slim20",
-  "cost": 4988,
-  "n_correct": 12,
+  "tag": "b_finsB",
+  "cost": 3082,
+  "n_correct": 15,
   "answer": [
    "BD"
   ]
  },
  "ins_b_012": {
-  "tag": "b_slim5",
-  "cost": 6241,
-  "n_correct": 9,
+  "tag": "b_finsB",
+  "cost": 2740,
+  "n_correct": 12,
   "answer": [
    "BCD"
   ]
@@ -306,15 +306,15 @@
  "ins_b_014": {
   "tag": "b_slim20",
   "cost": 3372,
-  "n_correct": 12,
+  "n_correct": 14,
   "answer": [
    "ACD"
   ]
  },
  "ins_b_015": {
-  "tag": "b_slim20",
-  "cost": 4220,
-  "n_correct": 12,
+  "tag": "b_finsB",
+  "cost": 2740,
+  "n_correct": 13,
   "answer": [
    "AC"
   ]
@@ -338,7 +338,7 @@
  "ins_b_016": {
   "tag": "b_slim5",
   "cost": 5467,
-  "n_correct": 11,
+  "n_correct": 13,
   "answer": [
    "ABD"
   ]
@@ -354,15 +354,15 @@
  "ins_b_017": {
   "tag": "b_slim5",
   "cost": 6778,
-  "n_correct": 11,
+  "n_correct": 13,
   "answer": [
    "ABCD"
   ]
  },
  "ins_b_020": {
-  "tag": "b_slim5",
-  "cost": 6863,
-  "n_correct": 11,
+  "tag": "b_finsB",
+  "cost": 2740,
+  "n_correct": 13,
   "answer": [
    "ACD"
   ]
@@ -639,7 +639,7 @@
  "fin_b_014": {
   "tag": "b_cards2",
   "cost": 10095,
-  "n_correct": 6,
+  "n_correct": 7,
   "answer": [
    "1.12",
    "9.82",
@@ -647,9 +647,9 @@
   ]
  },
  "fin_b_015": {
-  "tag": "b_scout",
-  "cost": 27010,
-  "n_correct": 10,
+  "tag": "b_finH",
+  "cost": 15071,
+  "n_correct": 11,
   "answer": [
    "宁德时代>美的集团",
    "19.75"
@@ -667,7 +667,7 @@
  "fin_b_017": {
   "tag": "b_slim20",
   "cost": 3697,
-  "n_correct": 12,
+  "n_correct": 14,
   "answer": [
    "1049321.98",
    "0.08"
@@ -676,7 +676,7 @@
  "fin_b_020": {
   "tag": "b_slim20",
   "cost": 5190,
-  "n_correct": 13,
+  "n_correct": 15,
   "answer": [
    "112.32",
    "112.31",
@@ -686,7 +686,7 @@
  "fin_b_018": {
   "tag": "b_slim20",
   "cost": 3810,
-  "n_correct": 11,
+  "n_correct": 13,
   "answer": [
    "2.58",
    "7.65"
@@ -695,23 +695,23 @@
  "ins_b_001": {
   "tag": "b_slim20",
   "cost": 5252,
-  "n_correct": 12,
+  "n_correct": 15,
   "answer": [
    "333.20"
   ]
  },
  "ins_b_003": {
-  "tag": "b_insfresh",
-  "cost": 22081,
-  "n_correct": 10,
+  "tag": "b_insH",
+  "cost": 9780,
+  "n_correct": 12,
   "answer": [
    "366.00"
   ]
  },
  "fin_b_019": {
-  "tag": "b_cards2",
-  "cost": 9050,
-  "n_correct": 8,
+  "tag": "b_finsB",
+  "cost": 7436,
+  "n_correct": 10,
   "answer": [
    "比亚迪>宁德时代>美的集团",
    "0.84"
@@ -720,15 +720,15 @@
  "ins_b_018": {
   "tag": "b_slim20",
   "cost": 3294,
-  "n_correct": 13,
+  "n_correct": 16,
   "answer": [
    "60.00"
   ]
  },
  "ins_b_011": {
-  "tag": "b_slim20",
-  "cost": 3341,
-  "n_correct": 13,
+  "tag": "b_finsB",
+  "cost": 3269,
+  "n_correct": 16,
   "answer": [
    "16.00"
   ]
@@ -736,7 +736,7 @@
  "ins_b_019": {
   "tag": "b_slim20",
   "cost": 5188,
-  "n_correct": 12,
+  "n_correct": 15,
   "answer": [
    "211.50"
   ]

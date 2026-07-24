@@ -1,0 +1,1416 @@
+{
+ "fc_b_001": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 3275,
+  "answer": [
+   "5.55%",
+   "5.36%",
+   "7.68%",
+   "7.35%"
+  ],
+  "correct": true,
+  "ledger": [
+   1883,
+   1392
+  ],
+  "repriced": false
+ },
+ "fc_b_002": {
+  "family": "slim",
+  "run": "b_slim19",
+  "cost": 3652,
+  "answer": [
+   "ACD"
+  ],
+  "correct": true,
+  "ledger": [
+   3209,
+   443
+  ],
+  "repriced": false
+ },
+ "fc_b_003": {
+  "family": "slim",
+  "run": "b_slim19",
+  "cost": 4390,
+  "answer": [
+   "ABCD"
+  ],
+  "correct": true,
+  "ledger": [
+   3592,
+   798
+  ],
+  "repriced": false
+ },
+ "fc_b_004": {
+  "family": "slim",
+  "run": "b_slim19",
+  "cost": 3652,
+  "answer": [
+   "ABC"
+  ],
+  "correct": true,
+  "ledger": [
+   3209,
+   443
+  ],
+  "repriced": false
+ },
+ "fc_b_005": {
+  "family": "slim",
+  "run": "b_slim5",
+  "cost": 4983,
+  "answer": [
+   "1468.47%",
+   "740.58%"
+  ],
+  "correct": true,
+  "ledger": [
+   3283,
+   1700
+  ],
+  "repriced": false
+ },
+ "fc_b_006": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3703,
+  "answer": [
+   "B"
+  ],
+  "correct": true,
+  "ledger": [
+   3080,
+   623
+  ],
+  "repriced": false
+ },
+ "fc_b_007": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 3965,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   3621,
+   344
+  ],
+  "repriced": false
+ },
+ "fc_b_008": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3703,
+  "answer": [
+   "ABC"
+  ],
+  "correct": true,
+  "ledger": [
+   3080,
+   623
+  ],
+  "repriced": false
+ },
+ "fc_b_009": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 3965,
+  "answer": [
+   "ABD"
+  ],
+  "correct": true,
+  "ledger": [
+   3621,
+   344
+  ],
+  "repriced": false
+ },
+ "fc_b_010": {
+  "family": "slim",
+  "run": "b_slim19",
+  "cost": 3652,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   3209,
+   443
+  ],
+  "repriced": false
+ },
+ "fc_b_011": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3703,
+  "answer": [
+   "ABC"
+  ],
+  "correct": true,
+  "ledger": [
+   3080,
+   623
+  ],
+  "repriced": false
+ },
+ "fc_b_012": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 2906,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2108,
+   798
+  ],
+  "repriced": false
+ },
+ "fc_b_013": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 2906,
+  "answer": [
+   "A"
+  ],
+  "correct": true,
+  "ledger": [
+   2108,
+   798
+  ],
+  "repriced": false
+ },
+ "fc_b_014": {
+  "family": "slim",
+  "run": "b_slim26",
+  "cost": 3783,
+  "answer": [
+   "14.41"
+  ],
+  "correct": true,
+  "ledger": [
+   2679,
+   1104
+  ],
+  "repriced": false
+ },
+ "fc_b_015": {
+  "family": "slim",
+  "run": "b_slim19",
+  "cost": 3652,
+  "answer": [
+   "CD"
+  ],
+  "correct": true,
+  "ledger": [
+   3209,
+   443
+  ],
+  "repriced": false
+ },
+ "fc_b_016": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 3945,
+  "answer": [
+   "C"
+  ],
+  "correct": true,
+  "ledger": [
+   3123,
+   822
+  ],
+  "repriced": false
+ },
+ "fc_b_017": {
+  "family": "slim",
+  "run": "b_slim19",
+  "cost": 3652,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   3209,
+   443
+  ],
+  "repriced": false
+ },
+ "fc_b_018": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 2906,
+  "answer": [
+   "ABD"
+  ],
+  "correct": true,
+  "ledger": [
+   2108,
+   798
+  ],
+  "repriced": false
+ },
+ "fc_b_019": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3703,
+  "answer": [
+   "ABCD"
+  ],
+  "correct": true,
+  "ledger": [
+   3080,
+   623
+  ],
+  "repriced": false
+ },
+ "fc_b_020": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3053,
+  "answer": [
+   "2.30"
+  ],
+  "correct": true,
+  "ledger": [
+   1733,
+   1320
+  ],
+  "repriced": false
+ },
+ "fin_b_001": {
+  "family": "slim",
+  "run": "b_slim20",
+  "cost": 4442,
+  "answer": [
+   "ACD"
+  ],
+  "correct": true,
+  "ledger": [
+   3927,
+   515
+  ],
+  "repriced": false
+ },
+ "fin_b_002": {
+  "family": "slim",
+  "run": "b_slim20",
+  "cost": 4442,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   3927,
+   515
+  ],
+  "repriced": false
+ },
+ "fin_b_003": {
+  "family": "slim",
+  "run": "b_slim14",
+  "cost": 4527,
+  "answer": [
+   "ABCD"
+  ],
+  "correct": true,
+  "ledger": [
+   3919,
+   608
+  ],
+  "repriced": false
+ },
+ "fin_b_004": {
+  "family": "slim",
+  "run": "b_slim20",
+  "cost": 4442,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   3927,
+   515
+  ],
+  "repriced": false
+ },
+ "fin_b_005": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 5698,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   5033,
+   665
+  ],
+  "repriced": false
+ },
+ "fin_b_006": {
+  "family": "slim",
+  "run": "b_slim17",
+  "cost": 4739,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   3919,
+   820
+  ],
+  "repriced": false
+ },
+ "fin_b_007": {
+  "family": "slim",
+  "run": "b_slim7",
+  "cost": 6052,
+  "answer": [
+   "ABD"
+  ],
+  "correct": true,
+  "ledger": [
+   5005,
+   1047
+  ],
+  "repriced": false
+ },
+ "fin_b_008": {
+  "family": "slim",
+  "run": "b_slim9",
+  "cost": 5479,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   4971,
+   508
+  ],
+  "repriced": false
+ },
+ "fin_b_009": {
+  "family": "slim",
+  "run": "b_slim15",
+  "cost": 4479,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   3919,
+   560
+  ],
+  "repriced": false
+ },
+ "fin_b_010": {
+  "family": "slim",
+  "run": "b_slim20",
+  "cost": 4442,
+  "answer": [
+   "AD"
+  ],
+  "correct": true,
+  "ledger": [
+   3927,
+   515
+  ],
+  "repriced": false
+ },
+ "fin_b_011": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 5698,
+  "answer": [
+   "ABC"
+  ],
+  "correct": true,
+  "ledger": [
+   5033,
+   665
+  ],
+  "repriced": false
+ },
+ "fin_b_012": {
+  "family": "mix",
+  "run": "b_finsB",
+  "cost": 18628,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   16444,
+   2183
+  ],
+  "repriced": false
+ },
+ "fin_b_013": {
+  "family": "slim",
+  "run": "b_slim5",
+  "cost": 6277,
+  "answer": [
+   "40.05",
+   "10.10"
+  ],
+  "correct": true,
+  "ledger": [
+   4023,
+   2254
+  ],
+  "repriced": false
+ },
+ "fin_b_014": {
+  "family": "cards",
+  "run": "b_cards2",
+  "cost": 5869,
+  "answer": [
+   "1.12",
+   "9.82",
+   "8.69"
+  ],
+  "correct": true,
+  "ledger": [
+   4989,
+   880
+  ],
+  "repriced": true
+ },
+ "fin_b_015": {
+  "family": "slim",
+  "run": "b_slim2",
+  "cost": 10903,
+  "answer": [
+   "宁德时代>美的集团",
+   "19.75"
+  ],
+  "correct": true,
+  "ledger": [
+   8215,
+   2688
+  ],
+  "repriced": false
+ },
+ "fin_b_016": {
+  "family": "cards",
+  "run": "b_cards2",
+  "cost": 5869,
+  "answer": [
+   "宁德时代>美的集团>招商银行>中国建筑",
+   "76.92"
+  ],
+  "correct": true,
+  "ledger": [
+   4989,
+   880
+  ],
+  "repriced": true
+ },
+ "fin_b_017": {
+  "family": "slim",
+  "run": "b_slim13",
+  "cost": 3669,
+  "answer": [
+   "1049321.98",
+   "0.08"
+  ],
+  "correct": true,
+  "ledger": [
+   2151,
+   1518
+  ],
+  "repriced": false
+ },
+ "fin_b_018": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 3612,
+  "answer": [
+   "2.58",
+   "7.65"
+  ],
+  "correct": true,
+  "ledger": [
+   2131,
+   1481
+  ],
+  "repriced": false
+ },
+ "fin_b_019": {
+  "family": "cards",
+  "run": "b_cards2",
+  "cost": 5869,
+  "answer": [
+   "比亚迪>宁德时代>美的集团",
+   "0.84"
+  ],
+  "correct": true,
+  "ledger": [
+   4989,
+   880
+  ],
+  "repriced": true
+ },
+ "fin_b_020": {
+  "family": "slim",
+  "run": "b_slim12",
+  "cost": 3980,
+  "answer": [
+   "112.32",
+   "112.31",
+   "0.01"
+  ],
+  "correct": true,
+  "ledger": [
+   2267,
+   1713
+  ],
+  "repriced": false
+ },
+ "ins_b_001": {
+  "family": "slim",
+  "run": "b_slim17",
+  "cost": 5160,
+  "answer": [
+   "333.20"
+  ],
+  "correct": true,
+  "ledger": [
+   3649,
+   1511
+  ],
+  "repriced": false
+ },
+ "ins_b_002": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 2897,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   2408,
+   489
+  ],
+  "repriced": false
+ },
+ "ins_b_003": {
+  "family": "slim",
+  "run": "b_slim25",
+  "cost": 6866,
+  "answer": [
+   "366.00"
+  ],
+  "correct": true,
+  "ledger": [
+   5235,
+   1631
+  ],
+  "repriced": false
+ },
+ "ins_b_004": {
+  "family": "slim",
+  "run": "b_slim14",
+  "cost": 2875,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2400,
+   475
+  ],
+  "repriced": false
+ },
+ "ins_b_005": {
+  "family": "slim",
+  "run": "b_slim17",
+  "cost": 2856,
+  "answer": [
+   "BD"
+  ],
+  "correct": true,
+  "ledger": [
+   2345,
+   511
+  ],
+  "repriced": false
+ },
+ "ins_b_006": {
+  "family": "slim",
+  "run": "b_slim14",
+  "cost": 2875,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2400,
+   475
+  ],
+  "repriced": false
+ },
+ "ins_b_007": {
+  "family": "slim",
+  "run": "b_slim14",
+  "cost": 2875,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   2400,
+   475
+  ],
+  "repriced": false
+ },
+ "ins_b_008": {
+  "family": "slim",
+  "run": "b_slim14",
+  "cost": 2875,
+  "answer": [
+   "ABCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2400,
+   475
+  ],
+  "repriced": false
+ },
+ "ins_b_009": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 2842,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2345,
+   497
+  ],
+  "repriced": false
+ },
+ "ins_b_010": {
+  "family": "slim",
+  "run": "b_slim",
+  "cost": 13531,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   10997,
+   2534
+  ],
+  "repriced": false
+ },
+ "ins_b_011": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 2675,
+  "answer": [
+   "16.00"
+  ],
+  "correct": true,
+  "ledger": [
+   1737,
+   938
+  ],
+  "repriced": false
+ },
+ "ins_b_012": {
+  "family": "mix",
+  "run": "b_finsB",
+  "cost": 2741,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2365,
+   375
+  ],
+  "repriced": false
+ },
+ "ins_b_013": {
+  "family": "slim",
+  "run": "b_slim14",
+  "cost": 2875,
+  "answer": [
+   "BD"
+  ],
+  "correct": true,
+  "ledger": [
+   2400,
+   475
+  ],
+  "repriced": false
+ },
+ "ins_b_014": {
+  "family": "slim",
+  "run": "b_slim14",
+  "cost": 2875,
+  "answer": [
+   "ACD"
+  ],
+  "correct": true,
+  "ledger": [
+   2400,
+   475
+  ],
+  "repriced": false
+ },
+ "ins_b_015": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 2086,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   1678,
+   408
+  ],
+  "repriced": false
+ },
+ "ins_b_016": {
+  "family": "slim",
+  "run": "b_slim15",
+  "cost": 4322,
+  "answer": [
+   "ABD"
+  ],
+  "correct": true,
+  "ledger": [
+   3900,
+   422
+  ],
+  "repriced": false
+ },
+ "ins_b_017": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 2897,
+  "answer": [
+   "ABCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2408,
+   489
+  ],
+  "repriced": false
+ },
+ "ins_b_018": {
+  "family": "slim",
+  "run": "b_slim26",
+  "cost": 2765,
+  "answer": [
+   "60.00"
+  ],
+  "correct": true,
+  "ledger": [
+   1916,
+   849
+  ],
+  "repriced": false
+ },
+ "ins_b_019": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 5077,
+  "answer": [
+   "211.50"
+  ],
+  "correct": true,
+  "ledger": [
+   3683,
+   1394
+  ],
+  "repriced": false
+ },
+ "ins_b_020": {
+  "family": "mix",
+  "run": "b_finsB",
+  "cost": 2741,
+  "answer": [
+   "ACD"
+  ],
+  "correct": true,
+  "ledger": [
+   2365,
+   375
+  ],
+  "repriced": false
+ },
+ "reg_b_001": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 2719,
+  "answer": [
+   "ACD"
+  ],
+  "correct": true,
+  "ledger": [
+   2327,
+   392
+  ],
+  "repriced": false
+ },
+ "reg_b_003": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 3848,
+  "answer": [
+   "2026年3月30日"
+  ],
+  "correct": true,
+  "ledger": [
+   2556,
+   1292
+  ],
+  "repriced": false
+ },
+ "reg_b_004": {
+  "family": "slim",
+  "run": "b_slim26",
+  "cost": 3691,
+  "answer": [
+   "2026年6月30日"
+  ],
+  "correct": true,
+  "ledger": [
+   2634,
+   1057
+  ],
+  "repriced": false
+ },
+ "reg_b_005": {
+  "family": "slim",
+  "run": "b_slim18",
+  "cost": 2274,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   1968,
+   306
+  ],
+  "repriced": false
+ },
+ "reg_b_007": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 3265,
+  "answer": [
+   "30.00"
+  ],
+  "correct": true,
+  "ledger": [
+   2565,
+   700
+  ],
+  "repriced": false
+ },
+ "reg_b_008": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 2312,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   1986,
+   326
+  ],
+  "repriced": false
+ },
+ "reg_b_009": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 2314,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   1962,
+   352
+  ],
+  "repriced": false
+ },
+ "reg_b_013": {
+  "family": "slim",
+  "run": "b_slim18",
+  "cost": 2274,
+  "answer": [
+   "B"
+  ],
+  "correct": true,
+  "ledger": [
+   1968,
+   306
+  ],
+  "repriced": false
+ },
+ "reg_b_014": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 3542,
+  "answer": [
+   "99.25"
+  ],
+  "correct": true,
+  "ledger": [
+   2070,
+   1472
+  ],
+  "repriced": false
+ },
+ "reg_b_015": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 2313,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   2048,
+   265
+  ],
+  "repriced": false
+ },
+ "reg_b_016": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 3797,
+  "answer": [
+   "2.00"
+  ],
+  "correct": true,
+  "ledger": [
+   2349,
+   1448
+  ],
+  "repriced": false
+ },
+ "reg_b_017": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 2387,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   2029,
+   358
+  ],
+  "repriced": false
+ },
+ "reg_b_018": {
+  "family": "slim",
+  "run": "b_slim26",
+  "cost": 3743,
+  "answer": [
+   "2026年4月1日"
+  ],
+  "correct": true,
+  "ledger": [
+   2698,
+   1045
+  ],
+  "repriced": false
+ },
+ "reg_b_020": {
+  "family": "slim",
+  "run": "b_slim18",
+  "cost": 2347,
+  "answer": [
+   "B"
+  ],
+  "correct": true,
+  "ledger": [
+   2035,
+   312
+  ],
+  "repriced": false
+ },
+ "reg_b_021": {
+  "family": "slim",
+  "run": "b_slim18",
+  "cost": 2347,
+  "answer": [
+   "B"
+  ],
+  "correct": true,
+  "ledger": [
+   2035,
+   312
+  ],
+  "repriced": false
+ },
+ "reg_b_023": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 2387,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   2029,
+   358
+  ],
+  "repriced": false
+ },
+ "reg_b_024": {
+  "family": "slim",
+  "run": "b_slim18",
+  "cost": 2347,
+  "answer": [
+   "B"
+  ],
+  "correct": true,
+  "ledger": [
+   2035,
+   312
+  ],
+  "repriced": false
+ },
+ "reg_b_025": {
+  "family": "slim",
+  "run": "b_slim31",
+  "cost": 2387,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   2029,
+   358
+  ],
+  "repriced": false
+ },
+ "reg_b_026": {
+  "family": "slim",
+  "run": "b_slim18",
+  "cost": 2347,
+  "answer": [
+   "B"
+  ],
+  "correct": true,
+  "ledger": [
+   2035,
+   312
+  ],
+  "repriced": false
+ },
+ "reg_b_027": {
+  "family": "slim",
+  "run": "b_slim18",
+  "cost": 2347,
+  "answer": [
+   "BD"
+  ],
+  "correct": true,
+  "ledger": [
+   2035,
+   312
+  ],
+  "repriced": false
+ },
+ "res_b_001": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ },
+ "res_b_002": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_003": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_004": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "BCD"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ },
+ "res_b_005": {
+  "family": "slim",
+  "run": "b_slim26",
+  "cost": 3898,
+  "answer": [
+   "22.19"
+  ],
+  "correct": false,
+  "ledger": [
+   2467,
+   1429
+  ],
+  "repriced": false
+ },
+ "res_b_006": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_007": {
+  "family": "slim",
+  "run": "b_slim28",
+  "cost": 3260,
+  "answer": [
+   "61.98"
+  ],
+  "correct": true,
+  "ledger": [
+   2246,
+   1014
+  ],
+  "repriced": false
+ },
+ "res_b_008": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ },
+ "res_b_009": {
+  "family": "slim",
+  "run": "b_slim5",
+  "cost": 4920,
+  "answer": [
+   "ABC"
+  ],
+  "correct": true,
+  "ledger": [
+   3681,
+   1239
+  ],
+  "repriced": false
+ },
+ "res_b_010": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_011": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "BC"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ },
+ "res_b_012": {
+  "family": "slim",
+  "run": "b_slim21",
+  "cost": 3746,
+  "answer": [
+   "67.10"
+  ],
+  "correct": true,
+  "ledger": [
+   2137,
+   1609
+  ],
+  "repriced": false
+ },
+ "res_b_013": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ },
+ "res_b_014": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "CD"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_015": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "BD"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_016": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "BD"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ },
+ "res_b_017": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "AC"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_018": {
+  "family": "slim",
+  "run": "b_slim16",
+  "cost": 3475,
+  "answer": [
+   "CD"
+  ],
+  "correct": true,
+  "ledger": [
+   3081,
+   394
+  ],
+  "repriced": false
+ },
+ "res_b_019": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "AB"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ },
+ "res_b_020": {
+  "family": "slim",
+  "run": "b_slim11",
+  "cost": 3373,
+  "answer": [
+   "BD"
+  ],
+  "correct": true,
+  "ledger": [
+   2728,
+   645
+  ],
+  "repriced": false
+ }
+}

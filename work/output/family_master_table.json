@@ -1,0 +1,2466 @@
+{
+ "fc_b_002": {
+  "per_family": {
+   "cards": [
+    10387,
+    "b_fccard"
+   ],
+   "slim": [
+    3652.0,
+    "b_slim19"
+   ],
+   "mix": [
+    4331.82,
+    "b_mixC"
+   ],
+   "full": [
+    4348.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3652.0,
+   "b_slim19"
+  ]
+ },
+ "fc_b_003": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    4390.0,
+    "b_slim19"
+   ],
+   "mix": [
+    6286.82,
+    "b_mixC"
+   ],
+   "full": [
+    6258.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4390.0,
+   "b_slim19"
+  ]
+ },
+ "fc_b_009": {
+  "per_family": {
+   "cards": [
+    10387,
+    "b_fccard"
+   ],
+   "slim": [
+    3965.0,
+    "b_slim28"
+   ],
+   "mix": [
+    4348.82,
+    "b_mixC"
+   ],
+   "full": [
+    4328.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3965.0,
+   "b_slim28"
+  ]
+ },
+ "fc_b_004": {
+  "per_family": {
+   "cards": [
+    10387,
+    "b_fccard"
+   ],
+   "slim": [
+    3652.0,
+    "b_slim19"
+   ],
+   "mix": [
+    4331.82,
+    "b_mixC"
+   ],
+   "full": [
+    4348.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3652.0,
+   "b_slim19"
+  ]
+ },
+ "fc_b_013": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2906.0,
+    "b_slim11"
+   ],
+   "mix": [
+    4424.82,
+    "b_mixC"
+   ],
+   "full": [
+    4100.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2906.0,
+   "b_slim11"
+  ]
+ },
+ "fc_b_016": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3945.0,
+    "b_slim28"
+   ],
+   "mix": [
+    20644.08,
+    "b_mixB"
+   ],
+   "full": [
+    9375.35,
+    "b_fclite"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3945.0,
+   "b_slim28"
+  ]
+ },
+ "fc_b_011": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3703.0,
+    "b_slim11"
+   ],
+   "mix": [
+    6286.82,
+    "b_mixC"
+   ],
+   "full": [
+    6258.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3703.0,
+   "b_slim11"
+  ]
+ },
+ "fc_b_012": {
+  "per_family": {
+   "cards": [
+    10387,
+    "b_fccard"
+   ],
+   "slim": [
+    2906.0,
+    "b_slim11"
+   ],
+   "mix": [
+    4507.82,
+    "b_mixC"
+   ],
+   "full": [
+    4506.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2906.0,
+   "b_slim11"
+  ]
+ },
+ "fc_b_010": {
+  "per_family": {
+   "cards": [
+    10387,
+    "b_fccard"
+   ],
+   "slim": [
+    3652.0,
+    "b_slim19"
+   ],
+   "mix": [
+    4976.82,
+    "b_mixC"
+   ],
+   "full": [
+    4555.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3652.0,
+   "b_slim19"
+  ]
+ },
+ "fc_b_015": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3652.0,
+    "b_slim19"
+   ],
+   "mix": [
+    4976.82,
+    "b_mixC"
+   ],
+   "full": [
+    4555.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3652.0,
+   "b_slim19"
+  ]
+ },
+ "fc_b_006": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3703.0,
+    "b_slim11"
+   ],
+   "mix": [
+    6286.82,
+    "b_mixC"
+   ],
+   "full": [
+    6258.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3703.0,
+   "b_slim11"
+  ]
+ },
+ "fc_b_007": {
+  "per_family": {
+   "slim": [
+    3965.0,
+    "b_slim28"
+   ],
+   "mix": [
+    4348.82,
+    "b_mixC"
+   ],
+   "full": [
+    4328.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3965.0,
+   "b_slim28"
+  ]
+ },
+ "fc_b_008": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3703.0,
+    "b_slim11"
+   ],
+   "mix": [
+    4348.82,
+    "b_mixC"
+   ],
+   "full": [
+    4328.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3703.0,
+   "b_slim11"
+  ]
+ },
+ "fc_b_017": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3652.0,
+    "b_slim19"
+   ],
+   "mix": [
+    20651.25,
+    "b_scout"
+   ],
+   "full": [
+    4555.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3652.0,
+   "b_slim19"
+  ]
+ },
+ "fc_b_019": {
+  "per_family": {
+   "cards": [
+    10387,
+    "b_fccard"
+   ],
+   "slim": [
+    3703.0,
+    "b_slim11"
+   ],
+   "mix": [
+    4424.82,
+    "b_mixC"
+   ],
+   "full": [
+    4100.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3703.0,
+   "b_slim11"
+  ]
+ },
+ "fc_b_018": {
+  "per_family": {
+   "cards": [
+    10387,
+    "b_fccard"
+   ],
+   "slim": [
+    2906.0,
+    "b_slim11"
+   ],
+   "mix": [
+    4331.82,
+    "b_mixC"
+   ],
+   "full": [
+    4348.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2906.0,
+   "b_slim11"
+  ]
+ },
+ "fin_b_001": {
+  "per_family": {
+   "slim": [
+    4442.0,
+    "b_slim20"
+   ],
+   "mix": [
+    4493.85,
+    "b_finsB"
+   ],
+   "full": [
+    5326.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4442.0,
+   "b_slim20"
+  ]
+ },
+ "fin_b_002": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    4442.0,
+    "b_slim20"
+   ],
+   "mix": [
+    4493.85,
+    "b_finsB"
+   ],
+   "full": [
+    5326.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4442.0,
+   "b_slim20"
+  ]
+ },
+ "fin_b_005": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    5698.0,
+    "b_slim28"
+   ],
+   "full": [
+    5745.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   5698.0,
+   "b_slim28"
+  ]
+ },
+ "fin_b_003": {
+  "per_family": {
+   "slim": [
+    4527.0,
+    "b_slim14"
+   ],
+   "mix": [
+    19925.5,
+    "b_e1fin"
+   ],
+   "full": [
+    5326.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4527.0,
+   "b_slim14"
+  ]
+ },
+ "fin_b_009": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    4479.0,
+    "b_slim15"
+   ],
+   "mix": [
+    6953.5,
+    "b_e1fin"
+   ],
+   "full": [
+    28467.0,
+    "b_finH"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4479.0,
+   "b_slim15"
+  ]
+ },
+ "fin_b_006": {
+  "per_family": {
+   "slim": [
+    4739.0,
+    "b_slim17"
+   ],
+   "mix": [
+    19425.5,
+    "b_e1fin"
+   ],
+   "full": [
+    13584.0,
+    "b_finD"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4739.0,
+   "b_slim17"
+  ]
+ },
+ "fin_b_004": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    4442.0,
+    "b_slim20"
+   ],
+   "mix": [
+    4493.85,
+    "b_finsB"
+   ],
+   "full": [
+    5326.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4442.0,
+   "b_slim20"
+  ]
+ },
+ "fin_b_010": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    4442.0,
+    "b_slim20"
+   ],
+   "mix": [
+    4493.85,
+    "b_finsB"
+   ],
+   "full": [
+    5326.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4442.0,
+   "b_slim20"
+  ]
+ },
+ "fin_b_007": {
+  "per_family": {
+   "slim": [
+    6052.0,
+    "b_slim7"
+   ],
+   "mix": [
+    23558.25,
+    "b_scout"
+   ],
+   "full": [
+    20370.0,
+    "b_finD"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   6052.0,
+   "b_slim7"
+  ]
+ },
+ "fin_b_011": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    5698.0,
+    "b_slim28"
+   ],
+   "mix": [
+    5864.85,
+    "b_finsB"
+   ],
+   "full": [
+    27579.0,
+    "b_finD"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   5698.0,
+   "b_slim28"
+  ]
+ },
+ "fin_b_008": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    5479.0,
+    "b_slim9"
+   ],
+   "mix": [
+    21407.85,
+    "b_finsB"
+   ],
+   "full": [
+    18551.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   5479.0,
+   "b_slim9"
+  ]
+ },
+ "ins_b_002": {
+  "per_family": {
+   "slim": [
+    2897.0,
+    "b_slim28"
+   ],
+   "mix": [
+    3082.85,
+    "b_finsB"
+   ],
+   "ins": [
+    11301.0,
+    "b_insH"
+   ],
+   "full": [
+    14755.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2897.0,
+   "b_slim28"
+  ]
+ },
+ "ins_b_006": {
+  "per_family": {
+   "slim": [
+    2875.0,
+    "b_slim14"
+   ],
+   "mix": [
+    3082.85,
+    "b_finsB"
+   ],
+   "ins": [
+    13453.0,
+    "b_insH"
+   ],
+   "full": [
+    19050.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2875.0,
+   "b_slim14"
+  ]
+ },
+ "ins_b_004": {
+  "per_family": {
+   "slim": [
+    2875.0,
+    "b_slim14"
+   ],
+   "mix": [
+    25268.25,
+    "b_scout"
+   ],
+   "ins": [
+    21896.0,
+    "b_insG"
+   ],
+   "full": [
+    24038.0,
+    "b_full12"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2875.0,
+   "b_slim14"
+  ]
+ },
+ "fin_b_012": {
+  "per_family": {
+   "slim": [
+    69089.0,
+    "b_slim26"
+   ],
+   "mix": [
+    6953.5,
+    "b_e1fin"
+   ],
+   "full": [
+    39118.0,
+    "b_full6"
+   ]
+  },
+  "best_family": "mix",
+  "best": [
+   6953.5,
+   "b_e1fin"
+  ]
+ },
+ "ins_b_005": {
+  "per_family": {
+   "slim": [
+    2856.0,
+    "b_slim17"
+   ],
+   "mix": [
+    32507.08,
+    "b_mixB"
+   ],
+   "ins": [
+    24159.0,
+    "b_insE"
+   ],
+   "full": [
+    16029.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2856.0,
+   "b_slim17"
+  ]
+ },
+ "ins_b_007": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2875.0,
+    "b_slim14"
+   ],
+   "mix": [
+    3082.85,
+    "b_finsB"
+   ],
+   "ins": [
+    11920.0,
+    "b_insH"
+   ],
+   "full": [
+    15989.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2875.0,
+   "b_slim14"
+  ]
+ },
+ "ins_b_010": {
+  "per_family": {
+   "slim": [
+    13531.0,
+    "b_slim"
+   ],
+   "mix": [
+    23363.25,
+    "b_scout"
+   ],
+   "ins": [
+    23992.0,
+    "b_insE"
+   ],
+   "full": [
+    25403.0,
+    "b_full6"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   13531.0,
+   "b_slim"
+  ]
+ },
+ "ins_b_008": {
+  "per_family": {
+   "slim": [
+    2875.0,
+    "b_slim14"
+   ],
+   "mix": [
+    3082.85,
+    "b_finsB"
+   ],
+   "ins": [
+    22627.0,
+    "b_insmid"
+   ],
+   "full": [
+    15827.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2875.0,
+   "b_slim14"
+  ]
+ },
+ "ins_b_009": {
+  "per_family": {
+   "slim": [
+    2842.0,
+    "b_slim16"
+   ],
+   "mix": [
+    27296.25,
+    "b_scout"
+   ],
+   "ins": [
+    25790.0,
+    "b_insE"
+   ],
+   "full": [
+    16719.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2842.0,
+   "b_slim16"
+  ]
+ },
+ "ins_b_013": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2875.0,
+    "b_slim14"
+   ],
+   "mix": [
+    3082.85,
+    "b_finsB"
+   ],
+   "ins": [
+    11720.0,
+    "b_insH"
+   ],
+   "full": [
+    20000.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2875.0,
+   "b_slim14"
+  ]
+ },
+ "ins_b_012": {
+  "per_family": {
+   "slim": [
+    4322.0,
+    "b_slim15"
+   ],
+   "mix": [
+    2740.85,
+    "b_finsB"
+   ],
+   "ins": [
+    13416.0,
+    "b_insH"
+   ],
+   "full": [
+    17380.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "mix",
+  "best": [
+   2740.85,
+   "b_finsB"
+  ]
+ },
+ "ins_b_014": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2875.0,
+    "b_slim14"
+   ],
+   "mix": [
+    16542.25,
+    "b_scout"
+   ],
+   "ins": [
+    8450.0,
+    "b_insH"
+   ],
+   "full": [
+    11789.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2875.0,
+   "b_slim14"
+  ]
+ },
+ "ins_b_015": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2086.0,
+    "b_slim11"
+   ],
+   "mix": [
+    2740.85,
+    "b_finsB"
+   ],
+   "ins": [
+    23518.0,
+    "b_insE"
+   ],
+   "full": [
+    15736.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2086.0,
+   "b_slim11"
+  ]
+ },
+ "reg_b_005": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2274.0,
+    "b_slim18"
+   ],
+   "mix": [
+    2367.8,
+    "b_mixA"
+   ],
+   "full": [
+    2405.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2274.0,
+   "b_slim18"
+  ]
+ },
+ "reg_b_001": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2719.0,
+    "b_slim11"
+   ],
+   "mix": [
+    10847.25,
+    "b_scout"
+   ],
+   "full": [
+    9097.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2719.0,
+   "b_slim11"
+  ]
+ },
+ "ins_b_016": {
+  "per_family": {
+   "slim": [
+    4322.0,
+    "b_slim15"
+   ],
+   "mix": [
+    24053.25,
+    "b_scout"
+   ],
+   "ins": [
+    11028.0,
+    "b_insH"
+   ],
+   "full": [
+    15001.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4322.0,
+   "b_slim15"
+  ]
+ },
+ "reg_b_008": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2312.0,
+    "b_slim31"
+   ],
+   "mix": [
+    2367.8,
+    "b_mixA"
+   ],
+   "full": [
+    2405.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2312.0,
+   "b_slim31"
+  ]
+ },
+ "ins_b_017": {
+  "per_family": {
+   "slim": [
+    2897.0,
+    "b_slim28"
+   ],
+   "mix": [
+    24038.25,
+    "b_scout"
+   ],
+   "ins": [
+    11684.0,
+    "b_insH"
+   ],
+   "full": [
+    17593.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2897.0,
+   "b_slim28"
+  ]
+ },
+ "ins_b_020": {
+  "per_family": {
+   "slim": [
+    2763.0,
+    "b_slim13"
+   ],
+   "mix": [
+    2740.85,
+    "b_finsB"
+   ],
+   "ins": [
+    20014.0,
+    "b_insG"
+   ],
+   "full": [
+    16949.21,
+    "b_full4"
+   ]
+  },
+  "best_family": "mix",
+  "best": [
+   2740.85,
+   "b_finsB"
+  ]
+ },
+ "reg_b_021": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2347.0,
+    "b_slim18"
+   ],
+   "mix": [
+    2441.8,
+    "b_mixA"
+   ],
+   "full": [
+    2480.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2347.0,
+   "b_slim18"
+  ]
+ },
+ "reg_b_013": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2274.0,
+    "b_slim18"
+   ],
+   "mix": [
+    2367.8,
+    "b_mixA"
+   ],
+   "full": [
+    2405.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2274.0,
+   "b_slim18"
+  ]
+ },
+ "reg_b_020": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2347.0,
+    "b_slim18"
+   ],
+   "mix": [
+    2441.8,
+    "b_mixA"
+   ],
+   "full": [
+    2480.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2347.0,
+   "b_slim18"
+  ]
+ },
+ "reg_b_015": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2313.0,
+    "b_slim28"
+   ],
+   "mix": [
+    2499.8,
+    "b_mixA"
+   ],
+   "full": [
+    2468.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2313.0,
+   "b_slim28"
+  ]
+ },
+ "reg_b_024": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2347.0,
+    "b_slim18"
+   ],
+   "mix": [
+    2441.8,
+    "b_mixA"
+   ],
+   "full": [
+    2480.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2347.0,
+   "b_slim18"
+  ]
+ },
+ "reg_b_009": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2314.0,
+    "b_slim31"
+   ],
+   "mix": [
+    2499.8,
+    "b_mixA"
+   ],
+   "full": [
+    2468.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2314.0,
+   "b_slim31"
+  ]
+ },
+ "reg_b_017": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2387.0,
+    "b_slim31"
+   ],
+   "mix": [
+    2573.8,
+    "b_mixA"
+   ],
+   "full": [
+    2543.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2387.0,
+   "b_slim31"
+  ]
+ },
+ "reg_b_023": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2387.0,
+    "b_slim31"
+   ],
+   "mix": [
+    2573.8,
+    "b_mixA"
+   ],
+   "full": [
+    2543.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2387.0,
+   "b_slim31"
+  ]
+ },
+ "reg_b_027": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2347.0,
+    "b_slim18"
+   ],
+   "mix": [
+    2441.8,
+    "b_mixA"
+   ],
+   "full": [
+    2480.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2347.0,
+   "b_slim18"
+  ]
+ },
+ "reg_b_026": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2347.0,
+    "b_slim18"
+   ],
+   "mix": [
+    2441.8,
+    "b_mixA"
+   ],
+   "full": [
+    2480.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2347.0,
+   "b_slim18"
+  ]
+ },
+ "res_b_002": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3597.8,
+    "b_mixA"
+   ],
+   "full": [
+    20659.15,
+    "b_full2"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "res_b_003": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3597.8,
+    "b_mixA"
+   ],
+   "full": [
+    3588.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "reg_b_025": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2387.0,
+    "b_slim31"
+   ],
+   "mix": [
+    2573.8,
+    "b_mixA"
+   ],
+   "full": [
+    2543.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2387.0,
+   "b_slim31"
+  ]
+ },
+ "res_b_004": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3597.8,
+    "b_mixA"
+   ],
+   "full": [
+    3588.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_001": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3732.8,
+    "b_mixA"
+   ],
+   "full": [
+    3683.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_006": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3700.82,
+    "b_mixC"
+   ],
+   "full": [
+    3683.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "res_b_011": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3746.82,
+    "b_mixC"
+   ],
+   "full": [
+    3683.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_013": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3746.82,
+    "b_mixC"
+   ],
+   "full": [
+    3683.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_009": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    4920.0,
+    "b_slim5"
+   ],
+   "mix": [
+    6114.82,
+    "b_mixC"
+   ],
+   "full": [
+    6177.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4920.0,
+   "b_slim5"
+  ]
+ },
+ "res_b_008": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3732.8,
+    "b_mixA"
+   ],
+   "full": [
+    3683.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_010": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3597.8,
+    "b_mixA"
+   ],
+   "full": [
+    3588.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "res_b_014": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3700.82,
+    "b_mixC"
+   ],
+   "full": [
+    3588.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "res_b_016": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3732.8,
+    "b_mixA"
+   ],
+   "full": [
+    3683.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_015": {
+  "per_family": {
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3597.8,
+    "b_mixA"
+   ],
+   "full": [
+    3588.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "res_b_017": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3597.8,
+    "b_mixA"
+   ],
+   "full": [
+    3588.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "res_b_019": {
+  "per_family": {
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3732.8,
+    "b_mixA"
+   ],
+   "full": [
+    3683.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_020": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3373.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3597.8,
+    "b_mixA"
+   ],
+   "full": [
+    3781.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3373.0,
+   "b_slim11"
+  ]
+ },
+ "res_b_018": {
+  "per_family": {
+   "slim": [
+    3475.0,
+    "b_slim16"
+   ],
+   "mix": [
+    3700.82,
+    "b_mixC"
+   ],
+   "full": [
+    3588.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3475.0,
+   "b_slim16"
+  ]
+ },
+ "fc_b_001": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3275.0,
+    "b_slim31"
+   ],
+   "mix": [
+    3859.82,
+    "b_mixC"
+   ],
+   "full": [
+    3768.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3275.0,
+   "b_slim31"
+  ]
+ },
+ "fc_b_005": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    4983.0,
+    "b_slim5"
+   ],
+   "mix": [
+    9728.82,
+    "b_mixC"
+   ],
+   "full": [
+    9438.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   4983.0,
+   "b_slim5"
+  ]
+ },
+ "fc_b_014": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3783.0,
+    "b_slim26"
+   ],
+   "mix": [
+    3988.82,
+    "b_mixC"
+   ],
+   "full": [
+    4046.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3783.0,
+   "b_slim26"
+  ]
+ },
+ "fc_b_020": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3053.0,
+    "b_slim11"
+   ],
+   "mix": [
+    3636.82,
+    "b_mixC"
+   ],
+   "full": [
+    3672.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3053.0,
+   "b_slim11"
+  ]
+ },
+ "fin_b_013": {
+  "per_family": {
+   "slim": [
+    6277.0,
+    "b_slim5"
+   ],
+   "mix": [
+    30975.25,
+    "b_scout"
+   ],
+   "full": [
+    31556.0,
+    "b_full14"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   6277.0,
+   "b_slim5"
+  ]
+ },
+ "fin_b_014": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    9053.0,
+    "b_slim3b"
+   ],
+   "mix": [
+    46129.25,
+    "b_scout"
+   ],
+   "full": [
+    16936.0,
+    "b_finH"
+   ]
+  },
+  "best_family": "cards",
+  "best": [
+   5869,
+   "b_cards2"
+  ]
+ },
+ "fin_b_015": {
+  "per_family": {
+   "slim": [
+    10903.0,
+    "b_slim2"
+   ],
+   "mix": [
+    6953.5,
+    "b_e1fin"
+   ],
+   "full": [
+    15071.0,
+    "b_finH"
+   ]
+  },
+  "best_family": "mix",
+  "best": [
+   6953.5,
+   "b_e1fin"
+  ]
+ },
+ "fin_b_016": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    6135.0,
+    "b_slim12"
+   ],
+   "mix": [
+    34259.25,
+    "b_scout"
+   ],
+   "full": [
+    6154.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "cards",
+  "best": [
+   5869,
+   "b_cards2"
+  ]
+ },
+ "fin_b_017": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3669.0,
+    "b_slim13"
+   ],
+   "mix": [
+    3948.85,
+    "b_finsB"
+   ],
+   "full": [
+    3897.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3669.0,
+   "b_slim13"
+  ]
+ },
+ "fin_b_020": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3980.0,
+    "b_slim12"
+   ],
+   "mix": [
+    5967.85,
+    "b_finsB"
+   ],
+   "full": [
+    12155.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3980.0,
+   "b_slim12"
+  ]
+ },
+ "fin_b_018": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3612.0,
+    "b_slim31"
+   ],
+   "mix": [
+    6024.85,
+    "b_finsB"
+   ],
+   "full": [
+    3778.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3612.0,
+   "b_slim31"
+  ]
+ },
+ "ins_b_001": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    5160.0,
+    "b_slim17"
+   ],
+   "mix": [
+    5512.85,
+    "b_finsB"
+   ],
+   "ins": [
+    11110.0,
+    "b_insG"
+   ],
+   "full": [
+    20657.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   5160.0,
+   "b_slim17"
+  ]
+ },
+ "ins_b_003": {
+  "per_family": {
+   "slim": [
+    6866.0,
+    "b_slim25"
+   ],
+   "mix": [
+    38747.08,
+    "b_mixB"
+   ],
+   "ins": [
+    9780.0,
+    "b_insH"
+   ],
+   "full": [
+    22078.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   6866.0,
+   "b_slim25"
+  ]
+ },
+ "fin_b_019": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    10044.0,
+    "b_slim28"
+   ],
+   "mix": [
+    7436.85,
+    "b_finsB"
+   ],
+   "full": [
+    12208.5,
+    "b_finslim37"
+   ]
+  },
+  "best_family": "cards",
+  "best": [
+   5869,
+   "b_cards2"
+  ]
+ },
+ "ins_b_018": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2765.0,
+    "b_slim26"
+   ],
+   "mix": [
+    3354.85,
+    "b_finsB"
+   ],
+   "ins": [
+    7303.0,
+    "b_insH"
+   ],
+   "full": [
+    16130.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2765.0,
+   "b_slim26"
+  ]
+ },
+ "ins_b_011": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    2675.0,
+    "b_slim28"
+   ],
+   "mix": [
+    3269.85,
+    "b_finsB"
+   ],
+   "ins": [
+    7583.0,
+    "b_insG"
+   ],
+   "full": [
+    17658.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   2675.0,
+   "b_slim28"
+  ]
+ },
+ "ins_b_019": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    5077.0,
+    "b_slim28"
+   ],
+   "mix": [
+    5281.85,
+    "b_finsB"
+   ],
+   "ins": [
+    10790.0,
+    "b_insG"
+   ],
+   "full": [
+    20315.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   5077.0,
+   "b_slim28"
+  ]
+ },
+ "reg_b_007": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3265.0,
+    "b_slim28"
+   ],
+   "mix": [
+    3936.82,
+    "b_mixC"
+   ],
+   "full": [
+    3921.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3265.0,
+   "b_slim28"
+  ]
+ },
+ "reg_b_014": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3542.0,
+    "b_slim31"
+   ],
+   "mix": [
+    3795.8,
+    "b_mixA"
+   ],
+   "full": [
+    3917.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3542.0,
+   "b_slim31"
+  ]
+ },
+ "reg_b_003": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3848.0,
+    "b_slim28"
+   ],
+   "mix": [
+    4013.82,
+    "b_mixC"
+   ],
+   "full": [
+    3995.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3848.0,
+   "b_slim28"
+  ]
+ },
+ "reg_b_004": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3691.0,
+    "b_slim26"
+   ],
+   "mix": [
+    4046.8,
+    "b_mixA"
+   ],
+   "full": [
+    4060.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3691.0,
+   "b_slim26"
+  ]
+ },
+ "reg_b_016": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3797.0,
+    "b_slim31"
+   ],
+   "mix": [
+    4070.82,
+    "b_mixC"
+   ],
+   "full": [
+    4123.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3797.0,
+   "b_slim31"
+  ]
+ },
+ "res_b_007": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3260.0,
+    "b_slim28"
+   ],
+   "mix": [
+    3657.82,
+    "b_mixC"
+   ],
+   "full": [
+    3696.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3260.0,
+   "b_slim28"
+  ]
+ },
+ "reg_b_018": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3743.0,
+    "b_slim26"
+   ],
+   "mix": [
+    4054.8,
+    "b_mixA"
+   ],
+   "full": [
+    4180.0,
+    "b_router1"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3743.0,
+   "b_slim26"
+  ]
+ },
+ "res_b_012": {
+  "per_family": {
+   "cards": [
+    5869,
+    "b_cards2"
+   ],
+   "slim": [
+    3746.0,
+    "b_slim21"
+   ],
+   "mix": [
+    3946.82,
+    "b_mixC"
+   ],
+   "full": [
+    3871.0,
+    "b_router3"
+   ]
+  },
+  "best_family": "slim",
+  "best": [
+   3746.0,
+   "b_slim21"
+  ]
+ },
+ "res_b_005": {
+  "per_family": {},
+  "best_family": null,
+  "best": null
+ }
+}

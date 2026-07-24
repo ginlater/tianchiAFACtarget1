@@ -1,0 +1,2217 @@
+{
+ "family": "mix",
+ "run_models": {
+  "b_mixA": {
+   "main": "qwen3.6-plus",
+   "aux": []
+  },
+  "b_mixB": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.5-plus"
+   ]
+  },
+  "b_mixC": {
+   "main": "qwen3.6-plus",
+   "aux": []
+  },
+  "b_finsB": {
+   "main": "qwen3.6-plus",
+   "aux": []
+  },
+  "b_finsC": {
+   "main": "qwen3.5-plus",
+   "aux": []
+  },
+  "b_scout": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.6-max-preview"
+   ]
+  },
+  "b_e1fin": {
+   "main": "qwen3.6-plus",
+   "aux": [
+    "qwen3.5-plus"
+   ]
+  }
+ },
+ "api_rank": {
+  "fc_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3860,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 24641,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 29906,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4332,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 19240,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 22242,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 6287,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 19048,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 32188,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4332,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 13511,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24725,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_005": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 9729,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 23667,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 29660,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_006": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 6287,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 14500,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26761,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4349,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30700,
+    "run": "b_mixB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 32203,
+    "run": "b_scout"
+   }
+  ],
+  "fc_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4349,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 14549,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 29789,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4349,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 27320,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30501,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_010": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4977,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 16090,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23587,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 6287,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 19576,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23233,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_012": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4508,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 18362,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24586,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4425,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 15074,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3989,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 27090,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 33621,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_015": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4977,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 16089,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 24802,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_016": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 20644,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_017": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 20651,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23872,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4332,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 19303,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 22816,
+    "run": "b_mixB"
+   }
+  ],
+  "fc_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4425,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26522,
+    "run": "b_mixB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 43641,
+    "run": "b_scout"
+   }
+  ],
+  "fc_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3637,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 22984,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 27562,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4494,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 18459,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 32662,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4494,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 10993,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 18444,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 36552,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 19926,
+    "run": "b_e1fin"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 21648,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 41609,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4494,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 22592,
+    "run": "b_scout"
+   }
+  ],
+  "fin_b_005": [
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 11849,
+    "run": "b_finsC"
+   }
+  ],
+  "fin_b_006": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 19426,
+    "run": "b_e1fin"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 26128,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_007": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 23558,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30881,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 21408,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 23687,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 28200,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 40655,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 21681,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 36433,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_010": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4494,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 22584,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 40579,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5865,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 40867,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_012": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 18628,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 25176,
+    "run": "b_finsC"
+   }
+  ],
+  "fin_b_013": [
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 14331,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 30975,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 39806,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_014": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 46129,
+    "run": "b_scout"
+   }
+  ],
+  "fin_b_015": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 27010,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 37614,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_016": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 34259,
+    "run": "b_scout"
+   }
+  ],
+  "fin_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3949,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 4156,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 26614,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 32419,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 6025,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 32129,
+    "run": "b_mixB"
+   }
+  ],
+  "fin_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 7437,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 18000,
+    "run": "b_finsC"
+   }
+  ],
+  "fin_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5968,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 6824,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 27478,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 64982,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5513,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 5557,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 31976,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 36283,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3083,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 19785,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 27665,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 38747,
+    "run": "b_mixB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 49059,
+    "run": "b_scout"
+   }
+  ],
+  "ins_b_004": [
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 8161,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 25268,
+    "run": "b_scout"
+   }
+  ],
+  "ins_b_005": [
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 32507,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_006": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3083,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 8100,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 35774,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3083,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 29741,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3083,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 8128,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 22315,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 27699,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_009": [
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 7812,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 27296,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 32309,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_010": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 23363,
+    "run": "b_scout"
+   }
+  ],
+  "ins_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3270,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 3492,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 23540,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 29630,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_012": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2741,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 7768,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 33681,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3083,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 23021,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 38040,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_014": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 16542,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 23089,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_015": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2741,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 25885,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 29981,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_016": [
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 7784,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 24053,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30452,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_017": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 24038,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 34409,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3355,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 3502,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 22617,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 28883,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5282,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 5506,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 32313,
+    "run": "b_scout"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 36518,
+    "run": "b_mixB"
+   }
+  ],
+  "ins_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2741,
+    "run": "b_finsB"
+   },
+   {
+    "models": [
+     "qwen3.5-plus"
+    ],
+    "cost": 7814,
+    "run": "b_finsC"
+   },
+   {
+    "models": [
+     "qwen3.5-plus",
+     "qwen3.6-plus"
+    ],
+    "cost": 30393,
+    "run": "b_mixB"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 31647,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_001": [
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 10847,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4014,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4067,
+    "run": "b_mixA"
+   }
+  ],
+  "reg_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4047,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4073,
+    "run": "b_mixC"
+   }
+  ],
+  "reg_b_005": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2368,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2433,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 12521,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3937,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3971,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 12367,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2368,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2433,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 11989,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2500,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2520,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5795,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2368,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2433,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5845,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3796,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3808,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 15041,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_015": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2500,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2520,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 9635,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_016": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4071,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4116,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 13034,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2574,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2594,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5811,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4055,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 4127,
+    "run": "b_mixC"
+   }
+  ],
+  "reg_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2442,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2507,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5907,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_021": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2442,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2507,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 9404,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_023": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2574,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2594,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 5653,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_024": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2442,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2507,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 13805,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_025": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2574,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2594,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 16750,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_026": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2442,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2507,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 10425,
+    "run": "b_scout"
+   }
+  ],
+  "reg_b_027": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2442,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 2507,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 9748,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_001": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3733,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 18142,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_002": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3598,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 19461,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_003": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3598,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 20892,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_004": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3598,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 20184,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_006": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3733,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 28303,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_007": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3658,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3767,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 23102,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_008": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3733,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   }
+  ],
+  "res_b_009": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 6115,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 15893,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 17467,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_010": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3598,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 22063,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_011": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 15973,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_012": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3947,
+    "run": "b_mixC"
+   }
+  ],
+  "res_b_013": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 30166,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_014": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3733,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 21956,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_015": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3598,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 22439,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_016": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3733,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 20420,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_017": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3598,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 20905,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_018": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3701,
+    "run": "b_mixC"
+   }
+  ],
+  "res_b_019": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3733,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 18117,
+    "run": "b_scout"
+   }
+  ],
+  "res_b_020": [
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3598,
+    "run": "b_mixA"
+   },
+   {
+    "models": [
+     "qwen3.6-plus"
+    ],
+    "cost": 3747,
+    "run": "b_mixC"
+   },
+   {
+    "models": [
+     "qwen3.6-max-preview",
+     "qwen3.6-plus"
+    ],
+    "cost": 28585,
+    "run": "b_scout"
+   }
+  ]
+ },
+ "summary": {
+  "qwen3.6-plus": {
+   "n_correct_as_main": 98,
+   "cheapest_sum": 833056
+  },
+  "qwen3.5-plus": {
+   "n_correct_as_main": 19,
+   "cheapest_sum": 193153
+  }
+ }
+}

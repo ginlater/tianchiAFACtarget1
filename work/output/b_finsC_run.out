@@ -1,0 +1,22 @@
+待作答 40 / 共 100 题；model=qwen3.5-plus verify=qwen3.5-plus
+docsel 完成; tokens 7,740
+选择题 27 → 4 组; 计算题 13
+[7/40] +['ins_b_012', 'ins_b_010', 'ins_b_016', 'ins_b_015', 'ins_b_005', 'ins_b_009', 'ins_b_020'] (61,011 tok)
+[15/40] +['ins_b_002', 'ins_b_004', 'ins_b_014', 'ins_b_006', 'ins_b_008', 'ins_b_017', 'ins_b_007', 'ins_b_013'] (184,567 tok)
+[19/40] +['fin_b_005', 'fin_b_011', 'fin_b_012', 'fin_b_008'] (294,407 tok)
+[20/40] +['fin_b_013'] (301,712 tok)
+[21/40] +['fin_b_016'] (321,123 tok)
+[22/40] +['fin_b_017'] (334,469 tok)
+[23/40] +['fin_b_014'] (359,392 tok)
+[24/40] +['fin_b_018'] (366,269 tok)
+[25/40] +['fin_b_015'] (376,923 tok)
+[26/40] +['fin_b_020'] (394,886 tok)
+[27/40] +['ins_b_001'] (409,154 tok)
+[28/40] +['ins_b_011'] (412,471 tok)
+[29/40] +['fin_b_019'] (421,372 tok)
+[30/40] +['ins_b_018'] (424,699 tok)
+[31/40] +['ins_b_019'] (435,938 tok)
+[39/40] +['fin_b_001', 'fin_b_004', 'fin_b_010', 'fin_b_002', 'fin_b_007', 'fin_b_006', 'fin_b_003', 'fin_b_009'] (447,956 tok)
+[40/40] +['ins_b_003'] (455,586 tok)
+done in 578s; tokens 455,586 (p=347,069 c=108,517)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_finsC/answer.csv
