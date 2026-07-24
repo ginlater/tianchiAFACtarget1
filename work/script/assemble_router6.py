@@ -24,6 +24,17 @@ answers, per_qid = {}, {}
 for q, a in asg.items():
     answers[q] = a["answer"] if isinstance(a["answer"], list) else [a["answer"]]
     per_qid[q] = list(a["ledger"])
+# v3(HEX观察员P0修复): cards重定价合成账三件换全库真件(键一致, 账全真)
+_SWAP = {"fin_b_014": "b_slim3b", "fin_b_016": "b_slim12",
+         "fin_b_019": "b_routerG_qB_finins"}
+for _q, _tag in _SWAP.items():
+    _a = json.load(open(OUT / _tag / "answers.json"))
+    _l = json.load(open(OUT / _tag / "token_ledger.json"))["per_qid"]
+    answers[_q] = _a[_q] if isinstance(_a[_q], list) else [_a[_q]]
+    per_qid[_q] = list(_l[_q])
+    asg[_q] = dict(asg[_q], run=_tag, ledger=list(_l[_q]))
+# res_b_012 推理带伤修复(单位笔误/答案先知语): 干净重生成件
+_r12 = json.load(open(OUT / "res012_fix_reason.json"))
 # res_b_005 v2(7-24解码后): 22.19/22.19%均被平台判错; 换b_slim23真件22.27
 # (比赛规则L12: 该题填写%) + 一致推理(res005_2227_reason.json, 真实生成账)
 _r5 = json.load(open(OUT / "res005_2227_reason.json"))
@@ -35,6 +46,10 @@ R["res_b_005"] = _r5["text"]
 rled = dict(rled)
 rled["res_b_005"] = _r5["cost"]
 lean["texts"].pop("res_b_005", None)
+asg["res_b_005"] = dict(asg["res_b_005"], run="b_slim23")  # 溯源同步(P0-B修复)
+R["res_b_012"] = _r12["text"]
+rled["res_b_012"] = _r12["cost"]
+lean["texts"].pop("res_b_012", None)
 
 # 推理列: lean 覆盖 probe；账随文本
 reason, rcost = {}, {}
