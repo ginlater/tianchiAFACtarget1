@@ -1,0 +1,582 @@
+{
+ "per_qid": {
+  "fin_b_007": [
+   1147,
+   285
+  ],
+  "fin_b_008": [
+   1076,
+   303
+  ],
+  "fin_b_019": [
+   957,
+   435
+  ],
+  "fin_b_002": [
+   1070,
+   450
+  ],
+  "fin_b_016": [
+   1026,
+   426
+  ],
+  "fin_b_014": [
+   1164,
+   560
+  ],
+  "ins_b_001": [
+   900,
+   403
+  ],
+  "res_b_015": [
+   1093,
+   317
+  ],
+  "fin_b_011": [
+   1078,
+   339
+  ],
+  "fc_b_015": [
+   903,
+   332
+  ],
+  "ins_b_019": [
+   887,
+   496
+  ],
+  "fin_b_005": [
+   1032,
+   349
+  ],
+  "res_b_002": [
+   1029,
+   282
+  ],
+  "fc_b_011": [
+   1134,
+   336
+  ],
+  "fin_b_004": [
+   916,
+   331
+  ],
+  "fin_b_001": [
+   999,
+   297
+  ],
+  "fc_b_009": [
+   959,
+   368
+  ],
+  "fin_b_020": [
+   1040,
+   560
+  ],
+  "ins_b_012": [
+   850,
+   313
+  ],
+  "res_b_013": [
+   966,
+   287
+  ],
+  "res_b_004": [
+   1041,
+   286
+  ],
+  "res_b_001": [
+   949,
+   301
+  ],
+  "fin_b_012": [
+   982,
+   354
+  ],
+  "fin_b_009": [
+   921,
+   292
+  ],
+  "res_b_019": [
+   996,
+   273
+  ],
+  "ins_b_006": [
+   917,
+   294
+  ],
+  "res_b_017": [
+   938,
+   285
+  ],
+  "res_b_018": [
+   943,
+   310
+  ],
+  "fin_b_010": [
+   971,
+   336
+  ],
+  "fc_b_008": [
+   886,
+   283
+  ],
+  "res_b_006": [
+   937,
+   252
+  ],
+  "fin_b_006": [
+   1001,
+   324
+  ],
+  "fc_b_003": [
+   912,
+   362
+  ],
+  "res_b_009": [
+   864,
+   316
+  ],
+  "fin_b_003": [
+   957,
+   258
+  ],
+  "fc_b_006": [
+   838,
+   378
+  ],
+  "fc_b_004": [
+   872,
+   227
+  ],
+  "ins_b_004": [
+   919,
+   277
+  ],
+  "res_b_016": [
+   961,
+   272
+  ],
+  "fc_b_010": [
+   875,
+   298
+  ],
+  "res_b_003": [
+   942,
+   350
+  ],
+  "fin_b_018": [
+   805,
+   375
+  ],
+  "reg_b_018": [
+   846,
+   357
+  ],
+  "fc_b_002": [
+   886,
+   296
+  ],
+  "res_b_008": [
+   861,
+   281
+  ],
+  "reg_b_023": [
+   721,
+   268
+  ],
+  "reg_b_014": [
+   571,
+   473
+  ],
+  "fin_b_015": [
+   857,
+   514
+  ]
+ },
+ "calls": [
+  {
+   "qid": "fin_b_007",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1147,
+   "completion_tokens": 285,
+   "ts": 1784904669.154895
+  },
+  {
+   "qid": "fin_b_008",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1076,
+   "completion_tokens": 303,
+   "ts": 1784904670.453095
+  },
+  {
+   "qid": "fin_b_019",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 957,
+   "completion_tokens": 435,
+   "ts": 1784904671.4074838
+  },
+  {
+   "qid": "fin_b_002",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1070,
+   "completion_tokens": 450,
+   "ts": 1784904672.297091
+  },
+  {
+   "qid": "fin_b_016",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1026,
+   "completion_tokens": 426,
+   "ts": 1784904672.356964
+  },
+  {
+   "qid": "fin_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1164,
+   "completion_tokens": 560,
+   "ts": 1784904674.795991
+  },
+  {
+   "qid": "ins_b_001",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 900,
+   "completion_tokens": 403,
+   "ts": 1784904677.014365
+  },
+  {
+   "qid": "res_b_015",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1093,
+   "completion_tokens": 317,
+   "ts": 1784904677.86926
+  },
+  {
+   "qid": "fin_b_011",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1078,
+   "completion_tokens": 339,
+   "ts": 1784904679.7902322
+  },
+  {
+   "qid": "fc_b_015",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 903,
+   "completion_tokens": 332,
+   "ts": 1784904679.906482
+  },
+  {
+   "qid": "ins_b_019",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 887,
+   "completion_tokens": 496,
+   "ts": 1784904679.906843
+  },
+  {
+   "qid": "fin_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1032,
+   "completion_tokens": 349,
+   "ts": 1784904684.550466
+  },
+  {
+   "qid": "res_b_002",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1029,
+   "completion_tokens": 282,
+   "ts": 1784904690.820436
+  },
+  {
+   "qid": "fc_b_011",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1134,
+   "completion_tokens": 336,
+   "ts": 1784904694.205874
+  },
+  {
+   "qid": "fin_b_004",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 916,
+   "completion_tokens": 331,
+   "ts": 1784904694.310432
+  },
+  {
+   "qid": "fin_b_001",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 999,
+   "completion_tokens": 297,
+   "ts": 1784904694.45819
+  },
+  {
+   "qid": "fc_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 959,
+   "completion_tokens": 368,
+   "ts": 1784904694.9003258
+  },
+  {
+   "qid": "fin_b_020",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1040,
+   "completion_tokens": 560,
+   "ts": 1784904695.6060019
+  },
+  {
+   "qid": "ins_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 850,
+   "completion_tokens": 313,
+   "ts": 1784904697.09197
+  },
+  {
+   "qid": "res_b_013",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 966,
+   "completion_tokens": 287,
+   "ts": 1784904700.355126
+  },
+  {
+   "qid": "res_b_004",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1041,
+   "completion_tokens": 286,
+   "ts": 1784904700.4773152
+  },
+  {
+   "qid": "res_b_001",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 949,
+   "completion_tokens": 301,
+   "ts": 1784904701.101682
+  },
+  {
+   "qid": "fin_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 982,
+   "completion_tokens": 354,
+   "ts": 1784904701.259885
+  },
+  {
+   "qid": "fin_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 921,
+   "completion_tokens": 292,
+   "ts": 1784904702.3834062
+  },
+  {
+   "qid": "res_b_019",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 996,
+   "completion_tokens": 273,
+   "ts": 1784904708.738189
+  },
+  {
+   "qid": "ins_b_006",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 917,
+   "completion_tokens": 294,
+   "ts": 1784904708.9542909
+  },
+  {
+   "qid": "res_b_017",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 938,
+   "completion_tokens": 285,
+   "ts": 1784904709.267445
+  },
+  {
+   "qid": "res_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 943,
+   "completion_tokens": 310,
+   "ts": 1784904710.142102
+  },
+  {
+   "qid": "fin_b_010",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 971,
+   "completion_tokens": 336,
+   "ts": 1784904710.891448
+  },
+  {
+   "qid": "fc_b_008",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 886,
+   "completion_tokens": 283,
+   "ts": 1784904712.5320902
+  },
+  {
+   "qid": "res_b_006",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 937,
+   "completion_tokens": 252,
+   "ts": 1784904714.605644
+  },
+  {
+   "qid": "fin_b_006",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 1001,
+   "completion_tokens": 324,
+   "ts": 1784904716.42732
+  },
+  {
+   "qid": "fc_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 912,
+   "completion_tokens": 362,
+   "ts": 1784904716.455722
+  },
+  {
+   "qid": "res_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 864,
+   "completion_tokens": 316,
+   "ts": 1784904716.66885
+  },
+  {
+   "qid": "fin_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 957,
+   "completion_tokens": 258,
+   "ts": 1784904718.2876291
+  },
+  {
+   "qid": "fc_b_006",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 838,
+   "completion_tokens": 378,
+   "ts": 1784904718.6818361
+  },
+  {
+   "qid": "fc_b_004",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 872,
+   "completion_tokens": 227,
+   "ts": 1784904723.9975848
+  },
+  {
+   "qid": "ins_b_004",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 919,
+   "completion_tokens": 277,
+   "ts": 1784904724.702658
+  },
+  {
+   "qid": "res_b_016",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 961,
+   "completion_tokens": 272,
+   "ts": 1784904725.263458
+  },
+  {
+   "qid": "fc_b_010",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 875,
+   "completion_tokens": 298,
+   "ts": 1784904725.348151
+  },
+  {
+   "qid": "res_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 942,
+   "completion_tokens": 350,
+   "ts": 1784904726.282689
+  },
+  {
+   "qid": "fin_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 805,
+   "completion_tokens": 375,
+   "ts": 1784904726.283744
+  },
+  {
+   "qid": "reg_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 846,
+   "completion_tokens": 357,
+   "ts": 1784904731.153545
+  },
+  {
+   "qid": "fc_b_002",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 886,
+   "completion_tokens": 296,
+   "ts": 1784904731.6355221
+  },
+  {
+   "qid": "res_b_008",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 861,
+   "completion_tokens": 281,
+   "ts": 1784904732.142247
+  },
+  {
+   "qid": "reg_b_023",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 721,
+   "completion_tokens": 268,
+   "ts": 1784904732.851788
+  },
+  {
+   "qid": "reg_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 571,
+   "completion_tokens": 473,
+   "ts": 1784904734.214187
+  },
+  {
+   "qid": "fin_b_015",
+   "model": "qwen3.6-plus",
+   "tag": "reasonV4L",
+   "prompt_tokens": 857,
+   "completion_tokens": 514,
+   "ts": 1784904734.641566
+  }
+ ]
+}

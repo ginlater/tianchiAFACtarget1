@@ -7,7 +7,7 @@
    腾出的余量装 v4 推理生成账
 3) 峰顶调谐旋钮：从全廉件起步，按差额从小到大"恢复原价件"，把总账校入
    [499.0k, 499.9k] 峰顶带
-用法: .venv/bin/python script/assemble_router7R.py
+用法: .venv/bin/python script/assemble_router7R.py [池名=v4] [输出tag=b_router7R]
 """
 import csv, json, pathlib, re, sys
 
@@ -16,7 +16,9 @@ from agent import b_schema  # noqa: E402
 
 WORK = pathlib.Path(__file__).resolve().parents[1]
 OUT = WORK / "output"
-PEAK_LO, PEAK_HI = 499_000, 499_900
+PEAK_LO, PEAK_HI = 499_850, 499_995
+POOL = sys.argv[1] if len(sys.argv) > 1 else "v4"
+OUT_TAG = sys.argv[2] if len(sys.argv) > 2 else "b_router7R"
 
 
 def norm_one(v):
@@ -64,7 +66,7 @@ import glob
 lib = {}
 for f in glob.glob(str(OUT / "*" / "answers.json")):
     tag = pathlib.Path(f).parent.name
-    if tag in ("b_router6", "b_router7R", "b_hex", "b_v4"):
+    if tag in ("b_router6", "b_hex", "b_v4") or tag.startswith("b_router7"):
         continue  # 组装件与合成键不作件源
     try:
         ans = json.load(open(f, encoding="utf-8-sig"))
@@ -89,8 +91,8 @@ for q, tgt in answers.items():
         per_qid[q] = list(per_orig[q])
 
 # ---- v4 推理池 ----
-R = json.load(open(OUT / "reasonings_v4.json"))
-rled = json.load(open(OUT / "reasoning_v4_ledger.json"))["per_qid"]
+R = json.load(open(OUT / f"reasonings_{POOL}.json"))
+rled = json.load(open(OUT / f"reasoning_{POOL}_ledger.json"))["per_qid"]
 assert set(R) == set(answers), "推理池题面不全!"
 
 
@@ -116,7 +118,7 @@ print(f"重路由 {len(reroute)} 题, 调谐恢复 {len(restored)} 题, "
 assert grand() <= 499_999, "超峰!"
 
 # ---- 落盘 ----
-outdir = OUT / "b_router7R"
+outdir = OUT / OUT_TAG
 outdir.mkdir(exist_ok=True)
 for q in per_qid:  # 逐题账并入推理生成账
     per_qid[q][0] += rled[q][0]
