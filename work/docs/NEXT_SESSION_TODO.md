@@ -14,9 +14,7 @@
 
 ## 🟡 进行中被额度打断的任务（需重启 agent 或手动完成）
 
-1. **SK6 评估**：`b_slimKing6`（SK4配方+摇摆集制导双票 AFAC_VOTE_QIDS）刚跑完，
-   用标准 canon 脚本评估键面@账，对比 SK4 的 95@1.74M。若 ≥96键 → 新单发王，
-   走加冕流程（生成自身推理列→CSV三审，参考 script 里 sk4_reason 同款）
+1. ~~SK6 评估~~ ✅已完成: 92/100@2.2M 负结果(劣于SK4), 制导双票路线关闭
 2. **TOKEN 复盘核验（3 agent 未完成）**：docs/TOKEN_{SLIM,FULL,MIX}.md 已成稿，
    需逐条复算 → 产出 docs/VERIFY_TOKEN_{SLIM,FULL,MIX}.md
 3. **Token 定律总纂（未完成）**：吸收三线+核验+HEX观察员 → docs/TOKEN_DOCTRINE.md
@@ -61,4 +59,4 @@
 ## 当前 git HEAD 状态
 - 全部已 commit+push 到 main，工作树干净
 - 最新弹药：router6-v3(499,058待发) / b_hex(92.69已落袋) / slimKing4(95键纯净替补)
-- b_slimKing6(制导双票)刚跑完，answers.json 在库但**尚未评估**（清单🟡第1项）
+- b_slimKing6(制导双票)已评估=92/100@2.2M **负结果**(劣于SK4), 投票路线第4次证伪关闭; SK4/SK3仍是单发王
