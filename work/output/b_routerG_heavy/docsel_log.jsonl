@@ -16,3 +16,13 @@
 {"qid": "ins_b_003", "picked": ["2", "1", "16", "15"], "kinds": ["number"]}
 {"qid": "ins_b_004", "picked": ["1", "2", "15", "16"], "kinds": ["letter"]}
 {"qid": "ins_b_005", "picked": ["2", "4", "8", "6"], "kinds": ["letter"]}
+{"qid": "ins_b_009", "picked": ["3", "4", "5", "6"], "kinds": ["letter"]}
+{"qid": "ins_b_010", "picked": ["2", "4", "3", "16"], "kinds": ["letter"]}
+{"qid": "ins_b_012", "picked": ["4", "11", "12", "13", "14"], "kinds": ["letter"]}
+{"qid": "ins_b_014", "picked": ["16", "1"], "kinds": ["letter"]}
+{"qid": "ins_b_016", "picked": ["2", "4", "8", "16"], "kinds": ["letter"]}
+{"qid": "ins_b_017", "picked": ["4", "5", "6", "9", "10"], "kinds": ["letter"]}
+{"qid": "reg_b_001", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）", "strict_v3_017_中华人民共和国反洗钱法"], "kinds": ["letter"]}
+{"qid": "res_b_008", "picked": ["pack2_text01", "pack2_text03", "pack2_text13", "pack2_text02"], "kinds": ["letter"]}
+{"qid": "res_b_013", "picked": ["pack2_text10", "pack2_text01", "pack2_text14", "pack2_text15"], "kinds": ["letter"]}
+{"qid": "res_b_018", "picked": ["pack2_text16", "pack2_text13", "pack2_text05", "pack2_text18", "pack2_text19"], "kinds": ["letter"]}

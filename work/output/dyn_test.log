@@ -1,0 +1,4 @@
+ins_b_010: 票['AB', 'AB', 'AB'] → AB 键['AB'] ✓
+ins_b_005: 票['BD', 'BD', 'BD'] → BD 键['BD'] ✓
+ins_b_008: 票['ABCD', 'ABCD'] → ABCD 键['ABCD'] ✓
+fin_b_005: 票['B', 'BC', 'BC'] → BC 键['AC'] ✗
