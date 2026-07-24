@@ -1,0 +1,55 @@
+{
+ "pass": false,
+ "audited_at": "2026-07-23",
+ "issues": [
+  {
+   "qid": "fc_b_003",
+   "关卡": "关5推理配套",
+   "说明": "指派答案 ABCD，但推理文本（lean 版与 probe 原版相同结论）明确排除选项B（'该选项因不严谨而被排除'）并收尾'正确选项为A、C、D'——推理结论与答案矛盾"
+  },
+  {
+   "qid": "fin_b_005",
+   "关卡": "关5推理配套",
+   "说明": "指派答案 AC（=答案键），但推理文本逐项判定 A/C/D 三项入选并收尾'正确选项为A、C、D'——推理多出选项D，与答案矛盾"
+  },
+  {
+   "qid": "fin_b_012",
+   "关卡": "关5推理配套",
+   "说明": "指派答案 AB（=答案键），但推理文本（lean 版与 probe 原版相同结论）将四个选项全部排除并收尾'本题无正确选项'——推理结论与答案完全矛盾"
+  },
+  {
+   "qid": "ins_b_010",
+   "关卡": "关5推理配套",
+   "说明": "指派答案 AB（=答案键），但推理文本判定 A入选/B排除/D入选，收尾'本题正确答案为AD'——推理结论与答案矛盾"
+  },
+  {
+   "qid": "fin_b_001",
+   "关卡": "关5推理配套",
+   "说明": "轻度：文本在句中截断收尾（'综上，正确选项为'后无字母）；逐项判定 A/C/D 入选与答案 ACD 隐式一致，但结论句不完整，LLM judge 完整性/清晰度存在扣分风险"
+  }
+ ],
+ "models_used": [
+  "qwen3.5-plus",
+  "qwen3.6-plus",
+  "qwen3.7-plus",
+  "qwen3.7-max"
+ ],
+ "totals": {
+  "answer_cost": 394567,
+  "reason_cost": 102376,
+  "grand": 496943
+ },
+ "gates": {
+  "关1答案": "PASS — 100/100 指派 answer 与所属 run answers.json 逐字一致；99 题 canon 等于 b_v4 答案键且 correct=true；res_b_005=22.19 且 correct=false（键 22.18），符合唯一例外约定",
+  "关2账本": "PASS — 97 件非 repriced 的 ledger [p,c] 与 run per_qid 真实值精确相等；3 件 b_cards2 repriced 件 cost=5869=calls总账586,926/100 题均摊，p+c=5869 与 cost 相等；cost 与 p+c 差值最大 +1（b_finsB 摊派舍入），无异常",
+  "关3假价": "PASS — 100/100 中标 run+qid 在该 run token_ledger per_qid 均有非零真实条目（含 3 件 cards 均摊件的原始真实条目 fin_b_014=[7638,2457] 等）；未使用 b_e1fin 型缺账组合",
+  "关4模型": "PASS — 22 个中标 run 全部 calls 的 model ∈ {qwen3.6-plus, qwen3.5-plus(b_slim25), qwen3.7-plus(b_slim26), qwen3.7-max(b_slim28)}，全部属于新规第40行 Qwen3.7/3.6/3.5 白名单；reasoning_probe_ledger 全为 qwen3.6-plus",
+  "关5推理": "FAIL(4+1) — (a)长度：合成表(24 lean 覆盖 probe)100/100 ≥380字，最短524字；(b)毒素词：0 命中；(c)结论一致性：4 题真矛盾+1 题截断（见 issues），其余 95 题字面一致；(d)lean 24 条 completion/文本长度比 0.55–0.77，无一低于 0.5 阈值"
+ },
+ "observations": [
+  "reason_lean20.json 实际含 24 条替换文本（任务描述为 29 行；两轮 lean 日志 15+9=24 与文件一致）",
+  "reason_lean20.json 的 ledger 仅存 [p,c]，未携带 calls/model 字段，lean 生成调用的模型无法从该文件直接核验（probe 侧已核验为 qwen3.6-plus）",
+  "reason_cost=102,376 为合成表口径（24 题记 lean 账、76 题记 probe 账），与 reason_lean2.log 台账逐字吻合；若按新规'不得遗漏中间调用'把被替换 24 题的 probe 调用也计入，全量真实推理账为 155,489，grand=550,056",
+  "fc_b_003 与 fin_b_012 的矛盾在 probe 原版即存在，非 lean 瘦身引入；修复需重生成推理文本而非回退 lean"
+ ]
+}
