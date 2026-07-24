@@ -62,9 +62,14 @@ if c5:
 lean = json.load(open(OUT / "reason_lean20.json"))
 rled = json.load(open(OUT / "reasoning_probe_ledger.json"))["per_qid"]
 R0 = json.load(open(OUT / "reasonings_probe.json"))
+# 质量门(7-24): 瘦身重伤行换回原版(模拟评委对决判定, hex_revert_list.json)
+revert = set()
+_rl = OUT / "hex_revert_list.json"
+if _rl.exists():
+    revert = set(json.load(open(_rl)))
 R = {}
 for q in answers:
-    if q in lean["texts"]:
+    if q in lean["texts"] and q not in revert:
         R[q] = lean["texts"][q]
         c = lean["ledger"][q]
     else:
