@@ -551,6 +551,36 @@ def fin_facts_block(q):
             + note + "\n".join(picked))
 
 
+_DOM_FACTS = None
+
+
+def domain_facts_block(q):
+    """ins/fc 离线条款速查块（AFAC_DOM_FACTS=1, 零token词法抽取, 替代/增强构卡）。"""
+    global _DOM_FACTS
+    if (os.environ.get("AFAC_DOM_FACTS") != "1"
+            or q.get("domain") not in ("insurance", "financial_contracts")):
+        return ""
+    if _DOM_FACTS is None:
+        p = pathlib.Path(__file__).resolve().parents[1] \
+            / "processed_data" / "domain_facts.json"
+        _DOM_FACTS = json.load(open(p)) if p.exists() else {}
+    qtext = q["question"] + " " + " ".join((q.get("options") or {}).values())
+    qgrams = {run[i:i+2] for run in re.findall(r"[一-鿿]+", qtext)
+              for i in range(len(run) - 1)}
+    rows = []
+    for d in q.get("doc_ids") or []:
+        for r in _DOM_FACTS.get(str(d), []):
+            lg = {run[i:i+2] for run in re.findall(r"[一-鿿]+", r)
+                  for i in range(len(run) - 1)}
+            s = len(lg & qgrams)
+            if s >= 4:
+                rows.append((s, f"[{d}]{r}"))
+    rows.sort(key=lambda x: -x[0])
+    if not rows:
+        return ""
+    return "条款速查表(离线抽取, 含页码):\n" + "\n".join(r for _s, r in rows[:30])
+
+
 def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     """返回 (证据文本, chunk列表, 受保护id集合, 记忆卡文本)。"""
     domain = q["domain"]
@@ -558,6 +588,9 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     ff = fin_facts_block(q)
     if ff:
         blocks.append(ff)
+    df = domain_facts_block(q)
+    if df:
+        blocks.append(df)
     if os.environ.get("AFAC_NO_DIGEST") == "1" and not _use_digest(domain):
         digests = "涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"])

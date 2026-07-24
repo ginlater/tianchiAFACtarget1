@@ -1,0 +1,4 @@
+待作答 20 / 共 100 题；model=qwen3.6-plus verify=qwen3.6-plus
+[1/20] fin_b_001 -> ['ACD'] (177,861 tok)
+[2/20] fin_b_003 -> ['ABCD'] (198,728 tok)
+[3/20] fin_b_002 -> ['BCD'] (218,004 tok)
