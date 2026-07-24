@@ -17,3 +17,6 @@ docsel 完成; tokens 7,981
 [37/40] +['ins_b_018'] (233,933 tok)
 [38/40] +['fin_b_015'] (244,587 tok)
 [39/40] +['ins_b_019'] (249,602 tok)
+[40/40] +['ins_b_003'] (255,778 tok)
+done in 327s; tokens 255,778 (p=196,080 c=59,698)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_router8_qB_finins/answer.csv

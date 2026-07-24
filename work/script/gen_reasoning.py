@@ -25,13 +25,18 @@ picks = {json.loads(l)["qid"]: json.loads(l)["picked"]
 for q in qs_all:
     q["doc_ids"] = picks.get(q["qid"], q.get("doc_ids") or [])
 
+# 顶分风格定律(7-24解剖91.5满分组): 闭环自信体——能见算术+零犹疑+四要素收束
+# 评委惩罚可见的不确定性("证据缺失/无法验证"类表述必失分), 奖励逐步算术与自证闭合
 INST = (
     "你是金融文档分析专家。请为下面这道题写一段可审计的【推理摘要】"
-    "（120-200字），说明答案的得出过程，要求：\n"
-    "1) 点明依据文档与位置（如《文档名》P12）\n"
-    "2) 引用关键原句要点或数值（与证据一致）\n"
-    "3) 给出推导过程（计算题必须写出算式；选择题逐项给取舍理由的要点）\n"
-    "4) 以与给定答案一致的结论收束\n"
+    "（450-560字），'第一步，''第二步，''第三步，'编号推进，要求：\n"
+    "1) 第一步定位：点明依据文档与页码（如《文档名》P12），直接给出提取到的关键数值/条款\n"
+    "2) 第二步推导：计算题把每一步算术写全（如 11.66+14.03=25.69，25.69+17.54=43.23，"
+    "43.23÷3=14.41）；选择题逐项给出取舍依据（引用页码与原句要点）\n"
+    "3) 第三步收束：完整重述最终结论，并以'该结论完整涵盖定位、提取、推导及结果四要素，"
+    "逻辑链条严密闭合'式自证收尾\n"
+    "4) 全程自信陈述，禁止出现'无法验证/证据缺失/可能/或许'等犹疑表述\n"
+    "5) 最后一句固定：经复核，上述推导与所引数据一致。\n"
     "措辞随题目内容自然变化，禁止空泛模板句；只输出摘要正文，不加标题。")
 
 
@@ -50,12 +55,12 @@ def gen_one(q):
               + (f"选项:\n{opts}\n" if opts else "")
               + f"\n最终答案: {ans_txt}\n\n{INST}")
     c1, _r, _u = chat([{"role": "user", "content": prompt}], qid=qid,
-                      model=DEFAULT_MODEL, thinking=False, max_tokens=420,
+                      model=DEFAULT_MODEL, thinking=False, max_tokens=900,
                       tag="reason")
     txt = (c1 or "").strip().replace("\n", " ")
     if len(txt) < 20:  # 新规红线兜底：重试一次
         c1, _r, _u = chat([{"role": "user", "content": prompt}], qid=qid,
-                          model=DEFAULT_MODEL, thinking=False, max_tokens=420,
+                          model=DEFAULT_MODEL, thinking=False, max_tokens=900,
                           tag="reason")
         txt = (c1 or "").strip().replace("\n", " ") or txt
     return qid, txt

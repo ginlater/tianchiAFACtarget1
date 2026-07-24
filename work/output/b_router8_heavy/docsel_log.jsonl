@@ -1,0 +1,9 @@
+{"qid": "fc_b_016", "picked": ["text13", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_009", "picked": ["text04", "text05", "text11"], "kinds": ["letter"]}
+{"qid": "fc_b_007", "picked": ["text04", "text05", "text11"], "kinds": ["letter"]}
+{"qid": "fc_b_017", "picked": ["text12", "text01"], "kinds": ["letter"]}
+{"qid": "fc_b_019", "picked": ["text14", "text12"], "kinds": ["letter"]}
+{"qid": "fin_b_003", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_004", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report"], "kinds": ["letter"]}
+{"qid": "fin_b_006", "picked": ["annual_cmb_2025_report", "annual_byd_2024_report"], "kinds": ["letter"]}
+{"qid": "fin_b_007", "picked": ["annual_chinamobile_2025_report", "annual_byd_2024_report"], "kinds": ["letter"]}
