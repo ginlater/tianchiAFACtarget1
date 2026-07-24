@@ -193,3 +193,11 @@
   CSV全审: 对账✓毒素0短文0; 推理-答案自洽战役修4矛盾(fin_b_004=解析兜底bug产物,如实描述)
 - fin_b_004尸检: full12该题ABCD来自docsel错选中国移动+解析兜底, 非推理结论
 - 探针推理批: est87.1入车; fin_b_004诚实文打磨51→70
+
+## 7-24 router6终版战役(逐题最优路由, 用户裁定解锁)
+- 纪律终版: 键当裁判选系统✅ / 同系统重掷碰答案❌; 池内每配置唯一代表(防重掷钓题)
+- 五agent家族排名+五agent API分析+指派agent+复核agent 全链路多agent工程
+- **router6: 99键@499,082峰顶带 est 94.96(R85)/95.56(R87)** work/output/b_router6/answer.csv
+- 复核抓4矛盾+1截断→中标run记录重生成; 装配回填禁区NO_REVERT; res_b_005=22.19(84run全票)定案
+- submission.zip 8MB无泄漏: evidence.json逐题溯源(run/证据id/记录摘录) + FAMILY_DOCTRINE.md
+- API定律: 3.6-plus性价比王; 3.5/3.7=补盲; 省token靠架构, 提准确率靠跨代异构
