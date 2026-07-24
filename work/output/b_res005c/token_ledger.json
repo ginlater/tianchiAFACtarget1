@@ -1,0 +1,34 @@
+{
+ "per_qid": {
+  "res_b_005": [
+   18996,
+   6515
+  ]
+ },
+ "calls": [
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.7-plus",
+   "tag": "docsel",
+   "prompt_tokens": 2034,
+   "completion_tokens": 7,
+   "ts": 1784861189.664525
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.7-plus",
+   "tag": "calc1",
+   "prompt_tokens": 8481,
+   "completion_tokens": 3697,
+   "ts": 1784861257.873908
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.7-plus",
+   "tag": "calc2",
+   "prompt_tokens": 8481,
+   "completion_tokens": 2811,
+   "ts": 1784861310.423342
+  }
+ ]
+}
