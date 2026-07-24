@@ -19,3 +19,11 @@ docsel 完成; tokens 23,651
 [52/60] +['reg_b_003'] (211,073 tok)
 [53/60] +['reg_b_004'] (214,460 tok)
 [54/60] +['reg_b_007'] (217,654 tok)
+[55/60] +['reg_b_014'] (220,791 tok)
+[56/60] +['reg_b_016'] (224,185 tok)
+[57/60] +['reg_b_018'] (227,673 tok)
+[58/60] +['res_b_005'] (231,502 tok)
+[59/60] +['res_b_007'] (234,987 tok)
+[60/60] +['res_b_012'] (238,564 tok)
+done in 261s; tokens 238,564 (p=187,991 c=50,573)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_routerG_qА_trio/answer.csv

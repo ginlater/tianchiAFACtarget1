@@ -11,3 +11,12 @@ docsel 完成; tokens 7,982
 [31/40] +['fin_b_017'] (185,998 tok)
 [32/40] +['fin_b_016'] (194,329 tok)
 [33/40] +['fin_b_018'] (200,061 tok)
+[34/40] +['fin_b_019'] (206,968 tok)
+[35/40] +['ins_b_001'] (212,213 tok)
+[36/40] +['fin_b_020'] (218,190 tok)
+[37/40] +['ins_b_003'] (222,118 tok)
+[38/40] +['ins_b_011'] (225,198 tok)
+[39/40] +['ins_b_018'] (228,418 tok)
+[40/40] +['ins_b_019'] (233,476 tok)
+done in 246s; tokens 233,476 (p=187,024 c=46,452)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_routerG_qB_finins/answer.csv
