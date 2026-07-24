@@ -1,0 +1,282 @@
+{
+ "per_qid": {
+  "_docsel_financial_reports": [
+   3,
+   7
+  ],
+  "fin_b_001": [
+   28121,
+   5212
+  ],
+  "fin_b_002": [
+   15270,
+   2144
+  ],
+  "fin_b_003": [
+   41604,
+   4531
+  ],
+  "fin_b_004": [
+   28121,
+   5212
+  ],
+  "fin_b_005": [
+   18451,
+   1538
+  ],
+  "fin_b_006": [
+   28121,
+   5212
+  ],
+  "fin_b_007": [
+   11993,
+   1543
+  ],
+  "fin_b_008": [
+   18632,
+   1871
+  ],
+  "fin_b_009": [
+   41604,
+   4531
+  ],
+  "fin_b_010": [
+   28121,
+   5212
+  ],
+  "fin_b_011": [
+   52152,
+   4337
+  ],
+  "fin_b_012": [
+   52152,
+   4337
+  ],
+  "_digest": [
+   56567,
+   9246
+  ],
+  "_batch": [
+   4,
+   7
+  ]
+ },
+ "calls": [
+  {
+   "qid": "_docsel_financial_reports",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 2715,
+   "completion_tokens": 571,
+   "ts": 1784901416.3374
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_catl_2024_report",
+   "prompt_tokens": 5533,
+   "completion_tokens": 980,
+   "ts": 1784901435.6440399
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_byd_2024_report",
+   "prompt_tokens": 5995,
+   "completion_tokens": 1140,
+   "ts": 1784901439.420758
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_catl_2025_report",
+   "prompt_tokens": 5155,
+   "completion_tokens": 989,
+   "ts": 1784901454.1782231
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_byd_2025_report",
+   "prompt_tokens": 5529,
+   "completion_tokens": 1151,
+   "ts": 1784901460.767915
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_midea_2024_report",
+   "prompt_tokens": 5834,
+   "completion_tokens": 931,
+   "ts": 1784901471.3453178
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_cmb_2025_report",
+   "prompt_tokens": 5904,
+   "completion_tokens": 775,
+   "ts": 1784901475.498924
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_midea_2025_report",
+   "prompt_tokens": 6055,
+   "completion_tokens": 788,
+   "ts": 1784901486.557715
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 20686,
+   "completion_tokens": 2321,
+   "ts": 1784901531.932749
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 27893,
+   "completion_tokens": 4280,
+   "ts": 1784901556.968992
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 20686,
+   "completion_tokens": 2035,
+   "ts": 1784901570.909374
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 20686,
+   "completion_tokens": 2230,
+   "ts": 1784901613.1977558
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 27893,
+   "completion_tokens": 4793,
+   "ts": 1784901645.848522
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.5-plus",
+   "tag": "b2",
+   "prompt_tokens": 20698,
+   "completion_tokens": 2384,
+   "ts": 1784901656.373983
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_cscec_2025_report",
+   "prompt_tokens": 5564,
+   "completion_tokens": 840,
+   "ts": 1784901672.500179
+  },
+  {
+   "qid": "fin_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 18225,
+   "completion_tokens": 1491,
+   "ts": 1784901702.5493262
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 27893,
+   "completion_tokens": 3287,
+   "ts": 1784901707.0867379
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_chinamobile_2025_report",
+   "prompt_tokens": 5333,
+   "completion_tokens": 815,
+   "ts": 1784901717.7324202
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 25960,
+   "completion_tokens": 1990,
+   "ts": 1784901757.195075
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 25960,
+   "completion_tokens": 1946,
+   "ts": 1784901794.8233888
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 25960,
+   "completion_tokens": 2130,
+   "ts": 1784901836.5763469
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.5-plus",
+   "tag": "b2",
+   "prompt_tokens": 27905,
+   "completion_tokens": 8305,
+   "ts": 1784901863.841975
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.5-plus",
+   "tag": "b2",
+   "prompt_tokens": 25972,
+   "completion_tokens": 2514,
+   "ts": 1784901881.9236212
+  },
+  {
+   "qid": "_digest",
+   "model": "qwen3.6-plus",
+   "tag": "digest:annual_cscec_2024_report",
+   "prompt_tokens": 5665,
+   "completion_tokens": 837,
+   "ts": 1784901897.48735
+  },
+  {
+   "qid": "fin_b_002",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 15044,
+   "completion_tokens": 2097,
+   "ts": 1784901903.8323112
+  },
+  {
+   "qid": "fin_b_008",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 18406,
+   "completion_tokens": 1824,
+   "ts": 1784901933.401872
+  },
+  {
+   "qid": "fin_b_007",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 11767,
+   "completion_tokens": 1496,
+   "ts": 1784901933.838815
+  }
+ ]
+}
