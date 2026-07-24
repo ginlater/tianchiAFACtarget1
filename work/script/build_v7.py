@@ -42,12 +42,19 @@ def main():
         except FileNotFoundError as e:
             print(f"跳过 {name}: {e}")
             continue
+        if name == "v6P":
+            try:
+                bad = set(json.load(open(OUT / "v6P_bad_rows.json")))
+                texts = {q: t for q, t in texts.items() if q not in bad}
+                print(f"v6P 失格行 {len(bad)} 已剔除")
+            except FileNotFoundError:
+                pass
         loaded.append((name, texts, led, scores, pri))
     # probe 特例: res_b_005/012 用修复件
     r5 = json.load(open(OUT / "res005_2227_reason.json"))
     r12 = json.load(open(OUT / "res012_fix_reason.json"))
     R, rled, src = {}, {}, {}
-    qids = set(loaded[0][1])
+    qids = set().union(*[set(t[1]) for t in loaded])
     for q in sorted(qids):
         best = None
         for name, texts, led, scores, pri in loaded:
