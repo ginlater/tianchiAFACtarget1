@@ -6,7 +6,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 WORK = ROOT / "work"
 
 
-def main(tag):
+def main(tag="b_router6"):
     out = WORK / "submission.zip"
     outdir = WORK / "output" / tag
     zf = zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED)
