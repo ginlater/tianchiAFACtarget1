@@ -46,3 +46,19 @@
 - 文档：docs/HANDOFF.md（总）/KNOWLEDGE_DOCTRINE.md（定律）/AUDIT_RESPONSE.md（答辩）
   /TOKEN_{SLIM,FULL,MIX}.md（已成稿）/HEX_OBSERVER.md（观察报告）
 - git: github.com/ginlater/tianchiAFACtarget1 main（全程留痕）；key在.env（勿入库）
+
+## ⏸️ 因额度中断、需新会话重启的 4 个 agent（全部未产出文件）
+
+1. 核验官 SLIM → docs/VERIFY_TOKEN_SLIM.md（逐条复算 TOKEN_SLIM.md 数字）
+2. 核验官 FULL → docs/VERIFY_TOKEN_FULL.md（逐条复算 TOKEN_FULL.md 数字）
+3. 核验官 MIX  → docs/VERIFY_TOKEN_MIX.md（逐条复算 TOKEN_MIX.md 数字）
+4. 总纂官 → docs/TOKEN_DOCTRINE.md（吸收三线+核验+HEX观察员，8-12条Token定律）
+
+重启命令模板（新会话用 Agent 工具，prompt 见本次会话第二波派单，或直接：
+"逐条复算 docs/TOKEN_SLIM.md 每个带数字的论断，回到 output/b_slim*/token_ledger.json
+一手重算，产出 docs/VERIFY_TOKEN_SLIM.md，每条标✅/⚠️/❌"）
+
+## 当前 git HEAD 状态
+- 全部已 commit+push 到 main，工作树干净
+- 最新弹药：router6-v3(499,058待发) / b_hex(92.69已落袋) / slimKing4(95键纯净替补)
+- b_slimKing6(制导双票)刚跑完，answers.json 在库但**尚未评估**（清单🟡第1项）
