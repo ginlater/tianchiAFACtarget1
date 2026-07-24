@@ -90,6 +90,41 @@ def parse_calc(content):
     return ""
 
 
+def _tables_block(q):
+    """表格全景（AFAC_CALC_TABLES=1）：计算题取数几乎总在表格，而 BM25 只召回
+    与题面词汇重叠的表——跨口径表（如乘用车题旁的商用车/合计预测表）从来进不了
+    上下文，模型根本没有选口径的机会（res_b_005 类伤）。此层把涉及文档的全部
+    图/表块整体入证据，口径取舍交还模型。超限按题面词重叠排序截断。"""
+    limit = int(os.environ.get("AFAC_TABLE_LIMIT", "15000"))
+    segs = []
+    for d in q["doc_ids"]:
+        p = retrieval.doc_path(d)
+        if not p.exists():
+            continue
+        text = p.read_text(encoding="utf-8")
+        for m in re.finditer(r"^(?:图|表)\s*[：:].*$", text, re.M):
+            start = m.start()
+            win = text[start:start + 6000]
+            end_m = re.search(r"^数据来源[：:].*$", win, re.M)
+            seg = win[:end_m.end()] if end_m else win[:2500]
+            segs.append((d, seg))
+    if not segs:
+        return ""
+    qwords = set(re.findall(r"[一-鿿]{2,6}", q["question"]))
+    total = sum(len(s[1]) for s in segs)
+    if total > limit:
+        segs.sort(key=lambda s: -sum(1 for w in qwords if w in s[1]))
+        kept, acc = [], 0
+        for s in segs:
+            if acc + len(s[1]) > limit:
+                continue
+            kept.append(s)
+            acc += len(s[1])
+        segs = kept
+    body = "\n\n".join(f"[{d}] {seg}" for d, seg in segs)
+    return "文档表格全景（含同一指标的不同口径表，注意甄别题目所问口径）:\n" + body
+
+
 def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
     """计算题证据：记忆卡（含关键财务数字）+ 宽检索原文片段。"""
     blocks = []
@@ -115,6 +150,10 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
     ab = align_block(q)
     if ab:
         blocks.append(ab)
+    if os.environ.get("AFAC_CALC_TABLES") == "1":
+        tb = _tables_block(q)
+        if tb:
+            blocks.append(tb)
     if domain == "financial_reports" and os.environ.get("AFAC_FIN_FACTS") == "1":
         import pathlib as _pl
         _ff = _pl.Path(__file__).resolve().parents[1] / "processed_data" / "fin_facts.json"
