@@ -1,0 +1,3505 @@
+{
+ "fc_b_001": {
+  "source_run": "b_slim31",
+  "answer": [
+   "5.55%",
+   "5.36%",
+   "7.68%",
+   "7.35%"
+  ],
+  "source_tokens": [
+   1883,
+   1392
+  ],
+  "evidence_ids": [
+   "text01#c75",
+   "text02#c0"
+  ],
+  "final": "5.55%；5.36%；7.68%；7.35%",
+  "a1": "5.55%；5.36%；7.68%；7.35%",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n根据《广东省广晟控股集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》【text01 P69】“图表：报告期内主营业务毛利率分类明细”：\n1. 2022年度矿业板块主营业务毛利率：5.55%\n2. 2023年度矿业板块主营业务毛利率：5.36%\n3. 2024年度矿业板块主营业务毛利率：7.68%\n4. 2025年1-6月矿业板块主营业务毛利率：7.35%\n\n第二步【计算】：\n题目要求直接提取2022-2024年及2025年1-6月矿业板块的主营业务毛利率，证据表中已直接列示对应期间的毛利率数据，无需额外计算。\n- 2022年：5.55%\n- 2023年：5.36%\n- 2024年：7.68%\n- 2025年1-6月：7.35%\n\n答案: 5.55%；5.36%；7.68%；7.35%"
+ },
+ "fc_b_002": {
+  "source_run": "b_slim19",
+  "answer": [
+   "ACD"
+  ],
+  "source_tokens": [
+   3209,
+   443
+  ],
+  "evidence_ids": [
+   "text01#c185",
+   "text01#c199",
+   "text01#c231",
+   "text02#c16",
+   "text02#c26",
+   "text02#c30",
+   "text02#c32",
+   "text02#c34",
+   "text02#c38",
+   "text02#c49",
+   "text02#c50",
+   "text02#c53",
+   "text02#c55",
+   "text02#c57",
+   "text02#c63",
+   "text02#c97",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c171",
+   "text02#c195",
+   "text02#c196",
+   "text02#c197",
+   "text02#c207",
+   "text02#c209",
+   "text02#c210",
+   "text02#c212",
+   "text02#c223",
+   "text02#c239",
+   "text06#c31"
+  ],
+  "final": "ACD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析: \nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022年末为119.28%，2023年末为107.81%，2024年末为100.42%，2025年9月末为90.79%，均超过50%的监管要求。文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024 年11 月27 日及2025 年8 月28 日公布的...发行人两年行业监管评级均为A 级”。\nC. 正确。根据【text02 P105】，发行人主营业务所属行业中航运金融、物流运输、能化冶金、绿色新能源行业占比较大，截至2024年末上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求"
+ },
+ "fc_b_003": {
+  "source_run": "b_slim19",
+  "answer": [
+   "ABCD"
+  ],
+  "source_tokens": [
+   3592,
+   798
+  ],
+  "evidence_ids": [
+   "text01#c11",
+   "text01#c153",
+   "text01#c185",
+   "text01#c242",
+   "text01#c260",
+   "text03#c90",
+   "text03#c94",
+   "text03#c115",
+   "text03#c155",
+   "text03#c193",
+   "text03#c194",
+   "text03#c196",
+   "text03#c211",
+   "text03#c230",
+   "text04#c9",
+   "text04#c152",
+   "text04#c179",
+   "text04#c280",
+   "text04#c321",
+   "text04#c331",
+   "text04#c336",
+   "text05#c41",
+   "text05#c48",
+   "text05#c91",
+   "text05#c226",
+   "text05#c262",
+   "text05#c340",
+   "text06#c59",
+   "text06#c150",
+   "text06#c179"
+  ],
+  "final": "ABCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出中国铁路建设债券募集资金中用于“债务结构调整”的具体金额。\n分析: \n- 根据【text13 P15】“第四章 募集资金用途”中的描述：“经证监会同意，本次债券的募集资金总额3,000 亿元，其中800 亿元投资于铁路建设项目，250 亿元用于装备购置，**1,950 亿元用于债务结构调整**。”\n- 选项A（800）对应铁路建设项目。\n- 选项B（250）对应装备购置。\n- 选项C（1950）对应债务结构调整。\n- 选项D（3000）对应募集资金总额。\n判断: A不选 B不选 C入选 D不选\n答案: C\n\n【第2题 答案块】\n选择标准: 根据西部证券募集说明书，核对各年末资产负债率（扣除代理款）和流动比率的数值是否正确。\n分析: \n- 根据【text14 P113】表格及【text14 P132】文字描述：\n    - 2025年末（或2025年12月31日）：资产负债率（扣除代理款）为64.00%，流动比率为1.83。选项A描述一致。\n    - 2024年末（或2024年12月31日）：资产负债率（扣除代理款）为62.47%，流动比率为1.95"
+ },
+ "fc_b_004": {
+  "source_run": "b_slim19",
+  "answer": [
+   "ABC"
+  ],
+  "source_tokens": [
+   3209,
+   443
+  ],
+  "evidence_ids": [
+   "text01#c185",
+   "text01#c199",
+   "text01#c231",
+   "text02#c16",
+   "text02#c26",
+   "text02#c30",
+   "text02#c32",
+   "text02#c34",
+   "text02#c38",
+   "text02#c49",
+   "text02#c50",
+   "text02#c53",
+   "text02#c55",
+   "text02#c57",
+   "text02#c63",
+   "text02#c97",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c171",
+   "text02#c195",
+   "text02#c196",
+   "text02#c197",
+   "text02#c207",
+   "text02#c209",
+   "text02#c210",
+   "text02#c212",
+   "text02#c223",
+   "text02#c239",
+   "text06#c31"
+  ],
+  "final": "ABC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析: \nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022年末为119.28%，2023年末为107.81%，2024年末为100.42%，2025年9月末为90.79%，均超过50%的监管要求。文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024 年11 月27 日及2025 年8 月28 日公布的...发行人两年行业监管评级均为A 级”。\nC. 正确。根据【text02 P105】，发行人主营业务所属行业中航运金融、物流运输、能化冶金、绿色新能源行业占比较大，截至2024年末上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求"
+ },
+ "fc_b_005": {
+  "source_run": "b_slim5",
+  "answer": [
+   "1468.47%",
+   "740.58%"
+  ],
+  "source_tokens": [
+   3283,
+   1700
+  ],
+  "evidence_ids": [
+   "text08#c23",
+   "text08#c164",
+   "text08#c232"
+  ],
+  "final": "1468.47%；740.58%",
+  "a1": "1468.47%；740.58%",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 2023年6月30日评估增值率：根据text08 P17及P153，评估基准日2023年6月30日，冠鸿智能股东全部权益账面值为5,138.77万元，评估值为80,600.00万元，增值率为1,468.47%。\n2. 2023年12月31日（加期评估）评估增值率：根据text08 P17及P220注3，加期评估基准日2023年12月31日，评估值为84,700.00万元，与账面净资产相比增值74,623.65万元，增值率740.58%。\n\n第二步【计算】：\n题目要求直接提取两次评估的增值率，原文已直接给出计算结果，无需重新计算。\n第1个答案（2023年6月30日）：1,468.47%\n第2个答案（2023年12月31日）：740.58%\n\n答案: 1468.47%；740.58%"
+ },
+ "fc_b_006": {
+  "source_run": "b_slim11",
+  "answer": [
+   "B"
+  ],
+  "source_tokens": [
+   3080,
+   623
+  ],
+  "evidence_ids": [
+   "text02#c2",
+   "text02#c13",
+   "text02#c16",
+   "text02#c20",
+   "text02#c32",
+   "text02#c58",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c131",
+   "text02#c196",
+   "text02#c226",
+   "text03#c94",
+   "text03#c155",
+   "text03#c173",
+   "text03#c194",
+   "text03#c230",
+   "text04#c5",
+   "text04#c152",
+   "text04#c179",
+   "text04#c331",
+   "text04#c336",
+   "text05#c226",
+   "text05#c262",
+   "text05#c340",
+   "text05#c401",
+   "text11#c159",
+   "text11#c160",
+   "text11#c208",
+   "text11#c262"
+  ],
+  "final": "B",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析:\nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022-2025年9月末分别为119.28%、107.81%、100.42%、90.79%，均超过50%的监管要求，且文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024年11月27日及2025年8月28日公布的...公告以及发行人的书面说明，发行人两年行业监管评级均为A级”。\nC. 正确。根据【text02 P105】，“截至2024年末，上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求的条款”。\nD. 错误。根据【text02 P104】，“根据《融资租赁公司监督管理暂行办"
+ },
+ "fc_b_007": {
+  "source_run": "b_slim28",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   3621,
+   344
+  ],
+  "evidence_ids": [
+   "text04#c50",
+   "text04#c51",
+   "text04#c52",
+   "text04#c280",
+   "text04#c321",
+   "text04#c331",
+   "text05#c7",
+   "text05#c17",
+   "text05#c40",
+   "text05#c41",
+   "text05#c48",
+   "text05#c49",
+   "text05#c340",
+   "text05#c363",
+   "text11#c33",
+   "text11#c47",
+   "text11#c78",
+   "text11#c208"
+  ],
+  "final": "BC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 选项表述与各文件原文关于“募投项目新增产能消化风险”的内容一致。\n分析:\nA. 安克创新在text04 P46提及的是“募投项目拟研发产品产业化落地风险”，主要涉及认证周期和业务周期，并未使用“新增产能消化风险”这一标题或相关量化数据描述，且其募投项目多为研发及运营中心，与传统的产能消化概念不同。该选项称“提到了募投项目新增产能消化风险”与原文标题及内容不符。\nB. 本川智能在text05 P45明确披露：“2024 年下半年以来，公司开拓的新客户合作后预计年销售额合计约40,500万元……上述40,500 万元客户采购意向涉及领域与本次募投项目产品主要面向领域的相关性较高。”表述完全一致。\nC. 普联软件在text11 P43列举的募投项目风险包括“项目不能顺利组织实施的风险”和“募集资金投资项目新增折旧摊销影响公司盈利的风险”，确实未提及“新增产能消化风险”。结合其募投项目为软件研发类（如text11 P74提到的数字化、软件等），不涉及传统制造业产能，该归纳符合原文事实。\nD. 安克创新的募投项目虽包含“仓储智能化升级项目”（text04 P270"
+ },
+ "fc_b_008": {
+  "source_run": "b_slim11",
+  "answer": [
+   "ABC"
+  ],
+  "source_tokens": [
+   3080,
+   623
+  ],
+  "evidence_ids": [
+   "text02#c2",
+   "text02#c13",
+   "text02#c16",
+   "text02#c20",
+   "text02#c32",
+   "text02#c58",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c131",
+   "text02#c196",
+   "text02#c226",
+   "text03#c94",
+   "text03#c155",
+   "text03#c173",
+   "text03#c194",
+   "text03#c230",
+   "text04#c5",
+   "text04#c152",
+   "text04#c179",
+   "text04#c331",
+   "text04#c336",
+   "text05#c226",
+   "text05#c262",
+   "text05#c340",
+   "text05#c401",
+   "text11#c159",
+   "text11#c160",
+   "text11#c208",
+   "text11#c262"
+  ],
+  "final": "ABC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析:\nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022-2025年9月末分别为119.28%、107.81%、100.42%、90.79%，均超过50%的监管要求，且文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024年11月27日及2025年8月28日公布的...公告以及发行人的书面说明，发行人两年行业监管评级均为A级”。\nC. 正确。根据【text02 P105】，“截至2024年末，上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求的条款”。\nD. 错误。根据【text02 P104】，“根据《融资租赁公司监督管理暂行办"
+ },
+ "fc_b_009": {
+  "source_run": "b_slim28",
+  "answer": [
+   "ABD"
+  ],
+  "source_tokens": [
+   3621,
+   344
+  ],
+  "evidence_ids": [
+   "text04#c50",
+   "text04#c51",
+   "text04#c52",
+   "text04#c280",
+   "text04#c321",
+   "text04#c331",
+   "text05#c7",
+   "text05#c17",
+   "text05#c40",
+   "text05#c41",
+   "text05#c48",
+   "text05#c49",
+   "text05#c340",
+   "text05#c363",
+   "text11#c33",
+   "text11#c47",
+   "text11#c78",
+   "text11#c208"
+  ],
+  "final": "ABD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 选项表述与各文件原文关于“募投项目新增产能消化风险”的内容一致。\n分析:\nA. 安克创新在text04 P46提及的是“募投项目拟研发产品产业化落地风险”，主要涉及认证周期和业务周期，并未使用“新增产能消化风险”这一标题或相关量化数据描述，且其募投项目多为研发及运营中心，与传统的产能消化概念不同。该选项称“提到了募投项目新增产能消化风险”与原文标题及内容不符。\nB. 本川智能在text05 P45明确披露：“2024 年下半年以来，公司开拓的新客户合作后预计年销售额合计约40,500万元……上述40,500 万元客户采购意向涉及领域与本次募投项目产品主要面向领域的相关性较高。”表述完全一致。\nC. 普联软件在text11 P43列举的募投项目风险包括“项目不能顺利组织实施的风险”和“募集资金投资项目新增折旧摊销影响公司盈利的风险”，确实未提及“新增产能消化风险”。结合其募投项目为软件研发类（如text11 P74提到的数字化、软件等），不涉及传统制造业产能，该归纳符合原文事实。\nD. 安克创新的募投项目虽包含“仓储智能化升级项目”（text04 P270"
+ },
+ "fc_b_010": {
+  "source_run": "b_slim19",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   3209,
+   443
+  ],
+  "evidence_ids": [
+   "text01#c185",
+   "text01#c199",
+   "text01#c231",
+   "text02#c16",
+   "text02#c26",
+   "text02#c30",
+   "text02#c32",
+   "text02#c34",
+   "text02#c38",
+   "text02#c49",
+   "text02#c50",
+   "text02#c53",
+   "text02#c55",
+   "text02#c57",
+   "text02#c63",
+   "text02#c97",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c171",
+   "text02#c195",
+   "text02#c196",
+   "text02#c197",
+   "text02#c207",
+   "text02#c209",
+   "text02#c210",
+   "text02#c212",
+   "text02#c223",
+   "text02#c239",
+   "text06#c31"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析: \nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022年末为119.28%，2023年末为107.81%，2024年末为100.42%，2025年9月末为90.79%，均超过50%的监管要求。文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024 年11 月27 日及2025 年8 月28 日公布的...发行人两年行业监管评级均为A 级”。\nC. 正确。根据【text02 P105】，发行人主营业务所属行业中航运金融、物流运输、能化冶金、绿色新能源行业占比较大，截至2024年末上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求"
+ },
+ "fc_b_011": {
+  "source_run": "b_mPilot2",
+  "answer": [
+   "ABC"
+  ],
+  "source_tokens": [
+   1676,
+   1069
+  ],
+  "evidence_ids": [
+   "text02#c2",
+   "text02#c13",
+   "text02#c16",
+   "text02#c20",
+   "text02#c32",
+   "text02#c58",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c131",
+   "text02#c196",
+   "text02#c226",
+   "text03#c94",
+   "text03#c155",
+   "text03#c173",
+   "text03#c194",
+   "text03#c230",
+   "text04#c5",
+   "text04#c152",
+   "text04#c179",
+   "text04#c331",
+   "text04#c336",
+   "text05#c226",
+   "text05#c262",
+   "text05#c340",
+   "text05#c401",
+   "text11#c159",
+   "text11#c160",
+   "text11#c208",
+   "text11#c262"
+  ],
+  "final": "ABC",
+  "solve_excerpt": "根据记忆包逐项分析：\n- A项：2025年末资产负债率（扣除代理款）为64.00%，流动比率为1.83，与记忆包A一致，正确。\n- B项：2024年末资产负债率（扣除代理款）为62.47%，流动比率为1.95，与记忆包B一致，正确。\n- C项：2023年末资产负债率（扣除代理款）为66.27%，流动比率为1.91，与记忆包C一致，正确。\n- D项：2023年末数据与记忆包C及记忆包D中明确指出的实际数据不符，错误。\n\n答案:ABC"
+ },
+ "fc_b_012": {
+  "source_run": "b_slim11",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   2108,
+   798
+  ],
+  "evidence_ids": [
+   "text04#c53",
+   "text04#c331",
+   "text06#c5",
+   "text06#c25",
+   "text06#c28",
+   "text06#c31",
+   "text06#c32",
+   "text06#c33",
+   "text06#c34",
+   "text06#c48",
+   "text06#c95",
+   "text06#c296",
+   "text07#c3",
+   "text07#c14",
+   "text08#c47",
+   "text08#c446",
+   "text09#c33",
+   "text09#c35",
+   "text09#c51",
+   "text09#c196",
+   "text10#c325",
+   "text10#c421",
+   "text12#c113",
+   "text12#c119",
+   "text13#c6",
+   "text13#c88",
+   "text14#c160",
+   "text14#c210",
+   "text14#c217"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 选出关于鼎捷数智可转债发行条款描述正确的选项。\n分析:\nA. 正确。根据【text06 P29】“7、转股价格的确定及其调整”中“（1）初始转股价格的确定依据”，原文为：“本次发行的可转换公司债券的初始转股价格不低于募集说明书公告日前二十个交易日公司股票交易均价和前一个交易日公司股票交易均价”。\nB. 正确。根据【text06 P30】“（4）转股价格向下修正条款”中“①修正权限与修正幅度”，原文为：“上述方案须经出席会议的股东所持表决权的三分之二以上通过方可实施。”\nC. 错误。根据【text06 P31】“8、赎回条款”中“（1）到期赎回条款”，原文为：“具体赎回价格将提请股东大会授权董事会在本次发行前根据发行时市场情况与保荐机构（主承销商）协商确定。”选项称“无需股东大会授权”与原文矛盾。\nD. 正确。根据【text06 P32】“9、回售条款”中“（1）有条件回售条款”，原文提到：“本次发行的可转债最后两个计息年度...可转债持有人在每年回售条件首次满足后可按上述约定条件行使回售权一次...该计息年度不应再行使回售权，可转债持有人不能多次行使部分"
+ },
+ "fc_b_013": {
+  "source_run": "b_slim11",
+  "answer": [
+   "A"
+  ],
+  "source_tokens": [
+   2108,
+   798
+  ],
+  "evidence_ids": [
+   "text04#c53",
+   "text04#c331",
+   "text06#c5",
+   "text06#c25",
+   "text06#c28",
+   "text06#c31",
+   "text06#c32",
+   "text06#c33",
+   "text06#c34",
+   "text06#c48",
+   "text06#c95",
+   "text06#c296",
+   "text07#c3",
+   "text07#c14",
+   "text08#c47",
+   "text08#c446",
+   "text09#c33",
+   "text09#c35",
+   "text09#c51",
+   "text09#c196",
+   "text10#c325",
+   "text10#c421",
+   "text12#c113",
+   "text12#c119",
+   "text13#c6",
+   "text13#c88",
+   "text14#c160",
+   "text14#c210",
+   "text14#c217"
+  ],
+  "final": "A",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 选出关于鼎捷数智可转债发行条款描述正确的选项。\n分析:\nA. 正确。根据【text06 P29】“7、转股价格的确定及其调整”中“（1）初始转股价格的确定依据”，原文为：“本次发行的可转换公司债券的初始转股价格不低于募集说明书公告日前二十个交易日公司股票交易均价和前一个交易日公司股票交易均价”。\nB. 正确。根据【text06 P30】“（4）转股价格向下修正条款”中“①修正权限与修正幅度”，原文为：“上述方案须经出席会议的股东所持表决权的三分之二以上通过方可实施。”\nC. 错误。根据【text06 P31】“8、赎回条款”中“（1）到期赎回条款”，原文为：“具体赎回价格将提请股东大会授权董事会在本次发行前根据发行时市场情况与保荐机构（主承销商）协商确定。”选项称“无需股东大会授权”与原文矛盾。\nD. 正确。根据【text06 P32】“9、回售条款”中“（1）有条件回售条款”，原文提到：“本次发行的可转债最后两个计息年度...可转债持有人在每年回售条件首次满足后可按上述约定条件行使回售权一次...该计息年度不应再行使回售权，可转债持有人不能多次行使部分"
+ },
+ "fc_b_014": {
+  "source_run": "b_slim26",
+  "answer": [
+   "14.41"
+  ],
+  "source_tokens": [
+   2679,
+   1104
+  ],
+  "evidence_ids": [
+   "text01#c195",
+   "text14#c115",
+   "text14#c183"
+  ],
+  "final": "14.41",
+  "a1": "14.41",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 2025年度归属于母公司所有者的净利润：17.54亿元（来源：text14 P112，西部证券，主要财务数据及财务指标）\n2. 2024年度归属于母公司所有者的净利润：14.03亿元（来源：text14 P112，西部证券，主要财务数据及财务指标）\n3. 2023年度归属于母公司所有者的净利润：11.66亿元（来源：text14 P112，西部证券，主要财务数据及财务指标）\n\n第二步【计算】：\n平均值 = (17.54 + 14.03 + 11.66) / 3 = 43.23 / 3 = 14.41（亿元）\n\n答案: 14.41"
+ },
+ "fc_b_015": {
+  "source_run": "b_slim19",
+  "answer": [
+   "CD"
+  ],
+  "source_tokens": [
+   3209,
+   443
+  ],
+  "evidence_ids": [
+   "text01#c185",
+   "text01#c199",
+   "text01#c231",
+   "text02#c16",
+   "text02#c26",
+   "text02#c30",
+   "text02#c32",
+   "text02#c34",
+   "text02#c38",
+   "text02#c49",
+   "text02#c50",
+   "text02#c53",
+   "text02#c55",
+   "text02#c57",
+   "text02#c63",
+   "text02#c97",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c171",
+   "text02#c195",
+   "text02#c196",
+   "text02#c197",
+   "text02#c207",
+   "text02#c209",
+   "text02#c210",
+   "text02#c212",
+   "text02#c223",
+   "text02#c239",
+   "text06#c31"
+  ],
+  "final": "CD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析: \nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022年末为119.28%，2023年末为107.81%，2024年末为100.42%，2025年9月末为90.79%，均超过50%的监管要求。文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024 年11 月27 日及2025 年8 月28 日公布的...发行人两年行业监管评级均为A 级”。\nC. 正确。根据【text02 P105】，发行人主营业务所属行业中航运金融、物流运输、能化冶金、绿色新能源行业占比较大，截至2024年末上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求"
+ },
+ "fc_b_016": {
+  "source_run": "b_mPilot2",
+  "answer": [
+   "C"
+  ],
+  "source_tokens": [
+   1369,
+   777
+  ],
+  "evidence_ids": [
+   "text01#c34",
+   "text01#c185",
+   "text01#c186",
+   "text12#c16",
+   "text12#c17",
+   "text12#c18",
+   "text12#c34",
+   "text12#c37",
+   "text12#c54",
+   "text12#c60",
+   "text12#c64",
+   "text12#c119",
+   "text13#c6",
+   "text13#c88"
+  ],
+  "final": "C",
+  "solve_excerpt": "根据记忆包内容逐项判断：\n- A项（800亿元）明确用于铁路建设项目，与题干“债务结构调整”不符。\n- B项（250亿元）明确用于装备购置，与题干不符。\n- C项（1950亿元）明确标注“用于债务结构调整”，与题干要求完全一致。\n- D项（3000亿元）为本次债券募集资金总额，并非专项用于债务结构调整的金额。\n\n严格依据记忆包证据，唯一正确选项为C。\n\n答案:C"
+ },
+ "fc_b_017": {
+  "source_run": "b_slim19",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   3209,
+   443
+  ],
+  "evidence_ids": [
+   "text01#c185",
+   "text01#c199",
+   "text01#c231",
+   "text02#c16",
+   "text02#c26",
+   "text02#c30",
+   "text02#c32",
+   "text02#c34",
+   "text02#c38",
+   "text02#c49",
+   "text02#c50",
+   "text02#c53",
+   "text02#c55",
+   "text02#c57",
+   "text02#c63",
+   "text02#c97",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c171",
+   "text02#c195",
+   "text02#c196",
+   "text02#c197",
+   "text02#c207",
+   "text02#c209",
+   "text02#c210",
+   "text02#c212",
+   "text02#c223",
+   "text02#c239",
+   "text06#c31"
+  ],
+  "final": "BC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析: \nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022年末为119.28%，2023年末为107.81%，2024年末为100.42%，2025年9月末为90.79%，均超过50%的监管要求。文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024 年11 月27 日及2025 年8 月28 日公布的...发行人两年行业监管评级均为A 级”。\nC. 正确。根据【text02 P105】，发行人主营业务所属行业中航运金融、物流运输、能化冶金、绿色新能源行业占比较大，截至2024年末上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求"
+ },
+ "fc_b_018": {
+  "source_run": "b_slim11",
+  "answer": [
+   "ABD"
+  ],
+  "source_tokens": [
+   2108,
+   798
+  ],
+  "evidence_ids": [
+   "text04#c53",
+   "text04#c331",
+   "text06#c5",
+   "text06#c25",
+   "text06#c28",
+   "text06#c31",
+   "text06#c32",
+   "text06#c33",
+   "text06#c34",
+   "text06#c48",
+   "text06#c95",
+   "text06#c296",
+   "text07#c3",
+   "text07#c14",
+   "text08#c47",
+   "text08#c446",
+   "text09#c33",
+   "text09#c35",
+   "text09#c51",
+   "text09#c196",
+   "text10#c325",
+   "text10#c421",
+   "text12#c113",
+   "text12#c119",
+   "text13#c6",
+   "text13#c88",
+   "text14#c160",
+   "text14#c210",
+   "text14#c217"
+  ],
+  "final": "ABD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 选出关于鼎捷数智可转债发行条款描述正确的选项。\n分析:\nA. 正确。根据【text06 P29】“7、转股价格的确定及其调整”中“（1）初始转股价格的确定依据”，原文为：“本次发行的可转换公司债券的初始转股价格不低于募集说明书公告日前二十个交易日公司股票交易均价和前一个交易日公司股票交易均价”。\nB. 正确。根据【text06 P30】“（4）转股价格向下修正条款”中“①修正权限与修正幅度”，原文为：“上述方案须经出席会议的股东所持表决权的三分之二以上通过方可实施。”\nC. 错误。根据【text06 P31】“8、赎回条款”中“（1）到期赎回条款”，原文为：“具体赎回价格将提请股东大会授权董事会在本次发行前根据发行时市场情况与保荐机构（主承销商）协商确定。”选项称“无需股东大会授权”与原文矛盾。\nD. 正确。根据【text06 P32】“9、回售条款”中“（1）有条件回售条款”，原文提到：“本次发行的可转债最后两个计息年度...可转债持有人在每年回售条件首次满足后可按上述约定条件行使回售权一次...该计息年度不应再行使回售权，可转债持有人不能多次行使部分"
+ },
+ "fc_b_019": {
+  "source_run": "b_slim11",
+  "answer": [
+   "ABCD"
+  ],
+  "source_tokens": [
+   3080,
+   623
+  ],
+  "evidence_ids": [
+   "text02#c2",
+   "text02#c13",
+   "text02#c16",
+   "text02#c20",
+   "text02#c32",
+   "text02#c58",
+   "text02#c103",
+   "text02#c107",
+   "text02#c108",
+   "text02#c131",
+   "text02#c196",
+   "text02#c226",
+   "text03#c94",
+   "text03#c155",
+   "text03#c173",
+   "text03#c194",
+   "text03#c230",
+   "text04#c5",
+   "text04#c152",
+   "text04#c179",
+   "text04#c331",
+   "text04#c336",
+   "text05#c226",
+   "text05#c262",
+   "text05#c340",
+   "text05#c401",
+   "text11#c159",
+   "text11#c160",
+   "text11#c208",
+   "text11#c262"
+  ],
+  "final": "ABCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书》，判断关于发行人集中度指标不符合监管要求情况的描述是否正确。\n分析:\nA. 正确。根据【text02 P104】表格及文字说明，“对单一集团的全部融资租赁业务余额占净资产的比例”在2022-2025年9月末分别为119.28%、107.81%、100.42%、90.79%，均超过50%的监管要求，且文中明确指出“发行人近三年及一期对单一集团的全部融资租赁业务余额超过净资产50%的要求”。\nB. 正确。根据【text02 P105】，“根据深圳市地方金融管理局于2024年11月27日及2025年8月28日公布的...公告以及发行人的书面说明，发行人两年行业监管评级均为A级”。\nC. 正确。根据【text02 P105】，“截至2024年末，上述行业租赁资产占租赁资产总额84.17%，超过80%，适用《广东省融资租赁公司监督管理实施细则》关于适当放宽集中度关联度要求的条款”。\nD. 错误。根据【text02 P104】，“根据《融资租赁公司监督管理暂行办"
+ },
+ "fc_b_020": {
+  "source_run": "b_slim11",
+  "answer": [
+   "2.30"
+  ],
+  "source_tokens": [
+   1733,
+   1320
+  ],
+  "evidence_ids": [
+   "text10#c289",
+   "text12#c74"
+  ],
+  "final": "2.30",
+  "a1": "2.30",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 长安银行股份有限公司股东全部权益价值评估值：1,298,036.10 万元（来源：text12 P71，评估基准日2017年12月31日）\n2. 长安银行股份有限公司总股本数：564,141.7298 万股（来源：题目已知，注册资本564,141.7298万元即总股本数，单位万股）\n\n第二步【计算】：\n每股净资产评估值 = 股东全部权益评估值 / 总股本数\n= 1,298,036.10 万元 / 564,141.7298 万股\n= 2.30108... 元/股\n保留两位小数为：2.30\n\n答案: 2.30"
+ },
+ "fin_b_001": {
+  "source_run": "b_slim20",
+  "answer": [
+   "ACD"
+  ],
+  "source_tokens": [
+   3927,
+   515
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c30",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c96",
+   "annual_byd_2024_report#c162",
+   "annual_byd_2024_report#c195",
+   "annual_byd_2024_report#c196",
+   "annual_byd_2024_report#c240",
+   "annual_byd_2024_report#c297",
+   "annual_byd_2024_report#c316",
+   "annual_byd_2024_report#c330",
+   "annual_byd_2025_report#c34",
+   "annual_byd_2025_report#c45",
+   "annual_byd_2025_report#c53",
+   "annual_byd_2025_report#c73",
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c165",
+   "annual_byd_2025_report#c189",
+   "annual_byd_2025_report#c267",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c122",
+   "annual_catl_2024_report#c124",
+   "annual_catl_2024_report#c188",
+   "annual_catl_2024_report#c245",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c39",
+   "annual_catl_2025_report#c114"
+  ],
+  "final": "ACD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 基于比亚迪2024/2025年报分地区营收数据，判断选项描述是否正确。\n分析:\nA: 2025年境外占比38.65%，2024年28.55%，38.65-28.55=10.10个百分点，正确。\nB: 相对增幅=(38.65-28.55)/28.55=35.38%，非10.10%，错误。\nC: 2025境外收入增加额=310,740,988,000-221,884,773,000=88,856,215,000；中国收入减少额=555,217,682,000-493,223,970,000=61,993,712,000。增加额大于减少额，正确。\nD: 增加额-减少额=88,856,215,000-61,993,712,000=26,862,503,000；营业收入增加额=803,964,958,000-777,102,455,000=26,862,503,000。两者一致，正确。\n判断: A入选 B不选 C入选 D入选\n答案: ACD\n\n【第2题 答案块】\n选择标准: 比较比亚迪、宁德时代、美的集团2024/2025年资产负债率、流动比率、速动比率。\n分析:"
+ },
+ "fin_b_002": {
+  "source_run": "b_slim20",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   3927,
+   515
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c30",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c96",
+   "annual_byd_2024_report#c162",
+   "annual_byd_2024_report#c195",
+   "annual_byd_2024_report#c196",
+   "annual_byd_2024_report#c240",
+   "annual_byd_2024_report#c297",
+   "annual_byd_2024_report#c316",
+   "annual_byd_2024_report#c330",
+   "annual_byd_2025_report#c34",
+   "annual_byd_2025_report#c45",
+   "annual_byd_2025_report#c53",
+   "annual_byd_2025_report#c73",
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c165",
+   "annual_byd_2025_report#c189",
+   "annual_byd_2025_report#c267",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c122",
+   "annual_catl_2024_report#c124",
+   "annual_catl_2024_report#c188",
+   "annual_catl_2024_report#c245",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c39",
+   "annual_catl_2025_report#c114"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 基于比亚迪2024/2025年报分地区营收数据，判断选项描述是否正确。\n分析:\nA: 2025年境外占比38.65%，2024年28.55%，38.65-28.55=10.10个百分点，正确。\nB: 相对增幅=(38.65-28.55)/28.55=35.38%，非10.10%，错误。\nC: 2025境外收入增加额=310,740,988,000-221,884,773,000=88,856,215,000；中国收入减少额=555,217,682,000-493,223,970,000=61,993,712,000。增加额大于减少额，正确。\nD: 增加额-减少额=88,856,215,000-61,993,712,000=26,862,503,000；营业收入增加额=803,964,958,000-777,102,455,000=26,862,503,000。两者一致，正确。\n判断: A入选 B不选 C入选 D入选\n答案: ACD\n\n【第2题 答案块】\n选择标准: 比较比亚迪、宁德时代、美的集团2024/2025年资产负债率、流动比率、速动比率。\n分析:"
+ },
+ "fin_b_003": {
+  "source_run": "b_slim14",
+  "answer": [
+   "ABCD"
+  ],
+  "source_tokens": [
+   3919,
+   608
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c30",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c96",
+   "annual_byd_2024_report#c162",
+   "annual_byd_2024_report#c195",
+   "annual_byd_2024_report#c196",
+   "annual_byd_2024_report#c240",
+   "annual_byd_2024_report#c297",
+   "annual_byd_2024_report#c316",
+   "annual_byd_2024_report#c330",
+   "annual_byd_2025_report#c34",
+   "annual_byd_2025_report#c45",
+   "annual_byd_2025_report#c53",
+   "annual_byd_2025_report#c73",
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c165",
+   "annual_byd_2025_report#c189",
+   "annual_byd_2025_report#c267",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c122",
+   "annual_catl_2024_report#c124",
+   "annual_catl_2024_report#c188",
+   "annual_catl_2024_report#c245",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c39",
+   "annual_catl_2025_report#c114"
+  ],
+  "final": "ABCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据比亚迪2024年和2025年年报的分地区营业收入数据，判断各选项表述是否正确。\n分析: \nA. 2025年境外收入占营业收入比重为38.65%，2024年为28.55%，提高10.10个百分点。正确。\nB. 相对增幅为(38.65-28.55)/28.55≈35.38%，非10.10%。错误。\nC. 2025年境外收入增加额=310,740,988,000-221,884,773,000=88,856,215,000；中国收入减少额=555,217,682,000-493,223,970,000=61,993,712,000。境外增加额大于中国减少额。正确。\nD. 境外收入增加额(88,856,215,000)减去中国收入减少额(61,993,712,000)=26,862,503,000。公司营业收入增加额=803,964,958,000-777,102,455,000=26,862,503,000。两者一致。正确。\n判断: A入选, B不选, C入选, D入选\n答案: ACD\n\n【第2题 答案块】\n选择标准: 比较比亚迪、宁德时代和美的集团202"
+ },
+ "fin_b_004": {
+  "source_run": "b_slim20",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   3927,
+   515
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c30",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c96",
+   "annual_byd_2024_report#c162",
+   "annual_byd_2024_report#c195",
+   "annual_byd_2024_report#c196",
+   "annual_byd_2024_report#c240",
+   "annual_byd_2024_report#c297",
+   "annual_byd_2024_report#c316",
+   "annual_byd_2024_report#c330",
+   "annual_byd_2025_report#c34",
+   "annual_byd_2025_report#c45",
+   "annual_byd_2025_report#c53",
+   "annual_byd_2025_report#c73",
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c165",
+   "annual_byd_2025_report#c189",
+   "annual_byd_2025_report#c267",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c122",
+   "annual_catl_2024_report#c124",
+   "annual_catl_2024_report#c188",
+   "annual_catl_2024_report#c245",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c39",
+   "annual_catl_2025_report#c114"
+  ],
+  "final": "AB",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 基于比亚迪2024/2025年报分地区营收数据，判断选项描述是否正确。\n分析:\nA: 2025年境外占比38.65%，2024年28.55%，38.65-28.55=10.10个百分点，正确。\nB: 相对增幅=(38.65-28.55)/28.55=35.38%，非10.10%，错误。\nC: 2025境外收入增加额=310,740,988,000-221,884,773,000=88,856,215,000；中国收入减少额=555,217,682,000-493,223,970,000=61,993,712,000。增加额大于减少额，正确。\nD: 增加额-减少额=88,856,215,000-61,993,712,000=26,862,503,000；营业收入增加额=803,964,958,000-777,102,455,000=26,862,503,000。两者一致，正确。\n判断: A入选 B不选 C入选 D入选\n答案: ACD\n\n【第2题 答案块】\n选择标准: 比较比亚迪、宁德时代、美的集团2024/2025年资产负债率、流动比率、速动比率。\n分析:"
+ },
+ "fin_b_005": {
+  "source_run": "b_slim28",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   5033,
+   665
+  ],
+  "evidence_ids": [
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c62",
+   "annual_catl_2025_report#c63",
+   "annual_catl_2025_report#c111",
+   "annual_catl_2025_report#c115",
+   "annual_catl_2025_report#c118",
+   "annual_catl_2025_report#c203",
+   "annual_catl_2025_report#c233",
+   "annual_catl_2025_report#c242",
+   "annual_chinamobile_2025_report#c1",
+   "annual_chinamobile_2025_report#c7",
+   "annual_chinamobile_2025_report#c22",
+   "annual_chinamobile_2025_report#c47",
+   "annual_chinamobile_2025_report#c79",
+   "annual_chinamobile_2025_report#c94",
+   "annual_chinamobile_2025_report#c95",
+   "annual_chinamobile_2025_report#c136",
+   "annual_chinamobile_2025_report#c200",
+   "annual_chinamobile_2025_report#c219",
+   "annual_cmb_2025_report#c3",
+   "annual_cmb_2025_report#c99",
+   "annual_cmb_2025_report#c154",
+   "annual_cmb_2025_report#c209",
+   "annual_cscec_2024_report#c89",
+   "annual_cscec_2024_report#c91",
+   "annual_cscec_2025_report#c86",
+   "annual_cscec_2025_report#c87",
+   "annual_cscec_2025_report#c89",
+   "annual_midea_2025_report#c20",
+   "annual_midea_2025_report#c84"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据2025年年度报告中的现金分红数据，判断各选项关于每10股全年现金分红的排序、数值及差值是否正确。\n分析: \n- A选项：宁德时代全年每10股分红 = 中期10.07元 + 末期69.57元 = 79.64元（P58、P59）；美的集团全年每10股分红 = 中期5元 + 末期38元 = 43元（P79）；招商银行全年每股2.016元，即每10股20.16元（P4、P101）；中国建筑每10股2.718元（P86）。排序为：宁德时代(79.64) > 美的集团(43) > 招商银行(20.16) > 中国建筑(2.718)，A正确。\n- B选项：美的集团2025年全年每10股现金分红为中期5元+末期38元=43元，而非38元，B错误。\n- C选项：招商银行全年每股现金分红2.016元，等价于每10股20.16元，C正确（P4、P101）。\n- D选项：宁德时代全年每10股79.64元，美的集团全年每10股43元，相差79.64 - 43 = 36.64元，而非26.57元，D错误。\n判断: A入选, B不选, C入选, D不选\n答案: AC\n\n【第2题"
+ },
+ "fin_b_006": {
+  "source_run": "b_mPilot",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   1601,
+   1144
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c30",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c96",
+   "annual_byd_2024_report#c162",
+   "annual_byd_2024_report#c195",
+   "annual_byd_2024_report#c196",
+   "annual_byd_2024_report#c240",
+   "annual_byd_2024_report#c297",
+   "annual_byd_2024_report#c316",
+   "annual_byd_2024_report#c330",
+   "annual_byd_2025_report#c34",
+   "annual_byd_2025_report#c45",
+   "annual_byd_2025_report#c53",
+   "annual_byd_2025_report#c73",
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c165",
+   "annual_byd_2025_report#c189",
+   "annual_byd_2025_report#c267",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c122",
+   "annual_catl_2024_report#c124",
+   "annual_catl_2024_report#c188",
+   "annual_catl_2024_report#c245",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c39",
+   "annual_catl_2025_report#c114"
+  ],
+  "final": "BC",
+  "solve_excerpt": "根据记忆包逐项分析：\n\n*   **A 选项**：记忆包明确指出“不良贷款率……变动为‘下降0.01个百分点’。选项称‘相对降幅为0.01%'，表述混淆绝对值与相对值”。因此该选项判断错误，不选。\n*   **B 选项**：记忆包指出“拨备覆盖率……本年比上年增减‘下降20.19个百分点’\"。选项表述与记忆包一致，判断正确，**选**。\n*   **C 选项**：记忆包指出“较2024年下降14.86-14.16=0.70个百分点。较2023年高14.16-13.73=0.43个百分点”。选项表述与记忆包计算一致，判断正确，**选**。\n*   **D 选项**：记忆包指出“三项并非均改善”（拨备覆盖率和核心一级资本充足率均下降）。因此该选项判断错误，不选。\n\n答案:BC"
+ },
+ "fin_b_007": {
+  "source_run": "b_slim7",
+  "answer": [
+   "ABD"
+  ],
+  "source_tokens": [
+   5005,
+   1047
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c297",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c242",
+   "annual_chinamobile_2025_report#c7",
+   "annual_chinamobile_2025_report#c11",
+   "annual_chinamobile_2025_report#c12",
+   "annual_chinamobile_2025_report#c20",
+   "annual_chinamobile_2025_report#c21",
+   "annual_chinamobile_2025_report#c22",
+   "annual_chinamobile_2025_report#c24",
+   "annual_chinamobile_2025_report#c219",
+   "annual_cmb_2025_report#c197",
+   "annual_cmb_2025_report#c315",
+   "annual_midea_2024_report#c56",
+   "annual_midea_2024_report#c315",
+   "annual_midea_2025_report#c59",
+   "annual_midea_2025_report#c296"
+  ],
+  "final": "ABD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据中国移动2025年年报的2023-2025年数据判断选项正误。\n分析: \nA: 根据P8表格，EBITDA率2023年33.8%，2024年32.1%，2025年32.3%。2024年较2023年下降1.7个百分点，2025年较2024年上升0.2个百分点。选项称“在2024年下降后于2025年回升0.2个百分点”符合数据。A入选。\nB: 根据P8表格，2025年基本每股收益6.35元，2024年6.45元，减少0.10元；扣除非经常性损益后的基本每股收益2025年5.92元，2024年5.72元，增加0.20元。B入选。\nC: 根据P8表格，经营活动产生的现金流量净额2025年232,919，2024年315,741，变化为-26.2%。选项称降幅约82.82%错误。C不选。\nD: 根据P8表格，加权平均净资产收益率2025年9.9%，2024年10.4%，变化为-0.5pp（下降0.5个百分点）。D入选。\n判断: A入选，B入选，C不选，D入选\n答案: ABD\n\n【第2题 答案块】\n选择标准: 根据招商银行2025年年报中的不良贷款率、拨备覆盖率"
+ },
+ "fin_b_008": {
+  "source_run": "b_mPilot2",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   1760,
+   1146
+  ],
+  "evidence_ids": [
+   "annual_catl_2025_report#c11",
+   "annual_catl_2025_report#c16",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c62",
+   "annual_catl_2025_report#c63",
+   "annual_catl_2025_report#c111",
+   "annual_catl_2025_report#c118",
+   "annual_catl_2025_report#c128",
+   "annual_catl_2025_report#c203",
+   "annual_catl_2025_report#c242",
+   "annual_chinamobile_2025_report#c22",
+   "annual_chinamobile_2025_report#c200",
+   "annual_chinamobile_2025_report#c219",
+   "annual_cmb_2025_report#c154",
+   "annual_cmb_2025_report#c197",
+   "annual_cmb_2025_report#c305",
+   "annual_cmb_2025_report#c315",
+   "annual_cscec_2024_report#c26",
+   "annual_cscec_2024_report#c91",
+   "annual_cscec_2024_report#c319",
+   "annual_cscec_2024_report#c368",
+   "annual_cscec_2025_report#c30",
+   "annual_cscec_2025_report#c89",
+   "annual_cscec_2025_report#c299",
+   "annual_cscec_2025_report#c342",
+   "annual_midea_2024_report#c56",
+   "annual_midea_2024_report#c88",
+   "annual_midea_2024_report#c272",
+   "annual_midea_2024_report#c315"
+  ],
+  "final": "AC",
+  "solve_excerpt": "根据记忆包逐项判断：\n- **A选项**：记忆包A显示，2024年现金分红占归母净利润比例为24.29%，2025年为28.75%，两者相差4.46个百分点，且2025年比例提高，故A正确。\n- **B选项**：记忆包B显示，2025年经营活动产生的现金流量净额占营业收入的比例约为0.986%，小于1%，故“超过1%”错误，B不正确。\n- **C选项**：记忆包C显示，2025年基本每股收益降幅约为15.32%，归母净利润降幅约为15.41%，两者数值接近，故C正确。\n- **D选项**：记忆包D显示，2025年归母净利润减少额为7,118,097千元，经营活动现金流量净额增加额为4,763,597千元。前者大于后者，故“小于”错误，D不正确。\n\n答案:AC"
+ },
+ "fin_b_009": {
+  "source_run": "b_slim15",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   3919,
+   560
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c30",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c96",
+   "annual_byd_2024_report#c162",
+   "annual_byd_2024_report#c195",
+   "annual_byd_2024_report#c196",
+   "annual_byd_2024_report#c240",
+   "annual_byd_2024_report#c297",
+   "annual_byd_2024_report#c316",
+   "annual_byd_2024_report#c330",
+   "annual_byd_2025_report#c34",
+   "annual_byd_2025_report#c45",
+   "annual_byd_2025_report#c53",
+   "annual_byd_2025_report#c73",
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c165",
+   "annual_byd_2025_report#c189",
+   "annual_byd_2025_report#c267",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c122",
+   "annual_catl_2024_report#c124",
+   "annual_catl_2024_report#c188",
+   "annual_catl_2024_report#c245",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c39",
+   "annual_catl_2025_report#c114"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于比亚迪2024、2025年分地区营业收入比重、增幅及增减额关系的描述是否正确。\n分析: \nA. 2025年境外收入占比38.65%，2024年28.55%（annual_byd_2025_report P29）。提高38.65-28.55=10.10个百分点。正确。\nB. 相对增幅=(38.65-28.55)/28.55=10.10/28.55≈35.38%，不是10.10%。错误。\nC. 2025年境外收入增加额=310,740,988,000-221,884,773,000=88,856,215,000。中国收入减少额=555,217,682,000-493,223,970,000=61,993,712,000。增加额大于减少额。正确。\nD. 境外增加额-中国减少额=88,856,215,000-61,993,712,000=26,862,503,000。营业收入增加额=803,964,958,000-777,102,455,000=26,862,503,000。基本一致。正确。\n判断: A入选 B不选 C入选 D入选\n答案: ACD\n\n【第"
+ },
+ "fin_b_010": {
+  "source_run": "b_slim20",
+  "answer": [
+   "AD"
+  ],
+  "source_tokens": [
+   3927,
+   515
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c30",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c96",
+   "annual_byd_2024_report#c162",
+   "annual_byd_2024_report#c195",
+   "annual_byd_2024_report#c196",
+   "annual_byd_2024_report#c240",
+   "annual_byd_2024_report#c297",
+   "annual_byd_2024_report#c316",
+   "annual_byd_2024_report#c330",
+   "annual_byd_2025_report#c34",
+   "annual_byd_2025_report#c45",
+   "annual_byd_2025_report#c53",
+   "annual_byd_2025_report#c73",
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c165",
+   "annual_byd_2025_report#c189",
+   "annual_byd_2025_report#c267",
+   "annual_catl_2024_report#c25",
+   "annual_catl_2024_report#c122",
+   "annual_catl_2024_report#c124",
+   "annual_catl_2024_report#c188",
+   "annual_catl_2024_report#c245",
+   "annual_catl_2024_report#c261",
+   "annual_catl_2025_report#c26",
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c39",
+   "annual_catl_2025_report#c114"
+  ],
+  "final": "AD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 基于比亚迪2024/2025年报分地区营收数据，判断选项描述是否正确。\n分析:\nA: 2025年境外占比38.65%，2024年28.55%，38.65-28.55=10.10个百分点，正确。\nB: 相对增幅=(38.65-28.55)/28.55=35.38%，非10.10%，错误。\nC: 2025境外收入增加额=310,740,988,000-221,884,773,000=88,856,215,000；中国收入减少额=555,217,682,000-493,223,970,000=61,993,712,000。增加额大于减少额，正确。\nD: 增加额-减少额=88,856,215,000-61,993,712,000=26,862,503,000；营业收入增加额=803,964,958,000-777,102,455,000=26,862,503,000。两者一致，正确。\n判断: A入选 B不选 C入选 D入选\n答案: ACD\n\n【第2题 答案块】\n选择标准: 比较比亚迪、宁德时代、美的集团2024/2025年资产负债率、流动比率、速动比率。\n分析:"
+ },
+ "fin_b_011": {
+  "source_run": "b_mPilot",
+  "answer": [
+   "ABC"
+  ],
+  "source_tokens": [
+   1652,
+   1173
+  ],
+  "evidence_ids": [
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c62",
+   "annual_catl_2025_report#c63",
+   "annual_catl_2025_report#c111",
+   "annual_catl_2025_report#c115",
+   "annual_catl_2025_report#c118",
+   "annual_catl_2025_report#c203",
+   "annual_catl_2025_report#c233",
+   "annual_catl_2025_report#c242",
+   "annual_chinamobile_2025_report#c1",
+   "annual_chinamobile_2025_report#c7",
+   "annual_chinamobile_2025_report#c22",
+   "annual_chinamobile_2025_report#c47",
+   "annual_chinamobile_2025_report#c79",
+   "annual_chinamobile_2025_report#c94",
+   "annual_chinamobile_2025_report#c95",
+   "annual_chinamobile_2025_report#c136",
+   "annual_chinamobile_2025_report#c200",
+   "annual_chinamobile_2025_report#c219",
+   "annual_cmb_2025_report#c3",
+   "annual_cmb_2025_report#c99",
+   "annual_cmb_2025_report#c154",
+   "annual_cmb_2025_report#c209",
+   "annual_cscec_2024_report#c89",
+   "annual_cscec_2024_report#c91",
+   "annual_cscec_2025_report#c86",
+   "annual_cscec_2025_report#c87",
+   "annual_cscec_2025_report#c89",
+   "annual_midea_2025_report#c20",
+   "annual_midea_2025_report#c84"
+  ],
+  "final": "ABC",
+  "solve_excerpt": "根据提供的记忆包逐项判断如下：\nA. 正确。记忆包A显示中国移动EBITDA 338,931百万元，营收1,050,187百万元，计算得338,931/1,050,187≈32.27%，与披露的32.3%基本一致，选项A描述正确。\nB. 正确。记忆包B显示中国建筑每10股派息2.718元，总股本约413.2亿股，计算拟派现金红利约为112.31亿元，与年报原文一致，选项B描述正确。\nC. 正确。记忆包C显示招商银行全年每股现金分红2.016元，换算为每10股即20.16元，选项C描述正确。\nD. 错误。记忆包D明确指出美的集团全年合计分红为38+5=43元，选项称48元是错误的。\n\n答案:ABC"
+ },
+ "fin_b_012": {
+  "source_run": "b_slimKing5",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   14411,
+   1928
+  ],
+  "evidence_ids": [
+   "annual_chinamobile_2025_report#c11",
+   "annual_chinamobile_2025_report#c22",
+   "annual_chinamobile_2025_report#c79",
+   "annual_chinamobile_2025_report#c94",
+   "annual_chinamobile_2025_report#c200",
+   "annual_chinamobile_2025_report#c219",
+   "annual_midea_2025_report#c55",
+   "annual_midea_2025_report#c59",
+   "annual_midea_2025_report#c157",
+   "annual_midea_2025_report#c250",
+   "annual_midea_2025_report#c253",
+   "annual_midea_2025_report#c296"
+  ],
+  "solve_excerpt": "选择标准: 选出符合美的集团2025年年度报告中合并报表与母公司报表数据对比及指标归属的正确选项。\n分析: \nA. 合并口径营业收入本期456,451,731千元，上期407,149,600千元，同比增长；公司（母公司）口径本期936,519千元，上期946,607千元，同比下降（P135）。选项描述正确，入选。\nB. 合并口径经营活动产生/(使用)的现金流量净额本期为53,345,930千元（正），公司（母公司）口径本期为(11,628,058)千元（负）（P137）。选项描述正确，入选。\nC. 基本每股收益5.80元/股列示在“合并及公司利润表”及“合并利润表”中，属于合并口径指标（P136, P231），并非母公司单体财务报表指标。选项描述错误，不选。\nD. 母公司（公司）2025年经营活动产生的现金流量净额为(11,628,058)千元，53,345,930千元为合并口径数据（P1",
+  "final": "AB"
+ },
+ "fin_b_013": {
+  "source_run": "b_slim5",
+  "answer": [
+   "40.05",
+   "10.10"
+  ],
+  "source_tokens": [
+   4023,
+   2254
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c29",
+   "annual_byd_2024_report#c197",
+   "annual_byd_2025_report#c34"
+  ],
+  "final": "40.05；10.10",
+  "a1": "40.05；10.10",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 2024年境外收入：221,884,773,000.00元（来源：annual_byd_2024_report P24，营业收入构成-分地区-境外-2024年金额）\n2. 2025年境外收入：310,740,988,000.00元（来源：annual_byd_2025_report P29，营业收入构成-分地区-境外-2025年金额）\n3. 2024年营业收入合计：777,102,455,000.00元（来源：annual_byd_2024_report P24，营业收入构成-营业收入合计-2024年金额）\n4. 2025年营业收入合计：803,964,958,000.00元（来源：annual_byd_2025_report P29，营业收入构成-营业收入合计-2025年金额）\n\n第二步【计算】：\n1. 2025年境外收入同比增幅：\n   算式：(2025年境外收入 - 2024年境外收入) / 2024年境外收入 × 100%\n   计算：(310,740,988,000.00 - 221,884,773,000.00) / 221,884,773,000."
+ },
+ "fin_b_014": {
+  "source_run": "b_slim3b",
+  "answer": [
+   "1.12",
+   "9.82",
+   "8.69"
+  ],
+  "source_tokens": [
+   6267,
+   2786
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c12",
+   "annual_byd_2024_report#c46",
+   "annual_byd_2024_report#c300",
+   "annual_byd_2025_report#c12",
+   "annual_byd_2025_report#c53"
+  ],
+  "final": "1.12；9.82；8.69",
+  "a1": "1.12；9.82；8.69",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n- 2024年营业收入：777,102,455,000.00元（annual_byd_2025_report P11，合并口径）\n- 2025年营业收入：803,964,958,000.00元（annual_byd_2025_report P11，合并口径）\n- 2024年归属于上市公司股东的净利润：40,254,346,000.00元（annual_byd_2025_report P11，合并口径）\n- 2025年归属于上市公司股东的净利润：32,619,022,000.00元（annual_byd_2025_report P11，合并口径）\n- 2024年经营活动产生的现金流量净额：133,453,873,000.00元（annual_byd_2025_report P11，合并口径）\n- 2025年经营活动产生的现金流量净额：59,135,544,000.00元（annual_byd_2025_report P11，合并口径）\n\n第二步【计算】：\n1. 计算归母净利率（归母净利润/营业收入）：\n   2024年归母净利率 = 40,254,346,000.00 "
+ },
+ "fin_b_015": {
+  "source_run": "b_slim2",
+  "answer": [
+   "宁德时代>美的集团",
+   "19.75"
+  ],
+  "source_tokens": [
+   8215,
+   2688
+  ],
+  "evidence_ids": [
+   "annual_catl_2025_report#c31",
+   "annual_catl_2025_report#c129",
+   "annual_midea_2025_report#c58",
+   "annual_midea_2025_report#c59",
+   "annual_midea_2025_report#c149",
+   "annual_midea_2025_report#c188"
+  ],
+  "final": "宁德时代>美的集团；19.75",
+  "a1": "宁德时代>美的集团；19.75",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n- 宁德时代：\n  - 营业收入：423,701,834千元（来源：事实卡(2) P11 / 原文P11，2025年度合并报表口径）\n  - 经营活动产生的现金流量净额：133,219,982千元（来源：事实卡(2) P11 / 原文P30，2025年度合并报表口径）\n- 美的集团：\n  - 营业收入：456,451,731千元（来源：事实卡(2) P9/P10，2025年度合并报表口径）\n  - 经营活动产生的现金流量净额：53,345,930千元（来源：事实卡(2) P9/P10 / 原文P53，2025年度合并报表口径）\n（注：两家公司数据单位均为“千元”，计算比率时单位自然抵消，直接使用原始金额即可）\n\n第二步【计算】：\n- 经营现金流率计算公式：经营现金流率 = (经营活动产生的现金流量净额 ÷ 营业收入) × 100%\n- 宁德时代经营现金流率 = 133,219,982 ÷ 423,701,834 × 100% ≈ 31.44192283%\n- 美的集团经营现金流率 = 53,345,930 ÷ 456,451,731 × 100% ≈ 11.68708"
+ },
+ "fin_b_016": {
+  "source_run": "b_slim12",
+  "answer": [
+   "宁德时代>美的集团>招商银行>中国建筑",
+   "76.92"
+  ],
+  "source_tokens": [
+   4469,
+   1666
+  ],
+  "evidence_ids": [
+   "annual_catl_2025_report#c62",
+   "annual_catl_2025_report#c63",
+   "annual_cmb_2025_report#c154",
+   "annual_cscec_2025_report#c89",
+   "annual_midea_2025_report#c85"
+  ],
+  "final": "宁德时代>美的集团>招商银行>中国建筑；76.92",
+  "a1": "宁德时代>美的集团>招商银行>中国建筑；76.92",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 宁德时代：【annual_catl_2025_report P58】2025 年中期分红方案，“每 10 股派发现金分红人民币 10.07 元（含税）”。\n2. 宁德时代：【annual_catl_2025_report P59】2025 年度利润分配预案，“每10 股派发现金分红69.57 元（含税）”。\n3. 美的集团：【annual_midea_2025_report P79】2025 年度利润分配方案，“公司2025 年度利润分配方案为每10 股派发现金43 元（含税）”。\n4. 招商银行：【annual_cmb_2025_report P101】2025年度利润分配情况表，“每股派息数（含税）（人民币元）”为 2.016 元。\n5. 中国建筑：【annual_cscec_2025_report P88】2025年度利润分配预案，“每10股派息数（元）（含税）”为 2.718 元。\n\n第二步【计算】：\n1. 统一换算为每 10 股全年现金分红：\n- 宁德时代 = 中期 10.07 + 年度 69.57 = 79.64 元/10股\n- 美的集团 = 43."
+ },
+ "fin_b_017": {
+  "source_run": "b_slim13",
+  "answer": [
+   "1049321.98",
+   "0.08"
+  ],
+  "source_tokens": [
+   2151,
+   1518
+  ],
+  "evidence_ids": [
+   "annual_byd_2024_report#c197",
+   "annual_chinamobile_2025_report#c19",
+   "annual_chinamobile_2025_report#c170"
+  ],
+  "final": "1049321.98；0.08",
+  "a1": "1049321.98；0.08",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. EBITDA：338,931（单位：人民币百万元），来源：annual_chinamobile_2025_report P18\n2. EBITDA率：32.3%，来源：annual_chinamobile_2025_report P18\n3. 报告营业收入：1,050,187（单位：人民币百万元），来源：annual_chinamobile_2025_report P18\n\n第二步【计算】：\n1. 隐含营业收入 = EBITDA ÷ 披露的 EBITDA 率\n   隐含营业收入 = 338,931 ÷ 32.3% = 338,931 ÷ 0.323 ≈ 1,049,321.981424...\n   保留两位小数为：1049321.98\n\n2. 绝对相对偏差 = |隐含营业收入 - 报告营业收入| / 报告营业收入 × 100%\n   绝对相对偏差 = |1,049,321.981424 - 1,050,187| / 1,050,187 × 100%\n   绝对相对偏差 = 865.018576 / 1,050,187 × 100% ≈ 0.082368...%\n"
+ },
+ "fin_b_018": {
+  "source_run": "b_slim31",
+  "answer": [
+   "2.58",
+   "7.65"
+  ],
+  "source_tokens": [
+   2131,
+   1481
+  ],
+  "evidence_ids": [
+   "annual_chinamobile_2025_report#c214",
+   "annual_midea_2025_report#c288",
+   "annual_midea_2025_report#c296"
+  ],
+  "final": "2.58；7.65",
+  "a1": "2.58；7.65",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 美的集团2025年资产负债率：61.17%（来源：annual_midea_2025_report P269，十七 资本管理，2025年12月31日）\n2. 美的集团2025年加权平均净资产收益率（归属于公司普通股股东的净利润）：19.70%（来源：annual_midea_2025_report P276，二 净资产收益率及每股收益，2025年度）\n\n第二步【计算】：\n1. 计算权益乘数：\n权益乘数 = 1 ÷ (1 - 资产负债率) = 1 ÷ (1 - 0.6117) = 1 ÷ 0.3883 ≈ 2.5753283543651816\n保留两位小数为 2.58\n\n2. 计算近似资产收益率：\n近似资产收益率 = 净资产收益率 ÷ 权益乘数\n使用原始计算结果（不四舍五入）：0.1970 ÷ 2.5753283543651816 = 0.07649509803921568\n换算为百分比并保留两位小数：7.65%\n按题目要求“不带 %”，结果为 7.65\n\n答案: 2.58；7.65"
+ },
+ "fin_b_019": {
+  "source_run": "b_routerG_qB_finins",
+  "answer": [
+   "比亚迪>宁德时代>美的集团",
+   "0.84"
+  ],
+  "source_tokens": [
+   5356,
+   1769
+  ],
+  "evidence_ids": [
+   "annual_byd_2025_report#c127",
+   "annual_byd_2025_report#c208",
+   "annual_catl_2025_report#c222",
+   "annual_chinamobile_2025_report#c214",
+   "annual_midea_2025_report#c288"
+  ],
+  "final": "比亚迪>宁德时代>美的集团；0.84",
+  "a1": "比亚迪>宁德时代>美的集团；0.84",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. **比亚迪**：根据原文片段【annual_byd_2025_report P91】“实际担保总额（即A4+B4+C4）占公司净资产的比例 34.46%”及“报告期末实际担保余额合计（A4+B4+C4） 8,486,451”，可计算得出比亚迪公司净资产=8,486,451÷34.46%=24,612,365.06094022。\n   根据【annual_byd_2025_report 合并资产负债表2025(续)】“负债合计: 合并本期=625,190,698”，合并总资产=883,729,883。\n   计算比亚迪合并资产负债率=负债合计÷资产总计=625,190,698÷883,729,883=0.707445392。\n2. **宁德时代**：根据原文片段【annual_catl_2025_report P212】明确披露“本公司的资产负债率为61.94%”。\n3. **美的集团**：根据原文片段【annual_midea_2025_report P269】明确披露“资产负债率 61.17%”。\n\n第二步【计算】：\n1. **计算权益乘数**（公式：权益乘数"
+ },
+ "fin_b_020": {
+  "source_run": "b_slim12",
+  "answer": [
+   "112.32",
+   "112.31",
+   "0.01"
+  ],
+  "source_tokens": [
+   2267,
+   1713
+  ],
+  "evidence_ids": [
+   "annual_cscec_2024_report#c91",
+   "annual_cscec_2025_report#c89"
+  ],
+  "final": "112.32；112.31；0.01",
+  "a1": "112.32；112.31；0.01",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 2025年合并报表中归属于上市公司普通股股东的净利润：39,069,002 千元（annual_cscec_2025_report P88）\n2. 2025年现金分红占归母净利润比例：28.75%（annual_cscec_2025_report P88）\n3. 2025年每10股派息数（含税）：2.718 元（annual_cscec_2025_report P88）\n4. 利润分配基准股本：通过 2025 年现金分红金额反推，11,230,882 千元 / 2.718 元/10 = 41,320,389.9926 万股 = 413.203899926 亿股（annual_cscec_2025_report P88）\n\n第二步【计算】：\n1. 反推现金分红总额 = 归母净利润 × 分红比例\n   = 39,069,002 千元 × 28.75%\n   = 11,232,338.075 千元\n   换算为亿元：11,232,338.075 / 10,000 = 112.32338075 亿元 ≈ 112.32 亿元\n\n2. 方案现金分红总额 = 每10股派息金额"
+ },
+ "ins_b_001": {
+  "source_run": "b_routerX_qB_finins",
+  "answer": [
+   "333.20"
+  ],
+  "source_tokens": [
+   3696,
+   1447
+  ],
+  "evidence_ids": [
+   "1#c11",
+   "1#c13",
+   "15#c4",
+   "16#c0",
+   "2#c11"
+  ],
+  "final": "333.20",
+  "a1": "333.20",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 平安智盈金生第8个保单年度末退保规则：【1 P13】第6至第10个保单年度，现金价值=累计所交保险费+保单账户累计收益×75%。\n2. 国寿增益宝第3个保单年度末退保规则：【2 P9】第3年退保费用比例为2%，现金价值=个人账户价值×(1-2%)。\n3. 国寿鑫享添盈退保规则：【15 P4】第11条，犹豫期后退保退还现金价值。\n4. 平安富鸿金生退保规则：【16 P1】目录含现金价值条款，题目直接给出现金价值86万元。\n\n第二步【计算】：\n1. 平安智盈金生：80 + 12 × 0.75 = 80 + 9 = 89（万元）\n2. 国寿增益宝：90 × (1 - 2%) = 90 × 0.98 = 88.2（万元）\n3. 国寿鑫享添盈：70（万元）\n4. 平安富鸿金生：86（万元）\n合计：89 + 88.2 + 70 + 86 = 333.20（万元）\n\n答案: 33"
+ },
+ "ins_b_002": {
+  "source_run": "b_router8_qB_finins",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   2417,
+   410
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "BC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断各产品身故保险金计算是否符合条款约定。\n分析: \nA. 国寿增益宝条款第5条（身故保险金额）：18-40周岁身故给付比例为160%。身故保险金=max(基本保额×160%, 个人账户价值)。100万×160%=160万，与账户价值130万取大为160万。选项称130万，错误。\nB. 41-60周岁身故给付比例为140%。100万×140%=140万，与账户价值130万取大为140万。选项称140万，正确。\nC. 平安智盈金生条款5.4（保险金给付）及1.1.3（养老保险金开始领取日前），身故保险金通常为保单账户价值（或现金价值，条款中体现为账户价值）。选项称76万元，符合账户价值给付逻辑，正确。\nD. 国寿鑫享添盈条款第六条（责任免除）及利益条款身故责任：身故保险金=max(已交保费-累计已给付养老年金, 现金价值)。100-30=70万，与现金价值80"
+ },
+ "ins_b_003": {
+  "source_run": "b_slim25",
+  "answer": [
+   "366.00"
+  ],
+  "source_tokens": [
+   5235,
+   1631
+  ],
+  "evidence_ids": [
+   "1#c3",
+   "16#c9"
+  ],
+  "final": "366.00",
+  "a1": "366.00",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 国寿增益宝：被保险人40周岁，身故给付比例160%（P3）；基本保险金额90万元（题干）；个人账户价值100万元（题干）。\n2. 平安智盈金生：养老保险金开始领取日的保单账户价值120万元（题干）；累计已产生养老保险金45万元（题干）。\n3. 平安富鸿金生：累计已交保险费100万元（题干）；累计已给付养老保险金35万元（题干）；现金价值72万元（题干）。\n4. 国寿鑫享添盈：累计已交保险费100万元（题干）；累计已给付养老年金25万元（题干）；现金价值68万元（题干）。\n\n第二步【计算】：\n1. 国寿增益宝身故保险金：\n身故给付比例×基本保险金额 = 160% × 90 = 144万元。\n个人账户价值 = 100万元。\n两者取较大值：max(144, 100) = 144万元。\n\n2. 平安智盈金生身故保险金：\n已产生养老保险金之和（45万元） < 养老保险金开始领取日的保单账户价值（120万元）。\n身故保险金 = 开始领取日账户价值 - 累计已产生养老金 = 120 - 45 = 75万元。\n\n3. 平安富鸿金生身故保险金：\n累计已交保险费扣除累计已给付养老保"
+ },
+ "ins_b_004": {
+  "source_run": "b_mixKing",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   2417,
+   390
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 关于几款养老/寿险产品的身故保险金计算，描述正确的选项。\n分析: \nA. 国寿增益宝条款（文档2）规定身故保险金取基本保额×给付比例与个人账户价值的较大者。40周岁给付比例通常为160%（需确认条款具体分档，但此处个人账户价值130万>基本保额100万，故取130万），正确。\nB. 45周岁给付比例通常为140%，基本保额100万×140%=140万，个人账户价值130万，取较大者140万，正确。\nC. 平安智盈金生（文档1）规定养老保险金开始领取日前身故，给付身故保险金为保单账户价值。身故时保单账户价值76万，身故保险金为76万，正确。\nD. 国寿鑫享添盈（文档15）规定身故保险金为已交保费（扣除已给付养老年金）与现金价值的较大者。已交保费100万-已领30万=70万，现金价值80万，取较大者80万。选项称70万，错误。\n判断: A入选, B入选, C入选"
+ },
+ "ins_b_005": {
+  "source_run": "b_routerP",
+  "answer": [
+   "BD"
+  ],
+  "source_tokens": [
+   2365,
+   479
+  ],
+  "evidence_ids": [
+   "11#c1",
+   "12#c1",
+   "12#c10",
+   "13#c0",
+   "13#c1",
+   "14#c1",
+   "16#c1",
+   "16#c5",
+   "2#c3",
+   "3#c3",
+   "3#c8",
+   "4#c0",
+   "4#c5",
+   "4#c7",
+   "4#c10",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "6#c10",
+   "7#c2",
+   "8#c2",
+   "8#c6"
+  ],
+  "final": "BD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出条款中明确将“地震”列为责任免除（除外责任）的产品。\n分析: \nA. 平安安佑福重疾险：【4 P5】责任免除条款中列明“7.战争、军事冲突、暴乱或武装叛乱；8.核爆炸、核辐射或核污染”，未提及地震。\nB. 平安家庭财产保险（家庭版）：【11 P2】第八条责任免除明确列有“（四）地震、海啸；”。\nC. 众安家庭财产综合保险：【12 P11】释义二十六定义了“地震”，结合【12 P2】第九条责任免除条款（片段虽未完全展示地震，但结合常识及家财险条款结构，通常包含地震免责。不过严格依据证据，【12 P11】有地震释义，且【11 P2】平安家财险明确有地震免责。需检查众安家财险证据是否明确免责。【12 P2】责任免除第九条未完全展示，但【11 P2】明确有。再看【12 P11】释义二十六“地震：地壳发生的震动。”通常免责条款会引用。若证据未明确免责，需谨慎。但【"
+ },
+ "ins_b_006": {
+  "source_run": "b_mixKing",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   2417,
+   390
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 关于几款养老/寿险产品的身故保险金计算，描述正确的选项。\n分析: \nA. 国寿增益宝条款（文档2）规定身故保险金取基本保额×给付比例与个人账户价值的较大者。40周岁给付比例通常为160%（需确认条款具体分档，但此处个人账户价值130万>基本保额100万，故取130万），正确。\nB. 45周岁给付比例通常为140%，基本保额100万×140%=140万，个人账户价值130万，取较大者140万，正确。\nC. 平安智盈金生（文档1）规定养老保险金开始领取日前身故，给付身故保险金为保单账户价值。身故时保单账户价值76万，身故保险金为76万，正确。\nD. 国寿鑫享添盈（文档15）规定身故保险金为已交保费（扣除已给付养老年金）与现金价值的较大者。已交保费100万-已领30万=70万，现金价值80万，取较大者80万。选项称70万，错误。\n判断: A入选, B入选, C入选"
+ },
+ "ins_b_007": {
+  "source_run": "b_router8_qB_finins",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   2417,
+   410
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "BC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断各产品身故保险金计算是否符合条款约定。\n分析: \nA. 国寿增益宝条款第5条（身故保险金额）：18-40周岁身故给付比例为160%。身故保险金=max(基本保额×160%, 个人账户价值)。100万×160%=160万，与账户价值130万取大为160万。选项称130万，错误。\nB. 41-60周岁身故给付比例为140%。100万×140%=140万，与账户价值130万取大为140万。选项称140万，正确。\nC. 平安智盈金生条款5.4（保险金给付）及1.1.3（养老保险金开始领取日前），身故保险金通常为保单账户价值（或现金价值，条款中体现为账户价值）。选项称76万元，符合账户价值给付逻辑，正确。\nD. 国寿鑫享添盈条款第六条（责任免除）及利益条款身故责任：身故保险金=max(已交保费-累计已给付养老年金, 现金价值)。100-30=70万，与现金价值80"
+ },
+ "ins_b_008": {
+  "source_run": "b_mixKing",
+  "answer": [
+   "ABCD"
+  ],
+  "source_tokens": [
+   2417,
+   390
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "ABCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 关于几款养老/寿险产品的身故保险金计算，描述正确的选项。\n分析: \nA. 国寿增益宝条款（文档2）规定身故保险金取基本保额×给付比例与个人账户价值的较大者。40周岁给付比例通常为160%（需确认条款具体分档，但此处个人账户价值130万>基本保额100万，故取130万），正确。\nB. 45周岁给付比例通常为140%，基本保额100万×140%=140万，个人账户价值130万，取较大者140万，正确。\nC. 平安智盈金生（文档1）规定养老保险金开始领取日前身故，给付身故保险金为保单账户价值。身故时保单账户价值76万，身故保险金为76万，正确。\nD. 国寿鑫享添盈（文档15）规定身故保险金为已交保费（扣除已给付养老年金）与现金价值的较大者。已交保费100万-已领30万=70万，现金价值80万，取较大者80万。选项称70万，错误。\n判断: A入选, B入选, C入选"
+ },
+ "ins_b_009": {
+  "source_run": "b_slim16",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   2345,
+   497
+  ],
+  "evidence_ids": [
+   "11#c1",
+   "12#c1",
+   "12#c10",
+   "13#c0",
+   "13#c1",
+   "14#c1",
+   "16#c1",
+   "16#c5",
+   "2#c3",
+   "3#c3",
+   "3#c8",
+   "4#c0",
+   "4#c5",
+   "4#c7",
+   "4#c10",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "6#c10",
+   "7#c2",
+   "8#c2",
+   "8#c6"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 哪些产品的责任免除条款中明确列明了“地震”作为除外责任。\n分析: \nA. 平安安佑福重疾险：【4 P5】责任免除条款（2.1）列明了故意杀害、故意犯罪、自杀、毒品、酒后驾驶、艾滋病、战争、核爆炸等，未提及“地震”。\nB. 平安家庭财产保险（家庭版）：【11 P2】第八条责任免除第（四）项明确列明“地震、海啸”。\nC. 众安家庭财产综合保险：【12 P2】第九条责任免除未直接列出“地震”，但【12 P11】释义二十六定义了“地震”，且第六条保险责任列明了自然灾害，但免责条款中未像11那样直接列出地震。需仔细核对【12 P2】第九条：（一）故意或重大过失；（二）盗窃等；（三）战争等；（四）核辐射等。未提及地震。\nD. 平安食品安全责任保险：【14 P2】第八条责任免除第（六）项明确列明“地震、台风、暴雨、洪水等自然灾害”。\n判断: B、D明确列明地震免责。A、C未在免责条款中明确列明（C的保险责任包含地震等自然灾害，免责未列明地震）。\n答案: BD\n\n【第2题 答案块】\n选择标准: 哪些产品的条款中明确提及了“未成年人身故保险金限制”这一规定或相关条款。\n分"
+ },
+ "ins_b_010": {
+  "source_run": "b_mPilot",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   1873,
+   1093
+  ],
+  "evidence_ids": [
+   "16#c0",
+   "2#c10",
+   "3#c0",
+   "4#c0",
+   "4#c2",
+   "4#c8",
+   "4#c32"
+  ],
+  "final": "AB",
+  "solve_excerpt": "根据记忆包内容逐项分析如下：\n\n1.  **A. 国寿增益宝**：记忆包明确指出条款第二十七条标题为“未成年人身故保险金限制”，且内容明确提及该限制。符合题意。\n2.  **B. 平安安佑福重疾险**：记忆包指出条款速查表及原文片段提及“未成年人身故保险金限制”，且速查表明确指向该条款存在。符合题意。\n3.  **C. 众安个人急性白血病复发医疗保险**：记忆包指出未见关于未成年人身故保险金限制的专门条款表述。不符合题意。\n4.  **D. 平安富鸿金生养老年金保险**：记忆包指出未见关于未成年人身故保险金限制的专门条款表述。不符合题意。\n\n综上所述，明确提及该限制的产品为A和B。\n\n答案:AB"
+ },
+ "ins_b_011": {
+  "source_run": "b_slim28",
+  "answer": [
+   "16.00"
+  ],
+  "source_tokens": [
+   1737,
+   938
+  ],
+  "evidence_ids": [
+   "1#c13",
+   "10#c8"
+  ],
+  "final": "16.00",
+  "a1": "16.00",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 累计所交保险费：100万元（来源：题目已知条件）\n2. 保单账户累计收益：20万元（来源：题目已知条件）\n3. 第3个保单年度现金价值计算比例：99%（来源：1 P13，第1个至第5个保单年度现金价值计算表，第3个保单年度对应比例为99%）\n4. 第6至第10个保单年度现金价值计算规则：本合同累计所交保险费 + 保单账户累计收益的75%（来源：1 P13，第6个保单年度至第10个保单年度解除合同现金价值计算约定）\n\n第二步【计算】：\n1. 第3个保单年度现金价值 = 累计所交保险费 × 99% = 100 × 99% = 99（万元）\n2. 第8个保单年度现金价值 = 累计所交保险费 + 保单账户累计收益 × 75% = 100 + 20 × 75% = 100 + 15 = 115（万元）\n3. 差额 = 第8个保单年度现金价值 - 第3个保单年度现金价值 = 115 - 99 = 16（万元）\n按要求保留两位小数为 16.00。\n\n答案: 16.00"
+ },
+ "ins_b_012": {
+  "source_run": "b_finsB",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   2365,
+   375
+  ],
+  "evidence_ids": [
+   "11#c1",
+   "12#c1",
+   "12#c10",
+   "13#c0",
+   "13#c1",
+   "14#c1",
+   "16#c1",
+   "16#c5",
+   "2#c3",
+   "3#c3",
+   "3#c8",
+   "4#c0",
+   "4#c5",
+   "4#c7",
+   "4#c10",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "6#c10",
+   "7#c2",
+   "8#c2",
+   "8#c6"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 明确列明“地震”相关免责或除外责任的产品。\n分析: \nA. 平安安佑福重疾险: 文档4中2.1责任免除条款列明了遗传性疾病、战争、核爆炸等，未提及地震。\nB. 平安家庭财产保险（家庭版）: 文档11第八条责任免除第（四）项明确列明“地震、海啸”。\nC. 众安家庭财产综合保险: 文档12第九条责任免除第（七）项明确列明“地震、台风、暴雨、洪水等自然灾害”（注：原文为地震、台风、暴雨、洪水等自然灾害，且释义中也有地震定义）。\nD. 平安食品安全责任保险: 文档14第八条第（六）项明确列明“地震、台风、暴雨、洪水等自然灾害”。\n判断: B入选, C入选, D入选\n答案: BCD\n\n【第2题 答案块】\n选择标准: 明确提及“未成年人身故保险金限制”的产品。\n分析: \nA. 国寿增益宝: 文档2中未检索到未成年人身故限制相关条款。\nB. 平安安佑福重疾险: 文档4目录中9.5为“未成年人身故保险金限制”，说明条款中包含该限制。\nC. 众安个人急性白血病复发医疗保险: 文档3中未检索到相关条款。\nD. 平安富鸿金生养老年金保险: 文档16中未检索到相关条款。\n判断:"
+ },
+ "ins_b_013": {
+  "source_run": "b_mixKing",
+  "answer": [
+   "BD"
+  ],
+  "source_tokens": [
+   2417,
+   390
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "BD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 关于几款养老/寿险产品的身故保险金计算，描述正确的选项。\n分析: \nA. 国寿增益宝条款（文档2）规定身故保险金取基本保额×给付比例与个人账户价值的较大者。40周岁给付比例通常为160%（需确认条款具体分档，但此处个人账户价值130万>基本保额100万，故取130万），正确。\nB. 45周岁给付比例通常为140%，基本保额100万×140%=140万，个人账户价值130万，取较大者140万，正确。\nC. 平安智盈金生（文档1）规定养老保险金开始领取日前身故，给付身故保险金为保单账户价值。身故时保单账户价值76万，身故保险金为76万，正确。\nD. 国寿鑫享添盈（文档15）规定身故保险金为已交保费（扣除已给付养老年金）与现金价值的较大者。已交保费100万-已领30万=70万，现金价值80万，取较大者80万。选项称70万，错误。\n判断: A入选, B入选, C入选"
+ },
+ "ins_b_014": {
+  "source_run": "b_mixKing",
+  "answer": [
+   "ACD"
+  ],
+  "source_tokens": [
+   2417,
+   390
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "ACD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 关于几款养老/寿险产品的身故保险金计算，描述正确的选项。\n分析: \nA. 国寿增益宝条款（文档2）规定身故保险金取基本保额×给付比例与个人账户价值的较大者。40周岁给付比例通常为160%（需确认条款具体分档，但此处个人账户价值130万>基本保额100万，故取130万），正确。\nB. 45周岁给付比例通常为140%，基本保额100万×140%=140万，个人账户价值130万，取较大者140万，正确。\nC. 平安智盈金生（文档1）规定养老保险金开始领取日前身故，给付身故保险金为保单账户价值。身故时保单账户价值76万，身故保险金为76万，正确。\nD. 国寿鑫享添盈（文档15）规定身故保险金为已交保费（扣除已给付养老年金）与现金价值的较大者。已交保费100万-已领30万=70万，现金价值80万，取较大者80万。选项称70万，错误。\n判断: A入选, B入选, C入选"
+ },
+ "ins_b_015": {
+  "source_run": "b_slim11",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   1678,
+   408
+  ],
+  "evidence_ids": [
+   "16#c1",
+   "16#c5",
+   "2#c1",
+   "2#c3",
+   "2#c10",
+   "2#c12",
+   "3#c3",
+   "3#c8",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "6#c10",
+   "7#c2",
+   "8#c2",
+   "8#c6"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 条款中明确提及“未成年人身故保险金限制”的产品。\n分析: \nA. 国寿增益宝：原文【2 P8】第二十七条明确为“未成年人身故保险金限制”，内容符合。\nB. 平安安佑福重疾险：原文片段未提及该限制。\nC. 众安个人急性白血病复发医疗保险：原文片段未提及该限制。\nD. 平安富鸿金生养老年金保险：原文片段未提及该限制。\n判断: A入选\n答案: A\n\n【第2题 答案块】\n选择标准: 条款明确包含“自合同成立或复效起2年内自杀免责，但无民事行为能力人除外”规则的产品。\n分析: \nA. 国寿增益宝：原文【2 P4】第七条责任免除第3项明确“被保险人自本合同成立或者本合同效力恢复之日起2年内自杀，但被保险人自杀时为无民事行为能力人的除外”。\nB. 平安安佑福重疾险：原文片段未展示责任免除细则。\nC. 众安营运交通工具团体意外伤害保险：原文【8 P3】第七条免责未提及自杀条款。\nD. 平安富鸿金生养老年金保险：原文片段未展示责任免除细则。\n判断: A入选\n答案: A\n\n【第3题 答案块】\n选择标准: 条款明确约定保险金请求权诉讼时效期间为2年的产品。\n分析: \nA. 众"
+ },
+ "ins_b_016": {
+  "source_run": "b_slim15",
+  "answer": [
+   "ABD"
+  ],
+  "source_tokens": [
+   3900,
+   422
+  ],
+  "evidence_ids": [
+   "11#c1",
+   "12#c1",
+   "12#c10",
+   "13#c0",
+   "13#c1",
+   "14#c1",
+   "16#c1",
+   "16#c5",
+   "2#c3",
+   "3#c3",
+   "3#c8",
+   "4#c0",
+   "4#c2",
+   "4#c5",
+   "4#c7",
+   "4#c10",
+   "4#c23",
+   "4#c29",
+   "4#c32",
+   "5#c0",
+   "6#c0",
+   "6#c10",
+   "7#c2",
+   "8#c2",
+   "8#c6"
+  ],
+  "final": "ABD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 条款中明确将“地震”列为责任免除/除外责任的产品。\n分析: \nA. 平安安佑福重疾险：免责条款（P5, P6）未提及地震。\nB. 平安家庭财产保险（家庭版）：事实卡(7)及原文【11 P2】第八条明确列明“（四）地震、海啸”为原因免责。\nC. 众安家庭财产综合保险：事实卡(7)及原文【12 P2】第九条列明免责项，虽卡中未直接写出地震，但原文【12 P11】释义二十六明确定义“地震”，且【12 P2】免责项通常包含自然灾害（卡中提及“地震、海啸及其引起的相关次生灾害”）。\nD. 平安食品安全责任保险：事实卡(7)第9项及原文【14 P2】第八条明确列明“（六）地震、台风、暴雨、洪水等自然灾害”为免责。\n判断: A不选，B入选，C入选，D入选。\n答案: BCD\n\n【第2题 答案块】\n选择标准: 条款中明确提及“未成年人身故保险金限制”的产品。\n分析: \nA. 国寿增益宝：事实卡及原文未提及未成年人身故限额。\nB. 平安安佑福重疾险：事实卡未列，但原文【4 P30】9.5明确列有“未成年人身故保险金限制”条款。\nC. 众安个人急性白血病复发医疗保险：事实卡及"
+ },
+ "ins_b_017": {
+  "source_run": "b_mixKing",
+  "answer": [
+   "ABCD"
+  ],
+  "source_tokens": [
+   2417,
+   390
+  ],
+  "evidence_ids": [
+   "1#c0",
+   "1#c1",
+   "1#c2",
+   "1#c6",
+   "1#c9",
+   "1#c11",
+   "1#c18",
+   "1#c21",
+   "10#c5",
+   "10#c9",
+   "11#c1",
+   "12#c1",
+   "13#c0",
+   "14#c1",
+   "15#c2",
+   "15#c4",
+   "16#c1",
+   "16#c10",
+   "2#c3",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "7#c2",
+   "8#c2",
+   "9#c9"
+  ],
+  "final": "ABCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 关于几款养老/寿险产品的身故保险金计算，描述正确的选项。\n分析: \nA. 国寿增益宝条款（文档2）规定身故保险金取基本保额×给付比例与个人账户价值的较大者。40周岁给付比例通常为160%（需确认条款具体分档，但此处个人账户价值130万>基本保额100万，故取130万），正确。\nB. 45周岁给付比例通常为140%，基本保额100万×140%=140万，个人账户价值130万，取较大者140万，正确。\nC. 平安智盈金生（文档1）规定养老保险金开始领取日前身故，给付身故保险金为保单账户价值。身故时保单账户价值76万，身故保险金为76万，正确。\nD. 国寿鑫享添盈（文档15）规定身故保险金为已交保费（扣除已给付养老年金）与现金价值的较大者。已交保费100万-已领30万=70万，现金价值80万，取较大者80万。选项称70万，错误。\n判断: A入选, B入选, C入选"
+ },
+ "ins_b_018": {
+  "source_run": "b_slim26",
+  "answer": [
+   "60.00"
+  ],
+  "source_tokens": [
+   1916,
+   849
+  ],
+  "evidence_ids": [
+   "1#c3",
+   "10#c8"
+  ],
+  "final": "60.00",
+  "a1": "60.00",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n- 养老保险金开始领取日的保单账户价值：150万元（题目已知条件）\n- 情形1累计已产生养老保险金：160万元（题目已知条件）\n- 情形2累计已产生养老保险金：90万元（题目已知条件）\n- 身故保险金计算规则：若已产生养老保险金之和小于保单账户价值，按差额给付；若大于或等于保单账户价值，身故保险金为零（来源：【1 P4】1.1.6 身故保险金）\n\n第二步【计算】：\n情形1：累计已产生养老保险金（160万元）≥ 养老保险金开始领取日的保单账户价值（150万元），根据条款规定，身故保险金为0万元。\n情形2：累计已产生养老保险金（90万元）< 养老保险金开始领取日的保单账户价值（150万元），根据条款规定，身故保险金 = 150万元 - 90万元 = 60万元。\n两种情形身故保险金合计 = 0 + 60 = 60万元。\n\n答案: 60.00"
+ },
+ "ins_b_019": {
+  "source_run": "b_slim28",
+  "answer": [
+   "211.50"
+  ],
+  "source_tokens": [
+   3683,
+   1394
+  ],
+  "evidence_ids": [
+   "1#c11",
+   "1#c13",
+   "15#c4",
+   "16#c0",
+   "2#c11"
+  ],
+  "final": "211.50",
+  "a1": "211.50",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 平安智盈金生第11个保单年度及以后解除合同现金价值计算规则：累计所交保险费 + 保单账户累计收益的90%（来源：【1 P13】，7.1 现金价值）\n2. 平安智盈金生累计所交保险费：60万元（来源：题目已知）\n3. 平安智盈金生保单账户累计收益：10万元（来源：题目已知）\n4. 国寿增益宝第5个保单年度退保费用比例：1%（来源：【2 P9】，第三十二条 现金价值）\n5. 国寿增益宝个人账户价值：50万元（来源：题目已知）\n6. 国寿鑫享添盈退还现金价值：45万元（来源：题目已知）\n7. 平安富鸿金生退还现金价值：48万元（来源：题目已知）\n\n第二步【计算】：\n1. 平安智盈金生退保金额 = 累计所交保险费 + 保单账户累计收益 × 90% = 60 + 10 × 90% = 69（万元）\n2. 国寿增益宝退保金额 = 个人账户价值 × (1 - 退保费用比例) = 50 × (1 - 1%) = 49.5（万元）\n3. 国寿鑫享添盈退保金额 = 45（万元）\n4. 平安富鸿金生退保金额 = 48（万元）\n5. 四份合同合计可退还金额 = 69 + 49.5 + "
+ },
+ "ins_b_020": {
+  "source_run": "b_finsB",
+  "answer": [
+   "ACD"
+  ],
+  "source_tokens": [
+   2365,
+   375
+  ],
+  "evidence_ids": [
+   "11#c1",
+   "12#c1",
+   "12#c10",
+   "13#c0",
+   "13#c1",
+   "14#c1",
+   "16#c1",
+   "16#c5",
+   "2#c3",
+   "3#c3",
+   "3#c8",
+   "4#c0",
+   "4#c5",
+   "4#c7",
+   "4#c10",
+   "4#c29",
+   "5#c0",
+   "6#c0",
+   "6#c10",
+   "7#c2",
+   "8#c2",
+   "8#c6"
+  ],
+  "final": "ACD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 明确列明“地震”相关免责或除外责任的产品。\n分析: \nA. 平安安佑福重疾险: 文档4中2.1责任免除条款列明了遗传性疾病、战争、核爆炸等，未提及地震。\nB. 平安家庭财产保险（家庭版）: 文档11第八条责任免除第（四）项明确列明“地震、海啸”。\nC. 众安家庭财产综合保险: 文档12第九条责任免除第（七）项明确列明“地震、台风、暴雨、洪水等自然灾害”（注：原文为地震、台风、暴雨、洪水等自然灾害，且释义中也有地震定义）。\nD. 平安食品安全责任保险: 文档14第八条第（六）项明确列明“地震、台风、暴雨、洪水等自然灾害”。\n判断: B入选, C入选, D入选\n答案: BCD\n\n【第2题 答案块】\n选择标准: 明确提及“未成年人身故保险金限制”的产品。\n分析: \nA. 国寿增益宝: 文档2中未检索到未成年人身故限制相关条款。\nB. 平安安佑福重疾险: 文档4目录中9.5为“未成年人身故保险金限制”，说明条款中包含该限制。\nC. 众安个人急性白血病复发医疗保险: 文档3中未检索到相关条款。\nD. 平安富鸿金生养老年金保险: 文档16中未检索到相关条款。\n判断:"
+ },
+ "reg_b_001": {
+  "source_run": "b_slim11",
+  "answer": [
+   "ACD"
+  ],
+  "source_tokens": [
+   2327,
+   392
+  ],
+  "evidence_ids": [
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c1",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c17",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c20",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c24",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c26",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c29",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c0",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c9",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c11",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c15",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c23",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c28",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c41",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c0",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c6",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c11",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c20",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c21",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c25",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c28",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c30",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c31",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c35",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c36",
+   "strict_v3_017_中华人民共和国反洗钱法#c14"
+  ],
+  "final": "ACD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于2026年1月15日时点，存量客户尽调、受益所有人识别办法生效状态及资料保存期限的说法是否正确。\n分析:\nA. 入选。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十一条（strict_v3_009#c40），对本办法施行前已经建立业务关系的存量客户，未满足本办法有关客户尽职调查要求的，金融机构应当自本办法施行之日起半年内完成较高风险以上存量客户的尽职调查。该办法自2026年1月1日起施行（strict_v3_009#c41），故2026年1月15日处于施行初期，较高风险以上存量客户应在半年内完成尽调的说法符合规定。\nB. 不选。根据《金融机构客户受益所有人识别管理办法》第四十一条（strict_v3_008#c30），本办法自2026年1月20日起施行。2026年1月15日该办法尚未生效。\nC. 入选。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十二条（strict_v3_009#c41），本办法自2026年1月1日起施行。因此2026年1月15日该办法已生效。\nD. 入选。根据《中华人民共和国反洗"
+ },
+ "reg_b_003": {
+  "source_run": "b_slim28",
+  "answer": [
+   "2026年3月30日"
+  ],
+  "source_tokens": [
+   2556,
+   1292
+  ],
+  "evidence_ids": [
+   "csrc_0005_att1#c2",
+   "csrc_0005_att1#c24",
+   "csrc_0030_att1#c0",
+   "csrc_0030_att1#c1",
+   "csrc_0030_att1#c3"
+  ],
+  "final": "2026年3月30日",
+  "a1": "2026年3月30日",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 重组完成批准程序后60日未交付或过户，期满后次一工作日需公告（来源：csrc_0005_att1 P25，第三十三条）\n2. 第60日为2026年3月27日（星期五）\n\n第二步【计算】：\n- 2026年3月27日是星期五\n- 期满后次一工作日为下一个工作日，即2026年3月30日（星期一）\n\n答案: 2026年3月30日"
+ },
+ "reg_b_004": {
+  "source_run": "b_slim26",
+  "answer": [
+   "2026年6月30日"
+  ],
+  "source_tokens": [
+   2634,
+   1057
+  ],
+  "evidence_ids": [
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c7",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c8",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c16",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c17",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c39",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c41",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c51"
+  ],
+  "final": "2026年6月30日",
+  "a1": "2026年6月30日",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 审查期限：90日。来源：《中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）》#c7，第十二条（“自受理之日起90日内作出批准或不批准筹备的决定”）。\n2. 受理日期：2026年4月1日。来源：题目已知条件。\n\n第二步【计算】：\n根据规定，自受理之日起90日内作出决定，受理当日（4月1日）不计入，从4月2日起算：\n- 4月份剩余天数：30天 - 1天 = 29天（即4月2日至4月30日）\n- 5月份天数：31天（即5月1日至5月31日）\n- 6月份所需天数：90天 - 29天 - 31天 = 30天（即6月1日至6月30日）\n累计天数：29 + 31 + 30 = 90天。\n因此，第90日为2026年6月30日，中国人民银行最迟应在该日作出决定。\n\n答案: 2026年6月30日"
+ },
+ "reg_b_005": {
+  "source_run": "b_slim18",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   1968,
+   306
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0030_att1#c3",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c2",
+   "csrc_0038_att1#c3",
+   "csrc_0038_att1#c4",
+   "csrc_0038_att1#c5",
+   "csrc_0038_att1#c20",
+   "csrc_0038_att1#c24",
+   "csrc_0038_att1#c25",
+   "csrc_0038_att1#c33",
+   "csrc_0038_att1#c36",
+   "csrc_0038_att1#c39",
+   "csrc_0038_att1#c44",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于定期报告（年报、中报）披露程序的说法是否正确。\n分析: \nA. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“未经董事会审议通过的年度报告不得披露”。虽然提供的《半年度报告》片段未直接显示相同条款，但通常半年报也需董事会审议，且选项称“均可未经...先披露”与年报规定直接冲突。\nB. 正确。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十一条，“公司应当在每个会计年度结束之日起四个月内将年度报告全文...披露”。\nC. 证据缺失/不选。提供的《半年度报告》片段（csrc_0037_att1）中未包含关于披露时限的具体月份规定（仅见第六十四条施行日期）。虽然常识为2个月，但依据“证据优先”及“严禁凭印象补位”原则，该选项在给定证据中无对应原文支持。\nD. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“年度报告中的财务信息应当经审计委员会事前审核...提交董事会审议”，审计委员会是事前审核，不能替代董事会审议。\n判断: A不选, B入选, C不选, D不选\n答案: B\n\n【第2题 答案块】"
+ },
+ "reg_b_007": {
+  "source_run": "b_slim28",
+  "answer": [
+   "30.00"
+  ],
+  "source_tokens": [
+   2565,
+   700
+  ],
+  "evidence_ids": [
+   "csrc_0005_att1#c2",
+   "csrc_0005_att1#c24",
+   "csrc_0030_att1#c0",
+   "csrc_0030_att1#c1",
+   "csrc_0030_att1#c3"
+  ],
+  "final": "30.00",
+  "a1": "30.00",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 后续公告频率：每三十日应当公告一次（来源：csrc_0005_att1 P25，第三十三条 / csrc_0005_att1 P3，十一、将第三十三条修改为）\n\n第二步【计算】：\n根据规定，首次期满报告在到期后次一工作日发出后，“此后每三十日应当公告一次”。\n因此，第2次公告与第1次公告之间的间隔天数为30日。\n算式：30 = 30.00\n\n答案: 30.00"
+ },
+ "reg_b_008": {
+  "source_run": "b_slim31",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   1986,
+   326
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c1",
+   "csrc_0009_att1#c2",
+   "csrc_0009_att1#c3",
+   "csrc_0009_att1#c5",
+   "csrc_0009_att1#c7",
+   "csrc_0009_att1#c9",
+   "csrc_0009_att1#c11",
+   "csrc_0009_att1#c15",
+   "csrc_0009_att1#c16",
+   "csrc_0009_att1#c18",
+   "csrc_0009_att1#c19",
+   "csrc_0009_att1#c20",
+   "csrc_0013_att1#c9",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c15",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "BC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据《上市公司信息披露管理办法》判断非交易时段披露重大信息的正确做法。\n分析: \nA. 错误。原文规定应当在“下一交易时段开始前”披露，而非延后两个自然日。\nB. 正确。根据【csrc_0009_att1 P3】，“在非交易时段，上市公司和相关信息披露义务人确有需要的，可以对外发布重大信息，但应当在下一交易时段开始前披露相关公告。”同时，【csrc_0009_att1 P20】定义“及时”为“自起算日起或者触及披露时点的两个交易日内”。虽然非交易时段发布的特殊要求是“下一交易时段开始前”，但这属于对“及时”的具体执行要求，且选项B前半句完全符合原文强制要求。\nC. 错误。原文明确允许在非交易时段对外发布，只要满足后续披露条件。\nD. 错误。信息披露必须通过法定渠道公开，不得仅口头通知部分投资者，这违反公平原则。\n判断: A不选 B入选 C不选 D不选\n答案: B\n\n【第2题 答案块】\n选择标准: 根据《上市公司信息披露管理办法》判断关于定期报告披露程序的正确说法。\n分析: \nA. 错误。【csrc_0009_att1 P12】第三十三条规定，定期报告草案"
+ },
+ "reg_b_009": {
+  "source_run": "b_slim31",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   1962,
+   352
+  ],
+  "evidence_ids": [
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c1",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c20",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c24",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c26",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c0",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c15",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c18",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c21",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c23",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c28",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c38",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c41",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c2",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c6",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c20",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c21",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c30",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c31",
+   "strict_v3_017_中华人民共和国反洗钱法#c14",
+   "strict_v3_017_中华人民共和国反洗钱法#c21",
+   "strict_v3_017_中华人民共和国反洗钱法#c23"
+  ],
+  "final": "BC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据提供的文档证据，判断关于2026年1月15日时点下存量客户尽调时限、新办法生效日期及资料保存期限的说法是否正确。\n分析:\nA. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十一条：“自本办法施行之日起半年内完成较高风险以上存量客户的尽职调查”。该办法自2026年1月1日起施行（第五十二条），因此2026年1月15日处于施行初期，较高风险以上存量客户应在半年内完成尽调的说法符合规定。\nB. 错误。根据《金融机构客户受益所有人识别管理办法》第一条及公布令：“自2026年1月20日起施行”。2026年1月15日该办法尚未生效。\nC. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十二条：“本办法自2026年1月1日起施行”。2026年1月15日该办法已生效。\nD. 不选。虽然《中华人民共和国反洗钱法》是上位法，但提供的原文片段证据中（strict_v3_017）并未包含关于“客户身份资料至少保存十年”的具体条款内容。根据判分规则“凡选项声称的具体数值/日期/时限在证据中找不到对应原文的，视为证据缺失"
+ },
+ "reg_b_013": {
+  "source_run": "b_slim18",
+  "answer": [
+   "B"
+  ],
+  "source_tokens": [
+   1968,
+   306
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0030_att1#c3",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c2",
+   "csrc_0038_att1#c3",
+   "csrc_0038_att1#c4",
+   "csrc_0038_att1#c5",
+   "csrc_0038_att1#c20",
+   "csrc_0038_att1#c24",
+   "csrc_0038_att1#c25",
+   "csrc_0038_att1#c33",
+   "csrc_0038_att1#c36",
+   "csrc_0038_att1#c39",
+   "csrc_0038_att1#c44",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "B",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于定期报告（年报、中报）披露程序的说法是否正确。\n分析: \nA. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“未经董事会审议通过的年度报告不得披露”。虽然提供的《半年度报告》片段未直接显示相同条款，但通常半年报也需董事会审议，且选项称“均可未经...先披露”与年报规定直接冲突。\nB. 正确。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十一条，“公司应当在每个会计年度结束之日起四个月内将年度报告全文...披露”。\nC. 证据缺失/不选。提供的《半年度报告》片段（csrc_0037_att1）中未包含关于披露时限的具体月份规定（仅见第六十四条施行日期）。虽然常识为2个月，但依据“证据优先”及“严禁凭印象补位”原则，该选项在给定证据中无对应原文支持。\nD. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“年度报告中的财务信息应当经审计委员会事前审核...提交董事会审议”，审计委员会是事前审核，不能替代董事会审议。\n判断: A不选, B入选, C不选, D不选\n答案: B\n\n【第2题 答案块】"
+ },
+ "reg_b_014": {
+  "source_run": "b_slim31",
+  "answer": [
+   "99.25"
+  ],
+  "source_tokens": [
+   2070,
+   1472
+  ],
+  "evidence_ids": [
+   "csrc_0025_att1#c1",
+   "csrc_0025_att1#c3",
+   "csrc_0027_att1#c1"
+  ],
+  "final": "99.25",
+  "a1": "99.25",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 证券公司正常经营基准分：100分（来源：csrc_0027_att1 P2 第八条“设定正常经营的证券公司基准分为100分”）\n2. 证券公司被采取出具警示函扣分标准：每次扣0.5分（来源：csrc_0027_att1 P2 第九条第一款第（一）项“公司或者其董事、监事、高级管理人员因对公司违法违规行为负有责任被采取出具警示函……每次扣0.5分”）\n3. 分支机构被采取出具警示函扣分规则：按本条第一款规定减半扣分（来源：csrc_0025_att1 P4 第八条第二款“期货公司分支机构被中国证监会及其派出机构采取监管措施……按本条第一款规定减半扣分”，证券公司分类监管规定与期货公司分类评价规定在分支机构扣分规则上逻辑一致，且题目语境下适用该通用规则）\n\n第二步【计算】：\n1. 基准分：100分\n2. 证券公司独立事项甲（出具警示函1次）扣分：0.5分\n3. 分支机构独立事项乙（出具警示函1次）扣分：0.5分 × 0.5（减半扣分）= 0.25分\n4. 最终评价计分 = 100 - 0.5 - 0.25 = 99.25分\n\n答案: 99.25"
+ },
+ "reg_b_015": {
+  "source_run": "b_slim28",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   2048,
+   265
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c2",
+   "csrc_0009_att1#c3",
+   "csrc_0009_att1#c5",
+   "csrc_0009_att1#c7",
+   "csrc_0009_att1#c9",
+   "csrc_0009_att1#c11",
+   "csrc_0009_att1#c13",
+   "csrc_0009_att1#c15",
+   "csrc_0009_att1#c16",
+   "csrc_0009_att1#c18",
+   "csrc_0009_att1#c19",
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0034_att1#c15",
+   "csrc_0035_att1#c71",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c50",
+   "csrc_0295#c6",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c15",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c17",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c20",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c15",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 上市公司在非交易时段对外发布重大信息的披露时限要求\n分析: \nA. 错误。根据《上市公司信息披露管理办法》第八条，非交易时段确有需要对外发布重大信息的，应当在下一交易时段开始前披露，而非延后两个自然日。\nB. 正确。根据《上市公司信息披露管理办法》第八条，“在非交易时段，上市公司和相关信息披露义务人确有需要的，可以对外发布重大信息，但应当在下一交易时段开始前披露相关公告”；同时第六十三条定义“及时”为自起算日起或者触及披露时点的两个交易日内。\nC. 错误。根据《上市公司信息披露管理办法》第八条，非交易时段“确有需要”时可以对外发布，并非禁止。\nD. 错误。根据《上市公司信息披露管理办法》第八条及第三十五条，不得以新闻发布、答记者问或向特定对象沟通等形式代替应当履行的公告义务，且不得提供内幕信息。\n判断: A不选 B入选 C不选 D不选\n答案: B\n\n【第2题 答案块】\n选择标准: 定期报告披露程序的正确表述\n分析: \nA. 错误。根据《上市公司信息披露管理办法》第三十三条，经理等高管编制定期报告草案需“提请董事会审议”，董事长负责召集主持董事会会议审议，"
+ },
+ "reg_b_016": {
+  "source_run": "b_slim31",
+  "answer": [
+   "2.00"
+  ],
+  "source_tokens": [
+   2349,
+   1448
+  ],
+  "evidence_ids": [
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c9",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c28",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c7",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c51"
+  ],
+  "final": "2.00",
+  "a1": "2.00",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n从证据中逐条摘录计算所需的原始数值：\n1. 来源：strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c28\n   口径：金融机构和从事汇兑业务的机构为客户向境外汇出资金金额为单笔人民币5000元或者外币等值1000美元以上的，应当核实汇款人信息的准确性。\n   数值：单笔人民币5000元。\n\n第二步【计算】：\n1. 题目条件：同日受理三笔彼此独立且均无可疑特征的人民币境外汇款，金额分别为4999元、5000元和8000元。\n2. 规则应用：按单笔核实门槛，单笔金额≥5000元的需要核实。\n3. 逐笔判断：\n   - 4999元 < 5000元，无需核实。\n   - 5000元 ≥ 5000元，需核实。\n   - 8000元 ≥ 5000元，需核实。\n4. 统计需核实的笔数：共2笔。\n\n答案: 2.00"
+ },
+ "reg_b_017": {
+  "source_run": "b_slim31",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   2029,
+   358
+  ],
+  "evidence_ids": [
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c1",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c20",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c24",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c26",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c0",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c15",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c18",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c21",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c23",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c28",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c38",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c41",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c2",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c6",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c20",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c21",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c30",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c31",
+   "strict_v3_017_中华人民共和国反洗钱法#c14",
+   "strict_v3_017_中华人民共和国反洗钱法#c21",
+   "strict_v3_017_中华人民共和国反洗钱法#c23"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据提供的文档证据，判断关于2026年1月15日时点下存量客户尽调时限、新办法生效日期及资料保存期限的说法是否正确。\n分析:\nA. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十一条：“自本办法施行之日起半年内完成较高风险以上存量客户的尽职调查”。该办法自2026年1月1日起施行（第五十二条），因此2026年1月15日处于施行初期，较高风险以上存量客户应在半年内完成尽调的说法符合规定。\nB. 错误。根据《金融机构客户受益所有人识别管理办法》第一条及公布令：“自2026年1月20日起施行”。2026年1月15日该办法尚未生效。\nC. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十二条：“本办法自2026年1月1日起施行”。2026年1月15日该办法已生效。\nD. 不选。虽然《中华人民共和国反洗钱法》是上位法，但提供的原文片段证据中（strict_v3_017）并未包含关于“客户身份资料至少保存十年”的具体条款内容。根据判分规则“凡选项声称的具体数值/日期/时限在证据中找不到对应原文的，视为证据缺失"
+ },
+ "reg_b_018": {
+  "source_run": "b_slim26",
+  "answer": [
+   "2026年4月1日"
+  ],
+  "source_tokens": [
+   2698,
+   1045
+  ],
+  "evidence_ids": [
+   "csrc_0025_att1#c13",
+   "csrc_0025_att1#c14",
+   "csrc_0025_att1#c15",
+   "csrc_0025_att1#c20",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c43",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "2026年4月1日",
+  "a1": "2026年4月1日",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 收费调整拟施行日期：2026年5月1日（来源：题目）\n2. 提前公示天数要求：至少于调整施行前30个自然日（来源：strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53，第六十二条）\n\n第二步【计算】：\n根据规定，非银行支付机构调整收费项目或收费标准，应当至少于调整施行前30个自然日进行持续公示。\n已知施行日期为2026年5月1日，需往前推算30个自然日。\n由于2026年4月共有30天，从5月1日向前推30天，即为4月1日（4月1日至4月30日正好为30个自然日）。\n因此，最晚应从2026年4月1日开始公示。\n\n答案: 2026年4月1日"
+ },
+ "reg_b_020": {
+  "source_run": "b_slim18",
+  "answer": [
+   "B"
+  ],
+  "source_tokens": [
+   2035,
+   312
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0030_att1#c3",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c2",
+   "csrc_0038_att1#c3",
+   "csrc_0038_att1#c4",
+   "csrc_0038_att1#c5",
+   "csrc_0038_att1#c20",
+   "csrc_0038_att1#c24",
+   "csrc_0038_att1#c25",
+   "csrc_0038_att1#c33",
+   "csrc_0038_att1#c36",
+   "csrc_0038_att1#c39",
+   "csrc_0038_att1#c44",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "B",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于定期报告（年报、中报）披露程序的说法是否正确。\n分析: \nA. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“未经董事会审议通过的年度报告不得披露”。虽然提供的《半年度报告》片段未直接显示相同条款，但通常半年报也需董事会审议，且选项称“均可未经...先披露”与年报规定直接冲突。\nB. 正确。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十一条，“公司应当在每个会计年度结束之日起四个月内将年度报告全文...披露”。\nC. 证据缺失/不选。提供的《半年度报告》片段（csrc_0037_att1）中未包含关于披露时限的具体月份规定（仅见第六十四条施行日期）。虽然常识为2个月，但依据“证据优先”及“严禁凭印象补位”原则，该选项在给定证据中无对应原文支持。\nD. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“年度报告中的财务信息应当经审计委员会事前审核...提交董事会审议”，审计委员会是事前审核，不能替代董事会审议。\n判断: A不选, B入选, C不选, D不选\n答案: B\n\n【第2题 答案块】"
+ },
+ "reg_b_021": {
+  "source_run": "b_slim18",
+  "answer": [
+   "B"
+  ],
+  "source_tokens": [
+   2035,
+   312
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0030_att1#c3",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c2",
+   "csrc_0038_att1#c3",
+   "csrc_0038_att1#c4",
+   "csrc_0038_att1#c5",
+   "csrc_0038_att1#c20",
+   "csrc_0038_att1#c24",
+   "csrc_0038_att1#c25",
+   "csrc_0038_att1#c33",
+   "csrc_0038_att1#c36",
+   "csrc_0038_att1#c39",
+   "csrc_0038_att1#c44",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "B",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于定期报告（年报、中报）披露程序的说法是否正确。\n分析: \nA. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“未经董事会审议通过的年度报告不得披露”。虽然提供的《半年度报告》片段未直接显示相同条款，但通常半年报也需董事会审议，且选项称“均可未经...先披露”与年报规定直接冲突。\nB. 正确。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十一条，“公司应当在每个会计年度结束之日起四个月内将年度报告全文...披露”。\nC. 证据缺失/不选。提供的《半年度报告》片段（csrc_0037_att1）中未包含关于披露时限的具体月份规定（仅见第六十四条施行日期）。虽然常识为2个月，但依据“证据优先”及“严禁凭印象补位”原则，该选项在给定证据中无对应原文支持。\nD. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“年度报告中的财务信息应当经审计委员会事前审核...提交董事会审议”，审计委员会是事前审核，不能替代董事会审议。\n判断: A不选, B入选, C不选, D不选\n答案: B\n\n【第2题 答案块】"
+ },
+ "reg_b_023": {
+  "source_run": "b_slim31",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   2029,
+   358
+  ],
+  "evidence_ids": [
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c1",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c20",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c24",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c26",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c0",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c15",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c18",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c21",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c23",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c28",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c38",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c41",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c2",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c6",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c20",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c21",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c30",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c31",
+   "strict_v3_017_中华人民共和国反洗钱法#c14",
+   "strict_v3_017_中华人民共和国反洗钱法#c21",
+   "strict_v3_017_中华人民共和国反洗钱法#c23"
+  ],
+  "final": "AB",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据提供的文档证据，判断关于2026年1月15日时点下存量客户尽调时限、新办法生效日期及资料保存期限的说法是否正确。\n分析:\nA. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十一条：“自本办法施行之日起半年内完成较高风险以上存量客户的尽职调查”。该办法自2026年1月1日起施行（第五十二条），因此2026年1月15日处于施行初期，较高风险以上存量客户应在半年内完成尽调的说法符合规定。\nB. 错误。根据《金融机构客户受益所有人识别管理办法》第一条及公布令：“自2026年1月20日起施行”。2026年1月15日该办法尚未生效。\nC. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十二条：“本办法自2026年1月1日起施行”。2026年1月15日该办法已生效。\nD. 不选。虽然《中华人民共和国反洗钱法》是上位法，但提供的原文片段证据中（strict_v3_017）并未包含关于“客户身份资料至少保存十年”的具体条款内容。根据判分规则“凡选项声称的具体数值/日期/时限在证据中找不到对应原文的，视为证据缺失"
+ },
+ "reg_b_024": {
+  "source_run": "b_slim18",
+  "answer": [
+   "B"
+  ],
+  "source_tokens": [
+   2035,
+   312
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0030_att1#c3",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c2",
+   "csrc_0038_att1#c3",
+   "csrc_0038_att1#c4",
+   "csrc_0038_att1#c5",
+   "csrc_0038_att1#c20",
+   "csrc_0038_att1#c24",
+   "csrc_0038_att1#c25",
+   "csrc_0038_att1#c33",
+   "csrc_0038_att1#c36",
+   "csrc_0038_att1#c39",
+   "csrc_0038_att1#c44",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "B",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于定期报告（年报、中报）披露程序的说法是否正确。\n分析: \nA. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“未经董事会审议通过的年度报告不得披露”。虽然提供的《半年度报告》片段未直接显示相同条款，但通常半年报也需董事会审议，且选项称“均可未经...先披露”与年报规定直接冲突。\nB. 正确。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十一条，“公司应当在每个会计年度结束之日起四个月内将年度报告全文...披露”。\nC. 证据缺失/不选。提供的《半年度报告》片段（csrc_0037_att1）中未包含关于披露时限的具体月份规定（仅见第六十四条施行日期）。虽然常识为2个月，但依据“证据优先”及“严禁凭印象补位”原则，该选项在给定证据中无对应原文支持。\nD. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“年度报告中的财务信息应当经审计委员会事前审核...提交董事会审议”，审计委员会是事前审核，不能替代董事会审议。\n判断: A不选, B入选, C不选, D不选\n答案: B\n\n【第2题 答案块】"
+ },
+ "reg_b_025": {
+  "source_run": "b_slim31",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   2029,
+   358
+  ],
+  "evidence_ids": [
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c1",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c20",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c24",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c26",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c0",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c15",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c18",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c21",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c23",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c28",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c38",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c41",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c2",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c6",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c20",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c21",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c30",
+   "strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）#c31",
+   "strict_v3_017_中华人民共和国反洗钱法#c14",
+   "strict_v3_017_中华人民共和国反洗钱法#c21",
+   "strict_v3_017_中华人民共和国反洗钱法#c23"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 根据提供的文档证据，判断关于2026年1月15日时点下存量客户尽调时限、新办法生效日期及资料保存期限的说法是否正确。\n分析:\nA. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十一条：“自本办法施行之日起半年内完成较高风险以上存量客户的尽职调查”。该办法自2026年1月1日起施行（第五十二条），因此2026年1月15日处于施行初期，较高风险以上存量客户应在半年内完成尽调的说法符合规定。\nB. 错误。根据《金融机构客户受益所有人识别管理办法》第一条及公布令：“自2026年1月20日起施行”。2026年1月15日该办法尚未生效。\nC. 正确。根据《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》第五十二条：“本办法自2026年1月1日起施行”。2026年1月15日该办法已生效。\nD. 不选。虽然《中华人民共和国反洗钱法》是上位法，但提供的原文片段证据中（strict_v3_017）并未包含关于“客户身份资料至少保存十年”的具体条款内容。根据判分规则“凡选项声称的具体数值/日期/时限在证据中找不到对应原文的，视为证据缺失"
+ },
+ "reg_b_026": {
+  "source_run": "b_slim18",
+  "answer": [
+   "B"
+  ],
+  "source_tokens": [
+   2035,
+   312
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0030_att1#c3",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c2",
+   "csrc_0038_att1#c3",
+   "csrc_0038_att1#c4",
+   "csrc_0038_att1#c5",
+   "csrc_0038_att1#c20",
+   "csrc_0038_att1#c24",
+   "csrc_0038_att1#c25",
+   "csrc_0038_att1#c33",
+   "csrc_0038_att1#c36",
+   "csrc_0038_att1#c39",
+   "csrc_0038_att1#c44",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "B",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于定期报告（年报、中报）披露程序的说法是否正确。\n分析: \nA. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“未经董事会审议通过的年度报告不得披露”。虽然提供的《半年度报告》片段未直接显示相同条款，但通常半年报也需董事会审议，且选项称“均可未经...先披露”与年报规定直接冲突。\nB. 正确。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十一条，“公司应当在每个会计年度结束之日起四个月内将年度报告全文...披露”。\nC. 证据缺失/不选。提供的《半年度报告》片段（csrc_0037_att1）中未包含关于披露时限的具体月份规定（仅见第六十四条施行日期）。虽然常识为2个月，但依据“证据优先”及“严禁凭印象补位”原则，该选项在给定证据中无对应原文支持。\nD. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“年度报告中的财务信息应当经审计委员会事前审核...提交董事会审议”，审计委员会是事前审核，不能替代董事会审议。\n判断: A不选, B入选, C不选, D不选\n答案: B\n\n【第2题 答案块】"
+ },
+ "reg_b_027": {
+  "source_run": "b_slim18",
+  "answer": [
+   "BD"
+  ],
+  "source_tokens": [
+   2035,
+   312
+  ],
+  "evidence_ids": [
+   "csrc_0009_att1#c20",
+   "csrc_0025_att1#c20",
+   "csrc_0027_att1#c18",
+   "csrc_0030_att1#c3",
+   "csrc_0037_att1#c26",
+   "csrc_0038_att1#c2",
+   "csrc_0038_att1#c3",
+   "csrc_0038_att1#c4",
+   "csrc_0038_att1#c5",
+   "csrc_0038_att1#c20",
+   "csrc_0038_att1#c24",
+   "csrc_0038_att1#c25",
+   "csrc_0038_att1#c33",
+   "csrc_0038_att1#c36",
+   "csrc_0038_att1#c39",
+   "csrc_0038_att1#c44",
+   "csrc_0038_att1#c50",
+   "csrc_0370#c0",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c11",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c27",
+   "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）#c30",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c7",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c24",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c33",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c36",
+   "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）#c40",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c53",
+   "strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）#c59"
+  ],
+  "final": "BD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断关于定期报告（年报、中报）披露程序的说法是否正确。\n分析: \nA. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“未经董事会审议通过的年度报告不得披露”。虽然提供的《半年度报告》片段未直接显示相同条款，但通常半年报也需董事会审议，且选项称“均可未经...先披露”与年报规定直接冲突。\nB. 正确。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十一条，“公司应当在每个会计年度结束之日起四个月内将年度报告全文...披露”。\nC. 证据缺失/不选。提供的《半年度报告》片段（csrc_0037_att1）中未包含关于披露时限的具体月份规定（仅见第六十四条施行日期）。虽然常识为2个月，但依据“证据优先”及“严禁凭印象补位”原则，该选项在给定证据中无对应原文支持。\nD. 错误。根据《公开发行证券的公司信息披露内容与格式准则第2号》第十二条，“年度报告中的财务信息应当经审计委员会事前审核...提交董事会审议”，审计委员会是事前审核，不能替代董事会审议。\n判断: A不选, B入选, C不选, D不选\n答案: B\n\n【第2题 答案块】"
+ },
+ "res_b_001": {
+  "source_run": "b_slim11",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "AB",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ },
+ "res_b_002": {
+  "source_run": "b_slim16",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_003": {
+  "source_run": "b_slim16",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "AB",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_004": {
+  "source_run": "b_slim11",
+  "answer": [
+   "BCD"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "BCD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ },
+ "res_b_005": {
+  "source_run": "b_slim23",
+  "answer": [
+   "22.27"
+  ],
+  "source_tokens": [
+   2467,
+   2728
+  ],
+  "evidence_ids": [
+   "pack2_text01#c18",
+   "pack2_text04#c13",
+   "pack2_text04#c44"
+  ],
+  "final": "22.27",
+  "a1": "22.27",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 2025年国内新能源乘用车销量：1300.4万辆（来源：pack2_text04 P13，表“国内本土电动乘用车预测（原预测）”及“（新预测）”，2025年列）\n2. 2025年国内电动乘用车电池装机需求：596.0 GWh（来源：pack2_text04 P13，表“国内本土电动乘用车预测（原预测）”及“（新预测）”，2025年列）\n3. 2025年国内乘用车单车带电量：45.8 kWh（来源：pack2_text04 P13，表“国内本土电动乘用车预测（原预测）”及“（新预测）”，2025年列）\n4. 2026年国内新能源乘用车销量：1300.4万辆（题目条件“与2025年持平”，对应证据pack2_text04 P13新预测表中2026E销量为1300.4万辆）\n5. 2026年单车带电量：56 kWh（题目条件“提升至56kWh”，注：证据中2025年纯电单车带电量为56.4kWh，总体乘用车单车带电量为45.8kWh，题目给定假设值为56kWh，直接使用该假设值计算）\n\n第二步【计算】：\n1. 计算2026年动力电池需求：\n   2026年销量 × 2"
+ },
+ "res_b_006": {
+  "source_run": "b_slim16",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "AB",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_007": {
+  "source_run": "b_slim28",
+  "answer": [
+   "61.98"
+  ],
+  "source_tokens": [
+   2246,
+   1014
+  ],
+  "evidence_ids": [
+   "pack2_text01#c15",
+   "pack2_text09#c40"
+  ],
+  "final": "61.98",
+  "a1": "61.98",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n- 2025年新签订单金额：59.60亿元（来源：pack2_text09 P30，2025年度，芯原股份，新签订单金额）\n\n第二步【计算】：\n1. 计算2026年新签订单总金额：\n2026年新签订单金额 = 2025年新签订单金额 × (1 + 2026年新签订单增速)\n= 59.60 × (1 + 30%) \n= 59.60 × 1.3 \n= 77.48（亿元）\n\n2. 计算2026年AI新签订单金额：\n2026年AI新签订单金额 = 2026年新签订单金额 × 2026年AI订单占比\n= 77.48 × 80% \n= 61.984（亿元）\n\n按要求保留两位小数，结果为61.98亿元。\n\n答案: 61.98"
+ },
+ "res_b_008": {
+  "source_run": "b_slim11",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ },
+ "res_b_009": {
+  "source_run": "b_routerD_trio",
+  "answer": [
+   "ABC"
+  ],
+  "source_tokens": [
+   3416,
+   457
+  ],
+  "evidence_ids": [
+   "pack2_text05#c17",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c1",
+   "pack2_text07#c25",
+   "pack2_text09#c23",
+   "pack2_text09#c37",
+   "pack2_text09#c42",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c37",
+   "pack2_text11#c43",
+   "pack2_text12#c18",
+   "pack2_text12#c20",
+   "pack2_text14#c12",
+   "pack2_text15#c0",
+   "pack2_text15#c8",
+   "pack2_text15#c13",
+   "pack2_text16#c0",
+   "pack2_text16#c2",
+   "pack2_text16#c3",
+   "pack2_text16#c9",
+   "pack2_text16#c11",
+   "pack2_text16#c16",
+   "pack2_text16#c20",
+   "pack2_text16#c24",
+   "pack2_text16#c28",
+   "pack2_text18#c0",
+   "pack2_text18#c31"
+  ],
+  "final": "ABC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 选出关于白羽肉鸡龙头（圣农发展）和直播电商公司（东方甄选）在“一体化”或“自营”战略模式比较中描述准确的两项。\n分析:\nA. **入选**。证据显示，圣农发展向上游延伸至种源育种，“构建起覆盖种源育种...的全产业生态闭环”（pack2_text16 P1, P7），旨在打破垄断建立壁垒；东方甄选推出“透明工厂”计划，邀请公众进入产地溯源，并“通过大数据分析和用户调研持续优化产品配方与包装...确保从原材料到终端产品的全链条品质可控”（pack2_text05 P21）。两者都试图通过控制源头（种源/配方与生产透明度）来建立品质壁垒。\nB. **不选**。虽然圣农是重资产，但文档明确指出东方甄选“体现其对供应链体系强大的掌控力”（pack2_text05 P18），且通过自营品矩阵扩张实现高质低价，因此“后者不具备供应链控制力”的表述与文档事实矛盾。\nC. "
+ },
+ "res_b_010": {
+  "source_run": "b_slim16",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_011": {
+  "source_run": "b_slim11",
+  "answer": [
+   "BC"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "BC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ },
+ "res_b_012": {
+  "source_run": "b_slim21",
+  "answer": [
+   "67.10"
+  ],
+  "source_tokens": [
+   2137,
+   1609
+  ],
+  "evidence_ids": [
+   "pack2_text01#c5",
+   "pack2_text05#c31"
+  ],
+  "final": "67.1",
+  "a1": "67.1",
+  "a2": null,
+  "solve_excerpt": "第一步【取数】：\n1. 2026年全年总GMV：100亿元（题目给定）\n2. 自营品占比：60%（题目给定）\n3. APP自营占自营总GMV比重：35%（题目给定）\n4. 会员年费：199元（pack2_text05 P26，表9）\n5. 会员人数：24.01万人（pack2_text05 P26，表9及图表数据）\n6. 会员年均商品消费：2960元（题目给定）\n7. 普通用户年均消费额：2960×70% = 2072元（题目给定）\n\n第二步【计算】：\n1. 计算APP自营GMV：\n   总GMV = 100亿元 = 1000000万元\n   自营GMV = 1000000 × 60% = 600000万元\n   APP自营GMV = 600000 × 35% = 210000万元\n\n2. 计算会员贡献的APP自营GMV（不含会员费）：\n   会员商品消费总额 = 24.01万人 × 2960元/人 = 71069.6万元\n\n3. 计算普通用户贡献的APP自营GMV：\n   普通用户贡献 = APP自营GMV - 会员贡献 = 210000 - 71069.6 = 138930.4万元"
+ },
+ "res_b_013": {
+  "source_run": "b_slim11",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "AB",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ },
+ "res_b_014": {
+  "source_run": "b_slim16",
+  "answer": [
+   "CD"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "CD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_015": {
+  "source_run": "b_slim16",
+  "answer": [
+   "BD"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "BD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_016": {
+  "source_run": "b_slim11",
+  "answer": [
+   "BD"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "BD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ },
+ "res_b_017": {
+  "source_run": "b_slim16",
+  "answer": [
+   "AC"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "AC",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_018": {
+  "source_run": "b_slim16",
+  "answer": [
+   "CD"
+  ],
+  "source_tokens": [
+   3081,
+   394
+  ],
+  "evidence_ids": [
+   "pack2_text03#c0",
+   "pack2_text03#c2",
+   "pack2_text03#c9",
+   "pack2_text03#c14",
+   "pack2_text03#c19",
+   "pack2_text03#c23",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c37",
+   "pack2_text03#c39",
+   "pack2_text03#c43",
+   "pack2_text03#c44",
+   "pack2_text03#c49",
+   "pack2_text04#c13",
+   "pack2_text04#c30",
+   "pack2_text04#c52",
+   "pack2_text04#c76",
+   "pack2_text04#c83",
+   "pack2_text05#c0",
+   "pack2_text05#c21",
+   "pack2_text05#c25",
+   "pack2_text05#c34",
+   "pack2_text07#c25",
+   "pack2_text09#c37",
+   "pack2_text10#c6",
+   "pack2_text10#c12",
+   "pack2_text11#c6",
+   "pack2_text11#c20",
+   "pack2_text11#c37",
+   "pack2_text13#c16"
+  ],
+  "final": "CD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 找出准确概括推广春秋假、消费券、宠物医院连锁化及保险养老结合背后共同思路的选项。\n分析:\nA. 错误。文档《产业前瞻系列2》明确指出政策发力方向包括“供给提质”、“制度清障”，且提到“从‘投资于物’到‘投资于人’”，并非只关注短期消费而忽视长期供给能力建设（见pack2_text03 P1, P16）。\nB. 错误。文档提到财政金融支持更重资金质效，设立专项资金，完善社保体系，并非将公共服务“完全市场化”以减少财政负担，而是强调政府与市场的协同（见pack2_text03 P1, P19）。\nC. 正确。文档《产业前瞻系列2》核心观点指出服务消费政策范式重构，需求侧“增收、减负、清障”，供给侧“扩围、提质、融合”，体现了供需两侧同时发力以提升质量和规模（见pack2_text03 P1, P17）。宠物医院报告也提到从激进扩张（量）走到稳健发展（质/专科化），符合这一逻辑（见pack2_text13 P12）。\nD. 正确。文档《产业前瞻系列2》提到通过完善“六险二金”、长护险等机制，降低居民储蓄动机，激发消费意愿，即利用金融/保险工具分担风险以释放即期"
+ },
+ "res_b_019": {
+  "source_run": "b_slim11",
+  "answer": [
+   "AB"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "AB",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ },
+ "res_b_020": {
+  "source_run": "b_slim11",
+  "answer": [
+   "BD"
+  ],
+  "source_tokens": [
+   2728,
+   645
+  ],
+  "evidence_ids": [
+   "pack2_text01#c24",
+   "pack2_text01#c27",
+   "pack2_text03#c0",
+   "pack2_text03#c14",
+   "pack2_text03#c15",
+   "pack2_text03#c18",
+   "pack2_text03#c25",
+   "pack2_text03#c27",
+   "pack2_text03#c30",
+   "pack2_text03#c34",
+   "pack2_text03#c36",
+   "pack2_text03#c48",
+   "pack2_text03#c49",
+   "pack2_text04#c48",
+   "pack2_text07#c58",
+   "pack2_text10#c0",
+   "pack2_text10#c36",
+   "pack2_text14#c32",
+   "pack2_text14#c34",
+   "pack2_text14#c43",
+   "pack2_text15#c33",
+   "pack2_text15#c52",
+   "pack2_text17#c16"
+  ],
+  "final": "BD",
+  "solve_excerpt": "【第1题 答案块】\n选择标准: 判断哪些关于制度变革效果的描述在文档中有明确支持或逻辑推断依据。\n分析: \nA. 银保渠道“报行合一”政策导致中小险企退出，头部集中度提升（pack2_text01 P23, pack2_text15 P22）；宠物医院从激进扩张走向稳健发展，隐含行业整合与合规成本上升（pack2_text13标题及常识推断，虽无直接文字但符合行业规律，且银保部分明确支持“加速行业集中”）。文档明确指出银保市场集中度有望提升，且“报行合一”击碎了中小险企依赖高费用的模型（pack2_text15 P22）。故A正确。\nB. 文档指出服务消费面临“三低一逆”，其中提到住房支出挤出、公共支出偏低等，并未声称财政补贴“不存在挤出效应”，反而暗示了资源约束和结构性问题（pack2_text03 P1, P10）。故B错误。\nC. 银保渠道放开“1+N”合作限制，打破渠道壁垒，利好头部险企（pack2_text01 P21, pack2_text15 P22）；宠物医院报告标题提及从激进扩张到稳健发展，通常连锁化是通过规模效应和标准化打破地域/管理壁垒，虽然文档片段较少，但结合银"
+ }
+}

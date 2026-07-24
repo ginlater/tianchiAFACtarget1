@@ -68,6 +68,8 @@ for f in glob.glob(str(OUT / "*" / "answers.json")):
     tag = pathlib.Path(f).parent.name
     if tag in ("b_router6", "b_hex", "b_v4") or tag.startswith("b_router7"):
         continue  # 组装件与合成键不作件源
+    if not (pathlib.Path(f).parent / "run_log.jsonl").exists():
+        continue  # 只认原始run(有解题日志铁指纹); 组装件不作件源(溯源不得嵌套)
     try:
         ans = json.load(open(f, encoding="utf-8-sig"))
         led = json.load(open(pathlib.Path(f).parent / "token_ledger.json")
