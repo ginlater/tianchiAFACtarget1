@@ -207,3 +207,10 @@
   漏了%(模板自身bug), 解析器信模板 → 84个run的22.19全以纯数字提交, 值可能对格式全错!
 - 已修: b_schema强制覆盖res_b_005=percent; b_hex/router6/router8三件全部改为22.19%
 - 若兑现: acc上限100! router6 est→95.5-96.1, b_hex est→93.1-93.7
+
+## 7-24深夜 slimKing战役: 单跑史诗
+- **slimKing4: 95/100@1.735M自含账 — 追平full11史上纪录只花51%** (装甲族92→92→94→95, ins四连满分)
+- 配方: SLIM+FIN_FACTS2+DOM_FACTS+ALIGN+CALC_HETERO(3.5)+WHOLE_LIMIT15k+EV0.8+fresh卡
+- 金bug(用户发现): res_b_005规则要求%,模板漏标 → 全弹药22.19%, 单跑或达96键
+- 帕累托: 5源覆盖99复现两次; 跨轮路由82; 多数决89; b_hex 5源93.1-93.7; router6 95.5-96.1
+- 单发est渐近线~86; 决策台: 榜92.4253保底 / b_hex/router6键裁判线 / slimKing4诚实旗舰
