@@ -15,10 +15,48 @@ from .answerer import (CALC_DOMAINS, DIGEST_DOMAINS, JUDGE_STD, _doc_title,
 from .qwen_client import chat, LEDGER, DEFAULT_MODEL
 
 
+HOMO_DOMS = {"insurance", "financial_reports"}
+
+
+def _group_homo(questions, max_batch=6):
+    """同质批组（mix复盘处方，7-24）：ins/fin 松散合批的团灭病根 =
+    异底仓成员共享上下文装不下多产品条款（并集稀释+每题配额挤兑）。
+    处方：组B并入组A当且仅当 docs(B)⊆docs(A)——证据并集零膨胀，深而不宽。
+    仅 ins/fin 用同质合并；reg/res/fc 批量本就健康，保持松散大批摊指令。"""
+    loose_qs = [q for q in questions if q["domain"] not in HOMO_DOMS]
+    homo_qs = [q for q in questions if q["domain"] in HOMO_DOMS]
+    out = []
+    by_dom = {}
+    for q in loose_qs:
+        by_dom.setdefault(q["domain"], []).append(q)
+    for dom, qs in by_dom.items():
+        qs.sort(key=lambda q: sorted(q["doc_ids"]))
+        mb = {"financial_contracts": 3}.get(dom, 8)
+        out += [qs[i:i + mb] for i in range(0, len(qs), mb)]
+    groups = {}
+    for q in homo_qs:
+        groups.setdefault((q["domain"], frozenset(q["doc_ids"])), []).append(q)
+    merged = {}
+    for key in sorted(groups, key=lambda k: -len(k[1])):  # 大底仓在前作宿主
+        dom, ds = key
+        host = next((hk for hk in merged
+                     if hk[0] == dom and ds <= hk[1]), None)
+        if host is None:
+            merged[key] = list(groups[key])
+        else:
+            merged[host].extend(groups[key])
+    for (_dom, _ds), qs in merged.items():
+        out += [qs[i:i + max_batch] for i in range(0, len(qs), max_batch)]
+    return out
+
+
 def group_questions(questions, max_batch=3):
     """按(域, 文档集)分组。返回 [ [q,...], ... ]，单题组即单题。
     瘦身档：域内松散合批（证据取文档并集），摊薄指令与证据开销。"""
     import os
+    if os.environ.get("AFAC_HOMO_BATCH") == "1":
+        return _group_homo(questions,
+                           int(os.environ.get("AFAC_HOMO_MAX", "6")))
     loose = os.environ.get("AFAC_SLIM4") == "1"
     groups = {}
     for q in questions:
@@ -63,6 +101,20 @@ def _batch_evidence(qs, model=DEFAULT_MODEL):
             # fc/fin大文档域无卡时证据帽必须给足（slim6教训：砍卡后漏选爆发）
             base_cap = {"research": 6000, "financial_contracts": 7500,
                         "financial_reports": 7500}.get(domain, 4800)
+    # 三矿入批（7-24）：fin_facts2/domain_facts/align 此前只接 solo 通道，
+    # 批量成员从未见过离线矿——fin 批团灭第二病根。逐成员取块去重后共享
+    # （零 API 成本的词法查表，env 自门控：未开对应 AFAC_* 时返回空）。
+    from .answerer import align_block, domain_facts_block, fin_facts_block
+    _seen_blocks = set()
+    for q in qs:
+        for _fn in (fin_facts_block, domain_facts_block, align_block):
+            try:
+                b = _fn(q)
+            except Exception:  # noqa: BLE001 — 矿块失败不拖垮批答
+                b = ""
+            if b and b not in _seen_blocks:
+                _seen_blocks.add(b)
+                blocks.append(b)
     # 预算按批内题数扩容40%/题（并集去重后实际占用低于线性）；瘦身档25%
     _slim4 = __import__("os").environ.get("AFAC_SLIM4") == "1"
     cap = int(base_cap * (1 + (0.25 if _slim4 else 0.4) * (len(qs) - 1)))
