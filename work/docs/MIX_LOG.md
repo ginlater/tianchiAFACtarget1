@@ -183,3 +183,9 @@ finfresh 17/20@1.01M / insfresh 19/20@671k / fccard 18@208k / fclite 17@172k
 - res13又塌+fin14弱腿; 级联v2同熵升级名单换骰重掷=同带宽再抽样
 - 单发榜定格: router8=89(王) > router9=88 > routerX=82; 方差带±4三度确认
 - 终版设计routerFinal: router9骨架+ALIGN对齐包+res R1_VOTES=2反方差(定律对症)
+
+## routerF判决+单发战役收官(7-25晨)
+- routerF 82/100@2.06M est78.3 ❌ — res带投票仍13(自打脸: SLIM_LOG早有"slim22投票负ROI",
+  定律也写明判断层零治愈, 仍向res开了判断层武器 → 教训: 开火前查自己的册)
+- **单发终榜: router8=89@1.674M(est83.3)王座四连守**; 挑战者88/82/82; 方差带82-89实锤
+- 结论: 单发系每次"架构微调"再跑=同分布再抽样, 停止掷骰; router8铸提交件

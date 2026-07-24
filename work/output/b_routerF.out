@@ -1,0 +1,9 @@
+[router] regfc 已发射 (pid 77660)
+[router] resolo 已发射 (pid 77661)
+[router] insfull 已发射 (pid 77662)
+[router] finfull 已发射 (pid 77663)
+[router] regfc 完成 rc=0 (182s)
+[router] resolo 完成 rc=0 (252s)
+[router] insfull 完成 rc=0 (743s)
+[router] finfull 完成 rc=0 (1225s)
+[router] 合并完成: 100题 答题账2,059,037 → /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_routerF

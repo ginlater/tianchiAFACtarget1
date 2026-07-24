@@ -1,0 +1,23 @@
+待作答 40 / 共 100 题；model=qwen3.6-plus verify=qwen3.6-plus
+docsel 完成; tokens 18,935
+选择题 30 → 8 组; 计算题 10
+[3/40] +['fc_b_004', 'fc_b_018', 'fc_b_002'] (31,666 tok)
+[6/40] +['fc_b_011', 'fc_b_003', 'fc_b_006'] (50,257 tok)
+[7/40] +['fc_b_012'] (54,653 tok)
+[10/40] +['fc_b_019', 'fc_b_013', 'fc_b_016'] (66,648 tok)
+[13/40] +['fc_b_007', 'fc_b_008', 'fc_b_009'] (78,701 tok)
+[16/40] +['fc_b_010', 'fc_b_015', 'fc_b_017'] (93,565 tok)
+[24/40] +['reg_b_026', 'reg_b_008', 'reg_b_013', 'reg_b_020', 'reg_b_024', 'reg_b_005', 'reg_b_027', 'reg_b_021'] (106,351 tok)
+[25/40] +['fc_b_001'] (110,061 tok)
+[31/40] +['reg_b_001', 'reg_b_015', 'reg_b_009', 'reg_b_017', 'reg_b_023', 'reg_b_025'] (120,803 tok)
+[32/40] +['fc_b_014'] (128,151 tok)
+[33/40] +['fc_b_020'] (131,543 tok)
+[34/40] +['reg_b_003'] (134,993 tok)
+[35/40] +['reg_b_004'] (138,308 tok)
+[36/40] +['fc_b_005'] (144,534 tok)
+[37/40] +['reg_b_007'] (147,755 tok)
+[38/40] +['reg_b_014'] (150,957 tok)
+[39/40] +['reg_b_016'] (154,251 tok)
+[40/40] +['reg_b_018'] (157,638 tok)
+done in 181s; tokens 157,638 (p=124,266 c=33,372)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_routerF_regfc/answer.csv
