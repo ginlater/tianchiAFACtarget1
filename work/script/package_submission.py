@@ -25,10 +25,14 @@ def main(tag="b_router6"):
         if p.is_file() and ".DS_Store" not in p.name:
             add(p, f"submission/processed_data/{p.relative_to(WORK / 'processed_data')}")
     for name in ["run_log.jsonl", "token_ledger.json", "docsel_log.jsonl",
-                 "digests.json"]:
+                 "digests.json", "answers.json", "piece_sources.json",
+                 "reasonings.json"]:
         p = outdir / name
         if p.exists():
             add(p, f"submission/logs/{name}")
+    fd = WORK / "docs" / "FAMILY_DOCTRINE.md"
+    if fd.exists():  # 路由装配方法论总纲, 审计叙事主文档
+        add(fd, "submission/FAMILY_DOCTRINE.md")
     zf.close()
     size = out.stat().st_size / 1e6
     names = zipfile.ZipFile(out).namelist()
