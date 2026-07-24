@@ -13,7 +13,7 @@ from agent import b_schema  # noqa: E402
 
 WORK = pathlib.Path(__file__).resolve().parents[1]
 OUT = WORK / "output"
-PEAK_LO, PEAK_HI = 499_000, 499_900
+PEAK_LO, PEAK_HI = 499_850, 499_995
 
 asg = json.load(open(OUT / "assignment_final.json"))
 R = json.load(open(OUT / "reasonings_probe.json"))
