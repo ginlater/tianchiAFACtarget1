@@ -26,7 +26,8 @@ SCOUT = {   # 阶段1: 全卷便宜路由(mixC三域配方 + slim式fin/ins)
     "qB_finins": {
         "qids_file": "output/qids_mixD.txt",
         "env": {"AFAC_SLIM": "1", "AFAC_SLIM4": "1", "AFAC_NO_DIGEST": "1",
-                "AFAC_DIGEST_KEEP": "none", "AFAC_STABLE": "1"},
+                "AFAC_DIGEST_KEEP": "none", "AFAC_STABLE": "1",
+                "AFAC_FIN_FACTS": "2"},
         "args": ["--batch", "--workers", "4"],
     },
 }
@@ -34,7 +35,9 @@ HEAVY_ENV = {"AFAC_STABLE": "1", "AFAC_VERIFY_MODEL": "qwen3.5-plus",
              "AFAC_ARB_VOTES": "3", "AFAC_R1_VOTES": "2",
              "AFAC_LEAN_R2": "1",  # FULL手册翻案:单刀省127k且+2键(full12vs13对照)
              "AFAC_DIGEST_KEEP": "insurance,financial_reports",
-             "AFAC_NO_DIGEST": "1"}
+             "AFAC_NO_DIGEST": "1",
+             "AFAC_FIN_FACTS": "2",       # 单元格速查表(fin_b_012类伤解药)
+             "AFAC_WHOLE_LIMIT": "15000"}  # ins节选构卡(insE 20/20配方)
 
 t0 = time.time()
 def launch(name, env_extra, args, qids):
