@@ -1,0 +1,1086 @@
+{
+ "per_qid": {
+  "_docsel_financial_contracts": [
+   16,
+   3
+  ],
+  "fc_b_001": [
+   4614,
+   3766
+  ],
+  "fc_b_002": [
+   3989,
+   431
+  ],
+  "fc_b_003": [
+   5750,
+   488
+  ],
+  "fc_b_004": [
+   3989,
+   431
+  ],
+  "fc_b_005": [
+   9920,
+   4880
+  ],
+  "fc_b_006": [
+   5750,
+   488
+  ],
+  "fc_b_007": [
+   3643,
+   594
+  ],
+  "fc_b_008": [
+   3643,
+   594
+  ],
+  "fc_b_009": [
+   3643,
+   594
+  ],
+  "fc_b_010": [
+   3902,
+   1015
+  ],
+  "fc_b_011": [
+   5750,
+   488
+  ],
+  "fc_b_012": [
+   5126,
+   278
+  ],
+  "fc_b_013": [
+   3145,
+   982
+  ],
+  "fc_b_014": [
+   5200,
+   3147
+  ],
+  "fc_b_015": [
+   3902,
+   1015
+  ],
+  "fc_b_016": [
+   3145,
+   982
+  ],
+  "fc_b_017": [
+   3902,
+   1015
+  ],
+  "fc_b_018": [
+   3989,
+   431
+  ],
+  "fc_b_019": [
+   3145,
+   982
+  ],
+  "fc_b_020": [
+   4340,
+   3170
+  ],
+  "_docsel_insurance": [
+   7,
+   12
+  ],
+  "ins_b_001": [
+   7239,
+   4463
+  ],
+  "ins_b_002": [
+   2417,
+   390
+  ],
+  "ins_b_003": [
+   6825,
+   13995
+  ],
+  "ins_b_004": [
+   2417,
+   390
+  ],
+  "ins_b_005": [
+   2365,
+   500
+  ],
+  "ins_b_006": [
+   2417,
+   390
+  ],
+  "ins_b_007": [
+   2417,
+   390
+  ],
+  "ins_b_008": [
+   2417,
+   390
+  ],
+  "ins_b_009": [
+   2365,
+   500
+  ],
+  "ins_b_010": [
+   2365,
+   500
+  ],
+  "ins_b_011": [
+   3321,
+   4275
+  ],
+  "ins_b_012": [
+   2365,
+   500
+  ],
+  "ins_b_013": [
+   2417,
+   390
+  ],
+  "ins_b_014": [
+   2417,
+   390
+  ],
+  "ins_b_015": [
+   2365,
+   500
+  ],
+  "ins_b_016": [
+   2365,
+   500
+  ],
+  "ins_b_017": [
+   2417,
+   390
+  ],
+  "ins_b_018": [
+   3679,
+   3968
+  ],
+  "ins_b_019": [
+   7213,
+   4276
+  ],
+  "ins_b_020": [
+   2365,
+   500
+  ],
+  "_docsel_financial_reports": [
+   2,
+   1
+  ],
+  "fin_b_001": [
+   3936,
+   576
+  ],
+  "fin_b_002": [
+   3936,
+   576
+  ],
+  "fin_b_003": [
+   3936,
+   576
+  ],
+  "fin_b_004": [
+   3936,
+   576
+  ],
+  "fin_b_005": [
+   5050,
+   689
+  ],
+  "fin_b_006": [
+   3936,
+   576
+  ],
+  "fin_b_007": [
+   3936,
+   576
+  ],
+  "fin_b_008": [
+   20980,
+   2395
+  ],
+  "fin_b_009": [
+   11163,
+   2244
+  ],
+  "fin_b_010": [
+   3936,
+   576
+  ],
+  "fin_b_011": [
+   5050,
+   689
+  ],
+  "fin_b_012": [
+   21266,
+   2492
+  ],
+  "fin_b_013": [
+   6391,
+   7464
+  ],
+  "fin_b_014": [
+   23865,
+   11215
+  ],
+  "fin_b_015": [
+   11571,
+   7792
+  ],
+  "fin_b_016": [
+   33065,
+   11173
+  ],
+  "fin_b_017": [
+   4621,
+   4386
+  ],
+  "fin_b_018": [
+   8721,
+   4122
+  ],
+  "fin_b_019": [
+   10537,
+   7790
+  ],
+  "fin_b_020": [
+   10071,
+   5312
+  ],
+  "_docsel_regulatory": [
+   17,
+   2
+  ],
+  "reg_b_001": [
+   2160,
+   377
+  ],
+  "reg_b_003": [
+   4431,
+   4103
+  ],
+  "reg_b_004": [
+   4587,
+   4066
+  ],
+  "reg_b_005": [
+   2060,
+   365
+  ],
+  "reg_b_007": [
+   4449,
+   3823
+  ],
+  "reg_b_008": [
+   2060,
+   365
+  ],
+  "reg_b_009": [
+   2160,
+   377
+  ],
+  "reg_b_013": [
+   2060,
+   365
+  ],
+  "reg_b_014": [
+   4043,
+   5866
+  ],
+  "reg_b_015": [
+   2160,
+   377
+  ],
+  "reg_b_016": [
+   4804,
+   3838
+  ],
+  "reg_b_017": [
+   2227,
+   382
+  ],
+  "reg_b_018": [
+   4648,
+   4105
+  ],
+  "reg_b_020": [
+   2127,
+   370
+  ],
+  "reg_b_021": [
+   2127,
+   370
+  ],
+  "reg_b_023": [
+   2227,
+   382
+  ],
+  "reg_b_024": [
+   2127,
+   370
+  ],
+  "reg_b_025": [
+   2227,
+   382
+  ],
+  "reg_b_026": [
+   2127,
+   370
+  ],
+  "reg_b_027": [
+   2127,
+   370
+  ],
+  "_docsel_research": [
+   19,
+   15
+  ],
+  "res_b_001": [
+   3177,
+   386
+  ],
+  "res_b_002": [
+   3130,
+   457
+  ],
+  "res_b_003": [
+   3130,
+   457
+  ],
+  "res_b_004": [
+   3130,
+   457
+  ],
+  "res_b_005": [
+   4736,
+   4223
+  ],
+  "res_b_006": [
+   3177,
+   386
+  ],
+  "res_b_007": [
+   4290,
+   4022
+  ],
+  "res_b_008": [
+   3177,
+   386
+  ],
+  "res_b_009": [
+   10675,
+   4465
+  ],
+  "res_b_010": [
+   3130,
+   457
+  ],
+  "res_b_011": [
+   3177,
+   386
+  ],
+  "res_b_012": [
+   4166,
+   4711
+  ],
+  "res_b_013": [
+   3177,
+   386
+  ],
+  "res_b_014": [
+   3130,
+   457
+  ],
+  "res_b_015": [
+   3130,
+   457
+  ],
+  "res_b_016": [
+   3177,
+   386
+  ],
+  "res_b_017": [
+   3130,
+   457
+  ],
+  "res_b_018": [
+   3130,
+   457
+  ],
+  "res_b_019": [
+   3177,
+   386
+  ],
+  "res_b_020": [
+   3177,
+   386
+  ],
+  "_batch": [
+   20,
+   36
+  ]
+ },
+ "calls": [
+  {
+   "qid": "_docsel_financial_contracts",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 3176,
+   "completion_tokens": 383,
+   "ts": 1784876818.1922529
+  },
+  {
+   "qid": "_docsel_insurance",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 3067,
+   "completion_tokens": 552,
+   "ts": 1784876820.9276428
+  },
+  {
+   "qid": "_docsel_financial_reports",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 3502,
+   "completion_tokens": 861,
+   "ts": 1784876827.304929
+  },
+  {
+   "qid": "_docsel_regulatory",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 6818,
+   "completion_tokens": 492,
+   "ts": 1784876830.0659
+  },
+  {
+   "qid": "_docsel_regulatory",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 7489,
+   "completion_tokens": 540,
+   "ts": 1784876833.041725
+  },
+  {
+   "qid": "_docsel_research",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 4059,
+   "completion_tokens": 635,
+   "ts": 1784876840.6726248
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 11494,
+   "completion_tokens": 1238,
+   "ts": 1784876868.374835
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 8962,
+   "completion_tokens": 2889,
+   "ts": 1784876892.835565
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 16778,
+   "completion_tokens": 1408,
+   "ts": 1784876897.002293
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 11234,
+   "completion_tokens": 2989,
+   "ts": 1784876898.328037
+  },
+  {
+   "qid": "fc_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 4968,
+   "completion_tokens": 259,
+   "ts": 1784876903.003139
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 10456,
+   "completion_tokens": 1727,
+   "ts": 1784876925.3914711
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 19500,
+   "completion_tokens": 2586,
+   "ts": 1784876959.260361
+  },
+  {
+   "qid": "fin_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "b4",
+   "prompt_tokens": 4822,
+   "completion_tokens": 400,
+   "ts": 1784876967.224322
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 18113,
+   "completion_tokens": 2908,
+   "ts": 1784876980.723972
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 30090,
+   "completion_tokens": 4271,
+   "ts": 1784876985.81021
+  },
+  {
+   "qid": "fin_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 11394,
+   "completion_tokens": 1403,
+   "ts": 1784876994.213409
+  },
+  {
+   "qid": "fin_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 7227,
+   "completion_tokens": 1668,
+   "ts": 1784877018.238183
+  },
+  {
+   "qid": "fin_b_008",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 15930,
+   "completion_tokens": 1706,
+   "ts": 1784877027.289849
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 15484,
+   "completion_tokens": 3311,
+   "ts": 1784877042.4950762
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 8875,
+   "completion_tokens": 1973,
+   "ts": 1784877063.0578098
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 11037,
+   "completion_tokens": 2531,
+   "ts": 1784877063.318248
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 23801,
+   "completion_tokens": 2846,
+   "ts": 1784877094.909039
+  },
+  {
+   "qid": "fc_b_001",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2228,
+   "completion_tokens": 1396,
+   "ts": 1784877121.924802
+  },
+  {
+   "qid": "res_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 5030,
+   "completion_tokens": 3390,
+   "ts": 1784877123.456625
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 23427,
+   "completion_tokens": 3411,
+   "ts": 1784877125.911146
+  },
+  {
+   "qid": "res_b_009",
+   "model": "qwen3.6-plus",
+   "tag": "r1b",
+   "prompt_tokens": 5443,
+   "completion_tokens": 1044,
+   "ts": 1784877142.605407
+  },
+  {
+   "qid": "fc_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2004,
+   "completion_tokens": 1389,
+   "ts": 1784877152.1158779
+  },
+  {
+   "qid": "fc_b_001",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2228,
+   "completion_tokens": 2351,
+   "ts": 1784877163.196481
+  },
+  {
+   "qid": "fc_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2521,
+   "completion_tokens": 1417,
+   "ts": 1784877169.230183
+  },
+  {
+   "qid": "fc_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "calc1b",
+   "prompt_tokens": 3879,
+   "completion_tokens": 1829,
+   "ts": 1784877187.3426628
+  },
+  {
+   "qid": "fc_b_020",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2091,
+   "completion_tokens": 1300,
+   "ts": 1784877187.757097
+  },
+  {
+   "qid": "fc_b_014",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2521,
+   "completion_tokens": 1711,
+   "ts": 1784877199.744986
+  },
+  {
+   "qid": "fc_b_005",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 3879,
+   "completion_tokens": 1643,
+   "ts": 1784877217.074019
+  },
+  {
+   "qid": "fc_b_020",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2091,
+   "completion_tokens": 1851,
+   "ts": 1784877220.931285
+  },
+  {
+   "qid": "fin_b_013",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 3108,
+   "completion_tokens": 1816,
+   "ts": 1784877233.742325
+  },
+  {
+   "qid": "fin_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 6882,
+   "completion_tokens": 1440,
+   "ts": 1784877244.495082
+  },
+  {
+   "qid": "fin_b_015",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 5698,
+   "completion_tokens": 2144,
+   "ts": 1784877261.667834
+  },
+  {
+   "qid": "fin_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "calc1b",
+   "prompt_tokens": 8404,
+   "completion_tokens": 4127,
+   "ts": 1784877320.9897091
+  },
+  {
+   "qid": "fin_b_013",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 3108,
+   "completion_tokens": 5605,
+   "ts": 1784877330.790028
+  },
+  {
+   "qid": "fin_b_016",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 10937,
+   "completion_tokens": 1557,
+   "ts": 1784877360.6661
+  },
+  {
+   "qid": "fin_b_015",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 5698,
+   "completion_tokens": 5605,
+   "ts": 1784877360.745284
+  },
+  {
+   "qid": "fin_b_017",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2223,
+   "completion_tokens": 1578,
+   "ts": 1784877391.447265
+  },
+  {
+   "qid": "fin_b_016",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 10937,
+   "completion_tokens": 3034,
+   "ts": 1784877415.280384
+  },
+  {
+   "qid": "fin_b_014",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 8404,
+   "completion_tokens": 5605,
+   "ts": 1784877418.885191
+  },
+  {
+   "qid": "fin_b_017",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2223,
+   "completion_tokens": 2765,
+   "ts": 1784877441.303696
+  },
+  {
+   "qid": "fin_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 4273,
+   "completion_tokens": 1380,
+   "ts": 1784877444.888428
+  },
+  {
+   "qid": "fin_b_018",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 4273,
+   "completion_tokens": 2699,
+   "ts": 1784877492.7121139
+  },
+  {
+   "qid": "fin_b_019",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 5181,
+   "completion_tokens": 3541,
+   "ts": 1784877507.573447
+  },
+  {
+   "qid": "fin_b_020",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 4948,
+   "completion_tokens": 1861,
+   "ts": 1784877528.721508
+  },
+  {
+   "qid": "fin_b_016",
+   "model": "qwen3.5-plus",
+   "tag": "calc3",
+   "prompt_tokens": 11016,
+   "completion_tokens": 6539,
+   "ts": 1784877529.065231
+  },
+  {
+   "qid": "ins_b_001",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 3543,
+   "completion_tokens": 1500,
+   "ts": 1784877557.683813
+  },
+  {
+   "qid": "fin_b_019",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 5181,
+   "completion_tokens": 4206,
+   "ts": 1784877581.689332
+  },
+  {
+   "qid": "fin_b_020",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 4948,
+   "completion_tokens": 3408,
+   "ts": 1784877589.270418
+  },
+  {
+   "qid": "ins_b_001",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 3543,
+   "completion_tokens": 2936,
+   "ts": 1784877609.681476
+  },
+  {
+   "qid": "ins_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2203,
+   "completion_tokens": 1615,
+   "ts": 1784877612.381637
+  },
+  {
+   "qid": "ins_b_011",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1584,
+   "completion_tokens": 1533,
+   "ts": 1784877618.000291
+  },
+  {
+   "qid": "ins_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1763,
+   "completion_tokens": 1441,
+   "ts": 1784877636.610968
+  },
+  {
+   "qid": "ins_b_011",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1584,
+   "completion_tokens": 2715,
+   "ts": 1784877665.726306
+  },
+  {
+   "qid": "ins_b_018",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1763,
+   "completion_tokens": 2500,
+   "ts": 1784877680.906396
+  },
+  {
+   "qid": "ins_b_019",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 3530,
+   "completion_tokens": 1548,
+   "ts": 1784877695.5668921
+  },
+  {
+   "qid": "reg_b_003",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1875,
+   "completion_tokens": 1390,
+   "ts": 1784877708.273605
+  },
+  {
+   "qid": "ins_b_003",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2203,
+   "completion_tokens": 5605,
+   "ts": 1784877709.624955
+  },
+  {
+   "qid": "ins_b_019",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 3530,
+   "completion_tokens": 2701,
+   "ts": 1784877744.131351
+  },
+  {
+   "qid": "reg_b_003",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1875,
+   "completion_tokens": 2664,
+   "ts": 1784877755.981548
+  },
+  {
+   "qid": "reg_b_004",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1953,
+   "completion_tokens": 1400,
+   "ts": 1784877770.6056309
+  },
+  {
+   "qid": "reg_b_007",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1884,
+   "completion_tokens": 1304,
+   "ts": 1784877780.7437
+  },
+  {
+   "qid": "reg_b_004",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1953,
+   "completion_tokens": 2617,
+   "ts": 1784877816.603489
+  },
+  {
+   "qid": "reg_b_007",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1884,
+   "completion_tokens": 2470,
+   "ts": 1784877824.0716312
+  },
+  {
+   "qid": "ins_b_003",
+   "model": "qwen3.5-plus",
+   "tag": "calc3",
+   "prompt_tokens": 2266,
+   "completion_tokens": 6748,
+   "ts": 1784877826.679616
+  },
+  {
+   "qid": "reg_b_014",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1681,
+   "completion_tokens": 1445,
+   "ts": 1784877844.0755148
+  },
+  {
+   "qid": "reg_b_016",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2028,
+   "completion_tokens": 1345,
+   "ts": 1784877849.300137
+  },
+  {
+   "qid": "reg_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1950,
+   "completion_tokens": 1434,
+   "ts": 1784877853.7615309
+  },
+  {
+   "qid": "reg_b_016",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2028,
+   "completion_tokens": 2439,
+   "ts": 1784877892.585973
+  },
+  {
+   "qid": "reg_b_018",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1950,
+   "completion_tokens": 2617,
+   "ts": 1784877900.661547
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2267,
+   "completion_tokens": 1548,
+   "ts": 1784877921.83004
+  },
+  {
+   "qid": "res_b_007",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2044,
+   "completion_tokens": 1454,
+   "ts": 1784877927.9603899
+  },
+  {
+   "qid": "reg_b_014",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1681,
+   "completion_tokens": 4372,
+   "ts": 1784877934.1770072
+  },
+  {
+   "qid": "res_b_012",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1982,
+   "completion_tokens": 1719,
+   "ts": 1784877966.715801
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2267,
+   "completion_tokens": 2644,
+   "ts": 1784877968.758713
+  },
+  {
+   "qid": "res_b_007",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 2044,
+   "completion_tokens": 2537,
+   "ts": 1784877972.619292
+  },
+  {
+   "qid": "res_b_012",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 1982,
+   "completion_tokens": 2961,
+   "ts": 1784878018.803757
+  }
+ ]
+}
