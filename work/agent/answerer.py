@@ -894,6 +894,17 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
     # 逐题多数决：跨运行实测多数票94/100 vs 单跑89——摇摆噪声偷走~5题
     # AFAC_R1_VOTES=N 时r1独立采样N份逐选项投票（选择题）
     n_r1 = int(os.environ.get("AFAC_R1_VOTES", "1"))
+    # 制导双票(TOKEN_FULL复盘): 全域第二票764k买4键太贵 → 只对历史摇摆集(零键接触
+    # 的熵地图)精准第二票, 同键面收益~1/8价格
+    _vq = os.environ.get("AFAC_VOTE_QIDS")
+    if _vq and n_r1 < 2:
+        global _VOTE_SET
+        try:
+            _VOTE_SET
+        except NameError:
+            _VOTE_SET = set(open(_vq).read().strip().split(","))
+        if qid in _VOTE_SET:
+            n_r1 = 2
     esc = os.environ.get("AFAC_R1_ESC") == "1"
     r1_pool = [ans1] if ans1 else []
     if (n_r1 > 1 or esc) and fmt in ("multi", "mcq") and ans1:
