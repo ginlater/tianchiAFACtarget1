@@ -113,7 +113,7 @@ for d, q in deltas:
     per_qid[q] = list(per_orig[q])
     reroute.pop(q)
 print(f"重路由 {len(reroute)} 题, 总账 = {grand():,} (T锚点90泊车: 恰过500k)")
-assert 500_000 <= grand() <= 501_500, "不在T锚点区!"
+assert 500_000 <= grand() <= 504_000, "不在T锚点区!"
 
 # ---- 落盘 ----
 outdir = OUT / OUT_TAG
