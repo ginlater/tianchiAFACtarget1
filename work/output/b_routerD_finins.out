@@ -1,0 +1,15 @@
+待作答 21 / 共 100 题；model=qwen3.6-plus verify=qwen3.6-plus
+docsel 完成; tokens 5,205
+选择题 13 → 2 组; 计算题 8
+[1/21] +['fin_b_017'] (13,392 tok)
+[2/21] +['fin_b_018'] (19,061 tok)
+[8/21] +['ins_b_006', 'ins_b_008', 'ins_b_007', 'ins_b_013', 'ins_b_015', 'ins_b_020'] (36,207 tok)
+[9/21] +['fin_b_013'] (43,526 tok)
+[10/21] +['ins_b_001'] (80,657 tok)
+[11/21] +['fin_b_020'] (87,337 tok)
+[12/21] +['ins_b_011'] (101,619 tok)
+[13/21] +['ins_b_018'] (110,332 tok)
+[14/21] +['ins_b_019'] (115,359 tok)
+[21/21] +['fin_b_001', 'fin_b_010', 'fin_b_002', 'fin_b_009', 'fin_b_005', 'fin_b_011', 'fin_b_008'] (164,522 tok)
+done in 220s; tokens 164,522 (p=136,666 c=27,856)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_routerD_finins/answer.csv

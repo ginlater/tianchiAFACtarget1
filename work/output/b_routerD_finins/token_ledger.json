@@ -1,0 +1,254 @@
+{
+ "per_qid": {
+  "_docsel_insurance": [
+   2,
+   6
+  ],
+  "ins_b_001": [
+   3749,
+   1556
+  ],
+  "ins_b_006": [
+   2603,
+   485
+  ],
+  "ins_b_007": [
+   2603,
+   485
+  ],
+  "ins_b_008": [
+   2603,
+   485
+  ],
+  "ins_b_011": [
+   1790,
+   1679
+  ],
+  "ins_b_013": [
+   2603,
+   485
+  ],
+  "ins_b_015": [
+   2603,
+   485
+  ],
+  "ins_b_018": [
+   1969,
+   1434
+  ],
+  "ins_b_019": [
+   3736,
+   1523
+  ],
+  "ins_b_020": [
+   2603,
+   485
+  ],
+  "_docsel_financial_reports": [
+   5,
+   1
+  ],
+  "fin_b_001": [
+   9393,
+   977
+  ],
+  "fin_b_002": [
+   4263,
+   577
+  ],
+  "fin_b_005": [
+   22071,
+   2556
+  ],
+  "fin_b_008": [
+   20193,
+   2507
+  ],
+  "fin_b_009": [
+   4263,
+   577
+  ],
+  "fin_b_010": [
+   4263,
+   577
+  ],
+  "fin_b_011": [
+   24776,
+   2637
+  ],
+  "fin_b_013": [
+   8466,
+   3624
+  ],
+  "fin_b_017": [
+   2442,
+   1496
+  ],
+  "fin_b_018": [
+   4492,
+   1438
+  ],
+  "fin_b_020": [
+   5167,
+   1774
+  ],
+  "_batch": [
+   8,
+   7
+  ]
+ },
+ "calls": [
+  {
+   "qid": "_docsel_insurance",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 2062,
+   "completion_tokens": 266,
+   "ts": 1784873877.1535418
+  },
+  {
+   "qid": "_docsel_financial_reports",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 2414,
+   "completion_tokens": 463,
+   "ts": 1784873879.5372171
+  },
+  {
+   "qid": "fin_b_013",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 3108,
+   "completion_tokens": 1402,
+   "ts": 1784873907.3757591
+  },
+  {
+   "qid": "fin_b_017",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 2223,
+   "completion_tokens": 1454,
+   "ts": 1784873907.57357
+  },
+  {
+   "qid": "fin_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 4273,
+   "completion_tokens": 1396,
+   "ts": 1784873934.185437
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 14387,
+   "completion_tokens": 2759,
+   "ts": 1784873934.456678
+  },
+  {
+   "qid": "fin_b_013",
+   "model": "qwen3.6-plus",
+   "tag": "calc1b",
+   "prompt_tokens": 5139,
+   "completion_tokens": 2180,
+   "ts": 1784873949.3981462
+  },
+  {
+   "qid": "_batch",
+   "model": "qwen3.6-plus",
+   "tag": "b1",
+   "prompt_tokens": 28311,
+   "completion_tokens": 3747,
+   "ts": 1784873962.2465038
+  },
+  {
+   "qid": "ins_b_001",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 3543,
+   "completion_tokens": 1530,
+   "ts": 1784873963.3212621
+  },
+  {
+   "qid": "fin_b_020",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 4948,
+   "completion_tokens": 1732,
+   "ts": 1784873967.0617511
+  },
+  {
+   "qid": "fin_b_001",
+   "model": "qwen3.6-plus",
+   "tag": "b4",
+   "prompt_tokens": 5130,
+   "completion_tokens": 400,
+   "ts": 1784873970.463443
+  },
+  {
+   "qid": "fin_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "b4",
+   "prompt_tokens": 5115,
+   "completion_tokens": 400,
+   "ts": 1784873978.816416
+  },
+  {
+   "qid": "ins_b_011",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1584,
+   "completion_tokens": 1653,
+   "ts": 1784873980.274132
+  },
+  {
+   "qid": "fin_b_011",
+   "model": "qwen3.6-plus",
+   "tag": "b4",
+   "prompt_tokens": 5142,
+   "completion_tokens": 400,
+   "ts": 1784873987.167592
+  },
+  {
+   "qid": "ins_b_018",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 1763,
+   "completion_tokens": 1408,
+   "ts": 1784873989.550258
+  },
+  {
+   "qid": "ins_b_019",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 3530,
+   "completion_tokens": 1497,
+   "ts": 1784873995.4102101
+  },
+  {
+   "qid": "fin_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 12693,
+   "completion_tokens": 1579,
+   "ts": 1784874019.000726
+  },
+  {
+   "qid": "fin_b_011",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 15371,
+   "completion_tokens": 1660,
+   "ts": 1784874051.847044
+  },
+  {
+   "qid": "fin_b_008",
+   "model": "qwen3.6-plus",
+   "tag": "r1",
+   "prompt_tokens": 15930,
+   "completion_tokens": 1930,
+   "ts": 1784874089.0918348
+  }
+ ]
+}

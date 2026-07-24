@@ -1,0 +1,7 @@
+fc_b_007: 票['B', 'B', 'B'] → B 键['BC'] ✗
+fc_b_009: 票['ABD', 'ABD'] → ABD 键['ABD'] ✓
+fc_b_016: 票['C', 'C', 'C'] → C 键['C'] ✓
+fc_b_017: 票['BC', 'BC', 'BC'] → BC 键['BC'] ✓
+fc_b_019: 票['ABCD', 'ABCD', 'ABC'] → ABCD 键['ABCD'] ✓
+fin_b_003: 票['ABCD', 'ABCD', 'ABCD'] → ABCD 键['ABCD'] ✓
+fin_b_004: 票[] → None 键['AB'] ✗
