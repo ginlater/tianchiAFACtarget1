@@ -1,0 +1,4 @@
+待作答 1 / 共 100 题；model=qwen3.7-max verify=qwen3.7-max
+[1/1] res_b_005 -> ['22.19'] (24,551 tok)
+done in 106s; tokens 24,551 (p=18,996 c=5,555)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_res005b/answer.csv

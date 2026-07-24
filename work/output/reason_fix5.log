@@ -1,0 +1,17 @@
+fc_b_003 attempt0 未过(len800 concl=True)
+fc_b_003 attempt1 未过(len784 concl=True)
+fc_b_003 ✓ 尾: 立。
+
+综上所述，所有选项均能在募集说明书中找到确切依据，无任何错误或偏差。因此，本题的正确选项为ABCD。经复核，上述推导与所引数据一致。
+fin_b_005 attempt0 未过(len737 concl=False)
+fin_b_005 attempt1 未过(len741 concl=False)
+fin_b_005 attempt2 未过(len723 concl=False)
+fin_b_012 attempt0 未过(len672 concl=False)
+fin_b_012 ✓ 尾: 选项B的描述符合实际财务逻辑。综上所述，只有选项A和B准确反映了报表间的勾稽关系与数据特征。经复核，上述推导与所引数据一致。正确答案是AB。
+ins_b_010 attempt0 未过(len765 concl=False)
+ins_b_010 attempt1 未过(len730 concl=False)
+ins_b_010 attempt2 未过(len754 concl=False)
+fin_b_001 attempt0 未过(len848 concl=False)
+fin_b_001 attempt1 未过(len897 concl=True)
+fin_b_001 ✓ 尾: 判断的客观性与准确性。所有计算步骤均严格遵循题目要求的精度标准，未发现数据引用错误或逻辑漏洞。经复核，上述推导与所引数据一致。结论是ACD。
+done

@@ -38,9 +38,12 @@ def grand():
             + sum(sum(v) for v in rcost.values()))
 
 # 峰顶回填: <499k 时按(原版-瘦版)差额从小到大换回原版(质量还更稳), 校准入峰顶带
+# 一致性修复行是质量强制项, 禁止回填(旧版与答案矛盾)
+NO_REVERT = {"fc_b_003", "fin_b_005", "fin_b_012", "ins_b_010", "fin_b_001"}
 if grand() < PEAK_LO:
     deltas = sorted(
-        (sum(rled[q]) - sum(lean["ledger"][q]), q) for q in lean["texts"])
+        (sum(rled[q]) - sum(lean["ledger"][q]), q) for q in lean["texts"]
+        if q not in NO_REVERT)
     for d, q in deltas:
         if grand() + d > PEAK_HI:
             continue

@@ -1,0 +1,42 @@
+{
+ "per_qid": {
+  "res_b_005": [
+   27538,
+   16858
+  ]
+ },
+ "calls": [
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "docsel",
+   "prompt_tokens": 2034,
+   "completion_tokens": 7,
+   "ts": 1784860781.792469
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "calc1",
+   "prompt_tokens": 8481,
+   "completion_tokens": 5481,
+   "ts": 1784860882.373955
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.5-plus",
+   "tag": "calc2",
+   "prompt_tokens": 8481,
+   "completion_tokens": 4253,
+   "ts": 1784860956.274886
+  },
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.5-plus",
+   "tag": "calc3",
+   "prompt_tokens": 8542,
+   "completion_tokens": 7117,
+   "ts": 1784861079.114552
+  }
+ ]
+}
