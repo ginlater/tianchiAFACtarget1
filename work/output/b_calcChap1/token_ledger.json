@@ -1,0 +1,18 @@
+{
+ "per_qid": {
+  "res_b_005": [
+   13965,
+   3641
+  ]
+ },
+ "calls": [
+  {
+   "qid": "res_b_005",
+   "model": "qwen3.6-plus",
+   "tag": "chap1",
+   "prompt_tokens": 13965,
+   "completion_tokens": 3641,
+   "ts": 1784903614.304766
+  }
+ ]
+}
