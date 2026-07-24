@@ -1,0 +1,96 @@
+{
+ "ins_b_010": {
+  "votes": [
+   "AB",
+   "AB",
+   "AB"
+  ],
+  "final": "AB",
+  "key": [
+   "AB"
+  ],
+  "ok": true
+ },
+ "ins_b_005": {
+  "votes": [
+   "BD",
+   "BD",
+   "BD"
+  ],
+  "final": "BD",
+  "key": [
+   "BD"
+  ],
+  "ok": true
+ },
+ "ins_b_008": {
+  "votes": [
+   "ABCD",
+   "ABCD"
+  ],
+  "final": "ABCD",
+  "key": [
+   "ABCD"
+  ],
+  "ok": true
+ },
+ "fin_b_005": {
+  "votes": [
+   "B",
+   "BC",
+   "BC"
+  ],
+  "final": "BC",
+  "key": [
+   "AC"
+  ],
+  "ok": false
+ },
+ "fin_b_003": {
+  "votes": [
+   "ABCD",
+   "ABCD",
+   "ABCD"
+  ],
+  "final": "ABCD",
+  "key": [
+   "ABCD"
+  ],
+  "ok": true
+ },
+ "fc_b_007": {
+  "votes": [
+   "B",
+   "B",
+   "B"
+  ],
+  "final": "B",
+  "key": [
+   "BC"
+  ],
+  "ok": false
+ },
+ "fc_b_004": {
+  "votes": [
+   "ABC",
+   "ABC",
+   "ABC"
+  ],
+  "final": "ABC",
+  "key": [
+   "ABC"
+  ],
+  "ok": true
+ },
+ "res_b_008": {
+  "votes": [
+   "C",
+   "C"
+  ],
+  "final": "C",
+  "key": [
+   "AC"
+  ],
+  "ok": false
+ }
+}
