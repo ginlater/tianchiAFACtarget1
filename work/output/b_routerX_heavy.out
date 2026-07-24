@@ -26,3 +26,6 @@
 [25/28] res_b_008 -> ['C'] (1,142,413 tok)
 [26/28] res_b_013 -> ['A'] (1,191,648 tok)
 [27/28] reg_b_001 -> ['ACD'] (1,206,084 tok)
+[28/28] res_b_018 -> ['CD'] (1,233,678 tok)
+done in 1457s; tokens 1,233,678 (p=1,020,213 c=213,465)
+output: /Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_routerX_heavy/answer.csv
