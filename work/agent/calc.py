@@ -111,6 +111,10 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
         ff = fin_facts_block(q)
         if ff:
             blocks.append(ff)
+    from .answerer import align_block
+    ab = align_block(q)
+    if ab:
+        blocks.append(ab)
     if domain == "financial_reports" and os.environ.get("AFAC_FIN_FACTS") == "1":
         import pathlib as _pl
         _ff = _pl.Path(__file__).resolve().parents[1] / "processed_data" / "fin_facts.json"

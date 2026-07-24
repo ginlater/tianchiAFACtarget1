@@ -581,6 +581,49 @@ def domain_facts_block(q):
     return "条款速查表(离线抽取, 含页码):\n" + "\n".join(r for _s, r in rows[:30])
 
 
+_ALIGN = None
+
+
+def align_block(q):
+    """跨文档对齐证据包（AFAC_ALIGN=1）：分红矩阵/条款存在性矩阵。
+
+    根因(慢性题共性): 全是跨文档比较题, 而既有结构全是单文档的——
+    模型被迫现场跨文档对齐+现场算派生量, 骰子摇在这一步。
+    """
+    global _ALIGN
+    if os.environ.get("AFAC_ALIGN") != "1":
+        return ""
+    if _ALIGN is None:
+        p = pathlib.Path(__file__).resolve().parents[1] \
+            / "processed_data" / "align_matrix.json"
+        _ALIGN = json.load(open(p)) if p.exists() else {}
+    qt = q["question"] + " " + " ".join((q.get("options") or {}).values())
+    parts = []
+    if (q.get("domain") == "financial_reports"
+            and re.search(r"分红|派现|股息|派息|红利", qt)):
+        packs = []
+        for ck, rows in _ALIGN.get("fin_dividends", {}).items():
+            comp = ck.split("_")[0]
+            for d in q.get("doc_ids") or []:
+                if comp in str(d):
+                    packs.append(f"◆{ck}:\n" + "\n".join(rows[:8]))
+                    break
+        if packs:
+            parts.append("分红对齐证据包(跨文档预聚合, 全年=中期已实施+末期方案两笔):\n"
+                         + "\n".join(packs))
+    if (q.get("domain") == "insurance"
+            and re.search(r"哪些|以下.{0,6}(产品|条款)|明确规定", qt)):
+        rows = []
+        for pk, ent in _ALIGN.get("ins_clauses", {}).items():
+            doc = pk.split(":")[0]
+            if doc in [str(x) for x in (q.get("doc_ids") or [])]:
+                rows.append(f"◆{pk}: " + " | ".join(
+                    f"{c}={v[:60]}" for c, v in ent.items()))
+        if rows:
+            parts.append("产品×条款存在性矩阵(离线预聚合):\n" + "\n".join(rows))
+    return "\n\n".join(parts)
+
+
 def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     """返回 (证据文本, chunk列表, 受保护id集合, 记忆卡文本)。"""
     domain = q["domain"]
@@ -591,6 +634,9 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     df = domain_facts_block(q)
     if df:
         blocks.append(df)
+    ab = align_block(q)
+    if ab:
+        blocks.append(ab)
     if os.environ.get("AFAC_NO_DIGEST") == "1" and not _use_digest(domain):
         digests = "涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"])

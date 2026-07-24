@@ -1,0 +1,602 @@
+{
+ "fc_b_002": {
+  "group": "slim_solo",
+  "p": 0.86,
+  "raw": "11/12",
+  "exp_cost": 4446
+ },
+ "fc_b_003": {
+  "group": "slim_solo",
+  "p": 0.86,
+  "raw": "11/12",
+  "exp_cost": 5782
+ },
+ "fc_b_009": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 6710
+ },
+ "fc_b_004": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 4512
+ },
+ "fc_b_013": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 10161
+ },
+ "fc_b_016": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 25010
+ },
+ "fc_b_011": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 5782
+ },
+ "fc_b_012": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 5835
+ },
+ "fc_b_010": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 6420
+ },
+ "fc_b_015": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 6418
+ },
+ "fc_b_006": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 6505
+ },
+ "fc_b_007": {
+  "group": "slim_batch",
+  "p": 0.62,
+  "raw": "4/6",
+  "exp_cost": 6190
+ },
+ "fc_b_008": {
+  "group": "slim_batch",
+  "p": 0.75,
+  "raw": "5/6",
+  "exp_cost": 6222
+ },
+ "fc_b_017": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 29743
+ },
+ "fc_b_019": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 33567
+ },
+ "fc_b_018": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 5885
+ },
+ "fin_b_001": {
+  "group": "slim_solo",
+  "p": 0.86,
+  "raw": "11/12",
+  "exp_cost": 5124
+ },
+ "fin_b_002": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 5124
+ },
+ "fin_b_005": {
+  "group": "cards",
+  "p": 0.67,
+  "raw": "1/1",
+  "exp_cost": 4948
+ },
+ "fin_b_003": {
+  "group": "slim_batch",
+  "p": 0.57,
+  "raw": "3/5",
+  "exp_cost": 8992
+ },
+ "fin_b_009": {
+  "group": "slim_batch",
+  "p": 0.71,
+  "raw": "4/5",
+  "exp_cost": 9027
+ },
+ "fin_b_006": {
+  "group": "fc_heavy",
+  "p": 0.83,
+  "raw": "4/4",
+  "exp_cost": 29537
+ },
+ "fin_b_004": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 5124
+ },
+ "fin_b_010": {
+  "group": "slim_batch",
+  "p": 0.86,
+  "raw": "5/5",
+  "exp_cost": 8939
+ },
+ "fin_b_007": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 38275
+ },
+ "fin_b_011": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 6535
+ },
+ "fin_b_008": {
+  "group": "slim_batch",
+  "p": 0.71,
+  "raw": "4/5",
+  "exp_cost": 7837
+ },
+ "ins_b_002": {
+  "group": "slim_batch",
+  "p": 0.71,
+  "raw": "4/5",
+  "exp_cost": 7547
+ },
+ "ins_b_006": {
+  "group": "slim_solo",
+  "p": 0.71,
+  "raw": "9/12",
+  "exp_cost": 3884
+ },
+ "ins_b_004": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 39823
+ },
+ "fin_b_012": {
+  "group": "fins_batch",
+  "p": 0.67,
+  "raw": "1/1",
+  "exp_cost": 18627
+ },
+ "ins_b_005": {
+  "group": "fc_heavy",
+  "p": 0.83,
+  "raw": "4/4",
+  "exp_cost": 35191
+ },
+ "ins_b_007": {
+  "group": "slim_batch",
+  "p": 0.86,
+  "raw": "5/5",
+  "exp_cost": 8978
+ },
+ "ins_b_010": {
+  "group": "fins_batch",
+  "p": 0.33,
+  "raw": "0/1",
+  "exp_cost": 2740
+ },
+ "ins_b_008": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 3884
+ },
+ "ins_b_009": {
+  "group": "fc_heavy",
+  "p": 0.83,
+  "raw": "4/4",
+  "exp_cost": 35657
+ },
+ "ins_b_013": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 3913
+ },
+ "ins_b_012": {
+  "group": "fins_batch",
+  "p": 0.67,
+  "raw": "1/1",
+  "exp_cost": 2740
+ },
+ "ins_b_014": {
+  "group": "slim_batch",
+  "p": 0.71,
+  "raw": "4/5",
+  "exp_cost": 6454
+ },
+ "ins_b_015": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3724
+ },
+ "reg_b_005": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2663
+ },
+ "reg_b_001": {
+  "group": "slim_batch",
+  "p": 0.75,
+  "raw": "5/6",
+  "exp_cost": 4848
+ },
+ "ins_b_016": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 36887
+ },
+ "reg_b_008": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 4877
+ },
+ "ins_b_017": {
+  "group": "fc_heavy",
+  "p": 0.83,
+  "raw": "4/4",
+  "exp_cost": 38743
+ },
+ "ins_b_020": {
+  "group": "fins_batch",
+  "p": 0.67,
+  "raw": "1/1",
+  "exp_cost": 2740
+ },
+ "reg_b_021": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2748
+ },
+ "reg_b_013": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2663
+ },
+ "reg_b_020": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2737
+ },
+ "reg_b_015": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2789
+ },
+ "reg_b_024": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2737
+ },
+ "reg_b_009": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2801
+ },
+ "reg_b_017": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2874
+ },
+ "reg_b_023": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2874
+ },
+ "reg_b_027": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2737
+ },
+ "reg_b_026": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2737
+ },
+ "res_b_002": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 4011
+ },
+ "res_b_003": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3998
+ },
+ "reg_b_025": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 2874
+ },
+ "res_b_004": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 5896
+ },
+ "res_b_001": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4174
+ },
+ "res_b_006": {
+  "group": "slim_solo",
+  "p": 0.86,
+  "raw": "11/12",
+  "exp_cost": 5166
+ },
+ "res_b_011": {
+  "group": "slim_batch",
+  "p": 0.75,
+  "raw": "5/6",
+  "exp_cost": 6001
+ },
+ "res_b_013": {
+  "group": "slim_solo",
+  "p": 0.71,
+  "raw": "9/12",
+  "exp_cost": 4174
+ },
+ "res_b_009": {
+  "group": "slim_solo",
+  "p": 0.86,
+  "raw": "11/12",
+  "exp_cost": 6440
+ },
+ "res_b_008": {
+  "group": "slim_solo",
+  "p": 0.64,
+  "raw": "8/12",
+  "exp_cost": 4187
+ },
+ "res_b_010": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4346
+ },
+ "res_b_014": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4019
+ },
+ "res_b_016": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4187
+ },
+ "res_b_015": {
+  "group": "slim_solo",
+  "p": 0.71,
+  "raw": "9/12",
+  "exp_cost": 4011
+ },
+ "res_b_017": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4473
+ },
+ "res_b_019": {
+  "group": "slim_solo",
+  "p": 0.86,
+  "raw": "11/12",
+  "exp_cost": 4174
+ },
+ "res_b_020": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 4655
+ },
+ "res_b_018": {
+  "group": "slim_solo",
+  "p": 0.71,
+  "raw": "9/12",
+  "exp_cost": 4011
+ },
+ "fc_b_001": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3870
+ },
+ "fc_b_005": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 9820
+ },
+ "fc_b_014": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4143
+ },
+ "fc_b_020": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3730
+ },
+ "fin_b_013": {
+  "group": "slim_batch",
+  "p": 0.86,
+  "raw": "5/5",
+  "exp_cost": 10801
+ },
+ "fin_b_014": {
+  "group": "cards",
+  "p": 0.67,
+  "raw": "1/1",
+  "exp_cost": 15043
+ },
+ "fin_b_015": {
+  "group": "fin_heavy",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 34486
+ },
+ "fin_b_016": {
+  "group": "cards",
+  "p": 0.67,
+  "raw": "1/1",
+  "exp_cost": 15406
+ },
+ "fin_b_017": {
+  "group": "slim_solo",
+  "p": 0.86,
+  "raw": "11/12",
+  "exp_cost": 4865
+ },
+ "fin_b_020": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 5096
+ },
+ "fin_b_018": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3904
+ },
+ "ins_b_001": {
+  "group": "slim_solo",
+  "p": 0.79,
+  "raw": "10/12",
+  "exp_cost": 5869
+ },
+ "ins_b_003": {
+  "group": "full_all",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 33161
+ },
+ "fin_b_019": {
+  "group": "fins_batch",
+  "p": 0.67,
+  "raw": "1/1",
+  "exp_cost": 7436
+ },
+ "ins_b_018": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3684
+ },
+ "ins_b_011": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3597
+ },
+ "ins_b_019": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 5781
+ },
+ "reg_b_007": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3906
+ },
+ "reg_b_014": {
+  "group": "slim_batch",
+  "p": 0.88,
+  "raw": "6/6",
+  "exp_cost": 6070
+ },
+ "reg_b_003": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4107
+ },
+ "reg_b_004": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4122
+ },
+ "reg_b_016": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4204
+ },
+ "res_b_007": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 3748
+ },
+ "reg_b_018": {
+  "group": "slim_solo",
+  "p": 0.93,
+  "raw": "12/12",
+  "exp_cost": 4213
+ },
+ "res_b_012": {
+  "group": "slim_batch",
+  "p": 0.75,
+  "raw": "5/6",
+  "exp_cost": 6757
+ },
+ "res_b_005": {
+  "group": "cards",
+  "p": 0.33,
+  "raw": "0/1",
+  "exp_cost": 11882
+ }
+}
