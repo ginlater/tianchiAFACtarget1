@@ -1,0 +1,4 @@
+待作答 40 / 共 100 题；model=qwen3.6-plus verify=qwen3.6-plus
+docsel 完成; tokens 7,976
+选择题 27 → 4 组; 计算题 13
+[7/40] +['ins_b_012', 'ins_b_010', 'ins_b_016', 'ins_b_015', 'ins_b_005', 'ins_b_009', 'ins_b_020'] (35,424 tok)
