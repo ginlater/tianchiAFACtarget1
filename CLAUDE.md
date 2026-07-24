@@ -201,3 +201,9 @@
 - 复核抓4矛盾+1截断→中标run记录重生成; 装配回填禁区NO_REVERT; res_b_005=22.19(84run全票)定案
 - submission.zip 8MB无泄漏: evidence.json逐题溯源(run/证据id/记录摘录) + FAMILY_DOCTRINE.md
 - API定律: 3.6-plus性价比王; 3.5/3.7=补盲; 省token靠架构, 提准确率靠跨代异构
+
+## 7-25 金bug(用户亲自发现!): res_b_005须带%
+- 比赛规则L12: "fc_b_001 fc_b_005 res_b_005 填写百分号%" — 但submit.csv模板res_b_005占位符
+  漏了%(模板自身bug), 解析器信模板 → 84个run的22.19全以纯数字提交, 值可能对格式全错!
+- 已修: b_schema强制覆盖res_b_005=percent; b_hex/router6/router8三件全部改为22.19%
+- 若兑现: acc上限100! router6 est→95.5-96.1, b_hex est→93.1-93.7

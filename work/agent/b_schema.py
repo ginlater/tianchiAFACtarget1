@@ -72,6 +72,10 @@ def load_schema(submit_csv):
                 continue
             slots = [r[f"answer_{i}"].strip() for i in range(1, 5)]
             schema[r["qid"]] = [_slot_kind(s) for s in slots if s]
+    # 规则第12行铁律: fc_b_001/fc_b_005/res_b_005 填写百分号%并保留两位小数。
+    # submit.csv 模板 res_b_005 占位符漏了% (模板bug), 以规则文本为准强制覆盖。
+    if "res_b_005" in schema:
+        schema["res_b_005"] = ["percent"] * len(schema["res_b_005"])
     return schema
 
 
