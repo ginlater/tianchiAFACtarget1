@@ -114,9 +114,9 @@ def grand():
 # 峰下贴顶: 恢复原价件把总账顶到499,9xx (<500k段两模型均递增)
 deltas = sorted((sum(per_orig[q]) - sum(per_qid[q]), q) for q in reroute)
 for d, q in deltas:
-    if grand() >= 500_050:
+    if grand() >= 500_100:
         break
-    if d <= 0 or grand() + d > 500_900:
+    if d <= 0 or grand() + d > 510_000:
         continue
     per_qid[q] = list(per_orig[q])
     reroute.pop(q)
