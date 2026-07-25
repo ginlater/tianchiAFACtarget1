@@ -56,6 +56,23 @@ def record_of(qid):
 
 def consistent(qid, txt):
     a = ans_map.get(qid, [""])
+    if a and not re.fullmatch(r"[A-D]+", str(a[0])):
+        # calc行数值自洽(数值等价, 防逗号/尾零误伤): 每个数值槽须在文中有等值数字
+        tnums = set()
+        for m in re.findall(r"-?[\d,]+(?:\.\d+)?", txt):
+            try:
+                tnums.add(round(float(m.replace(",", "")), 6))
+            except ValueError:
+                pass
+        for v in a:
+            s0 = str(v).strip().rstrip("％%").replace(",", "")
+            if s0 and re.match(r"^-?[\d\.]+$", s0):
+                try:
+                    if round(float(s0), 6) not in tnums:
+                        return False
+                except ValueError:
+                    pass
+        return True
     if a and re.fullmatch(r"[A-D]+", str(a[0])):
         want = set(str(a[0]))
         m = CONCL.search(txt[-90:])
