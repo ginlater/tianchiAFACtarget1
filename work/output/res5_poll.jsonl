@@ -1,0 +1,4 @@
+{"model": "qwen3.7-plus", "cfg": "精确派", "final": "22.19%"}
+{"model": "qwen3.7-plus", "cfg": "出题人视角", "final": ""}
+{"model": "qwen3.6-plus", "cfg": "口径裁判", "final": ""}
+{"model": "qwen3.5-plus", "cfg": "口径裁判", "final": "21.69%"}
