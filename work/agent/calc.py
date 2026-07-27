@@ -152,11 +152,13 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
         blocks.append(ab)
     # 确定性财务计算器(AFAC_FIN_CALC=1): 词法矿精确取数+Python算术, 零token,
     # 把精确数字与算好的比率作证据喂Qwen(Qwen仍做最终答案生成/口径判断)
+    _has_detbudget = False
     if os.environ.get("AFAC_FIN_CALC") == "1":
         from .fin_calc import calc_facts_block
         cb = calc_facts_block(q)
         if cb:
             blocks.append(cb)
+            _has_detbudget = True
     if os.environ.get("AFAC_CALC_TABLES") == "1":
         tb = _tables_block(q)
         if tb:
@@ -191,6 +193,9 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
     if os.environ.get("AFAC_CALC_LEAN") == "1":
         # 查表主导取数(500k总攻): facts2单元格表为主证据, 原文微量兜底
         cap = 3800
+    # 确定性预算已给出精确数字/比率 → 检索仅留极小兜底(治"块加长token升")
+    if _has_detbudget:
+        cap = min(cap, 1500)
     ev, kept, _prot = gather_evidence(q, k_opt=4, k_q=5, cap=int(cap * cap_mult),
                                       extra_queries=extra)
     blocks.append("原文片段证据:\n" + ev)
