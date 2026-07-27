@@ -150,6 +150,13 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
     ab = align_block(q)
     if ab:
         blocks.append(ab)
+    # 确定性财务计算器(AFAC_FIN_CALC=1): 词法矿精确取数+Python算术, 零token,
+    # 把精确数字与算好的比率作证据喂Qwen(Qwen仍做最终答案生成/口径判断)
+    if os.environ.get("AFAC_FIN_CALC") == "1":
+        from .fin_calc import calc_facts_block
+        cb = calc_facts_block(q)
+        if cb:
+            blocks.append(cb)
     if os.environ.get("AFAC_CALC_TABLES") == "1":
         tb = _tables_block(q)
         if tb:
