@@ -73,3 +73,10 @@ while acc<95 or token>750k:
 - 6错题: fin_b_014/020(calc硬) + fin_b_004/res_b_008/013/018(慢性MCQ)
 - 离复现: **acc差缩到2pp**(94→96)! token成唯一主墙(870k→需575k)
 - calc帽因去SLIM4松了(7.7k) → 下一刀同质批+CALC_LEAN紧calc帽拉回token
+
+## 触门槛(honest_full4)
+- **96% @ 846,621 → 诚实分90.1** (同质批+紧calc, 准确率摸到复现门槛!)
+- 4错题: fin_b_004/res_b_008(慢性) + fin_b_014/020(calc多槽硬)
+- **acc关基本过**(96%=门槛); token成唯一决胜墙(847k→需575k, 差270k+reasoning)
+- token墙: b1批320k/r1单题217k(18道独立底仓)/calc172k
+- 下一刀: 收紧独立底仓单题证据(矿已供数)凿r1那217k
