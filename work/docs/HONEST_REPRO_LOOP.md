@@ -67,3 +67,9 @@ while acc<95 or token>750k:
 - fin_calc治好fin_b_015/017(不在错题); 新错题ins_b_005/009/fc_b_016(疑松散批/卡8k误伤)
 - 离复现: token逼到653k(墙575k, 还差+reasoning) / acc仍差5pp
 - 下一刀: reasoning合并进答题(省150k+必需) / 查新错题回退误伤
+
+## 同质批新高(honest_full3)
+- **94% @ 869,634 → 诚实分89.0** (救回松散批误伤的5道MCQ, 今日最高准确率)
+- 6错题: fin_b_014/020(calc硬) + fin_b_004/res_b_008/013/018(慢性MCQ)
+- 离复现: **acc差缩到2pp**(94→96)! token成唯一主墙(870k→需575k)
+- calc帽因去SLIM4松了(7.7k) → 下一刀同质批+CALC_LEAN紧calc帽拉回token
