@@ -78,9 +78,22 @@ def mine_val(doc, item, period="本期"):
     return None
 
 
+def raw_max(doc, item):
+    """原文取某指标合并总额（最大候选，消歧分部/母公司小数）。"""
+    txt = _raw_text(doc)
+    vals = [float(x) for x in re.findall(rf"{item}\s+(\d{{7,}})", txt)]
+    return max(vals) if vals else None
+
+
+def roe(doc):
+    """加权平均净资产收益率（%），主要财务指标表，原文取。"""
+    m = re.search(r"加权平均净资产收益率\s+([\d.]+)\s*%", _raw_text(doc))
+    return float(m.group(1)) if m else None
+
+
 def debt_ratio(doc):
-    tot = mine_val(doc, "资产总计")
-    liab = mine_val(doc, "负债合计")
+    tot = mine_val(doc, "资产总计") or raw_max(doc, "资产总计")
+    liab = mine_val(doc, "负债合计") or raw_max(doc, "负债合计")
     if tot and liab and tot > 0:
         return liab / tot
     return None
@@ -136,10 +149,15 @@ def calc_facts_block(q):
                 parts.append(f"{tag}(合并本期)={v:,.0f}")
         dr = debt_ratio(doc)
         if dr is not None:
-            parts.append(f"资产负债率={dr * 100:.2f}%")
-            parts.append(f"权益乘数=1/(1-资产负债率)={1 / (1 - dr):.4f}")
+            em = 1 / (1 - dr)
+            parts.append(f"资产负债率={dr * 100:.4f}%")
+            parts.append(f"权益乘数=1/(1-资产负债率)={em:.4f}")
+            rv = roe(doc)
+            if rv is not None:
+                parts.append(f"加权平均净资产收益率={rv}%")
+                parts.append(f"近似资产收益率(ROE/权益乘数)={rv / em:.4f}%")
         if cf is not None and rev:
-            parts.append(f"经营现金流量净额/营业收入={cf / rev * 100:.2f}%")
+            parts.append(f"经营现金流量净额/营业收入={cf / rev * 100:.4f}%")
         if parts:
             lines.append(f"【{name}·确定性取数(词法矿fin_facts2)】" + "；".join(parts))
     if not lines:
