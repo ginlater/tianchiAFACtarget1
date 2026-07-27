@@ -195,7 +195,7 @@ def calc_evidence(q, model=DEFAULT_MODEL, extra=(), cap_mult=1):
         cap = 3800
     # 确定性预算已给出精确数字/比率 → 检索仅留极小兜底(治"块加长token升")
     if _has_detbudget:
-        cap = min(cap, 1500)
+        cap = min(cap, 2600)
     ev, kept, _prot = gather_evidence(q, k_opt=4, k_q=5, cap=int(cap * cap_mult),
                                       extra_queries=extra)
     blocks.append("原文片段证据:\n" + ev)
