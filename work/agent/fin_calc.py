@@ -24,15 +24,57 @@ def _mine():
     return _FF
 
 
+_RAW = {}
+
+
+def _raw_text(doc):
+    if doc not in _RAW:
+        p = (pathlib.Path(__file__).resolve().parents[1]
+             / "processed_data" / "financial_reports" / f"{doc}.txt")
+        _RAW[doc] = p.read_text(encoding="utf-8").replace(",", "") \
+            if p.exists() else ""
+    return _RAW[doc]
+
+
+def raw_val(doc, item):
+    """原文兜底取数：合并报表'指标 <本期> <上期>'，取本期/上期比值合理(0.4-3)
+    的最大本期候选（合并总额通常最大），消歧分部/季度小数。拿不准返回 None。"""
+    txt = _raw_text(doc)
+    cands = []
+    for m in re.finditer(rf"{item}\s+(\d{{6,}})\s+(\d{{6,}})", txt):
+        cur, prev = float(m.group(1)), float(m.group(2))
+        if prev and 0.4 <= cur / prev <= 3.0:
+            cands.append((cur, prev))
+    if not cands:
+        return None
+    return max(cands, key=lambda x: x[0])[0]
+
+
 def mine_val(doc, item, period="本期"):
-    """从 fin_facts2 词法取某指标某期的合并口径值（排除'流动'小计行）。"""
+    """取某指标合并本期值：矿优先，缺失或仅有上期时原文兜底并交叉校验。"""
+    mine_cur = mine_prev = None
     for r in _mine().get(doc, []):
         head = r.split(":")[0]
         if item in r and "流动" not in head:
-            for lab in (f"合并{period}", period):
-                m = re.search(rf"{lab}=([\d,]+)", r)
-                if m:
-                    return float(m.group(1).replace(",", ""))
+            mc = re.search(r"合并本期=([\d,]+)", r)
+            mp = re.search(r"合并上期=([\d,]+)", r)
+            if mc:
+                mine_cur = float(mc.group(1).replace(",", ""))
+            if mp:
+                mine_prev = float(mp.group(1).replace(",", ""))
+            if mine_cur:
+                break
+    if period == "上期" and mine_prev:
+        return mine_prev
+    if mine_cur:
+        return mine_cur
+    # 矿缺本期 → 原文兜底
+    rv = raw_val(doc, item)
+    if rv:
+        # 若矿有上期，用比值合理性校验兜底本期（防抓错分部数）
+        if mine_prev and not (0.4 <= rv / mine_prev <= 3.0):
+            return None
+        return rv
     return None
 
 
