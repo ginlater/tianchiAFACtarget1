@@ -60,3 +60,10 @@ while acc<95 or token>750k:
 - 取数robust化: 矿优先+原文兜底+比值交叉校验 → 营收4/4精确(修好"只抓上期"的矿bug)
 - 仍需: 补齐经营现金流/EBITDA/ROE/现金分红本期抽取; 美的/建筑多栏表消歧
 - **诚实big picture不变**: calc全治顶多推到~93%@~900k; MCQ的43%墙+慢性硬题=离96%@550k的真障碍
+
+## 全套凿刀突破(honest_full2)
+- **91% @ 653,442(未含reasoning) → 诚实分88.3** (基线1.05M→653k, token砍38%准确率守住!)
+- 配方: NO_DIGEST+SLIM4松散批+FIN_CALC+CALC_SINGLE+保险卡8k
+- fin_calc治好fin_b_015/017(不在错题); 新错题ins_b_005/009/fc_b_016(疑松散批/卡8k误伤)
+- 离复现: token逼到653k(墙575k, 还差+reasoning) / acc仍差5pp
+- 下一刀: reasoning合并进答题(省150k+必需) / 查新错题回退误伤
