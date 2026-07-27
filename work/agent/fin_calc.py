@@ -124,18 +124,22 @@ def calc_facts_block(q):
         if name not in qtext or doc not in (q.get("doc_ids") or []):
             continue
         parts = []
-        for item, tag in [("营业收入", "营业收入"),
-                          ("归属于母公司", "归母净利润"),
-                          ("资产总计", "资产总计"),
-                          ("负债合计", "负债合计"),
-                          ("经营活动产生", "经营活动现金流净额")]:
-            v = mine_val(doc, item)
+        rev = mine_val(doc, "营业收入")
+        cf = mine_val(doc, "经营活动产生的现金流量净额")
+        for item, tag, v in [
+                ("营业收入", "营业收入", rev),
+                ("归属于母公司", "归母净利润", mine_val(doc, "归属于母公司")),
+                ("资产总计", "资产总计", mine_val(doc, "资产总计")),
+                ("负债合计", "负债合计", mine_val(doc, "负债合计")),
+                ("经营现金流", "经营活动现金流量净额", cf)]:
             if v is not None:
                 parts.append(f"{tag}(合并本期)={v:,.0f}")
         dr = debt_ratio(doc)
         if dr is not None:
             parts.append(f"资产负债率={dr * 100:.2f}%")
             parts.append(f"权益乘数=1/(1-资产负债率)={1 / (1 - dr):.4f}")
+        if cf is not None and rev:
+            parts.append(f"经营现金流量净额/营业收入={cf / rev * 100:.2f}%")
         if parts:
             lines.append(f"【{name}·确定性取数(词法矿fin_facts2)】" + "；".join(parts))
     if not lines:
