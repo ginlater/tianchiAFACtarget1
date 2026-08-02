@@ -1,32 +1,55 @@
 #!/usr/bin/env python3
-"""为 regulatory HTML 文档补充 meta description（含当事人/文号）到 docs_meta.json。
+"""Add source HTML meta descriptions to ``docs_meta.json`` (no model)."""
+from __future__ import annotations
 
-纯结构化字段抽取（网页自带 meta），无语义模型参与，符合预处理边界。
-用于文档盲检卡片——处罚决定书标题高度雷同，当事人信息才有区分度。
-"""
-import json, pathlib, re
+import argparse
+import json
+import pathlib
+import re
 
 from bs4 import BeautifulSoup
 
-ROOT = pathlib.Path(__file__).resolve().parents[2]
-PROC = ROOT / "work" / "processed_data"
+try:
+    from fix_titles import resolve_source
+except ImportError:  # package-style import used by tests/orchestrator
+    from .fix_titles import resolve_source
 
-meta = json.load(open(PROC / "docs_meta.json"))
-n = 0
-for doc_id, m in meta.items():
-    src = ROOT / m["src"]
-    if src.suffix != ".html":
-        continue
-    soup = BeautifulSoup(src.read_text(encoding="utf-8", errors="ignore"), "lxml")
-    desc = ""
-    for tag in soup.find_all("meta"):
-        if (tag.get("name") or "").lower() == "description":
-            c = (tag.get("content") or "").strip()
-            if len(c) > len(desc):
-                desc = c
-    if desc:
-        m["summary"] = re.sub(r"\s+", " ", desc)[:160]
-        n += 1
-json.dump(meta, open(PROC / "docs_meta.json", "w"), ensure_ascii=False, indent=1)
-print(f"html summary added: {n}")
-print("样例 csrc_0271:", meta["csrc_0271"].get("summary", "")[:120])
+
+def add_summaries(raw_root: pathlib.Path, processed_dir: pathlib.Path) -> int:
+    raw_root = pathlib.Path(raw_root).resolve()
+    processed_dir = pathlib.Path(processed_dir).resolve()
+    meta_path = processed_dir / "docs_meta.json"
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    count = 0
+    for item in meta.values():
+        source = resolve_source(raw_root, item)
+        if source.suffix.lower() != ".html":
+            continue
+        soup = BeautifulSoup(source.read_text(encoding="utf-8", errors="ignore"), "lxml")
+        description = ""
+        for tag in soup.find_all("meta"):
+            if (tag.get("name") or "").lower() == "description":
+                content = (tag.get("content") or "").strip()
+                if len(content) > len(description):
+                    description = content
+        if description:
+            item["summary"] = re.sub(r"\s+", " ", description)[:160]
+            count += 1
+    meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n",
+                         encoding="utf-8")
+    return count
+
+
+def main() -> None:
+    root = pathlib.Path(__file__).resolve().parents[2]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", type=pathlib.Path,
+                        default=root / "public_dataset_upload" / "raw")
+    parser.add_argument("--output", type=pathlib.Path,
+                        default=root / "work" / "processed_data")
+    args = parser.parse_args()
+    print(f"html summary added: {add_summaries(args.input, args.output)}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,48 +1,128 @@
-# AFAC2026 赛题四 — 金融长文本 Agent 动态记忆压缩问答（B榜提交）
+# AFAC2026 赛题四：金融长文本 Agent 诚实复现
 
-## 一、动态记忆压缩体系（本系统的主线设计）
+本目录是一条单次、端到端的复现流水线。它从同一份题目与文档输入出发，在一次运行中
+完成文档选择、词法检索、动态记忆压缩、Qwen 作答、reasoning 生成、Token 计量与证据
+联结。正式流程不会读取旧 `answer.csv`、答案键、榜单反馈或历史运行结果，也不会逐题
+挑选或改写答案。
 
-赛题的核心矛盾：573 份长文档（保险条款/募集书/年报/研报/377 份法规网页）远超单次
-上下文，而 token 预算要求每题只带"刚好够用"的记忆。本系统把记忆组织成三级：
+## 1. 方法概览
 
-**L1 静态解析层（离线，非 LLM）**
-PDF 版面分析（字号标题修复）/表格恢复 → `processed_data/` 纯文本，doc_id 一一对应。
+系统用“代码处理确定性结构，Qwen 处理语义判断”的方式置换 Token：
 
-**L2 压缩记忆层（离线词法 + 动态卡片，答题前构建）**
-- **记忆卡（digest）**：每文档压缩为约千字结构卡（关键条款/数字/分档表原句），
-  保险域全文构卡上限 15k（`AFAC_WHOLE_LIMIT`），防条款漏检
-- **单元格级报表矿** `fin_facts2.json`：fitz 坐标聚类恢复"合并/公司×本期/上期"列身份，
-  年报取数从检索问题变查表问题
-- **条款/数字行速查矿** `domain_facts.json`（7,806 行）与**跨文档对齐矿** `align_matrix.json`
-  （分红证据包+条款存在性矩阵）——全部离线词法抽取，零 LLM 语义、零运行期 token
-- **表格全景层**（`AFAC_CALC_TABLES`）：计算题一次性注入命中文档全部图表块，根治
-  BM25 只召回题面词汇命中表造成的口径盲区
+1. **离线文档层**：PDF/HTML 解析、页码保留、标题修复、表格单元格恢复；不使用
+   embedding。
+2. **确定性记忆层**：
+   - `insurance_capsules.json`：保险条款按页码、条款、主题、数字保存原句胶囊；
+   - `fin_facts2.json`：财务表格绑定“合并/母公司 × 本期/上期”列身份；
+   - `domain_facts.json` 与 `align_matrix.json`：条款数字行和跨文档对齐事实。
+   - `financial_fact_registry.py`：把财报指标绑定到公司、年份、合并口径、单位和页码；
+   - `narrative_fact_registry.py`：从合同、法规和研报原句中提取带页码的计算原子，冲突
+     时整束拒绝。
+3. **动态工作记忆**：BM25、题面同义归一、逐选项保护块和字符预算，只把当题所需
+   原文送入上下文。
+4. **文档路由**：公司、产品、年份或法规标题唯一时由确定性代码选择；有歧义时回退
+   Qwen。选择只依赖题面、选项与语料元数据，不读取 qid 或答案。
+5. **计算路由**：严格 AST、`Decimal`、单位与唯一性校验先计算；成功后仍由一次 Qwen
+   根据题目和证据核验并生成可见 reasoning。事实冲突、单位不闭合、日期日历不完整或
+   槽位不匹配时自动回退完整 Qwen 计算流程。
+6. **语义作答**：同底仓选择题共享证据批答；提示词按题面语义编译必要规则。输出答案
+   和 reasoning 来自同一次可见 Qwen 响应。
 
-**L3 工作记忆层（运行期预算管理）**
-BM25 词法检索（年份归一/同义表/跨查询取最高分）+ 证据帽分域配额 + 保护块豁免 +
-同底仓批量共享（`_group_homo` 零膨胀合并摊薄）。检索全程无 embedding。
+推理阶段只调用 Qwen 系列模型；所有 API 用量直接采用 DashScope 返回的 `usage`。
 
-## 二、答题架构：五族分诊 + 逐题路由（router6）
+## 2. 环境
 
-不同材质的题目适配不同信息组织：slim（轻装单样本）/ mix（批量摊薄）/ cards（翻卡）/
-ins（全文卡+跨代异构二审）/ full（多票仲裁）。模型仅用 Qwen 系（qwen3.6-plus 主力，
-3.5/3.7 异构补盲）；计算题两阶段取数-计算 + 槽位校验 + 升级重试。
+- Python 3.9.6（本机验证版本；建议使用 3.9–3.11）
+- 安装依赖：`python -m pip install -r requirements.txt`
+- 设置 `DASHSCOPE_API_KEY` 环境变量。正式包不含 `.env` 或任何密钥。
 
-**路由指派的诚实申报**：终选件为逐题最优路由装配——每题答案均为某次真实运行的
-原始产出（无任何手写/改写值），指派依据含多配置一致性与验证信号校准；逐题来源
-run、证据块 id、解题记录摘录与 token 账全量随包（`logs/piece_sources.json` /
-`evidence.json` / `logs/answers.json`）。风险分级与纯单发替补件说明见
-`FAMILY_DOCTRINE.md`。
+输入目录应包含 B 榜题目目录和官方 `submit.csv`：
 
-**Token 记账**：逐题账 = 该题全部真实调用（含检索/重试/仲裁/推理摘要生成），
-summary 行 = 逐题严格加总；组装脚本字节级确定性可复现。
+```text
+INPUT/
+├── question_b/          # .json / .jsonl
+└── submit.csv
+```
 
-## 三、复现
+`processed_data/` 已随复现材料提供。若需从原始 PDF/HTML 重新构建，使用：
 
-1. `pip install -r requirements.txt`；`.env` 配 `DASHSCOPE_API_KEY`
-2. 离线记忆构建：`script/build_fin_facts2.py` / `build_domain_facts.py` /
-   `build_align_matrix.py`（均离线词法，无 LLM 语义）
-3. 单族运行：`python -m agent.run_b2 --tag <t> --qdir <题目目录> --submit-template
-   submit.csv --batch --fresh-digests` + 族配置 env（配方表见 `FAMILY_DOCTRINE.md`）
-4. 终选件一键组装：`script/assemble_router6.py`（字节级复现 `answer.csv`）
-5. 逐题溯源：`evidence.json`（每题：来源 run/证据块 id/解题记录摘录/逐题 token 账）
+```bash
+python script/rebuild_processed.py \
+  --input /path/to/raw_input \
+  --output /path/to/new_processed_data
+```
+
+输出目录必须尚不存在；脚本先在临时 staging 目录完成并校验，再原子式复制结果，绝不
+覆盖已有 `processed_data`。该步骤只做解析、OCR/版面恢复和确定性词法结构化，不产生
+非 Qwen 语义摘要。使用 `--check-only` 可只检查 573 份输入的布局、依赖和哈希而不写文件。
+
+## 3. 一键生成
+
+在本目录执行：
+
+```bash
+./generate_answer.sh \
+  --input /path/to/INPUT \
+  --output /path/to/reproduction_run \
+  --model qwen3.6-plus \
+  --workers 6
+```
+
+配置固定在 `config/honest_repro.env`。输出目录必须为空，避免混入旧运行缓存。脚本依次
+运行正式 Agent、构建审计证据并执行零 API 严格校验。
+
+## 4. 单次运行产物
+
+```text
+reproduction_run/
+├── answer.csv                 # 100 题答案、逐题 usage、reasoning
+├── answers.json
+├── reasonings.json
+├── reasoning_sources.json     # 最终 reasoning 对应的真实调用阶段
+├── api_calls.jsonl            # 完整请求、响应、重试、模型与 API usage
+├── token_ledger.json          # 调用级和逐题分摊账本
+├── run_log.jsonl              # 候选答案、后处理、证据块 ID
+├── docsel_log.jsonl           # 文档选择方法、结果与置信诊断
+├── run_config.json            # 参数、环境、版本、输入 SHA256
+└── evidence.json              # 上述信息按 qid 联结的完整证据链
+```
+
+`script/check_reproduction.py` 会逐项验证：100 个 qid、答案与 reasoning 非空、逐题
+CSV usage 与 ledger 分摊一致、summary 与所有题行一致、ledger 与 API 成功响应一致、
+模型全部为 Qwen、证据覆盖完整且配置不含密钥。每题最终 reasoning 还必须逐字出现在
+该题直接或批量分摊的某次成功 Qwen API 响应中；代码事后追加的解释不能通过。
+
+校验通过后，可从这一份运行显式打包（脚本没有历史运行的默认值）：
+
+```bash
+python script/package_submission.py /path/to/reproduction_run \
+  --output /path/to/submission.zip
+```
+
+归档包含正式入口、固定配置、Agent、预处理重建脚本、`processed_data`、完整 API 调用审计
+和逐题证据链；打包前再次执行全量一致性校验并扫描密钥样式。ZIP 根目录直接是
+`answer.csv`、`evidence.json`、`agent/`、`script/`、`processed_data/`、`logs/`、
+`requirements.txt` 和 `README.md`，不存在额外的 `submission/` 套层。解压后可先做零 API
+重定位验收：
+
+```bash
+./generate_answer.sh --check-runtime
+```
+
+该命令只检查源码、配置、规则文件和 `processed_data` 的完整性与哈希，不读取 API key、
+不发起网络请求。归档同时保留 `比赛规则.md`、`b榜新增规则.txt`、`b榜补充.md` 和
+`upload_b/readme.md`；对 reasoning 列和原始 usage 审计以 B 榜新增/补充规则为准。
+
+## 5. 复现误差审计
+
+`eval/reference_audit.py` 是开发期只读工具，仅报告答案、总 Token、逐题 Token ±15%
+与 reasoning 完整性；它不修改答案或 Token，也没有被 `generate_answer.sh` 导入。正式
+运行目录和正式 Agent 不读取参考提交文件。
+
+## 6. 合规边界
+
+允许并已使用：词法 BM25、确定性表格/条款抽取、Python 精确计算、同底仓批处理、
+Qwen 回退和同次响应生成 reasoning。
+
+正式流水线明确不包含：embedding 检索、非 Qwen 语义模型、qid 特判、答案键、榜单
+反推、历史结果拼装、人工替换答案、Token 填充或泊车调用。

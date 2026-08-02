@@ -3,11 +3,11 @@
 AFAC_STABLE=1 环境变量启用稳定模式：非计算域关闭思维链+低温采样（降方差降token）。
 """
 import json, math, os, pathlib, re, threading
+from collections import Counter
 
 from . import retrieval
+from .paths import OUTPUT_DIR, PROCESSED_DIR
 from .qwen_client import chat, DEFAULT_MODEL
-
-ROOT = pathlib.Path(__file__).resolve().parents[2]
 
 # ---- 领域配置：记忆卡标准查询（词法检索用，纯关键词，合规） ----
 DIGEST_QUERIES = {
@@ -49,6 +49,10 @@ def _use_digest(domain):
     是准确率主杠杆（slim4保险14错法医结论：11道证据饿死）。"""
     if domain not in DIGEST_DOMAINS:
         return False
+    if domain == "insurance" and os.environ.get("AFAC_INS_CAPSULES") == "1":
+        from .insurance_capsules import DEFAULT_PATH
+        if DEFAULT_PATH.exists():
+            return False
     if os.environ.get("AFAC_NO_DIGEST") != "1":
         return True
     keep = os.environ.get("AFAC_DIGEST_KEEP", "insurance")
@@ -72,7 +76,7 @@ def _doc_title(doc_id):
     meta = retrieval.docs_meta()[doc_id]
     if meta["domain"] == "insurance":
         if _INS_TITLES is None:
-            p = ROOT / "work" / "processed_data" / "insurance_titles.json"
+            p = PROCESSED_DIR / "insurance_titles.json"
             _INS_TITLES = json.load(open(p)) if p.exists() else {}
         t = _INS_TITLES.get(doc_id)
         if t:
@@ -335,7 +339,7 @@ def _dyncap(qid, cap):
     if os.environ.get("AFAC_DYNCAP") != "1":
         return cap
     if _DIFF_MAP is None:
-        p = ROOT / "work" / "output" / "difficulty_map.json"
+        p = OUTPUT_DIR / "difficulty_map.json"
         _DIFF_MAP = json.load(open(p)) if p.exists() else {"entropy": {}}
     h = _DIFF_MAP["entropy"].get(qid, 0.8)
     mult = 1.5 if h >= 1.2 else (1.0 if h >= 0.5 else 0.7)
@@ -375,7 +379,14 @@ def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
                "锁定期", "评级", "受托管理人", "兑付", "分红", "研发投入",
                "每股收益", "现金流量净额", "施行", "工作日", "自然日"]
     if q.get("domain") == "financial_reports":  # 年报专用词表（限域防跨域污染）
-        LEXICON = LEXICON + ["中期分红", "利润分配", "权益乘数", "少数股东权益"]
+        LEXICON = LEXICON + ["营业收入", "研发费用", "中期分红", "利润分配",
+                             "权益乘数", "少数股东权益"]
+    if q.get("domain") == "financial_contracts":
+        # Capacity-presence questions must retrieve the literal counterevidence
+        # "不涉及产能/产量/产能利用率" from an outsourced-production model;
+        # a long positive option query otherwise ranks generic project-risk
+        # pages above that decisive clause.
+        LEXICON = LEXICON + ["产能"]
     qtext = q["question"] + " " + " ".join(q["options"].values())
     hard_kws = [kw for kw in LEXICON if kw in qtext][:6]
     for m in re.finditer(r"[“\"《]([^”\"》]{2,12})[”\"》]", qtext):
@@ -393,6 +404,48 @@ def gather_evidence(q, k_opt=2, k_q=3, cap=9000, extra_queries=()):
                 kw in ln and re.search(r"[\d％%]", ln)
                 for ln in c["text"].split("\n"))]
             forced.append((with_num or cands_kw)[0])
+    # Option-local anchors.  ``search_docs`` normalizes scores independently
+    # inside each document; in a genuine multi-document comparison several
+    # unrelated hits can therefore tie at 1.0 and only the first document's
+    # hit receives the global protected slot below.  Search each selected
+    # document with the option alone, then protect the strongest raw-BM25 hit
+    # (or every document whose title is named explicitly in that option).
+    # This is bounded to at most one new chunk per option in the usual case
+    # and uses only the current question, selected sources and source titles.
+    def _norm_identity(value):
+        value = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff]+", "", value or "")
+        for boiler in ("股份有限公司", "有限责任公司", "有限公司",
+                       "募集说明书", "年度报告", "研究报告", "首次覆盖报告",
+                       "公开发行", "面向专业投资者", "公司债券"):
+            value = value.replace(boiler, "")
+        return value
+
+    def _named_in_option(option, doc_id):
+        left = _norm_identity(option)
+        right = _norm_identity(_doc_title(doc_id))
+        if len(left) < 4 or len(right) < 4:
+            return False
+        # A four-character company/product alias is already discriminative in
+        # these corpora; prefer the longest shared literal when one exists.
+        for width in range(min(14, len(left), len(right)), 3, -1):
+            if any(left[i:i + width] in right
+                   for i in range(len(left) - width + 1)):
+                return True
+        return False
+
+    for option in q.get("options", {}).values():
+        local = []
+        for d in doc_ids:
+            hits = retrieval.doc_index(d).search(option, k=1)
+            if hits:
+                c, raw_score = hits[0]
+                local.append((c, raw_score, _named_in_option(option, d)))
+        named = [item for item in local if item[2]]
+        chosen = named or (max(local, key=lambda item: item[1])
+                           if local else None)
+        for c, _score, _is_named in (named if named else
+                                      ([chosen] if chosen else [])):
+            forced.append(c)
     # 跨查询同块取最高分（低分先占坑会挤掉后续强命中——已修复的召回bug）
     # 每条查询的top-1受保护，预算截断时优先保留（防单选项关键证据被全局高分挤掉）
     best, chunk_by_id, protected = {}, {}, set()
@@ -482,7 +535,365 @@ def _render(kept):
     return "\n\n".join(parts)
 
 
+def _dense_research_excerpt(q, kept, cap):
+    """Compress a wide solo research retrieval to a source-balanced floor.
+
+    Dense synthesis questions need evidence from every selected report, but
+    retaining several page-sized protected hits from the same report defeats
+    the raw-evidence budget.  Choose the most question-relevant hit per source,
+    add further whole hits only while they fit, and (only if the source floor
+    itself is too large) clip each source to an equal lexical window.  The
+    routing inputs are the question text and selected source breadth alone.
+    """
+    if not kept or cap <= 0:
+        return kept
+    query = q.get("question", "") + " " + " ".join(
+        str(v) for v in (q.get("options") or {}).values())
+    query_counts = Counter(retrieval.tokenize(query))
+
+    def relevance(chunk):
+        counts = Counter(retrieval.tokenize(chunk.get("text", "")))
+        return sum(min(n, counts.get(tok, 0)) *
+                   (3 if re.search(r"[0-9A-Za-z%％]", tok) else 1)
+                   for tok, n in query_counts.items())
+
+    by_doc = {}
+    for chunk in kept:
+        by_doc.setdefault(chunk["doc_id"], []).append(chunk)
+    doc_order = [d for d in q.get("doc_ids", ()) if d in by_doc]
+    doc_order += [d for d in by_doc if d not in set(doc_order)]
+    floors = [max(by_doc[d], key=lambda c: (relevance(c), -len(c["text"])))
+              for d in doc_order]
+    floor_ids = {c["id"] for c in floors}
+    extras = sorted((c for c in kept if c["id"] not in floor_ids),
+                    key=lambda c: (-relevance(c), len(c["text"]), c["id"]))
+    picked = list(floors)
+    for chunk in extras:
+        trial = picked + [chunk]
+        if len(_render(trial)) <= cap:
+            picked = trial
+    if len(_render(picked)) <= cap:
+        return sorted(picked, key=lambda c: (
+            c["doc_id"], c.get("page") or 0,
+            int(c["id"].split("#c")[1])))
+
+    # Reserve exact citation/separator overhead, then distribute the remaining
+    # text budget fairly.  Short source blocks return unused space to longer
+    # ones, so the result reaches but never exceeds the configured raw cap.
+    overhead = 2 * max(0, len(picked) - 1)
+    for c in picked:
+        tag = f"{c['doc_id']} P{c['page']}" if c.get("page") else c["id"]
+        overhead += len(f"【{tag}】")
+    available = max(0, cap - overhead)
+    allocations = [0] * len(picked)
+    remaining = set(range(len(picked)))
+    while remaining and available > 0:
+        share = max(1, available // len(remaining))
+        progressed = False
+        for i in list(remaining):
+            room = len(picked[i]["text"]) - allocations[i]
+            take = min(room, share, available)
+            allocations[i] += take
+            available -= take
+            progressed = progressed or take > 0
+            if allocations[i] >= len(picked[i]["text"]):
+                remaining.remove(i)
+        if not progressed:
+            break
+
+    def best_window(text, width):
+        if len(text) <= width:
+            return text
+        width = max(1, width)
+        starts = {0, len(text) - width}
+        step = max(1, width // 3)
+        starts.update(range(0, max(1, len(text) - width + 1), step))
+
+        def window_score(start):
+            counts = Counter(retrieval.tokenize(text[start:start + width]))
+            return sum(min(n, counts.get(tok, 0)) *
+                       (3 if re.search(r"[0-9A-Za-z%％]", tok) else 1)
+                       for tok, n in query_counts.items())
+
+        start = max(starts, key=lambda x: (window_score(x), -x))
+        return text[start:start + width]
+
+    compact = []
+    for chunk, width in zip(picked, allocations):
+        copy = dict(chunk)
+        copy["text"] = best_window(chunk["text"], width)
+        compact.append(copy)
+    assert len(_render(compact)) <= cap
+    return sorted(compact, key=lambda c: (
+        c["doc_id"], c.get("page") or 0,
+        int(c["id"].split("#c")[1])))
+
+
 _FIN_FACTS2 = None
+
+
+def _financial_summary_snapshot_block(q):
+    """Recover compact current/prior metric pairs from annual summaries.
+
+    Latest annual reports publish an audited ``主要会计数据和财务指标`` table
+    whose current/prior columns are safer than stitching similarly named rows
+    from two independently parsed statements.  This lexical/layout helper
+    emits only values and source pages; Qwen remains responsible for every
+    comparison and answer decision.
+    """
+    if q.get("domain") != "financial_reports":
+        return ""
+    qtext = q.get("question", "") + " " + " ".join(
+        str(v) for v in (q.get("options") or {}).values())
+    metric_specs = (
+        ("营业收入", ("营业收入",)),
+        ("经营活动产生的现金流量净额",
+         ("经营活动产生的现金流量净额", "经营活动现金流量净额")),
+        ("基本每股收益", ("基本每股收益",)),
+        ("归母净利润", ("归属于上市公司股东的净利润",
+                         "归属于母公司股东的净利润")),
+    )
+    wanted = [(name, labels) for name, labels in metric_specs
+              if name in qtext or any(label in qtext for label in labels)]
+    want_research = "研发费用" in qtext or "研发投入" in qtext
+    if not wanted and not want_research:
+        return ""
+
+    latest = {}
+    for doc_id in q.get("doc_ids") or []:
+        match = re.fullmatch(r"annual_(.+)_(20\d{2})_report", str(doc_id))
+        if not match:
+            continue
+        company, year = match.group(1), int(match.group(2))
+        if company not in latest or year > latest[company][0]:
+            latest[company] = (year, str(doc_id))
+
+    def loose(label):
+        return r"\s*".join(re.escape(ch) for ch in label)
+
+    number = r"(\(?-?[\d,]+(?:\.\d+)?\)?)"
+
+    def pair_after_label(body, labels):
+        for label in labels:
+            match = re.search(
+                loose(label) + r"\s*(?:[（(][^）)]{0,30}[）)])?\s*" +
+                number + r"\s+" + number,
+                body)
+            if match:
+                return tuple(value.strip("()") for value in match.groups())
+        return None
+
+    rows = []
+    for _company, (year, doc_id) in sorted(latest.items()):
+        path = PROCESSED_DIR / "financial_reports" / f"{doc_id}.txt"
+        if not path.exists():
+            continue
+        parts = re.split(r"(?m)^\[P(\d+)\]\s*$", path.read_text(
+            encoding="utf-8"))
+        pages = [(int(parts[index]), parts[index + 1])
+                 for index in range(1, len(parts), 2)]
+        values = []
+        sources = set()
+        for metric, labels in wanted:
+            candidates = []
+            for page, body in pages:
+                if page > 35 or "主要会计数据" not in body:
+                    continue
+                pair = pair_after_label(body, labels)
+                if pair:
+                    candidates.append((page, pair))
+            if candidates:
+                page, pair = min(candidates)
+                values.append(metric + "=" + "/".join(pair))
+                sources.add(page)
+        if want_research:
+            candidates = []
+            for page, body in pages:
+                if "研发费用" not in body or "利润表" not in body:
+                    continue
+                lines = [line.strip() for line in body.splitlines()
+                         if line.strip()]
+                position = next((i for i, line in enumerate(lines)
+                                 if re.sub(r"\s+", "", line) == "研发费用"),
+                                None)
+                if position is None:
+                    continue
+                pair = []
+                for line in lines[position + 1:position + 9]:
+                    for token in re.findall(
+                            r"\(?-?[\d,]+(?:\.\d+)?\)?", line):
+                        clean = token.strip("()")
+                        # Skip compact note numbers such as 四(53); monetary
+                        # R&D rows here are thousand-unit values with commas.
+                        if "," in clean or len(clean.replace("-", "")) >= 5:
+                            pair.append(clean)
+                        if len(pair) == 2:
+                            break
+                    if len(pair) >= 2:
+                        break
+                if len(pair) == 2:
+                    candidates.append((page, tuple(pair)))
+            if candidates:
+                page, pair = min(candidates)
+                values.append("研发费用=" + "/".join(pair))
+                sources.add(page)
+        if values:
+            page_text = "+".join(f"P{page}" for page in sorted(sources))
+            rows.append(f"[{doc_id} {page_text}]{year}/{year - 1}: " +
+                        "；".join(values))
+    if not rows:
+        return ""
+    return "年度报告主要指标双年列快照（原表值）:\n" + "\n".join(rows)
+
+
+def _financial_dividend_ratio_snapshot_block(q):
+    """Bind each report year's own disclosed cash-dividend ratio.
+
+    A later report can show both an adjusted comparative column and older
+    historical ratios on the same page.  When the question explicitly asks
+    for the cash-dividend/shareholder-profit ratio, quote the unambiguous
+    ``本年度...比例为`` sentence from each selected annual report separately.
+    """
+    if q.get("domain") != "financial_reports":
+        return ""
+    qtext = q.get("question", "") + " " + " ".join(
+        str(v) for v in (q.get("options") or {}).values())
+    if not ("现金分红" in qtext and
+            re.search(r"占.{0,12}(?:净利润|归母).{0,8}比例|分红比例", qtext)):
+        return ""
+    rows = []
+    for doc_id in dict.fromkeys(q.get("doc_ids") or []):
+        match = re.fullmatch(r"annual_(.+)_(20\d{2})_report", str(doc_id))
+        if not match:
+            continue
+        year = match.group(2)
+        path = PROCESSED_DIR / "financial_reports" / f"{doc_id}.txt"
+        if not path.exists():
+            continue
+        parts = re.split(r"(?m)^\[P(\d+)\]\s*$", path.read_text(
+            encoding="utf-8"))
+        found = None
+        for index in range(1, len(parts), 2):
+            page, body = parts[index], parts[index + 1]
+            ratio = re.search(
+                r"本年\s*度公司现\s*金分红占合并报表归属于(?:上市公司|母公司)"
+                r"(?:股东|普通股股东)?净利润的比例为\s*(\d+(?:\.\d+)?)%",
+                body)
+            if ratio:
+                found = (page, ratio.group(1) + "%")
+                break
+        if found:
+            rows.append(f"[{doc_id} P{found[0]}]{year}年度原报告明确比例=" +
+                        found[1])
+    if not rows:
+        return ""
+    return "各年度报告自身现金分红占归母净利润比例（非后报调整列）:\n" + \
+        "\n".join(rows)
+
+
+def _financial_ratio_snapshot_block(q):
+    """Return compact, lexical ratio tables for report choices.
+
+    Annual reports often print current ratio, debt ratio and quick ratio in a
+    small bond-information table, while the much larger balance-sheet mine can
+    exhaust its row cap before every named company is represented.  When a
+    question compares at least two ratios, transcribe each table's three
+    literal value columns (current period, prior period, change).  The latest
+    report suffices for a two-year comparison; an explicit three-year span
+    receives the latest two reports so the prior column of the older report
+    supplies the first year.  This is deterministic layout recovery only: no
+    answer letters or semantic conclusions are produced here.
+    """
+    if q.get("domain") != "financial_reports":
+        return ""
+    qtext = q.get("question", "") + " " + " ".join(
+        str(v) for v in (q.get("options") or {}).values())
+    metric_universe = ("流动比率", "资产负债率", "速动比率",
+                       "利息保障倍数", "现金利息保障倍数")
+    metrics = tuple(metric for metric in metric_universe if metric in qtext)
+    if len(metrics) < 2:
+        return ""
+
+    reports = {}
+    for doc_id in q.get("doc_ids") or []:
+        match = re.fullmatch(r"annual_(.+)_(20\d{2})_report", str(doc_id))
+        if not match:
+            continue
+        company, year = match.group(1), int(match.group(2))
+        reports.setdefault(company, []).append((year, str(doc_id)))
+
+    years = {int(value) for value in re.findall(r"20\d{2}", qtext)}
+    span = re.search(r"(20\d{2})\s*[—–至到-]\s*(20\d{2})", qtext)
+    needs_three_periods = (len(years) >= 3 or bool(
+        span and abs(int(span.group(2)) - int(span.group(1))) >= 2))
+    selected_reports = []
+    for company in sorted(reports):
+        ordered = sorted(set(reports[company]), reverse=True)
+        selected_reports.extend(ordered[:2 if needs_three_periods else 1])
+
+    rows = []
+    for _year, doc_id in selected_reports:
+        path = PROCESSED_DIR / "financial_reports" / f"{doc_id}.txt"
+        if not path.exists():
+            continue
+        parts = re.split(r"(?m)^\[P(\d+)\]\s*$", path.read_text(
+            encoding="utf-8"))
+        candidates = []
+        for index in range(1, len(parts), 2):
+            page, body = parts[index], parts[index + 1]
+            if not all(metric in body for metric in metrics):
+                continue
+            score = (4 * ("本报告期末" in body) +
+                     3 * ("上年末" in body) +
+                     2 * ("主要会计数据和财务指标" in body) +
+                     ("本报告期末比上年末增减" in body))
+            candidates.append((score, -int(page), page, body))
+        if not candidates:
+            continue
+        _score, _neg_page, page, body = max(candidates)
+        lines = [line.strip() for line in body.splitlines() if line.strip()]
+        table_rows = []
+        for metric in metrics:
+            position = next((i for i, line in enumerate(lines)
+                             if re.sub(r"\s+", "", line) == metric), None)
+            if position is None:
+                break
+            values = lines[position + 1:position + 4]
+            if len(values) != 3 or not all(
+                    re.fullmatch(r"[-+]?\d[\d,.]*%?", value)
+                    for value in values):
+                break
+            table_rows.append(metric + "=" + "/".join(values))
+        if len(table_rows) == len(metrics):
+            rows.append(f"[{doc_id} P{page}]本期末/上年末/增减: " +
+                        "；".join(table_rows))
+    if not rows:
+        return ""
+    return "年度报告偿债指标原表快照（逐字数值列）:\n" + "\n".join(rows)
+
+
+def financial_registry_block(q):
+    """Exact, fail-closed operands for report questions with calculable claims.
+
+    Choice options are appended to the natural-language request because the
+    arithmetic shape often lives in the options rather than the stem.  The
+    registry still receives no qid, label, or historical output.
+    """
+    if (os.environ.get("AFAC_FIN_REGISTRY") != "1" or
+            q.get("domain") != "financial_reports"):
+        return ""
+    from .financial_fact_registry import FinancialFactRegistry
+    options = " ".join(str(v) for v in (q.get("options") or {}).values())
+    request = {
+        "domain": q.get("domain"),
+        "question": (q.get("question") or "") + " " + options,
+        "doc_ids": list(q.get("doc_ids") or []),
+    }
+    result = FinancialFactRegistry().extract(request)
+    if not result.complete:
+        return ""
+    return ("确定性财报事实注册表（公司/年份/列口径/单位/来源页已绑定）:\n" +
+            result.fact_block)
 
 
 def fin_facts_block(q):
@@ -499,6 +910,11 @@ def fin_facts_block(q):
             / "processed_data" / "fin_facts2.json"
         _FIN_FACTS2 = json.load(open(p)) if p.exists() else {}
     qtext = q["question"] + " " + " ".join((q.get("options") or {}).values())
+    summary_snapshot = _financial_summary_snapshot_block(q)
+    dividend_snapshot = _financial_dividend_ratio_snapshot_block(q)
+    ratio_snapshot = _financial_ratio_snapshot_block(q)
+    snapshots = "\n".join(part for part in (
+        summary_snapshot, dividend_snapshot, ratio_snapshot) if part)
     # 比率题必需行：比率分量行(存货等)与题面2-gram零重叠, 词法打分抓不到 → 强制注入
     _RATIO_NEED = {"流动比率": ["流动资产合计", "流动负债合计"],
                    "速动比率": ["流动资产合计", "流动负债合计", "存货"],
@@ -527,7 +943,7 @@ def fin_facts_block(q):
                 rows.append((score, f"[{d}]{r}"))
     rows.sort(key=lambda x: -x[0])
     if not rows:
-        return ""
+        return snapshots
     # 按表名轮询交错：防单一表(如现金流量表)霸榜挤掉利润表关键行(轮询构卡同款教训)
     buckets, order = {}, []
     for s, r in rows:
@@ -547,8 +963,9 @@ def fin_facts_block(q):
     if any("分红" in r for r in picked):
         note = ("注: \"年度利润分配方案/预案\"通常仅指末期单笔；全年每10股分红="
                 "中期已实施+末期方案两笔合计, 判断前必须核查有无中期分红记录。\n")
-    return ("报表单元格速查表(列口径已绑定, 合并/公司=母公司单体; 括号=负数):\n"
-            + note + "\n".join(picked))
+    facts = ("报表单元格速查表(列口径已绑定, 合并/公司=母公司单体; 括号=负数):\n"
+             + note + "\n".join(picked))
+    return (snapshots + "\n" + facts) if snapshots else facts
 
 
 _DOM_FACTS = None
@@ -629,7 +1046,10 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     """返回 (证据文本, chunk列表, 受保护id集合, 记忆卡文本)。"""
     domain = q["domain"]
     blocks, digests = [], ""
-    ff = fin_facts_block(q)
+    registry = financial_registry_block(q)
+    if registry:
+        blocks.append(registry)
+    ff = "" if registry else fin_facts_block(q)
     if ff:
         blocks.append(ff)
     df = domain_facts_block(q)
@@ -638,14 +1058,42 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
     ab = align_block(q)
     if ab:
         blocks.append(ab)
+    capsule = ""
+    if domain == "insurance" and os.environ.get("AFAC_INS_CAPSULES") == "1":
+        from .insurance_capsules import insurance_capsule_block
+        capsule = insurance_capsule_block(
+            q, char_budget=int(os.environ.get("AFAC_INS_CAPSULE_BUDGET",
+                                              "4800")))
+        if capsule:
+            blocks.append(capsule)
     if os.environ.get("AFAC_NO_DIGEST") == "1" and not _use_digest(domain):
-        digests = "涉及文档:\n" + "\n".join(
+        titles = "涉及文档:\n" + "\n".join(
             f"- {d}: 《{_doc_title(d)}》" for d in q["doc_ids"])
-        blocks.append(digests)
-        cap = (2200 if os.environ.get("AFAC_SLIM4") == "1" else 3600) \
-            + 1000 * max(0, len(q["doc_ids"]) - 2)
+        blocks.append(titles)
+        digests = "\n\n".join(x for x in (capsule, titles) if x)
+        dense_research = False
+        if capsule:
+            cap = int(os.environ.get("AFAC_INS_RAW_CAP", "1800"))
+        else:
+            cap = (2200 if os.environ.get("AFAC_SLIM4") == "1" else 3600) \
+                + 1000 * max(0, len(q["doc_ids"]) - 2)
+            # A cross-report research synthesis is routed to a solo call once
+            # the selector returns six or more distinct sources.  Its normal
+            # breadth formula would otherwise grow the raw excerpt to 7.6k+
+            # characters even though option-local protected chunks already
+            # cover every source claim.  Bound that redundant context using
+            # source breadth only (never qid or an expected answer).
+            dense_research = (domain == "research" and
+                              len(set(q.get("doc_ids") or ())) >= 6)
+            if dense_research:
+                dense_cap = int(os.environ.get(
+                    "AFAC_RESEARCH_DENSE_RAW_CAP", "6000"))
+                cap = min(cap, max(1500, dense_cap))
         ev, kept, prot = gather_evidence(q, k_opt=2, k_q=2, cap=cap,
                                          extra_queries=extra_queries)
+        if not capsule and dense_research:
+            kept = _dense_research_excerpt(q, kept, cap)
+            ev = _render(kept)
         blocks.append("原文片段证据:\n" + ev)
         return "\n\n".join(blocks), kept, prot, digests
     if domain in DIGEST_DOMAINS:
@@ -685,7 +1133,12 @@ def evidence_block(q, model=DEFAULT_MODEL, extra_queries=()):
 
 # ---------------- 作答与解析 ----------------
 
-ANSWER_RE = re.compile(r"答案[:：]\s*([A-D]{1,4})")
+# Qwen occasionally renders a multi-select line as ``答案: B, C, D`` even
+# when the prompt asks for contiguous letters.  Capture the whole separated
+# sequence before normalisation; the old ``[A-D]{1,4}`` silently truncated it
+# to the first letter despite the visible reasoning being correct.
+ANSWER_RE = re.compile(
+    r"答案[:：]\s*([A-D](?:[\s,，、;/；]*[A-D]){0,3})")
 SEARCH_RE = re.compile(r"补充检索[:：]\s*(.+)")
 
 
@@ -717,9 +1170,104 @@ def parse_answer(content, fmt):
     return ""
 
 
+_QUALITATIVE_EXTREME = re.compile(r"难度(?:最大|最小)|(?:最难|最易|最容易)")
+_MULTI_OBJECT = re.compile(r"(?:[三四五六七八九十\d]+家|多家|多个|不同(?:行业|企业)|分别)")
+_EXPLICIT_EXTREME_EVIDENCE = re.compile(
+    r"(?:难度|困难).{0,16}(?:最大|最小|最高|最低)|"
+    r"(?:最大|最小|最高|最低|最难|最易).{0,16}(?:难度|困难)")
+
+
+def apply_structural_evidence_constraints(answer, q, evidence):
+    """Apply narrow, auditable rules that do not require another model call.
+
+    Qualitative maxima/minima across three or more objects are not entailed by
+    evidence about one object.  When the source material contains no explicit
+    cross-object extremum at all, remove such a selected option.  Numeric
+    rankings are deliberately excluded because they may be computed from
+    separately quoted values by the ordinary judge.
+    """
+    final = normalize(answer or "", q.get("answer_format", "multi"))
+    if (q.get("answer_format") != "multi" or
+            not _MULTI_OBJECT.search(q.get("question", "")) or
+            _EXPLICIT_EXTREME_EVIDENCE.search(evidence or "")):
+        return final, ""
+    removed = []
+    for letter, option in (q.get("options") or {}).items():
+        if letter in final and _QUALITATIVE_EXTREME.search(str(option)):
+            final = final.replace(letter, "")
+            removed.append(letter)
+    # Never manufacture an invalid empty answer.  In that rare shape the
+    # normal Qwen decision remains authoritative and the audit note stays empty.
+    if not final or not removed:
+        return normalize(answer or "", q.get("answer_format", "multi")), ""
+    note = ("确定性证据约束：选项 " + "/".join(removed) +
+            " 声称跨对象的定性最大/最小，但原文没有同口径横向极值证据；"
+            "按极值比较规则剔除。")
+    return final, note
+
+
+def select_reasoning(final, traces, fmt):
+    """Choose a visible model explanation that actually supports ``final``.
+
+    If the final answer came from an ensemble and no individual trace matches,
+    preserve the candidate outputs and state the deterministic aggregation
+    plainly instead of inventing a new rationale.
+    """
+    target = normalize(final or "", fmt)
+    for trace in reversed(traces):
+        text = (trace.get("content") or "").strip()
+        answer = normalize(trace.get("answer") or "", fmt)
+        if text and answer == target:
+            return text, trace.get("stage", "")
+    kept = [t for t in traces if (t.get("content") or "").strip()]
+    if not kept:
+        return ("模型调用未生成可核验的解释文本；该题使用运行器的异常保底值。",
+                "fallback")
+    body = "\n\n".join(
+        f"[{t.get('stage', 'candidate')}]\n{t['content'].strip()}"
+        for t in kept)
+    return (body + f"\n\n确定性聚合结果：答案 {target or final}",
+            "ensemble")
+
+
 def _q_text(q):
     opts = "\n".join(f"{k}. {v}" for k, v in q["options"].items())
     return f"题目({FMT_NAME[q['answer_format']]}):\n{q['question']}\n\n选项:\n{opts}"
+
+
+def confirm_structural_evidence_constraint(
+        q, prior_reasoning, constrained_answer, constraint_note,
+        model=DEFAULT_MODEL):
+    """Ask Qwen to visibly confirm a code-detected evidence constraint.
+
+    The deterministic rule may decide that an unsupported qualitative
+    maximum/minimum cannot remain selected, but code-generated prose is not a
+    model reasoning trace.  This compact call turns that narrow finding into a
+    visible Qwen response, which is then both charged to the question and
+    suitable for strict response-to-reasoning provenance checks.
+    """
+    fmt = q.get("answer_format", "multi")
+    target = normalize(constrained_answer or "", fmt)
+    prompt = (
+        "你是Qwen证据约束复核员。下面是先前Qwen的逐题判断，以及代码从"
+        "同一批已展示证据中触发的窄规则检查。请用简洁中文确认最终"
+        "推理：说明被剔除的定性极值项为何缺少同口径横向证据；不得改动"
+        f"其他选项。最后一行严格写‘答案: {target}’。\n\n"
+        + _q_text(q) + "\n\n先前Qwen判断摘要:\n" +
+        (prior_reasoning or "")[:420] + "\n\n窄规则检查:\n" +
+        constraint_note)
+    content, _reasoning, _usage = chat(
+        [{"role": "user", "content": prompt}], qid=q["qid"],
+        model=model, thinking=False, max_tokens=240,
+        tag="evidence_constraint")
+    confirmed = parse_answer(content, fmt)
+    if confirmed != target:
+        raise RuntimeError(
+            f"{q['qid']}: Qwen did not confirm structural constraint "
+            f"({confirmed!r} != {target!r})")
+    if len((content or "").strip()) < 20:
+        raise RuntimeError(f"{q['qid']}: structural confirmation is too short")
+    return content.strip(), confirmed
 
 
 JUDGE_STD = (
@@ -805,6 +1353,127 @@ if os.environ.get("AFAC_SLIM4") == "1":  # 瘦身档：规则全保留，示例�
         "'无中生有'仅指选项核心事实(数字/主体/方向)在证据中无对应，"
         "不得因证据片段未覆盖个别措辞而弃选整个选项。")
 
+
+_COMPACT_JUDGE_BASE = (
+    "判分规则(逐项执行):\n"
+    "1. 文档是唯一事实来源，证据优先于常识；先用一句话明确题干要选什么，再判断"
+    "每个对象是否满足，勿把括注本身的真假误当成对象应否入选。\n"
+    "2. 原文的轻度转述、概括或省略次要限定仍判对；只有数字/日期/主体/方向/因果等"
+    "核心事实冲突，或补检后核心主张仍无依据，才判错。评价性尾句不单独构成错误。\n"
+    "3. 选项含数值、日期或比较时必须现场核对双方原数并列算式；仅最终一步舍入，"
+    "区分百分比与百分点、同比与环比、差值与比值、合并与母公司、本期与上期。\n"
+    "4. 同一事项有多条款/多披露口径时全部核对；选项与任一明确原句口径相符即可，"
+    "不得用另一口径推翻字面原句。证据卡是摘要，卡上没有不等于原文没有。\n"
+    "5. 每个选项给出证据页码与入选/不选；关键证据缺失时输出'补充检索: 关键词'。\n"
+    "校准：原文核心数字、主体、趋势一致但省略指标前缀→判对；自动/人工、主体、"
+    "年份或趋势反转→判错。"
+)
+
+
+def judge_std_for(q_or_qs):
+    """Question-shape routed judge rules, with no qid or answer knowledge.
+
+    The legacy prompt repeats every historic calibration rule on every call.
+    In reproduction mode we keep the invariant core and attach only rules whose
+    lexical trigger appears in this question/batch.  This is deterministic
+    prompt compilation: the same semantic question always receives the same
+    instructions, independent of qid, old outputs or leaderboard feedback.
+    """
+    if os.environ.get("AFAC_COMPACT_JUDGE") != "1":
+        return JUDGE_STD
+    qs = q_or_qs if isinstance(q_or_qs, (list, tuple)) else [q_or_qs]
+    text = " ".join(
+        str(q.get("question", "")) + " " +
+        " ".join(str(v) for v in (q.get("options") or {}).values())
+        for q in qs)
+    domains = {q.get("domain") for q in qs}
+    extra = []
+    if re.search(r"明确|规定|列明|有无|哪些.*(?:产品|文件|条款|规则)", text):
+        extra.append(
+            "【有无题】逐对象/逐文档检索目标词及同义词；补检后仍无明确规定即不选。")
+    if re.search(r"%|％|同比|环比|增幅|降幅|占比|百分点|差值|比值|倍|合计|平均|排名|排序", text):
+        extra.append(
+            "【口径题硬约束】相对变化=(本期-上期)/|上期|，百分点=两百分数之差；"
+            "二者不可互换，结果不符即判错且不适用轻度转述。数值主张须重算；"
+            "全年分红核对中期+末期。")
+    if "financial_reports" in domains:
+        extra.append(
+            "【报表】先绑定列头与单位，再取合并/母公司、本期/上期对应单元格；不得"
+            "取同名分部、季度或最大数字代替。")
+    if "insurance" in domains:
+        extra.append(
+            "【保险】每份合同独立按本合同条款；题干未说明的事故场景或例外条件不得"
+            "自行假定触发，年龄分档、免赔与已领取扣减逐项核对。")
+    if re.search(r"比较|高于|低于|早于|晚于|分别|结合", text):
+        extra.append("【比较】双方材料都必须在场并分别列值，缺一方不得凭印象比较。")
+    if re.search(r"最大|最小|最高|最低|最难|最易", text):
+        extra.append(
+            "【极值比较】“最大/最小/最难/最易”等跨对象极值，必须有同口径横向比较"
+            "或逐对象证据；单个对象存在困难/优势，只能证明‘有’，不能证明极值。")
+    if re.search(r"完全一致|均|全部|所有|仅|列举|连续", text):
+        extra.append(
+            "【强量词】“均/全部/仅/连续/完全一致/列举”须逐主体、逐期间和逐项例外"
+            "核对；程序结果相似不能推出实体权利完全一致，少一个对象或多一个例外即不成立。")
+    if re.search(r"(?:都|均)(?:已|曾)?出现(?:了)?[^。；]{0,80}(?:案例|现象|情形)",
+                 str((qs[0] if len(qs) == 1 else {}).get("question", ""))):
+        extra.append(
+            "【题干既定前提】题干已明示各案例共同具备的属性应作为已知前提；"
+            "若选项在该属性上叠加另一效果，只逐案例核验新增效果，不得因为材料"
+            "没有再次逐字重复题干前提而否定该选项。新增效果仍须逐案例有证据。")
+    if re.search(r"发生|情形|条件|触发|宽限期", text):
+        extra.append(
+            "【概括范围】选项未使用“任何/全部/一律/无论何种”等全称词时，类别性"
+            "引导语不解释为覆盖该类所有子情形；若原文存在一个匹配情形且核心主体、"
+            "动作、数值和起算点一致，省略触发前提仍按概括转述判对。")
+    if re.search(r"提到|提及|未.{0,6}(?:提到|提及)|不涉及|不存在|因此|因其", text):
+        extra.append(
+            "【复合主张】把存在性、对象、因果等核心分句逐一核验，任一核心分句"
+            "与原文相反或无依据则整项不选；若分析结论是‘未提及X’，不得再把"
+            "声称‘提及X’的该项列入答案，也不得由项目名称或行业常识推出材料"
+            "未写的风险。")
+    if re.search(r"纠纷解决|争议解决|受托管理协议|持有人会议规则|违约事项", text):
+        extra.append(
+            "【条款归属】一份募集说明书转录多个法律文件时，严格绑定题干点名的章节或"
+            "协议；其他协议的法院/仲裁约定不得覆盖目标章节的明确原句。")
+    if re.search(r"募投项目.*(?:最高|合计|整体|完全达产)|汇总口径", text):
+        extra.append(
+            "【汇总层级】题目问全部募投项目/整体/合计/最高值时，以汇总披露为准；"
+            "单个子项目表不能用来否定全部项目的汇总口径。")
+    if re.search(r"在[^，。；]{0,30}时[^，。；]{0,40}(?:可以|通过|要求|扩大|维持)", text):
+        extra.append(
+            "【情景机制】不能把现有能力补写成特定情景下会采取的行动；从“有规模/"
+            "有议价力”推出“行情X时会扩大产量/要求降价”必须有材料中的因果链。")
+    if re.search(r"哪[一二三四两\d]+项最准确|最准确", text):
+        extra.append(
+            "【最准确】选项的各主要分句都应有直接证据；完整直证优先于虽有商业合理性"
+            "但靠常识补出的行动、因果或事实细节。")
+    if re.search(r"实际上|实质上|本质上|也属于|等同于|可视为", text):
+        extra.append(
+            "【概念归类硬约束】选项把材料中的措施重新命名为另一种“思维/行为/"
+            "模式”时，先标记DIRECT（原文明确命名）、DEFINITION（逐项满足材料"
+            "给出的定义）或ANALOGY（仅凭常识类比）；ANALOGY一律不选。资产负债"
+            "匹配或久期配置不自动等同于加杠杆，资产荒下被动增配债券也不自动"
+            "等同于主动加杠杆，除非原文明确等同或给出融资扩表、借资放大收益链。")
+    return _COMPACT_JUDGE_BASE + (("\n" + "\n".join(extra)) if extra else "")
+
+
+def r1_instruction(q):
+    return (
+        "你是金融文档审读专家。严格依据上述证据逐项判断，证据不足不得臆断。\n"
+        + judge_std_for(q) + "\n"
+        "输出格式:\n选择标准: <一句话>\n分析: <每个选项一行，引用页码及理由>\n"
+        "判断: A入选/不选 B入选/不选 C入选/不选 D入选/不选\n答案: <字母>\n"
+        "若关键证据缺失，最后一行输出: 补充检索: <关键词>"
+    )
+
+
+def r2_instruction(q):
+    return (
+        "忽略初判结论，独立按选择标准逐项复核。重点检查选择标准、数值日期主体、"
+        "漏选、过度严苛和无依据主张。\n" + judge_std_for(q) +
+        "\n输出格式:\n选择标准: <一句话>\n复核: <每项一行>\n答案: <字母>"
+    )
+
 R1_INST = (
     "你是金融文档审读专家。严格依据上述证据逐项判断每个选项的真伪，"
     "证据不足的选项不得臆断。涉及计算的题先列出各产品/公司的规则与数值再计算。\n"
@@ -885,12 +1554,15 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
     ev, kept, prot, digests = evidence_block(q, model=model)
     ev_ids = [c["id"] for c in kept]
     base = ev + "\n\n" + _q_text(q)
+    r1_inst = r1_instruction(q)
+    r2_inst = r2_instruction(q)
 
     c1, r1think, _ = chat(
-        [{"role": "user", "content": base + "\n\n" + R1_INST}],
+        [{"role": "user", "content": base + "\n\n" + r1_inst}],
         qid=qid, model=model, thinking=_think(q), thinking_budget=think_r1,
         max_tokens=4000, tag="r1")
     ans1 = parse_answer(c1, fmt)
+    traces = [{"stage": "r1", "content": c1, "answer": ans1}]
     # 逐题多数决：跨运行实测多数票94/100 vs 单跑89——摇摆噪声偷走~5题
     # AFAC_R1_VOTES=N 时r1独立采样N份逐选项投票（选择题）
     n_r1 = int(os.environ.get("AFAC_R1_VOTES", "1"))
@@ -913,10 +1585,12 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
         target = 2 if esc else n_r1
         while len(r1_pool) < target:
             c1x, _t, _ = chat(
-                [{"role": "user", "content": base + "\n\n" + R1_INST}],
+                [{"role": "user", "content": base + "\n\n" + r1_inst}],
                 qid=qid, model=model, thinking=_think(q),
                 thinking_budget=think_r1, max_tokens=4000, tag="r1")
             a1x = parse_answer(c1x, fmt)
+            traces.append({"stage": "r1_vote", "content": c1x,
+                           "answer": a1x})
             if a1x:
                 r1_pool.append(a1x)
             else:
@@ -924,10 +1598,12 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
         if esc and len(set(r1_pool)) > 1:
             while len(r1_pool) < 5:
                 c1x, _t, _ = chat(
-                    [{"role": "user", "content": base + "\n\n" + R1_INST}],
+                    [{"role": "user", "content": base + "\n\n" + r1_inst}],
                     qid=qid, model=model, thinking=_think(q),
                     thinking_budget=think_r1, max_tokens=4000, tag="r1e")
                 a1x = parse_answer(c1x, fmt)
+                traces.append({"stage": "r1_escape", "content": c1x,
+                               "answer": a1x})
                 if a1x:
                     r1_pool.append(a1x)
                 else:
@@ -950,11 +1626,13 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
         ev_ids = [c["id"] for c in kept]
         base = ev2 + "\n\n" + _q_text(q)
         c1b, _t, _ = chat(
-            [{"role": "user", "content": base + "\n\n" + R1_INST.rsplit("\n", 1)[0]}],
+            [{"role": "user", "content": base + "\n\n" + r1_inst.rsplit("\n", 1)[0]}],
             qid=qid, model=model, thinking=_think(q), thinking_budget=think_r1,
             max_tokens=4000, tag="r1b")
         if parse_answer(c1b, fmt):
             c1, ans1 = c1b, parse_answer(c1b, fmt)
+        traces.append({"stage": "r1b", "content": c1b,
+                       "answer": parse_answer(c1b, fmt)})
 
     final, c2, ans2 = ans1, None, None
     # tf 复核实测 0/20 翻转，跳过省 token；multi/mcq 保留盲复核；SLIM 全部单样本
@@ -978,10 +1656,11 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
         else:
             r2_base = base
         c2, _t, _ = chat(
-            [{"role": "user", "content": r2_base + "\n\n" + R2_INST}],
+            [{"role": "user", "content": r2_base + "\n\n" + r2_inst}],
             qid=qid, model=VERIFY_MODEL or model, thinking=_think(q),
             thinking_budget=1500, max_tokens=2600, tag="r2")
         ans2 = parse_answer(c2, fmt)
+        traces.append({"stage": "r2", "content": c2, "answer": ans2})
         if ans2 and ans2 != ans1:
             # 定向仲裁：只带分歧选项的针对性证据，三样本逐选项多数决
             disputed = [l for l in "ABCD"
@@ -995,7 +1674,7 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
             adj = ("原文片段证据:\n" + ev3 + "\n\n" + _q_text(q) +
                    f"\n\n两次独立判断在以下选项上有分歧:\n{dtxt}\n"
                    "请仅针对这些分歧选项逐项核对证据并给出该选项是否入选的结论。\n"
-                   + JUDGE_STD + "\n输出格式:\n仲裁: <分歧选项逐项>\n"
+                   + judge_std_for(q) + "\n输出格式:\n仲裁: <分歧选项逐项>\n"
                    "答案: <完整最终答案字母>")
             # 争议题仲裁升级：AFAC_ARB_VOTES=N 时做N份独立仲裁逐选项多数决
             # （三连89平台=摇摆集洗牌；争议触发天然锁定摇摆集，只对分歧题花钱）
@@ -1011,6 +1690,8 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
                                  thinking_budget=2600, max_tokens=3000,
                                  tag="r3")
                 a3 = parse_answer(c3, fmt)
+                traces.append({"stage": "r3", "content": c3,
+                               "answer": a3})
                 if a3:
                     arb_answers.append(a3)
             ans3 = arb_answers[-1] if arb_answers else ""
@@ -1019,12 +1700,33 @@ def answer_question(q, model=DEFAULT_MODEL, log=None, blind_mode=False):
         elif ans2:
             final = ans2
     if not final:
-        final = "A"  # 绝不留空（空=判错）
+        raise RuntimeError(f"{qid}: model produced no valid answer")
+
+    original_final = final
+    final, constraint_note = apply_structural_evidence_constraints(final, q, ev)
+    if constraint_note:
+        prior_reasoning, _prior_stage = select_reasoning(
+            original_final, traces, fmt)
+        confirmed_reasoning, confirmed_answer = \
+            confirm_structural_evidence_constraint(
+                q, prior_reasoning, final, constraint_note, model=model)
+        traces.append({
+            "stage": "evidence_constraint_qwen",
+            "content": confirmed_reasoning,
+            "answer": confirmed_answer,
+        })
+
+    reasoning, reasoning_stage = select_reasoning(final, traces, fmt)
 
     if log is not None:
         log.write(json.dumps({
             "qid": qid, "final": final, "r1": ans1, "r2": ans2,
-            "c1": c1, "c2": c2, "evidence_ids": ev_ids[:40]},
+            "c1": c1, "c2": c2, "reasoning": reasoning,
+            "reasoning_stage": reasoning_stage,
+            "evidence_ids": ev_ids},
             ensure_ascii=False) + "\n")
         log.flush()
-    return final, {"r1": ans1, "r2": ans2, "c1": c1}
+    return final, {"r1": ans1, "r2": ans2, "c1": c1,
+                   "reasoning": reasoning,
+                   "reasoning_stage": reasoning_stage,
+                   "traces": traces}

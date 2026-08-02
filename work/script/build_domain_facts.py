@@ -5,7 +5,10 @@ ins: 条款关键行（身故/满期/犹豫期/免责/借款/给付比例/未成
 fc:  募集书关键行（兑付/利率/担保/违约/评级/日期/金额 行）
 产物: processed_data/domain_facts.json {doc_id: [行...]}，与 fin_facts2 并行使用。
 """
-import json, pathlib, re
+import argparse
+import json
+import pathlib
+import re
 
 WORK = pathlib.Path(__file__).resolve().parents[1]
 PD = WORK / "processed_data"
@@ -21,20 +24,22 @@ NUM = re.compile(r"\d")
 PAGE = re.compile(r"\[P(\d+)\]")
 
 
-def extract(domain, kw, min_num=False):
+def extract(domain, kw, min_num=False, *, processed_dir=None, verbose=False):
+    processed_dir = pathlib.Path(processed_dir or PD)
     out = {}
-    for f in sorted((PD / domain).glob("*.txt")):
+    for f in sorted((processed_dir / domain).glob("*.txt")):
         doc = f.stem
         rows, page = [], 0
-        for ln in open(f, encoding="utf-8", errors="ignore"):
-            m = PAGE.search(ln)
-            if m:
-                page = int(m.group(1))
-            t = ln.strip()
-            if not (8 <= len(t) <= 160):
-                continue
-            if kw.search(t) and (not min_num or NUM.search(t)):
-                rows.append(f"[P{page}] {t[:140]}")
+        with f.open(encoding="utf-8", errors="ignore") as source:
+            for ln in source:
+                m = PAGE.search(ln)
+                if m:
+                    page = int(m.group(1))
+                t = ln.strip()
+                if not (8 <= len(t) <= 160):
+                    continue
+                if kw.search(t) and (not min_num or NUM.search(t)):
+                    rows.append(f"[P{page}] {t[:140]}")
         # 去重保序
         seen, ded = set(), []
         for r in rows:
@@ -43,7 +48,8 @@ def extract(domain, kw, min_num=False):
                 seen.add(k)
                 ded.append(r)
         out[doc] = ded[:400]
-        print(f"{domain}/{doc}: {len(ded)}行")
+        if verbose:
+            print(f"{domain}/{doc}: {len(ded)}行")
     return out
 
 
@@ -52,13 +58,28 @@ RES_KW = re.compile(
     r"销量|均价|毛利率|净利率|CAGR|市场规模|需求|供给|盈利预测|估值")
 
 
-def main():
+def build(processed_dir=PD, output_path=None, *, verbose=False):
+    processed_dir = pathlib.Path(processed_dir)
     result = {}
-    result.update(extract("insurance", INS_KW))
-    result.update(extract("financial_contracts", FC_KW))
-    result.update(extract("research", RES_KW, min_num=True))
-    json.dump(result, open(PD / "domain_facts.json", "w"), ensure_ascii=False,
-              indent=0)
+    result.update(extract("insurance", INS_KW, processed_dir=processed_dir,
+                          verbose=verbose))
+    result.update(extract("financial_contracts", FC_KW,
+                          processed_dir=processed_dir, verbose=verbose))
+    result.update(extract("research", RES_KW, min_num=True,
+                          processed_dir=processed_dir, verbose=verbose))
+    target = pathlib.Path(output_path or processed_dir / "domain_facts.json")
+    target.write_text(json.dumps(result, ensure_ascii=False, indent=0) + "\n",
+                      encoding="utf-8")
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--processed", type=pathlib.Path, default=PD)
+    parser.add_argument("--output", type=pathlib.Path)
+    parser.add_argument("--verbose", action="store_true")
+    args = parser.parse_args()
+    result = build(args.processed, args.output, verbose=args.verbose)
     tot = sum(len(v) for v in result.values())
     print(f"→ domain_facts.json {len(result)}文档 {tot}行")
 

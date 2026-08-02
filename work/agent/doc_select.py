@@ -5,9 +5,8 @@
 import json, pathlib, re
 
 from . import retrieval
-from .qwen_client import chat, DEFAULT_MODEL, LEDGER
-
-ROOT = pathlib.Path(__file__).resolve().parents[2]
+from .paths import PROCESSED_DIR
+from .qwen_client import chat, DEFAULT_MODEL
 
 _DOC_BM25 = {}   # domain -> BM25 over doc-level pseudo-chunks
 INDEX_HEAD = 30000
@@ -126,7 +125,8 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
     if len(cands) <= 2:
         return cands
     meta_all = retrieval.docs_meta()
-    head_n = 55 if __import__("os").environ.get("AFAC_SLIM4") == "1" else 130
+    head_n = (55 if __import__("os").environ.get("AFAC_SLIM4") == "1"
+              else 120 if q["domain"] == "financial_contracts" else 130)
     cards = []
     for d in cands:
         # csrc网页用 meta 摘要（含当事人/文号，标题雷同时唯一有区分度）；其余用正文开头
@@ -174,6 +174,28 @@ def select_docs(q, qid=None, model=DEFAULT_MODEL, k_coarse=12, max_docs=4):
     return _finalize_picks(q, picked, cands, max_docs)
 
 
+_MULTI_SOURCE_RE = re.compile(
+    r"(?:两|三|四|几|多)(?:家|份|款|类|个)[^\n。？?]{0,18}"
+    r"(?:公司|产品|文件|报告|机构|募集说明书|合同)"
+)
+
+
+def _requires_multiple_sources(q):
+    """Return whether the visible wording explicitly requires >1 source.
+
+    A document selector may happen to return one highly confident source for a
+    single-document extraction.  Adding an unrelated runner-up in that case
+    dilutes evidence and creates an avoidable Qwen doc-selection call.  The
+    minimum-two fallback is therefore limited to questions whose own wording
+    names several source-bearing entities; no qid, schema slot or answer is
+    inspected.
+    """
+    text = q.get("question", "") + " " + " ".join(
+        str(v) for v in q.get("options", {}).values())
+    return bool(_MULTI_SOURCE_RE.search(text) or
+                re.search(r"以下三份|各文件|与各文件|两家公司|四家", text))
+
+
 def _finalize_picks(q, picked, cands, max_docs):
     """选择后的零token兜底：材料类别补齐/csrc附件耦合/保险别名覆盖/
     BM25 top1并入/比较题≥2份。单题与批量共用，保证兜底语义一致。"""
@@ -198,7 +220,7 @@ def _finalize_picks(q, picked, cands, max_docs):
     # 保险域：选项点名产品必须全覆盖（ins_b_012类伤：题问4产品只选3份文档）
     if q["domain"] == "insurance":
         try:
-            tit = json.loads((ROOT / "work" / "processed_data" /
+            tit = json.loads((PROCESSED_DIR /
                               "insurance_titles.json").read_text())
             for d, info in tit.items():
                 if d in picked or d not in set(cands):
@@ -227,8 +249,8 @@ def _finalize_picks(q, picked, cands, max_docs):
             if top and top[0][0]["doc_id"] not in picked:
                 picked.append(top[0][0]["doc_id"])
                 extra_n += 1
-    # 比较/结合类题至少2份文档
-    if len(picked) == 1:
+    # 只有题面明确要求多主体/多文件时才强制至少两份。
+    if len(picked) == 1 and _requires_multiple_sources(q):
         nxt = next((c for c in cands if c not in picked), None)
         if nxt:
             picked.append(nxt)
@@ -269,7 +291,8 @@ def select_docs_batch(qs, model=DEFAULT_MODEL, k_coarse=12):
             max_docs = 4
             extra_hint = ""
     meta_all = retrieval.docs_meta()
-    head_n = 55 if __import__("os").environ.get("AFAC_SLIM4") == "1" else 130
+    head_n = (55 if __import__("os").environ.get("AFAC_SLIM4") == "1"
+              else 120 if domain == "financial_contracts" else 130)
     cards = []
     for d in shared:
         summary = meta_all[d].get("summary")
@@ -296,18 +319,8 @@ def select_docs_batch(qs, model=DEFAULT_MODEL, k_coarse=12):
     content, _r, usage = chat([{"role": "user", "content": prompt}],
                               qid=f"_docsel_{domain}", model=model,
                               thinking=False,
-                              max_tokens=80 * len(qs) + 200, tag="docsel")
-    p = usage.get("prompt_tokens", 0) // len(qs)
-    c = usage.get("completion_tokens", 0) // len(qs)
-    with LEDGER._lock:
-        for q in qs:
-            slot = LEDGER.per_qid.setdefault(q["qid"], [0, 0])
-            slot[0] += p
-            slot[1] += c
-        b = LEDGER.per_qid.get(f"_docsel_{domain}")
-        if b:
-            b[0] = max(0, b[0] - p * len(qs))
-            b[1] = max(0, b[1] - c * len(qs))
+                              max_tokens=80 * len(qs) + 200, tag="docsel",
+                              allocation_qids=[q["qid"] for q in qs])
     sel = {}
     m = BATCH_OBJ_RE.search(content or "")
     obj = None

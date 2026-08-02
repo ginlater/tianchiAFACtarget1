@@ -6,7 +6,10 @@
 方法：fitz词坐标 → y聚类成行 → 数字单元格x聚类成列 → 表头绑定列身份。
 产物：processed_data/fin_facts2.json {doc_id: [事实行...]}（离线词法，合规）。
 """
-import json, pathlib, re, sys
+import argparse
+import json
+import pathlib
+import re
 
 import fitz
 
@@ -127,35 +130,54 @@ def dividend_lines(doc):
     return ded[:20]
 
 
-def main():
+def build(raw_root=ROOT / "public_dataset_upload" / "raw", output_path=OUT,
+          *, verbose=False):
+    raw_reports = pathlib.Path(raw_root) / "financial_reports"
+    output_path = pathlib.Path(output_path)
     result = {}
-    for pdf in sorted(list(RAW.glob("*.PDF")) + list(RAW.glob("*.pdf"))):
+    pdfs = sorted(set(raw_reports.glob("*.PDF")) | set(raw_reports.glob("*.pdf")),
+                  key=lambda path: path.as_posix())
+    for pdf in pdfs:
         doc_id = pdf.stem
-        d = fitz.open(pdf)
-        facts = []
-        carry, carry_p = None, -9
-        for pno in range(len(d)):
-            head = d[pno].get_text()[:400]
-            m = TITLE_RE.search(head.replace(" ", ""))
-            if m:
-                title = m.group(0)
-                yrs = YEAR_RE.findall(head)
-                ttl = f"{title}{'/'.join(yrs[:1])}" if yrs else title
-                carry, carry_p = ttl, pno
-            elif carry and pno - carry_p <= 3:
-                # 报表续页无表头(CATL式)：3页内继承前表头
-                ttl = carry + "(续)"
-            else:
-                continue
-            got = [f + f" (P{pno+1})" for f in extract_statement(d[pno], ttl)]
-            if m and len(got) < 4:
-                carry, carry_p = None, -9  # 假表头(审计散文页): 不外溢
-            facts += got
-        facts += dividend_lines(d)
+        with fitz.open(pdf) as document:
+            facts = []
+            carry, carry_p = None, -9
+            for pno in range(len(document)):
+                head = document[pno].get_text()[:400]
+                match = TITLE_RE.search(head.replace(" ", ""))
+                if match:
+                    title = match.group(0)
+                    years = YEAR_RE.findall(head)
+                    ttl = f"{title}{'/'.join(years[:1])}" if years else title
+                    carry, carry_p = ttl, pno
+                elif carry and pno - carry_p <= 3:
+                    ttl = carry + "(续)"
+                else:
+                    continue
+                got = [fact + f" (P{pno + 1})"
+                       for fact in extract_statement(document[pno], ttl)]
+                if match and len(got) < 4:
+                    carry, carry_p = None, -9
+                facts += got
+            facts += dividend_lines(document)
         result[doc_id] = facts
-        print(f"{doc_id}: {len(facts)}行", flush=True)
-    json.dump(result, open(OUT, "w"), ensure_ascii=False, indent=0)
-    print(f"→ {OUT}")
+        if verbose:
+            print(f"{doc_id}: {len(facts)}行", flush=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(result, ensure_ascii=False, indent=0) + "\n",
+                           encoding="utf-8")
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", type=pathlib.Path,
+                        default=ROOT / "public_dataset_upload" / "raw")
+    parser.add_argument("--output", type=pathlib.Path, default=OUT)
+    parser.add_argument("--verbose", action="store_true")
+    args = parser.parse_args()
+    result = build(args.input, args.output, verbose=args.verbose)
+    print(f"→ {args.output} ({len(result)} documents)")
 
 
 if __name__ == "__main__":
