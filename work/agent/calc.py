@@ -431,6 +431,11 @@ def deterministic_disagreement_instruction(solved):
         "dupont": (
             "题干要求收益率答案不带百分号时，先按百分数计算和舍入，再仅"
             "移除%符号；不得把7.65%改写为小数0.08。"),
+        "equity_multiplier_rank": (
+            "逐主体把资产负债率精确除以100转成Decimal小数，再按"
+            "1/(1-资产负债率)计算权益乘数；禁止手工改写分母、截断中间"
+            "结果或用已舍入的权益乘数求差。排序和最大值减最小值均使用"
+            "完整精度，只在最终数值槽按题目要求舍入。"),
     }
     return routes.get(intent, "")
 

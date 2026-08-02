@@ -660,6 +660,72 @@ class DeterministicCalcIntegrationTests(unittest.TestCase):
         self.assertEqual(info["reasoning_stage"],
                          "calc_det_closed_reconcile")
 
+    def test_equity_multiplier_rounding_mismatch_uses_compact_reconcile(self):
+        q = {
+            "qid": "opaque_leverage_rank",
+            "domain": "financial_reports",
+            "answer_format": "calc",
+            "doc_ids": ["annual-a", "annual-b", "annual-c"],
+            "question": (
+                "根据三家公司的资产负债率计算权益乘数，按权益乘数从高到低"
+                "排序，并计算最高值与最低值之差，保留两位小数。"),
+            "options": {},
+        }
+        solved = SolveResult(
+            Intent.EQUITY_MULTIPLIER_RANK,
+            ("春华集团>秋实集团>远山集团", "0.84"),
+            ("春华集团=1/(1-0.7073)=3.417...；"
+             "秋实集团=1/(1-0.6841)=3.165...；"
+             "远山集团=1/(1-0.6117)=2.575...；"
+             "完整精度差值=0.842...，最终舍入为0.84。"),
+            (Fact("debt_ratio", 70.73, "percent", entity="春华集团",
+                  period="2025"),
+             Fact("debt_ratio", 68.41, "percent", entity="秋实集团",
+                  period="2025"),
+             Fact("debt_ratio", 61.17, "percent", entity="远山集团",
+                  period="2025")),
+        )
+        calls = []
+
+        def fake_chat(messages, **kwargs):
+            calls.append(kwargs["tag"])
+            if kwargs["tag"] == "calc_scope_audit":
+                return ("BIND|三家公司|2025年|合并口径\nSTATUS=OK", "", {
+                    "prompt_tokens": 100, "completion_tokens": 20})
+            if kwargs["tag"] == "calc_det":
+                return ("【核验】手算时改写了春华集团的分母。\n"
+                        "答案: 春华集团>秋实集团>远山集团；0.85", "", {
+                            "prompt_tokens": 100, "completion_tokens": 50})
+            self.assertEqual(kwargs["tag"],
+                             "calc_det_closed_reconcile")
+            self.assertFalse(kwargs["thinking"])
+            self.assertEqual(kwargs["max_tokens"], 240)
+            prompt = messages[0]["content"]
+            self.assertIn("1/(1-资产负债率)", prompt)
+            self.assertIn("只在最终数值槽", prompt)
+            return ("【口径】三家集团均按合并口径资产负债率。\n"
+                    "【复算】使用完整精度计算、排序并求极差，最终舍入。\n"
+                    "答案: 春华集团>秋实集团>远山集团；0.84", "", {
+                        "prompt_tokens": 100, "completion_tokens": 50})
+
+        with mock.patch.dict(os.environ, {
+                "AFAC_DET_CALC": "1", "AFAC_NARRATIVE_REGISTRY": "0",
+        }, clear=False), \
+                mock.patch.object(calc, "calc_evidence",
+                                  return_value=("闭式事实证据", ["d#c1"])), \
+                mock.patch("agent.deterministic_calc.try_solve",
+                           return_value=solved), \
+                mock.patch.object(calc, "chat", side_effect=fake_chat):
+            raw, info = calc.answer_calc(
+                q, ["ranking", "number"], return_info=True)
+        self.assertEqual(raw, "春华集团>秋实集团>远山集团；0.84")
+        self.assertEqual(calls, ["calc_scope_audit", "calc_det",
+                                 "calc_det_closed_reconcile"])
+        self.assertEqual(info["reasoning_stage"],
+                         "calc_det_closed_reconcile")
+        self.assertEqual([trace["stage"] for trace in info["traces"]],
+                         ["calc_det", "calc_det_closed_reconcile"])
+
     def test_unique_registry_rescue_is_cached_and_suppresses_redundant_retry(self):
         q = {
             "qid": "opaque_contract",
