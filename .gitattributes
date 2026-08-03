@@ -1,0 +1,4 @@
+# Frozen reproduction artifacts must round-trip byte-for-byte on every clone.
+deliverables/router6_single_run/** -text
+docs/router6_single_run/*.docx binary
+docs/router6_single_run/*.pdf binary

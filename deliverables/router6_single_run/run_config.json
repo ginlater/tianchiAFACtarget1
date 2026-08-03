@@ -1,0 +1,3964 @@
+{
+  "schema_version": 2,
+  "created_at": 1785698634.382863,
+  "command": [
+    "work/agent/run_b2.py",
+    "--output-dir",
+    "/Users/ginlater/Documents/tianchiAFACtarget1-router6-runs/router6_clean_rerun3",
+    "--qdir",
+    "upload_b/question_b",
+    "--submit-template",
+    "upload_b/submit.csv",
+    "--model",
+    "qwen3.6-plus",
+    "--verify-model",
+    "qwen3.6-plus",
+    "--workers",
+    "6",
+    "--batch",
+    "--fresh-digests"
+  ],
+  "arguments": {
+    "tag": "",
+    "output_dir": "/Users/ginlater/Documents/tianchiAFACtarget1-router6-runs/router6_clean_rerun3",
+    "qdir": "upload_b/question_b",
+    "submit_template": "upload_b/submit.csv",
+    "workers": 6,
+    "model": "qwen3.6-plus",
+    "verify_model": "qwen3.6-plus",
+    "resume": false,
+    "fresh_digests": true,
+    "limit": 0,
+    "qids": "",
+    "batch": true
+  },
+  "environment": {
+    "AFAC_ALIGN": "1",
+    "AFAC_ARB_VOTES": "1",
+    "AFAC_B1_VOTES": "1",
+    "AFAC_CALC_HETERO": "0",
+    "AFAC_CALC_LEAN": "1",
+    "AFAC_CALC_SINGLE": "1",
+    "AFAC_CALC_TABLES": "0",
+    "AFAC_CARDS_ONLY": "0",
+    "AFAC_COMPACT_JUDGE": "1",
+    "AFAC_DEEP": "0",
+    "AFAC_DET_CALC": "1",
+    "AFAC_DET_CALC_EVIDENCE_CHARS": "5200",
+    "AFAC_DET_CALC_MAX_TOKENS": "1800",
+    "AFAC_DET_CALC_THINKING_BUDGET": "900",
+    "AFAC_DIGEST_KEEP": "insurance",
+    "AFAC_DOM_FACTS": "1",
+    "AFAC_DYNCAP": "0",
+    "AFAC_ENT_PROBE": "0",
+    "AFAC_EV_CAP_MULT": "1",
+    "AFAC_FAST_DOCSEL": "1",
+    "AFAC_FAST_DOCSEL_CALC": "1",
+    "AFAC_FAST_DOCSEL_CALC_DOMAINS": "financial_contracts",
+    "AFAC_FC_SHARED_PROMPT": "1",
+    "AFAC_FC_SPARSE_BATCH_EXTRA": "2500",
+    "AFAC_FIN_BATCH_EVIDENCE_PER_Q": "6000",
+    "AFAC_FIN_BATCH_MAX": "5",
+    "AFAC_FIN_CALC": "1",
+    "AFAC_FIN_EXTENDED_EVIDENCE_PER_Q": "7800",
+    "AFAC_FIN_FACTS": "2",
+    "AFAC_FIN_REGISTRY": "1",
+    "AFAC_FIN_SCOPE_EVIDENCE_PER_Q": "22000",
+    "AFAC_FIN_SHARED_EVIDENCE": "1",
+    "AFAC_HETERO_B2": "0",
+    "AFAC_HOMO_BATCH": "1",
+    "AFAC_HOMO_MAX": "5",
+    "AFAC_INS_BATCH_CAPSULE_BUDGET": "7500",
+    "AFAC_INS_BATCH_RAW_CAP": "3000",
+    "AFAC_INS_CALC_CAPSULE_BUDGET": "6000",
+    "AFAC_INS_CAPSULES": "1",
+    "AFAC_INS_CAPSULE_BUDGET": "4800",
+    "AFAC_INS_LITERAL_BATCH_MAX": "4",
+    "AFAC_INS_MINOR_AUDIT_THINKING": "2200",
+    "AFAC_INS_MINOR_CAPSULE_BUDGET": "8500",
+    "AFAC_INS_RAW_CAP": "1800",
+    "AFAC_INS_SHARED_PROMPT": "1",
+    "AFAC_INS_SUICIDE_CAPSULE_BUDGET": "6500",
+    "AFAC_LEAN_R2": "0",
+    "AFAC_NARRATIVE_REGISTRY": "1",
+    "AFAC_NO_DIGEST": "1",
+    "AFAC_R1_ESC": "0",
+    "AFAC_R1_VOTES": "1",
+    "AFAC_R2_COND": "0",
+    "AFAC_REG_SHARED_PROMPT": "1",
+    "AFAC_RESEARCH_BATCH_RAW_CAP": "6000",
+    "AFAC_RESEARCH_DENSE_RAW_CAP": "6000",
+    "AFAC_SLIM": "1",
+    "AFAC_SLIM4": "0",
+    "AFAC_STABLE": "1",
+    "AFAC_TABLE_LIMIT": "15000",
+    "AFAC_WHOLE_LIMIT": "8000",
+    "PYTHONHASHSEED": "0"
+  },
+  "model": "qwen3.6-plus",
+  "verify_model": "qwen3.6-plus",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "packages": {
+    "openai": "2.46.0",
+    "httpx": "0.28.1",
+    "PyMuPDF": "1.26.5",
+    "pdfplumber": "0.11.8",
+    "lxml": "6.1.1"
+  },
+  "git_commit": "97f3eabdc69e11bbcd6e8b003237d6c41ade65cd",
+  "git_dirty": false,
+  "runtime_manifest": {
+    "schema_version": 1,
+    "root": "repository",
+    "files": [
+      {
+        "category": "official_rule",
+        "path": "b榜新增规则.txt",
+        "bytes": 10552,
+        "sha256": "b4568835df4168f7b860b337a88a6b5e7f0ee2e0bc31c47884970c0100c95a74"
+      },
+      {
+        "category": "official_rule",
+        "path": "b榜补充.md",
+        "bytes": 10534,
+        "sha256": "d454ec159f78c2b7f515cd12b19aae3c07455eaf81b4c8e586b276b35e3fab38"
+      },
+      {
+        "category": "official_rule",
+        "path": "upload_b/readme.md",
+        "bytes": 3333,
+        "sha256": "746806600bec071201100a1a4cda8368e38ffd1c165bbeb1c3b788825df9e301"
+      },
+      {
+        "category": "documentation",
+        "path": "work/README.md",
+        "bytes": 6331,
+        "sha256": "d5c83ad0623a8a96ee4777ae475484a60f900ecd29b96f3f84af20353ba298dc"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/__init__.py",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/answerer.py",
+        "bytes": 89440,
+        "sha256": "86b9541250db834e64215e800ce171a12cf3a0f3d1a5a4088b43c8753d242529"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/b_schema.py",
+        "bytes": 7237,
+        "sha256": "75e7314c6337a83a1136c8dbd42cb74b3095e4b69e4668a0fda4c4df6508055d"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/batch.py",
+        "bytes": 97411,
+        "sha256": "96d42d833eba539ccd333f503ddc56bf4a5db917adcb4dc30bae0378b91de1c0"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/calc.py",
+        "bytes": 62086,
+        "sha256": "26eced30faac20b749f02afff32625de6b531eadb6a7fc16f7cbdd345012e9ed"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/deterministic_calc.py",
+        "bytes": 48105,
+        "sha256": "8e237158b92add220794c480976240208c1090965b9cc2bc0578733bb947a75e"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/doc_select.py",
+        "bytes": 15884,
+        "sha256": "62c06e6bbc211ddce8e1019cc5df491e71c6e9d463e3adcde46a0caa1d180661"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/docsel_fast.py",
+        "bytes": 21395,
+        "sha256": "f339c35721df4fe6f6d453ad6d1dc7188e6c61847235ce279631c0eb169cb488"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/fin_calc.py",
+        "bytes": 6752,
+        "sha256": "8211e89790938283345b1f7d50581a2f51b236d276ede9d8a023936941c61b0d"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/financial_fact_registry.py",
+        "bytes": 36051,
+        "sha256": "cde33166681d098a98893cb69b5e61a480cafa2cf3cff0d2cae85c851d3f1ab1"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/insurance_calc.py",
+        "bytes": 37994,
+        "sha256": "66de9b134687535276128728ad8dcb59c7d900e98d04e3be5c12863785f182e6"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/insurance_capsules.py",
+        "bytes": 27237,
+        "sha256": "e0e519d209be84e1441df5d23f388fe9a485eece7c340845ea927e0e113a9c3e"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/narrative_fact_registry.py",
+        "bytes": 29113,
+        "sha256": "d5a135fcd3cc488c89fb303f17c6b9ee7c567f8e269fe84369cc107086367cdb"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/paths.py",
+        "bytes": 490,
+        "sha256": "b7fc4f25340d11e049b3c54c7809aaa8fb2d53c5bad26c507d2fa4d26654bacb"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/qwen_client.py",
+        "bytes": 14183,
+        "sha256": "3c0508f1b5dc3bb54928b354a68ca5f79ae36797a16ee63357876a32ed5983a4"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/repro.py",
+        "bytes": 21316,
+        "sha256": "17c2d8a1ab45f12da5ab765054365fd96900a551e5bf00f60c87f3e14c0d407b"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/retrieval.py",
+        "bytes": 12939,
+        "sha256": "3b516032122b0ab01df40f67983ddc870e51b7d283727a5cda1f2c71d261d21c"
+      },
+      {
+        "category": "source",
+        "path": "work/agent/run_b2.py",
+        "bytes": 15108,
+        "sha256": "fe31cc7d0581c3fdabcff9ee121b3b51ceba85f378613cf573749d5834fc8b43"
+      },
+      {
+        "category": "config",
+        "path": "work/config/honest_repro.env",
+        "bytes": 3432,
+        "sha256": "ce831b2d67a050494b8f2d34dc112da7da31758c50d10493af3317952be3535d"
+      },
+      {
+        "category": "source",
+        "path": "work/generate_answer.sh",
+        "bytes": 3106,
+        "sha256": "4a66d9f31c55d7ac9690732234fa5b1b151b790478fbd12a12ab6eaecee07065"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/align_matrix.json",
+        "bytes": 31713,
+        "sha256": "79e9aa30fe9ae2b2dccd8113a55586b83bbb643b089362fc7cbb0246bba10935"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/docs_meta.json",
+        "bytes": 241969,
+        "sha256": "0d68116694eef5c74a27f03b05731fb3ec47680449cc31732a49ffd6a9b803a3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/domain_facts.json",
+        "bytes": 780312,
+        "sha256": "87608227adc696c6560bab01af9504e57552830802bc3b5fa6303e08ac937d44"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/fin_facts.json",
+        "bytes": 163459,
+        "sha256": "b7aa444ca0b5481dc04cb1c932d0dd7c37f596db2356f21e533db04f602fe2ed"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/fin_facts2.json",
+        "bytes": 239713,
+        "sha256": "6d4bb92ae3a09e115900ff605249fc648544f50fa602feab0eec4faad6db6a45"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text01.txt",
+        "bytes": 546702,
+        "sha256": "e1a207013304750dd21b481da0800e3131ad1e8a279c9d6d0d3995ab71335e64"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text02.txt",
+        "bytes": 480578,
+        "sha256": "e16d1aacfce908f064bdfae56373ca45f5541018e881566bbdfdc91ab1f42418"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text03.txt",
+        "bytes": 489817,
+        "sha256": "29d491282efebe7f964a0f807f651baf22d6ed134a472776a522464ff739dd2c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text04.txt",
+        "bytes": 1095019,
+        "sha256": "4a33bbdabd6f6bb02ff875447d71ba8f474bd32280a1d0e671b60a19da12c298"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text05.txt",
+        "bytes": 827336,
+        "sha256": "70a8e4a3a37f93266de56f8eeb58fb269afc8e1f2e808a94359e1377af42a42d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text06.txt",
+        "bytes": 603655,
+        "sha256": "f21c1a33e0ef1d34ea82198198fd2c48450bc3a3896813c237b6db325d468a27"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text07.txt",
+        "bytes": 446224,
+        "sha256": "5cf964a2d600e518b0584a17de691ebac8cd71be4cf96a52f52f3c20faf294f1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text08.txt",
+        "bytes": 1002526,
+        "sha256": "1b45e231293dbf0b792a7c83f36e421536f38a0f2cf1e883fa2b484a180f1926"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text09.txt",
+        "bytes": 596098,
+        "sha256": "edaec028f05fb664067ea60cfb6759f1b62e131133008b18cd3291479cbed58b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text10.txt",
+        "bytes": 977453,
+        "sha256": "5ef6ab10757e7022f12ea91c17a3f5f91f21f2b8c3ccc2adcb577b2ce3615c68"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text11.txt",
+        "bytes": 597729,
+        "sha256": "6d2a5b6084420ed92d996ef164f394967d69c38cf501f7674b4b8ef52d2b645a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text12.txt",
+        "bytes": 257273,
+        "sha256": "259ff5505ff88e86b295d5be92c3c710e3228060457ee0d565d67a6e28b3851e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text13.txt",
+        "bytes": 213659,
+        "sha256": "c9348d4301779a7fec819c2e22061c0f9d3b3863992a875200cf9b3c4369dea2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_contracts/text14.txt",
+        "bytes": 518189,
+        "sha256": "99218b8ff175a6f82f8a53a5a59c5e200fd5f05c9e46d4f8cdd7b6c027bc5e75"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_byd_2024_report.txt",
+        "bytes": 638398,
+        "sha256": "3b0a8d21e53ea51c46bf8a11bf3fc8b5d1c8c96c1cd94012cf5a72b04c8a1ac3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_byd_2025_report.txt",
+        "bytes": 576251,
+        "sha256": "b03c945a19a3069bf8ac64f1e6073a59353d0cc20cd5f9648eea2c83c892aab8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_catl_2024_report.txt",
+        "bytes": 517028,
+        "sha256": "4df167edd124fcb16e8c2e484f9651a0779ed3f37c9b74485f753482e85427e3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_catl_2025_report.txt",
+        "bytes": 492510,
+        "sha256": "094cc5a39819efd078e2deb8a5b22f9e93a9530a53b2755efcdf9d307e282fab"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_chinamobile_2025_report.txt",
+        "bytes": 380906,
+        "sha256": "dd3b2c0c404f459a6bf5311703dbd882d31b7f5c380a5ae5ab2b0c17218b6d9b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_cmb_2025_report.txt",
+        "bytes": 867157,
+        "sha256": "210090aa047e3c57d7436f30a95c4fa54f60e8607370a8fe6c9c82527b9f2db2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_cscec_2024_report.txt",
+        "bytes": 750851,
+        "sha256": "e63ddeda12130dd0ca3d71c65ac13a5d8a40765da4070bfaa6d76b1bd0066b5b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_cscec_2025_report.txt",
+        "bytes": 698698,
+        "sha256": "8a913ea4488f80dd23a271987bad89a4233f93733144ab8bf2203834a6b6de7a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_midea_2024_report.txt",
+        "bytes": 622434,
+        "sha256": "f0e78945a390d8093aef0c794c3338f2f0fc463ea76398d17cf2cfb55f634d00"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/financial_reports/annual_midea_2025_report.txt",
+        "bytes": 569846,
+        "sha256": "a6e78dd77fac7b8b87ddae11791bb97a9769abb8c314c9a9d44f73beea228bd7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/1.txt",
+        "bytes": 61606,
+        "sha256": "e2be65fee05e4752094f4ba2c6eec8f7160ac8c88364dc47fe7c1ca1924ce6b3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/10.txt",
+        "bytes": 43357,
+        "sha256": "7eba824d5608507b7e4692cdceebfdb307d3e1198ceba839af4b4b8cf4cd3d8d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/11.txt",
+        "bytes": 18011,
+        "sha256": "e441cfc1bf26166e9571a7d8dd5e82fa8bd8cd53565bae02515be4113ff4b421"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/12.txt",
+        "bytes": 31220,
+        "sha256": "7beb5cde1460771660f6f311cc053130d51d4b9e36b652de9644f707ea0be4fc"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/13.txt",
+        "bytes": 20996,
+        "sha256": "2739423c12b8d59315c8ce4be61dd2fc0c10f545586f62db34a803e26e93e567"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/14.txt",
+        "bytes": 20249,
+        "sha256": "242236cba721874cfe583f84c7720c9ad3bc8ca9ef5bdd87c5234b0797652067"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/15.txt",
+        "bytes": 25470,
+        "sha256": "d2cffbd339ebba22aae14df575134d5d8717779a53457ccad42706ad95ce9621"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/16.txt",
+        "bytes": 39679,
+        "sha256": "12b9267a19691effa0cee37b1d9eb0987f692e3b3980a8e7a04790478340d797"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/2.txt",
+        "bytes": 34825,
+        "sha256": "7da674845ff3cf0247ed1de15d1530bd836406d35ced1bb1d0361f356b6347a8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/3.txt",
+        "bytes": 45992,
+        "sha256": "6cb3b81d4ff809fc7c26afaf2a415acce1d3c7747b4fbf1ce8ce74f59cd0cb28"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/4.txt",
+        "bytes": 100956,
+        "sha256": "be9f3c1670978f5ed51a5b9cf540bd86fe63c25b106f6480c3cb4c1991945fbe"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/5.txt",
+        "bytes": 140011,
+        "sha256": "4ca2a0cdf5b524b621a7cf6e503a57a135dc623127340c498c95773f4f99f09a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/6.txt",
+        "bytes": 132590,
+        "sha256": "4bfb2604ce07f48a0a91a5d09234ad2c880827729705d6c10572bc953476ff3e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/7.txt",
+        "bytes": 20812,
+        "sha256": "669edda26a7f74fa2f7d63b2930cfb865eacf7b6bdf4e6dba0332cd28efb5c4e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/8.txt",
+        "bytes": 80855,
+        "sha256": "666666256b5c24e53dc80c236032efb637415c6cfeffaaeb23c88349e05ce778"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance/9.txt",
+        "bytes": 43382,
+        "sha256": "c9427d442c68bcd3a7494814ec7f302de1b12c59baffe19d757087f3780efd1f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance_capsules.json",
+        "bytes": 1046818,
+        "sha256": "70d7dc80845fd803472d81897ff941462a01e0fcfb38c92bc4646560c6378f94"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/insurance_titles.json",
+        "bytes": 2820,
+        "sha256": "74ab54d29e5ee7c0f6bc9f6c2820e6dd36f7fbcd56e1044a244b0936e3b4a457"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0001.txt",
+        "bytes": 1744,
+        "sha256": "840c65eacef181faa05dfef6c028c985fee4ea77dc609e8c496e0e2a912dad39"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0001_att1.txt",
+        "bytes": 21612,
+        "sha256": "08a18dd99ddf97f67634ed6f8ba17afae09d83dc73f7affe7e5545ab83384457"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0001_att2.txt",
+        "bytes": 6506,
+        "sha256": "ed02e52eba28567a232aadc03b9a5c7d2d828c92592cf0e09246e2ccd81f44b0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0002.txt",
+        "bytes": 1976,
+        "sha256": "6749022ebc17dc56d6afbf343ee6db2cc1811c81a6f4e9b11fecb71cde81da90"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0002_att1.txt",
+        "bytes": 17448,
+        "sha256": "1d670d21a05fd63d6d5c43daaa77fd9af943f9c6f19a6c1e7e8d775a8398f121"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0002_att2.txt",
+        "bytes": 3893,
+        "sha256": "0d637d1c9ff45dcc51fff4f9a456da63748e862cda5e2dc9c63bfd48886b1ee6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0003.txt",
+        "bytes": 1730,
+        "sha256": "419dbb65ee0548c037cd76347c0b72a1b5d93217361286718bd024a20447f4e1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0003_att1.txt",
+        "bytes": 9962,
+        "sha256": "74b244fd5f642919e95b66af8c4233d07c4a22aa09434607cb5e4b7d98b46b51"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0003_att2.txt",
+        "bytes": 9254,
+        "sha256": "dd6a065e8542e7fe2cc7653ac8c9c180e51a2bf72434156e28cf60d330bb8ee9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0004.txt",
+        "bytes": 1781,
+        "sha256": "e7f2f305eae2607c0f16b513df0b58dfa09dfb842e523d9d15bdc12fd0e3d920"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0004_att1.txt",
+        "bytes": 20042,
+        "sha256": "243d5cc6315497263fdb13dfd8dbdd95a145292200d7bbf006ff67b0f8d6bb8a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0005.txt",
+        "bytes": 1825,
+        "sha256": "0bab55526c7d1c53b9c4f9fc7fe9182bc28b2fe22be9f6e401e1d7dd51171a11"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0005_att1.txt",
+        "bytes": 62593,
+        "sha256": "6334598fcebe96514cf8498add871abda87641a3728c9e7998a237d32e90c2d1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0005_att2.txt",
+        "bytes": 7256,
+        "sha256": "bd13bb7c69fb170dc8184a20f15e011364fac9b8b1dabcd6720580897e196d92"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0006.txt",
+        "bytes": 1640,
+        "sha256": "32b62bbc31c3fd610ea9c5c79827829be57a3855b24fdbb55ef7613260016d01"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0006_att1.txt",
+        "bytes": 24637,
+        "sha256": "b8fdd2f96cfd8425f6adf50d4fd5be6dbd7e6fa4490c23c19b54cf7e543067db"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0006_att2.txt",
+        "bytes": 4051,
+        "sha256": "d5c9e07d469d9e05fe64d66cfa0d025e634ce21535cc0a7cf5573a8b29c141cd"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0007.txt",
+        "bytes": 1747,
+        "sha256": "dad06b547f252f1aec30be21dfbbb427bdb4643d0b5dd96969bbab8b2cb44966"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0007_att1.txt",
+        "bytes": 37244,
+        "sha256": "f1e290c8a16fc8a1ec9e3ce6613966fd6763ce76b60d4cb20c3efda9228987ea"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0007_att2.txt",
+        "bytes": 4055,
+        "sha256": "dfd74b49edb74694d49850d11a9d980ab4973dc12dfdc057385fd6d708b8f8da"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0008.txt",
+        "bytes": 1742,
+        "sha256": "0efd090294b999c79deb65b4e4677616d882d9d4465e15b10b5e55c435b86e17"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0008_att1.txt",
+        "bytes": 574711,
+        "sha256": "89ce960a5a940ac644a0cbd21828fd142828b58fa08285b657bc88beec895aad"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0008_att2.txt",
+        "bytes": 2993,
+        "sha256": "0b82c17c944f234286f90f6392df7a291d3e2f1a18854c87b3dedc59058424db"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0009.txt",
+        "bytes": 1590,
+        "sha256": "1b1fcceb18bd35a2d84e223a4367064bf7d1de600374660705c318e09577f252"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0009_att1.txt",
+        "bytes": 32958,
+        "sha256": "1d5ca8f2da5dbb82aae56676fff71584c89a926b4f41fb6852be120d63ef0776"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0009_att2.txt",
+        "bytes": 6497,
+        "sha256": "e17bcca7689dd52887a697e5278d2ecdacba21f173c0d420b88e7e8652ed4835"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0010.txt",
+        "bytes": 1795,
+        "sha256": "1ba50cbda0d3a443c7b82d2f53e799402addf0b42e77a0b3ba947438bdcfe240"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0010_att1.txt",
+        "bytes": 10108,
+        "sha256": "c84101076742071e831a8bb94aebf01b1c30cf1b3fc25ecb2d2b88b554f183a3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0010_att2.txt",
+        "bytes": 8017,
+        "sha256": "85d642624ca3086fb3f1c691afe56da93920af3b82763780484d7c132d0adfb6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0011.txt",
+        "bytes": 1698,
+        "sha256": "1f3674194a502fba058d8884d65cd97b0ea16c153c85bf13a9819f12da6a8bad"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0011_att1.txt",
+        "bytes": 12770,
+        "sha256": "fb5f4283f711ffd7062a388ff2afbcdbfe0b211b03cff2d77b73a1bb0c8a4e84"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0011_att2.txt",
+        "bytes": 8209,
+        "sha256": "de922d4b968dad852f0c6f04323d82182647d39debafcfaa840507edb00471d8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0012.txt",
+        "bytes": 2155,
+        "sha256": "2d0dab61c07b3a1c0abac5e45cef74ec50784b223f95a462ed6ce52122976781"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0012_att1.txt",
+        "bytes": 23810,
+        "sha256": "47d0b35bf1ae14ee53ada3254f1eccb18040549ce50224e0176d2f4aab18d634"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0012_att2.txt",
+        "bytes": 3670,
+        "sha256": "d3f8e833252e2946b6e10e3d586927beca06467baad0c33892597cd9d5104a76"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0013.txt",
+        "bytes": 2046,
+        "sha256": "8513bdbdd49d3fda581d144275fc75fe5b6c9652538d5581fb82f696d10e886c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0013_att1.txt",
+        "bytes": 13459,
+        "sha256": "de98ee622c30a80a192ffc8ee1a780d51a8770c0d64a9e490cf10c0740307a1b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0013_att2.txt",
+        "bytes": 1597,
+        "sha256": "f3ea9f1010f5e5fd8f3d3198e3df60972d9ff3e11d032c1a5227cb1634dbefdc"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0014.txt",
+        "bytes": 1574,
+        "sha256": "e7f05063eca80542bbd49baaa851b084e7867a869791b4ae2eab74568a0acb86"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0014_att1.txt",
+        "bytes": 5949,
+        "sha256": "c2dffd2ef1329acaccf6aab4ff0b11285ba6c1975ba84abf9144669bb3b0f6ae"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0014_att2.txt",
+        "bytes": 5426,
+        "sha256": "01ef726c90d1908bcc9ff917787aae500c33c85b47ba2740a925c06415aab7ff"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0015.txt",
+        "bytes": 1581,
+        "sha256": "9de2abb9747ec032c753ade1782309534b99b56decf539094e7c0ed60d1e2675"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0015_att1.txt",
+        "bytes": 3343,
+        "sha256": "d136d8e616a6ebd784999338ff5f21b29f9f89eecb5e3c4a0ebc14c51249c7a0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0016.txt",
+        "bytes": 1688,
+        "sha256": "ef6fb2532af511b04d115aae65868dd9d0693c7abc84d71027418d13fcd42a2e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0016_att1.txt",
+        "bytes": 13231,
+        "sha256": "2581a0a9fcdd5281cf6d18efc5f2642e815ee9f6e839b82309088a9e786e2dcf"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0016_att2.txt",
+        "bytes": 6270,
+        "sha256": "fd2ecbc43edb5719ea8e0e65959f7589e7b734498861c5c29200645de3997949"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0017.txt",
+        "bytes": 1831,
+        "sha256": "dbb59a0e4311f7c49d947e3a95a895fbe8c8bc78d6b5ce302d14b73eb8d3d49f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0017_att1.txt",
+        "bytes": 37402,
+        "sha256": "7d87df4b9f85bd15580be2289b7b41d000e21916e1800d9d0a2e06f695cc6073"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0017_att2.txt",
+        "bytes": 100862,
+        "sha256": "34602c1c8fc0c0895f62ae1afcdd39c3ebd49f7e746ea7c6146a98c67fccdca3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0018.txt",
+        "bytes": 1698,
+        "sha256": "0ba90f13404b91a89a058b0e0e7f7b8c290584555772eaea9d0989b3717605e7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0018_att1.txt",
+        "bytes": 12461,
+        "sha256": "7e14723c04fe96bfbf5a0bc2f8b517b89041fc7e5b0afec17076b8df95f24807"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0018_att2.txt",
+        "bytes": 1201,
+        "sha256": "8d7377db50952c13041e2ed419e8c3ea9ac4d947e39095a5ab4d905e9b6263a0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0019.txt",
+        "bytes": 1853,
+        "sha256": "473c9c1587381f0cfc0d9c8061eb72acd175cfa8b41443fbd1e48a6ed70cddc6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0019_att1.txt",
+        "bytes": 2828,
+        "sha256": "4b068c4ec84a0e9ee18765d2d30b8eb9b48218766070e00237f8a0b734b80e46"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0019_att2.txt",
+        "bytes": 2798,
+        "sha256": "5e9a4aa1e6c39c672dbd71b0e0cd332f96c5ecdcbbf32271f36c1223be548ee8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0020.txt",
+        "bytes": 1658,
+        "sha256": "abd3b7ccfe2fe7be7268e0c9afbc93f26e9cc9736f2526e6133b14f12fa97980"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0020_att1.txt",
+        "bytes": 10448,
+        "sha256": "ac4f4958387327b186ea59e9eea4c6234baf90d7b0e7c81a813d8df8bbe27ca3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0020_att2.txt",
+        "bytes": 6036,
+        "sha256": "6ca056490eb981ebe4b2f6a4915c6ac597310b4d81923c37dd19143e9afd40c1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0021.txt",
+        "bytes": 1546,
+        "sha256": "92456858d1b5a531cf6e54bc6097b3391caea1321256ee85565c8406409eba75"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0021_att1.txt",
+        "bytes": 5996,
+        "sha256": "3d1b850b93d100379e7bfce987f0364f38780389e449c4301601c4f1370f9d7b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0021_att2.txt",
+        "bytes": 3647,
+        "sha256": "8068d2b0598c71fc9e2a0d82a309f288a80b40769dd41f0a21022b836a4f38ed"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0022.txt",
+        "bytes": 1653,
+        "sha256": "51366d4e2f9597d596f40d736c8a56cc0ebc827b99926a8319b895ee42d19318"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0022_att1.txt",
+        "bytes": 12108,
+        "sha256": "53f98993d2693a05df8b22c4d460fc66a4ca6aaca6e4334ebf66d346cfda9a75"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0023.txt",
+        "bytes": 1484,
+        "sha256": "c1d7c6462474434c9d486cd0cf2063d4d3ecf5ccefed99b415d325f9da3b3dc8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0023_att1.txt",
+        "bytes": 34112,
+        "sha256": "103f38edd7fcfbe8fca3fd2e38b2f8b99bf8467c0715faf7520707d2e9e59a13"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0023_att2.txt",
+        "bytes": 6072,
+        "sha256": "df5b3178bbb4e150351eaf9d3262d371d6417cdaa21b45562c61557dd69a6097"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0024.txt",
+        "bytes": 1960,
+        "sha256": "60553f2168e9538881c5bde449fc37ff650f8263c71d7e7ed3a3f5469e4b8919"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0024_att1.txt",
+        "bytes": 233110,
+        "sha256": "f2f953de42ab3216470a65c6e996d9a64ba996fc9029c2d2b4c835babeb21574"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0024_att2.txt",
+        "bytes": 108551,
+        "sha256": "6b853fa97248508beb3b2f2f96f13cafb8683f4f8ffd25f7b2cd20b9b3a62dcd"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0024_att3.txt",
+        "bytes": 44806,
+        "sha256": "3769735fc3309a4ecdbafa6f6cee75b49a837d1dc801e9093a9f77805f85aba1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0025.txt",
+        "bytes": 1488,
+        "sha256": "eda36f4d3f25426ed5db52790298fd59dba0a38a2ccb21cdecb1e34d58f038b3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0025_att1.txt",
+        "bytes": 30659,
+        "sha256": "b8cb0c760df5e4fc7c2f87b061974d26ac7cede6271b3f6661c802d6ebd89cf5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0025_att2.txt",
+        "bytes": 4343,
+        "sha256": "07c1075e1b83632a4aa9b92b976b1a992a3fdc3962db84d1c7bd35afd8142050"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0026.txt",
+        "bytes": 1613,
+        "sha256": "0cb8b1027144fbd6a9ed2f6d7c6fca02e19d71676279d06b6572a108619aa1a1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0026_att1.txt",
+        "bytes": 6608,
+        "sha256": "4c564d13d573b1c286c35be677d0e56f6076c7d7bb28a43e788add5000d5e584"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0026_att2.txt",
+        "bytes": 4209,
+        "sha256": "2ca0c84ff8c33e141f7fd6413b627c2f502c555ec6b955d4c3b92a7d933806da"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0027.txt",
+        "bytes": 1694,
+        "sha256": "cac2116972a321fe1dc253ad48ec90daa753e03a26f4876fff68c7760ae39c89"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0027_att1.txt",
+        "bytes": 55195,
+        "sha256": "a3f6d077e14fcf165883c9e8887a518c754151debd998e87a4b646e196d3ca47"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0027_att2.txt",
+        "bytes": 5699,
+        "sha256": "681dff63f73ff9c28a063ff192b2da6c2521bec5d9f549c2e9bf558b43651cfe"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0028.txt",
+        "bytes": 2290,
+        "sha256": "2094ec4792fc1f5b76e057d031bcb9e9d2b2e443ee46805bf13fe7b636b322de"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0029.txt",
+        "bytes": 1671,
+        "sha256": "be3de34afe7953b5d2382e5d919c880be5968b708e83136e73a8b25bd731e2bc"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0029_att1.txt",
+        "bytes": 12425,
+        "sha256": "76f8d2d49a063cb87715e3866cc324a7ce7e3f9d24eed8f9dc2c5e24b31307da"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0029_att2.txt",
+        "bytes": 7329,
+        "sha256": "4d97376dc206b77230a8d8bd031816c720e43d48ca7a67c618631dc313868a65"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0030.txt",
+        "bytes": 1867,
+        "sha256": "c1a3cb131eef29b0ab496732e35f2a9af206661032dce5636b902f487dd54583"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0030_att1.txt",
+        "bytes": 5372,
+        "sha256": "2206de667e99ae1105741f4c47f7d5e683d24d30bc5d559831f54c4566f42cc2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0030_att2.txt",
+        "bytes": 1768,
+        "sha256": "02a473c7b85e6941c843af1c3eb837e728ec62f940b693ffde597ef265effe5a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0031.txt",
+        "bytes": 1511,
+        "sha256": "2f472f2c8d55f4dc11f7db5bf1de6d759a6f86ab2becd463c3529d0e3bf702ac"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0031_att1.txt",
+        "bytes": 13132,
+        "sha256": "6c8ce192a72caa4672f6a4b367b0cdb9daa78f37c43849159d549db0879a76b8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0031_att2.txt",
+        "bytes": 6586,
+        "sha256": "2794ee87aa2870b4f5f508f61e9a669c30fda13182bf35aacf18f521aefd811c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0032.txt",
+        "bytes": 1536,
+        "sha256": "6e0ab6963871da8816f447440de8ad4cf70f45c5181bdb028195087afd7cc68c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0032_att1.txt",
+        "bytes": 269430,
+        "sha256": "2c03500ac643e78433b1d612876e5a9e988438e1c3d383f7a3496f63ad74b681"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0033.txt",
+        "bytes": 1666,
+        "sha256": "37574c865153fee84f6bd8c87df550ac29717aa83b22576261f63129d24fe2d9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0033_att1.txt",
+        "bytes": 6180,
+        "sha256": "469771e6446d5b170913967136412fc494db6b242c4da5980fd87e55be6dec4f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0033_att2.txt",
+        "bytes": 4612,
+        "sha256": "c810a3f0bc8a52b2f3977e3eb14536cca5ca0d4c81271d69be673d1261a15974"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0034.txt",
+        "bytes": 1536,
+        "sha256": "821741df60a1351ea5f7c32c82345f6cc0e6329119e6099c87b594a95c046c98"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0034_att1.txt",
+        "bytes": 22212,
+        "sha256": "183a6b234c65f781b9734d6f759a488712fab98496a263daf8dd79e0660d56b7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0034_att2.txt",
+        "bytes": 2483,
+        "sha256": "5d29b29c764aa8abf4da064fce2aa7f4f68a8d3057aa1301d990b5ca5dc8fc16"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0035.txt",
+        "bytes": 1513,
+        "sha256": "904b84b0554dc4a0d757063c730acf9566d0beb782afc910b0122a1b04329903"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0035_att1.txt",
+        "bytes": 96772,
+        "sha256": "9c29efb59778e6e6ff8e1f2a62d42f61688e85aeffdcf38184ba780070eb949a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0035_att2.txt",
+        "bytes": 3578,
+        "sha256": "3b1a550ddd98745bcd93debfb182aec266484b2f4b3f016606c305b94ab170ff"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0036.txt",
+        "bytes": 1883,
+        "sha256": "2a715191b298f7c0afde37371d45fe58b5e1b00f6dc74b1091cecffe369df0a2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0036_att1.txt",
+        "bytes": 513,
+        "sha256": "9af22ef2ff2a4cf0c9dd49784332118c80e991b924701436e9ef73eb60354999"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0036_att2.txt",
+        "bytes": 1204866,
+        "sha256": "5b4e062ae7c61811cbed34edf7916ca471e663281a4470bb9e0b10685538bf5f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0036_att3.txt",
+        "bytes": 365,
+        "sha256": "7f4e1f2311ea2c7043bf4225010b45e0f9e546a45fca51edde72bdf9402f7c3e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0036_att4.txt",
+        "bytes": 5514,
+        "sha256": "472039ce393df88afad4156c400cff16efb5a0a9b3e27ebe8396bdf110a578d4"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0037.txt",
+        "bytes": 1924,
+        "sha256": "22665149b75a0bb8aff04603bc9b4a5b7489dc3cc6cbd4dd7fe8552ded7f3f24"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0037_att1.txt",
+        "bytes": 45763,
+        "sha256": "a4711ea18af434e69247c9865fefe7c43352d5be720329b875a08aec22fa5db3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0037_att2.txt",
+        "bytes": 4270,
+        "sha256": "e84a03ed93df7e4d34feb602c2cdbfc6ce78d489e979da28f8a82e2718074763"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0038.txt",
+        "bytes": 1906,
+        "sha256": "738d79e3e95abd27ddb69866c69b7e4e215a9d821f549b37c63e426e09b1868d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0038_att1.txt",
+        "bytes": 80343,
+        "sha256": "2136d70e3b6875b77fe610bd1aea9052d473f9b2dc21eeb0cd62f9a123d02e1f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0038_att2.txt",
+        "bytes": 33,
+        "sha256": "158b7e9c77222be1278ef5c1910cd0323a44737f9300f2bdac978690255ea1ec"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0039.txt",
+        "bytes": 1819,
+        "sha256": "2484c54410b845111a5d13fd4261585ed6411feeb305ab176fdb0fd79d4c3c37"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0039_att1.txt",
+        "bytes": 8007,
+        "sha256": "d80b90af7db3452f724b9e10402b15169b75dac45682f7761eba013411ad9b96"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0039_att2.txt",
+        "bytes": 6420,
+        "sha256": "60b68d675830599a1e9f202887437470e28fff80d604a60ffece1b1fe2acdeed"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0040.txt",
+        "bytes": 1977,
+        "sha256": "00010f468478efb835d78330cb91dfc996df37e51e6159d88a2bbe2ed2b152f9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0040_att1.txt",
+        "bytes": 3108,
+        "sha256": "82599e40c9f138e143cf0aa0dc8c44fbac0e2d07486b776422a5419a5f6c4ce8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0040_att2.txt",
+        "bytes": 4691,
+        "sha256": "398037dd16cd80174e9a3bca1430823843099ba602a811f5a310f878bd11e96d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0041.txt",
+        "bytes": 2084,
+        "sha256": "cc55962facfad540df36c9279b2a5550ae9d5bb418c216ec4c8d7f0d6af5766b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0041_att1.txt",
+        "bytes": 24055,
+        "sha256": "99d18b0b8f67588311022f9b5efd526b19f74607561c40ae5f895d72435cbd23"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0041_att2.txt",
+        "bytes": 14488,
+        "sha256": "2e088580f5ab6a90de0af0500baad0f15c4e5379ecb2ad157e880c68802c0779"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0041_att3.txt",
+        "bytes": 26287,
+        "sha256": "ad19618105adb3ad8080a013c79e96ffd5053e81ebe855ba25c6a8e8bcfb4fcb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0041_att4.txt",
+        "bytes": 47248,
+        "sha256": "a2d41b8003f994ceeb12b80ffdb46f512aaa54d19806c1d69183ee429ba92451"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0041_att5.txt",
+        "bytes": 15898,
+        "sha256": "aac6159afd345e2a9aaeafaeae7aacbc90dcf31baa718d52e34641196a201ba6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0042.txt",
+        "bytes": 1541,
+        "sha256": "edfd49890fd79ecf829ce890ff57796be47f4c899b8088e7ef1be266c9bbba2e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0042_att1.txt",
+        "bytes": 11168,
+        "sha256": "35834bf0eac4fe49ea3eaf848b3d7d3b1cc3af6aac115d8c8573291a4f4b3ffa"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0042_att2.txt",
+        "bytes": 2181,
+        "sha256": "5942200d41a655f0e414b6cd28d628818f0de2a742579714ce330bd49a052e1e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0043.txt",
+        "bytes": 2513,
+        "sha256": "bdd3abd5ae2d70946563354cd4446ec481c2bbb0bb7031502985d9b81029b33b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0043_att1.txt",
+        "bytes": 96487,
+        "sha256": "d1dac85da322b354acd5812f91c6a38e2d314b227fe1e08ac928f81fdb8f4f39"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0043_att2.txt",
+        "bytes": 23595,
+        "sha256": "a03d27352ff79aae9d9773f3c28058eca4d59adcdc3dd3e8970728601139a56c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0043_att3.txt",
+        "bytes": 215713,
+        "sha256": "e4e0ecd7e504f6c8d593640f1cfb287fad5bc4665fdc54c467e952721fb2f4d6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0043_att4.txt",
+        "bytes": 18190,
+        "sha256": "29cd14fe4bcca662a110dc5f6909aee6bdba0fd922fbb26032e83d5df20619e2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0043_att5.txt",
+        "bytes": 43474,
+        "sha256": "bd44a4c3dd50beb9f2da92449c758def8e8fc7bb03f8d9ffa3e6c79f523884ff"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0044.txt",
+        "bytes": 2543,
+        "sha256": "07ebd8ecd7567aaf9fae73820b6fe86ad835d7dd464ff55883e0ff714ca5be33"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0045.txt",
+        "bytes": 1670,
+        "sha256": "da6fcb2705616a63fd401a6dd99957b55102909de632247bc623184f3b81cf41"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0045_att1.txt",
+        "bytes": 8759,
+        "sha256": "1090e4d437e9d7d779e30666151072cefbb60a7ecc5ccb45c7ff327c204654f6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0045_att2.txt",
+        "bytes": 4731,
+        "sha256": "9e678a245a57b9bb2d46a27830dab5aa40daee37982b04a96e73545887fd7744"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0046.txt",
+        "bytes": 1654,
+        "sha256": "e101ec7476fcde48fd524525a44eaa45f842b2379f4e02997b565d2e9cf42dd3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0046_att1.txt",
+        "bytes": 49989,
+        "sha256": "abeddba7c0bb0b33cf35dd34f852c264ab604640ebabb9e9a654f1e0d374d38c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0046_att2.txt",
+        "bytes": 5631,
+        "sha256": "0c9b80ea118ef0c26685e53dbd95085d8d192347e40f845182f7e50691282830"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0047.txt",
+        "bytes": 1618,
+        "sha256": "b3820ddb8d21d19f8a779650ff53b3297a93f81ce2d91cca4259f7a1857859c4"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0047_att1.txt",
+        "bytes": 12898,
+        "sha256": "dad7c280a90092dd6f7a10d93c27494a3c3ca1a5518e47661e7b9f594e35ca38"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0048.txt",
+        "bytes": 1811,
+        "sha256": "375ca34a0e505d17e81d74030fe4b782e17d2feb0475c4072c1050863d0f2b6b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0048_att1.txt",
+        "bytes": 5856,
+        "sha256": "422bf2ded1fa383468e251d95406828b035319e27323b776618ad17cfc58aa3d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0048_att2.txt",
+        "bytes": 1949,
+        "sha256": "6e44ab45224454dbbca9d20fb866fdc22317f701a83acdf7b4e91ef65d051920"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0049.txt",
+        "bytes": 1997,
+        "sha256": "7a8304e24a0dfbcebbb487f856e3b5e6c2ae6caada1875558d00ff2877105cef"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0049_att1.txt",
+        "bytes": 7897,
+        "sha256": "e582a0f198ad8c8db6c76623d365ad3948f148ec2c56061e13b0dceb65db5d34"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0049_att2.txt",
+        "bytes": 4724,
+        "sha256": "cd99380381f12489749a8328e7d5c9c9c7e494e9c48eb0ba86c963f2db8f324c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0050.txt",
+        "bytes": 1841,
+        "sha256": "9729f121f935783d0e6a7b8cf69876f52b0e3fd5b316cfbc196014aaa2bbc8d7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0050_att1.txt",
+        "bytes": 9008,
+        "sha256": "2778a79d35b5bf3200e30f9dc9a68e01004beaaf0bd844499e6d7c6ea88a751c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0050_att2.txt",
+        "bytes": 4335,
+        "sha256": "845faecd22c85965fd02db4e5a9099cbb15842181063ab6599b251fe711fc761"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0051.txt",
+        "bytes": 1668,
+        "sha256": "12a4abb2d2e59afe85285b93497f880b7e52c8246c1ca425e563d023d1be30a4"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0051_att1.txt",
+        "bytes": 12725,
+        "sha256": "38caf5f54ec0d9997d3a0eff7d0a7de42e0e7ca11e22e3338506e70fa474a135"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0051_att2.txt",
+        "bytes": 6814,
+        "sha256": "7c433281940ca3507f83fa09139cade00cbbb93696aaefd39dbc24885d745bd2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0052.txt",
+        "bytes": 1767,
+        "sha256": "c306ff28de9d4053cc5a789ff46bdb78392315b359de9779dd5d0cebc7a99f4e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0052_att1.txt",
+        "bytes": 21145,
+        "sha256": "ee812e885dab62504b2d37bc9533f2b82500d436839afc16a56d6a91986e3d78"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0052_att2.txt",
+        "bytes": 6663,
+        "sha256": "d70abac7057d641d2c7f48915a7da6e23dbf925cc067c47101f6acfe87ce0416"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0053.txt",
+        "bytes": 1721,
+        "sha256": "2b480806edf0b2898c8a9f819f533450bdbedd312080aa0894ddcc5cdf72b758"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0053_att1.txt",
+        "bytes": 4456,
+        "sha256": "e7c72a5ec17174bdaf171417e312a1bc94ce18571d27df86798b510c37a11043"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0053_att2.txt",
+        "bytes": 2548,
+        "sha256": "44995e61b948864b2b68c2d934f76f093298e20f6a54eee0da3f7773a09e8bb9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0054.txt",
+        "bytes": 1670,
+        "sha256": "3ad0feaf63e492825d197634f86507586116eb6491675566e69f56fd18975670"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0054_att1.txt",
+        "bytes": 14105,
+        "sha256": "0a3950a19be9522cc7066696a276683ae792044a3076c1d0caf470e91ba27c19"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0054_att2.txt",
+        "bytes": 2783,
+        "sha256": "3a07c3166e6ed790b285357cf62d34e390730fca7174b375c94465fadc24ddb8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0055.txt",
+        "bytes": 2014,
+        "sha256": "0347256f55dc6f86f70e157c58d38c9701263a6659ef5bebac41352093fa8087"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0055_att1.txt",
+        "bytes": 52076,
+        "sha256": "304e452b665aaf76e06ea754ec3c3d778c512d2523e9f532ab13e09939d804f3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0055_att2.txt",
+        "bytes": 260110,
+        "sha256": "a8adf3c00353c2d18bb206218803c9e34303bae15049a14f27690b87a3d0fc4f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0055_att3.txt",
+        "bytes": 164792,
+        "sha256": "5c44fd63729eee8d094fc60ed22d2468d07a551d82166e4b432ad09c6e02ef53"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0056.txt",
+        "bytes": 1749,
+        "sha256": "2419d3221c217af1c8c07f23b4fff554773935286910a331394f6ad04012768c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0056_att1.txt",
+        "bytes": 8225,
+        "sha256": "dd5c66a80ea84e5875bbeff898b06f7d7b2d29fde7a09560e2a9f2e0bae55964"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0056_att2.txt",
+        "bytes": 3649,
+        "sha256": "921958a01e9b39727714578961bc8140c489586db0385517bb75c0a7a48c995b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0057.txt",
+        "bytes": 1659,
+        "sha256": "92720c3685ec4f83b78a0786f7b347d7d023c4055e426aab415329a1b47aef77"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0057_att1.txt",
+        "bytes": 16035,
+        "sha256": "a6e217cc3024da6ff62d6e42f21f4f21d7c133dd6b49b180b4127a3a355ebec8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0057_att2.txt",
+        "bytes": 2304,
+        "sha256": "4fe74961d5db0fb642665d8128ce2bbc908ccd38727977ac77f055dd57636540"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0058.txt",
+        "bytes": 1503,
+        "sha256": "1f3a8b03d3d14d7062ca9693342dfddc73701fd4c818844459550e0ac5e4bf33"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0058_att1.txt",
+        "bytes": 13460,
+        "sha256": "95ec15c42901201c074b81f337385d856deedab513fc256de428f0775443f485"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0058_att2.txt",
+        "bytes": 3155,
+        "sha256": "5a224cdd4dbaa4851e44a4871664919150e347a5cc3e8cc1bef7a1ce57fb255f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0059.txt",
+        "bytes": 1363,
+        "sha256": "b66bd643100d2d54e61f2b65c9b4acf2b1a708686663f147393782017234c499"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0059_att1.txt",
+        "bytes": 7285,
+        "sha256": "d7d2f47b60b77c4870c18157c7fdb0b5efa048a28927961480d9f5b2ea330d9d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0060.txt",
+        "bytes": 1483,
+        "sha256": "dc7b134a738fb012e5d544572eec44a218b38081a5950bf6515bdfed598a37f7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0060_att1.txt",
+        "bytes": 13207,
+        "sha256": "a909a105d0154ad199300ba41ade14ccb4a3ec49ab1e6317a58ca28e41e94285"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0060_att2.txt",
+        "bytes": 1958,
+        "sha256": "4a08b3652d3a80232d9cfe48bf866a37e3892946eb74d4514ca8d1297b42995c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0061.txt",
+        "bytes": 1567,
+        "sha256": "d52a993638e082d785113b60f28e3eb5ebbc3ca7867a058daf9d1bf324a3f087"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0061_att1.txt",
+        "bytes": 12879,
+        "sha256": "2fa7ac1adb834eafa7258ae1ba40be752d7254a9622927487cc688c4cc45e4b2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0061_att2.txt",
+        "bytes": 1932,
+        "sha256": "03b2daff615d81e8a44d1a27fe306d29c6f07566cf875268fbad655c154f8cef"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0062.txt",
+        "bytes": 3272,
+        "sha256": "c7ba29f4ae5c7757b4df51f6c7f2e537213ea4eab458e388c52ffbb7544dcbfe"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0062_att1.txt",
+        "bytes": 2311,
+        "sha256": "5d57a980e05020c560cac0678e755d2e5f0a2ba99867885f0a16b1c8cf6268a3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0063.txt",
+        "bytes": 4296,
+        "sha256": "50ab915dceccd87d62c17b9935ae852b4689332d84881c6c7cd0be2fdf32aa57"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0063_att1.txt",
+        "bytes": 999,
+        "sha256": "a87da891c047b2e7c304d1d44045f4d4941b9403dfc627b1e7070d69db33e2c1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0064.txt",
+        "bytes": 6778,
+        "sha256": "ee04921399d08216cb5de28c6894952f8bd7ebcbdecaa3ec73145792114b86f3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0064_att1.txt",
+        "bytes": 1369,
+        "sha256": "039d7c0bd0f7e2b575e3a75ad7c6c1b50fda2626a83bb9cd92d13e7f9e9f05bf"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0065.txt",
+        "bytes": 1676,
+        "sha256": "e141c443a04274c846eed1134f632b421d0c3079d7ff1cf220e462833ed036b6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0065_att1.txt",
+        "bytes": 1490,
+        "sha256": "125ba23699d61efe90f2cb5e68be5a1faba651162a460ab3ed298693843fa257"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0066.txt",
+        "bytes": 8192,
+        "sha256": "8d2e636b1d1f40857848194934cf16d1d3b342414d57708caa245d3fb4c6ffa5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0066_att1.txt",
+        "bytes": 5031,
+        "sha256": "1e0739acff97a02179eb9085a2571659b75ad9f955416e35634c8b22a60e412a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0067.txt",
+        "bytes": 2576,
+        "sha256": "cd87e407dfcb17e75ac8350c54858bf87c728e4cc094abea6bc9136932190787"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0067_att1.txt",
+        "bytes": 1271,
+        "sha256": "e9e73eb2088e49b4b247cc79bb4f580a690a07f6d193fe621ce8eed695668634"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0068.txt",
+        "bytes": 1551,
+        "sha256": "f9b5e816ef915fcb7e9fbc5e20982021b3cbbc3184e273624e06620d580de87a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0068_att1.txt",
+        "bytes": 11545,
+        "sha256": "06236cb633319c400f208a6bcca598a078d8dacb682385916fcb04a2c1a073d6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0068_att2.txt",
+        "bytes": 2109,
+        "sha256": "936941ef478e398fc96d7656bf5191af8fab3fa15a08387516e5be40aa0cc321"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0069.txt",
+        "bytes": 15066,
+        "sha256": "61d25502abcf0ae54945708aad1b34f0440559d1077525d52e954c7161aae665"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0070.txt",
+        "bytes": 3685,
+        "sha256": "ba7cb422021ee3408a7aa10a893ef46f42d226472a6269ec4ded26296ac78e8f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0071.txt",
+        "bytes": 11634,
+        "sha256": "3f96085930aea2fcb932193a6214f3308cc7ea98401dbd9e5b0820049097e6a8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0072.txt",
+        "bytes": 10469,
+        "sha256": "60cb2cd52a2eb129231c10f6dc3fbec3e793dac442fb74feb5c4d9b551a903be"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0073.txt",
+        "bytes": 4912,
+        "sha256": "1c567ab746698beb2a88e1efdb73801275a0a9f752eff42fc119b7b5c3c0c92c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0074.txt",
+        "bytes": 3921,
+        "sha256": "ee912e8251fa685f9cfd67cb359bba3778d32dc263d8f7ac0f91b72c1296b38f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0075.txt",
+        "bytes": 3995,
+        "sha256": "fa7b10d13b082bfaed5e7d639469c4168618bf8f9c1deb0fade12a81e279b6bc"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0076.txt",
+        "bytes": 8685,
+        "sha256": "de2323aef6b9f907324d8bd9048b41b8e40223a6d246c7018e89f745cd08f6f9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0077.txt",
+        "bytes": 7282,
+        "sha256": "12af88caa3f293116b48611320ae5c7b7c0c3e6800dc59b8221b3def54828078"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0078.txt",
+        "bytes": 10610,
+        "sha256": "bd634df02aa04062eba170567d2078db84a0630aedb5106437123eee297d1c1f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0079.txt",
+        "bytes": 4483,
+        "sha256": "c1e4ab8ec1ec7d29b89501406d4360b0b50f0f3d143749ca1dfcb71ff5615556"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0080.txt",
+        "bytes": 5202,
+        "sha256": "184451a7a4f49650151f3d607a42dbab742e5222de200fe0a90e77f4854c8c1e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0081.txt",
+        "bytes": 9122,
+        "sha256": "4fe97e225e6f39518eebefa49788adbc06872fbcf6f52de8e0cc26bbed4e2f14"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0082.txt",
+        "bytes": 15362,
+        "sha256": "7416984f83865f6156072d1cecf7830a6e854db6d23700d89bf03589759da695"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0083.txt",
+        "bytes": 8086,
+        "sha256": "334286852962ca0be07c49c11ff69b7515f73e425a7392569cb8347089c1fb79"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0084.txt",
+        "bytes": 9013,
+        "sha256": "700988b38959fe1f015bbd061068f7f7cdbfbc257fd96a1c7c19096c483993bd"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0085.txt",
+        "bytes": 17646,
+        "sha256": "1e8b9e64f69604666ff10f587ac2501fd635a3abfbdaa1549124a9b89a909101"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0086.txt",
+        "bytes": 7915,
+        "sha256": "fe5174d055ffdc5de13da4451edf556e0a1f4a62561581d7ede9f67a6a873bfb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0087.txt",
+        "bytes": 7660,
+        "sha256": "2919de26c4c15f5abb7a8c1ff09ecf10c6034ec9e2e9a78f936e895dfa0ccf32"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0088.txt",
+        "bytes": 4369,
+        "sha256": "c49b63cd06a8aef834d04a28e814c6745b902ab53cecde167f5ab14931a4d7e8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0089.txt",
+        "bytes": 4247,
+        "sha256": "c6b2b5b9e1ae3723c2d2a41d231d6217e22df37cec203b234ebc2a2fc9e100db"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0090.txt",
+        "bytes": 7571,
+        "sha256": "cfff35d72302819ecf6462453a495d8de09202dd55b13672182bd8fab4006a3c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0091.txt",
+        "bytes": 11473,
+        "sha256": "4ea7ef9bbf6272b10e3a05ac56c18a95994a775ffb109fe77980a362013a1c7e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0092.txt",
+        "bytes": 10518,
+        "sha256": "ac50473ff7a826ac3193fbd512f7a361fa559d9d3f99986add5d3e51dde3291d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0093.txt",
+        "bytes": 4016,
+        "sha256": "264f8909eeec1d4679de3baf0c832ecf0c68b72f6a7cfb89feac1b86900f26e3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0094.txt",
+        "bytes": 5513,
+        "sha256": "338ab691363a8f1856d2f674d312953f40948a999d2e579d142256effaeb0419"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0095.txt",
+        "bytes": 11260,
+        "sha256": "25864bdfac62b6afe10aefbd83f175182c95d5be2783ac1dd2ee1f177572d35f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0096.txt",
+        "bytes": 4083,
+        "sha256": "f8ea382c2325dd6af96e6e8b29883c3b1610238ab66bef847d86f60e886189d7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0097.txt",
+        "bytes": 4746,
+        "sha256": "111496adab82c81d64cefe34b8a5d9fca9e0b4c1cee735e741ce55925d6a9fc6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0098.txt",
+        "bytes": 4295,
+        "sha256": "96f2a6aa5e30b6898617376526c90b0418c04633dfcd54950711a157b20b2aee"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0099.txt",
+        "bytes": 4519,
+        "sha256": "038cbc862ad0a52a7800e5cb08f7e0ef69009ed79df0cd7bec659d3183a0f6a2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0100.txt",
+        "bytes": 16125,
+        "sha256": "59ed42e7d17e881aaba8e2c57dff101fdd7b531577446460022d437529876866"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0101.txt",
+        "bytes": 9112,
+        "sha256": "713346ba630d1ec3c2e58fa85c66a183e95bfd69346a01a3055f321a45c80c89"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0102.txt",
+        "bytes": 11252,
+        "sha256": "963dfb42e2b476e46ed749bee7da78cdcb36911540cdb542856c7106bf43f817"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0103.txt",
+        "bytes": 3482,
+        "sha256": "c1938c24d1dad1297411fc9497081b29b531fe22aabe0ce8004e28cf06d66b06"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0104.txt",
+        "bytes": 3484,
+        "sha256": "82b34ff7811a31b5eaf128448cec9a7b8194cadf858b54617125f3b738fc9a20"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0105.txt",
+        "bytes": 3789,
+        "sha256": "0a2435bc4c7783e8a5700e04d42a6568822898a296dd41fcbe359b2418f2efa3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0106.txt",
+        "bytes": 4534,
+        "sha256": "dcf91d50235c55f1c222c1eddbf8ca99afc94803b49cce67fe1b9b76444e70a0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0107.txt",
+        "bytes": 6555,
+        "sha256": "1d6ec542f412fe09b8fac91970542fa27a69618be47ad61e822b73b8657640be"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0108.txt",
+        "bytes": 12017,
+        "sha256": "a8a6cf2f311ef478b06743e883d3dff977ddb914d73a068dc32a4f0b83358085"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0109.txt",
+        "bytes": 3010,
+        "sha256": "7e951978d21d624d41e6d7e621fab062332bfbb87cb1a15eb021e7a6e11f4dae"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0110.txt",
+        "bytes": 4004,
+        "sha256": "869d81e7b31c279fed4e62fbba55f10f71d6d8aaf426b94d4b29f974fec55062"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0111.txt",
+        "bytes": 3952,
+        "sha256": "c668712a48c8d1449f0682f620beee631ce48d2beccf1afd0b4e3f03d49b312c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0112.txt",
+        "bytes": 4438,
+        "sha256": "57714712aad9c4932fe1e552702e2691bc7514f514df38e02130384b20cc3e5d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0113.txt",
+        "bytes": 4027,
+        "sha256": "e212e10fdeb4b95e0ac5fc01086c37b1e9f8ab4414cd16ab6432b43bcb57f4f9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0114.txt",
+        "bytes": 6969,
+        "sha256": "0512327b398c6900d9fa22da62d0f7cdce9e3454eddca0701dc329d244e0468e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0115.txt",
+        "bytes": 7816,
+        "sha256": "398d21dd82a5bd66da9ebbea2680eb085985c0a38c3cc8a32494d9c3ca7fb6b7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0116.txt",
+        "bytes": 5917,
+        "sha256": "22c33b6895465a2bbc4aeb78fb5b073e6609d9fb85dd9e716761d5648cc59f8e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0117.txt",
+        "bytes": 4121,
+        "sha256": "13004698fb00276b069ccbf416af11c2a8eacd9e972eb735e9615da26c3ba815"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0118.txt",
+        "bytes": 3219,
+        "sha256": "124c3c9c13820e78006f20cb6881267ff4f6387a8fca5b7a997b80a4d980a9db"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0119.txt",
+        "bytes": 4165,
+        "sha256": "dd5f33ada58edc377eabdbda9f91177647c291ac57d843efee90e8b79673df2c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0120.txt",
+        "bytes": 3773,
+        "sha256": "8bdece5d787ce666ade99987c2c5e37f76ff9e550943210e44bcec0a1da22d92"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0121.txt",
+        "bytes": 3847,
+        "sha256": "eaed9478e83635f01f098a4a3b8c8be7afa78a6f5603c3700f95af51d79e33fe"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0122.txt",
+        "bytes": 3969,
+        "sha256": "dde80d76bb297c48514f57bf193818455a14a085e3dc8732825f5d07b0c4dc61"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0123.txt",
+        "bytes": 3886,
+        "sha256": "92461045de136e0304a9f9017a3868168b7e8828b529e74e7adbf337759dadbb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0124.txt",
+        "bytes": 4004,
+        "sha256": "f8d337e98d4e3055ecd92265499435b383ff61e394df239349cfc0b477944532"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0125.txt",
+        "bytes": 3851,
+        "sha256": "b71fd11452fe1b3a89d8a2b5f653109925e84071d64949734b533c15e574c589"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0126.txt",
+        "bytes": 8239,
+        "sha256": "359b0fcc1085a50c0f955a604d467aa8fdc70b66a2bbe6e77389ca7fe68ec285"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0127.txt",
+        "bytes": 5838,
+        "sha256": "d65f7d51775f4f4dea93c2b63586d1c03d8677ddc95a6b03a3fdd57442183623"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0128.txt",
+        "bytes": 4662,
+        "sha256": "316fbdc39107fd6dc661d5f222daa3cc679ec1aa4d16f51e2a764c0ac2ccb805"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0129.txt",
+        "bytes": 11059,
+        "sha256": "d1a96d6b2efa92ab41f1a7f4cc5af94966dd5a96de24199344c893868e1bbe6e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0130.txt",
+        "bytes": 14632,
+        "sha256": "8634b5b2d0084dc3716d6053ea9bcf7c2294224479b4e2267d41f57e5e7673f3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0131.txt",
+        "bytes": 15582,
+        "sha256": "55527b467ff071a9ce4fe87c62f5a491c4f28b3bb50baf35e671a5d7df909bd2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0132.txt",
+        "bytes": 8035,
+        "sha256": "4f04a580c67d65582d3801512bec206314450d695d44afd034affbe8d5970ebb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0133.txt",
+        "bytes": 7555,
+        "sha256": "d447aab60d63f4bc777ffcb12403f33e888ac5b9581d105fbf68d8918350fb7b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0134.txt",
+        "bytes": 4146,
+        "sha256": "bec865dcf87169ea9bd2bc7e9f9720be2568d7c8b2a9f3eab808321a9bd977b5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0135.txt",
+        "bytes": 3388,
+        "sha256": "1e8dc120e1bac5ddecdaf748b15b657b3b0fbb76be9d67514bb3e989cfb4c58e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0136.txt",
+        "bytes": 8771,
+        "sha256": "3dd0797a6bcfde70e2b428ba70299d9f62640abb65c4aa4f08958e64a112ded4"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0137.txt",
+        "bytes": 11299,
+        "sha256": "3c4d27d1a6467ee3f57bea1cb4c429046c10d8d44ed3f10aa35156210f2cf916"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0138.txt",
+        "bytes": 13047,
+        "sha256": "28d42afdc515d4624b4f74360b01310c224dbb2035f53a84f01569a2f4580e94"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0139.txt",
+        "bytes": 4724,
+        "sha256": "c03f7da88649623f70e8bb00395420d85711105059b1dbefbf27b9a0c20d9951"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0140.txt",
+        "bytes": 10667,
+        "sha256": "a9672e123735d0a718b76e8d38e25406b974f737a134da311346a235a159a19d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0141.txt",
+        "bytes": 9532,
+        "sha256": "86bb8db93f1d417222db1984566cf8e6f9efe00975ae2f8af5b8d18ab9adf19c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0142.txt",
+        "bytes": 4358,
+        "sha256": "27f50f16d024ec1f64dbacccdb5fd55cf94ada0162813b2d37f40a3dc176d76a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0143.txt",
+        "bytes": 3936,
+        "sha256": "c2c8192896dd960eb4e20150f17baecec186c90c3eca348800ba676be89e612b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0144.txt",
+        "bytes": 4064,
+        "sha256": "d8655de35265bec594782ec9699402dad7b95bbf76688e28861cd83a30061d07"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0145.txt",
+        "bytes": 4079,
+        "sha256": "cdd09309caaf609dd5d158d19d975fc0c55e8fc32e6c87404843f1953834d84b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0146.txt",
+        "bytes": 3701,
+        "sha256": "4c3f61b7709e05ed264ae1e31a74323ed27dd49561496c7475c2235229abb7be"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0147.txt",
+        "bytes": 3511,
+        "sha256": "9659980a8b3de47259b35b6730ca3d399cc7691730c25f9b82db47397462a970"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0148.txt",
+        "bytes": 3505,
+        "sha256": "4b104a0c6402a96238032889cbf79011c6919c08528fff849f95b9446cbb1a08"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0149.txt",
+        "bytes": 3898,
+        "sha256": "d512657981f3374770c2a63ed5969058c71a1f5df3f47c658e5621dde6069d44"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0150.txt",
+        "bytes": 4254,
+        "sha256": "a0067432a825c42badc2201f59ac7727378c89d46125cdebc033326a826915cd"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0151.txt",
+        "bytes": 3725,
+        "sha256": "13b0bbf396e2bd9aecef39a37750043c0517b4053ad5e068f44e43392278ae3c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0152.txt",
+        "bytes": 4668,
+        "sha256": "9c3f738ab888f58084cb4aaef57225aaf894bd1f48bb4d2f99fba132a64bfd08"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0153.txt",
+        "bytes": 4013,
+        "sha256": "b7258440f4f95bfef61c1683dbc1a424c29a1b5af61ccc7760b8ae124901763d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0154.txt",
+        "bytes": 5474,
+        "sha256": "612edfbeecd0bc652b1886b806a9e42b945c34cc71e5538c7881490e506994c7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0155.txt",
+        "bytes": 6813,
+        "sha256": "9b93f13e654e113cdde95a4be70dd3ce564f13e0aa67fcaae47200bfa2159028"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0156.txt",
+        "bytes": 4307,
+        "sha256": "d7216114790905a4d925c3773821796a6442111acb68f3f7352347931078cca5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0157.txt",
+        "bytes": 8558,
+        "sha256": "53ac611d6b4c2997c782d1076fe79050223bf0070ebcdb9f312fd002cc3fdb75"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0158.txt",
+        "bytes": 3778,
+        "sha256": "a3855a20f552982f629ad442eed8a4136e6ee8b90f33b722591c6fdea16a27b2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0159.txt",
+        "bytes": 3064,
+        "sha256": "de8e9f2b041951d3e3e44b4acf2f4733dd7edcd7c241e8d9e0b0e570e98d6384"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0160.txt",
+        "bytes": 15902,
+        "sha256": "d9b04b721ff30a9d7606e9c94b83106b0a55120a42ebb991d1c35cc6a8d85e43"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0161.txt",
+        "bytes": 9495,
+        "sha256": "042a5fd882a269616fd7f5f049617cfd24335bf2bb13ee8b71454e14b0ad9d32"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0162.txt",
+        "bytes": 3738,
+        "sha256": "8a5ac97552c90fab6332d6a43bacae40843b72c4f6cb69cbfa0fc11a328ceae5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0163.txt",
+        "bytes": 5490,
+        "sha256": "6b2b009047a6b9db83358a6fc929737dffd7b82002bb63c05100098bc78c8646"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0164.txt",
+        "bytes": 3948,
+        "sha256": "c8795cac27af0c836c6315b7deedb7a2d5a26bae7c7c152389b44219e804a98d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0165.txt",
+        "bytes": 3922,
+        "sha256": "8f6c813a346aa68d4f4de348366011d643a461622f0664e3bfd6fcc6b534a8f6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0166.txt",
+        "bytes": 3915,
+        "sha256": "387710a6e0bfcdff00cddd97d9f5cf21d6677787ecbe09b97194bdbc110dfcc8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0167.txt",
+        "bytes": 3923,
+        "sha256": "b4418640c2c0bae3807dac9eb43d280d0858fdad63e87e4e57ec1b79027e203b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0168.txt",
+        "bytes": 3447,
+        "sha256": "b0422256a492d0f6fb1d1c0c62f29585a3cc3d0a9bd10863ee24dad1dffefd53"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0169.txt",
+        "bytes": 3195,
+        "sha256": "8cb3d06612ba2d258b3448236d523bfab0037fa4349015924d815df497338954"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0170.txt",
+        "bytes": 4075,
+        "sha256": "f8ea40d2d03cc9062b1c3ece55da23db0b0e98fbe64a8bd85f9b92e3d5fac1aa"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0171.txt",
+        "bytes": 4802,
+        "sha256": "7b07bee84c714ddd771374ef3fb6a5231a9f170c275ff6bd82e0c046e0513feb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0172.txt",
+        "bytes": 3154,
+        "sha256": "0be795282a7901a459a2259797dd36f86d6e0dd600db07f5a7fb3076621167dc"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0173.txt",
+        "bytes": 8637,
+        "sha256": "9cab72e81b77321fb6d8aac14685a1aaf3eb256c82ab621f871fcbdbbadc1e97"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0174.txt",
+        "bytes": 11838,
+        "sha256": "f34c5a5d233c2170522927f6b4a4b45c6cb69fef9abfb4e53d4b165fe2e4e7ea"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0175.txt",
+        "bytes": 4509,
+        "sha256": "4b022e5d27a369e8081ed3ef60286b087f6b5c8d834fb36382f063c716b298b0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0176.txt",
+        "bytes": 4386,
+        "sha256": "e62698d16ea65486a3b98d272b56e9c140a23cba39ba39926e0028571491fd20"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0177.txt",
+        "bytes": 4505,
+        "sha256": "ec0b54a0edbac7aae9525e058c19629eb2e88d9744a914bef541c53f117c00d1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0178.txt",
+        "bytes": 4040,
+        "sha256": "b88ac9eb965861177fe3d4f032ac4863163b332c1554d7e702a36651a7440654"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0179.txt",
+        "bytes": 12526,
+        "sha256": "4a213de6954656b8a9ac5a86ad69f47a1ee7e987bcec299863c9cd191ec75f04"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0180.txt",
+        "bytes": 2305,
+        "sha256": "53f8c37730f37627776b068d2737f4fadf85000926d98e6f9a213999b1f17974"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0181.txt",
+        "bytes": 7959,
+        "sha256": "1f604c719a06de3ca451c0829c3faf478c3c360b8c0603fd741b077c49afeb21"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0182.txt",
+        "bytes": 14174,
+        "sha256": "e360190888c212c965aa29ac8cc83be1c92d56410a272212fcfea0e29213ce3d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0183.txt",
+        "bytes": 14224,
+        "sha256": "392507467907b6925fdade016d2f3b50deecc6f55011fa50417a0936806078a4"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0184.txt",
+        "bytes": 12556,
+        "sha256": "c83d51e638225f36645a9c62209f53e0e5a13399e2f6736b13fd411dcd11df05"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0185.txt",
+        "bytes": 4559,
+        "sha256": "5c38ecceb04f8b6fd028338927fb759c8df07fed64c186b84d0452aa20ff8a6c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0186.txt",
+        "bytes": 3457,
+        "sha256": "3ffa58a42d14245bda503084b3d52e3704dccf40a9478e3fd529a967c76d292d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0187.txt",
+        "bytes": 16147,
+        "sha256": "48ec4d891c460c955af5f1f3623aded9927320a60c78ae2af6edaf6a40390099"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0188.txt",
+        "bytes": 2937,
+        "sha256": "ccc69aa32ddcc184a763fcf713ecb0cb2a662796a7a1c7e9a7ee99d89b44ef5f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0189.txt",
+        "bytes": 2913,
+        "sha256": "a5f8bf2f731d2059e6546e0bd657eb17c512327cfb039ba99ec976bf562e02a8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0190.txt",
+        "bytes": 6907,
+        "sha256": "8d0fc82673e0461545ad2183f9a6300da5c4a8786f6dec424be96a89dcf38b07"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0191.txt",
+        "bytes": 3224,
+        "sha256": "cccb8e0fbfce4c7f7f8c8d87ca8bf36a92aa93916df35a73d9d4625a953e66bd"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0192.txt",
+        "bytes": 14967,
+        "sha256": "031330ff180961e2b89f210b84c312f3c431b5726fc6ec6f49f6fb2785212142"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0193.txt",
+        "bytes": 28886,
+        "sha256": "e1d41348e80ceb6737af13a7a6019e5ac5482f3f5d0b1bc17edc99d2461ff74f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0194.txt",
+        "bytes": 4055,
+        "sha256": "4be666e3ba0f7c515509e450c9dda347cb9dc9b0553b5c95cf6d58ec34ec010d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0195.txt",
+        "bytes": 3862,
+        "sha256": "1a4569aa2715fd1da1427bc8525072d1a2c58bd981b65425380b2cbba7a687f8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0196.txt",
+        "bytes": 3813,
+        "sha256": "eece397586c76258107356816292b3b6f06da055710979b89cb11e119b9b6701"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0197.txt",
+        "bytes": 3636,
+        "sha256": "aa9619efca523431e25f50714f9a91779f650b4a3771e338d11bba9158327733"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0198.txt",
+        "bytes": 3896,
+        "sha256": "0cb6745474180362b35c9f9cdddda0e952e39c9625d15fccb7a9df22289a13fa"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0199.txt",
+        "bytes": 4000,
+        "sha256": "4adbde97c595523d9338daa73318a1d4be0841876f297cfa9459ccea6ca7f38a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0200.txt",
+        "bytes": 4103,
+        "sha256": "088398fb659b29306e468088956e24b754ee3dc525a44befef27524cba6fe24b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0201.txt",
+        "bytes": 3830,
+        "sha256": "e798ec1e873111a9f0c38bba4218df36b7e8c1df9470e5a2ab4355543479796f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0202.txt",
+        "bytes": 4073,
+        "sha256": "575935b6fa8cfe04b78ac4736e29dfb41d12f04eb3fb8ed07cd2f7d7d3ba4f37"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0203.txt",
+        "bytes": 4765,
+        "sha256": "24500dab47479a1e9ba0953fbf4ce6de289df6f3262b45030862e2867f44e6c5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0204.txt",
+        "bytes": 22364,
+        "sha256": "b3fadfe72699bfcea210aad2fc301540510c6c4707c4fdc2af8d1a366885a0e2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0205.txt",
+        "bytes": 3838,
+        "sha256": "0ad3bb9ba420883469656f18dda4aea9cedc66c7f9d74c4a8315a6474be54d24"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0206.txt",
+        "bytes": 3790,
+        "sha256": "94d5458401199c1f5be964f926df3b8fdaeb08d1fc8c6cd1d2f7c0117073eca9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0207.txt",
+        "bytes": 3951,
+        "sha256": "29d1769cd0a9e554569695bd4452804b37571ade876a95f1495668cfe2347759"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0208.txt",
+        "bytes": 8319,
+        "sha256": "e3338e9f2b57347745a3b12d123505f62baffe8d1b99ad51ca99b975a609be09"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0209.txt",
+        "bytes": 16296,
+        "sha256": "dcbe0bc9d0801ca73ddced371b0162606a53432743e21a5093073ebbd6f17e6b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0210.txt",
+        "bytes": 4261,
+        "sha256": "dfcf6e3e0804d74702c0a68617aa07baee02ba38c5ca87cc56ea9289893c710b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0211.txt",
+        "bytes": 7194,
+        "sha256": "737fe6cbc5d820d57b590558602878df413df4755b2abd5e56455481b254b914"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0212.txt",
+        "bytes": 9956,
+        "sha256": "daf9d90fb19bec40497fc17e7299988ac707a00a7d2798e70c50bbcc2400dcc0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0213.txt",
+        "bytes": 13610,
+        "sha256": "7d8b2b04db952caf3a1a04feb8e31fe29283667319983f12dcbe0b05d5c61e84"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0214.txt",
+        "bytes": 11647,
+        "sha256": "c5d1fd492deefca9658cf9ac91ea3c604303ef6c70bd1e0ba87ef1f010e1b01d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0215.txt",
+        "bytes": 6512,
+        "sha256": "94f44a08c0179775669096d28c2ac23bd35976b9e3f38c88360384b3d22d3433"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0216.txt",
+        "bytes": 4891,
+        "sha256": "fe8a8b7fd407273ca4f151b4cef9e1ca3170bffbcd8857af703fcc45162e0482"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0217.txt",
+        "bytes": 5139,
+        "sha256": "89c89ebcbf0940d07491fd5d1ecf42cff0bf4f682e67db684ca60dae2fdbafe9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0218.txt",
+        "bytes": 11402,
+        "sha256": "e91679cde8782fef3fe32ee2159bd7dff157f9d27869679333ad2b1edaf67d12"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0219.txt",
+        "bytes": 5082,
+        "sha256": "47a2d732531fcb092508c10b57b26dcfc6731f74c300fdc3745bec0392b5e093"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0220.txt",
+        "bytes": 3891,
+        "sha256": "b2308c23dab567ad800c6f78f9c50416193a708e61754612e98f30f6b6ddf33e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0221.txt",
+        "bytes": 5310,
+        "sha256": "80c0a45d7a5e877a9eabebbfd16bac0b4635651d67d9551149872aad31123d24"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0222.txt",
+        "bytes": 4066,
+        "sha256": "f29915f3e99ef2bcc21e9e44092ff21aebcf894be7d6116d9a17437ca2d41006"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0223.txt",
+        "bytes": 3894,
+        "sha256": "67e617f26c5727b8c638e8bb8d6530dc1b04a7e7dca7fbe98d22eee0c8742e3e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0224.txt",
+        "bytes": 3899,
+        "sha256": "adf3bd895b11388d1d4a288408b641e97aa0bee651d4738c4fd51024182ae6c8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0225.txt",
+        "bytes": 4045,
+        "sha256": "fd43eec0ebacc006424c6c296611c3b2dad6ec5ae5f9eeb44a673db5bf5422fb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0226.txt",
+        "bytes": 9367,
+        "sha256": "e10ca8c523ac9b7c51a39db06f2619d13fbe8c1cce993e5d09d43b0917a6934e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0227.txt",
+        "bytes": 6140,
+        "sha256": "073b7cf7219e0784e8200e6694b954b55aae88c5c376066d5fc9c063ad42c2e9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0228.txt",
+        "bytes": 4258,
+        "sha256": "3e4519f221c2d3430a7f50b5cb5037ade4bd3236ff2dad7c51d8a543e726e01a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0229.txt",
+        "bytes": 17669,
+        "sha256": "63b29b3447081a5d0741b37ac0f355ac1240f24783aaa0077448e7146b1c6615"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0230.txt",
+        "bytes": 20682,
+        "sha256": "2c7fd7f93a782d23a2a6925496c8d7c8798aa944168ad89f48879024aec4209c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0231.txt",
+        "bytes": 7322,
+        "sha256": "adb8fb7f1366e8410ef93355cdc91988e8faab87fd420114ac907200bc966e64"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0232.txt",
+        "bytes": 6887,
+        "sha256": "ecd7d4016492027f057bd7e658bf2fb439e62baeee2927356e922aedfe1942c2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0233.txt",
+        "bytes": 12403,
+        "sha256": "4c01ae8e4b5421e1432f7598307c294aacc0f7cf230ec70fcddf2f66b92b31c5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0234.txt",
+        "bytes": 7304,
+        "sha256": "0525184baed7de6cc5d8a60b49c2abeec597a3a0a48063dc7ab716fab8f1cc67"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0235.txt",
+        "bytes": 7564,
+        "sha256": "ed6f703c63fd780f7ae7e484584a859b06981b045e222b900654d8dae432927d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0236.txt",
+        "bytes": 10209,
+        "sha256": "c5df6149e004c291b115f763a844fce46d48b4e73ecdad45caa585b2cf2708b6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0237.txt",
+        "bytes": 6165,
+        "sha256": "cd472924f8c413f47b39726b6a82f956a21535119d78a2a63fe6298c47c539ea"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0238.txt",
+        "bytes": 6511,
+        "sha256": "d6dbf4f7943f0a2b28f4388a5fc3c04d852189bc6b3d6846d4e3f5a9993cbadf"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0239.txt",
+        "bytes": 32685,
+        "sha256": "8d664db953d2471228316879067fe5d0b8f52031c53886a6d08b1901905cb96b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0240.txt",
+        "bytes": 6725,
+        "sha256": "f6348adae3dd2a21299d76a7c8fd12c3d6769be6ca57a114987b0ee74b78c5c9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0241.txt",
+        "bytes": 4836,
+        "sha256": "126caf3fbe5226b7cd40d75970cd814f80f6fa1956d7236ec487661d36f12085"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0242.txt",
+        "bytes": 7969,
+        "sha256": "c76528ac7a5e1b78154d9c1bd2ecb5b318028833c9cb85ce93a51e1d3d655d5e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0243.txt",
+        "bytes": 19200,
+        "sha256": "7d2034cb33dfb2645019699d77128043b523e679b3e4103abaf9ee16400c90bb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0244.txt",
+        "bytes": 35639,
+        "sha256": "30b7a921f2f40014a3d159e5290e3be6190faecf32618ac6e8a545e045f97dd9"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0245.txt",
+        "bytes": 6322,
+        "sha256": "ae6596f75564009d2a77907232a57a48ddf942408a228d880cd13b36aca4fcd2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0246.txt",
+        "bytes": 8560,
+        "sha256": "8110c9834d0fa622c53fb8d1b53de2f539dd6602ab058151a066ac10fc935c92"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0247.txt",
+        "bytes": 3749,
+        "sha256": "55317b3e3c9cf7c35d6b1a68546f01068dbfc082a9f1932654b7b8b7b1c34051"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0248.txt",
+        "bytes": 7048,
+        "sha256": "599f6656d96e4715816d509410aa15fa44e9a1d187212a70a091623828a554c5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0249.txt",
+        "bytes": 11807,
+        "sha256": "dcc20ce3b996bce8c302bac6e90eb40a7cfa689421839b9d310b41ede0350206"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0250.txt",
+        "bytes": 5999,
+        "sha256": "9c6140ce37154c82c1dd33763fde7640008626d6a1ed19f15939f082d5f0f0d8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0251.txt",
+        "bytes": 3152,
+        "sha256": "1c4e772ce3ee0889b6a91f3dc48ecee10745193f76774bb6dff60eca5854f9b2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0252.txt",
+        "bytes": 37801,
+        "sha256": "dac0f54801968f3c8338bee83f9637b462debdac379843ad22cc53fab85dd723"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0253.txt",
+        "bytes": 3961,
+        "sha256": "e4168bc8475d5e901a1c720fec2a059064dbcc75ea3034f4551a66a5644eb4e1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0254.txt",
+        "bytes": 10685,
+        "sha256": "b8b7b08a82a247d57c1ba3c086f3c7a27722cb1d948b3fa0b1eff170b563deb8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0255.txt",
+        "bytes": 7005,
+        "sha256": "49d2c00b2c8660d4b382880340363fe2ce7b25079d613c107e4cb3d9f77e2285"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0256.txt",
+        "bytes": 7423,
+        "sha256": "7a26d483a79d4160d006bf9d752bf7a03c5bbd5347ccd8342725db59a55e4a2c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0257.txt",
+        "bytes": 12192,
+        "sha256": "81915be351d9145985dfd572a37e88db42faf9683afcfdd05bb854eef592012a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0258.txt",
+        "bytes": 10882,
+        "sha256": "6d3c9b7148ba7fc6c4cbc31859b40efd013b3f44197d31e7801b6a3ff0b9705a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0259.txt",
+        "bytes": 10370,
+        "sha256": "5f9d6d7055d893c0fd3fa87977d68ffded360fa88ee0efedd2e52dc2fac9f904"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0260.txt",
+        "bytes": 8910,
+        "sha256": "146bd2268230e7e5b70f2393c22d97b08b5c2dd98764704fa5af6edad3ded33e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0261.txt",
+        "bytes": 7714,
+        "sha256": "b7ae8417c36283ee145589704e8c670a0321a4166e178e9ddfa5e48fde8ca16b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0262.txt",
+        "bytes": 38275,
+        "sha256": "48bb6edc8fb8c80a6dd88c3b5efd3c052163ecbc910dd7674e63f519976ca044"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0263.txt",
+        "bytes": 16433,
+        "sha256": "969a6f05686a5c514974372ce2c3f46a8398f05302e20a3a4a4128151e61ccaf"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0264.txt",
+        "bytes": 15248,
+        "sha256": "673a115c3e662f1c4ae3c4576a510fb1becfaff103056b4c3ab4738a17765347"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0265.txt",
+        "bytes": 22195,
+        "sha256": "ff3b12892847449db0c46c469a9ba328ae9f2df58286ccdaad54ce1ae231b22e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0266.txt",
+        "bytes": 5027,
+        "sha256": "2b2f853ba6bd5338e1e83d78780546a6169a05f54ebc6aa2d811a43a0f91bde7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0267.txt",
+        "bytes": 6560,
+        "sha256": "2c8447a3806619d2ae3d21a65663d19b052c673baf5cce54aa16a21ee9c5763e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0268.txt",
+        "bytes": 5074,
+        "sha256": "0159b567b687975dee6750d23be99f1677cd2cb705be8608eb7eea4496b419b7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0269.txt",
+        "bytes": 19798,
+        "sha256": "f602ee061fa08d4278d47924b326907f4065e9b19b208e8125bd1afb869338a8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0270.txt",
+        "bytes": 9852,
+        "sha256": "2332296486f63fa98939359bbbb67aa226063afeea00bd9bfded978f7b4f8657"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0271.txt",
+        "bytes": 38239,
+        "sha256": "22499b7f1592c6b59c426e56ebbb0727aafc1b5445c6036be4901a9e44e5e0aa"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0272.txt",
+        "bytes": 6630,
+        "sha256": "643bfd41418f9b23cfeb8725ed96584800846c3fe684e7cc356502755a099187"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0273.txt",
+        "bytes": 14159,
+        "sha256": "7fe3a1a092c841911d3edf735a86c27403957c5737846b269f5fe9fe76d5088d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0274.txt",
+        "bytes": 16262,
+        "sha256": "a6c1bdcf11b735aff5c70a352b10ef27bf05081ff2c221892535625ca1e6cdd6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0275.txt",
+        "bytes": 4732,
+        "sha256": "4e3a3c95fc91a87daaf16a5bfe3cc5310bd4f3e10679717163368c5f999b6c67"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0276.txt",
+        "bytes": 18428,
+        "sha256": "a32d54069f355c7c676c4f3b3c8f3938dd0fb848766f17a569ffa8e674e85767"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0277.txt",
+        "bytes": 18344,
+        "sha256": "8c91da3024c569d157836c709b2fbdd5a34689d1546c98e8fa62fcb77a543b17"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0278.txt",
+        "bytes": 8283,
+        "sha256": "905317266e69b75117374edd1aac5b99958fc25c2a5138d4f764b813a475ca77"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0279.txt",
+        "bytes": 20474,
+        "sha256": "0e8f082b7e8d7193f14cbb27a30020d77818333b2e8dfba2f592bb1a7e5427a3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0280.txt",
+        "bytes": 10670,
+        "sha256": "f61a07e86fff62e047ed3b6ce07d0a6375eb2b3c543ac24d7118038e6a02d67b"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0281.txt",
+        "bytes": 17042,
+        "sha256": "c7d7abd8970a7e060a194144b616c8428d15f8f947cc741bb455eb1ffd88b76a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0282.txt",
+        "bytes": 6337,
+        "sha256": "238ed6de29fd91c1889baf549995756391c957601172c1444393560bb2d2e822"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0283.txt",
+        "bytes": 8149,
+        "sha256": "65f74977cbb9254b5ee1e8c66fb61e9c3d718d0dbd08cf8f490c74c6c5a3a502"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0284.txt",
+        "bytes": 7427,
+        "sha256": "1c90de2e0178d82efcb4737438304c8a50ccda365e7ae1d51c51225d2385b47e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0285.txt",
+        "bytes": 6477,
+        "sha256": "52d7eaff692e62dc7bf5a1bc8805e2889921ebef0ae7e79f592e7266b5bda56e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0286.txt",
+        "bytes": 6864,
+        "sha256": "4c6fc96e9abe5d59b78cc3c3d52c7560eabcad31f63627bd9fb409cf22dacbcf"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0287.txt",
+        "bytes": 6306,
+        "sha256": "bab8f3c156fb4db63687e0f125df714728c00b3b394500640e56e74f44c4411a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0288.txt",
+        "bytes": 20651,
+        "sha256": "bab42d8d231df8cba2ca2e950a87991a262b0ce25eca6c0f4e4af30bb5946963"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0289.txt",
+        "bytes": 3712,
+        "sha256": "e4316abb2905486eafc11c5a00b88f234c515f22804264e53574bdf8debe7c57"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0290.txt",
+        "bytes": 10257,
+        "sha256": "4a03b0fda090b87cb2776b32cfe27150d803c1f1902ae47ceda4c21d02456ab8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0291.txt",
+        "bytes": 7346,
+        "sha256": "61ab886faa1fd2cbfd90677dedd964f9c02354d03207577ec056c575bd2617f6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0292.txt",
+        "bytes": 25441,
+        "sha256": "2f243dc1299688320e53218bb22c4c4075e340057d664f3158855004134ac501"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0293.txt",
+        "bytes": 8213,
+        "sha256": "08851e360e75df7efd34c8b45913b32ea5aa6e98ecd4dcfdca6e58da9a50001d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0294.txt",
+        "bytes": 6465,
+        "sha256": "136f9cbf4b6a7a07a0b752b19b7f8440acbfa08373b10589ee82550011c8b426"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0295.txt",
+        "bytes": 33190,
+        "sha256": "16d7daf9bbe33cc93e061b7ec9c1b4f9aae00e8e672cfee579955209450b856d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0296.txt",
+        "bytes": 8430,
+        "sha256": "6e72eb5b9eb1b415173e4887c4b093be78b5234003208020a3c2e05723bcc4b7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0297.txt",
+        "bytes": 5483,
+        "sha256": "3c7a2607bdbce4e027f57fad1d1f432c73022dd795c2d5c3f50590120ff7063c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0298.txt",
+        "bytes": 9435,
+        "sha256": "1712652e12efd759fe0675c8ee833d2a71d281d3881735c717706b9ab904fd58"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0299.txt",
+        "bytes": 16309,
+        "sha256": "583072a6088118c7d1f7c8d55f998e0f07c686d3e94d01cc6540c636bdc1602a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0300.txt",
+        "bytes": 13224,
+        "sha256": "00dde91096a361417911fe7b7f0d40fd79fa8573aacd396f8803a00aaa38030c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0301.txt",
+        "bytes": 14312,
+        "sha256": "237fdd010518a17464b9a8b667b94213ea88388e7b8584ec90ba680223fbd348"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0302.txt",
+        "bytes": 17725,
+        "sha256": "cefbaf04bfd38cf31bd93f88cf35c5d9dc1133aefd168b413e643d5ddd187248"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0303.txt",
+        "bytes": 6818,
+        "sha256": "6ede9c718ad0ca232441668b15c0541ec3f30b265ed34e833522a26226dbe2d2"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0304.txt",
+        "bytes": 10974,
+        "sha256": "782134fcc0536097ac439361fc61b8dd1f3a0ecee7b8fd97984099482ad5c646"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0305.txt",
+        "bytes": 26964,
+        "sha256": "98d3b6e1c73c58635e2c125640feeb25410e23b9528b5eaa442ae9e72516840a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0306.txt",
+        "bytes": 7968,
+        "sha256": "f084bd021dd1e4bd2d4179b48e3300534dcf340659ed94776a119d2ab4526639"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0307.txt",
+        "bytes": 18887,
+        "sha256": "06d9090e0b031a8f26e14b4d33ad74f3bebbbe48ad084af02057f3a919860386"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0308.txt",
+        "bytes": 14865,
+        "sha256": "f305f82eca0e60c447e8a9aa7b6e62b700c1f1ca389fba0c29aeb1b44037178c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0309.txt",
+        "bytes": 9747,
+        "sha256": "6e248504333ae53118a24ab22ddd62bcc7434418abc19227687664a9151afb5e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0310.txt",
+        "bytes": 9006,
+        "sha256": "eb32b2aac4e8321bdc1f91ac633e57062c82a3d692ebbfb67b3d04aa3fb469b1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0311.txt",
+        "bytes": 7362,
+        "sha256": "fbf3fbbb82ceb7e5b17b73b66d33799c853a7187993fa3631599e9d8e9fa1f6f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0312.txt",
+        "bytes": 7538,
+        "sha256": "963ed19ee1b3cc2d9e975f4a3c70ccee1e206a4ac4c03d38a90f79eafdef5f14"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0313.txt",
+        "bytes": 21308,
+        "sha256": "15d2563620fb5d9302e0cb14a034f3c052f7d6b8172b85a52232b61fb3cc975f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0314.txt",
+        "bytes": 10590,
+        "sha256": "4fcdc332ba45936773f30eec43961cba6d5c8619481706dad12d25b87b35c7bb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0315.txt",
+        "bytes": 13278,
+        "sha256": "e1494314a58ca187cc5bdf5ca0d456ed0daf2688afb956a88eefb49ab1bb7a44"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0316.txt",
+        "bytes": 20616,
+        "sha256": "a57e14ce8534072fcc4c769426c8e15aaf7c56c31ff2c05e7d463cb3d25a1294"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0317.txt",
+        "bytes": 6355,
+        "sha256": "12c5ffa3f2ab63a383236547cc4b827e5ee78dd39038d189246ec64e8fff81cb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0318.txt",
+        "bytes": 14978,
+        "sha256": "f779693dee94cc877f2811a8148c8f8804fedac45e7cc3350e7e4130a02c8f3f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0319.txt",
+        "bytes": 3532,
+        "sha256": "228e170d888415b6703bcb36d3a3ad983c07c3f2fc265f640daa3a9d4ec26da3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0320.txt",
+        "bytes": 13819,
+        "sha256": "cd71753202be42e3df1503436dffa6593dec54fab5a26a9a53f0173ef7c3f280"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0321.txt",
+        "bytes": 25705,
+        "sha256": "4f53cb7e69440481256112840e2ebff9056e41de7b2dd5f7fceb24ab91140e7c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0322.txt",
+        "bytes": 12057,
+        "sha256": "437ee3d1ec1629a578089205164aa7ad937f6707150f4933a692ce8e281c920a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0323.txt",
+        "bytes": 12102,
+        "sha256": "a83eaff032bb0ddec900e38e2ffa7c037961a118085054fde31b04bc76ae418e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0324.txt",
+        "bytes": 14105,
+        "sha256": "33018e1c0eef4a1989f0aaa04741b94ad8acae6ebe3134510af7c7c714087baa"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0325.txt",
+        "bytes": 11874,
+        "sha256": "4e6d253538e7ff0b8a0f108c54f29778d3b857c41787c203b31d7fd2512d3d04"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0326.txt",
+        "bytes": 10258,
+        "sha256": "ad1dbe8394b81fa64fa6f673316c32758e7de79f91be9fe964aeff83d1604745"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0327.txt",
+        "bytes": 12196,
+        "sha256": "9544cc0552064ba2880b0ae917831dbd26ce492a343275a4f715e90f8b50a4d0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0328.txt",
+        "bytes": 23590,
+        "sha256": "dba846130e0afe12813dcbadde40663f491cc19490daca4ae963135416cf5b45"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0329.txt",
+        "bytes": 17627,
+        "sha256": "69a6a85a2149925daa11bc34c7675c6bb1f87f37df33b8e5e1d085a897447876"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0330.txt",
+        "bytes": 38238,
+        "sha256": "1bf738afaa14ed3e0d9a47ade0524c26da0db90a3bbe87a214ee03d7ca5f89a4"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0331.txt",
+        "bytes": 12165,
+        "sha256": "4a1a4c2d465f357d52e6ac44c6f4fd2fb6ca35f15975fe94ca4c8ffa056a9159"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0332.txt",
+        "bytes": 5549,
+        "sha256": "75296d3d1bca27e235d65646b81487968c2a17d97cf73d77de7b7dda8b4e1286"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0333.txt",
+        "bytes": 3346,
+        "sha256": "873e8ac6d72ef2fa93368ea7ff81733515500a118ff137310e81dba2582ad9c1"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0334.txt",
+        "bytes": 26270,
+        "sha256": "8a0172dd093ff91610748e6c5fcbb20424a921e9e2830bbd31ec95ff56172dbd"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0335.txt",
+        "bytes": 9937,
+        "sha256": "86fe00d9cf5c6d5d765b69f1030a9cbebdad85f05fa3e752c7bb8beb4bf07d70"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0336.txt",
+        "bytes": 12742,
+        "sha256": "21f376091509e3dc6e9d5a7ecf2edbd821e62bd38d9857c6cb1c05c9b9eb5d15"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0337.txt",
+        "bytes": 6118,
+        "sha256": "b20f871b6c2c51e1deb883c25d262a766098771a81c89dd1834fe337ca23a689"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0338.txt",
+        "bytes": 12281,
+        "sha256": "04a258341dfc0bcfb1547d1f493dbf0fb8cf3779f89bbab1ece5d889537bfb6a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0339.txt",
+        "bytes": 32195,
+        "sha256": "0b06ea5368c07c7a0facdb61a6827cbb4afcd5cbbdcf29a62e430c2159b65102"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0340.txt",
+        "bytes": 10903,
+        "sha256": "752b21bd746827ed08be08a4b16ef6165982ab2387cb25dcd8f219e382401b88"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0341.txt",
+        "bytes": 7217,
+        "sha256": "0547b86c40785706552a199f0a8a68d53bb417931201ae56eacaf0deebcabbe3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0342.txt",
+        "bytes": 5516,
+        "sha256": "47b1109490fe3e5127cbaedf12716645130a4969ad00d4b6f5f7fab4985aaba6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0343.txt",
+        "bytes": 16611,
+        "sha256": "d4d642df80256dcc1f5b394200d07c9aa0b1a6df3c4a02d902ef306c228eb061"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0344.txt",
+        "bytes": 32393,
+        "sha256": "e1ff08a2f252b99165052a264ed317c9d548dfabfddbce3b765b3c49d9687760"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0345.txt",
+        "bytes": 36442,
+        "sha256": "5c1935b73d1282534aa21959d3f7593588fba86b2168ad710143bcaa580f03d8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0346.txt",
+        "bytes": 8440,
+        "sha256": "f683519d90e3f0b978b4563ecc8830fb3c4c9d533574004a4cc100f7134c4144"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0347.txt",
+        "bytes": 4001,
+        "sha256": "754c8e227a0e9238662ba1261faeaa319b73a6eb64747ece2bb77926a3dd25ec"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0348.txt",
+        "bytes": 14441,
+        "sha256": "c1e7a1e66fb3ae8bea83a6d27aa23872ed87bf17e56ed64fe2655fa649cc86ff"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0349.txt",
+        "bytes": 4910,
+        "sha256": "8e299f2a1012832784fd97472bbd73532e2d9334f07bb87ca595145fd318f9bb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0350.txt",
+        "bytes": 17513,
+        "sha256": "f4c7d19bc0764728b512a35bb3ae16bcf6a21551bc4d038a2a119d69e8882a33"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0351.txt",
+        "bytes": 8056,
+        "sha256": "4294cf4c6520771bd20d9b301b1ae97777f2fee975840cc1b5c72e3780d77d8f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0352.txt",
+        "bytes": 13965,
+        "sha256": "6c1ef5ca5069177d2ae5aaad6086243bd1222a63d87b7e6ed8a243b295c302b4"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0353.txt",
+        "bytes": 3418,
+        "sha256": "9f52fe98efe2310ed988750d4f4475d2cc0f233c5f1dd7eb9f9a89f91c3f7735"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0354.txt",
+        "bytes": 34522,
+        "sha256": "b27e8565660cfcd83ad161e9263c32b55b66ab6b36126337f9eb1588a41c30ff"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0355.txt",
+        "bytes": 32011,
+        "sha256": "5195c5d2cb45958aa389299ea30558f72a9cd2ef9bad49dfa420bf2e39a53a4d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0356.txt",
+        "bytes": 17121,
+        "sha256": "cc775b186173a4e31a7e1f259a7b08260cc59c9db3f6f97e30674d5126e1359d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0357.txt",
+        "bytes": 42331,
+        "sha256": "09846fa3791eafde22e17fe4d05fdfc6425cb4e5a97d6c17d838287a10cd4efa"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0358.txt",
+        "bytes": 11196,
+        "sha256": "8f26700c65cb243af7ec2b63e63d53705c01e6c9a4aa647c5dea64e066bde198"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0359.txt",
+        "bytes": 7290,
+        "sha256": "9eeaccbe1bcd796efb37dfb05b9f868d35713e5236bae3b3d7bfe0a20b3569d3"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0360.txt",
+        "bytes": 15223,
+        "sha256": "bb323334a2840af6399ac199cf67d58640eb6925d12ae54febb45942d7d15cc5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0361.txt",
+        "bytes": 10331,
+        "sha256": "7bf149b53c1eb7cec9e2add6da17e161fab2a35ca86d2f709d5457ec7c1b6430"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0362.txt",
+        "bytes": 19191,
+        "sha256": "0ae4d406d8a4e4663d701008b9e568980d26717df48f3b0c6b28bce4c3813fad"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0363.txt",
+        "bytes": 21101,
+        "sha256": "b02550d547e3e1b8ec134198de4e6ee2c9fd9130fabb0dd01b949eac779ecd36"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0364.txt",
+        "bytes": 22237,
+        "sha256": "800ae61b6ef78a4ce2724b0ca2c903f8a2ae7f9ddf0ca28c61add024db047de5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0365.txt",
+        "bytes": 47508,
+        "sha256": "f9a2560104fe5d9e0e777bb852a2f437ec6adae69da0a0f42c17f27d3543399a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0366.txt",
+        "bytes": 11350,
+        "sha256": "3b87216c43d59bdf88c473baa5e05618c7a33d5dbbf2317a257a4d0e8d925566"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0367.txt",
+        "bytes": 39408,
+        "sha256": "0bd012a2b74530faa186e1eb73a1bf3360438cbf160d5415f3ed83abe07c7b06"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0368.txt",
+        "bytes": 11278,
+        "sha256": "ba59c1ad1fb2d6dfc8b0bb023f13d9e489e28ed5323931d0d545b57e0aff4dc0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0369.txt",
+        "bytes": 19278,
+        "sha256": "9c62bf35d187816087f74c3e766e2fc2051620076721838eebf62ba7e7456c27"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0370.txt",
+        "bytes": 9987,
+        "sha256": "33e42aa6c3c88d8ba7db199d543371faba5fa5d75b750e09b72cdf95ab470ec5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0371.txt",
+        "bytes": 11786,
+        "sha256": "d14a37378d0cd6546a5d819aa9f9bfa3767832a85038d0ab4fdf26b9946c5a0e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0372.txt",
+        "bytes": 19945,
+        "sha256": "b5ee4c9e55b34b48ee3f0bf77eac51359a05bfbac0717bac05a8b6e790b24af6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0373.txt",
+        "bytes": 5769,
+        "sha256": "f4d306d4160cf2366f5b33446e287adaa7706309762d9a6c6395fac973f5a79c"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0374.txt",
+        "bytes": 37099,
+        "sha256": "b035f775875d11f0bf9c7783424648c35e507d4e16ce640fa7b3680ff1a23a36"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0375.txt",
+        "bytes": 13208,
+        "sha256": "c29eec980e0be70e837cf422c1a5a57e4e5441cb7325194a6d2a8176c0aaa219"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0376.txt",
+        "bytes": 25792,
+        "sha256": "16714fd3fea1624bb085c30abe651b15ac94fa815a72697fdb6935f277dce3d0"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/csrc_0377.txt",
+        "bytes": 30066,
+        "sha256": "1d21a95dfe7ad8493e90d547e2915b04cf3aa663b6b3c7422ca82e2c22b4c272"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）.txt",
+        "bytes": 29822,
+        "sha256": "e27cef6972b77fbc7bdeb7cf4b72342d38eef85c355546e40eb4fac6f3b4eefe"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）.txt",
+        "bytes": 39781,
+        "sha256": "f07793dd41211a51a4d73d89bdb48d9500071bcb8e00ab8af882a22a098e175d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/strict_v3_015_中国人民银行令〔2025〕第3号（中国人民银行业务领域数据安全管理办法）.txt",
+        "bytes": 31645,
+        "sha256": "426aa9edb179cc7ab060300f3bd7a8c4be28dfd34ed7f17d79655e88e2ef6b67"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）.txt",
+        "bytes": 31522,
+        "sha256": "56ace52a8825121a12c979483dabd5c452fee9d17c74a21b6783e3a784712fb5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/strict_v3_017_中华人民共和国反洗钱法.txt",
+        "bytes": 33007,
+        "sha256": "d7f3724758a7d5fad49552e9db74e6b6c1ba4e0b4c9908b670e8a8816a04dad8"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/regulatory/strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）.txt",
+        "bytes": 52928,
+        "sha256": "cbfa5905b9f746cf66b99fe3bb47aa535051927f522abe9f818119a51f35ac97"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text01.txt",
+        "bytes": 76318,
+        "sha256": "ceade0846a408d9b47c391ac5bf8097106a63627c614d002afab17b49a7fe4d5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text02.txt",
+        "bytes": 47941,
+        "sha256": "81bebc9d243ba3962f8850e4ab6b04aa458909c11aa1caab3dbab67807fd8fc6"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text03.txt",
+        "bytes": 113993,
+        "sha256": "4938c7d6064cf62720f38b6afa58b9bfc965be0dc2eef7b6ad9750d01cb16986"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text04.txt",
+        "bytes": 150948,
+        "sha256": "7d317d439695197a13d09e5ef0eacdde075777bd7f2298cb59e2973a489c708f"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text05.txt",
+        "bytes": 88677,
+        "sha256": "0effd0244ef9d840b9aae31c6db3e055f4b418d15bbbc7bdd2f830c05143941e"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text06.txt",
+        "bytes": 20295,
+        "sha256": "ea0b87e785e32c4fe2eccc733847e9b5a5bbea44d759146e6268ac90caa09e0d"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text07.txt",
+        "bytes": 71822,
+        "sha256": "1e27478313cedebef2d5f108479123eeeee1fd92fec5cfe3896ea933bba723cb"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text08.txt",
+        "bytes": 33968,
+        "sha256": "d5626eb81442cad6576974a28692708948e2c6e479c4c9daaf8901efc534f418"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text09.txt",
+        "bytes": 97842,
+        "sha256": "bab3693759aa7a7ca6b84f269bae533ea17187c0ab37b75672baadd55e2bb033"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text10.txt",
+        "bytes": 94417,
+        "sha256": "a6b4694f07d2cd927a29ff9eeabf03c42d3daab44eec1e57ed458c9e7c52c2fe"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text11.txt",
+        "bytes": 91286,
+        "sha256": "26a3eeb76f5730b025bce1470250d025f5e24833a11d32c54f5bc820fe711cac"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text12.txt",
+        "bytes": 67589,
+        "sha256": "1c94cd2f5c4d421769da7e9b6651e1d3a7c4eb742ff581a8a7399a87ce9139f5"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text13.txt",
+        "bytes": 48182,
+        "sha256": "b83d2501676aed63d23eca868a41d13800c7da014ae9ee7d9fd62f0a4a142f23"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text14.txt",
+        "bytes": 67049,
+        "sha256": "28875ab0f743060864b512643a6a4bd5bedc1bfc73f761c0e15518b215a00d06"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text15.txt",
+        "bytes": 133938,
+        "sha256": "f0b5e8fc65179309211d1a759171f1db4a58dcc2efd7a2f07a14b61aeb38f676"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text16.txt",
+        "bytes": 54621,
+        "sha256": "ac3c337c1959ed32c52440c01b1d3ab5ae1ad64a583c84d344093b5f23aaa848"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text17.txt",
+        "bytes": 52517,
+        "sha256": "7146dd01b786744fff14f5b16ae486aa7a19db94fccd2445098bc4b4e8f3735a"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text18.txt",
+        "bytes": 75318,
+        "sha256": "71d2377004ea40965412a28abdb3dfcef86431235a05df7a20d68048780c0ad7"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text19.txt",
+        "bytes": 60774,
+        "sha256": "12f4126812b8a94444bc0b6ec1f90afb9e4b9b3a2e21ce1dc640dfe4eed31c31"
+      },
+      {
+        "category": "processed_data",
+        "path": "work/processed_data/research/pack2_text20.txt",
+        "bytes": 67049,
+        "sha256": "28875ab0f743060864b512643a6a4bd5bedc1bfc73f761c0e15518b215a00d06"
+      },
+      {
+        "category": "requirements",
+        "path": "work/requirements.txt",
+        "bytes": 106,
+        "sha256": "8556b162c378ff1f925de70f2adf39703917b519df23f66110029441c2437074"
+      },
+      {
+        "category": "source",
+        "path": "work/script/add_html_summary.py",
+        "bytes": 1996,
+        "sha256": "f5eaa5a5c359d4807e74b71a0c37f589801410e91ee515d3bccd31d389f8ed2e"
+      },
+      {
+        "category": "source",
+        "path": "work/script/build_align_matrix.py",
+        "bytes": 5481,
+        "sha256": "61c2cff82aae38e09a8482589e5189a0d608c20dcdcadb6d0e8602a8430e0ced"
+      },
+      {
+        "category": "source",
+        "path": "work/script/build_domain_facts.py",
+        "bytes": 3589,
+        "sha256": "aa0e94ca4132d5d475a20af5e5a08543794418044497c64345cc8bd3f032eba1"
+      },
+      {
+        "category": "source",
+        "path": "work/script/build_evidence.py",
+        "bytes": 10822,
+        "sha256": "484717fc4d8254d3b355b679c233ab813b6cad5c5d15021ce784fc24c08cb1e3"
+      },
+      {
+        "category": "source",
+        "path": "work/script/build_fin_facts2.py",
+        "bytes": 7103,
+        "sha256": "3fc7c6a565e29ff2609928052c5eb6c5370b05b2d99058828e77a197d86cd6a3"
+      },
+      {
+        "category": "source",
+        "path": "work/script/build_insurance_capsules.py",
+        "bytes": 14316,
+        "sha256": "47dab803aad653a9bb0a65f7b5230a1a704ae696baf7edb37c0d1278f061e68a"
+      },
+      {
+        "category": "source",
+        "path": "work/script/build_insurance_titles.py",
+        "bytes": 14555,
+        "sha256": "a434248874167386b7828b5f46153172209bf913134fb82e6ba0f16a5d12fc92"
+      },
+      {
+        "category": "source",
+        "path": "work/script/check_reproduction.py",
+        "bytes": 36432,
+        "sha256": "fa653bb8309e97814a2b228e11dae5dfb2077e53a7bf95793eee2b55d9703368"
+      },
+      {
+        "category": "source",
+        "path": "work/script/fix_titles.py",
+        "bytes": 5941,
+        "sha256": "e8ea794f8455ccf1deb73988cee96cf269b692947eeb0e554a90e562b3466301"
+      },
+      {
+        "category": "source",
+        "path": "work/script/package_submission.py",
+        "bytes": 16413,
+        "sha256": "3a80184108a61a724f3458e180943c159050bca17e22575d1ea435c74ab00273"
+      },
+      {
+        "category": "source",
+        "path": "work/script/parse_docs.py",
+        "bytes": 6181,
+        "sha256": "fe0f190d89341ee9a4b0314bcfe32b244975a116621725341522715cca251675"
+      },
+      {
+        "category": "source",
+        "path": "work/script/rebuild_processed.py",
+        "bytes": 10292,
+        "sha256": "849e2f2c77a093a00f16ae3de1ccdd2bba328b44fec355a7fb9ca4f45c83bb18"
+      },
+      {
+        "category": "official_rule",
+        "path": "比赛规则.md",
+        "bytes": 27054,
+        "sha256": "c3f856504520e9391f53b7721c603945da9175849ed9c599e5b1caffa73afae0"
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "name": "financial_contracts_b_question.json",
+      "bytes": 13395,
+      "sha256": "f77c000429934c97f2fb631ae06eae0e6abfa318ef88775fcdc3ec52ed677ecf"
+    },
+    {
+      "name": "financial_reports_b_questions.jsonl",
+      "bytes": 11702,
+      "sha256": "1a49132cc7c7fc02fd479f3e7140d5310d1d84fe3ad01d71b4e171ab2d285c95"
+    },
+    {
+      "name": "insurance_b_questions.json",
+      "bytes": 11186,
+      "sha256": "4b5d77cc7e9797331351e127340ceb1a9fddd23feb4192a55057670feb9c2c42"
+    },
+    {
+      "name": "regulatory_b_questions.jsonl",
+      "bytes": 7760,
+      "sha256": "ca369282bed08a5a84f446c8be5c93c582f9653f36bb9e29ff1aa04fa38d860f"
+    },
+    {
+      "name": "research_b_question.jsonl",
+      "bytes": 13845,
+      "sha256": "5bc9f3d3f4482cda6b90230439d58b6679463c7694bbe84b1cb52e31110bbc7b"
+    },
+    {
+      "name": "submit.csv",
+      "bytes": 2676,
+      "sha256": "5c4b8fdee342dc6e9d640ad7aa8182377691363a44f37363e2c1421ece3a50f5"
+    }
+  ],
+  "input_paths": {
+    "qdir": "upload_b/question_b",
+    "submit_template": "upload_b/submit.csv"
+  },
+  "question_ids": [
+    "fc_b_001",
+    "fc_b_002",
+    "fc_b_003",
+    "fc_b_004",
+    "fc_b_005",
+    "fc_b_006",
+    "fc_b_007",
+    "fc_b_008",
+    "fc_b_009",
+    "fc_b_010",
+    "fc_b_011",
+    "fc_b_012",
+    "fc_b_013",
+    "fc_b_014",
+    "fc_b_015",
+    "fc_b_016",
+    "fc_b_017",
+    "fc_b_018",
+    "fc_b_019",
+    "fc_b_020",
+    "fin_b_001",
+    "fin_b_002",
+    "fin_b_003",
+    "fin_b_004",
+    "fin_b_005",
+    "fin_b_006",
+    "fin_b_007",
+    "fin_b_008",
+    "fin_b_009",
+    "fin_b_010",
+    "fin_b_011",
+    "fin_b_012",
+    "fin_b_013",
+    "fin_b_014",
+    "fin_b_015",
+    "fin_b_016",
+    "fin_b_017",
+    "fin_b_018",
+    "fin_b_019",
+    "fin_b_020",
+    "ins_b_001",
+    "ins_b_002",
+    "ins_b_003",
+    "ins_b_004",
+    "ins_b_005",
+    "ins_b_006",
+    "ins_b_007",
+    "ins_b_008",
+    "ins_b_009",
+    "ins_b_010",
+    "ins_b_011",
+    "ins_b_012",
+    "ins_b_013",
+    "ins_b_014",
+    "ins_b_015",
+    "ins_b_016",
+    "ins_b_017",
+    "ins_b_018",
+    "ins_b_019",
+    "ins_b_020",
+    "reg_b_001",
+    "reg_b_003",
+    "reg_b_004",
+    "reg_b_005",
+    "reg_b_007",
+    "reg_b_008",
+    "reg_b_009",
+    "reg_b_013",
+    "reg_b_014",
+    "reg_b_015",
+    "reg_b_016",
+    "reg_b_017",
+    "reg_b_018",
+    "reg_b_020",
+    "reg_b_021",
+    "reg_b_023",
+    "reg_b_024",
+    "reg_b_025",
+    "reg_b_026",
+    "reg_b_027",
+    "res_b_001",
+    "res_b_002",
+    "res_b_003",
+    "res_b_004",
+    "res_b_005",
+    "res_b_006",
+    "res_b_007",
+    "res_b_008",
+    "res_b_009",
+    "res_b_010",
+    "res_b_011",
+    "res_b_012",
+    "res_b_013",
+    "res_b_014",
+    "res_b_015",
+    "res_b_016",
+    "res_b_017",
+    "res_b_018",
+    "res_b_019",
+    "res_b_020"
+  ],
+  "question_count": 100
+}

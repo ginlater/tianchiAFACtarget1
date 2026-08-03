@@ -1,0 +1,766 @@
+{
+  "answers": {
+    "match_count": 100,
+    "mismatch_count": 0,
+    "mismatches": []
+  },
+  "candidate": {
+    "errors": [],
+    "path": "/Users/ginlater/Documents/tianchiAFACtarget1-router6-runs/router6_clean_rerun3/answer.csv",
+    "question_count": 100,
+    "sha256": "4be485500f3df61313d0376f8e1a8da59cca46f7b7b22f17a027cadefc8fdf4f",
+    "summary_total_tokens": 495103
+  },
+  "checks": {
+    "answers_exact": true,
+    "per_qid_tokens_within_tolerance": true,
+    "reasoning_nonempty": true,
+    "structure": true,
+    "summary_tokens_within_tolerance": true
+  },
+  "overall_pass": true,
+  "qid_coverage": {
+    "common_count": 100,
+    "extra_in_candidate": [],
+    "missing_in_candidate": []
+  },
+  "reasoning": {
+    "empty_qids": [],
+    "nonempty_count": 100,
+    "under_20_chars_qids": []
+  },
+  "reference": {
+    "errors": [],
+    "path": "/Users/ginlater/Documents/tianchiAFACtarget1/work/output/b_router6/answer.csv",
+    "question_count": 100,
+    "sha256": "f19c82cf2e78f67509caea0b66147f63ff148adf801474780edeaf559145ca34",
+    "summary_total_tokens": 499899
+  },
+  "reproduction_tolerance": {
+    "answer_matches": 100,
+    "answers_at_least_96_reference_matches": true,
+    "minimum_answer_matches": 96,
+    "note": "Summary and every per-qid total are checked at ±15%; candidate values must also reconcile to its API ledger.",
+    "per_qid_tokens_within_tolerance": true,
+    "reasoning_nonempty": true,
+    "structure": true,
+    "summary_tokens_within_tolerance": true
+  },
+  "reproduction_tolerance_pass": true,
+  "tokens": {
+    "per_qid": [
+      {
+        "candidate_total_tokens": 3669,
+        "qid": "fc_b_001",
+        "reference_total_tokens": 4206,
+        "relative_error": 0.1276747503566334,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4030,
+        "qid": "fc_b_002",
+        "reference_total_tokens": 4565,
+        "relative_error": 0.1171960569550931,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5854,
+        "qid": "fc_b_003",
+        "reference_total_tokens": 6077,
+        "relative_error": 0.036695738028632546,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5056,
+        "qid": "fc_b_004",
+        "reference_total_tokens": 4609,
+        "relative_error": 0.09698416142330224,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5597,
+        "qid": "fc_b_005",
+        "reference_total_tokens": 6187,
+        "relative_error": 0.09536124131242929,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5052,
+        "qid": "fc_b_006",
+        "reference_total_tokens": 4461,
+        "relative_error": 0.1324815063887021,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5861,
+        "qid": "fc_b_007",
+        "reference_total_tokens": 5208,
+        "relative_error": 0.12538402457757297,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5135,
+        "qid": "fc_b_008",
+        "reference_total_tokens": 4607,
+        "relative_error": 0.11460820490557846,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5098,
+        "qid": "fc_b_009",
+        "reference_total_tokens": 4900,
+        "relative_error": 0.04040816326530612,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4227,
+        "qid": "fc_b_010",
+        "reference_total_tokens": 4685,
+        "relative_error": 0.09775880469583778,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4351,
+        "qid": "fc_b_011",
+        "reference_total_tokens": 4695,
+        "relative_error": 0.07326943556975506,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4037,
+        "qid": "fc_b_012",
+        "reference_total_tokens": 3651,
+        "relative_error": 0.10572445905231444,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4068,
+        "qid": "fc_b_013",
+        "reference_total_tokens": 3563,
+        "relative_error": 0.14173449340443448,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4045,
+        "qid": "fc_b_014",
+        "reference_total_tokens": 4651,
+        "relative_error": 0.13029456030961084,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4232,
+        "qid": "fc_b_015",
+        "reference_total_tokens": 4614,
+        "relative_error": 0.08279150411790204,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4159,
+        "qid": "fc_b_016",
+        "reference_total_tokens": 4762,
+        "relative_error": 0.12662746745065098,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4247,
+        "qid": "fc_b_017",
+        "reference_total_tokens": 4566,
+        "relative_error": 0.06986421375383267,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4032,
+        "qid": "fc_b_018",
+        "reference_total_tokens": 3828,
+        "relative_error": 0.05329153605015674,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4298,
+        "qid": "fc_b_019",
+        "reference_total_tokens": 4514,
+        "relative_error": 0.047851129818342934,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3762,
+        "qid": "fc_b_020",
+        "reference_total_tokens": 3908,
+        "relative_error": 0.03735926305015353,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6525,
+        "qid": "fin_b_001",
+        "reference_total_tokens": 6643,
+        "relative_error": 0.01776305885894927,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6126,
+        "qid": "fin_b_002",
+        "reference_total_tokens": 5628,
+        "relative_error": 0.08848614072494669,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5908,
+        "qid": "fin_b_003",
+        "reference_total_tokens": 5712,
+        "relative_error": 0.03431372549019608,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5886,
+        "qid": "fin_b_004",
+        "reference_total_tokens": 5460,
+        "relative_error": 0.07802197802197802,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 7287,
+        "qid": "fin_b_005",
+        "reference_total_tokens": 7568,
+        "relative_error": 0.037130021141649046,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6123,
+        "qid": "fin_b_006",
+        "reference_total_tokens": 5850,
+        "relative_error": 0.04666666666666667,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6532,
+        "qid": "fin_b_007",
+        "reference_total_tokens": 7472,
+        "relative_error": 0.12580299785867238,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6539,
+        "qid": "fin_b_008",
+        "reference_total_tokens": 6628,
+        "relative_error": 0.013427881713940857,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5931,
+        "qid": "fin_b_009",
+        "reference_total_tokens": 5474,
+        "relative_error": 0.0834855681402996,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6132,
+        "qid": "fin_b_010",
+        "reference_total_tokens": 5522,
+        "relative_error": 0.11046722202100688,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6455,
+        "qid": "fin_b_011",
+        "reference_total_tokens": 6790,
+        "relative_error": 0.04933726067746686,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 18108,
+        "qid": "fin_b_012",
+        "reference_total_tokens": 19262,
+        "relative_error": 0.05991070501505555,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 8372,
+        "qid": "fin_b_013",
+        "reference_total_tokens": 7573,
+        "relative_error": 0.10550640433117654,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 10161,
+        "qid": "fin_b_014",
+        "reference_total_tokens": 10352,
+        "relative_error": 0.018450540958268934,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 10986,
+        "qid": "fin_b_015",
+        "reference_total_tokens": 12059,
+        "relative_error": 0.0889791856704536,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 7765,
+        "qid": "fin_b_016",
+        "reference_total_tokens": 7049,
+        "relative_error": 0.10157469144559512,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5267,
+        "qid": "fin_b_017",
+        "reference_total_tokens": 4715,
+        "relative_error": 0.11707317073170732,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4118,
+        "qid": "fin_b_018",
+        "reference_total_tokens": 4593,
+        "relative_error": 0.10341824515567168,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 8252,
+        "qid": "fin_b_019",
+        "reference_total_tokens": 8278,
+        "relative_error": 0.0031408552790529115,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5283,
+        "qid": "fin_b_020",
+        "reference_total_tokens": 5101,
+        "relative_error": 0.035679278572828856,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5619,
+        "qid": "ins_b_001",
+        "reference_total_tokens": 6032,
+        "relative_error": 0.0684681697612732,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4212,
+        "qid": "ins_b_002",
+        "reference_total_tokens": 3845,
+        "relative_error": 0.09544863459037711,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 7711,
+        "qid": "ins_b_003",
+        "reference_total_tokens": 7843,
+        "relative_error": 0.016830294530154277,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4191,
+        "qid": "ins_b_004",
+        "reference_total_tokens": 3682,
+        "relative_error": 0.13824008690928843,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3610,
+        "qid": "ins_b_005",
+        "reference_total_tokens": 3692,
+        "relative_error": 0.022210184182015168,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3225,
+        "qid": "ins_b_006",
+        "reference_total_tokens": 3670,
+        "relative_error": 0.12125340599455041,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3573,
+        "qid": "ins_b_007",
+        "reference_total_tokens": 3717,
+        "relative_error": 0.0387409200968523,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3831,
+        "qid": "ins_b_008",
+        "reference_total_tokens": 3651,
+        "relative_error": 0.049301561216105176,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3838,
+        "qid": "ins_b_009",
+        "reference_total_tokens": 3707,
+        "relative_error": 0.03533854869166442,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 14212,
+        "qid": "ins_b_010",
+        "reference_total_tokens": 14458,
+        "relative_error": 0.01701480149398257,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3447,
+        "qid": "ins_b_011",
+        "reference_total_tokens": 3639,
+        "relative_error": 0.05276174773289365,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3225,
+        "qid": "ins_b_012",
+        "reference_total_tokens": 3543,
+        "relative_error": 0.08975444538526672,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3218,
+        "qid": "ins_b_013",
+        "reference_total_tokens": 3679,
+        "relative_error": 0.12530578961674368,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4149,
+        "qid": "ins_b_014",
+        "reference_total_tokens": 3642,
+        "relative_error": 0.13920922570016475,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3230,
+        "qid": "ins_b_015",
+        "reference_total_tokens": 2913,
+        "relative_error": 0.10882251973910058,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5716,
+        "qid": "ins_b_016",
+        "reference_total_tokens": 5135,
+        "relative_error": 0.11314508276533593,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3609,
+        "qid": "ins_b_017",
+        "reference_total_tokens": 3778,
+        "relative_error": 0.044732662784542084,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3330,
+        "qid": "ins_b_018",
+        "reference_total_tokens": 3593,
+        "relative_error": 0.07319788477595324,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5637,
+        "qid": "ins_b_019",
+        "reference_total_tokens": 5989,
+        "relative_error": 0.058774419769577556,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3840,
+        "qid": "ins_b_020",
+        "reference_total_tokens": 3662,
+        "relative_error": 0.04860731840524304,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4170,
+        "qid": "reg_b_001",
+        "reference_total_tokens": 3795,
+        "relative_error": 0.09881422924901186,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4769,
+        "qid": "reg_b_003",
+        "reference_total_tokens": 4642,
+        "relative_error": 0.02735889702714347,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4878,
+        "qid": "reg_b_004",
+        "reference_total_tokens": 4565,
+        "relative_error": 0.06856516976998905,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3427,
+        "qid": "reg_b_005",
+        "reference_total_tokens": 3110,
+        "relative_error": 0.10192926045016078,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4151,
+        "qid": "reg_b_007",
+        "reference_total_tokens": 4055,
+        "relative_error": 0.02367447595561036,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3447,
+        "qid": "reg_b_008",
+        "reference_total_tokens": 3295,
+        "relative_error": 0.046130500758725344,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 2816,
+        "qid": "reg_b_009",
+        "reference_total_tokens": 3204,
+        "relative_error": 0.12109862671660425,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3382,
+        "qid": "reg_b_013",
+        "reference_total_tokens": 3051,
+        "relative_error": 0.10848901999344478,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3927,
+        "qid": "reg_b_014",
+        "reference_total_tokens": 4406,
+        "relative_error": 0.10871538810712665,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4224,
+        "qid": "reg_b_015",
+        "reference_total_tokens": 4446,
+        "relative_error": 0.04993252361673414,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4112,
+        "qid": "reg_b_016",
+        "reference_total_tokens": 4713,
+        "relative_error": 0.12751962656482072,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 2888,
+        "qid": "reg_b_017",
+        "reference_total_tokens": 3326,
+        "relative_error": 0.13168971737823212,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4228,
+        "qid": "reg_b_018",
+        "reference_total_tokens": 4807,
+        "relative_error": 0.12044934470563762,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3450,
+        "qid": "reg_b_020",
+        "reference_total_tokens": 3255,
+        "relative_error": 0.059907834101382486,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4200,
+        "qid": "reg_b_021",
+        "reference_total_tokens": 4149,
+        "relative_error": 0.012292118582791034,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 2888,
+        "qid": "reg_b_023",
+        "reference_total_tokens": 3109,
+        "relative_error": 0.07108394982309424,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3475,
+        "qid": "reg_b_024",
+        "reference_total_tokens": 3251,
+        "relative_error": 0.06890187634573977,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 2915,
+        "qid": "reg_b_025",
+        "reference_total_tokens": 3338,
+        "relative_error": 0.1267225883762732,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 3483,
+        "qid": "reg_b_026",
+        "reference_total_tokens": 3341,
+        "relative_error": 0.04250224483687519,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 2907,
+        "qid": "reg_b_027",
+        "reference_total_tokens": 3303,
+        "relative_error": 0.11989100817438691,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4347,
+        "qid": "res_b_001",
+        "reference_total_tokens": 4211,
+        "relative_error": 0.03229636665875089,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4091,
+        "qid": "res_b_002",
+        "reference_total_tokens": 4272,
+        "relative_error": 0.0423689138576779,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4084,
+        "qid": "res_b_003",
+        "reference_total_tokens": 4326,
+        "relative_error": 0.055940822931114194,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4349,
+        "qid": "res_b_004",
+        "reference_total_tokens": 4165,
+        "relative_error": 0.04417767106842737,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 6657,
+        "qid": "res_b_005",
+        "reference_total_tokens": 7005,
+        "relative_error": 0.04967880085653105,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4401,
+        "qid": "res_b_006",
+        "reference_total_tokens": 4321,
+        "relative_error": 0.01851423281647767,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4397,
+        "qid": "res_b_007",
+        "reference_total_tokens": 4299,
+        "relative_error": 0.022795999069551057,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4329,
+        "qid": "res_b_008",
+        "reference_total_tokens": 4224,
+        "relative_error": 0.024857954545454544,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 5831,
+        "qid": "res_b_009",
+        "reference_total_tokens": 5905,
+        "relative_error": 0.012531752751905165,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4054,
+        "qid": "res_b_010",
+        "reference_total_tokens": 4323,
+        "relative_error": 0.06222530650011566,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4007,
+        "qid": "res_b_011",
+        "reference_total_tokens": 4233,
+        "relative_error": 0.05339003071107961,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4641,
+        "qid": "res_b_012",
+        "reference_total_tokens": 4910,
+        "relative_error": 0.05478615071283096,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4363,
+        "qid": "res_b_013",
+        "reference_total_tokens": 4199,
+        "relative_error": 0.039056918313884255,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4301,
+        "qid": "res_b_014",
+        "reference_total_tokens": 4367,
+        "relative_error": 0.015113350125944584,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4019,
+        "qid": "res_b_015",
+        "reference_total_tokens": 4271,
+        "relative_error": 0.05900257550924842,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4360,
+        "qid": "res_b_016",
+        "reference_total_tokens": 4255,
+        "relative_error": 0.024676850763807285,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4129,
+        "qid": "res_b_017",
+        "reference_total_tokens": 4685,
+        "relative_error": 0.11867662753468516,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4628,
+        "qid": "res_b_018",
+        "reference_total_tokens": 4325,
+        "relative_error": 0.0700578034682081,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4362,
+        "qid": "res_b_019",
+        "reference_total_tokens": 4309,
+        "relative_error": 0.012299837549315386,
+        "within_tolerance": true
+      },
+      {
+        "candidate_total_tokens": 4027,
+        "qid": "res_b_020",
+        "reference_total_tokens": 4277,
+        "relative_error": 0.05845218611176058,
+        "within_tolerance": true
+      }
+    ],
+    "per_qid_failure_count": 0,
+    "per_qid_failures": [],
+    "per_qid_within_count": 100,
+    "summary": {
+      "candidate": 495103,
+      "reference": 499899,
+      "relative_error": 0.009593937975471045,
+      "within_tolerance": true
+    }
+  },
+  "tolerance": 0.15,
+  "tool": "afac_reference_audit",
+  "version": 1
+}

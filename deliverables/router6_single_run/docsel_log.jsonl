@@ -1,0 +1,100 @@
+{"qid": "fc_b_001", "picked": ["text01"], "selector": "code", "diagnostics": {"method": "unique_source_bound_narrative_facts", "confidence": 0.995, "fact_count": 4, "metrics": ["gross_margin"], "fallback": false}}
+{"qid": "fc_b_002", "picked": ["text08"], "selector": "code", "diagnostics": {"method": "exact_quoted_title", "confidence": 1.0, "anchors": {"苏州华亚智能科技股份有限公司发行股份及支付现金购买资产并募集配套资金暨关联交易报告书（草案）（注册稿）": "text08"}, "fallback": false}}
+{"qid": "fc_b_003", "picked": ["text03"], "selector": "code", "diagnostics": {"method": "exact_quoted_title", "confidence": 1.0, "anchors": {"厦门金圆投资集团有限公司2026年面向专业投资者公开发行公司债券（第二期）募集说明书": "text03"}, "fallback": false}}
+{"qid": "fc_b_004", "picked": ["text02"], "selector": "code", "diagnostics": {"method": "exact_quoted_title", "confidence": 1.0, "anchors": {"深圳市融资租赁（集团）有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书": "text02"}, "fallback": false}}
+{"qid": "fc_b_005", "picked": ["text08"], "selector": "code", "diagnostics": {"method": "unique_source_bound_narrative_facts", "confidence": 0.995, "fact_count": 2, "metrics": ["appreciation_rate"], "fallback": false}}
+{"qid": "fc_b_006", "picked": ["text04", "text05", "text11"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 3, "aliases": ["安克创新", "普联软件", "本川智能"], "years": [], "fallback": false}}
+{"qid": "fc_b_007", "picked": ["text04", "text05", "text11"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 3, "aliases": ["安克创新", "普联软件", "本川智能"], "years": ["2024"], "fallback": false}}
+{"qid": "fc_b_008", "picked": ["text04", "text05", "text11"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 3, "aliases": ["安克创新", "普联软件", "本川智能"], "years": [], "fallback": false}}
+{"qid": "fc_b_009", "picked": ["text04", "text05", "text11"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 3, "aliases": ["安克创新", "普联软件", "本川智能"], "years": [], "fallback": false}}
+{"qid": "fc_b_010", "picked": ["text10"], "selector": "code", "diagnostics": {"method": "exact_quoted_title", "confidence": 1.0, "anchors": {"业绩预测补偿及减值补偿协议": "text10"}, "fallback": false}}
+{"qid": "fc_b_011", "picked": ["text14"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["西部证券"], "years": ["2023", "2024", "2025"], "fallback": false}}
+{"qid": "fc_b_012", "picked": ["text09"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["金达威"], "years": [], "fallback": false}}
+{"qid": "fc_b_014", "picked": ["text14"], "selector": "code", "diagnostics": {"method": "unique_source_bound_narrative_facts", "confidence": 0.995, "fact_count": 3, "metrics": ["parent_net_profit"], "fallback": false}}
+{"qid": "fc_b_015", "picked": ["text10"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["济南财投新动能"], "years": [], "fallback": false}}
+{"qid": "fc_b_017", "picked": ["text12"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["长安银行"], "years": [], "fallback": false}}
+{"qid": "fc_b_018", "picked": ["text06"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["鼎捷数智"], "years": [], "fallback": false}}
+{"qid": "fc_b_019", "picked": ["text12"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["长安银行"], "years": [], "fallback": false}}
+{"qid": "fc_b_020", "picked": ["text12"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["长安银行"], "years": ["2017"], "fallback": false}}
+{"qid": "fin_b_001", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["比亚迪"], "years": ["2024", "2025"], "fallback": false}}
+{"qid": "fin_b_002", "picked": ["annual_byd_2024_report", "annual_byd_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["比亚迪"], "years": ["2024", "2025"], "fallback": false}}
+{"qid": "fin_b_003", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 2, "aliases": ["宁德时代", "美的集团"], "years": ["2024", "2025"], "fallback": false}}
+{"qid": "fin_b_004", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 3, "aliases": ["宁德时代", "比亚迪", "美的集团"], "years": ["2024", "2025"], "fallback": false}}
+{"qid": "fin_b_005", "picked": ["annual_catl_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report", "annual_midea_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 4, "aliases": ["中国建筑", "宁德时代", "招商银行", "美的集团"], "years": ["2025"], "fallback": false}}
+{"qid": "fin_b_006", "picked": ["annual_cmb_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["招商银行"], "years": ["2023", "2024", "2025"], "fallback": false}}
+{"qid": "fin_b_007", "picked": ["annual_chinamobile_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["中国移动"], "years": ["2023", "2024", "2025"], "fallback": false}}
+{"qid": "fin_b_008", "picked": ["annual_cscec_2024_report", "annual_cscec_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["中国建筑"], "years": ["2024", "2025"], "fallback": false}}
+{"qid": "fin_b_009", "picked": ["annual_catl_2024_report", "annual_catl_2025_report", "annual_midea_2024_report", "annual_midea_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 2, "aliases": ["宁德时代", "美的集团"], "years": ["2024", "2025"], "fallback": false}}
+{"qid": "fin_b_010", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_catl_2024_report", "annual_catl_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 2, "aliases": ["宁德时代", "比亚迪"], "years": ["2023", "2024", "2025"], "fallback": false}}
+{"qid": "fin_b_011", "picked": ["annual_chinamobile_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report", "annual_midea_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 4, "aliases": ["中国建筑", "中国移动", "招商银行", "美的集团"], "years": ["2025"], "fallback": false}}
+{"qid": "fin_b_012", "picked": ["annual_midea_2025_report"], "selector": "code", "diagnostics": {"method": "explicit_company_aliases", "confidence": 0.99, "matched_groups": 1, "aliases": ["美的集团"], "years": ["2025"], "fallback": false}}
+{"qid": "ins_b_002", "picked": ["1", "2", "15"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"1": "平安智盈金生", "2": "国寿增益宝", "15": "国寿鑫享添盈"}, "fallback": false}}
+{"qid": "ins_b_004", "picked": ["1", "2", "15", "16"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"1": "平安智盈金生", "2": "国寿增益宝", "15": "国寿鑫享添盈", "16": "平安富鸿金生"}, "fallback": false}}
+{"qid": "ins_b_005", "picked": ["2", "4", "6", "8"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"2": "国寿增益宝", "4": "平安安佑福", "6": "百万医疗", "8": "众安营运交通"}, "fallback": false}}
+{"qid": "ins_b_006", "picked": ["2", "8", "10", "12"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"2": "国寿增益宝", "8": "众安营运交通", "10": "众安特种车", "12": "众安家庭财产"}, "fallback": false}}
+{"qid": "ins_b_007", "picked": ["7", "8", "9", "10"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"7": "平安预防接种", "8": "众安营运交通", "9": "平安特种车", "10": "众安特种车"}, "fallback": false}}
+{"qid": "ins_b_008", "picked": ["9", "10", "13", "14"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"9": "平安特种车", "10": "众安特种车", "13": "众安食品安全", "14": "平安食品安全"}, "fallback": false}}
+{"qid": "ins_b_009", "picked": ["3", "4", "5", "6"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"3": "白血病", "4": "平安安佑福", "5": "平安e生保", "6": "百万医疗"}, "fallback": false}}
+{"qid": "ins_b_010", "picked": ["2", "3", "4", "16"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"2": "国寿增益宝", "3": "白血病", "4": "平安安佑福", "16": "平安富鸿金生"}, "fallback": false}}
+{"qid": "ins_b_012", "picked": ["4", "11", "12", "14"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"4": "平安安佑福", "11": "平安家庭财产", "12": "众安家庭财产", "14": "平安食品安全"}, "fallback": false}}
+{"qid": "ins_b_013", "picked": ["2", "8", "11", "14"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"2": "国寿增益宝", "8": "众安营运交通", "11": "平安家庭财产", "14": "平安食品安全"}, "fallback": false}}
+{"qid": "ins_b_014", "picked": ["16"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"16": "平安富鸿金生"}, "fallback": false}}
+{"qid": "ins_b_015", "picked": ["3", "5", "6", "16"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"3": "白血病", "5": "平安e生保", "6": "百万医疗", "16": "平安富鸿金生"}, "fallback": false}}
+{"qid": "ins_b_016", "picked": ["2", "4", "8", "16"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"2": "国寿增益宝", "4": "平安安佑福", "8": "众安营运交通", "16": "平安富鸿金生"}, "fallback": false}}
+{"qid": "ins_b_017", "picked": ["4", "5", "6", "9"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"4": "平安安佑福", "5": "平安e生保", "6": "百万医疗", "9": "平安特种车"}, "fallback": false}}
+{"qid": "ins_b_020", "picked": ["3", "5", "7", "8"], "selector": "code", "diagnostics": {"method": "insurance_product_aliases", "confidence": 0.995, "matched_products": {"3": "白血病", "5": "平安e生保", "7": "平安预防接种", "8": "众安营运交通"}, "fallback": false}}
+{"qid": "reg_b_015", "picked": ["strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）"], "selector": "code", "diagnostics": {"method": "unique_regulation_title_plus_bm25", "confidence": 0.9493, "matched_aliases": ["受益所有人识别"], "bm25_family_margin": 1.4933, "fallback": false}}
+{"qid": "fc_b_013", "picked": ["text13"], "selector": "qwen"}
+{"qid": "fc_b_016", "picked": ["text13"], "selector": "qwen"}
+{"qid": "ins_b_001", "picked": ["1", "2", "15", "16"], "selector": "qwen"}
+{"qid": "ins_b_003", "picked": ["1", "2", "15", "16"], "selector": "qwen"}
+{"qid": "ins_b_011", "picked": ["1"], "selector": "qwen"}
+{"qid": "ins_b_018", "picked": ["1"], "selector": "qwen"}
+{"qid": "ins_b_019", "picked": ["1", "2", "15", "16"], "selector": "qwen"}
+{"qid": "res_b_005", "picked": ["pack2_text04"], "selector": "qwen"}
+{"qid": "res_b_007", "picked": ["pack2_text09"], "selector": "qwen"}
+{"qid": "res_b_012", "picked": ["pack2_text05"], "selector": "qwen"}
+{"qid": "fin_b_013", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_chinamobile_2025_report"], "selector": "qwen"}
+{"qid": "fin_b_014", "picked": ["annual_byd_2024_report", "annual_byd_2025_report", "annual_cmb_2025_report"], "selector": "qwen"}
+{"qid": "fin_b_015", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_catl_2024_report"], "selector": "qwen"}
+{"qid": "fin_b_016", "picked": ["annual_catl_2025_report", "annual_midea_2025_report", "annual_cmb_2025_report", "annual_cscec_2025_report"], "selector": "qwen"}
+{"qid": "fin_b_017", "picked": ["annual_chinamobile_2025_report"], "selector": "qwen"}
+{"qid": "fin_b_018", "picked": ["annual_midea_2025_report", "annual_chinamobile_2025_report"], "selector": "qwen"}
+{"qid": "fin_b_019", "picked": ["annual_byd_2025_report", "annual_catl_2025_report", "annual_midea_2025_report", "annual_chinamobile_2025_report"], "selector": "qwen"}
+{"qid": "fin_b_020", "picked": ["annual_cscec_2025_report", "annual_cscec_2024_report"], "selector": "qwen"}
+{"qid": "reg_b_001", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_008_中国人民银行令〔2025〕第12号（金融机构客户受益所有人识别管理办法）", "strict_v3_017_中华人民共和国反洗钱法"], "selector": "qwen"}
+{"qid": "reg_b_003", "picked": ["csrc_0030_att1"], "selector": "qwen"}
+{"qid": "reg_b_004", "picked": ["strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）"], "selector": "qwen"}
+{"qid": "reg_b_005", "picked": ["csrc_0027_att1", "csrc_0369", "csrc_0370"], "selector": "qwen"}
+{"qid": "reg_b_007", "picked": ["csrc_0030_att1"], "selector": "qwen"}
+{"qid": "reg_b_008", "picked": ["csrc_0037_att1", "csrc_0038_att1", "csrc_0009_att1"], "selector": "qwen"}
+{"qid": "reg_b_009", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_017_中华人民共和国反洗钱法"], "selector": "qwen"}
+{"qid": "reg_b_013", "picked": ["csrc_0027_att1"], "selector": "qwen"}
+{"qid": "reg_b_014", "picked": ["csrc_0027_att1"], "selector": "qwen"}
+{"qid": "reg_b_016", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）"], "selector": "qwen"}
+{"qid": "reg_b_017", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_017_中华人民共和国反洗钱法"], "selector": "qwen"}
+{"qid": "reg_b_018", "picked": ["strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"], "selector": "qwen"}
+{"qid": "reg_b_020", "picked": ["csrc_0027_att1", "csrc_0027_att2"], "selector": "qwen"}
+{"qid": "reg_b_021", "picked": ["strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）", "strict_v3_017_中华人民共和国反洗钱法"], "selector": "qwen"}
+{"qid": "reg_b_023", "picked": ["strict_v3_017_中华人民共和国反洗钱法", "strict_v3_009_中国人民银行_国家金融监督管理总局_中国证券监督管理委员会令〔2025〕第11号（金融机构客户尽职调查和客户身份资料及交易记录保存管理办法）"], "selector": "qwen"}
+{"qid": "reg_b_024", "picked": ["csrc_0027_att1", "csrc_0027_att2", "csrc_0009_att1", "csrc_0295"], "selector": "qwen"}
+{"qid": "reg_b_025", "picked": ["strict_v3_016_中国人民银行_国家金融监督管理总局令〔2025〕第2号（银行卡清算机构管理办法）", "strict_v3_017_中华人民共和国反洗钱法"], "selector": "qwen"}
+{"qid": "reg_b_026", "picked": ["csrc_0009_att1", "csrc_0009_att2"], "selector": "qwen"}
+{"qid": "reg_b_027", "picked": ["strict_v3_018_中国人民银行令〔2024〕第4号（非银行支付机构监督管理条例实施细则）"], "selector": "qwen"}
+{"qid": "res_b_001", "picked": ["pack2_text01", "pack2_text14", "pack2_text15", "pack2_text10"], "selector": "qwen"}
+{"qid": "res_b_002", "picked": ["pack2_text16", "pack2_text05", "pack2_text03"], "selector": "qwen"}
+{"qid": "res_b_003", "picked": ["pack2_text06", "pack2_text11", "pack2_text12", "pack2_text09", "pack2_text16"], "selector": "qwen"}
+{"qid": "res_b_004", "picked": ["pack2_text08", "pack2_text14", "pack2_text01", "pack2_text10"], "selector": "qwen"}
+{"qid": "res_b_006", "picked": ["pack2_text14", "pack2_text01", "pack2_text15", "pack2_text10"], "selector": "qwen"}
+{"qid": "res_b_008", "picked": ["pack2_text03", "pack2_text13", "pack2_text01", "pack2_text15", "pack2_text02"], "selector": "qwen"}
+{"qid": "res_b_009", "picked": ["pack2_text16", "pack2_text18", "pack2_text11", "pack2_text12", "pack2_text01", "pack2_text09"], "selector": "qwen"}
+{"qid": "res_b_010", "picked": ["pack2_text07", "pack2_text09", "pack2_text18", "pack2_text17", "pack2_text12"], "selector": "qwen"}
+{"qid": "res_b_011", "picked": ["pack2_text01", "pack2_text14", "pack2_text15"], "selector": "qwen"}
+{"qid": "res_b_013", "picked": ["pack2_text10", "pack2_text01", "pack2_text14", "pack2_text15"], "selector": "qwen"}
+{"qid": "res_b_014", "picked": ["pack2_text03", "pack2_text13", "pack2_text01"], "selector": "qwen"}
+{"qid": "res_b_015", "picked": ["pack2_text11", "pack2_text04"], "selector": "qwen"}
+{"qid": "res_b_016", "picked": ["pack2_text01", "pack2_text15", "pack2_text10"], "selector": "qwen"}
+{"qid": "res_b_017", "picked": ["pack2_text07", "pack2_text09", "pack2_text18", "pack2_text17", "pack2_text12"], "selector": "qwen"}
+{"qid": "res_b_018", "picked": ["pack2_text16", "pack2_text13", "pack2_text05", "pack2_text18", "pack2_text19"], "selector": "qwen"}
+{"qid": "res_b_019", "picked": ["pack2_text01", "pack2_text14", "pack2_text10", "pack2_text15"], "selector": "qwen"}
+{"qid": "res_b_020", "picked": ["pack2_text07", "pack2_text04", "pack2_text03", "pack2_text17", "pack2_text19"], "selector": "qwen"}
